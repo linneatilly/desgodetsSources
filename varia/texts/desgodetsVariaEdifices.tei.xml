@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier biographique sur les Édifices antiques
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- TODO : remplacer le faux-texte -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Antoine Desgodets</title>
+                <title xml:lang="fre" type="sub">Les Édifices antiques</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="aut">auteurs</resp>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                    </persName>
+                    <persName ref="#OM">
+                        <forename>Olga</forename>
+                        <surname>Medvedkova</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date when="2013">2013</date>
+            </edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>variaEdifices</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="variaEdificesTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png"/>
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb/>Cette licence est
+                        disponible en ligne : <ref target="http://creativecommons.org/licences/by-nc-sa/3.0/fr">http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb/>1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb/>2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource
+                        <lb/>3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit
+                        s'engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s'engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l'origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l'autorité éditoriale du Centre de théorie et
+                        d'analyse risquerait en conséquence d'être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <!-- ajout d'un élément pour traiter le corpus général et réduire la hiérarchie des titres -->
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!-- ajout d'un élément pour DC.description -->
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="variaEdifices">Texte original : le texte a été créé sous forme
+                    électronique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+                    formalisation du savoir architectural au XVII<hi rend="superscript">e</hi>
+                    siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote,
+                        soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira peut-être
+                    une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le
+                    cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="100">Français (langue principale du corpus)</language>
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-16" who="#EC">première version du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front xml:id="variaEdificesFront">
+            <titlePage xml:id="variaEdificesFront00">
+                <docTitle>
+                    <titlePart>Les <hi rend="italic">Édifices Antiques</hi>
+               </titlePart>
+                </docTitle>
+                <docAuthor>
+                    <persName ref="#OM">Olga Medvedkova, </persName>
+                    <persName ref="#RC">Robert Carvais</persName>
+                </docAuthor>
+                <docDate>14 avril 2013</docDate>
+                <docEdition>version 0</docEdition>
+            </titlePage>
+            <div xml:id="variaEdificesFrontFr" xml:lang="fre">
+                <div xml:id="variaEdificesFrontFr01" type="abstract">
+                    <p>Si l’œuvre majeure de <persName>Desgodets</persName>, Les <title>Édifices antiques de Rome dessinés et mesurés très exactement</title> (Paris, chez <persName>Jean-Baptiste Coignard</persName>, <date when="1682">1682</date>), monument éditorial, a fait l’objet de nombreuses publications et a connu ces dernières années plusieurs éditions critiques, il est désormais temps de faire le point sur les raisons exactes de cette mission à <placeName>Rome</placeName>, sur la façon dont <persName>Desgodets</persName> a travaillé, et sur la fortune de l’ouvrage, réédité en <placeName>France</placeName> et à l’étranger, annoté, voire traduit.</p>
+                </div>
+                <div xml:id="variaEdificesFrontFr02" type="introduction">
+                    <head>Introduction</head>
+                    <p>Si l’œuvre majeure de Desgodets, <hi rend="italic">Les Édifices
+                        antiques de Rome dessinés et mesurés très exactement</hi>
+                        (Paris, chez Jean-Baptiste Coignard, 1682), monument éditorial,
+                        a fait l’objet de nombreuses publications et a connu ces
+                        dernières années plusieurs éditions critiques<ref type="note" target="#variaEdificesN0001"/>, il est désormais temps de faire le point sur les
+                        raisons exactes de cette mission à Rome, sur la façon dont
+                        Desgodets a travaillé, et sur la fortune de l’ouvrage, réédité
+                        en France et à l’étranger, annoté, voire traduit<ref type="note" target="#variaEdificesN0002"/>. Il est tout simplement temps de mesurer objectivement
+                        l’influence réelle de cette œuvre décrite comme majeure dans
+                        l’histoire de l’architecture occidentale. </p>
+                </div>
+            </div>
+        </front>
+        <body xml:id="variaEdificesBody">
+            <div xml:id="variaEdificesBodyFr" xml:lang="fre">
+                <div xml:id="variaEdificesBodyFr01" type="chapter" n="1">
+                    <head>Découvertes</head>
+                    <p>Nous avons par exemple retrouvé à Londres l’exemplaire des <hi rend="italic">Édifices</hi> annoté de Legrand et
+                            Molinos<ref type="note" target="#variaEdificesN0003"/> mais nous avons aussi pu repérer son passage au XIX<hi rend="superscript">e</hi> siècle par la bibliothèque de
+                        l’entrepreneur collectionneur Antoine Vivenel<ref type="note" target="#variaEdificesN0004"/>. </p>
+                    <p>De plus, entre les pages d’un exemplaire des <hi rend="italic">Édifices antiques</hi> (2<hi rend="superscript">e</hi>
+                        édition, 1769), nous avons découvert à Compiègne une page
+                        originale déchirée du manuscrit préparatoire des <hi rend="italic">Édifices antiques</hi> (la page 58
+                        représentant l’esquisse inachevée de l’entablement des petits
+                        autels du Panthéon à Rome) avec au dos le texte des pages 57,
+                        59 et 61. Sur cette page sont inscrites au crayon les mentions
+                        suivantes : « Dessin original de Desgodets, dont j’ai eu la
+                        collection entière, signé Callet Père » et au verso « une
+                        feuille du manuscrit de Desgodets »<ref type="note" target="#variaEdificesN0005"/>. Cela constitue sans aucun doute un maillon de
+                        l’histoire à écrire sur la circulation des manuscrits et des
+                        estampes.</p>
+                </div>
+                <div xml:id="variaEdificesBodyFr02" type="chapter" n="2">
+                    <head>La fortune des Édifices antiques de Rome (1682) dans l’Europe
+                        du XVIII<hi rend="superscript">e</hi> et du XIX<hi rend="superscript">e</hi> siècle<hi rend="footnote_reference">
+                            <seg rend="italic">
+                                <ref type="note" target="#variaEdificesN0006"/>
+                            </seg>
+                        </hi>
+                    </head>
+                    <p>On ne se penchera jamais assez sur l’édition des <hi rend="italic">Édifices antiques de Rome </hi>de Desgodets,
+                        moment central dans l’histoire de la création – aussi bien
+                        artistique qu’idéologique – de l’architecture « française »,
+                        fondée en grande partie sur le transfert des modèles de
+                        l’architecture romaine en France et la circulation de ces
+                        modèles à travers l’Europe. Cette édition est cruciale pour
+                        comprendre la controverse entre les anciens et les modernes
+                        français (et cela non pas seulement dans le domaine de
+                        l’architecture), de même que pour saisir les rapports entre
+                        l’appropriation de l’Antique et la construction nationale, en
+                        France d’abord et en Europe, ensuite.</p>
+                    <p>Dans le cadre de notre projet consacré à l’édition des <hi rend="italic">Cours</hi> de Desgodets à l’Académie
+                        d’architecture, l’étude des <hi rend="italic">Édifices antiques
+                            de Rome</hi> sert de point de repère constant : le
+                        pédagogue non seulement doit une partie de son rayonnement aux
+                            <hi rend="italic">Édifices </hi>mais encore s’y appuie
+                        continuellement dans ses exposés théoriques, explicitement ou
+                        non. </p>
+                    <p>L’histoire de la première édition parue chez Jean Baptiste
+                        Coignard, rue Saint Jacques, à la Bible d’Or, en 1682, annonce
+                        déjà sa fortune : il s’agit d’une véritable révolution.
+                        Rappelons brièvement les faits. En 1674, Desgodets, étudiant de
+                        l’Académie d’architecture est envoyé à Rome pour mesurer les
+                        édifices antiques. Il revient en 1676 ou 1777, avec les dessins
+                        et mesures de 49 monuments (qui figurent dans le
+                            manuscrit)<ref type="note" target="#variaEdificesN0007"/>. Le 13 décembre 1677, ces dessins sont soumis à
+                        l’Académie. D’abord, les académiciens les trouvent admirables,
+                        mais ils découvrent ensuite que les mesures de Desgodets ne
+                        correspondent pas aux mesures déjà connues et devenues
+                        classiques : ils lui demandent donc de renoncer à la
+                        publication ou de revoir ses mesures. Ce que notre architecte
+                        refuse de faire. Le livre<ref type="note" target="#variaEdificesN0008"/> qui ne contient que 25 monuments est ensuite publié,
+                        gravé par les graveurs du Roi, notamment par Jean et Pierre Le
+                        Pautre, sur la décision personnelle de Colbert qui, pour cela,
+                        offre à Desgodets 2000 livres. L’exemplaire présenté à
+                        l’académie, le 23 mars 1682, ne donne lieu à aucun
+                            commentaire<ref type="note" target="#variaEdificesN0009"/>.</p>
+                    <p>C’est que Desgodets – dont l’attitude est proche de celle de
+                        Raphaël – mine par sa vision « naturelle » de l’antique les
+                        fondements de la théorie académique, telle qu’elle avait été
+                        conçue et enseignée jusqu’alors. Dans la préface de son
+                        ouvrage, Desgodets anticipe les raisons de sa mauvaise
+                        réception dans les milieux académiques : le destin commun des
+                        réformateurs, sa propre jeunesse (il est né en 1653 et a donc à
+                        peine 30 ans à la parution du livre) et, enfin, l’extrême
+                        précision de ses mesures qui contredisent la théorie de
+                        Vitruve ! Ce que l’on apprend des vestiges antiques ne rentre
+                        pas dans les schémas connus : Palladio, Labacco, Serlio, Fréart
+                        de Chambray « trichaient », en accommodant leurs mesures aux
+                        « règles » vitruviennes. La critique de Desgodets vise tout
+                        particulièrement Fréart et sa méthode de parallèle, qui garde
+                        un souvenir du système scolastique. Desgodets y oppose sa
+                        méthode tirée de la science expérimentale moderne. </p>
+                    <p>La critique de Desgodets vise directement François Blondel. Rien
+                        d’étonnant si ce dernier empêche la reconnaissance du livre par
+                        l’Académie qui, en France, ne connaît le succès qu’après sa
+                        mort, en 1688. De fait, l’Académie ne discutera le livre qu’à
+                        partir de 1693-1694 : et encore se méfiera-t-on, de nouveau,
+                        des mesures de Desgodets. En revanche, pour Claude Perrault,
+                        l’expérience de Desgodets est centrale : son <hi rend="Emphasis">Ordonnance des cinq espèces de colonnes
+                            selon la méthode des Anciens…<seg rend="italic">, parue
+                                chez le même </seg>
+                        </hi>Jean Baptiste Coignard, un an après les <hi rend="italic">Édifices</hi> de Desgodets, exploite activement les
+                        mesures et conclusions desgodetsiennes.</p>
+                    <p>En 1699, Desgodets parvient enfin à la qualité du membre de
+                        l’Académie et, en 1719, est nommé professeur. Bien qu’à partir
+                        de ce moment son ouvrage devient une référence (on cite aussi
+                        le manuscrit conservé aujourd’hui au département des manuscrits
+                        de la BNF ; procès-verbaux, IV, 11 Décembre 1713, publié en
+                        2008), l’Académie continuera à « vérifier » les mesures de
+                        Desgodets en envoyant ses hommes à Rome afin de remesurer tel
+                        ou tel bâtiment.</p>
+                    <p>C’est à partir du milieu du XVIII<hi rend="superscript">e</hi>
+                        siècle, au moment où l’Europe entière se tourne de nouveau vers
+                        Rome, que les <hi rend="italic">Édifices </hi>deviennent non
+                        seulement recherchés, mais en quelque sorte obligatoires. Si, à
+                        la fin du XVII<hi rend="superscript">e</hi> siècle, on tente de
+                        promouvoir, par deux fois, les exemplaires du premier tirage
+                        toujours pas vendu : en 1695 (chez Jean Anisson, directeur de
+                        l’imprimerie royale, rue Saint Jacques, à la Fleur de Lys de
+                        Florence) et en 1697 (Chez <hi rend="color(FF0000)">Jean ou
+                            Claude</hi> Jombert, près des Augustins, à l’Image Notre
+                        Dame), dans la deuxième moitié du XVIII<hi rend="superscript">e</hi> siècle, les exemplaires connus portent les marques
+                        d’appartenance les plus prestigieuses, celles de John Adam
+                        (frère de Robert Adam), de James Stuart (avec ses annotations
+                        en français ! et une signature de Thomas Sergent), ces deux
+                        derniers au RIBA, ou de Pierre-Adrien Pâris (collection
+                        particulière, avec ses annotations également), etc.</p>
+                    <p>En 1779, l’ouvrage semble épuisé, car il est retiré (sur les
+                        planches originales, avec une nouvelle page de titre comportant
+                        la date changée) à Paris, chez Claude-Antoine Jombert, fils
+                        aîné, Librairie du Roi pour le Génie et l’Artillerie, rue
+                        Dauphine, tiré à l’Imprimerie de Monsieur. Les lettrines de
+                        cette édition sont nouvellement inventées et gravées : elles
+                        représentent les activités et les instruments d’architecture
+                        (Papillon inv.). Quant à l’« Avis sur cette nouvelle édition »,
+                        c’est un véritable manifeste de la nouvelle école
+                        d’architecture. Très rapidement, cette édition devient,
+                        elle-aussi, rare<ref type="note" target="#variaEdificesN0010"/>.</p>
+                    <p>Mais encore en 1771, les Britanniques prennent possession de
+                        Desgodets, dont la popularité atteint déjà son sommet dans les
+                        années 1740-1750, grâce à l’influence de John Wood, Robert Wood
+                        et James Stuart. L’empreinte des <hi rend="italic">Édifices</hi> est indéniable sur le genre même de
+                        « l’expédition architecturale », et la méthode de mesures
+                        utilisée par Desgodets reste longtemps exemplaire pour les
+                        Britanniques. Robert Adam et Charles-Louis Clérisseau préparent
+                        ensemble une version améliorée des <hi rend="italic">Édifices</hi>, en y ajoutant des vues des monuments en
+                        perspective. Le 4 juillet 1755, Adam écrit à son frère James :
+                            « <hi rend="italic">Where any of my measures differed from
+                            Desgodets, there I show by a red line, wich lets them know
+                            the error and this with a smart preface, a clever print of
+                            the author’s head, an allegorical print in the way of
+                            Palladio , and some remarks added to those of Desgodets in
+                            different caracters could not faill to be of great
+                            authority and introduce me into England with an uncommon
+                            splendor</hi>. »</p>
+                    <p>Mais ce projet ne voit jamais le jour. </p>
+                    <p>La première édition anglaise sera donc celle de l’architecte
+                        londonien George Marshall, parue en 1771 : <hi rend="italic">The Ancient Buildings Of Rome ; by Antony Desgodetz :
+                            Published in Two Volumes, by Georges Marshall, Architect,
+                            Volume the First. London, 1771. </hi>L’ouvrage comprend les
+                        mêmes 137 images, regravées très près de l’original par
+                        Marchall : il affirme dans sa préface que, à la différence de
+                        Desgodets, il a gravé lui-même jusqu’aux chiffres et il y a, en
+                        effet, très peu de planches qui ne portent pas sa signature. On
+                        sait, par ailleurs, peu de choses sur ce Marshall, mais étant
+                        donné qu’il habite Kensington Palace on peut supposer que sa
+                        coûteuse publication dédiée au Roi en tant qu’architecte, qui
+                        ne mentionne aucun éditeur ni liste des souscripteurs, a été
+                        directement commandée par Georges III. Elle a été pourtant très
+                        mal reçue (voir notamment le compte rendu de cette édition dans
+                            <hi rend="italic">Monthly Review</hi>).</p>
+                    <p>Quant au volume II de Marshall, il a été publié, en 1795, <hi rend="italic">The Ancient Buildings Of Rome, Accurately
+                            Measured And Delineated By Antony Desgodetz, Architect.
+                            Illustrated wuth One Hundred and Thirty-Seven Plates ; and
+                            Explanations in Franc hand English. The Plates engraved and
+                            the text translated by the late Mr G. Marshall, Architect,
+                            Volume the second, London, 1795.</hi>
+                    </p>
+                    <p>L’édition suivante de Desgodets en Angleterre est celle de
+                        Charles Taylor, parue en 1848, réalisée par Sherwood, Gilbert
+                        &amp; Piper, sous le titre <hi rend="italic">Rome, in its
+                            ancient grandeur displayed in a series of engravings,
+                            presenting the architectural antiquities if the imperial
+                            city. Accurately measured and delineated on the spot by
+                            Antoine Desgodetz, Architect Royal, and Professor of
+                            Architecture, Paris, With copious notes, architectural,
+                            classical, and historical, under the superintedence of Mr.
+                            Charles Taylor, </hi>London, Sherwood, Gilbert, and Piper,
+                        Paternoster Row, 1848<hi rend="italic">. </hi>Placée sous
+                        l’autorité de l’académie, cette édition s’ouvre par une longue
+                        citation de Reynolds qui orne sa page de titre : “<hi rend="italic">It is indisputably evident that a great part
+                            of every Man’s life must be employed in collecting
+                            materials for the exercise of Genius. Invention, strictly
+                            speaking, is little more than a new combination of those
+                            images which have been previously gathered and deposited in
+                            the memory: nothing can come of nothing: he who has laid up
+                            no materials, can produce no combinations. The more
+                            extensive therefore your acquaintance is with the works of
+                            those who have excelled, the more extensive will be your
+                            power in invention; and what will appear still more like a
+                            paradox, the more original will be your conceptions.</hi>” </p>
+                    <p>Par ailleurs Taylor est peu original: son édition emprunte, en
+                        les réduisant, ses planches à celle de Marshall, avec nombres
+                        d’omissions et de raccourcis. Y sont ajoutés les gravures de
+                        James Stuart (Temple de Rome et Auguste à Pola) et de
+                        Piranesi. </p>
+                    <p>En France, c’est Charles Moreau (1762-1810) qui publie en
+                        1800-1801 un ouvrage intitulé <hi rend="italic">Fragmens et
+                            Ornemens d’architecture, dessinés à Rome d’après l’antique,
+                            par Mr Charles Moreau, architecte, forment supplément à
+                            l’œuvre d’architecture de Desgodets. Livraison. Cet ouvrage
+                            est composé de six livraisons. Chaque livraison est
+                            composée de six planches in-folio, qui offrent, savoir :
+                            Les deux premières, de simples fragmens, gravés dans la
+                            manière du crayon, avec le trait à côté ; Deux autres des
+                            coupes, trépieds, vases, autels, candélabres et meubles
+                            etc, etc. Cet ouvrage étant spécialement destiné à
+                            l’instruction, on y a joint les côtes et mesures, ainsi que
+                            des notes indicatives des lieux, où les fragmens qui les
+                            composent ont été puisés, et des monumens auxquels ils ont
+                            appartenus ; ces notes sont toujours jointes au sujet</hi>
+                        <hi rend="footnote_reference">
+                            <seg rend="italic">
+                                <ref type="note" target="#variaEdificesN0011"/>
+                            </seg>
+                        </hi>. </p>
+                    <p>Le prospectus de cet ouvrage a survécu à la British Library : il
+                        insiste notamment sur le fait que les planches de l’ouvrage
+                        sont réalisées à la même échelle que celles de Desgodets, mais
+                        elles montrent de nouveaux détails, issus des sources
+                        différentes, dont le Musée du Vatican. En 1827, une nouvelle
+                        édition de ce livre est publiée à Brussel par Jobart et, en
+                        1919, son fac-simile est édité encore par Architectural Book
+                        Publishing Company of New York.</p>
+                    <p>Sur ce fond, la première édition italienne paraît assez
+                        tardivement, en 1794 : il s’agit de celle de Tommaso Piroli 
+                            <hi rend="italic">Gli edificj antichi di Roma ricercati
+                            nelle loro piante, e restituiti ... secondo Palladio,
+                            Desgodetz, ed altri più recenti, con l’aggiunta di qualche
+                            moderna fabbrica</hi>
+                        <ref type="note" target="#variaEdificesN0012"/>. Une autre édition romaine bilingue, en six volume, est
+                        publiée par le grand archéologue italien Carlo Fea, chez V.
+                        Poggioli en 1822, avec sa traduction augmentée et corrigée par
+                        l’architecte néoclassique Giuseppe Valadier (1762-1839) : <hi rend="italic">Aggiunte et correzioni all' opera sugli
+                            edifizi antichi di Roma</hi>, imprimée à Rome en 1843<ref type="note" target="#variaEdificesN0013"/>. </p>
+                </div>
+                    <!--<figure type="illustration" copyOf="#variaEdificesIll0003"/>-->
+                    <!--<ref type="note" target="#variaEdificesN0002">-->
+            </div>
+        </body>
+        <back xml:id="variaEdificesBack">
+            <div xml:id="variaEdificesBackFr" xml:lang="fre">
+                
+                <!-- inclusion du fichier de notes -->
+                <xi:include href="divs/desgodetsVariaEdificesNotes.tei.xml"
+                    parse="xml">
+                    <xi:fallback>Fichier de notes de degodetsVariaEdifices non
+                        trouvé</xi:fallback>
+                </xi:include>
+
+                <!-- lien vers le fichier à télécharger -->
+                <!--<div xml:id="variaEdificesBackFr02" xml:lang="fre" type="downloads">
+                    <head>Téléchargements</head>
+                    <p>
+                  <ref type="file"
+                       target="../..files/programme2010.pdf"
+                       mimeType="application/pdf">Programme</ref>
+               </p>
+                </div>-->
+
+                <!-- liste des figures -->
+                <div xml:id="variaEdificesBackFr03" type="figures">
+                    <head>Liste des figures</head>
+                    <figure xml:id="variaEdificesIll0001" type="illustration">
+                        <figDesc>
+                            <title>Frontispice des édifices antiques</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, frontispice.</desc>
+                        </figDesc>
+                        <graphic n="thumb"
+                           url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="medium"
+                           url="../../images/medium/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="full"
+                           url="../../images/full/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                    </figure>
+                    <figure xml:id="variaEdificesIll0003" type="illustration">
+                        <figDesc>
+                            <title>Dédicace</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 9</desc>
+                        </figDesc>
+                        <graphic n="thumb"
+                           url="../../images/thumbs/desgodetsEdifices0257.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="medium"
+                           url="../../images/medium/desgodetsEdifices0257.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="full"
+                           url="../../images/full/desgodetsEdifices0257.jpg"
+                           mimeType="image/jpeg"/>
+                    </figure>
+                    <figure xml:id="variaEdificesIll0004" type="illustration">
+                        <figDesc>
+                            <title>Élévation antérieure du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 30</desc>
+                        </figDesc>
+                        <graphic n="thumb"
+                           url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="medium"
+                           url="../../images/medium/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="full"
+                           url="../../images/full/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                    </figure>
+                    <figure xml:id="variaEdificesIll0033" type="illustration">
+                        <figDesc>
+                            <title>Élévation latérale du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 33</desc>
+                        </figDesc>
+                        <graphic n="thumb"
+                           url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="medium"
+                           url="../../images/medium/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                        <graphic n="full"
+                           url="../../images/full/desgodetsEdifices0001.jpg"
+                           mimeType="image/jpeg"/>
+                    </figure>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>

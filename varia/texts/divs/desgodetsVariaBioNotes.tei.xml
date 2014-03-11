@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes du texte biographique de la biographie de Desgodets -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi de N, suivi d'un numéro d'ordre à quatre unités -->
+
+<div xml:id="variaBioBackFr01" xmlns="http://www.tei-c.org/ns/1.0"
+    xml:lang="fre" type="notes">
+    <head>Notes</head>
+    <!-- RMQ : notes de test -->
+    <note xml:id="variaBioN0001">
+        <p> Pourquoi Antoine Desgodetz écrit-il son nom avec un
+            « z » final alors que dès sa mort, la terminaison de
+            son patronyme prend un -s ? Sur l’origine géographique
+            du nom de famille de l’architecte, nous ne possédons
+            pour ainsi dire aucun renseignement. D’après les armes
+            de la famille « trois godets (deux + un) séparés par un
+            chevron et surmontés d’un casque » (Charles Lucas, Une
+            lettre autographe de Desgodets, <hi rend="italic">L’architecture</hi>, 1893, p. 131-133), son
+            patronyme serait la traduction d’un pluriel du nom
+            commun « godet ». La lettre finale -z avec laquelle
+            Desgodets fait terminer son nom est donc la marque d’un
+            pluriel. Par ailleurs, nous savons que du XIII<hi rend="superscript">e</hi> au XVI<hi rend="superscript">e</hi> siècle, selon les
+            dialectes et les niveaux de langue, les consonnes
+            finales étaient <hi rend="italic">réellement</hi>
+            prononcées : qu'il s'agisse des lettres du radical, ou
+            des lettres morphologiques comme le -s de pluriel.</p>
+        <p>En outre, la plupart des -z finaux sont en fait un
+            artifice graphique et ne représentent rien d'autre
+            qu'un -s qu'on a trouvé "plus joli" d'écrire -z ; c'est
+            le cas du mot <hi rend="italic">nez</hi>, qui en ancien
+            français s'écrit et se prononce <hi rend="italic">li
+                nes</hi>. À cela plusieurs raisons :</p>
+        <p>- Le -z est plus facile à faire à la plume à la fin d'un
+            mot (le s cursif "gratte" le papier). </p>
+        <p>- « Le -<hi rend="italic">s</hi> prend ordinairement la
+            place de <hi rend="italic">tz</hi> à la fin des mots,
+            ce qui n’est pas particulier à la Provence, mais assez
+            général dans les pays de langue d’oc dès la fin du
+            XIII<hi rend="superscript">e</hi> siècle. » Paul
+            Meyer, <hi rend="italic">Les derniers troubadours de la
+                Provence d’après le chansonnier donné à la
+                Bibliothèque impériale par M. Ch. Giraud</hi>,
+            paris, 1871, p. 23. De plus, dès 1663, Corneille se
+            prononce pour le -s au lieu du -z comme marque du
+            pluriel. </p>
+        <p>- Dans beaucoup de mots, il y eut, à un moment de la
+            langue, un groupe [-ts] à la fin, noté -z, qui ensuite
+            a évolué en [-s]. Ainsi <hi rend="italic">filius</hi>
+            &gt; [filts] &gt; [fitz] noté <hi rend="italic">fiz</hi> &gt; [fis] longtemps encore noté <hi rend="italic">fiz</hi> avant qu'on ne décide
+            d'emmerder les écoliers en rajoutant un -l pour faire
+            "plus latin" et qui n'existait plus. D'où le préfixe
+            <hi rend="italic">Fitz</hi> dans les noms anglais
+            et même anglo-irlandais (Fitzjames, Fitzpatrick,
+            Fitzgerald...) qui en fait vient du normand et
+            s'appliquait aux noms nobles (fils de Machin, c'est pas
+            n'importe qui)... <hi rend="italic">idem</hi> en langue
+            d’oc. Cet argument militerait en faveur d’une
+            distinction sociale opérée par l’apposition d’un -z à
+            la fin d’un patronyme. Mais ce point reste à
+            argumenter.</p>
+    </note>
+    <note xml:id="variaBioN0002">
+        <p> Abbé Claude Lambert, <hi rend="italic">Histoire
+            littéraire du règne de Louis XIV dédiée au
+            roi</hi>, Paris, 1751, 4 vol. t. 3, livre X, p.
+            123-124 ; Société de gens de lettres, <hi rend="italic">Nouveau dictionnaire historique ou Histoire
+                abrégée de tous les hommes qui se sont fait un nom
+                par des talens, des vertus, des forfaits, des
+                erreurs, etc</hi>. Paris, 1789, 7<hi rend="superscript">e</hi> édition revue, corrigée
+            et considérablement augmentée, t. 3, p. 270 ; <hi rend="italic">The General Biographical
+                Dictionnary : containing an hsitorical and critical
+                account of the lives and writings of the most
+                eminent persons in every nation</hi>, new edition
+            revised and enlarged by Alexander Chalmers, London,
+            1813, vol. XI, p. 508-509 ; Quatremère de Quincy, <hi rend="italic">Dictionnaire historique
+                d’architecture</hi>, Paris, 1832, 2 vol., t. 1, p.
+            517-519. M. J. Dumesnil, <hi rend="italic">Histoire des
+                plus célèbres amateurs français et de leurs
+                relations avec les artistes</hi>, Paris, t. 2 :
+            Jean-Baptiste Colbert, Paris, 1857, p. 264-266 ;
+            Adolphe Lance, <hi rend="italic">Dictionnaire des
+                architectes français</hi>, Paris, 1872, p.
+            215-216 ; Emile Bellier de La Chavignerie, Dictionnaire
+            général des artistes de l’école française depuis
+            l’origine des arts du dessin jusqu’à nos jours.
+            Architectes, peintres, sculpteurs, graveurs et
+            lithographes, continué par Louis Auvray, Paris 1882, 3
+            vol., t. 1, p. 418 ; Charles Lucas, « Une lettre
+            autographe de Desgodets », <hi rend="italic">L’architecture</hi>, 1893, p. 131-133 ; Elie
+            Brault, <hi rend="italic">Les architectes par leurs
+                œuvres, ouvrage rédigé sur les manuscrits de feu
+                Al. du Bois (de l’école polytechnique), architecte
+                du gouvernement</hi>, Paris, 3 vol., 1893, t. 2, p.
+            156 ; L. Lazar, « Documents relatifs aux artistes
+            parisiens conservés aux archives de la Seine », <hi rend="italic">Bulletin de la Société de l’histoire
+                de Paris</hi>, vol. 33, 1906, p. 68-114 ; J. S. de
+            Sacy, « Desgodets », dans Roman d’Amat et R.
+            Limouzin-Lamothe, <hi rend="italic">Dictionnaire de
+                biographie française</hi>, Paris 1965, t. 10, col.
+            1358-1359 ; Wolfgang Hermann, « Desgodets, Antoine »,
+            <hi rend="italic">in Macmillan Encyclopedia of
+                Architects</hi>, sous la dir. de Adolf K. Placzek,
+            vol. 1, 1982, p. 566-567 ; Eileen Harris assisted by
+            Nicholas Savage, <hi rend="italic">British
+                Architectural Books and Writers. 1556-1785,</hi>
+            Cambridge, Cambridge University Press, 1990, p.
+            180-182 ; Michel Gallet, <hi rend="italic">Les
+                architectes parisiens du XVIIIe siècle.
+                Dictionnaire biographique et critique</hi>, Paris,
+            Mengès, 1995 ; Françoise Hamon, “Desgodets, Antoine”,
+            <hi rend="italic">in The Dictionnary of Art</hi>,
+            New York, vol. 8, 1996, p. 793-794 ; Christopher Drew
+            Armstrong, « Desgodetz ou Desgodets, Antoine
+            (1653-1728) » dans l’Encyclopdia Universalis, sd ;
+            Christopher Drew Armstrong, « Desgodetz Antoine », <hi rend="italic">Allegemeines Lexicon der Bildenden
+                Künstler von die Antike bis zur Gegenwart</hi>,
+            Munich et Leipzig, vol. 26, 2000, p. 353-356 ; Frédéric
+            Barbier, Sabine Juratic et Annick Mellerio (dir.), <hi rend="italic">Dictionnaire des imprimeurs,
+                libraires et gens du livre à Paris, 1701-1789</hi>,
+            Droz, 2007, vol. 1, <hi rend="italic">verbo</hi>
+            « Babuty », p. 101-108 ; Robert Carvais, Notices sur
+            « Antoine Desgodets », dans Patrick Arabeyre,
+            Jean-Louis Halperin et Jacques Krynen (dir.), <hi rend="Emphasis">Dictionnaire historique des
+                juristes français</hi>, PUF, Collection Quadrige,
+            2007, p. 248-249 ; L. Cellauro et G. Richaud, « Notice
+            à propos de l’édition de 1682 des <hi rend="italic">Edifices antiques de Rome</hi>, 2008, mis en ligne
+            sur le site « Architectura » [<hi rend="italic">http://architectura.cesr.univ-tours.fr/traite/index.asp</hi>
+            ; consulté le 13 octobre 2013].</p>
+    </note>
+    <note xml:id="variaBioN0003">
+        <p> Jeanne Duportal, « Le <hi rend="italic">cours
+            d’architecture</hi> de Desgodets. Recueil inédit du
+            Cabinet des Estampes », <hi rend="italic">La revue de
+                l’art ancien et moderne</hi>, XXXVI, 1914, p.
+            153-157 ; Wolfgang Herrmann, “Antoine Desgodets and the
+            Académie Royale d’Architecture”, <hi rend="italic">The
+                Art Bulletin</hi>, 1958, p. 23-53 et 1959, p.
+            127-128 ; Theodoor Herman Lunsingh Scheurleer, « Een
+            exemplaar van Antoine Desgodets’ <hi rend="italic">Traité de la commodité de l’Architecture</hi> in
+            het Rijksprentenkabinet » in <hi rend="italic">Opus
+                Musivum. Een bundel studies aangeboden aan
+                Professeur Doctor M. D. Ozinga ter gelegenheid van
+                zijn zestigste verjaardag op 10 november 1962</hi>,
+            Assen, 1964, p. 285-297 ; Carlo Nocentini, « Il
+            Trattato degli ordini di Antoine Desgodets : un manuale
+            inedito », <hi rend="italic">Quasar</hi>, 1989, n° 2,
+            p. 13-18; Joselita Raspi Serra, “Les Edifices antiques
+            de Rome dessinés et mesurés […] exactement par Antoine
+            Desgodets, testo annotato da Adrien Pâris, un metodo
+            d’intervento. Misura et verifica dei monumenti
+            romani », in <hi rend="italic">Arte d’occidente, temi e
+                metodi. Studi in onore di Angiola Maria
+                Romanini,</hi> Rome, 1999, vol. 3, p. 1215-1220 ;
+            Susanna Pasquali, « Vicende dell’edizione italiana
+            dell’opera di Desgodets : prograi editoriali e attività
+            di rilievo dei monumenti antichi a Roma dal 1757 al
+            1804 » <hi rend="italic">in</hi> Elisa Debenedetti
+            (ed.), <hi rend="italic">Architettura città e
+                territorio : realizzazioni e teorie tra illuminismo
+                e romanticismo</hi>, Rome, 1992, 215-226 ; Hélène
+            Rousteau-Chambon, <hi rend="italic">L’enseignement à
+                l’Académie royale d’architecture. De Philippe de La
+                Hire à Louis-Adam Loriot [1687-1762],</hi> Mémoire
+            inédit d’habilitation à diriger des recherches soutenue
+            le 28 novembre 2011, ENSA Paris Malaquais.</p>
+    </note>
+</div>

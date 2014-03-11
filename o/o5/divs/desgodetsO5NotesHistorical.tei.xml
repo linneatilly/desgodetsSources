@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes de commentaire historique de O5 -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi de Nh pour notes historiques, suivi d'un numéro d'ordre à quatre unités -->
+<!-- TODO : encoder dans la bibliographie l'ensemble des références biblio des notes -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" type="notesHistorical"
+    xml:id="o5BackFr02" xml:lang="fre">
+    <head>Notes de commentaire historique</head>
+    <div type="notesHistorical">
+        <head>Notes de commentaire historique</head>
+        <note xml:id="o5Nh0001">
+            <p> Erreur pour « 25 ».</p>
+        </note>
+        <note xml:id="o5Nh0002">
+            <p> Les trois colonnes désignent
+                le <placeName ref="#romeTempioDeiCastori">temple de
+                    Jupiter Stator</placeName><!-- TODO vérifier indexation -->.</p>
+        </note>
+        <note xml:id="o5Nh0003">
+            <p> Desgodets fait ici référence
+                à l’<placeName ref="#romeArcoDiSettimioSevero">arc de Septime Sévère</placeName> et à l’<placeName ref="#romeArcoDegliArgentari">arc des Argentiers</placeName>.</p>
+        </note>
+        <note xml:id="o5Nh0004">
+            <p> Il s’agit du <placeName ref="#romeBasilicaDiSantoStefanoRotondoAlCelio">temple
+                de Faune</placeName>.</p>
+        </note>
+    </div>
+</div>

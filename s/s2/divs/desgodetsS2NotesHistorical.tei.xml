@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    fichier inclus des notes de commentaire historique de s2 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi de Nh pour notes historiques, suivi d'un numéro d'ordre à quatre unités -->
+<!-- TODO : encoder dans la bibliographie l'ensemble des références biblio des notes -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" type="notesHistorical"
+    xml:id="s2BackFr01" xml:lang="fre">
+    <head>Notes de commentaire historique</head>
+    <note xml:id="s2Nh0001">
+        <p>text</p>
+    </note>
+</div>

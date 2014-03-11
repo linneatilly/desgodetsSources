@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes de la présentation des manuscrits C -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi d'un numéro d'ordre à quatre unités -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0"
+    xml:lang="fre" type="notes" xml:id="oN">
+    <head>Notes</head>
+    <note xml:id="oN0001">
+        <p><bibl corresp="#barbiche1993"></bibl> et <bibl corresp="#barbiche20--"/></p>
+    </note>
+    <note xml:id="oN0002">
+        <p><bibl corresp="#hermann1958"/></p>
+    </note>
+    <note xml:id="oN0003">
+        <p> Communication orale.</p>
+    </note>
+    <note xml:id="oN0004">
+        <p> Le cours a déjà fait l’objet
+            d’une étude détaillée par <bibl corresp="#hermann1958">et en particulier p. 33-47.</bibl></p><!-- TODO voir affichage -->
+    </note>
+    <note xml:id="oN0005">
+        <p><bibl corresp="#hermann1958">p. 35.</bibl></p>
+    </note>
+    <note xml:id="oN0006">
+        <p><bibl corresp="#rousteauChambonEtAl2013"/></p>
+    </note>
+    <note xml:id="oN0007">
+        <p><bibl corresp="#duportal1914">p. 154.</bibl></p>
+    </note>
+    <note xml:id="oN0008">
+        <p> <bibl corresp="#hermann1958">p. 36.</bibl></p>
+    </note>
+</div>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model     href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!-- Fichier de la transcription du manuscrit T8-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <!-- Début de l'en-tête TEI -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="fre" type="title">Édition électronique des Cours de
+                    Desgodets</title>
+                <title xml:lang="fre" type="subTitle">Traité du toisé des bâtiments</title>
+                <title xml:lang="fre" type="subSubTitle">Test d'encodage pour le manuscrit
+                    T-8</title>
+                <author>
+                    <name>Antoine Desgodets</name>
+                </author>
+                <!-- Faire apparaître un élément <editor>, par ailleurs vérifier si le principal est bien ici l'éditeur -->
+                <principal>
+                    <name>Robert Carvais</name>
+                    <affiliation>
+                        <orgName>Centre National de la Recherche Scientifique (CNRS)</orgName>
+                        <roleName>Directeur de recherche</roleName>
+                        <roleName>Responsable d'ANR</roleName>
+                    </affiliation>
+                </principal>
+                <respStmt>
+                    <resp key="encoding">Test d'encodage réalisé par</resp>
+                    <name>Emmanuel Château <email>emchateau@laposte.net</email>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp key="transcription">Transcription du manuscrit</resp>
+                    <name ref="#EC">Emmanuel Château <email>emchateau@laposte.net</email>
+                    </name>
+                </respStmt>
+                <funder>
+                    <orgName>Agence nationale de recherche (ANR)</orgName>
+                </funder>
+            </titleStmt>
+            <editionStmt>
+                <!-- nota : pb pour intervalle de dates ISO -->
+                <edition n="1">première édition électronique, <date when="2013">2008-2013</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <date when="2012">2012</date>
+                <idno>T8</idno>
+                <!-- Mettre un id ? -->
+                <publisher>
+                    <orgName>xxx</orgName>
+                    <!-- Qui diffuse ? -->
+                    <address>
+                        <addrLine>xxx</addrLine>
+                        <addrLine>75xxx Paris</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>tél.: +33 (0)1 xx xx xx</addrLine>
+                        <addrLine>http://www.desgodets.fr/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <!-- <extent>Pour indiquer l'étendue du fichier</extent> -->
+                <availability status="restricted">
+                    <p>Rédiger un disclaimer sur les droits. Cf. l'exemple des publications de l'École des Chartes</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="t8" xml:lang="fre">
+                    <msIdentifier>
+                        <country>États-Unis</country>
+                        <settlement>Philadelphie</settlement>
+                        <institution>Franklin library</institution>
+                        <collection>Penn Libraries (Fine Arts Library Rare Book)</collection>
+                        <idno>TH144.D4</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p><title>Traité du toisé pour les bâtiments suivants les us et coutumes de Paris : enseigné dans l’École de l’Académie d’Architecture par M. Desgodets.</title></p>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <p>434 p., ill., 18cm, in-8°</p>
+                            <!-- Revoir pour normaliser et préciser le balisage de la description physique -->
+                        </objectDesc>
+                        <!-- La description physique du manuscrit reste à faire -->
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p><origDate when="1736">1736</origDate></p>
+                        </origin>
+                        <provenance>Gift of G. Holmes Perkins [source : étiquette de la Library University of Pennsylvania]</provenance>
+                        <provenance>Marlborough Rare Books LTD., catalogue 88 : "DESGODETZ (Antoine), Traité du Toisé pour les Batiments, suivant les us et Coutumes de Paris, Expliqué dans l'École de l'Académie d'Architecture..., ORIGINAL MS. <hi rend="italic">written in ink</hi>, 4 parts in 1 vol., 8vo, (2) + 434 + (1) ff., <hi rend="italic">numerous diagrams in text</hi>, cont. mottled calf, spine gilt label (corners worn and rubbed, upper joint cracking); n.p. [Paris], 1736. £360</provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <samplingDecl>
+                <p>Encodage des pages 279 à 299 pour travailler sur l'alignement des figures entre les versions du manuscrit. </p>
+            </samplingDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">Français</language>
+                <!-- Noter et évaluer le pourcentage d'autres langues dans le document avec @usage (valeurs numériques) -->
+                <!-- Vérifier si la valeur d'attribut est correcte à cet endroit pour le français -->
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2012-05-19" who="#EC">Première édition (électronique)</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <!-- Début de l'encodage du manuscrit -->
+    <text>
+        <front xml:id="t8front">
+            <div xml:id="t8frontFr" xml:lang="fre" type="transcription">
+                <gap reason="sampling"/>
+            </div>
+        </front>
+        <body xml:id="t8Body">
+            <div xml:id="t8BodyFr" xml:lang="fre" type="transcription">
+                <gap reason="sampling" unit="pages" extent="278"/>
+                <pb n="p279"/>
+                <div type="part" n="2" xml:id="t8BodyFr02">
+                    <head rend="alignCenter">Traité du Toisé des Bastimens<lb/>
+                        <metamark rend="simpleLine alignCenter"/><lb/>
+                        <num>2<hi rend="superscript">e</hi></num> Partie. <lb/>
+                        Toisé de la Charpenterie <lb/>
+                        <metamark rend="brace alignCenter"/></head>
+                    <div type="chapter" n="1" xml:id="t8Body02.01">
+                        <head rend="alignCenter">Chapitre <num>1<hi rend="superscript">er.</hi></num> <lb/>
+                            Des Mesures usitées pour le Toisé de La Charpente</head>
+                        <div type="number" n="1" xml:id="t8Body02.01.01">
+                            <head>1<hi rend="superscript">er</hi> </head>
+                            <p>Le <ref type="noteHistorical" target="#t8Nh0001">Toisé des bois de Charpenterie</ref> Se fait au cube, En un volume dune certaine long<hi rend="superscript" >r</hi> et grosseur, à quoy lon réduit toutes les autres différentes longueurs et grosseurs des bois.</p>
+                        </div>
+                        <div type="number" n="2" xml:id="t8Body02.01.02">
+                            <head>2<hi rend="superscript">e</hi> </head>
+                            <p>Anciennement les planchers des Édifices <sic>publiques </sic> des maisons royales, ainsi que des maisons particulières<ref type="noteHistorical" target="#t8Nh0002"/>, étoient faits par travées de Solives posées Sur des poutres, portées dans les murs en distances Égales pour l’ordinaire, les Solives de ces travées étoient de mesme longueur et grosseur ; on les comptoit au cent, <pb n="p280"/> et on réduisoit par le calcul les poutres et les autres grosses et menues pièces de bois des bastimens, à La quantité de Solives quil pouvoit contenir. Cette manière de toiser et réduire les bois de Charpente au cent de Solives Sest continuée jus quà présent ; mais chaque <sic>païs </sic> à Sa longueur et grosseur de Solive particulière, cequi rend Les quantités du produit différentes, quoyque la manière de Toiser Soit La mesme.</p>
+                        </div>
+                        <div type="number" n="3" xml:id="t8Body02.01.03">
+                            <head>3<hi rend="superscript">e</hi> </head>
+                            <p>À Rouen, on Compte les bois des charpente au Cent de Marque, et la marque Équi vaut une pièce de bois de 10 pieds de longueur, de 5 et 6 po<hi rend="superscript">c</hi> de grosseur, ou bien contient 2 pieds 1 pouce cube.</p>
+                        </div>
+                        <div type="number" n="4" xml:id="t8Body02.01.04">
+                            <head>4° </head>
+                            <p>À Paris, cest au cent de pièces que lon réduit les bois de Charpente, une pièce a 12 pieds de long, 6 po<hi rend="superscript">c</hi> de gros en quarré, ce qui contient 3 pieds cubes ; et lon compte les portions de pièces par pieds et pouces de longueur, Sur 6 po<hi rend="superscript">c</hi> de grosseur, 12 po<hi rend="superscript">c</hi> <pb n="p281"/>courants font 1 pied, et 12 pieds courans font une pièce, ainsi 1 pied de longueur est 1/12<hi rend="superscript">e</hi> de pièce, 1 p<hi rend="superscript">d</hi> 6 po<hi rend="superscript">c</hi> est 1/8, 2 p<hi rend="superscript">d</hi> 1/6, 3 pieds ¼, 6 pieds ½ pièce, 8 p<hi rend="superscript">d</hi> ⅔ de pièce, et 9 pieds ¾ de pièce.</p>
+                        </div>
+                        <div type="number" n="5" xml:id="t8Body02.01.05">
+                            <head>5 </head>
+                            <p>Pour faciliter le Calcul de la réduction du Toisé des bois de Charpente, on <sic>Supose </sic> quil sont réduits en Échalats, d’un pouce de grosseur quarré sur Six pieds de long, et il faut 72 de ces Échalas pour faire une pièce, par ceque la pièce étant de deux toises de long, de 6 po<hi rend="superscript">c</hi> de gros en quarré, Le bout de La Coupe contient 36 po<hi rend="superscript">c</hi> en Superficie qui font par chaque toise 36 Échalats de 6 pieds de long, et pour les deux toises 72 Échalats qui font la pièce ; ensorte qu’un Échalat de 6 pieds de long, 1 po<hi rend="superscript">c</hi> de gros en quarré, produit 2 po<hi rend="superscript">c</hi> de longueur de pièce, et Six pieds de long de 3 et 4 po<hi rend="superscript">c</hi> produisent 2 ds courants ou 1/6<hi rend="superscript">e</hi> de pièce, Six pied de <pb n="282" />long de 4 po<hi rend="superscript">c</hi> de gros <sic>en quarré</sic>, produit 2 ds 8 po<hi rend="superscript">c</hi> courants, Six pieds de long de 4 et 5 po<hi rend="superscript">c</hi> de gros produisent 3 ds 4 po<hi rend="superscript">c</hi> courants, Six pieds de long de 5 po<hi rend="superscript">c</hi> produisent 4 ds 2 po<hi rend="superscript">c</hi> courant, Six pieds de long de 5 et 6 po de gros produit 5 pieds Courants<lb/> Six pieds de long de 6 po<hi rend="superscript">c</hi> produit une demi pièce,<lb/> Six pds de long de 6 et 7 po produit 7 pieds courants,<lb/> Six pds de long de 7 po<hi rend="superscript">c</hi> prod. 8 pieds 2 po<hi rend="superscript">c</hi> Courant,<lb/> Six pieds de long de 7 et 8 po prod. 9 <hi rend="superscript">ds</hi> 4 po<hi rend="superscript" >c</hi> C<hi rend="superscript">ts</hi>,<lb/> Six pieds de long de 8 po. prod. 10 <hi rend="superscript">ds</hi> 8 po<hi rend="superscript" >c</hi> C<hi rend="superscript">ts</hi>,<lb/> Six pieds de long de 8 et 9 <hi rend="superscript">o</hi> prod. 12 <hi rend="superscript" >ds</hi> ou une pièce,<lb/> Six pieds de long de 9 po<hi rend="superscript">c</hi> prod. 1 pièce et 1 <hi rend="superscript" >ds</hi> 6 <hi rend="superscript">o</hi> de plus,<lb/> Six pds de long de 9 et 10 p<hi rend="superscript">o</hi> produit 1 pièce 3 <hi rend="superscript">ds</hi> 0 <hi rend="superscript">o</hi>,<lb/> Six pieds de long de 10 p<hi rend="superscript">d</hi> produit 1 pièce 4 <hi rend="superscript">d</hi> 8 <hi rend="superscript">o</hi>,<lb/> Six pieds de long de 10 et 11 produit 1 pièce 6 <hi rend="superscript" >d</hi> 4 <hi rend="superscript">o</hi>,<lb/> Six pieds de long de 11 po produit 1 pi. 8 <hi rend="superscript">d</hi> 2 <hi rend="superscript">o</hi>,<lb/> Six pieds de long de 11 et 12 p<hi rend="superscript">o</hi> prod. 1 pi. 10 <hi rend="superscript" >d</hi> 0,<lb/> Six pieds de long de 12 po prod. 2 pièces, et ainsi des autres grosseurs à proportion.</p>
+                        </div>
+                        <pb n="p283"/>
+                        <div type="number" n="6" xml:id="t8Body02.01.06">
+                            <head>6 </head>
+                            <p>Lon remarque dans les anciens bastimens que les bois de Charpente y restoient apparents, et que lon Étoit Exact à les dresser proprement à vive arreste en <sic>toute </sic> leurs faces, cest Sur ce principe que le toisé des grosseurs des bois avoit été Établi ; mais depuis que l’on a commencé de <sic>Suprimer </sic> les poutres, et de faire porter les Solives Sur les murs, leur grande longueur à obligé de les mettre de bois de brin pour Éviter laffoissement que les Solives de Sciage auroient pu causer au milieu des planchers.</p>
+                        </div>
+                        <div type="number" n="7" xml:id="t8Body02.01.07">
+                            <head>7° </head>
+                            <p>La difficulté de Trouver des brins darbres assés droits et de mesme grosseur dans leur longueur pour les pouvoir dresser à vive arreste Sans beaucoup de déchet, a fait qu’on nest pas Si Exact à en aviver les arrêtes ; cependant il faut quils Soient dressés et Équarris dans leur longueur pour Estre comptés de la grosseur quils ont entre les faces, et lors quils Sont mal Équarris, et que les flâches Sont considérables, lon en doit diminuer la grosseur dans Le Toisé à proportion de ce que les flâches en diminuent la force. En ce cas, <pb n="p284"/>La manière d’en toiser La grosseur est de les ceindre au pour tour avec un Cordeau, et de prendre le quart de la grosseur du pourtour pour la grosseur quarrée, ensorte que Si le pour tour étoit de 24 po<hi rend="superscript">c</hi>, La grosseur Seroit de Six pouces quarrés, et Si le pourtour étoit de 20 po<hi rend="superscript">c</hi>, La grosseur Seroit comptée de 5 po<hi rend="superscript">c</hi> quarrés, ainsi des autres.</p>
+                        </div>
+                        <div type="number" n="8" xml:id="t8Body02.01.08">
+                            <head>8° </head>
+                            <p>Lors que Les bois Sont plus gros par un bout que par Lautre, on mesure leur grosseur par le milieu de Leur longueur.</p>
+                        </div>
+                        <metamark rend="doubleLine"/>
+                        <space/>
+                        <!-- Il est préférable d'indiquer les mesures : <space quantity="xx" unit="cm"/> -->
+                    </div>
+                    <pb n="p285"/>
+                    <div type="chapter" n="2" xml:id="t8Body02.02">
+                        <head rend="alignCenter">Chapitre <num>II<hi rend="superscript">e</hi> </num><lb/>
+                            Usage du Toisé de la Charpenterie</head>
+                        <div type="number" n="1" xml:id="t8Body02.02.01">
+                            <head>1° </head>
+                            <p>Il y a deux différentes manières de Toiser les bois de Charpente : La 1<hi rend="superscript" >ère</hi> est est Simple, véritable et judicieuse, elle Se pratique dans les bastimens royeaux et presque dans toutes les provinces, elle deveroit estre la Seule et unique manière de Toiser les bois de Charpenterie.</p>
+                        </div>
+                        <div type="number" n="2" xml:id="t8Body02.02.02">
+                            <head>2° </head>
+                            <p>L’on toise Séparément tous les bois des grosseurs et longueurs justes quils ont en œuvre, compris leurs tenons et portées dune Extrémité à Lautre, Sans y rien augmenter ny diminuer, et ils se réduisent à la pièce ainsi quil est Expliqué <ref type="internal" target="#t8Body01.0?">au chapitre précédent</ref>.</p>
+                        </div>
+                        <div type="number" n="3" xml:id="t8Body02.02.03">
+                            <head>3° </head>
+                            <p>La Seconde manière de Toiser les bois de charpenterie que lon nomme aux us et coutumes de paris, est abusive et en augmente la quantité ; elle est usitée par les ouvriers et par les Experts qui toisent les ouvrages dans l’étendue de la provosté et vicomté de Paris, àmoins quil ne Soit Statué autrement par un devis et marché En conséquence.</p>
+                        </div>
+                        <pb n="p286"/>
+                        <div type="number" n="4" xml:id="t8Body02.02.04">
+                            <head>4° </head>
+                            <p>Il y a deux Choses à observer dans le Toisé de La charpenterie aux us et coutume de paris, l’une regarde en général le toisé de la longueur des bois Employés dans les bâtimens, qui Se fait par progression de 18 pouces de long en 18 pouces, ensorte qu’un morceau de bois de 6 po<hi rend="superscript" >c</hi> de gros, et de 9, 12 et 15 pouces de long, est compté comme Si il avoit 18 pouces ; 21 pouces, 2 pieds, et 2 pieds ¾, Se comptent pour trois pieds de long ; 3 pieds ¼ et audessus, jus quà 4 pieds ½, est compté pour 4 pds ½ de long ; 4 pieds ¾ et au dessus, jus quà 6 peds, pour 6 pieds de Longueur ; et ainsi des autres longueurs lors quelles ont un quart de pieds de plus que la progression de 18 po<hi rend="superscript">c</hi>, elle Se Comptent comme Si elle avoit 1 pied ½ en Sus.</p>
+                        </div>
+                        <div type="number" n="5" xml:id="t8Body02.02.005">
+                            <head>5° </head>
+                            <p>Cette <sic>métode </sic> a pour principe que Les bois quarrés qui arrivent à paris ont leur longueurs fixes, les plus courts de 6 pieds de long, ensuite de 9 pieds, de 12 pieds, de 15 pieds, de 18 pieds, de 21 pieds, <pb n="p287"/>de 24 pieds, ainsi des autres audessus, en augmentant les longueurs de 3 pieds en 3 pieds, lors que dans L’Endroit des bois les mesures ne Sont pas précisément de la longueur dune de ces grandeurs communes, il les faut prendre dans celles au dessus, par Exemple, Si on avoit affaire dun morceau de bois de 6 pieds ½ de long, il le <sic>fauderoit </sic> prendre dans un de 9 pieds ; or comme il Seroit rare de Trouver à remployer le bout qui resteroit de Toute Sa longueur, on ne compte le bout qui reste que pour 18 po<hi rend="superscript">c</hi>, et le bois employé passe pour 7 pieds ½ de long à cause du déchet.</p>
+                        </div>
+                        <div type="number" n="6" xml:id="t8Body02.02.06">
+                            <head>6° </head>
+                            <p>Les bois de 5 et 7 po<hi rend="superscript">c</hi> de gros, Sont comptés aux us et Coutumes de paris, <sic>come </sic> si ils Étoient de 6 po<hi rend="superscript" >c</hi> quarrés.</p>
+                        </div>
+                        <metamark rend="doubleLine alignCenter"/>
+                        <space/>
+                        <!-- Il est préférable d'indiquer les mesures : <space quantity="xx" unit="cm"/> -->
+                    </div>
+                    <pb n="p288"/>
+                    <div type="chapter" n="3" xml:id="t8Body02.03">
+                        <head rend="alignCenter">Chapitre <num>III<hi rend="superscript">e</hi></num> <lb/>Toisé des Planchers</head>
+                        <div type="number" n="1" xml:id="t8Body02.03.01">
+                            <head>1° </head>
+                            <p>La Seconde chose à observer est au toisé de Chaque Espèce d’Ouvrages de charpente, où lon compte les bois aux droits des vuides des bayes comme Si ils Étoient de la longueur des pleins, par Exemple aux planchers où il y a des Trémies pour les âtres des Cheminées et des passages pour Les Tuyeaux, on compte Les Soliveaux assemblés dans les chevestres de La grosseur quils ont, et de la longueur des autres Solives du plancher, prises entre les murs, lors quelles Sont posées Sur des Sablières, ou comprise leurs portées Si elles Sont Scellées dans les murs. Mais lon ne Compte pas les chevestres des <sic>astres</sic>, et les passages des Tuyeaux, dans les quelles les Solives Sont assemblées de quelque grosseur quils Soient.</p>
+                        </div>
+                        <div type="number" n="2" xml:id="t8Body02.03.02">
+                            <head>2° </head>
+                            <p>Pour donner une plus grande Intelligence par des figures, <ref type="internal" target="#t8Fig0115">La 1<hi rend="superscript">ère</hi></ref> est Le plan dune <pb n="p289"/>Salle où Les Solives du plancher Sont posées Sur des Sablières au long d’un mur mitoyen BC, et du mur de <ref type="figure" target="#t8Fig0115">refend AD, à la réserve des Solives d’Enchevestrure I, qui ont leurs portées d’un bout dans le mur de refend, le chevestre de Lâtre Est assemblé dans Les Solives d’Enchevestrure à 3 pieds de distance</ref> du mur de refend, et les autres chevestres 3 Sont aussi assemblés dans les Solives d’Enchevestrure à 6 po<hi rend="superscript">c</hi> de distance du mur de Refend, et les autres chevestres 3, Sont aussi assemblés dans les Solives d’Enchevestrures à 6 po<hi rend="superscript">c</hi> de distance du mesme mur, à Cause des Tuyeaux de cheminées qui Sont Encastrés dans Son Épaisseur <pb n="p290"/>vis à vis Les Chevestres, Supposé que la largeur de cette Salle Soit de 18 pieds ¾ entre le mur mitoyen et le mur de Refend, Les Solives d’Enchevestrure auront 20 pieds ¼ de long à Cause des portées de 6 po<hi rend="superscript">c</hi> dans le mur de refend, elle Seront comptées de 21 pieds, les autres Solives portées Sur les Sablières entre les murs qui n’ont que 19 pieds ¾, Seront aussi comptées de 21 pieds de Long, Les Soliveaux assemblés dans les chevestres 3 qui ont 18 pieds ½, et ceux assemblés dans les Chevestres 2 de Lâtre qui Sont de 16 pieds de long, passeront tous pour 21 pieds, Étant comptés comme Si ils avoient toute la longueur entre le mur mitoyen et le mur de Refend, mais les Chevestres, 2 et 3, ne Seront point comptées, à L’égard des grosseurs, Les Solives et Soliveaux Seront mesurés chacun en particulier de la grosseur quils ont.</p>
+                        </div>
+                        <div type="number" n="3" xml:id="t8Body02.03.03">
+                            <head>3 </head>
+                            <p>Lors que pour Éviter de mettre des Sablières au long des murs pour porter les Solives, des planchers, on assemble joignant les murs des <unclear reason="illegible" resp="#EC" cert="medium">Linçoirs</unclear> en façon de Chevestre dans plusieurs Solives d’Enchevestrure, et lon assemble <pb n="p291"/>dans ces Linçoirs Les autres Solives par les deux bouts, Les Solives d’Enchevestrure qui portent dans les murs Sont toisés de leurs longueurs, compris les portées, et les autres Solives de Remplissage assemblées dans les linçoirs joignant les murs, et dans Les chevestres des âtres et passage des Tuyeaux, Sont comptées de la longueur entre les murs, lon toise à part tous les linçoirs joignant Les murs, tant dun Costé que de lautre, mais on ne compte point les Chevestres au droit des âtres et des Tuyeaux des Cheminées.</p>
+                        </div>
+                        <div type="number" n="4" xml:id="t8Body02.03.04">
+                            <head>4° </head>
+                            <p>Soit une Chambre Entre Le mur mitoyen IK et le mur de Refend DF, dans Lépaisseur duquel Sont des Tuyeaux de Cheminée de La Salle renfoncés, et au devant du mur mitoyen Sont adossés des Tuyeaux et le manteau de La Cheminée de cette chambre, Les deux Solives denchevestrure 4 Sont portées chacunes des deux bouts dans les murs, La Solive d’Enchevestrure 5 est portée dun <pb n="p292" />bout dans le mur mitoyen, et par lautre bout elle Est <ref type="figure" rend="right" target="#t8Fig0116">assemblée dans Le chevestre 7, au derrierre de lâtre de La cheminée de la Salle, Lautre Solive dEnchevestrure 6 est assemblée dun bout dans le Chevestre 8, à 3 pieds de distance du mur Mitoyen </ref>pour <sic>lastre </sic> de La Cheminée de La Salle, et portée par Lautre bout dans le mur de Refend, Le Chevestre 9 est à 18 po<hi rend="superscript">c</hi> de distance du mur mitoyen pour le passage des tuyeaux qui y Sont adossés, les Chevestres 7, 10, Sont à 6 pouces de distance du mur de Refend vis à vis <fw type="catch" place="alignRight">Lâtre</fw> <pb n="p293"/>l’âtre Renfoncée, Les Tuyeaux qui y Sont Encastrés et les linçoirs 11, 12, Sont <sic>joignant </sic> les murs ; lon <sic>Supose </sic> que la largeur de cette chambre entre le mur mitoyen et le mur de Refend de 18 pieds ¼, Les deux Solives d’Enchevestrure 4, ayant leur portée dans les murs des deux bouts, auront 19 <hi rend="superscript">ds</hi> ¼ de long, elles Seront comptées de 19 pieds ½, La Solive d’Enchevestrure 5 aura 18 pieds juste de longueur, et la Solive d’Enchevestrure 6 aura 15 pieds ½ ; elles Seront lune et Lautre toisées comme Si elles avoient toute la longueur entre les deux murs et une portée dun bout, cest à dire pour 18 pieds trois quarts, et comptées de 19 pieds ½. Tous les Soliveaux assemblés de deux bouts dans les Chevestres et les linçoirs Seront aussi toisés de 18 pieds ¼, comme Si ils étoient de Toute la longueur entre les deux murs, et comptés pour 19 pieds ½, quoyque ceux qui Sont assemblés dans les chevestres 7, 10, et les Linçoirs 12, nayant que 17 pieds et ¼, les Soliveaux assemblés dans le linçoir 11, et le chevestre 9, 16 pieds ¼, et les Soliveaux <pb n="p294"/> assemblés dans les deux Chevestres 8 et 10, 14 pieds et ¼. Ensorte que pour les 3 po<hi rend="superscript">c</hi> de plus que 18 pieds de distance entre les deux murs, Les Solives d’Enchevestrure et tous les Soliveaux, tant grands que petits, Sont comptés comme Si ils avoient chacun 19 pieds ½ de longueur ; mais on ne compte pas les Chevestres 7, 10, 9 et 8, de quelque grosseur quils Soient ; à légard des linçoirs 11 et 12, ils Sont toisés et comptés à part, et Si le Chevestre 7 ou 10, joignoit le mur de Refend, il Seroit réputé linçoirs et toisé comme ceux de lautre bout, joignant Le mur mitoyen, au Surplus du Toisé des Soliveaux.</p>
+                        </div>
+                        <div type="number" n="5" xml:id="t8Body02.03.05">
+                            <head>5° </head>
+                            <p>Si il arrivoit que, par lavidité du gain, L’Entrepreneur pour faire Servir du bois de 12 pieds aux Soliveaux entre les Chevestres 8 et 10, reculât lune ou lautre de ces chevestres, et mit une arrierre chevestre pour réduire La Trémis de lâtre ou le passage du Tuyeaux à la mesure ordinaire, cet arrierre chevestre ne doit pas Être compté, <pb n="p295"/>et Lon Seroit endroit de luy faire remettre le Chevestre à Sa place, et des Soliveaux plus longs, dauant plus que Se Seroit une mal façon qui affoibliroit les Solives d’Enchevestrure par la multiplicité des Mortoises.</p>
+                        </div>
+                        <div type="number" n="6" xml:id="t8Body02.03.06">
+                            <head>6 </head>
+                            <p>Lors que Les Solives des planchers Sont du mesme Sens que les murs contre lesquels Les cheminées Sont adossées, Les chevestres des âtres portent dun bout dans le mur, et Sont assemblés de lautre bout dans La Solive d’Enchevestrure qui passe au devant de L’âtre, à 3 pieds de distance du mur, Lon toise les Chevestres et les Soliveaux qui y Sont assemblés, chacun à part pour cequils contiennent.</p>
+                        </div>
+                        <div type="number" n="7" xml:id="t8Body02.03.07">
+                            <head>7 </head>
+                            <p><seg xml:id="t8Body02.03.07.001">Dans cette disposition des Solives parallèles au mur, où Sont adossées les Cheminées, lon Se Sert de Chevestres de fer préférablement aux chevestres de bois, aux costés des âtres particulièrement ; quand il ya des tuyeaux passants à Côté des manteaux, par ceque les charges de plâtre quil faut mettre des deux <pb n="p296"/> costés des Chevestres de bois pour les <sic>garentir </sic> du feu, font Éloigner les Tuyeaux et occupent une grande Largeur dans les Chambres, au lieu que les Chevestres de fer Se placent dans les Épaisseurs des languettes de refend, et donnent plus de facilité à dévoyer Les Tuyeaux ; alors on toise les Soliveaux qui posent Sur les chevestres de fer, entre la Solive d’Enchevestrure et le mur où les Tuyeaux passent, pour ce quils Sont,</seg> <seg xml:id="t8Body02.03.07.002">comme <ref type="figure" target="#t8Fig0117"> à la <ref type="internal" target="#t8Fig0117">Fig. III</ref>, Servant anti chambre, où La Solive d’Enchevestrure 13 est parallèle au mur de refend FG, contre lequel Le Manteau de cheminée</ref> et les Tuyeaux passans Sont adossés ; ainsi qu’au cabinet, comme à la <ref type="internal" target="#t8Fig0118">Fig. IV</ref>,</seg> <seg xml:id="t8Body02.03.07.003">où les Solives du <pb n="297" />plancher portent, dun bout Sur le mur de face GH, et de Lautre <ref type="figure" target="#t8Fig0118"> bout Sur la cloison de refend EI, et Sont parallèles au mur de refend EG, où Sont Encastrés le Manteau de Cheminée et les tuyeaux passans au costé ; lon toise </ref> Séparément chacun des Soliveaux 14 et 15 qui posent Sur des chevestres de fer, portés dun bout Sur les SOlives <sic>den chevestrure </sic> 13 et 16, et de lautre bout Scellés dans le mur de refend entre les âtres et les Tuyeaux.</seg></p>
+                        </div>
+                        <div type="number" n="8" xml:id="t8Body02.03.08">
+                            <head>8° </head>
+                            <p>Quand les plattes bandes des fenestres des murs de face qui portent les planchers Sont faits en Claveaux de pierre de Taille, pour <pb n="p298"/>ne point altérer La forme des Claveaux, on assemble Les Solives dans des Linçoirs, au dedans œuvre des murs, au droit des bayes, et ces linçoirs Sont assemblés dans des Solives d’Enchevestrure qui portent <del type="overstrike"><unclear>qui portent</unclear></del> Sur les Trumeaux comme aux fig. III et IV, lon toise à part Les linçoirs 17, pour cequils contiennent, et la longueur des Solives qui y sont assemblées du dedans œuvre du mur de face.</p>
+                        </div>
+                        <div type="number" n="9" xml:id="t8Body02.03.09">
+                            <head>9° </head>
+                            <p>Aux planchers où il y a de grandes Bayes pour des passages d’Escaliers de dégagement, ou autrement, L’on toise Séparément la Solive d’Enchevestrure, Le Chevestre, et les Soliveaux qui y Sont assemblés chacun pour cequils Sont.</p>
+                        </div>
+                        <metamark rend="doubleLine alignCenter"/>
+                        <space/>
+                        <!-- Il est préférable d'indiquer les mesures : <space quantity="xx" unit="cm"/> -->
+                    </div>
+                    <pb n="p299"/>
+                    <gap reason="sampling"/>
+                </div>
+            </div>
+        </body>
+        <back xml:id="t8Back">
+            <div xml:id="t8BackFr" xml:lang="fre" type="transcription">
+                <gap reason="sampling"/>
+                
+                <!-- Inclusion du fichier des figures -->
+                <xi:include href="divs/desgodetsT8Figures.tei.xml" parse="xml">
+                    <xi:fallback>Fichier des figures de T8 non trouvé</xi:fallback>
+                </xi:include>
+            </div>
+            
+            
+        </back>
+    </text>
+</TEI>

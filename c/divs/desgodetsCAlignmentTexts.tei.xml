@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier d'alignement des textes des manuscrits sur les Commodités 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : Le fichier est placé au niveau du corpus dans le système de fichier car il est par nature indépendant de la version du cours édité. Le même fichier pouvant ainsi par la suite être utilisé pour l'édition des autres versions qui ont pour le moment seulement fait l'objet d'un encodage sommaire. -->
+<!-- l'attribut targets de link est déprécié au profit de target -->
+<!-- TODO corriger l'id de la division (voir avec Pauline) -->
+<TEI  xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+   <!-- début de l'en-tête TEI -->
+   <teiHeader>
+      <fileDesc>
+         <!-- mentions de titre et de responsabilité -->
+         <titleStmt>
+            <title xml:lang="fre" type="main">Traité des commodités</title>
+            <title xml:lang="fre" type="sub">Fichier d'alignement du texte</title>
+            <author>
+               <persName>
+                  <forename>Antoine</forename>
+                  <surname>Desgodets</surname>
+               </persName>
+            </author>
+            <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+            <principal>
+               <persName ref="#RC">
+                  <forename>Robert</forename>
+                  <surname>Carvais</surname>
+                  <affiliation>
+                     <orgName>Centre National de la Recherche Scientifique</orgName>
+                     <orgName type="acronym">CNRS</orgName>
+                     <roleName>responsable d'ANR</roleName>
+                  </affiliation>
+               </persName>
+            </principal>
+            <!-- organismes qui ont financé l'opération -->
+            <funder>
+               <orgName>Agence Nationale de Recherche</orgName>
+               <orgName type="acronym">ANR</orgName>
+               <date from="2008" to="2013">2008-2013</date>
+            </funder>
+            <funder>
+               <orgName>Association Française d'Histoire de la Construction</orgName>
+               <orgName type="acronym">AFHC</orgName>
+               <date when="2013">2013</date>
+            </funder>
+            <!-- mentions de responsabilité secondaires -->
+            <respStmt>
+               <resp key="prg">modélisation XML-TEI</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="edt">édition</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+               <persName ref="#HRC">
+                  <forename>Hélène</forename>
+                  <surname>Rousteau-Chambon</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="mrk">encodage</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <!-- mention d'édition -->
+         <editionStmt>
+            <edition n="1">première édition électronique, <date from="2013" to="2013"
+               >2008-2013</date></edition>
+         </editionStmt>
+         <extent><!-- TODO : taille du fichier en octet --></extent>
+         <!-- information sur la publication électronique -->
+         <publicationStmt>
+            <date when="2013">2013</date>
+            <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+            <idno>cAlignmentTexts</idno>
+            <!-- responsable de la publication -->
+            <publisher>
+               <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+               <orgName type="acronym">CTAD</orgName>
+               <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+            </publisher>
+            <availability status="restricted" xml:id="cAlignmentTextsImagesLicence">
+               <p>Les images numériques des manuscrits sont mises à disposition par les institutions
+                  partenaires mais restent leur propriété exclusive. Celles-ci en autorisent la
+                  reproduction et la réutilisation selon leurs propres règles en vigueur. Toute
+                  diffusion de ces images, sous quelque forme et sur quelque support que ce soit
+                  (papier, audiovisuel, ou numérique), pour quelque finalité que ce soit (pédagogique,
+                  scientifique ou commercial), doit faire l’objet d’une demande d’autorisation préalable
+                  auprès de l’institution concernée.</p>
+            </availability>
+            <availability status="restricted" xml:id="cAlignmentTextsTextLicence">
+               <!-- TODO : <licence> à ajouter partout -->
+               <licence target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+                  <p>Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative
+                     Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes
+                     Conditions 3.0 France.</p>
+                  <graphic url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+               </licence>
+               <p>Le Centre de théorie et d'analyse du droit (UMR 7074) met à disposition cette ressource
+                  électronique structurée, protégée par le code de la propriété intellectuelle sur le
+                  droit d'auteur (L111-1) et sur les bases de données (L341-1), selon les termes de la
+                  licence Creative Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                  Modification ; 3.0 France ». <lb />Cette licence est disponible en ligne : <ref
+                     target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                     >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou par courrier postal à
+                  Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105,
+                  USA.</p>
+               <p>Pas d'Utilisation Commerciale : Le Centre de théorie et d'analyse du droit souhaite
+                  encourager l'utilisation et l'amélioration de ses ressources électroniques, pour les
+                  intérêts de l'enseignement et de la recherche. Toute autorisation au-delà du champ de
+                  cette licence doit être obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+               <p>Paternité : Le Centre de théorie et d'analyse du droit demande à ce que toute
+                  publication dérivée de ses ressources électroniques comporte : <lb />1. le nom du
+                  Centre de théorie et d'analyse du droit et, pour les publications électroniques, son
+                  logo <lb />2. l'URI permettant d'accéder à la page citée sur notre site, ou à la page
+                  d'accueil de la ressource <lb />3. la date du fichier source utilisé. </p>
+               <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à des fins non
+                  commerciales, tant que vous nous créditez et que les nouvelles œuvres sont diffusées
+                  selon les mêmes conditions. Cependant, afin de mieux servir la communauté
+                  scientifique, le Centre de théorie et d'analyse du droit s'engage à conserver et à
+                  toujours offrir publiquement la version la plus à jour de ses ressources électroniques
+                  par une URI pérenne. Il s'engage en conséquence à les corriger et à les améliorer, à
+                  intégrer les contributions qui lui sont soumises (après validation par un comité
+                  scientifique), et à référencer l'origine de ces contributions. Toute modification de
+                  la ressource qui ne serait pas reversée à la version de référence sous l'autorité
+                  éditoriale du Centre de théorie et d'analyse risquerait en conséquence d'être perdue,
+                  afin de ne pas disperser les contributions et de permettre les meilleures conditions
+                  possibles de collaboration scientifique, nous vous invitons à nous en faire part.</p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+            <title xml:lang="fre" type="sub">une édition électronique</title>
+            <idno type="URI">http://www.desgodets.net</idno>
+         </seriesStmt>
+         <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+         <sourceDesc>
+            <!-- description de la source -->
+            <p xml:id="cAlignmentTexts">Fichier nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <!-- description du projet éditorial -->
+         <projectDesc>
+            <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+               formalisation du savoir architectural au XVII<hi rend="superscript">e</hi> siècle.</p>
+         </projectDesc>
+         <!-- déclaration des principes éditoriaux -->
+         <editorialDecl>
+            <correction>
+               <p>La syntaxe originale du manuscrit a été respectée en suivant les indications de Bernard
+                  Barbiche, <ref type="external"
+                     target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+                     >Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript"
+                        >e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+            </correction>
+            <hyphenation>
+               <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de l'hyphénation.</p>
+            </hyphenation>
+            <interpretation>
+               <p>Les interprétations sont traitées au moyen d'un élément supplied ou bien sont renvoyées
+                  en notes. Une mention de responsabilité est fournie grâce à l'attribut resp sur le
+                  passage concerné.</p>
+            </interpretation>
+            <normalization>
+               <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été
+                  développées.</p>
+            </normalization>
+            <stdVals>
+               <p>On utilise...</p>
+            </stdVals>
+            <quotation>
+               <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote, soit au
+                  moyen d'un élément...</p>
+            </quotation>
+         </editorialDecl>
+         <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+         <refsDecl>
+            <p>Description du système de référence canonique. Plus tard on fournira peut-être une
+               expression régulière.</p>
+         </refsDecl>
+         <samplingDecl>
+            <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le cas].</p>
+         </samplingDecl>
+         <variantEncoding method="location-referenced" location="external" />
+      </encodingDesc>
+      <!-- présentation du profil de fichier -->
+      <profileDesc>
+         <creation when="2013">2013</creation>
+         <langUsage>
+            <language ident="fre" usage="99">Français (langue principale du corpus)</language>
+            <language ident="lat" usage="01">Latin (langue utilisée dans le corpus)</language>
+            <!-- TODO : évaluer les langues -->
+         </langUsage>
+         <textClass>
+            <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+               <term>Architecture</term>
+               <term>18e siècle</term>
+               <term>France</term>
+               <term>Architecture –– Philosophie</term>
+               <term>Architecture religieuse</term>
+               <term>Architecture hospitalière</term>
+               <term>Architecture publique</term>
+            </keywords>
+            <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+               <term>Architecture, Modern</term>
+               <term>17th-18th centuries</term>
+               <term>France</term>
+               <term>Architecture -- Philosophy</term>
+               <term>Church architecture</term>
+               <term>Hospital architecture</term>
+               <term>Public architecture</term>
+            </keywords>
+            <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+               <term>Text</term>
+            </classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2013-01-06" who="#EC">augmentation de l'en-tête
+            TEI</change>
+         <change when="2012-09-05" who="#EC">première version du
+            fichier</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="alignmentText" xml:id="cAlignmentText">
+            <linkGrp>
+               <!-- Front -->
+               <link target="#c1Front #c2Front" />
+               <link target="#c1FrontFr #c2FrontFr02" />
+               <link target="#c1FrontFr01  #c2FrontFr01" />
+               <link target="#c1FrontFr01.p001  #c2FrontFr01.p001" />
+               <link target="#c1FrontFr01.p002  #c2FrontFr01.p002" />
+               <link target="#c1FrontFr01.p003  #c2FrontFr01.p003" />
+               <link target="#c1FrontFr01.p004  #c2FrontFr01.p004" />
+               <link target="#c1FrontFr01.p005  #c2FrontFr01.p005" />
+               <link target="#c1FrontFr01.p006  #c2FrontFr01.p006" />
+               <link target="#c1FrontFr01.p007  #c2FrontFr01.p007" />
+               <link target="#c1FrontFr01.p008  #c2FrontFr01.p008" />
+               <link target="#c1FrontFr01.p009  #c2FrontFr01.p009" />
+               <link target="#c1FrontFr01.p010  #c2FrontFr01.p010" />
+               <!-- Body -->
+               <link target="#c1Body  #c2Body" />
+               <link target="#c1BodyFr #c2BodyFr" />
+               <!-- 1ère Partie -->
+               <link target="#c1BodyFr01  #c2BodyFr01" />
+               <!-- 1ère Partie, 1er Chapitre -->
+               <link target="#c1BodyFr01.01  #c2BodyFr01.01" />
+               <!-- 1ère Partie, 1er chapitre, 1ère section -->
+               <link target="#c1BodyFr01.01.001  #c2BodyFr01.01.001" />
+               <link target="#c1BodyFr01.01.001.p001  #c2BodyFr01.01.001.p001" />
+               <link target="#c1BodyFr01.01.001.p002  #c2BodyFr01.01.001.p002" />
+               <link target="#c1BodyFr01.01.001.p003  #c2BodyFr01.01.001.p003" />
+               <link target="#c1BodyFr01.01.001.p004  #c2BodyFr01.01.001.p004" />
+               <link target="#c1BodyFr01.01.001.p005  #c2BodyFr01.01.001.p005" />
+               <link target="#c1BodyFr01.01.001.p006  #c2BodyFr01.01.001.p006" />
+               <!-- 1ère Partie, 1er chapitre, 2ème section -->
+               <link target="#c1BodyFr01.01.002  #c2BodyFr01.01.002" />
+               <link target="#c1BodyFr01.01.002.p001  #c2BodyFr01.01.002.p001" />
+               <link target="#c1BodyFr01.01.002.p002  #c2BodyFr01.01.002.p002" />
+               <link target="#c1BodyFr01.01.002.p003  #c2BodyFr01.01.002.p003" />
+               <link target="#c1BodyFr01.01.002.p004  #c2BodyFr01.01.002.p004" />
+               <link target="#c1BodyFr01.01.002.p005  #c2BodyFr01.01.002.p005" />
+               <link target="#c1BodyFr01.01.002.p006  #c2BodyFr01.01.002.p006" />
+               <link target="#c1BodyFr01.01.002.p007  #c2BodyFr01.01.002.p007" />
+               <link target="#c1BodyFr01.01.002.p008  #c2BodyFr01.01.002.p008" />
+               <link target="#c1BodyFr01.01.002.p009  #c2BodyFr01.01.002.p009" />
+               <!-- 1ère Partie, 1er chapitre, 3ème section -->
+               <link target="#c1BodyFr01.01.003  #c2BodyFr01.01.003" />
+               <link target="#c1BodyFr01.01.003.p001  #c2BodyFr01.01.003.p001" />
+               <link target="#c1BodyFr01.01.003.p002  #c2BodyFr01.01.003.p002" />
+               <link target="#c1BodyFr01.01.003.p003  #c2BodyFr01.01.003.p003" />
+               <link target="#c1BodyFr01.01.003.p004  #c2BodyFr01.01.003.p004" />
+               <!-- 1ère Partie, 1er chapitre, 4ème section -->
+               <link target="#c1BodyFr01.01.004  #c2BodyFr01.01.004" />
+               <link target="#c1BodyFr01.01.004.p001  #c2BodyFr01.01.004.p001" />
+               <link target="#c1BodyFr01.01.004.p002  #c2BodyFr01.01.004.p002" />
+               <link target="#c1BodyFr01.01.004.p003  #c2BodyFr01.01.004.p003" />
+               <!-- 1ère Partie, 1er chapitre, 5ème section -->
+               <link target="#c1BodyFr01.01.005  #c2BodyFr01.01.005" />
+               <link target="#c1BodyFr01.01.005.p001  #c2BodyFr01.01.005.p001" />
+               <link target="#c1BodyFr01.01.005.p002  #c2BodyFr01.01.005.p002" />
+               <link target="#c1BodyFr01.01.005.p003  #c2BodyFr01.01.005.p003" />
+               <link target="#c1BodyFr01.01.005.p004  #c2BodyFr01.01.005.p004" />
+               <link target="#c1BodyFr01.01.005.p005  #c2BodyFr01.01.005.p005" />
+               <!-- 1ère Partie, 1er chapitre, 6ème section -->
+               <link target="#c1BodyFr01.01.006  #c2BodyFr01.01.006" />
+               <link target="#c1BodyFr01.01.006.p001  #c2BodyFr01.01.006.p001" />
+               <link target="#c1BodyFr01.01.006.p002  #c2BodyFr01.01.006.p002" />
+               <link target="#c1BodyFr01.01.006.p003  #c2BodyFr01.01.006.p003" />
+               <link target="#c1BodyFr01.01.006.p004  #c2BodyFr01.01.006.p004" />
+               <!-- 1ère Partie, 1er chapitre, 7ème section -->
+               <link target="#c1BodyFr01.01.007  #c2BodyFr01.01.007" />
+               <link target="#c1BodyFr01.01.007.p001  #c2BodyFr01.01.007.p001" />
+               <link target="#c1BodyFr01.01.007.p002  #c2BodyFr01.01.007.p002" />
+               <link target="#c1BodyFr01.01.007.p003  #c2BodyFr01.01.007.p003" />
+               <link target="#c1BodyFr01.01.007.p004  #c2BodyFr01.01.007.p004" />
+               <link target="#c1BodyFr01.01.007.p005  #c2BodyFr01.01.007.p005" />
+               <link target="#c1BodyFr01.01.007.p006  #c2BodyFr01.01.007.p006" />
+               <link target="#c1BodyFr01.01.007.p007  #c2BodyFr01.01.007.p007" />
+               <!-- 1ère Partie, 1er chapitre, 8ème section -->
+               <link target="#c1BodyFr01.01.008  #c2BodyFr01.01.008" />
+               <link target="#c1BodyFr01.01.008.p001  #c2BodyFr01.01.008.p001" />
+               <link target="#c1BodyFr01.01.008.p002  #c2BodyFr01.01.008.p002" />
+               <link target="#c1BodyFr01.01.008.p003  #c2BodyFr01.01.008.p003" />
+               <link target="#c1BodyFr01.01.008.p004  #c2BodyFr01.01.008.p004" />
+               <link target="#c1BodyFr01.01.008.p005  #c2BodyFr01.01.008.p005" />
+               <link target="#c1BodyFr01.01.008.p006  #c2BodyFr01.01.008.p006" />
+               <link target="#c1BodyFr01.01.008.p007  #c2BodyFr01.01.008.p007" />
+               <link target="#c1BodyFr01.01.008.p008  #c2BodyFr01.01.008.p008" />
+               <link target="#c1BodyFr01.01.008.p009  #c2BodyFr01.01.008.p009" />
+               <link target="#c1BodyFr01.01.008.p010  #c2BodyFr01.01.008.p010" />
+               <link target="#c1BodyFr01.01.008.p011  #c2BodyFr01.01.008.p011" />
+               <link target="#c1BodyFr01.01.008.p012  #c2BodyFr01.01.008.p012" />
+               <link target="#c1BodyFr01.01.008.p013  #c2BodyFr01.01.008.p013" />
+               <link target="#c1BodyFr01.01.008.p014  #c2BodyFr01.01.008.p014" />
+               <link target="#c1BodyFr01.01.008.p015  #c2BodyFr01.01.008.p015" />
+               <link target="#c1BodyFr01.01.008.p016  #c2BodyFr01.01.008.p016" />
+               <link target="#c1BodyFr01.01.008.p017  #c2BodyFr01.01.008.p017" />
+               <link target="#c1BodyFr01.01.008.p018  #c2BodyFr01.01.008.p018" />
+               <link target="#c1BodyFr01.01.008.p019  #c2BodyFr01.01.008.p019" />
+               <link target="#c1BodyFr01.01.008.p020  #c2BodyFr01.01.008.p020" />
+               <link target="#c1BodyFr01.01.008.p021  #c2BodyFr01.01.008.p021" />
+               <link target="#c1BodyFr01.01.008.p022  #c2BodyFr01.01.008.p022" />
+               <link target="#c1BodyFr01.01.008.p023  #c2BodyFr01.01.008.p023" />
+               <link target="#c1BodyFr01.01.008.p024  #c2BodyFr01.01.008.p024" />
+               <link target="#c1BodyFr01.01.008.p025  #c2BodyFr01.01.008.p025" />
+               <link target="#c1BodyFr01.01.008.p026  #c2BodyFr01.01.008.p026" />
+               <link target="#c1BodyFr01.01.008.p027  #c2BodyFr01.01.008.p027" />
+               <!-- 1ère Partie, 1er chapitre, 9ème section -->
+               <link target="#c1BodyFr01.01.009  #c2BodyFr01.01.009" />
+               <link target="#c1BodyFr01.01.009.p001  #c2BodyFr01.01.009.p001" />
+               <link target="#c1BodyFr01.01.009.p002  #c2BodyFr01.01.009.p002" />
+               <link target="#c1BodyFr01.01.009.p003  #c2BodyFr01.01.009.p003" />
+               <link target="#c1BodyFr01.01.009.p004  #c2BodyFr01.01.009.p004" />
+               <link target="#c1BodyFr01.01.009.p005  #c2BodyFr01.01.009.p005" />
+               <link target="#c1BodyFr01.01.009.p006  #c2BodyFr01.01.009.p006" />
+
+               <!-- 1ère Partie, 2ème Chapitre -->
+               <link target="#c1BodyFr01.02  #c2BodyFr01.02" />
+               <!-- 1ère Partie, 2ème Chapitre, 1ère section -->
+               <link target="#c1BodyFr01.02.001  #c2BodyFr01.02.001" />
+               <link target="#c1BodyFr01.02.001.p001  #c2BodyFr01.02.001.p001" />
+               <link target="#c1BodyFr01.02.001.p002  #c2BodyFr01.02.001.p002" />
+               <link target="#c1BodyFr01.02.001.p003  #c2BodyFr01.02.001.p003" />
+               <link target="#c1BodyFr01.02.001.p004  #c2BodyFr01.02.001.p004" />
+               <link target="#c1BodyFr01.02.001.p005  #c2BodyFr01.02.001.p005" />
+               <link target="#c1BodyFr01.02.001.p006  #c2BodyFr01.02.001.p006" />
+               <link target="#c1BodyFr01.02.001.p007  #c2BodyFr01.02.001.p007" />
+               <link target="#c1BodyFr01.02.001.p008  #c2BodyFr01.02.001.p008" />
+               <link target="#c1BodyFr01.02.001.p009  #c2BodyFr01.02.001.p009" />
+               <link target="#c1BodyFr01.02.001.p010  #c2BodyFr01.02.001.p010" />
+               <link target="#c1BodyFr01.02.001.p011  #c2BodyFr01.02.001.p011" />
+               <link target="#c1BodyFr01.02.001.p012  #c2BodyFr01.02.001.p012" />
+               <link target="#c1BodyFr01.02.001.p013  #c2BodyFr01.02.001.p013" />
+               <link target="#c1BodyFr01.02.001.p014  #c2BodyFr01.02.001.p014" />
+               <link target="#c1BodyFr01.02.001.p015  #c2BodyFr01.02.001.p015" />
+               <link target="#c1BodyFr01.02.001.p016  #c2BodyFr01.02.001.p016" />
+               <link target="#c1BodyFr01.02.001.p017  #c2BodyFr01.02.001.p017" />
+               <link target="#c1BodyFr01.02.001.p018  #c2BodyFr01.02.001.p018" />
+               <link target="#c1BodyFr01.02.001.p019  #c2BodyFr01.02.001.p019" />
+               <link target="#c1BodyFr01.02.001.p020  #c2BodyFr01.02.001.p020" />
+               <link target="#c1BodyFr01.02.001.p021  #c2BodyFr01.02.001.p021" />
+               <link target="#c1BodyFr01.02.001.p022  #c2BodyFr01.02.001.p022" />
+               <link target="#c1BodyFr01.02.001.p023  #c2BodyFr01.02.001.p023" />
+               <link target="#c1BodyFr01.02.001.p024  #c2BodyFr01.02.001.p024" />
+               <link target="#c1BodyFr01.02.001.p025  #c2BodyFr01.02.001.p025" />
+               <link target="#c1BodyFr01.02.001.p026  #c2BodyFr01.02.001.p026" />
+               <link target="#c1BodyFr01.02.001.p027  #c2BodyFr01.02.001.p027" />
+               <link target="#c1BodyFr01.02.001.p028  #c2BodyFr01.02.001.p028" />
+               <link target="#c1BodyFr01.02.001.p029  #c2BodyFr01.02.001.p029" />
+               <link target="#c1BodyFr01.02.001.p030  #c2BodyFr01.02.001.p030" />
+               <!-- 1ère Partie, 2ème Chapitre, 2ème section -->
+               <link target="#c1BodyFr01.02.002  #c2BodyFr01.02.002" />
+               <link target="#c1BodyFr01.02.002.p001  #c2BodyFr01.02.002.p001" />
+               <link target="#c1BodyFr01.02.002.p002  #c2BodyFr01.02.002.p002" />
+               <link target="#c1BodyFr01.02.002.p003  #c2BodyFr01.02.002.p003" />
+               <link target="#c1BodyFr01.02.002.p004  #c2BodyFr01.02.002.p004" />
+               <link target="#c1BodyFr01.02.002.p005  #c2BodyFr01.02.002.p005" />
+               <link target="#c1BodyFr01.02.002.p006  #c2BodyFr01.02.002.p006" />
+               <link target="#c1BodyFr01.02.002.p007  #c2BodyFr01.02.002.p007" />
+               <link target="#c1BodyFr01.02.002.p008  #c2BodyFr01.02.002.p008" />
+               <!-- 1ère Partie, 2ème Chapitre, 3ème section -->
+               <link target="#c1BodyFr01.02.003  #c2BodyFr01.02.003" />
+               <link target="#c1BodyFr01.02.003.p001  #c2BodyFr01.02.003.p001" />
+               <link target="#c1BodyFr01.02.003.p002  #c2BodyFr01.02.003.p002" />
+               <link target="#c1BodyFr01.02.003.p003  #c2BodyFr01.02.003.p003" />
+               <link target="#c1BodyFr01.02.003.p004  #c2BodyFr01.02.003.p004" />
+               <link target="#c1BodyFr01.02.003.p005  #c2BodyFr01.02.003.p005" />
+               <link target="#c1BodyFr01.02.003.p006  #c2BodyFr01.02.003.p006" />
+               <link target="#c1BodyFr01.02.003.p007  #c2BodyFr01.02.003.p007" />
+               <link target="#c1BodyFr01.02.003.p008  #c2BodyFr01.02.003.p008" />
+               <link target="#c1BodyFr01.02.003.p009  #c2BodyFr01.02.003.p009" />
+               <link target="#c1BodyFr01.02.003.p010  #c2BodyFr01.02.003.p010" />
+               <link target="#c1BodyFr01.02.003.p011  #c2BodyFr01.02.003.p011" />
+               <link target="#c1BodyFr01.02.003.p012  #c2BodyFr01.02.003.p012" />
+               <link target="#c1BodyFr01.02.003.p013  #c2BodyFr01.02.003.p013" />
+               <link target="#c1BodyFr01.02.003.p014  #c2BodyFr01.02.003.p014" />
+               <link target="#c1BodyFr01.02.003.p015  #c2BodyFr01.02.003.p015" />
+               <link target="#c1BodyFr01.02.003.p016  #c2BodyFr01.02.003.p016" />
+               <link target="#c1BodyFr01.02.003.p017  #c2BodyFr01.02.003.p017" />
+               <link target="#c1BodyFr01.02.003.p018  #c2BodyFr01.02.003.p018" />
+               <link target="#c1BodyFr01.02.003.p019  #c2BodyFr01.02.003.p019" />
+               <link target="#c1BodyFr01.02.003.p020  #c2BodyFr01.02.003.p020" />
+               <!-- 1ère Partie, 2ème Chapitre, 4ème section -->
+               <link target="#c1BodyFr01.02.004  #c2BodyFr01.02.004" />
+               <link target="#c1BodyFr01.02.004.p001  #c2BodyFr01.02.004.p001" />
+               <link target="#c1BodyFr01.02.004.p002  #c2BodyFr01.02.004.p002" />
+               <link target="#c1BodyFr01.02.004.p003  #c2BodyFr01.02.004.p003" />
+               <link target="#c1BodyFr01.02.004.p004  #c2BodyFr01.02.004.p004" />
+               <link target="#c1BodyFr01.02.004.p005  #c2BodyFr01.02.004.p005" />
+               <link target="#c1BodyFr01.02.004.p006  #c2BodyFr01.02.004.p006" />
+               <link target="#c1BodyFr01.02.004.p007  #c2BodyFr01.02.004.p007" />
+               <link target="#c1BodyFr01.02.004.p008  #c2BodyFr01.02.004.p008" />
+               <link target="#c1BodyFr01.02.004.p009  #c2BodyFr01.02.004.p009" />
+               <link target="#c1BodyFr01.02.004.p010  #c2BodyFr01.02.004.p010" />
+               <link target="#c1BodyFr01.02.004.p011  #c2BodyFr01.02.004.p011" />
+               <link target="#c1BodyFr01.02.004.p012  #c2BodyFr01.02.004.p012" />
+               <!-- 1ère Partie, 2ème Chapitre, 5ème section -->
+               <link target="#c1BodyFr01.02.005  #c2BodyFr01.02.005" />
+               <link target="#c1BodyFr01.02.005.p001  #c2BodyFr01.02.005.p001" />
+               <link target="#c1BodyFr01.02.005.p002  #c2BodyFr01.02.005.p002" />
+               <link target="#c1BodyFr01.02.005.p003  #c2BodyFr01.02.005.p003" />
+               <link target="#c1BodyFr01.02.005.p004  #c2BodyFr01.02.005.p004" />
+               <link target="#c1BodyFr01.02.005.p005  #c2BodyFr01.02.005.p005" />
+               <link target="#c1BodyFr01.02.005.p006  #c2BodyFr01.02.005.p006" />
+               <link target="#c1BodyFr01.02.005.p007  #c2BodyFr01.02.005.p007" />
+               <link target="#c1BodyFr01.02.005.p008  #c2BodyFr01.02.005.p008" />
+               <link target="#c1BodyFr01.02.005.p009  #c2BodyFr01.02.005.p009" />
+               <link target="#c1BodyFr01.02.005.p010  #c2BodyFr01.02.005.p010" />
+               <link target="#c1BodyFr01.02.005.p011  #c2BodyFr01.02.005.p011" />
+               <link target="#c1BodyFr01.02.005.p012  #c2BodyFr01.02.005.p012" />
+               <link target="#c1BodyFr01.02.005.p013  #c2BodyFr01.02.005.p013" />
+               <link target="#c1BodyFr01.02.005.p014  #c2BodyFr01.02.005.p014" />
+               <link target="#c1BodyFr01.02.005.p015  #c2BodyFr01.02.005.p015" />
+               <link target="#c1BodyFr01.02.005.p016  #c2BodyFr01.02.005.p016" />
+               <link target="#c1BodyFr01.02.005.p017  #c2BodyFr01.02.005.p017" />
+               <link target="#c1BodyFr01.02.005.p018  #c2BodyFr01.02.005.p018" />
+               <link target="#c1BodyFr01.02.005.p019  #c2BodyFr01.02.005.p019" />
+               <link target="#c1BodyFr01.02.005.p020  #c2BodyFr01.02.005.p020" />
+               <link target="#c1BodyFr01.02.005.p021  #c2BodyFr01.02.005.p021" />
+               <link target="#c1BodyFr01.02.005.p022  #c2BodyFr01.02.005.p022" />
+               <link target="#c1BodyFr01.02.005.p023  #c2BodyFr01.02.005.p023" />
+               <link target="#c1BodyFr01.02.005.p024  #c2BodyFr01.02.005.p024" />
+               <link target="#c1BodyFr01.02.005.p025  #c2BodyFr01.02.005.p025" />
+               <link target="#c1BodyFr01.02.005.p026  #c2BodyFr01.02.005.p026" />
+               <link target="#c1BodyFr01.02.005.p027  #c2BodyFr01.02.005.p027" />
+               <link target="#c1BodyFr01.02.005.p028  #c2BodyFr01.02.005.p028" />
+               <link target="#c1BodyFr01.02.005.p029  #c2BodyFr01.02.005.p029" />
+               <link target="#c1BodyFr01.02.005.p030  #c2BodyFr01.02.005.p030" />
+               <!-- 1ère Partie, 2ème Chapitre, 6ème section -->
+               <link target="#c1BodyFr01.02.006  #c2BodyFr01.02.006" />
+               <link target="#c1BodyFr01.02.006.p001  #c2BodyFr01.02.006.p001" />
+               <link target="#c1BodyFr01.02.006.p002  #c2BodyFr01.02.006.p002" />
+               <link target="#c1BodyFr01.02.006.p003  #c2BodyFr01.02.006.p003" />
+               <link target="#c1BodyFr01.02.006.p004  #c2BodyFr01.02.006.p004" />
+               <link target="#c1BodyFr01.02.006.p005  #c2BodyFr01.02.006.p005" />
+               <link target="#c1BodyFr01.02.006.p006  #c2BodyFr01.02.006.p006" />
+               <link target="#c1BodyFr01.02.006.p007  #c2BodyFr01.02.006.p007" />
+               <link target="#c1BodyFr01.02.006.p008  #c2BodyFr01.02.006.p008" />
+               <link target="#c1BodyFr01.02.006.p009  #c2BodyFr01.02.006.p009" />
+               <link target="#c1BodyFr01.02.006.p010  #c2BodyFr01.02.006.p010" />
+               <link target="#c1BodyFr01.02.006.p011  #c2BodyFr01.02.006.p011" />
+               <!-- 1ère Partie, 2ème Chapitre, 7ème section -->
+               <link target="#c1BodyFr01.02.007  #c2BodyFr01.02.007" />
+               <link target="#c1BodyFr01.02.007.p001  #c2BodyFr01.02.007.p001" />
+               <link target="#c1BodyFr01.02.007.p002  #c2BodyFr01.02.007.p002" />
+               <link target="#c1BodyFr01.02.007.p003  #c2BodyFr01.02.007.p003" />
+               <link target="#c1BodyFr01.02.007.p004  #c2BodyFr01.02.007.p004" />
+               <link target="#c1BodyFr01.02.007.p005  #c2BodyFr01.02.007.p005" />
+               <link target="#c1BodyFr01.02.007.p006  #c2BodyFr01.02.007.p006" />
+               <link target="#c1BodyFr01.02.007.p007  #c2BodyFr01.02.007.p007" />
+               <link target="#c1BodyFr01.02.007.p008  #c2BodyFr01.02.007.p008" />
+               <link target="#c1BodyFr01.02.007.p009  #c2BodyFr01.02.007.p009" />
+               <link target="#c1BodyFr01.02.007.p010  #c2BodyFr01.02.007.p010" />
+               <link target="#c1BodyFr01.02.007.p011  #c2BodyFr01.02.007.p011" />
+               <link target="#c1BodyFr01.02.007.p012  #c2BodyFr01.02.007.p012" />
+               <link target="#c1BodyFr01.02.007.p013  #c2BodyFr01.02.007.p013" />
+               <link target="#c1BodyFr01.02.007.p014  #c2BodyFr01.02.007.p014" />
+               <link target="#c1BodyFr01.02.007.p015  #c2BodyFr01.02.007.p015" />
+               <link target="#c1BodyFr01.02.007.p016  #c2BodyFr01.02.007.p016" />
+               <link target="#c1BodyFr01.02.007.p017  #c2BodyFr01.02.007.p017" />
+               <link target="#c1BodyFr01.02.007.p018  #c2BodyFr01.02.007.p018" />
+               <!-- 1ère Partie, 2ème Chapitre, 8ème section -->
+               <link target="#c1BodyFr01.02.008  #c2BodyFr01.02.008" />
+               <link target="#c1BodyFr01.02.008.p001  #c2BodyFr01.02.008.p001" />
+               <link target="#c1BodyFr01.02.008.p002  #c2BodyFr01.02.008.p002" />
+               <link target="#c1BodyFr01.02.008.p003  #c2BodyFr01.02.008.p003" />
+               <link target="#c1BodyFr01.02.008.p004  #c2BodyFr01.02.008.p004" />
+               <link target="#c1BodyFr01.02.008.p005  #c2BodyFr01.02.008.p005" />
+               <link target="#c1BodyFr01.02.008.p006  #c2BodyFr01.02.008.p006" />
+               <link target="#c1BodyFr01.02.008.p007  #c2BodyFr01.02.008.p007" />
+               <link target="#c1BodyFr01.02.008.p008  #c2BodyFr01.02.008.p008" />
+               <link target="#c1BodyFr01.02.008.p009  #c2BodyFr01.02.008.p009" />
+               <link target="#c1BodyFr01.02.008.p010  #c2BodyFr01.02.008.p010" />
+               <link target="#c1BodyFr01.02.008.p011  #c2BodyFr01.02.008.p011" />
+               <link target="#c1BodyFr01.02.008.p012  #c2BodyFr01.02.008.p012" />
+               <link target="#c1BodyFr01.02.008.p013  #c2BodyFr01.02.008.p013" />
+               <!-- 1ère Partie, 2ème Chapitre, 9ème section -->
+               <link target="#c1BodyFr01.02.009  #c2BodyFr01.02.009" />
+               <link target="#c1BodyFr01.02.009.p001  #c2BodyFr01.02.009.p001" />
+               <link target="#c1BodyFr01.02.009.p002  #c2BodyFr01.02.009.p002" />
+               <link target="#c1BodyFr01.02.009.p003  #c2BodyFr01.02.009.p003" />
+               <link target="#c1BodyFr01.02.009.p004  #c2BodyFr01.02.009.p004" />
+               <link target="#c1BodyFr01.02.009.p005  #c2BodyFr01.02.009.p005" />
+               <link target="#c1BodyFr01.02.009.p006  #c2BodyFr01.02.009.p006" />
+               <link target="#c1BodyFr01.02.009.p007  #c2BodyFr01.02.009.p007" />
+               <link target="#c1BodyFr01.02.009.p008  #c2BodyFr01.02.009.p008" />
+               <link target="#c1BodyFr01.02.009.p009  #c2BodyFr01.02.009.p009" />
+               <link target="#c1BodyFr01.02.009.p010  #c2BodyFr01.02.009.p010" />
+               <link target="#c1BodyFr01.02.009.p011  #c2BodyFr01.02.009.p011" />
+               <link target="#c1BodyFr01.02.009.p012  #c2BodyFr01.02.009.p012" />
+               <link target="#c1BodyFr01.02.009.p013  #c2BodyFr01.02.009.p013" />
+               <!-- 1ère Partie, 2ème Chapitre, 10ème section -->
+               <link target="#c1BodyFr01.02.010  #c2BodyFr01.02.010" />
+               <link target="#c1BodyFr01.02.010.p001  #c2BodyFr01.02.010.p001" />
+               <link target="#c1BodyFr01.02.010.p002  #c2BodyFr01.02.010.p002" />
+               <link target="#c1BodyFr01.02.010.p003  #c2BodyFr01.02.010.p003" />
+               <link target="#c1BodyFr01.02.010.p004  #c2BodyFr01.02.010.p004" />
+               <link target="#c1BodyFr01.02.010.p005  #c2BodyFr01.02.010.p005" />
+               <link target="#c1BodyFr01.02.010.p006  #c2BodyFr01.02.010.p006" />
+               <link target="#c1BodyFr01.02.010.p007  #c2BodyFr01.02.010.p007" />
+               <link target="#c1BodyFr01.02.010.p008  #c2BodyFr01.02.010.p008" />
+               <link target="#c1BodyFr01.02.010.p009  #c2BodyFr01.02.010.p009" />
+               <link target="#c1BodyFr01.02.010.p010  #c2BodyFr01.02.010.p010" />
+               <link target="#c1BodyFr01.02.010.p011  #c2BodyFr01.02.010.p011" />
+               <link target="#c1BodyFr01.02.010.p012  #c2BodyFr01.02.010.p012" />
+               <link target="#c1BodyFr01.02.010.p013  #c2BodyFr01.02.010.p013" />
+               <!-- 1ère Partie, 2ème Chapitre, 11ème section -->
+               <link target="#c1BodyFr01.02.011  #c2BodyFr01.02.011" />
+               <link target="#c1BodyFr01.02.011.p001  #c2BodyFr01.02.011.p001" />
+               <link target="#c1BodyFr01.02.011.p002  #c2BodyFr01.02.011.p002" />
+               <link target="#c1BodyFr01.02.011.p003  #c2BodyFr01.02.011.p003" />
+               <link target="#c1BodyFr01.02.011.p004  #c2BodyFr01.02.011.p004" />
+               <link target="#c1BodyFr01.02.011.p005  #c2BodyFr01.02.011.p005" />
+               <link target="#c1BodyFr01.02.011.p006  #c2BodyFr01.02.011.p006" />
+               <link target="#c1BodyFr01.02.011.p007  #c2BodyFr01.02.011.p007" />
+               <link target="#c1BodyFr01.02.011.p008  #c2BodyFr01.02.011.p008" />
+               <link target="#c1BodyFr01.02.011.p009  #c2BodyFr01.02.011.p009" />
+               <link target="#c1BodyFr01.02.011.p010  #c2BodyFr01.02.011.p010" />
+               <link target="#c1BodyFr01.02.011.p011  #c2BodyFr01.02.011.p011" />
+               <link target="#c1BodyFr01.02.011.p012  #c2BodyFr01.02.011.p012" />
+               <link target="#c1BodyFr01.02.011.p013  #c2BodyFr01.02.011.p013" />
+               <!-- 1ère Partie, 2ème Chapitre, 12ème section -->
+               <link target="#c1BodyFr01.02.012  #c2BodyFr01.02.012" />
+               <link target="#c1BodyFr01.02.012.p001  #c2BodyFr01.02.012.p001" />
+               <link target="#c1BodyFr01.02.012.p002  #c2BodyFr01.02.012.p002" />
+               <link target="#c1BodyFr01.02.012.p003  #c2BodyFr01.02.012.p003" />
+               <link target="#c1BodyFr01.02.012.p004  #c2BodyFr01.02.012.p004" />
+               <link target="#c1BodyFr01.02.012.p005  #c2BodyFr01.02.012.p005" />
+               <link target="#c1BodyFr01.02.012.p006  #c2BodyFr01.02.012.p006" />
+               <link target="#c1BodyFr01.02.012.p007  #c2BodyFr01.02.012.p007" />
+               <link target="#c1BodyFr01.02.012.p008  #c2BodyFr01.02.012.p008" />
+               <link target="#c1BodyFr01.02.012.p009  #c2BodyFr01.02.012.p009" />
+               <link target="#c1BodyFr01.02.012.p010  #c2BodyFr01.02.012.p010" />
+
+               <!-- 1ère Partie, 3ème Chapitre -->
+               <link target="#c1BodyFr01.03  #c2BodyFr01.03" />
+               <!-- 1ère Partie, 3ème Chapitre, 1ère section -->
+               <link target="#c1BodyFr01.03.001  #c2BodyFr01.03.001" />
+               <link target="#c1BodyFr01.03.001.p001  #c2BodyFr01.03.001.p001" />
+               <link target="#c1BodyFr01.03.001.p002  #c2BodyFr01.03.001.p002" />
+               <link target="#c1BodyFr01.03.001.p003  #c2BodyFr01.03.001.p003" />
+               <link target="#c1BodyFr01.03.001.p004  #c2BodyFr01.03.001.p004" />
+               <link target="#c1BodyFr01.03.001.p005  #c2BodyFr01.03.001.p005" />
+               <link target="#c1BodyFr01.03.001.p006  #c2BodyFr01.03.001.p006" />
+               <link target="#c1BodyFr01.03.001.p007  #c2BodyFr01.03.001.p007" />
+               <link target="#c1BodyFr01.03.001.p008  #c2BodyFr01.03.001.p008" />
+               <link target="#c1BodyFr01.03.001.p009  #c2BodyFr01.03.001.p009" />
+               <link target="#c1BodyFr01.03.001.p010  #c2BodyFr01.03.001.p010" />
+               <link target="#c1BodyFr01.03.001.p011  #c2BodyFr01.03.001.p011" />
+               <link target="#c1BodyFr01.03.001.p012  #c2BodyFr01.03.001.p012" />
+               <link target="#c1BodyFr01.03.001.p013  #c2BodyFr01.03.001.p013" />
+               <link target="#c1BodyFr01.03.001.p014  #c2BodyFr01.03.001.p014" />
+               <link target="#c1BodyFr01.03.001.p015  #c2BodyFr01.03.001.p015" />
+               <link target="#c1BodyFr01.03.001.p016  #c2BodyFr01.03.001.p016" />
+               <link target="#c1BodyFr01.03.001.p017  #c2BodyFr01.03.001.p017" />
+               <link target="#c1BodyFr01.03.001.p018  #c2BodyFr01.03.001.p018" />
+               <link target="#c1BodyFr01.03.001.p019  #c2BodyFr01.03.001.p019" />
+               <link target="#c1BodyFr01.03.001.p020  #c2BodyFr01.03.001.p020" />
+               <link target="#c1BodyFr01.03.001.p021  #c2BodyFr01.03.001.p021" />
+               <link target="#c1BodyFr01.03.001.p022  #c2BodyFr01.03.001.p022" />
+               <link target="#c1BodyFr01.03.001.p023  #c2BodyFr01.03.001.p023" />
+               <link target="#c1BodyFr01.03.001.p024  #c2BodyFr01.03.001.p024" />
+               <link target="#c1BodyFr01.03.001.p025  #c2BodyFr01.03.001.p025" />
+               <link target="#c1BodyFr01.03.001.p026  #c2BodyFr01.03.001.p026" />
+               <link target="#c1BodyFr01.03.001.p027  #c2BodyFr01.03.001.p027" />
+               <link target="#c1BodyFr01.03.001.p028  #c2BodyFr01.03.001.p028" />
+               <link target="#c1BodyFr01.03.001.p029  #c2BodyFr01.03.001.p029" />
+               <link target="#c1BodyFr01.03.001.p030  #c2BodyFr01.03.001.p030" />
+               <link target="#c1BodyFr01.03.001.p031  #c2BodyFr01.03.001.p031" />
+               <link target="#c1BodyFr01.03.001.p032  #c2BodyFr01.03.001.p032" />
+               <link target="#c1BodyFr01.03.001.p033  #c2BodyFr01.03.001.p033" />
+               <link target="#c1BodyFr01.03.001.p034  #c2BodyFr01.03.001.p034" />
+               <link target="#c1BodyFr01.03.001.p035  #c2BodyFr01.03.001.p035" />
+               <link target="#c1BodyFr01.03.001.p036  #c2BodyFr01.03.001.p036" />
+               <link target="#c1BodyFr01.03.001.p037  #c2BodyFr01.03.001.p037" />
+               <link target="#c1BodyFr01.03.001.p038  #c2BodyFr01.03.001.p038" />
+               <link target="#c1BodyFr01.03.001.p039  #c2BodyFr01.03.001.p039" />
+               <link target="#c1BodyFr01.03.001.p040  #c2BodyFr01.03.001.p040" />
+               <link target="#c1BodyFr01.03.001.p041  #c2BodyFr01.03.001.p041" />
+               <link target="#c1BodyFr01.03.001.p042  #c2BodyFr01.03.001.p042" />
+               <link target="#c1BodyFr01.03.001.p043  #c2BodyFr01.03.001.p043" />
+               <link target="#c1BodyFr01.03.001.p044  #c2BodyFr01.03.001.p044" />
+               <link target="#c1BodyFr01.03.001.p045  #c2BodyFr01.03.001.p045" />
+               <link target="#c1BodyFr01.03.001.p046  #c2BodyFr01.03.001.p046" />
+               <link target="#c1BodyFr01.03.001.p047  #c2BodyFr01.03.001.p047" />
+               <link target="#c1BodyFr01.03.001.p048  #c2BodyFr01.03.001.p048" />
+               <link target="#c1BodyFr01.03.001.p049  #c2BodyFr01.03.001.p049" />
+               <link target="#c1BodyFr01.03.001.p050  #c2BodyFr01.03.001.p050" />
+               <link target="#c1BodyFr01.03.001.p051  #c2BodyFr01.03.001.p051" />
+               <!-- 1ère Partie, 3ème Chapitre, 2ème section -->
+               <link target="#c1BodyFr01.03.002  #c2BodyFr01.03.002" />
+               <link target="#c1BodyFr01.03.002.p001  #c2BodyFr01.03.002.p001" />
+               <link target="#c1BodyFr01.03.002.p002  #c2BodyFr01.03.002.p002" />
+               <link target="#c1BodyFr01.03.002.p003  #c2BodyFr01.03.002.p003" />
+               <link target="#c1BodyFr01.03.002.p004  #c2BodyFr01.03.002.p004" />
+               <link target="#c1BodyFr01.03.002.p005  #c2BodyFr01.03.002.p005" />
+               <link target="#c1BodyFr01.03.002.p006  #c2BodyFr01.03.002.p006" />
+               <link target="#c1BodyFr01.03.002.p007  #c2BodyFr01.03.002.p007" />
+               <link target="#c1BodyFr01.03.002.p008  #c2BodyFr01.03.002.p008" />
+               <link target="#c1BodyFr01.03.002.p009  #c2BodyFr01.03.002.p009" />
+               <link target="#c1BodyFr01.03.002.p010  #c2BodyFr01.03.002.p010" />
+               <link target="#c1BodyFr01.03.002.p011  #c2BodyFr01.03.002.p011" />
+               <link target="#c1BodyFr01.03.002.p012  #c2BodyFr01.03.002.p012" />
+               <link target="#c1BodyFr01.03.002.p013  #c2BodyFr01.03.002.p013" />
+               <!-- 1ère Partie, 3ème Chapitre, 3ème section -->
+               <link target="#c1BodyFr01.03.003  #c2BodyFr01.03.003" />
+               <link target="#c1BodyFr01.03.003.p001  #c2BodyFr01.03.003.p001" />
+               <link target="#c1BodyFr01.03.003.p002  #c2BodyFr01.03.003.p002" />
+               <link target="#c1BodyFr01.03.003.p003  #c2BodyFr01.03.003.p003" />
+               <link target="#c1BodyFr01.03.003.p004  #c2BodyFr01.03.003.p004" />
+               <link target="#c1BodyFr01.03.003.p005  #c2BodyFr01.03.003.p005" />
+               <link target="#c1BodyFr01.03.003.p006  #c2BodyFr01.03.003.p006" />
+               <link target="#c1BodyFr01.03.003.p007  #c2BodyFr01.03.003.p007" />
+               <link target="#c1BodyFr01.03.003.p008  #c2BodyFr01.03.003.p008" />
+               <link target="#c1BodyFr01.03.003.p009  #c2BodyFr01.03.003.p009" />
+               <link target="#c1BodyFr01.03.003.p010  #c2BodyFr01.03.003.p010" />
+               <link target="#c1BodyFr01.03.003.p011  #c2BodyFr01.03.003.p011" />
+               <link target="#c1BodyFr01.03.003.p012  #c2BodyFr01.03.003.p012" />
+               <link target="#c1BodyFr01.03.003.p013  #c2BodyFr01.03.003.p013" />
+               <!-- 1ère Partie, 3ème Chapitre, 4ème section -->
+               <link target="#c1BodyFr01.03.004  #c2BodyFr01.03.004" />
+               <link target="#c1BodyFr01.03.004.p001  #c2BodyFr01.03.004.p001" />
+               <link target="#c1BodyFr01.03.004.p002  #c2BodyFr01.03.004.p002" />
+               <link target="#c1BodyFr01.03.004.p003  #c2BodyFr01.03.004.p003" />
+               <link target="#c1BodyFr01.03.004.p004  #c2BodyFr01.03.004.p004" />
+               <link target="#c1BodyFr01.03.004.p005  #c2BodyFr01.03.004.p005" />
+               <link target="#c1BodyFr01.03.004.p006  #c2BodyFr01.03.004.p006" />
+               <link target="#c1BodyFr01.03.004.p007  #c2BodyFr01.03.004.p007" />
+               <link target="#c1BodyFr01.03.004.p008  #c2BodyFr01.03.004.p008" />
+               <link target="#c1BodyFr01.03.004.p009  #c2BodyFr01.03.004.p009" />
+               <link target="#c1BodyFr01.03.004.p010  #c2BodyFr01.03.004.p010" />
+               <link target="#c1BodyFr01.03.004.p011  #c2BodyFr01.03.004.p011" />
+               <link target="#c1BodyFr01.03.004.p012  #c2BodyFr01.03.004.p012" />
+               <link target="#c1BodyFr01.03.004.p013  #c2BodyFr01.03.004.p013" />
+               <!-- 1ère Partie, 3ème Chapitre, 5ème section -->
+               <link target="#c1BodyFr01.03.005  #c2BodyFr01.03.005" />
+               <link target="#c1BodyFr01.03.005.p001  #c2BodyFr01.03.005.p001" />
+               <link target="#c1BodyFr01.03.005.p002  #c2BodyFr01.03.005.p002" />
+               <link target="#c1BodyFr01.03.005.p003  #c2BodyFr01.03.005.p003" />
+               <link target="#c1BodyFr01.03.005.p004  #c2BodyFr01.03.005.p004" />
+               <link target="#c1BodyFr01.03.005.p005  #c2BodyFr01.03.005.p005" />
+               <link target="#c1BodyFr01.03.005.p006  #c2BodyFr01.03.005.p006" />
+               <link target="#c1BodyFr01.03.005.p007  #c2BodyFr01.03.005.p007" />
+               <link target="#c1BodyFr01.03.005.p008  #c2BodyFr01.03.005.p008" />
+               <link target="#c1BodyFr01.03.005.p009  #c2BodyFr01.03.005.p009" />
+               <link target="#c1BodyFr01.03.005.p010  #c2BodyFr01.03.005.p010" />
+               <link target="#c1BodyFr01.03.005.p011  #c2BodyFr01.03.005.p011" />
+               <link target="#c1BodyFr01.03.005.p012  #c2BodyFr01.03.005.p012" />
+               <link target="#c1BodyFr01.03.005.p013  #c2BodyFr01.03.005.p013" />
+               <link target="#c1BodyFr01.03.005.p014  #c2BodyFr01.03.005.p014" />
+               <link target="#c1BodyFr01.03.005.p015  #c2BodyFr01.03.005.p015" />
+               <link target="#c1BodyFr01.03.005.p016  #c2BodyFr01.03.005.p016" />
+               <link target="#c1BodyFr01.03.005.p017  #c2BodyFr01.03.005.p017" />
+               <link target="#c1BodyFr01.03.005.p018  #c2BodyFr01.03.005.p018" />
+               <link target="#c1BodyFr01.03.005.p019  #c2BodyFr01.03.005.p019" />
+               <link target="#c1BodyFr01.03.005.p020  #c2BodyFr01.03.005.p020" />
+               <link target="#c1BodyFr01.03.005.p021  #c2BodyFr01.03.005.p021" />
+               <link target="#c1BodyFr01.03.005.p022  #c2BodyFr01.03.005.p022" />
+               <link target="#c1BodyFr01.03.005.p023  #c2BodyFr01.03.005.p023" />
+               <link target="#c1BodyFr01.03.005.p024  #c2BodyFr01.03.005.p024" />
+               <link target="#c1BodyFr01.03.005.p025  #c2BodyFr01.03.005.p025" />
+               <link target="#c1BodyFr01.03.005.p026  #c2BodyFr01.03.005.p026" />
+               <link target="#c1BodyFr01.03.005.p027  #c2BodyFr01.03.005.p027" />
+               <!-- 1ère Partie, 3ème Chapitre, 6ème section -->
+               <link target="#c1BodyFr01.03.006  #c2BodyFr01.03.006" />
+               <link target="#c1BodyFr01.03.006.p001  #c2BodyFr01.03.006.p001" />
+               <link target="#c1BodyFr01.03.006.p002  #c2BodyFr01.03.006.p002" />
+               <link target="#c1BodyFr01.03.006.p003  #c2BodyFr01.03.006.p003" />
+               <link target="#c1BodyFr01.03.006.p004  #c2BodyFr01.03.006.p004" />
+               <link target="#c1BodyFr01.03.006.p005  #c2BodyFr01.03.006.p005" />
+               <link target="#c1BodyFr01.03.006.p006  #c2BodyFr01.03.006.p006" />
+               <link target="#c1BodyFr01.03.006.p007  #c2BodyFr01.03.006.p007" />
+               <link target="#c1BodyFr01.03.006.p008  #c2BodyFr01.03.006.p008" />
+               <link target="#c1BodyFr01.03.006.p009  #c2BodyFr01.03.006.p009" />
+               <link target="#c1BodyFr01.03.006.p010  #c2BodyFr01.03.006.p010" />
+               <link target="#c1BodyFr01.03.006.p011  #c2BodyFr01.03.006.p011" />
+               <link target="#c1BodyFr01.03.006.p012  #c2BodyFr01.03.006.p012" />
+               <link target="#c1BodyFr01.03.006.p013  #c2BodyFr01.03.006.p013" />
+               <link target="#c1BodyFr01.03.006.p014  #c2BodyFr01.03.006.p014" />
+               <link target="#c1BodyFr01.03.006.p015  #c2BodyFr01.03.006.p015" />
+               <link target="#c1BodyFr01.03.006.p016  #c2BodyFr01.03.006.p016" />
+               <link target="#c1BodyFr01.03.006.p017  #c2BodyFr01.03.006.p017" />
+               <link target="#c1BodyFr01.03.006.p018  #c2BodyFr01.03.006.p018" />
+               <link target="#c1BodyFr01.03.006.p019  #c2BodyFr01.03.006.p019" />
+               <link target="#c1BodyFr01.03.006.p020  #c2BodyFr01.03.006.p020" />
+               <link target="#c1BodyFr01.03.006.p021  #c2BodyFr01.03.006.p021" />
+               <link target="#c1BodyFr01.03.006.p022  #c2BodyFr01.03.006.p022" />
+               <link target="#c1BodyFr01.03.006.p023  #c2BodyFr01.03.006.p023" />
+               <link target="#c1BodyFr01.03.006.p024  #c2BodyFr01.03.006.p024" />
+               <link target="#c1BodyFr01.03.006.p025  #c2BodyFr01.03.006.p025" />
+               <link target="#c1BodyFr01.03.006.p026  #c2BodyFr01.03.006.p026" />
+               <!-- 1ère Partie, 3ème Chapitre, 7ème section -->
+               <link target="#c1BodyFr01.03.007  #c2BodyFr01.03.007" />
+               <link target="#c1BodyFr01.03.007.p001  #c2BodyFr01.03.007.p001" />
+               <link target="#c1BodyFr01.03.007.p002  #c2BodyFr01.03.007.p002" />
+               <link target="#c1BodyFr01.03.007.p003  #c2BodyFr01.03.007.p003" />
+               <link target="#c1BodyFr01.03.007.p004  #c2BodyFr01.03.007.p004" />
+               <link target="#c1BodyFr01.03.007.p005  #c2BodyFr01.03.007.p005" />
+               <link target="#c1BodyFr01.03.007.p006  #c2BodyFr01.03.007.p006" />
+               <!-- 1ère Partie, 3ème Chapitre, 8ème section -->
+               <link target="#c1BodyFr01.03.008  #c2BodyFr01.03.008" />
+               <link target="#c1BodyFr01.03.008.p001  #c2BodyFr01.03.008.p001" />
+               <link target="#c1BodyFr01.03.008.p002  #c2BodyFr01.03.008.p002" />
+               <link target="#c1BodyFr01.03.008.p003  #c2BodyFr01.03.008.p003" />
+               <link target="#c1BodyFr01.03.008.p004  #c2BodyFr01.03.008.p004" />
+               <link target="#c1BodyFr01.03.008.p005  #c2BodyFr01.03.008.p005" />
+               <link target="#c1BodyFr01.03.008.p006  #c2BodyFr01.03.008.p006" />
+               <link target="#c1BodyFr01.03.008.p007  #c2BodyFr01.03.008.p007" />
+               <link target="#c1BodyFr01.03.008.p008  #c2BodyFr01.03.008.p008" />
+               <link target="#c1BodyFr01.03.008.p009  #c2BodyFr01.03.008.p009" />
+               <link target="#c1BodyFr01.03.008.p010  #c2BodyFr01.03.008.p010" />
+
+               <!-- 1ère Partie, 4ème Chapitre -->
+               <link target="#c1BodyFr01.04  #c2BodyFr01.04" />
+               <!-- 1ère Partie, 4ème Chapitre, 1ère section -->
+               <link target="#c1BodyFr01.04.001  #c2BodyFr01.04.001" />
+               <link target="#c1BodyFr01.04.001.p001  #c2BodyFr01.04.001.p001" />
+               <link target="#c1BodyFr01.04.001.p002  #c2BodyFr01.04.001.p002" />
+               <link target="#c1BodyFr01.04.001.p003  #c2BodyFr01.04.001.p003" />
+               <link target="#c1BodyFr01.04.001.p004  #c2BodyFr01.04.001.p004" />
+               <link target="#c1BodyFr01.04.001.p005  #c2BodyFr01.04.001.p005" />
+               <link target="#c1BodyFr01.04.001.p006  #c2BodyFr01.04.001.p006" />
+               <link target="#c1BodyFr01.04.001.p007  #c2BodyFr01.04.001.p007" />
+               <link target="#c1BodyFr01.04.001.p008  #c2BodyFr01.04.001.p008" />
+               <link target="#c1BodyFr01.04.001.p009  #c2BodyFr01.04.001.p009" />
+               <link target="#c1BodyFr01.04.001.p010  #c2BodyFr01.04.001.p010" />
+               <link target="#c1BodyFr01.04.001.p011  #c2BodyFr01.04.001.p011" />
+               <link target="#c1BodyFr01.04.001.p012  #c2BodyFr01.04.001.p012" />
+               <link target="#c1BodyFr01.04.001.p013  #c2BodyFr01.04.001.p013" />
+               <link target="#c1BodyFr01.04.001.p014  #c2BodyFr01.04.001.p014" />
+               <link target="#c1BodyFr01.04.001.p015  #c2BodyFr01.04.001.p015" />
+               <link target="#c1BodyFr01.04.001.p016  #c2BodyFr01.04.001.p016" />
+               <link target="#c1BodyFr01.04.001.p017  #c2BodyFr01.04.001.p017" />
+               <link target="#c1BodyFr01.04.001.p018  #c2BodyFr01.04.001.p018" />
+               <link target="#c1BodyFr01.04.001.p019  #c2BodyFr01.04.001.p019" />
+               <link target="#c1BodyFr01.04.001.p020  #c2BodyFr01.04.001.p020" />
+               <link target="#c1BodyFr01.04.001.p021  #c2BodyFr01.04.001.p021" />
+               <link target="#c1BodyFr01.04.001.p022  #c2BodyFr01.04.001.p022" />
+               <link target="#c1BodyFr01.04.001.p023  #c2BodyFr01.04.001.p023" />
+               <link target="#c1BodyFr01.04.001.p024  #c2BodyFr01.04.001.p024" />
+               <link target="#c1BodyFr01.04.001.p025  #c2BodyFr01.04.001.p025" />
+               <link target="#c1BodyFr01.04.001.p026  #c2BodyFr01.04.001.p026" />
+               <link target="#c1BodyFr01.04.001.p027  #c2BodyFr01.04.001.p027" />
+               <link target="#c1BodyFr01.04.001.p028  #c2BodyFr01.04.001.p028" />
+               <link target="#c1BodyFr01.04.001.p029  #c2BodyFr01.04.001.p029" />
+               <link target="#c1BodyFr01.04.001.p030  #c2BodyFr01.04.001.p030" />
+               <link target="#c1BodyFr01.04.001.p031  #c2BodyFr01.04.001.p031" />
+               <link target="#c1BodyFr01.04.001.p032  #c2BodyFr01.04.001.p032" />
+               <link target="#c1BodyFr01.04.001.p033  #c2BodyFr01.04.001.p033" />
+               <link target="#c1BodyFr01.04.001.p034  #c2BodyFr01.04.001.p034" />
+               <link target="#c1BodyFr01.04.001.p035  #c2BodyFr01.04.001.p035" />
+               <link target="#c1BodyFr01.04.001.p036  #c2BodyFr01.04.001.p036" />
+               <link target="#c1BodyFr01.04.001.p037  #c2BodyFr01.04.001.p037" />
+               <link target="#c1BodyFr01.04.001.p038  #c2BodyFr01.04.001.p038" />
+               <link target="#c1BodyFr01.04.001.p039  #c2BodyFr01.04.001.p039" />
+               <!-- 1ère Partie, 4ème Chapitre, 2ème section -->
+               <link target="#c1BodyFr01.04.002  #c2BodyFr01.04.002" />
+               <link target="#c1BodyFr01.04.002.p001  #c2BodyFr01.04.002.p001" />
+               <link target="#c1BodyFr01.04.002.p002  #c2BodyFr01.04.002.p002" />
+               <link target="#c1BodyFr01.04.002.p003  #c2BodyFr01.04.002.p003" />
+               <link target="#c1BodyFr01.04.002.p004  #c2BodyFr01.04.002.p004" />
+               <link target="#c1BodyFr01.04.002.p005  #c2BodyFr01.04.002.p005" />
+               <link target="#c1BodyFr01.04.002.p006  #c2BodyFr01.04.002.p006" />
+               <link target="#c1BodyFr01.04.002.p007  #c2BodyFr01.04.002.p007" />
+               <link target="#c1BodyFr01.04.002.p008  #c2BodyFr01.04.002.p008" />
+               <link target="#c1BodyFr01.04.002.p009  #c2BodyFr01.04.002.p009" />
+               <link target="#c1BodyFr01.04.002.p010  #c2BodyFr01.04.002.p010" />
+               <link target="#c1BodyFr01.04.002.p011  #c2BodyFr01.04.002.p011" />
+               <link target="#c1BodyFr01.04.002.p012  #c2BodyFr01.04.002.p012" />
+               <link target="#c1BodyFr01.04.002.p013  #c2BodyFr01.04.002.p013" />
+               <link target="#c1BodyFr01.04.002.p014  #c2BodyFr01.04.002.p014" />
+               <link target="#c1BodyFr01.04.002.p015  #c2BodyFr01.04.002.p015" />
+               <link target="#c1BodyFr01.04.002.p016  #c2BodyFr01.04.002.p016" />
+               <link target="#c1BodyFr01.04.002.p017  #c2BodyFr01.04.002.p017" />
+               <link target="#c1BodyFr01.04.002.p018  #c2BodyFr01.04.002.p018" />
+               <link target="#c1BodyFr01.04.002.p019  #c2BodyFr01.04.002.p019" />
+               <link target="#c1BodyFr01.04.002.p020  #c2BodyFr01.04.002.p020" />
+               <link target="#c1BodyFr01.04.002.p021  #c2BodyFr01.04.002.p021" />
+               <link target="#c1BodyFr01.04.002.p022  #c2BodyFr01.04.002.p022" />
+               <!-- 1ère Partie, 4ème Chapitre, 3ème section -->
+               <link target="#c1BodyFr01.04.003  #c2BodyFr01.04.003" />
+               <link target="#c1BodyFr01.04.003.p001  #c2BodyFr01.04.003.p001" />
+               <link target="#c1BodyFr01.04.003.p002  #c2BodyFr01.04.003.p002" />
+               <link target="#c1BodyFr01.04.003.p003  #c2BodyFr01.04.003.p003" />
+               <link target="#c1BodyFr01.04.003.p004  #c2BodyFr01.04.003.p004" />
+               <link target="#c1BodyFr01.04.003.p005  #c2BodyFr01.04.003.p005" />
+               <link target="#c1BodyFr01.04.003.p006  #c2BodyFr01.04.003.p006" />
+               <link target="#c1BodyFr01.04.003.p007  #c2BodyFr01.04.003.p007" />
+               <link target="#c1BodyFr01.04.003.p008  #c2BodyFr01.04.003.p008" />
+               <link target="#c1BodyFr01.04.003.p009  #c2BodyFr01.04.003.p009" />
+               <link target="#c1BodyFr01.04.003.p010  #c2BodyFr01.04.003.p010" />
+               <link target="#c1BodyFr01.04.003.p011  #c2BodyFr01.04.003.p011" />
+               <link target="#c1BodyFr01.04.003.p012  #c2BodyFr01.04.003.p012" />
+               <link target="#c1BodyFr01.04.003.p013  #c2BodyFr01.04.003.p013" />
+               <link target="#c1BodyFr01.04.003.p014  #c2BodyFr01.04.003.p014" />
+               <link target="#c1BodyFr01.04.003.p015  #c2BodyFr01.04.003.p015" />
+               <link target="#c1BodyFr01.04.003.p016  #c2BodyFr01.04.003.p016" />
+               <link target="#c1BodyFr01.04.003.p017  #c2BodyFr01.04.003.p017" />
+               <!-- 1ère Partie, 4ème Chapitre, 4ème section -->
+               <link target="#c1BodyFr01.04.004  #c2BodyFr01.04.004" />
+               <link target="#c1BodyFr01.04.004.p001  #c2BodyFr01.04.004.p001" />
+               <link target="#c1BodyFr01.04.004.p002  #c2BodyFr01.04.004.p002" />
+               <link target="#c1BodyFr01.04.004.p003  #c2BodyFr01.04.004.p003" />
+               <link target="#c1BodyFr01.04.004.p004  #c2BodyFr01.04.004.p004" />
+               <link target="#c1BodyFr01.04.004.p005  #c2BodyFr01.04.004.p005" />
+               <link target="#c1BodyFr01.04.004.p006  #c2BodyFr01.04.004.p006" />
+               <link target="#c1BodyFr01.04.004.p007  #c2BodyFr01.04.004.p007" />
+               <link target="#c1BodyFr01.04.004.p008  #c2BodyFr01.04.004.p008" />
+               <link target="#c1BodyFr01.04.004.p009  #c2BodyFr01.04.004.p009" />
+               <link target="#c1BodyFr01.04.004.p010  #c2BodyFr01.04.004.p010" />
+               <link target="#c1BodyFr01.04.004.p011  #c2BodyFr01.04.004.p011" />
+               <link target="#c1BodyFr01.04.004.p012  #c2BodyFr01.04.004.p012" />
+               <link target="#c1BodyFr01.04.004.p013  #c2BodyFr01.04.004.p013" />
+               <link target="#c1BodyFr01.04.004.p014  #c2BodyFr01.04.004.p014" />
+               <link target="#c1BodyFr01.04.004.p015  #c2BodyFr01.04.004.p015" />
+               <link target="#c1BodyFr01.04.004.p016  #c2BodyFr01.04.004.p016" />
+               <link target="#c1BodyFr01.04.004.p017  #c2BodyFr01.04.004.p017" />
+               <link target="#c1BodyFr01.04.004.p018  #c2BodyFr01.04.004.p018" />
+               <link target="#c1BodyFr01.04.004.p019  #c2BodyFr01.04.004.p019" />
+               <link target="#c1BodyFr01.04.004.p020  #c2BodyFr01.04.004.p020" />
+
+               <!-- 1ère Partie, 5ème Chapitre -->
+               <link target="#c1BodyFr01.05  #c2BodyFr01.05" />
+               <!-- 1ère Partie, 5ème Chapitre, 1ère section -->
+               <link target="#c1BodyFr01.05.001  #c2BodyFr01.05.001" />
+               <link target="#c1BodyFr01.05.001.p001  #c2BodyFr01.05.001.p001" />
+               <link target="#c1BodyFr01.05.001.p002  #c2BodyFr01.05.001.p002" />
+               <link target="#c1BodyFr01.05.001.p003  #c2BodyFr01.05.001.p003" />
+               <link target="#c1BodyFr01.05.001.p004  #c2BodyFr01.05.001.p004" />
+               <link target="#c1BodyFr01.05.001.p005  #c2BodyFr01.05.001.p005" />
+               <link target="#c1BodyFr01.05.001.p006  #c2BodyFr01.05.001.p006" />
+               <link target="#c1BodyFr01.05.001.p007  #c2BodyFr01.05.001.p007" />
+               <link target="#c1BodyFr01.05.001.p008  #c2BodyFr01.05.001.p008" />
+               <link target="#c1BodyFr01.05.001.p009  #c2BodyFr01.05.001.p009" />
+               <link target="#c1BodyFr01.05.001.p010  #c2BodyFr01.05.001.p010" />
+               <link target="#c1BodyFr01.05.001.p011  #c2BodyFr01.05.001.p011" />
+               <link target="#c1BodyFr01.05.001.p012  #c2BodyFr01.05.001.p012" />
+               <link target="#c1BodyFr01.05.001.p013  #c2BodyFr01.05.001.p013" />
+               <link target="#c1BodyFr01.05.001.p014  #c2BodyFr01.05.001.p014" />
+               <link target="#c1BodyFr01.05.001.p015  #c2BodyFr01.05.001.p015" />
+               <link target="#c1BodyFr01.05.001.p016  #c2BodyFr01.05.001.p016" />
+               <link target="#c1BodyFr01.05.001.p017  #c2BodyFr01.05.001.p017" />
+               <link target="#c1BodyFr01.05.001.p018  #c2BodyFr01.05.001.p018" />
+               <link target="#c1BodyFr01.05.001.p019  #c2BodyFr01.05.001.p019" />
+               <link target="#c1BodyFr01.05.001.p020  #c2BodyFr01.05.001.p020" />
+               <link target="#c1BodyFr01.05.001.p021  #c2BodyFr01.05.001.p021" />
+               <link target="#c1BodyFr01.05.001.p022  #c2BodyFr01.05.001.p022" />
+               <!-- 1ère Partie, 5ème Chapitre, 2ème section -->
+               <link target="#c1BodyFr01.05.002  #c2BodyFr01.05.002" />
+               <link target="#c1BodyFr01.05.002.p001  #c2BodyFr01.05.002.p001" />
+               <link target="#c1BodyFr01.05.002.p002  #c2BodyFr01.05.002.p002" />
+               <link target="#c1BodyFr01.05.002.p003  #c2BodyFr01.05.002.p003" />
+               <link target="#c1BodyFr01.05.002.p004  #c2BodyFr01.05.002.p004" />
+               <link target="#c1BodyFr01.05.002.p005  #c2BodyFr01.05.002.p005" />
+               <link target="#c1BodyFr01.05.002.p006  #c2BodyFr01.05.002.p006" />
+               <link target="#c1BodyFr01.05.002.p007  #c2BodyFr01.05.002.p007" />
+               <link target="#c1BodyFr01.05.002.p008  #c2BodyFr01.05.002.p008" />
+               <link target="#c1BodyFr01.05.002.p009  #c2BodyFr01.05.002.p009" />
+               <link target="#c1BodyFr01.05.002.p010  #c2BodyFr01.05.002.p010" />
+               <link target="#c1BodyFr01.05.002.p011  #c2BodyFr01.05.002.p011" />
+               <link target="#c1BodyFr01.05.002.p012  #c2BodyFr01.05.002.p012" />
+               <link target="#c1BodyFr01.05.002.p013  #c2BodyFr01.05.002.p013" />
+               <link target="#c1BodyFr01.05.002.p014  #c2BodyFr01.05.002.p014" />
+               <link target="#c1BodyFr01.05.002.p015  #c2BodyFr01.05.002.p015" />
+               <link target="#c1BodyFr01.05.002.p016  #c2BodyFr01.05.002.p016" />
+               <link target="#c1BodyFr01.05.002.p017  #c2BodyFr01.05.002.p017" />
+               <link target="#c1BodyFr01.05.002.p018  #c2BodyFr01.05.002.p018" />
+               <link target="#c1BodyFr01.05.002.p019  #c2BodyFr01.05.002.p019" />
+               <link target="#c1BodyFr01.05.002.p020  #c2BodyFr01.05.002.p020" />
+               <link target="#c1BodyFr01.05.002.p021  #c2BodyFr01.05.002.p021" />
+               <link target="#c1BodyFr01.05.002.p022  #c2BodyFr01.05.002.p022" />
+               <link target="#c1BodyFr01.05.002.p023  #c2BodyFr01.05.002.p023" />
+               <!-- 1ère Partie, 5ème Chapitre, 3ème section -->
+               <link target="#c1BodyFr01.05.003  #c2BodyFr01.05.003" />
+               <link target="#c1BodyFr01.05.003.p001  #c2BodyFr01.05.003.p001" />
+               <link target="#c1BodyFr01.05.003.p002  #c2BodyFr01.05.003.p002" />
+               <link target="#c1BodyFr01.05.003.p003  #c2BodyFr01.05.003.p003" />
+               <link target="#c1BodyFr01.05.003.p004  #c2BodyFr01.05.003.p004" />
+               <link target="#c1BodyFr01.05.003.p005  #c2BodyFr01.05.003.p005" />
+               <link target="#c1BodyFr01.05.003.p006  #c2BodyFr01.05.003.p006" />
+               <link target="#c1BodyFr01.05.003.p007  #c2BodyFr01.05.003.p007" />
+               <link target="#c1BodyFr01.05.003.p008  #c2BodyFr01.05.003.p008" />
+               <link target="#c1BodyFr01.05.003.p009  #c2BodyFr01.05.003.p009" />
+               <link target="#c1BodyFr01.05.003.p010  #c2BodyFr01.05.003.p010" />
+               <link target="#c1BodyFr01.05.003.p011  #c2BodyFr01.05.003.p011" />
+               <!-- 1ère Partie, 5ème Chapitre, 4ème section -->
+               <link target="#c1BodyFr01.05.004  #c2BodyFr01.05.004" />
+               <link target="#c1BodyFr01.05.004.p001  #c2BodyFr01.05.004.p001" />
+               <link target="#c1BodyFr01.05.004.p002  #c2BodyFr01.05.004.p002" />
+               <link target="#c1BodyFr01.05.004.p003  #c2BodyFr01.05.004.p003" />
+               <link target="#c1BodyFr01.05.004.p004  #c2BodyFr01.05.004.p004" />
+               <link target="#c1BodyFr01.05.004.p005  #c2BodyFr01.05.004.p005" />
+               <link target="#c1BodyFr01.05.004.p006  #c2BodyFr01.05.004.p006" />
+               <link target="#c1BodyFr01.05.004.p007  #c2BodyFr01.05.004.p007" />
+               <link target="#c1BodyFr01.05.004.p008  #c2BodyFr01.05.004.p008" />
+               <link target="#c1BodyFr01.05.004.p009  #c2BodyFr01.05.004.p009" />
+               <link target="#c1BodyFr01.05.004.p010  #c2BodyFr01.05.004.p010" />
+
+
+               <!-- 2ème Partie -->
+               <link target="#c1BodyFr02  #c2BodyFr02" />
+               <!-- 2ème Partie, 1er chapitre -->
+               <link target="#c1BodyFr02.01  #c2BodyFr02.01" />
+               <!-- 2ème Partie, 1er chapitre, 1ère section -->
+               <link target="#c1BodyFr02.01.001  #c2BodyFr02.01.001" />
+               <link target="#c1BodyFr02.01.001.p001  #c2BodyFr02.01.001.p001" />
+               <link target="#c1BodyFr02.01.001.p002  #c2BodyFr02.01.001.p002" />
+               <link target="#c1BodyFr02.01.001.p003  #c2BodyFr02.01.001.p003" />
+               <link target="#c1BodyFr02.01.001.p004  #c2BodyFr02.01.001.p004" />
+               <link target="#c1BodyFr02.01.001.p005  #c2BodyFr02.01.001.p005" />
+               <link target="#c1BodyFr02.01.001.p006  #c2BodyFr02.01.001.p006" />
+               <link target="#c1BodyFr02.01.001.p007  #c2BodyFr02.01.001.p007" />
+               <link target="#c1BodyFr02.01.001.p008  #c2BodyFr02.01.001.p008" />
+               <link target="#c1BodyFr02.01.001.p009  #c2BodyFr02.01.001.p009" />
+               <link target="#c1BodyFr02.01.001.p010  #c2BodyFr02.01.001.p010" />
+               <link target="#c1BodyFr02.01.001.p011  #c2BodyFr02.01.001.p011" />
+               <link target="#c1BodyFr02.01.001.p012  #c2BodyFr02.01.001.p012" />
+               <link target="#c1BodyFr02.01.001.p013  #c2BodyFr02.01.001.p013" />
+               <link target="#c1BodyFr02.01.001.p014  #c2BodyFr02.01.001.p014" />
+               <link target="#c1BodyFr02.01.001.p015  #c2BodyFr02.01.001.p015" />
+               <link target="#c1BodyFr02.01.001.p016  #c2BodyFr02.01.001.p016" />
+               <link target="#c1BodyFr02.01.001.p017  #c2BodyFr02.01.001.p017" />
+               <link target="#c1BodyFr02.01.001.p018  #c2BodyFr02.01.001.p018" />
+               <link target="#c1BodyFr02.01.001.p019  #c2BodyFr02.01.001.p019" />
+               <link target="#c1BodyFr02.01.001.p020  #c2BodyFr02.01.001.p020" />
+               <link target="#c1BodyFr02.01.001.p021  #c2BodyFr02.01.001.p021" />
+               <link target="#c1BodyFr02.01.001.p022  #c2BodyFr02.01.001.p022" />
+               <link target="#c1BodyFr02.01.001.p023  #c2BodyFr02.01.001.p023" />
+               <!-- 2ème Partie, 1er chapitre, 2ème section -->
+               <link target="#c1BodyFr02.01.002  #c2BodyFr02.01.002" />
+               <link target="#c1BodyFr02.01.002.p001  #c2BodyFr02.01.002.p001" />
+               <link target="#c1BodyFr02.01.002.p002  #c2BodyFr02.01.002.p002" />
+               <link target="#c1BodyFr02.01.002.p003  #c2BodyFr02.01.002.p003" />
+               <link target="#c1BodyFr02.01.002.p004  #c2BodyFr02.01.002.p004" />
+               <link target="#c1BodyFr02.01.002.p005  #c2BodyFr02.01.002.p005" />
+               <link target="#c1BodyFr02.01.002.p006  #c2BodyFr02.01.002.p006" />
+               <link target="#c1BodyFr02.01.002.p007  #c2BodyFr02.01.002.p007" />
+               <link target="#c1BodyFr02.01.002.p008  #c2BodyFr02.01.002.p008" />
+               <link target="#c1BodyFr02.01.002.p009  #c2BodyFr02.01.002.p009" />
+               <link target="#c1BodyFr02.01.002.p010  #c2BodyFr02.01.002.p010" />
+               <link target="#c1BodyFr02.01.002.p011  #c2BodyFr02.01.002.p011" />
+               <!-- 2ème Partie, 1er chapitre, 3ème section -->
+               <link target="#c1BodyFr02.01.003  #c2BodyFr02.01.003" />
+               <link target="#c1BodyFr02.01.003.p001  #c2BodyFr02.01.003.p001" />
+               <link target="#c1BodyFr02.01.003.p002  #c2BodyFr02.01.003.p002" />
+               <link target="#c1BodyFr02.01.003.p003  #c2BodyFr02.01.003.p003" />
+               <link target="#c1BodyFr02.01.003.p004  #c2BodyFr02.01.003.p004" />
+               <link target="#c1BodyFr02.01.003.p005  #c2BodyFr02.01.003.p005" />
+               <link target="#c1BodyFr02.01.003.p006  #c2BodyFr02.01.003.p006" />
+               <link target="#c1BodyFr02.01.003.p007  #c2BodyFr02.01.003.p007" />
+               <link target="#c1BodyFr02.01.003.p008  #c2BodyFr02.01.003.p008" />
+               <!-- 2ème Partie, 1er chapitre, 4ème section -->
+               <link target="#c1BodyFr02.01.004  #c2BodyFr02.01.004" />
+               <link target="#c1BodyFr02.01.004.p001  #c2BodyFr02.01.004.p001" />
+               <link target="#c1BodyFr02.01.004.p002  #c2BodyFr02.01.004.p002" />
+               <link target="#c1BodyFr02.01.004.p003  #c2BodyFr02.01.004.p003" />
+               <link target="#c1BodyFr02.01.004.p004  #c2BodyFr02.01.004.p004" />
+               <link target="#c1BodyFr02.01.004.p005  #c2BodyFr02.01.004.p005" />
+               <link target="#c1BodyFr02.01.004.p006  #c2BodyFr02.01.004.p006" />
+               <link target="#c1BodyFr02.01.004.p007  #c2BodyFr02.01.004.p007" />
+               <link target="#c1BodyFr02.01.004.p008  #c2BodyFr02.01.004.p008" />
+               <link target="#c1BodyFr02.01.004.p009  #c2BodyFr02.01.004.p009" />
+               <link target="#c1BodyFr02.01.004.p010  #c2BodyFr02.01.004.p010" />
+               <link target="#c1BodyFr02.01.004.p011  #c2BodyFr02.01.004.p011" />
+               <link target="#c1BodyFr02.01.004.p012  #c2BodyFr02.01.004.p012" />
+               <link target="#c1BodyFr02.01.004.p013  #c2BodyFr02.01.004.p013" />
+               <link target="#c1BodyFr02.01.004.p014  #c2BodyFr02.01.004.p014" />
+               <link target="#c1BodyFr02.01.004.p015  #c2BodyFr02.01.004.p015" />
+               <link target="#c1BodyFr02.01.004.p016  #c2BodyFr02.01.004.p016" />
+               <link target="#c1BodyFr02.01.004.p017  #c2BodyFr02.01.004.p017" />
+               <link target="#c1BodyFr02.01.004.p018  #c2BodyFr02.01.004.p018" />
+               <link target="#c1BodyFr02.01.004.p019  #c2BodyFr02.01.004.p019" />
+
+               <!-- 2ème Partie, 2ème chapitre -->
+               <link target="#c1BodyFr02.02  #c2BodyFr02.02" />
+               <!-- 2ème Partie, 2ème chapitre, 1ère section -->
+               <link target="#c1BodyFr02.02.001  #c2BodyFr02.02.001" />
+               <link target="#c1BodyFr02.02.001.p001  #c2BodyFr02.02.001.p001" />
+               <link target="#c1BodyFr02.02.001.p002  #c2BodyFr02.02.001.p002" />
+               <link target="#c1BodyFr02.02.001.p003  #c2BodyFr02.02.001.p003" />
+               <link target="#c1BodyFr02.02.001.p004  #c2BodyFr02.02.001.p004" />
+               <link target="#c1BodyFr02.02.001.p005  #c2BodyFr02.02.001.p005" />
+               <link target="#c1BodyFr02.02.001.p006  #c2BodyFr02.02.001.p006" />
+               <link target="#c1BodyFr02.02.001.p007  #c2BodyFr02.02.001.p007" />
+               <link target="#c1BodyFr02.02.001.p008  #c2BodyFr02.02.001.p008" />
+               <link target="#c1BodyFr02.02.001.p009  #c2BodyFr02.02.001.p009" />
+               <link target="#c1BodyFr02.02.001.p010  #c2BodyFr02.02.001.p010" />
+               <link target="#c1BodyFr02.02.001.p011  #c2BodyFr02.02.001.p011" />
+               <link target="#c1BodyFr02.02.001.p012  #c2BodyFr02.02.001.p012" />
+               <link target="#c1BodyFr02.02.001.p013  #c2BodyFr02.02.001.p013" />
+               <link target="#c1BodyFr02.02.001.p014  #c2BodyFr02.02.001.p014" />
+               <link target="#c1BodyFr02.02.001.p015  #c2BodyFr02.02.001.p015" />
+               <!-- 2ème Partie, 2ème chapitre, 2ème section -->
+               <link target="#c1BodyFr02.02.002  #c2BodyFr02.02.002" />
+               <link target="#c1BodyFr02.02.002.p001  #c2BodyFr02.02.002.p001" />
+               <link target="#c1BodyFr02.02.002.p002  #c2BodyFr02.02.002.p002" />
+               <link target="#c1BodyFr02.02.002.p003  #c2BodyFr02.02.002.p003" />
+               <link target="#c1BodyFr02.02.002.p004  #c2BodyFr02.02.002.p004" />
+               <link target="#c1BodyFr02.02.002.p005  #c2BodyFr02.02.002.p005" />
+               <link target="#c1BodyFr02.02.002.p006  #c2BodyFr02.02.002.p006" />
+               <link target="#c1BodyFr02.02.002.p007  #c2BodyFr02.02.002.p007" />
+               <link target="#c1BodyFr02.02.002.p008  #c2BodyFr02.02.002.p008" />
+               <link target="#c1BodyFr02.02.002.p009  #c2BodyFr02.02.002.p009" />
+               <link target="#c1BodyFr02.02.002.p010  #c2BodyFr02.02.002.p010" />
+               <link target="#c1BodyFr02.02.002.p011  #c2BodyFr02.02.002.p011" />
+               <link target="#c1BodyFr02.02.002.p012  #c2BodyFr02.02.002.p012" />
+               <link target="#c1BodyFr02.02.002.p013  #c2BodyFr02.02.002.p013" />
+
+               <!-- Back -->
+               <link target="#c1Back  #c2Back" />
+            </linkGrp>
+         </div>
+      </body>
+   </text>
+</TEI>

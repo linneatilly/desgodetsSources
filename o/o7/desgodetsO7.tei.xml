@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier du manuscrit O7 des Ordres de Desgodets 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:xi="http://www.w3.org/2001/XInclude">
+   <!-- début de l'en-tête TEI -->
+   <teiHeader>
+      <fileDesc>
+         <!-- mentions de titre et de responsabilité -->
+         <titleStmt>
+            <title xml:lang="fre" type="main">Traité des ordres</title>
+            <title xml:lang="fre" type="sub">Manuscrit O7</title>
+            <author>
+               <persName>
+                  <forename>Antoine</forename>
+                  <surname>Desgodets</surname>
+               </persName>
+            </author>
+            <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+            <principal>
+               <persName ref="#RC">
+                  <forename>Robert</forename>
+                  <surname>Carvais</surname>
+                  <affiliation>
+                     <orgName>Centre National de la Recherche
+                        Scientifique</orgName>
+                     <orgName type="acronym">CNRS</orgName>
+                     <roleName>responsable d'ANR</roleName>
+                  </affiliation>
+               </persName>
+            </principal>
+            <!-- organismes qui ont financé l'opération -->
+            <funder>
+               <orgName>Agence Nationale de Recherche</orgName>
+               <orgName type="acronym">ANR</orgName>
+               <date from="2008" to="2013">2008-2013</date>
+            </funder>
+            <funder>
+               <orgName>Association Française d'Histoire de la
+                  Construction</orgName>
+               <orgName type="acronym">AFHC</orgName>
+               <date when="2013">2013</date>
+            </funder>
+            <!-- mentions de responsabilité secondaires -->
+            <respStmt>
+               <resp key="prg">modélisation XML-TEI</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="edt">édition</resp>
+               <persName ref="#GF">
+                  <forename>Guillaume</forename>
+                  <surname>Fonkenell</surname>
+               </persName>
+               <persName ref="#JB">
+                  <forename>Joëlle</forename>
+                  <surname>Barreau</surname>
+               </persName>
+               <persName ref="#BG">
+                  <forename>Béatrice</forename>
+                  <surname>Gaillard</surname>
+               </persName>
+               <persName ref="#GDR">
+                  <forename>Gabrielle</forename>
+                  <surname>de Roincé</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="mrk">encodage</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="trc">transcription</resp>
+               <persName ref="#LT">
+                  <forename>Linnéa</forename>
+                  <surname>Tilly</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <!-- mention d'édition -->
+         <editionStmt>
+            <edition n="1">première édition électronique, <date from="2013"
+                  to="2013">2008-2013</date></edition>
+         </editionStmt>
+         <extent><!-- taille du fichier en octet --></extent>
+         <!-- information sur la publication électronique -->
+         <publicationStmt>
+            <date when="2013">2013</date>
+            <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+            <idno type="URI">o7</idno>
+            <!-- responsable de la publication -->
+            <publisher>
+               <orgName>Centre de théorie et d'analyse du droit (UMR
+                  7074)</orgName>
+               <orgName type="acronym">CTAD</orgName>
+               <address>
+                  <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                  <addrLine>UFR Droit et Science politique</addrLine>
+                  <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                  <addrLine>200, Avenue de la République</addrLine>
+                  <addrLine>92001 Nanterre Cedex</addrLine>
+                  <addrLine>France</addrLine>
+                  <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                  <addrLine>contact@desgodets.fr</addrLine>
+               </address>
+            </publisher>
+            <availability status="restricted" xml:id="o7ImagesLicence">
+               <p>Les images numériques des manuscrits sont mises à disposition
+                  par les institutions partenaires mais restent leur propriété
+                  exclusive. Celles-ci en autorisent la reproduction et la
+                  réutilisation selon leurs propres règles en vigueur. Toute
+                  diffusion de ces images, sous quelque forme et sur quelque
+                  support que ce soit (papier, audiovisuel, ou numérique), pour
+                  quelque finalité que ce soit (pédagogique, scientifique ou
+                  commercial), doit faire l’objet d’une demande d’autorisation
+                  préalable auprès de l’institution concernée.</p>
+            </availability>
+            <availability status="restricted" xml:id="o7TextLicence">
+               <!-- TODO : <licence> à ajouter partout -->
+               <licence
+                  target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"
+                  >
+                  <p>Ce(tte) œuvre est mise à disposition selon les termes
+                     de la Licence Creative Commons Attribution - Pas
+                     d’Utilisation Commerciale - Partage dans les Mêmes
+                     Conditions 3.0 France.</p>
+                  <graphic
+                     url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+               </licence>
+               <p>Le Centre de théorie et d'analyse du droit
+                  (UMR 7074) met à disposition cette ressource électronique
+                  structurée, protégée par le code de la propriété
+                  intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                  de données (L341-1), selon les termes de la licence Creative
+                  Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                  Modification ; 3.0 France ». <lb />Cette licence est
+                  disponible en ligne : <ref
+                     target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                     >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                  par courrier postal à Creative Commons, 171 Second Street,
+                  Suite 300, San Francisco, California 94105, USA.</p>
+               <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                  d'analyse du droit souhaite encourager l'utilisation et
+                  l'amélioration de ses ressources électroniques, pour les
+                  intérêts de l'enseignement et de la recherche. Toute
+                  autorisation au-delà du champ de cette licence doit être
+                  obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+               <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                  à ce que toute publication dérivée de ses ressources
+                  électroniques comporte : <lb />1. le nom du Centre de théorie
+                  et d'analyse du droit et, pour les publications électroniques,
+                  son logo <lb />2. l'URI permettant d'accéder à la page citée
+                  sur notre site, ou à la page d'accueil de la ressource
+                  <lb />3. la date du fichier source utilisé. </p>
+               <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                  des fins non commerciales, tant que vous nous créditez et que
+                  les nouvelles œuvres sont diffusées selon les mêmes
+                  conditions. Cependant, afin de mieux servir la communauté
+                  scientifique, le Centre de théorie et d'analyse du droit
+                  s'engage à conserver et à toujours offrir publiquement la
+                  version la plus à jour de ses ressources électroniques par une
+                  URI pérenne. Il s'engage en conséquence à les corriger et à
+                  les améliorer, à intégrer les contributions qui lui sont
+                  soumises (après validation par un comité scientifique), et à
+                  référencer l'origine de ces contributions. Toute modification
+                  de la ressource qui ne serait pas reversée à la version de
+                  référence sous l'autorité éditoriale du Centre de théorie et
+                  d'analyse risquerait en conséquence d'être perdue, afin de ne
+                  pas disperser les contributions et de permettre les meilleures
+                  conditions possibles de collaboration scientifique, nous vous
+                  invitons à nous en faire part.</p>
+            </availability>
+         </publicationStmt>
+         <!-- ajout d'un élément pour traiter le corpus général et réduire la hiérarchie des titres -->
+         <seriesStmt>
+            <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+            <title xml:lang="fre" type="sub">une édition électronique</title>
+            <idno type="URI">http://www.desgodets.net</idno>
+         </seriesStmt>
+         <!-- ajout d'un élément pour DC.description -->
+         <!--<notesStmt>
+            <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+            <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+         </notesStmt>-->
+         <!-- description de la source -->
+         <sourceDesc>
+            <msDesc xml:id="o7" xml:lang="fre">
+               <!-- identification du manuscrit -->
+               <msIdentifier xml:id="o7msIdentifier">
+                  <country>Royaume-Uni</country>
+                  <settlement>Londres</settlement>
+                  <institution>Royal Institute of British Architects (RIBA)</institution>
+                  <!-- <collection>[collection (si besoin)]</collection> -->
+                  <idno>DeA/1/1</idno>
+               </msIdentifier>
+               <!-- contenu du manuscrit-->
+               <msContents>
+                  <msItemStruct>
+                     <author>
+                        <persName xml:lang="fre" full="yes">Desgodets, Antoine
+                           (1653-1728)</persName>
+                     </author>
+                     <title type="supplied">Cours d'architecture</title>
+                     <title type="full">Cours d’architecture dicté par Mr Desgodets, Architecte du Roy </title>
+                     <!-- TODO : vérifier -->
+                     <textLang mainLang="fre">texte en
+                        français</textLang>
+                  </msItemStruct>
+               </msContents>
+               <!-- description physique -->
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="paper">
+                        <support>
+                           <p><objectType>codex</objectType>, <material>papier à la cuve</material>.</p>
+                        </support>
+                        <extent>
+                           <dimensions type="leaves">
+                              <dim quantity="312" unit="leaves">312 pages, sans illustrations</dim>
+                              <height quantity="400" unit="mm" />
+                              <width quantity="250" unit="mm" />
+                              <!-- TODO : donner l'épaisseur -->
+                           </dimensions>
+                           <!-- dimensions est répétable -->
+                        </extent>
+                        <foliation>Paginé à l'encre de la même main</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <!-- vérifier le nombre de lignes -->
+                        <layout columns="1" ruledLines="29">texte sur une
+                           colonne tracée à la mine de plomb, environ 29 lignes par page</layout>
+                        <!-- layout est répétable et peut contenir une localisation avec locus -->
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote xml:id="o7Hand1" scope="major">Plume et encre d'une écriture régulière avec peu de repentirs.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin></origin>
+                  <provenance>
+                     <p>Collection Guénepin (soit <persName ref="#guenepinAuguste">Auguste-Jean-Marie</persName>, soit son neveu <persName ref="#guenepinFrancois">François-Jean-Baptiste</persName>).</p>
+                  </provenance>
+                  <provenance>
+                     <p>Don de <persName ref="#guenepinAuguste">Guénepin</persName> à <persName ref="#donaldson">Thomas Leverton Donaldson</persName> le <date when="1842-01-12">12 janvier 1842</date>.</p>
+                  </provenance>
+                  <acquisition>
+                     <p><date notAfter="1885">Avant
+                     1885</date> : don ou legs Thomas Leverton Donaldson au Royal Institute of British architects.</p>
+                  </acquisition>
+               </history>
+               <additional>
+                  <surrogates>
+                     <idno>microfilm</idno>
+                  </surrogates>
+                  <listBibl>
+                     <bibl corresp="#hermann1958" />
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <!-- description du projet éditorial -->
+         <projectDesc>
+            <p>L'édition des cours de Desgodets fait partie d'un programme de
+               recherche sur la formalisation du savoir architectural au XVII<hi
+                  rend="superscript">e</hi> siècle.</p>
+         </projectDesc>
+         <!-- déclaration des principes éditoriaux -->
+         <editorialDecl>
+            <correction>
+               <p>La syntaxe originale du manuscrit a été respectée en suivant
+                  les indications de Bernard Barbiche, <ref type="external"
+                     target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+                     >Conseils pour l’édition des textes de l’époque moderne
+                        (XVI<hi rend="superscript">e</hi>-XVIII<hi
+                        rend="superscript">e</hi> siècle)</ref>.</p>
+            </correction>
+            <hyphenation>
+               <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de
+                  l'hyphénation.</p>
+            </hyphenation>
+            <interpretation>
+               <p>Les interprétations sont traitées au moyen d'un élément
+                  supplied ou bien sont renvoyées en notes. Une mention de
+                  responsabilité est fournie grâce à l'attribut resp sur le
+                  passage concerné.</p>
+            </interpretation>
+            <normalization>
+               <p>La ponctuation ainsi que les majuscules ont été normalisées.
+                  Les abréviations ont été développées.</p>
+            </normalization>
+            <stdVals>
+               <p>On utilise...</p>
+            </stdVals>
+            <quotation>
+               <p>Les citations dans le texte sont encodées soit au moyen d'un
+                  élément quote, soit au moyen d'un élément q. Les guillemets
+                  doivent donc être restitués en conséquence.</p>
+            </quotation>
+         </editorialDecl>
+         <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+         <refsDecl>
+            <!-- TODO : fournir une expresion régulière -->
+            <p>Description du système de référence canonique. Plus tard on
+               fournira peut-être une expression régulière.</p>
+         </refsDecl>
+         <samplingDecl>
+            <p>Le manuscrit a été transcrit intégralement.</p>
+         </samplingDecl>
+         <variantEncoding method="location-referenced" location="external" />
+      </encodingDesc>
+      <!-- présentation du profil de fichier -->
+      <profileDesc>
+         <creation notBefore="1725" notAfter="1842">XVIII<hi rend="superscript">e</hi> siècle</creation>
+         <langUsage>
+            <language ident="fre" usage="99">Français (langue principale du
+               corpus)</language>
+            <language ident="lat" usage="01">Latin (langue utilisée dans le
+               corpus)</language>
+         </langUsage>
+         <textClass>
+            <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+               <term>Architecture</term>
+               <term>18e siècle</term>
+               <term>France</term>
+               <term>Architecture –– Philosophie</term>
+            </keywords>
+            <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+               <term>Architecture, Modern</term>
+               <term>17th-18th centuries</term>
+               <term>France</term>
+               <term>Architecture -- Philosophy</term>
+            </keywords>
+            <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+               <term>Text</term>
+            </classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2013-05-30" who="#EC">mise à jour du fichier</change>
+         <change when="2012-05" who="#EC">importation du fichier </change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile corresp="#o7ImagesLicence" xml:id="o7Facs">
+      <surface xml:id="o7FacsPl0001">
+         <graphic n="full" mimeType="image/jpg" url="facs/facsO7Pl0001.jpg" />
+         <graphic n="medium" mimeType="image/jpg"
+            url="facs/medium/facsO7Pl0001.jpg" />
+         <graphic n="thumb" mimeType="image/jpg"
+            url="facs/thumbs/facsO7Pl0001.jpg" />
+         <!-- si nécessaire -->
+         <desc>description du fichier</desc>
+      </surface>
+   </facsimile>
+   <text>
+      <front>
+         <div xml:lang="fre" type="transcription"/>
+      </front>
+      <body>
+         <div xml:lang="fre" type="transcription">
+            <p>Texte en cours de relecture</p>
+         </div>
+      </body>
+      <back>
+         <div xml:lang="fre" type="transcription"/>
+         <div xml:lang="fre">
+            <!-- Inclusion du fichier des figures -->
+            <xi:include href="divs/desgodetsO7Figures.tei.xml" parse="xml">
+               <xi:fallback>Fichier des figures de O7 non trouvé</xi:fallback>
+            </xi:include>
+         </div>
+      </back>
+   </text>
+</TEI>

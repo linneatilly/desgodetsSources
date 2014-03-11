@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus de liste des figures de O3 -->
+<!-- RMQ le fichier est traité en fichier inclus pour faciliter le travail d'édition sur le document. -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" 
+    type="figures" xml:id="o3BackFr03" xml:lang="fre">
+    <head>Liste des figures</head>
+    
+    <!--<figure xml:id="o3Pl0001" type="plate" facs="#o3FacsPl0001">
+        <fw type="header"><num n="1"><!-\- n° du titre courant -\-></num>
+            <hi rend="majuscules"><!-\- titre courant -\-></hi></fw>
+        <head><!-\- intitulé -\-></head>
+        <figDesc>
+            <locus from="#o3F"><!-\- localisation -\-></locus>
+            <label>
+                <num n="1">1</num>
+            </label>
+            <title><!-\- légende normalisée -\-></title>
+            <desc><!-\- technique -\-></desc>
+            <dimensions>
+                <height quantity="21" unit="mm" />
+                <width quantity="42" unit="mm" />
+            </dimensions>
+        </figDesc>
+        <note><!-\- texte libre de commentaire -\-></note>
+    </figure>-->
+    
+</div>

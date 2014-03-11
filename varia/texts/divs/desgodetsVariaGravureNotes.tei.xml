@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes du texte biographique sur Desgodets et la gravure -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi de N, suivi d'un numéro d'ordre à quatre unités -->
+
+<div xml:id="variaGravureBackFr01" xmlns="http://www.tei-c.org/ns/1.0"
+    xml:lang="fre" type="notes">
+    <head>Notes</head>
+    <note xml:id="variaGravureN0004">
+        <p>
+            <hi rend="italic">Histoire littéraire du règne de Louis
+                XIV dédié au Roy</hi>, Paris, 1751, t. 3, p.
+            123.</p>
+    </note>
+    <note xml:id="variaGravureN0005">
+        <p> AN MC LIII, 245, Inventaire après décès
+            d’Antoine Desgodets, 17 juin 1728.</p>
+    </note>
+    <note xml:id="variaGravureN0006">
+        <p> Bertrand Jestaz, <hi rend="italic">Jules-Hardouin Mansart. Vie et oeuvre</hi>, Paris,
+            Picard, 2008, vol. 1, p. 215. Voir également Monique
+            Châtenet<hi rend="smallcaps">, </hi>
+            <hi rend="italic">Chambord</hi>, Paris, Editions du
+            Patrimoine / Centre des monuments nationaux, nouvelle
+            édition, [2001] 2013 et Georges Penet, « Les travaux de
+            Jules Hardouin-Mansart à Chambord », <hi rend="italic">Mémoires de la Société des sciences et lettres de
+                Loir-et-Cher</hi>, t. XXXIV, 1963, p. 7-37.</p>
+    </note>
+    <note xml:id="variaGravureN0007">
+        <p> Le Nationalmuseum de Stockholm
+            récence pour le moment une vingtaine de dessins de ou
+            attribués à Desgodets représentant les plans d’hôtels
+            privés, de châteaux et d’églises reproduits en ligne
+            [http://www.nationalmuseum.se/sv/English-startpage/Collections/Collections-Online/ ;
+            consulté le 7 octobre 2013]. Si la collection de
+            Cronstedt est dépouillée et reproduite entièrement
+            celle de Tessin-Hårleman ne l’est
+            qu’incomplètement.</p>
+    </note>
+    <note xml:id="variaGravureN0008">
+        <p> Peter Fuhring, <hi rend="italic">Ornament Prints in the Rijksmuseum. II.
+            Seventeenth Century</hi>, 3 vol. Amsterdam,
+            Rijksmuseum, Rotterdam, Sound a Vision Publishers, 2004
+            (Studies in Prints and Printmaking, vol. 5).</p>
+    </note>
+    <note xml:id="variaGravureN0009">
+        <p> Lina Propeck, Laurence Lhinares, « Signatures, marques
+            et paraphes administratifs des dessins du Louvre,
+            1671-1796 », <hi rend="italic">Revue du Louvre et des
+                Musées de France</hi>, 2003, vol. 53, n° 2, p.
+            45-55.</p>
+    </note>
+</div>

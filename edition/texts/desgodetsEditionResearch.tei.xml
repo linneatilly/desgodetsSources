@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier de présentation du projet de recherche
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : dans back une division de type "downloads" contient les liens vers les fichiers téléchargeables -->
+<!-- TODO : remplacer le faux-texte -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">L’édition des cours</title>
+                <title xml:lang="fre" type="sub">Le projet de recherche</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="aut">auteurs</resp>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date when="2013">2013</date>
+            </edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>editionResearch</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="editionResearchTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png"/>
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb/>Cette licence est
+                        disponible en ligne : <ref target="http://creativecommons.org/licences/by-nc-sa/3.0/fr">http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb/>1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb/>2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource
+                        <lb/>3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit
+                        s'engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s'engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l'origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l'autorité éditoriale du Centre de théorie et
+                        d'analyse risquerait en conséquence d'être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!-- ajout d'un élément pour DC.description -->
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="editionResearch">Texte original : le texte a été créé sous forme
+                    électronique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+                    formalisation du savoir architectural au XVII<hi rend="superscript">e</hi>
+                    siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote,
+                        soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira peut-être
+                    une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le
+                    cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="100">Français (langue principale du corpus)</language>
+                <!-- TODO : évaluer le pourcentage des langues dans le document -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-16" who="#EC">première version du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front xml:id="editionResearchFront">
+            <titlePage xml:id="editionResearchFront00">
+                <docTitle>
+                    <titlePart>Le projet de recherche</titlePart>
+                </docTitle>
+                <docAuthor>
+               <persName ref="#RC">Robert Carvais</persName>
+            </docAuthor>
+                <docDate>14 avril 2013</docDate>
+                <docEdition>version 0</docEdition>
+            </titlePage>
+            <div xml:id="editionResearchFrontFr" xml:lang="fre">
+                <div xml:id="editionResearchFrontFr01" type="abstract">
+                    <p>Notre projet de recherche déposé à l’ANR pose d’emblée une problématique neuve. Comment est né l’architecte moderne ? Sur la base de quels savoirs ? La mise en place du contexte de recherche et de l’état de l’art sur la question montre les lacunes des connaissances dans ce domaine. Le choix de notre sujet se fonde sur des critères temporels – c’est le temps de la réforme des dogmes –, disciplinaires – les thèmes des cours se diversifient – et professionnels – les architectes parviennent à briser le monopole d’expertise des maçons.</p>
+                </div>
+                <div xml:id="editionResearchFrontFr02" type="introduction">
+                    <head>Introduction</head>
+                    <p>Ce projet a vu le jour grâce à l’obtention d’un financement par
+                        l’Agence nationale de la recherche. Il est avant tout une
+                        réflexion scientifique sur l’état de la recherche en matière
+                        des savoirs constitutifs de la profession d’architecte. Il a
+                        nécessité une méthodologie précise qui a néanmoins été
+                        améliorée au cours des cinq ans de sa réalisation. Il a permis
+                        d’élaborer un modèle de saisie numérique que nous mettons à la
+                        disposition des chercheurs qui seraient tenté d’éditer des
+                        sources comparables ou de même nature.</p>
+                </div>
+            </div>
+        </front>
+        <body xml:id="editionResearchBody">
+            <div xml:id="editionResearchBodyFr" xml:lang="fre">
+                <div xml:id="editionResearchBodyFr01" type="chapter" n="1">
+                    <div xml:id="editionResearchBodyFr01.01" type="section" n="1">
+                        <head>Objectifs, contexte et état de la question,
+                            originalité</head>
+                        <p>Notre projet avait pour but de mesurer le savoir de
+                            l’architecte à la fin du XVII<hi rend="superscript">e</hi>
+                            et au début du XVIII<hi rend="superscript">e</hi> siècles,
+                            en s’appuyant sur la tradition manuscrite des écrits
+                            architecturaux au cœur même de la construction théorique de
+                            la discipline qui remonte à la tradition vitruvienne du XV
+                                <hi rend="superscript">e</hi> siècle. Nous savons que
+                            les traités d’architecture dès l’âge humaniste, véritable
+                            genre littéraire à part entière, dépassent largement
+                            l’objet purement architectural tel que nous l’entendons
+                            aujourd’hui, en traitant essentiellement de questions
+                            techniques d’assemblages destinées à faciliter la vie des
+                            hommes. On comprend alors comment le savoir architectural a
+                            pu à la fois, dominer la culture constructive, s’imposer
+                            comme référence à l’urbanisme et servir d’opérateur
+                            fondamental à l’aménagement du territoire. On comprend
+                            aussi qu’il a pu être un enjeu de pouvoir tant pour les
+                            autorités politiques que pour les professionnels. </p>
+                        <p>Les écrits d’architecture relèvent ainsi de la littérature
+                            technique. Ils ne procurent pas uniquement de la simple
+                            lecture passive, mais constituent de véritables instruments
+                            de travail utiles qui procurent à l’architecte les outils
+                            pour concevoir et réaliser une œuvre (cf. les commentaires
+                            des traités devant l’assemblée réunie des architectes de
+                            l’Académie). Ils doivent être compris et reçus comme tels
+                            dans la mesure où ils sont copiés, annotés, commentés et
+                            corrigés par les praticiens qui suivent (cf. les gloses du
+                                <hi rend="italic">De Architectura</hi> de Vitruve).
+                            Cela est d’autant plus vrai des enseignements dont les
+                            contenus sont transmis oralement, copiés sous la dictée par
+                            le professeur à des élèves, puis recopiés par les absents
+                            et par ceux qui pourraient en avoir besoin, à charge pour
+                            ceux-ci, à force de les recopier, de les transformer en les
+                            nourrissant de leur propre savoir en exercice.</p>
+                        <p rend="Appel">Si la littérature théorique de l’architecte
+                            développée sous forme de traités et de périodiques a
+                            beaucoup retenu l’attention des chercheurs ces dernières
+                                années<ref type="note" target="#editionResearchN0001"/>, si ont été amorcées un certain nombre de
+                            réflexions sur les savoirs pratiques de l’architecte<ref type="note" target="#editionResearchN0002"/>, il n’en est pas de même de cette partie discursive
+                            que représente l’enseignement délivré aux élèves. Nous
+                            savons peu de chose sur le savoir transmis aux architectes
+                            dans le cadre de leur formation surtout à l’âge classique,
+                            alors que depuis une cinquantaine d’années l’enseignement
+                            de l’architecture aux XIX<hi rend="superscript">e</hi> et
+                                XX<hi rend="superscript">e</hi> siècles est beaucoup
+                            mieux étudié. C’est pourquoi il nous a semblé important de
+                            nous arrêter sur les cours d’Antoine Desgodets, cours
+                            inédits et qui ne cessent d’intriguer les chercheurs sur
+                            leur contenu exact, leur compréhension et leur impact sur
+                            la construction des savoirs. </p>
+                        <p>Trois raisons nous ont porté à choisir l’œuvre de
+                            Desgodets :
+                            <list>
+                                <item><label>1°</label> Desgodets devient professeur à l’Académie
+                                    d’Architecture en 1719, en pleine Régence du
+                                    royaume, à un moment où l’on veut réformer les
+                                    dogmes. Il est prêt à continuer à les affronter
+                                    comme il l’avait déjà fait en publiant en 1683 ses
+                                    fameux <hi rend="italic">Édifices antiques de
+                                        Rome</hi> à la demande de Colbert. Pour ce que
+                                    nous connaissons du contenu de ses cours nous
+                                    savons qu’il a développé des concepts nouveaux sur
+                                    le plan théorique et surtout qu’il va introduire –
+                                    ainsi que Vitruve le recommandait dans son propre
+                                    traité – de nouvelles disciplines dans la formation
+                                    académique de l’architecte, comme le droit et
+                                    l’économie. Ces deux matières – qui sont avant tout
+                                    des matières pratiques et qu’il va être le premier
+                                    à enseigner – se révèlent être indispensables à
+                                    l’architecte dans ses missions d’expertise. De
+                                    plus, la part de cet enseignement que nous
+                                    connaissons par des publications posthumes non
+                                    totalement identifiées, connaîtra une fortune
+                                    éditoriale significative dans le monde du bâtiment
+                                    jusqu’au début du XX<hi rend="superscript">e</hi>
+                                    siècle. C’est dire déjà l’importance de l’œuvre à
+                                    découvrir.</item>
+                                <item><label>2°</label> Si la méthode du commentaire de textes et de
+                                    figures pour la partie pratique et
+                                    d’illustrations pour la partie théorique est pour
+                                    le moins classique, il faut convenir que le choix
+                                    des matériaux sur lesquels s’exerce son esprit
+                                    participe d’une rationalisation de la discipline
+                                    architecturale. En effet, il ne va pas se contenter
+                                    de se référer à quelques exemples bien choisis par
+                                    leur statut ou leur stature, mais répertorier tous
+                                    les cas abordables dans leur intégralité,
+                                    structurer sa présentation en vue d’en transmettre
+                                    l’essentiel et délivrer oralement son message aux
+                                    élèves. Ce processus en trois temps de
+                                    rationalisation des savoirs techniques, pratiqué
+                                    depuis le XVI<hi rend="superscript">e</hi> siècle,
+                                    et que l’on présente comme une « réduction en art »
+                                    se perçoit bien chez Desgodets. Pour avoir commencé
+                                    à étudier le manuscrit préparatoire de son cours de
+                                    droit, nous en avons trouvé la preuve flagrante.
+                                    Plus avant, le cours dans son ensemble constitue
+                                    probablement une des premières normalisations du
+                                    savoir architectural, sous toutes ses différentes
+                                    facettes.</item>
+                                <item><label>3°</label> L’œuvre de Desgodets intervient à un moment
+                                    clé de la constitution de la légitimité
+                                    professionnelle de l’architecte. Il va former non
+                                    seulement les futurs architectes du roi ou des gens
+                                    de la Cour, mais également ceux qui se destineront
+                                    aux fonctions moins nobles mais assez
+                                    rémunératrices de l’expertise, les
+                                    experts-bourgeois architectes qui constituent la
+                                    première colonne d’experts depuis l’Édit de 1690,
+                                    comme aussi des maîtres d’œuvre de bâtisses
+                                    ordinaires, sans prestige particulier, qui
+                                    construisent pour de simples bourgeois. On se
+                                    trouve face à une multiplicité des figures de
+                                    l’architecte, entre le concepteur avide de gestes
+                                    poétiques, inspiré de théories et l’homme de
+                                    chantier prêt à tenir la truelle. Entre ces deux
+                                    portraits se découvre l’expert qui se veut assez
+                                    technicien pour connaître les normes mais qui peut
+                                    être amené à imaginer l’espace comme une invention.
+                                    On est alors loin de la transmission d’un savoir
+                                    théorique purement académique (voir la pluralité
+                                    des rôles tenus par le contemporain Germain
+                                    Boffrand qui est à la fois architecte, ingénieur et
+                                    expert-bourgeois).</item>
+                            </list></p>
+                        <p>Pour toutes ces raisons, le cours d’Antoine Desgodets
+                            méritait d’être reconstitué et livré à la communauté
+                            scientifique comme un texte fondateur du « statut » de
+                            l’architecte moderne. Nous envisagions de traiter chacun de
+                            la trentaine des manuscrits en les rassemblant selon les
+                            principes relevant de la génétique des textes, avec toutes
+                            les précautions philologiques indispensables. L’équipe
+                            pluridisciplinaire que nous avons réunie pour travailler
+                            devait nous permettre d’analyser tous les différents champs
+                            enseignés par Desgodets (historiens de l’art, philosophe,
+                            philologue, historiens de l’architecture, ingénieur,
+                            juriste) et de replacer exactement son œuvre dans
+                            l’histoire de chacun des savoirs abordés afin d’en
+                            souligner ses originalités.</p>
+                        <p>Notre projet complète l’effort d’autres équipes qui se
+                            consacrent de leur côté essentiellement à la mise en ligne
+                            des ouvrages d’architecture imprimés ou qui n’existent que
+                            sous forme manuscrite mais en un seul exemplaire, sans
+                            aucune variante.</p>
+                    </div>
+                    <div xml:id="editionResearchBodyFr01.02" type="section" n="2">
+                        <head>Description du projet et résultats attendus</head>
+                        <p>La création des institutions révèle souvent des ruptures
+                            dans l’histoire des hommes et de leurs savoirs. Issus des
+                            métiers du bâtiment, les architectes se sont formés sur les
+                            chantiers et dans les livres. On sait peu de chose en
+                            revanche sur leur formation scolastique et les causes de
+                            son établissement. D’autant que si l’accès aux cours
+                            délivrés par les professeurs de l’Académie d’architecture
+                            est libre à « tout homme de quelque âge et condition qu’il
+                            soit, qui aura goût pour l’Architecture »<ref type="note" target="#editionResearchN0003"/>, il n’est pas prévu la conservation du contenu de
+                            ces cours. Seules des affiches attestent de leur existence
+                            à raison de quatre heures par semaine sur deux jours. La
+                            prise de notes sous la dictée du professeur ou la copie
+                            « par cayers » à partir d’un manuscrit autorisé nous permet
+                            de mieux comprendre ce qui constitue le savoir
+                            architectural au début du XVIII<hi rend="superscript">e</hi> siècle, ou plus précisément ce que l’Académie
+                            royale et ses professeurs successifs ont jugé devoir
+                            constituer comme savoir pour l’architecte. Celui qui fait
+                            de l’art de bâtir sa profession doit être versé dans les
+                            mathématiques, posséder le dessin, mais aussi entendre les
+                            métiers pratiques du bâtiment (maçonnerie, taille de
+                            pierre, charpente, couverture, etc.)<ref type="note" target="#editionResearchN0004"/> L’Académie prévoit exactement pour moitié des cours
+                            de « géométrie pratique », pour moitié des « leçons de
+                            différentes notions, enseignements, règles et pratiques
+                            d’architecture » qui doivent représenter les principes de
+                            cet art ou les connaissances les plus nécessaires.
+                            L’expression est suffisamment énigmatique et programmatique
+                            pour vouloir découvrir concrètement ce qu’elle entend et
+                            quelles sont les raisons d’une telle composition.</p>
+                        <p>Notre objectif principal consistait à reconstituer, dans le
+                            cadre du savoir architectural, le cours d’Antoine
+                                Desgodets<ref type="note" target="#editionResearchN0005"/>, architecte du roi, professeur à l’Académie
+                            d’architecture de 1719 à 1728, pour lequel nous possédons à
+                            travers les bibliothèques de nombreux pays une trentaine de
+                            manuscrits (il s’agit d’un premier repérage, <hi rend="italic">cf. infra</hi>, § sources
+                                manuscrites)<ref type="note" target="#editionResearchN0006"/>. L’un des avantages principaux de cette recherche
+                            était de réunir, en un même lieu, ce corpus de manuscrits
+                            dispersés, par le biais de microfilms, rassemblés autour de
+                            la figure de leur auteur et de leur finalité didactique, et
+                            de les mettre à la disposition des chercheurs. La
+                            constitution de cette filmothèque que le projet devrait
+                            nous permettre de réaliser, qui pourrait être déposée après
+                            la réalisation du projet à l’Institut national d’histoire
+                            de l’art (INHA) ou à la BnF, ne nous empêche pas de
+                            consulter et d’étudier en premier, dans les différentes
+                            bibliothèques internationales, les manuscrits qui portent
+                            en eux les traces de leur constitution et de leur
+                            filiation. A la différence de Vitruve, l’œuvre scolastique
+                            de Desgodets ne connaît pas d’édition mère. Notre projet
+                            envisageait trois directions :</p>
+                        <p>
+                            <list>
+                                <item><label>1°</label> Reconstituer au début du
+                                        XVIII<hi rend="superscript">e</hi> siècle ce
+                                    qui compose, aux yeux de l’Académie d’Architecture
+                                    et de ses sœurs les autres Académies, les savoirs
+                                    enseignés à l’architecte. Il s’agissait de
+                                    comprendre les disciplines qui ensemble
+                                    définissaient cette profession comme une
+                                    science nouvelle : les cours de Desgodets sont de
+                                    plusieurs natures et occupent des champs
+                                    disciplinaires assez éloignés, traditionnels pour
+                                    certains, novateurs pour d’autres : les ordres, la
+                                    commodité, le bon goût, l’harmonie, le toisé et le
+                                    droit. Notre démarche initiale était, à l’aide
+                                    d’une équipe pluridisciplinaire, de dégager par la
+                                    comparaison informatique des manuscrits un corpus
+                                    mère. Cette démarche minutieuse, encadrée de
+                                    précautions philologiques éprouvées<ref type="note"
+                                        target="#editionResearchN0007" />, devait
+                                    permettre de retrouver le manuscrit autographe,
+                                    s’il existe ou de reconstituer le plus approchant,
+                                    s’il s’agit de prises de notes par des élèves
+                                    assistant au cours de l’Académie ou s’il s’agit de
+                                    copies utiles pour les praticiens. L’outil
+                                    informatique se révélait indispensable pour la
+                                    comparaison des variantes des différentes versions
+                                    d’un même cours. De même les repentirs,
+                                    hésitations, annotations et commentaires devaient
+                                    nous apporter des éclaircissements sur l’origine
+                                    des manuscrits. Cette première étape devait aider à
+                                    mesurer l’influence de la tradition vitruvienne de
+                                    la science architecturale et de sa transformation.
+                                    En quoi cette période d’institutionnalisation de
+                                    l’architecture depuis le dernier quart du XVII<hi
+                                        rend="superscript">e</hi> siècle marque-t-elle
+                                    une rupture avec le passé vitruvien, en particulier
+                                    dans la conception de l’architecture comme pratique
+                                    de chantier et non plus seulement comme théorie du
+                                    projet ?</item>
+                                <item><label>2°</label> Sur le contenu des savoirs
+                                    architecturaux, notre travail devait faciliter la
+                                    recherche des filiations (ou des sources) des
+                                    différents textes tant en aval qu’en amont, sachant
+                                    que les manuscrits ont été soit précédés par une
+                                    publication (<hi rend="italic">Les Édifices
+                                        antiques de Rome</hi>), soit commentés par des
+                                    publications posthumes (<hi rend="italic">Loix
+                                    </hi>et <hi rend="italic">Toisé</hi>). D’ailleurs,
+                                    cette perspective devait nous permettre de résoudre
+                                    certaines imprécisions laissées par les
+                                    continuateurs de Desgodets. Qui doit-on croire,
+                                    Quatremère de Quincy<ref type="note"
+                                        target="#editionResearchN0008" /> ou
+                                        Morisot<ref type="note"
+                                        target="#editionResearchN0009" /> lorsqu’ils
+                                    prétendent respectivement que le <hi rend="italic"
+                                        >Traité du toisé</hi> de Desgodets a été publié
+                                    par Ginet ou par Delespée ? De même que nous
+                                    apprennent les textes préparatoires du cours que
+                                    nous avons retrouvés pour les <hi rend="italic"
+                                        >Loix</hi> ? La circulation des manuscrits de
+                                    Desgodets est riche en elle-même pour traduire
+                                    leurs usages. A noter, par exemple, la confidence
+                                    de P.-A. Pâris à A.-J. Guénepin à propos du
+                                    complément que celui-ci a apporté aux <hi
+                                        rend="italic">Édifices </hi>et du don d’un
+                                    cours de Desgodets par ledit Guénepin à son
+                                    confrère londonien Donaldson ou la note manuscrite
+                                    en tête des manuscrits des <hi rend="italic"
+                                        >Loix</hi> qui pose une énigme sur leur
+                                    possession par un auteur d’une <hi rend="italic"
+                                        >Histoire de l’Académie</hi> avant d’intégrer
+                                    les collections du Sénat. Le même travail de
+                                    comparaison devait être opéré avec les planches de
+                                    dessins ou de figures pour vérifier leur constance
+                                    ou bien leurs modifications, leur origine ou leur
+                                    nouveauté. Cette mise au jour de la multiplicité
+                                    des pratiques de l’architecte qui se dévoilent à
+                                    cette époque charnière (inventives, constructives,
+                                    savantes ou d’expertise, etc.) dans la constitution
+                                    des savoirs, participe de l’approfondissement des
+                                    types d’écrits d’architecture, de leur genèse et de
+                                    leur filiation. Par exemple, en ce qui concerne le
+                                    droit, nous émettions l’hypothèse que la
+                                    connaissance du droit fut pour les architectes un
+                                    moyen de légitimer leur profession sans statut en
+                                    grignotant le pouvoir des entrepreneurs maçons qui
+                                    détenaient depuis le Moyen Âge le monopole de
+                                    l’industrie du bâtiment, <hi rend="italic">via</hi>
+                                    en particulier l’exercice de l’expertise.</item>
+                                <item><label>3°</label> Cette collecte d’informations,
+                                    aussi bien de textes que de sources, devait nous
+                                    autoriser à reconsidérer le statut de la science
+                                    architecturale au tournant des XVII<hi
+                                        rend="superscript">e</hi> et XVIII<hi
+                                        rend="superscript">e</hi> siècles tant dans ses
+                                    fondements théoriques traditionnels (<hi
+                                        rend="italic">ratiocinatio</hi>) que dans ceux
+                                    pratiques du chantier (<hi rend="italic"
+                                        >fabrica</hi>). De ce point de vue, le <hi
+                                        rend="italic">Toisé </hi>comme les <hi
+                                        rend="italic">Loix,</hi> devaient être analysés
+                                    comme des techniques de construction au cours de
+                                    l’élévation du bâtiment mais également comme des
+                                    techniques finales au service de l’expertise et de
+                                    sa pratique post-œuvre. Telle était notre
+                                    hypothèse. C’est certainement une avancée
+                                    déterminante qu’il s’agissait de confirmer au cours
+                                    de notre recherche dans la mesure où la science
+                                    s’occupe du devenir de l’œuvre et non plus
+                                    seulement de son existence. Porté aux nues comme le
+                                    chantre de l’architecture classique, Desgodets
+                                    serait-il le plus novateur là où on ne l’attend
+                                    pas, dans le domaine des disciplines techniques ?
+                                    Nous pourrions alors nous interroger sur la place
+                                    de son œuvre dans l’histoire des savoirs
+                                    mathématiques au service de l’architecture, en
+                                    liaison avec la stéréotomie, la géométrie
+                                    descriptive et la perspective, voire évaluer son
+                                    influence sur la science juridique. Ainsi, mettre
+                                    en perspective chacun des thèmes enseignés en
+                                    architecture avec l’état du savoir des disciplines
+                                    sollicitées, nous donnerait l’occasion de préciser
+                                    ce qu’il faut entendre par la naissance des
+                                    branches disciplinaires (droit de la construction,
+                                    économie du projet, etc.).</item>
+                            </list></p>
+                        <p>Finalement, cette construction d’un savoir archétypal pour
+                            l’architecte se devait d’être replacée dans le contexte
+                            particulier de la normalisation des savoirs. Nous avons
+                            démontré qu’en cette fin du XVII<hi rend="superscript">e</hi> siècle, l’art de bâtir prend des formes de plus
+                            en plus réglées et s’inscrit par divers procédés juridiques
+                            dans le droit français : tantôt dans une multiplication de
+                            règlements techniques issus du contentieux professionnel,
+                            qu’il s’agisse de la justice ou de la police des chantiers,
+                            tantôt encore dans le cadre de grandes ordonnances
+                            régulatrices qui sont souvent l’œuvre d’architectes, comme
+                            Jean Beausire ou Germain Boffrand ou encore d’ingénieurs
+                            comme Vauban. Il va sans dire que cette mise en forme
+                            juridique des règles techniques se retrouve pour
+                            l’essentiel dans l’enseignement de Desgodets et que ce
+                            dernier participe à sa manière, dans l’écriture et la
+                            dictée de ses cours d’architecture, de cette aventure de la
+                            « réduction en art » des techniques<ref type="note" target="#editionResearchN0010"/> qui se développe dès le XVI<hi rend="superscript">e</hi> siècle. Ainsi, sa participation essentielle à
+                            la glose de la coutume de Paris nous permettrait de
+                            réfléchir à la sédimentation du droit, bref à la
+                            construction d’une des sources du droit les plus
+                            emblématiques.</p>
+                        <p>Notre projet de recherche devait aboutir aux résultats
+                            suivants :</p>
+                        <list type="unordered">
+                            <item>L’établissement de la matrice des cours d’Antoine
+                                Desgodets</item>
+                            <item>L’édition numérique et critique desdits cours. Mise à
+                                la disposition en <hi rend="italic">open office</hi> de
+                                ces données.</item>
+                            <item>Une réflexion sur la naissance des disciplines à
+                                travers les fluctuations de leurs savoirs.</item>
+                        </list>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <back xml:id="editionResearchBack">
+            <div xml:id="editionResearchBackFr" xml:lang="fre">
+                
+                <!-- inclusion du fichier de notes -->
+                <xi:include href="divs/desgodetsResearchNotes.tei.xml"
+                    parse="xml">
+                    <xi:fallback>Fichier de notes de desgodetsResearchNotes non
+                        trouvé</xi:fallback>
+                </xi:include>
+
+                <!-- lien vers le fichier à télécharger -->
+                <!--<div xml:id="editionResearchBackFr02"  type="downloads">
+                    <head>Téléchargements</head>
+                    <p><ref type="file" target="../../files/programme2010.pdf"
+                            mimeType="application/pdf">Programme</ref></p>
+                </div>
+-->
+                <!-- liste des figures -->
+                <!--<div xml:id="editionResearchBackFr03" type="figures">
+                    <head>Liste des figures</head>
+                    <figure xml:id="editionResearchIll0001" type="illustration">
+                        <figDesc>
+                            <title>Frontispice des édifices antiques</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, frontispice</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="editionResearchIll0003" type="illustration">
+                        <figDesc>
+                            <title>Dédicace</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 9</desc>
+                        </figDesc>
+                        <graphic url="../../images/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="editionResearchIll0004" type="illustration">
+                        <figDesc>
+                            <title>Élévation antérieure du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 30</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="editionResearchIll0033" type="illustration">
+                        <figDesc>
+                            <title>Élévation latérale du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 33</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                </div>-->
+            </div>
+        </back>
+    </text>
+</TEI>

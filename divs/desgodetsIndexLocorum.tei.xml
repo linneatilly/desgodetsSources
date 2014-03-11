@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model     href="../schema/desgodetsSchemaTEI.rnc"
+                type="application/relax-ng-compact-syntax"
+                schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+     fichier de l'index locorum de l'édition des Cours de Desgodets 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : fichier d'usage global pour l'ensemble de l'édition -->
+<!-- RMQ : respecter la présentation alphabétique -->
+<!-- TODO revoir @type pour les vedettes matières tirées de RAMEAU, quel sens utiliser vedettes matières dans un index topo ? -->
+<!-- TODO marquer les termes et les noms géographiques dans les intitulés pour les rendre cherchables -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Index locorum</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche
+                                Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la
+                        Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                    <persName ref="#JH">
+                        <forename>Juliette</forename>
+                        <surname>Hernu</surname>
+                    </persName>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date from="2013"
+                        to="2013">2008-2013</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>cPresentation</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR
+                        7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="indexLocorumTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"
+                        >
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic
+                            url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb />Cette licence est
+                        disponible en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb />1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb />2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource
+                        <lb />3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit
+                        s'engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s'engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l'origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l'autorité éditoriale du Centre de théorie et
+                        d'analyse risquerait en conséquence d'être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="indexLocorum">Ce fichier a été nativement créé sous
+                    forme numérique.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme
+                    de recherche sur la formalisation du savoir architectural au
+                        XVII<hi rend="superscript">e</hi> siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen
+                        d'un élément quote, soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on
+                    fournira peut-être une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas
+                    ce ne sera pas le cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="100">Français (langue principale du
+                    corpus)</language>
+                <!-- TODO : évaluer les langues -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-13" who="#EC">augmentation de l'en-tête et
+                enrichissement des exemples</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="fre" type="indexLocorum">
+                <head>Index locorum</head>
+                <listPlace>
+                    <place xml:id="alpes">
+                        <!-- forme normalisée du nom de lieu -->
+                        <placeName full="yes">Alpes, Chaîne des</placeName>
+                        <!-- Identifiant dans un fichier d'autorité -->
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15294443d/PUBLIC</idno>
+                    </place>
+                    <place xml:id="angers">
+                        <!-- forme normalisée du nom de lieu -->
+                        <placeName full="yes">Angers, Maine-et-Loire,
+                            France</placeName>
+                        <!-- Identifiant dans un fichier d'autorité -->
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb152616083/PUBLIC</idno>
+                    </place>
+                    <place xml:id="ilxxxxx">
+                        <!-- forme normalisée du nom de lieu -->
+                        <placeName full="yes">Arcadie, Nome d' (Péloponnèse,
+                            Grèce)</placeName>
+                        <!-- Identifiant dans un fichier d'autorité -->
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15299073f/PUBLIC</idno>
+                    </place>
+                    <place xml:id="ilxxxx">
+                        <!-- Développer la structure descriptive des noms de lieux -->
+                        <placeName full="yes">Arcadie, Nome d' (Péloponnèse,
+                            Grèce)</placeName>
+                        <placeName>
+                            <country>Grèce</country>
+                            <region type="nome">Arcadie</region>
+                        </placeName>
+                        <!-- Identifiant dans un fichier d'autorité -->
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15299073f/PUBLIC</idno>
+                    </place>
+                    <place xml:id="argos">
+                        <placeName type="full">Árgos (Péloponnèse, Grèce)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15299088g/PUBLIC</idno>
+                        <place xml:id="argosTempleDHera">
+                            <placeName>Argos (Grèce) – Temple d’Héra</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb159390695/PUBLIC</idno>
+                        </place>
+                    </place>
+                    <place xml:id="arles">
+                        <placeName type="full">Arles (Bouches-du-Rhône, France)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15247286t/PUBLIC</idno>
+                        <place xml:id="arlesAmphitheatreRomain">
+                            <placeName type="sub">Amphithéâtre romain</placeName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb120650404/PUBLIC</idno>
+                        </place>
+                    </place>
+                    <place xml:id="peloponnese"><!-- TODO comment traiter 3 niveaux ? -->
+                        <placeName full="yes">Péloponnèse (Grèce)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119425503/PUBLIC</idno><!-- vedette matière -->
+                    </place>
+                    <place xml:id="achaie">
+                        <placeName full="yes">Achaïe, Nome d' (Péloponnèse, Grèce)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15299071r/PUBLIC</idno><!-- autorité géographique -->
+                    </place>
+                    <place xml:id="blois">
+                        <placeName full="yes">Blois (Loir-et-Cher, France)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb152592944/PUBLIC</idno>
+                        <place xml:id="bloisChateau">
+                            <placeName type="sub">Château</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12043297r/PUBLIC</idno>
+                        </place>
+                    </place>
+                    <place xml:id="carie">
+                        <placeName full="yes">Carie (Asie mineure ; région historique)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15312183v/PUBLIC</idno>
+                    </place>
+                    <place xml:id="chine">
+                        <placeName full="yes">Chine</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15238581z/PUBLIC</idno>
+                    </place>
+                    <place xml:id="compiegne">
+                        <placeName full="yes">Compiègne (Oise, France)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15267398h/PUBLIC</idno>
+                    </place>
+                    <place xml:id="corinthe">
+                        <placeName full="yes">Corinthe (Grèce)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11981475r/PUBLIC</idno><!-- vedette matière -->
+                    </place>
+                    <place xml:id="espagne">
+                        <placeName full="yes">Espagne</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15238540c/PUBLIC</idno>
+                    </place>
+                    <place xml:id="etatsUnis">
+                        <placeName full="yes">États-Unis</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15238495c/PUBLIC</idno>
+                    </place>
+                    <place xml:id="france">
+                        <placeName full="yes">France</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb152383070/PUBLIC</idno>
+                    </place>
+                    <place xml:id="fullero">
+                        <placeName full="yes">Fullerö (<placeName ref="#suede">Suède</placeName>)</placeName>
+                        <!--<idno type="autBnf"></idno>-->
+                    </place>
+                    <place xml:id="paysBas">
+                        <placeName full="yes">Pays-Bas</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15238535s/PUBLIC</idno>
+                    </place>
+                    <place xml:id="grece">
+                        <placeName full="yes">Grèce</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15238445t/PUBLIC</idno>
+                    </place>
+                    <place xml:id="greceAntique">
+                        <placeName full="yes">Grèce antique (16..-146 av. J.C.)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15366266j/PUBLIC</idno>
+                    </place>
+                    <place xml:id="henoch">
+                        <placeName full="yes">Hénoch (<term>ville ancienne</term>)</placeName>
+                    </place>
+                    <place xml:id="ephese">
+                        <placeName full="yes">Éphèse (<term>ville ancienne</term>)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119312604/PUBLIC</idno><!-- vedette matière -->
+                        <place xml:id="epheseTempleDArtemis">
+                            <placeName type="sub">Temple d’Artémis</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11992239s/PUBLIC</idno>
+                        </place>
+                    </place>
+                    <place xml:id="babel">
+                        <placeName>
+                            <placeName full="yes">Babylone (<term>ville ancienne</term>)</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb153009287/PUBLIC</idno>
+                            <placeName xml:id="babelTour">
+                                <placeName>Tour de Babel</placeName>
+                            </placeName>
+                        </placeName>
+                    </place>
+                    <place xml:id="israel">
+                        <placeName full="yes">Israël, Royaume d' (1030-721 av. J.C.)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb153456691/PUBLIC</idno>
+                    </place>
+                    <place xml:id="ionie">
+                        <placeName full="yes">Ionie (région ancienne)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15312170h/PUBLIC</idno>
+                    </place>
+                    <place xml:id="italie">
+                        <placeName full="yes">Italie</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15241131t/PUBLIC</idno>
+                    </place>
+                    <place xml:id="jerusalem">
+                        <placeName full="yes">Jérusalem</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15288941v/PUBLIC</idno>
+                            <place xml:id="jerusalemTemple">
+                                <placeName>Temple</placeName>
+                                <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11981351g/PUBLIC</idno>
+                            </place>
+                    </place>
+                    <!-- renvois dans un index, cf. note -->
+                    <place xml:id="Leyde">
+                        <placeName full="yes">Leyde (Hollande-Méridionale, Pays-Bas)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15240152j/PUBLIC</idno>
+                    </place>
+                    <place xml:id="liban">
+                        <placeName full="yes">Liban</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15322011x/PUBLIC</idno>
+                        <note>voir <ref target="#tyr">Tyr</ref></note>
+                    </place>
+                    <place xml:id="londres">
+                        <placeName full="yes">Londres (<placeName ref="#royaumeUni">Royaume-Uni</placeName>)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15282157k/PUBLIC</idno>
+                    </place>
+                    <place xml:id="marseille">
+                        <placeName full="yes">Marseille (Bouches-du-Rhône, France)</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15247337w/PUBLIC</idno>
+                    </place>
+                    <place xml:id="mezieresSurSeine">
+                        <placeName full="yes">Mézières-sur-Seine (Yvelines,
+                            France)</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15276031c/PUBLIC</idno>
+                    </place>
+                    <place xml:id="newYork">
+                        <placeName full="yes">New York (New York, <placeName ref="#etatsUnis">États-Unis</placeName>)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15294963d/PUBLIC</idno>
+                    </place>
+                    <place xml:id="nimes">
+                        <placeName full="yes">Nîmes (Gard, France)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb152548294/PUBLIC</idno>
+                        <place xml:id="nimesArenes">
+                            <placeName type="sub">Arènes de Nîmes</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15201499f/PUBLIC</idno>
+                        </place>
+                        <place xml:id="nimesMaisonCarree">
+                            <placeName type="sub">Maison Carrée</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16192219g/PUBLIC</idno>
+                        </place>
+                        <place xml:id="nimesTempleDeDiane">
+                            <placeName type="sub">Temple de Diane</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16192228f/PUBLIC</idno>
+                        </place>
+                    </place>
+                    <place xml:id="paris">
+                        <placeName full="yes">Paris (France)</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb152821567/PUBLIC</idno>
+                        <place xml:id="parisCollegeMazarin">
+                            <placeName type="sub">Collège Mazarin (Paris)</placeName>
+                        </place>
+                        <place xml:id="parisEgliseDeLaSorbonne">
+                            <placeName type="sub">Église de la Sorbonne</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15566130m/PUBLIC</idno><!-- vedette matière -->
+                        </place>
+                        <place xml:id="parisPlaceVendome">
+                            <placeName full="yes">Paris (France). Arrondissement (01). Quartier de la Place Vendôme</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15203441m/PUBLIC</idno>
+                        </place>
+                        <place xml:id="parisPalaisDeLaCite">
+                            <placeName type="sub">Palais de la Cité</placeName>
+                        </place>
+                        <place xml:id="parisPalaisDesTuileries">
+                            <placeName type="sub">Palais des Tuileries</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11955563c/PUBLIC</idno>
+                        </place>
+                        <place xml:id="parisPalaisDuLouvre">
+                            <placeName type="sub">Palais du Louvre</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119783451/PUBLIC</idno>
+                            <place xml:id="parisPalaisDuLouvreGalerieDApollon">
+                                <placeName type="subSub">galerie d'Apollon</placeName>
+                            </place>
+                            <place xml:id="parisPalaisDuLouvreAileLescot">
+                                <placeName type="subSub">aile Lescot</placeName>
+                            </place>
+                        </place>
+                    </place>
+                    <place xml:id="philadelphie">
+                        <placeName full="yes">Philadelphie (Pennsylvanie, <placeName ref="#etatsUnis">États-Unis</placeName>)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15238447h/PUBLIC</idno>
+                    </place>
+                    <place xml:id="platees">
+                        <placeName full="yes">Platées (Grèce centrale, Grèce)</placeName><!-- TODO faire lien sur Grèce -->
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15381615z/PUBLIC</idno>
+                    </place>
+                    <place xml:id="pyrennees">
+                        <!-- forme normalisée du nom de lieu -->
+                        <placeName full="yes">Pyrénées, Chaîne des</placeName>
+                        <!-- Identifiant dans un fichier d'autorité -->
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15206757j/PUBLIC</idno>
+                    </place>
+                    <place xml:id="royaumeUni">
+                        <placeName full="yes">Royaume-Uni ; 1707-</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15238571n/PUBLIC</idno>
+                    </place>
+                    <place xml:id="tyr">
+                        <placeName full="yes">Tyr (Liban-Sud, Liban)</placeName>
+                        <idno>http://catalogue.bnf.fr/ark:/12148/cb15336079q/PUBLIC</idno>
+                        <place xml:id="tyrEglise">
+                            <placeName>Église de</placeName>
+                        </place>
+                    </place>
+                    <!-- essai d'encodage de sous-entrées -->
+                    <place xml:id="rome">
+                        <placeName full="yes">Rome (Italie)</placeName>
+                        <idno type="autBnf"
+                            >http://catalogue.bnf.fr/ark:/12148/cb15307086m/PUBLIC</idno>
+                        <place xml:id="romeAnfiteatroDiStatilioTauro">
+                            <placeName type="sub">Anfiteatro di Statilio Tauro</placeName>
+                            <!-- abs cat Bnf -->
+                        </place>
+                        <place xml:id="romeArcoDiSettimioSevero">
+                            <placeName type="sub">Arco di Settimio Severo</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb160889738/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeArcoDiTito">
+                            <placeName type="sub">Arco di Tito</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119747304/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeArcoDegliArgentari">
+                            <placeName type="sub">Arco degli Argentari</placeName>
+                        </place>
+                        <place xml:id="romeArcoDiCostantino">
+                            <placeName type="sub">Arco di Costantino</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119376077/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeSanGiovanniInFonteAlLaterano">
+                            <placeName type="sub">San Giovanni in Fonte al Laterano</placeName>
+                        </place>
+                        <place xml:id="romeBasilicaDiSanGiovanniInLaterano">
+                            <placeName type="sub">Basilica di San Giovanni in Laterano</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11951608j/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeBasilicaDiSantoStefanoRotondoAlCelio">
+                            <placeName type="sub">Basilica di Santo Stefano Rotondo al Celio</placeName>
+                        </place>
+                        <place xml:id="romeCampoVaccino">
+                            <placeName type="sub">Campo Vaccino</placeName>
+                        </place>
+                        <place xml:id="romeColosseo">
+                            <placeName type="sub">Colosseo</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119486217/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeForoBoario"><!-- voir si on indexe également aux sites -->
+                            <placeName type="sub">Foro Boario</placeName>
+                        </place>
+                        <place xml:id="romeForoDiNerva">
+                            <placeName type="sub">Foro di Nerva</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12490323g/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeMausoleoDiSantaCostanza"><!-- TODO pourquoi en italien ? -->
+                            <placeName type="sub">Mausoleo di Santa Costanza</placeName>
+                            <!-- TODO chercher l'autorité -->
+                        </place>
+                        <place xml:id="romeMercatiDiTraiano">
+                            <placeName type="sub">Mercati di Traiano</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16511899d/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romePantheon">
+                            <placeName type="sub">Pantheon</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11932805w/PUBLIC</idno><!-- TODO voir comment passe -->
+                        </place>
+                        <place xml:id="romePorticoDiOttavia">
+                            <placeName type="sub">Portico di Ottavia</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16690483h/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeStAlexis">
+                            <placeName type="sub"><term>église</term> Saint-Alexis</placeName>
+                        </place>
+                        <place xml:id="romeStaConstanza">
+                            <placeName type="sub">Santa Costanza</placeName><!-- TODO Normaliser langue -->
+                        </place>
+                        <place xml:id="romeSteSabine">
+                            <placeName type="sub"><term>église</term> Sainte-Sabine</placeName>
+                        </place>
+                        <place xml:id="romeStPaulHorsLesMurs">
+                            <placeName type="sub">basilique
+                                Saint-Paul-hors-les-murs</placeName>
+                        </place>
+                        <place xml:id="romeSteMarieInTrastevere">
+                            <placeName type="sub"><term>église</term>
+                                Sainte-Marie-in-Trastevere</placeName>
+                        </place>
+                        <place xml:id="romeTempioDeiCastori">
+                            <placeName type="sub">Tempio dei Càstori</placeName>
+                        </place>
+                        <place xml:id="romeTempioDiAdriano">
+                            <placeName type="sub">Tempio di Adriano</placeName>
+                        </place>
+                        <place xml:id="romeTempioDiAntoninoEFaustina">
+                            <placeName type="sub">Tempio di Antonino e Faustina</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15922428s/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeTempioDiErcoleVincitore">
+                            <placeName type="sub">Tempio di Ercole Vincitore, detto Olivarius</placeName>
+                            <!-- Temple de Vesta, TODO comment traiter les autres formes du nom ? -->
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16089419b/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeTempioDiPortuno">
+                            <placeName type="sub">Tempio di Portuno</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12481690g/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeTempioDiMarteUltore">
+                            <placeName type="sub">Tempio di Marte Ultore</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb155155177/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeTermeDiDiocleziano">
+                            <placeName type="sub">Terme di Diocleziano</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12252200v/PUBLIC</idno>
+                        </place>
+                        <place xml:id="romeTiempoDiSaturno">
+                            <placeName type="sub">Tiempo di Saturno</placeName>
+                        </place>
+                        <place xml:id="romeTempioDiSerapide">
+                            <placeName type="sub">Tempio di Serapide</placeName>
+                        </place>
+                        <place xml:id="romeTempioDiVespasianoETito">
+                            <placeName type="sub">Tempio di Vespasiano e Tito</placeName>
+                        </place>
+                        <place xml:id="romeTheatreDeMarcellus">
+                            <placeName type="sub">Théâtre de Marcellus</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16088395x/PUBLIC</idno>
+                        </place>
+                    </place>
+                    <place xml:id="seineEtOise">
+                        <placeName full="yes">Seine-et-Oise, Département de la (France ; 1790-1964)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15329772r/PUBLIC</idno>
+                    </place>
+                    <place xml:id="suede">
+                        <placeName full="yes">Suède</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15238534f/PUBLIC</idno>
+                    </place>
+                    <place xml:id="tivoli">
+                        <placeName full="yes">Tívoli (Latium, Italie)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15324649r/PUBLIC</idno>
+                        <place xml:id="tivoliTempioDellaSibilla">
+                            <placeName type="sub">Tempio della Sibilla</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb160834385/PUBLIC</idno>
+                        </place>
+                        <place xml:id="tivoliTempioDiVesta">
+                            <placeName type="sub">Tempio di Vesta</placeName>
+                            <!-- abs autBnf -->
+                        </place>
+                    </place>
+                    <place xml:id="toscane">
+                        <placeName full="yes">Toscane, Grand-Duché de (1569-1860)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15322812g/PUBLIC</idno>
+                    </place>
+                    <place xml:id="verone">
+                        <placeName full="yes">Vérone (Vénétie, Italie)</placeName>
+                        <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15281254k/PUBLIC</idno>
+                        <place xml:id="veroneArena">
+                            <placeName type="sub">Arena</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12527185w/PUBLIC</idno>
+                        </place>
+                    </place>
+                    <place xml:id="versailles">
+                        <placeName full="yes">Versailles (Yvelines)</placeName>
+                        <idno type="autBnf"></idno>
+                        <place xml:id="versaillesChateau">
+                            <placeName type="sub">Château</placeName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119487267/PUBLIC</idno>
+                            <place xml:id="versaillesChateauGalerieDesPrinces">
+                                <placeName type="subSub">Galerie des princes</placeName><!-- TODO voir si pas galerie des glaces ? -->
+                            </place>
+                            <place xml:id="versaillesChateauSalonCarre">
+                                <placeName type="subSub">Salon carré</placeName>
+                            </place>
+                        </place>
+                    </place>
+                    
+                    <place xml:id="MeauxSeineEtMarneFrance">
+         <placeName full="yes">Meaux (Seine-et-Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15275624h/PUBLIC</idno>
+      </place>
+      <place xml:id="ChaumontHauteMarneFrance">
+         <placeName full="yes">Chaumont (Haute-Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15263371h/PUBLIC</idno>
+      </place>
+      <place xml:id="BourbonnaisProvinceDuFrance">
+         <placeName full="yes">Bourbonnais, Province du (France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb153221685/PUBLIC</idno>
+      </place>
+      <place xml:id="DaxLandesFrance">
+         <placeName full="yes">Dax (Landes, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15259030b/PUBLIC</idno>
+      </place>
+      <place xml:id="AireSurLaLysPasDeCalaisFrance">
+         <placeName full="yes">Aire-sur-la-Lys (Pas-de-Calais, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152684563/PUBLIC</idno>
+      </place>
+      <place xml:id="AlenconOrneFrance">
+         <placeName full="yes">Alençon (Orne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15267936m/PUBLIC</idno>
+      </place>
+      <place xml:id="AlluyesEureEtLoirFrance">
+         <placeName full="yes">Alluyes (Eure-et-Loir, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253936f/PUBLIC</idno>
+      </place>
+      <place xml:id="AmboiseIndreEtLoireFrance">
+         <placeName full="yes">Amboise (Indre-et-Loire, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257555k/PUBLIC</idno>
+      </place>
+      <place xml:id="AmiensSommeFrance">
+         <placeName full="yes">Amiens (Somme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15276507w/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="LesAndelysEureFrance">
+         <placeName full="yes">Les Andelys (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253258t/PUBLIC</idno>
+      </place>
+      <place xml:id="ArmentieresNordFrance">
+         <placeName full="yes">Armentières (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266595s/PUBLIC</idno>
+      </place>
+      <place xml:id="ArquesLaBatailleSeineMaritimeFrance">
+         <placeName full="yes">Arques-la-Bataille (Seine-Maritime, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15274614z/PUBLIC</idno>
+      </place>
+      <place xml:id="ArrasPasDeCalaisFrance">
+         <placeName full="yes">Arras (Pas-de-Calais, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152684830/PUBLIC</idno>
+      </place>
+      <place xml:id="HauterocheCoteDOrFrance">
+         <placeName full="yes">Hauteroche (Côte-d'Or, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152506017/PUBLIC</idno>
+      </place>
+      <place xml:id="AuxerreComteDFrance">
+         <placeName full="yes">Auxerre, Comté d' (France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb153769284/PUBLIC</idno>
+      </place>
+      <place xml:id="AzayLeFerronIndreFrance">
+         <placeName full="yes">Azay-le-Ferron (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257314f/PUBLIC</idno>
+      </place>
+      <place xml:id="BapaumePasDeCalaisFrance">
+         <placeName full="yes">Bapaume (Pas-de-Calais, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152685222/PUBLIC</idno>
+      </place>
+      <place xml:id="BarLeDucMeuseFrance">
+         <placeName full="yes">Bar-le-Duc (Meuse, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152646978/PUBLIC</idno>
+      </place>
+      <place xml:id="LaBasseeNordFrance">
+         <placeName full="yes">La Bassée (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266627k/PUBLIC</idno>
+      </place>
+      <place xml:id="BayeuxCalvadosFrance">
+         <placeName full="yes">Bayeux (Calvados, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15247463q/PUBLIC</idno>
+      </place>
+      <place xml:id="BayonnePyreneesAtlantiquesFrance">
+         <placeName full="yes">Bayonne (Pyrénées-Atlantiques, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15269925f/PUBLIC</idno>
+      </place>
+      <place xml:id="LaBazocheGouetEureEtLoirFrance">
+         <placeName full="yes">La Bazoche-Gouët (Eure-et-Loir, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253958r/PUBLIC</idno>
+      </place>
+      <place xml:id="BeaumontSurOiseValDOiseFrance">
+         <placeName full="yes">Beaumont-sur-Oise (Val-d'Oise, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15280384j/PUBLIC</idno>
+      </place>
+      <place xml:id="BeaumontLeRogerEureFrance">
+         <placeName full="yes">Beaumont-le-Roger (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152532920/PUBLIC</idno>
+      </place>
+      <place xml:id="BeauquesneSommeFrance">
+         <placeName full="yes">Beauquesne (Somme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152765563/PUBLIC</idno>
+      </place>
+      <place xml:id="BellotSeineEtMarneFrance">
+         <placeName full="yes">Bellot (Seine-et-Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152753716/PUBLIC</idno>
+      </place>
+      <place xml:id="BerryDucheDeFrance">
+         <placeName full="yes">Berry, Duché de (France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152960475/PUBLIC</idno>
+      </place>
+      <place xml:id="BethisySaintPierreOiseFrance">
+         <placeName full="yes">Béthisy-Saint-Pierre (Oise, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15267307c/PUBLIC</idno>
+      </place>
+      <place xml:id="ValoisDucheDeFrance">
+         <placeName full="yes">Valois, Duché de (France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15219481h/PUBLIC</idno>
+      </place>
+      <place xml:id="BethunePasDeCalaisFrance">
+         <placeName full="yes">Béthune (Pas-de-Calais, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15268561z/PUBLIC</idno>
+      </place>
+      <place xml:id="BillyLoirEtCherFrance">
+         <placeName full="yes">Billy (Loir-et-Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15259292f/PUBLIC</idno>
+      </place>
+      <place xml:id="BillyAllierFrance">
+         <placeName full="yes">Billy (Allier, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152440480/PUBLIC</idno>
+      </place>
+      <place xml:id="BloisLoirEtCherFrance">
+         <placeName full="yes">Blois (Loir-et-Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152592944/PUBLIC</idno>
+      </place>
+      <place xml:id="BougesLeChateauIndreFrance">
+         <placeName full="yes">Bouges-le-Château (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257327s/PUBLIC</idno>
+      </place>
+      <place xml:id="BouvinesNordFrance">
+         <placeName full="yes">Bouvines (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266681c/PUBLIC</idno>
+      </place>
+      <place xml:id="BoulogneSurMerPasDeCalaisFrance">
+         <placeName full="yes">Boulogne-sur-Mer (Pas-de-Calais, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15268602q/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="BordeauxGirondeFrance">
+         <placeName full="yes">Bordeaux (Gironde, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152418385/PUBLIC</idno>
+      </place>
+      <place xml:id="GuyenneProvinceDeFrance">
+         <placeName full="yes">Guyenne, Province de (France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb153229869/PUBLIC</idno>
+      </place>
+      <place xml:id="BourgesCherFrance">
+         <placeName full="yes">Bourges (Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152493799/PUBLIC</idno>
+      </place>
+      <place xml:id="FrancheComteProvinceDeFrance">
+         <placeName full="yes">Franche-Comté, Province de (France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152988215/PUBLIC</idno>
+      </place>
+      <place xml:id="BousigniesNordFrance">
+         <placeName full="yes">Bousignies (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266675f/PUBLIC</idno>
+      </place>
+      <place xml:id="BragayracHauteGaronneFrance">
+         <placeName full="yes">Bragayrac (Haute-Garonne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15255083z/PUBLIC</idno>
+      </place>
+      <place xml:id="BreteuilEureFrance">
+         <placeName full="yes">Breteuil (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253351p/PUBLIC</idno>
+      </place>
+      <place xml:id="ConchesEnOucheEureFrance">
+         <placeName full="yes">Conches-en-Ouche (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253404f/PUBLIC</idno>
+      </place>
+      <place xml:id="BrouEureEtLoirFrance">
+         <placeName full="yes">Brou (Eure-et-Loir, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253992x/PUBLIC</idno>
+      </place>
+      <place xml:id="YrondeEtBuronPuyDeDomeFrance">
+         <placeName full="yes">Yronde-et-Buron (Puy-de-Dôme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152698224/PUBLIC</idno>
+      </place>
+      <place xml:id="BusseolPuyDeDomeFrance">
+         <placeName full="yes">Busséol (Puy-de-Dôme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15269409t/PUBLIC</idno>
+      </place>
+      <place xml:id="BuxeuilIndreFrance">
+         <placeName full="yes">Buxeuil (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257333q/PUBLIC</idno>
+      </place>
+      <place xml:id="BuzancaisIndreFrance">
+         <placeName full="yes">Buzançais (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257335d/PUBLIC</idno>
+      </place>
+      <place xml:id="CaenCalvadosFrance">
+         <placeName full="yes">Caen (Calvados, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15247532q/PUBLIC</idno>
+      </place>
+      <place xml:id="CalaisPasDeCalaisFrance">
+         <placeName full="yes">Calais (Pas-de-Calais, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15268635p/PUBLIC</idno>
+      </place>
+      <place xml:id="CambraiNordFrance">
+         <placeName full="yes">Cambrai (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266697r/PUBLIC</idno>
+      </place>
+      <place xml:id="CamphinEnCarembaultNordFrance">
+         <placeName full="yes">Camphin-en-Carembault (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152666983/PUBLIC</idno>
+      </place>
+      <place xml:id="CaudebecEnCauxSeineMaritimeFrance">
+         <placeName full="yes">Caudebec-en-Caux (Seine-Maritime, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15274751f/PUBLIC</idno>
+      </place>
+      <place xml:id="ChalonsEnChampagneMarneFrance">
+         <placeName full="yes">Châlons-en-Champagne (Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15262721t/PUBLIC</idno>
+      </place>
+      <place xml:id="ChabrisIndreFrance">
+         <placeName full="yes">Chabris (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257338f/PUBLIC</idno>
+      </place>
+      <place xml:id="ChamignySeineEtMarneFrance">
+         <placeName full="yes">Chamigny (Seine-et-Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15275419c/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="ChaunyAisneFrance">
+         <placeName full="yes">Chauny (Aisne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15243361s/PUBLIC</idno>
+      </place>
+      <place xml:id="ChantemerleMarneFrance">
+         <placeName full="yes">Chantemerle (Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15262736v/PUBLIC</idno>
+      </place>
+      <place xml:id="ChartresEureEtLoirFrance">
+         <placeName full="yes">Chartres (Eure-et-Loir, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15254016k/PUBLIC</idno>
+      </place>
+      <place xml:id="ChateauLandonSeineEtMarneFrance">
+         <placeName full="yes">Château-Landon (Seine-et-Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152754406/PUBLIC</idno>
+      </place>
+      <place xml:id="ChateauneufEnThymeraisEureEtLoirFrance">
+         <placeName full="yes">Châteauneuf-en-Thymerais (Eure-et-Loir, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15254020t/PUBLIC</idno>
+      </place>
+      <place xml:id="ChateauRenaultIndreEtLoireFrance">
+         <placeName full="yes">Château-Renault (Indre-et-Loire, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152576148/PUBLIC</idno>
+      </place>
+      <place xml:id="ChateaurouxIndreFrance">
+         <placeName full="yes">Châteauroux (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257348r/PUBLIC</idno>
+      </place>
+      <place xml:id="ChatillonSurIndreIndreFrance">
+         <placeName full="yes">Châtillon-sur-Indre (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152573493/PUBLIC</idno>
+      </place>
+      <place xml:id="ChatillonColignyLoiretFrance">
+         <placeName full="yes">Châtillon-Coligny (Loiret, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15260478g/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="ChaumontEnVexinOiseFrance">
+         <placeName full="yes">Chaumont-en-Vexin (Oise, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152673824/PUBLIC</idno>
+      </place>
+      <place xml:id="SenlisOiseFrance">
+         <placeName full="yes">Senlis (Oise, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152678459/PUBLIC</idno>
+      </place>
+      <place xml:id="ChoisyEnBrieSeineEtMarneFrance">
+         <placeName full="yes">Choisy-en-Brie (Seine-et-Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15275457x/PUBLIC</idno>
+      </place>
+      <place xml:id="CysoingNordFrance">
+         <placeName full="yes">Cysoing (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152667433/PUBLIC</idno>
+      </place>
+      <place xml:id="ClermontOiseFrance">
+         <placeName full="yes">Clermont (Oise, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15267396t/PUBLIC</idno>
+      </place>
+      <place xml:id="ClermontFerrandPuyDeDomeFrance">
+         <placeName full="yes">Clermont-Ferrand (Puy-de-Dôme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15269463m/PUBLIC</idno>
+      </place>
+      <place xml:id="CominesNordFrance">
+         <placeName full="yes">Comines (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266727v/PUBLIC</idno>
+      </place>
+      <place xml:id="CompiegneOiseFrance">
+         <placeName full="yes">Compiègne (Oise, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15267398h/PUBLIC</idno>
+      </place>
+      <place xml:id="LeCoudrayEureEtLoirFrance">
+         <placeName full="yes">Le Coudray (Eure-et-Loir, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15254041s/PUBLIC</idno>
+      </place>
+      <place xml:id="CoucyLaVilleAisneFrance">
+         <placeName full="yes">Coucy-la-Ville (Aisne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152434078/PUBLIC</idno>
+      </place>
+      <place xml:id="NoyonOiseFrance">
+         <placeName full="yes">Noyon (Oise, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152677064/PUBLIC)</idno>
+      </place>
+      <place xml:id="SaintQuentinAisneFrance">
+         <placeName full="yes">Saint-Quentin (Aisne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15243877j/PUBLIC</idno>
+      </place>
+      <place xml:id="RibemontAisneFrance">
+         <placeName full="yes">Ribemont (Aisne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152438348/PUBLIC</idno>
+      </place>
+      <place xml:id="LaonAisneFrance">
+         <placeName full="yes">Laon (Aisne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152435949/PUBLIC</idno>
+      </place>
+      <place xml:id="SeclinNordFrance">
+         <placeName full="yes">Seclin (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152671321/PUBLIC</idno>
+      </place>
+      <place xml:id="PhalempinNordFrance">
+         <placeName full="yes">Phalempin (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15267034f/PUBLIC</idno>
+      </place>
+      <place xml:id="OstricourtNordFrance">
+         <placeName full="yes">Ostricourt (Nord, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152670244/PUBLIC</idno>
+      </place>
+      <place xml:id="NeversNievreFrance">
+         <placeName full="yes">Nevers (Nièvre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266459n/PUBLIC</idno>
+      </place>
+      <place xml:id="ClamecyNievreFrance">
+         <placeName full="yes">Clamecy (Nièvre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266344b/PUBLIC</idno>
+      </place>
+      <place xml:id="DecizeNievreFrance">
+         <placeName full="yes">Decize (Nièvre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15266360k/PUBLIC</idno>
+      </place>
+      <place xml:id="LorrisLoiretFrance">
+         <placeName full="yes">Lorris (Loiret, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152605793/PUBLIC</idno>
+      </place>
+      <place xml:id="MontargisLoiretFrance">
+         <placeName full="yes">Montargis (Loiret, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152606003/PUBLIC</idno>
+      </place>
+      <place xml:id="SaintFargeauYonneFrance">
+         <placeName full="yes">Saint-Fargeau (Yonne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152798001/PUBLIC</idno>
+      </place>
+      <place xml:id="GienLoiretFrance">
+         <placeName full="yes">Gien (Loiret, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15260547g/PUBLIC</idno>
+      </place>
+      <place xml:id="SancerreCherFrance">
+         <placeName full="yes">Sancerre (Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15249587g/PUBLIC</idno>
+      </place>
+      <place xml:id="NemoursSeineEtMarneFrance">
+         <placeName full="yes">Nemours (Seine-et-Marne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15275673q/PUBLIC</idno>
+      </place>
+      <place xml:id="GatinaisPaysDuFrance">
+         <placeName full="yes">Gâtinais, Pays du (France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb153043810/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="RouenSeineMaritimeFrance">
+         <placeName full="yes">Rouen (Seine-Maritime, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15275126t/PUBLIC</idno>
+      </place>
+      <place xml:id="PontDeLArcheEureFrance">
+         <placeName full="yes">Pont-de-l'Arche (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152537048/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="MontivilliersSeineMaritimeFrance">
+         <placeName full="yes">Montivilliers (Seine-Maritime, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15275033t/PUBLIC</idno>
+      </place>
+      <place xml:id="NeufchatelEnBraySeineMaritimeFrance">
+         <placeName full="yes">Neufchâtel-en-Bray (Seine-Maritime, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15275048v/PUBLIC</idno>
+      </place>
+      <place xml:id="GournayEnBraySeineMaritimeFrance">
+         <placeName full="yes">Gournay-en-Bray (Seine-Maritime, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15274898c/PUBLIC</idno>
+      </place>
+      <place xml:id="VireCalvadosFrance">
+         <placeName full="yes">Vire (Calvados, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152481696/PUBLIC</idno>
+      </place>
+      <place xml:id="FalaiseCalvadosFrance">
+         <placeName full="yes">Falaise (Calvados, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152476727/PUBLIC</idno>
+      </place>
+      <place xml:id="EvreuxEureFrance">
+         <placeName full="yes">Évreux (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253468p/PUBLIC</idno>
+      </place>
+      <place xml:id="NonancourtEureFrance">
+         <placeName full="yes">Nonancourt (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253673t/PUBLIC</idno>
+      </place>
+      <place xml:id="HarcourtEureFrance">
+         <placeName full="yes">Harcourt (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253548b/PUBLIC</idno>
+      </place>
+      
+      
+      <place xml:id="GisorsEureFrance">
+         <placeName full="yes">Gisors (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152535219/PUBLIC</idno>
+      </place>
+      <place xml:id="VernonEureFrance">
+         <placeName full="yes">Vernon (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152539113/PUBLIC</idno>
+      </place>
+      <place xml:id="LyonsLaForetEureFrance">
+         <placeName full="yes">Lyons-la-Forêt (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253612m/PUBLIC</idno>
+      </place>
+      <place xml:id="VerneuilSurAvreEureFrance">
+         <placeName full="yes">Verneuil-sur-Avre (Eure, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15253909j/PUBLIC</idno>
+      </place>
+      <place xml:id="MontrichardLoirEtCherFrance">
+         <placeName full="yes">Montrichard (Loir-et-Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15259425v/PUBLIC</idno>
+      </place>
+      <place xml:id="PreuillySurClaiseIndreEtLoireFrance">
+         <placeName full="yes">Preuilly-sur-Claise (Indre-et-Loire, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152577403/PUBLIC</idno>
+      </place>
+      <place xml:id="LaRochePosayVienneFrance">
+         <placeName full="yes">La Roche-Posay (Vienne, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15278634j/PUBLIC</idno>
+      </place>
+      <place xml:id="LaGuiercheSartheFrance">
+         <placeName full="yes">La Guierche (Sarthe, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152737020/PUBLIC</idno>
+      </place>
+      <place xml:id="LigueilIndreEtLoireFrance">
+         <placeName full="yes">Ligueil (Indre-et-Loire, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257681d/PUBLIC</idno>
+      </place>
+      <place xml:id="LaMotteFeuillyIndreFrance">
+         <placeName full="yes">La Motte-Feuilly (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152574361/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="SaintGenouIndreFrance">
+         <placeName full="yes">Saint-Genou (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15257498k/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="MezieresEnBrenneIndreFrance">
+         <placeName full="yes">Mézières-en-Brenne (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152574272/PUBLIC</idno>
+      </place>
+      <place xml:id="SaintMichelEnBrenneIndreFrance">
+         <placeName full="yes">Saint-Michel-en-Brenne (Indre, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152575082/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="HerbaultLoirEtCherFrance">
+         <placeName full="yes">Herbault (Loir-et-Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15259377t/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="RomorantinLanthenayLoirEtCherFrance">
+         <placeName full="yes">Romorantin-Lanthenay (Loir-et-Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152594684/PUBLIC</idno>
+      </place>
+      <place xml:id="MillancayLoirEtCherFrance">
+         <placeName full="yes">Millançay (Loir-et-Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152594146/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="VerneuilEnBourbonnaisAllierFrance">
+         <placeName full="yes">Verneuil-en-Bourbonnais (Allier, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15244326h/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="GermignyLExemptCherFrance">
+         <placeName full="yes">Germigny-l'Exempt (Cher, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15249447z/PUBLIC</idno>
+      </place>
+      <place xml:id="SaintPourcainSurSiouleAllierFrance">
+         <placeName full="yes">Saint-Pourçain-sur-Sioule (Allier, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15244273r/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="SalledesPuyDeDomeFrance">
+         <placeName full="yes">Sallèdes (Puy-de-Dôme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15269755t/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="SaintMauricePuyDeDomeFrance">
+         <placeName full="yes">Saint-Maurice (Puy-de-Dôme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15269728x/PUBLIC</idno>
+      </place>
+      
+      <place xml:id="AurillacCantalFrance">
+         <placeName full="yes">Aurillac (Cantal, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb15248185f/PUBLIC</idno>
+      </place>
+      <place xml:id="CrosPuyDeDomeFrance">
+         <placeName full="yes">Cros (Puy-de-Dôme, France)</placeName>
+         <idno type="authBnf">http://catalogue.bnf.fr/ark:/12148/cb152694790/PUBLIC</idno>
+      </place>
+                </listPlace>
+            </div>
+        </body>
+    </text>
+</TEI>

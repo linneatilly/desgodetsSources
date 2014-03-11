@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes de la présentation des manuscrits C -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi d'un numéro d'ordre à quatre unités -->
+<!-- TODO : vérifier que les citation sont bien prises en compte dans la transformation avec leur référence biblio -->
+<!-- TODO : voir si contenu des notes indexé -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" type="notes" xml:id="cN">
+    <head>Notes</head>
+    <note xml:id="cN0001">
+        <p> Le <date when="1722-12-01">1<hi rend="superscript">er</hi> décembre 1722</date>, <cit><quote>M. Desgodets a présenté
+            à la compagnie comme de coutume les affiches des leçons : Ensuite, il
+            donnera un traité sur la distribution et les proportions des églises et
+            autres édifices</quote> <bibl corresp="#lemonnier">p. 254</bibl></cit><!-- TODO s'assurer du traitement --> ; <date when="1723-11-15">15 novembre 1723</date> : <cit><quote>M.
+            <persName ref="#desgodets">Desgodets</persName>, professeur a distribué les affiches qui marquent qu’il s’est
+            proposé de donner pour leçons aux estudians un traité de la commodité de
+            l’architecture concernant la distribution et la perspective des édifices.
+            Il achèvera de donner la dissertation sur le dessein et il donnera la
+            seconde partie du nouveau commentaire sur les articles de la Coustume de
+            Paris qui ont du raport à l’architecture</quote> <bibl><hi rend="italic">id.</hi>, p. 274</bibl></cit><!-- TODO voir le rendu --> ; <date when="1724-11-13">13 novembre 1724</date>, <cit><quote><persName ref="#desgodets">M. Desgodets</persName> a présenté à <orgName ref="#academieRoyaleDArchitecture">la Compagnie</orgName> l’affiche des
+            leçons qu’il se propose de donner sur les ordres d’architecture, sur la
+            commodité, la distribution et la proportion des édifices, sur les articles
+            de la Coustume qui ont raport à l’architecture et sur le toisé des
+            bastimens</quote> <bibl><hi rend="italic">ibid.</hi>, p. 293</bibl></cit> ; <date when="1725-11-12">12 novembre
+            1725</date> : <cit><quote><persName ref="#desgodets">M. Desgodets</persName> a présenté ses affiches pour les leçons publiques. Il
+            continuera de donner […] le Traitté de la commodité de l’architecture
+            concernant la distribution et les proportions des édifices…</quote> <bibl><hi
+                rend="italic">ibid.</hi>, p. 312</bibl></cit> ; <date when="1726-11-18">18 novembre 1726</date> : <cit><quote>M.
+            Desgodets a présenté l’affiche pour les leçons publiques. Il continuera le
+            Traité de la commodité, distribution et proportion des édifices tant
+            publics que particuliers […]</quote> <bibl><hi rend="italic">ibid.</hi>, p.
+                332</bibl></cit> ; <date when="1727-11-17">17 novembre 1727</date> : <cit><quote>M. Desgodets a présenté à l’Académie les
+            affiches pour les leçons publiques où il se propose de continuer le Traité
+            de la commodité, distribution et proportion des édifices publics et
+            particuliers […] Ensuite <persName ref="#desgodets">M. Desgodets</persName> a lu le seconde chapitre de la
+            seconde session du Traité de la commodité contenant la description d’un
+            hostel de ville dont il a fait voir les plans et élévations.</quote> <bibl>op. cit., Paris 1917, t. V, p.16</bibl></cit>.</p>
+    </note>
+    <note xml:id="cN0002">
+        <p> C1/- BnF, Cabinet des Estampes, ha23a : « Traité de la commodité de
+            l’Architecture, concernant la distribution et les proportions des édifices,
+            divisé en trois sections, recueilli par <persName ref="#pinard">Jean Pinard</persName>, élève et étudiant de
+            <orgName ref="#academieRoyaleDArchitecture">ladite Académie Royale d’Architecture</orgName> », 204 p. 42 planches. [Microfilm R
+            710124-710264] ; C2/- Rijksmuseum, Amsterdam : « Traité de la Commodité de
+            l’architecture… expliqué en l’Académie Royale d’architecture par <persName ref="#desgodets">Monsieur
+            Desgodets</persName>…, Recueillie par Jean Pinard… », 192 p. + 42 + 3 dessins attribué
+            à Jean Pinard.</p>
+        <!-- TODO voir si ici ne peut pas remplacer automatiquement par les ref biblio -->
+    </note>
+    <note xml:id="cN0003">
+        <p> Pour le plan du rez-de-chaussée d’un hôtel, cf. <bibl corresp="#perouseDeMonclos1984">p. 35.</bibl></p>
+    </note>
+    <note xml:id="cN0004">
+        <p> <bibl corresp="duportal1914"/> <persName ref="#lemonnierHenry">Henry Lemonnier</persName> avait mentionné cette étude non encore parue en 1915, quand
+            lui-même avait publié le 4<hi rend="superscript">e</hi> volume des
+            procès-verbaux de l’Académie royale d’architecture. Il citait alors
+            l’intérêt particulier de ce manuscrit pour l’étude des églises ; il en
+            donnait aussi un rapide descriptif en appendice à la publication (<hi
+                rend="italic">Procès-verbaux de l’académie royale d’architecture</hi>,
+            publiés sous la direction de Henry <hi rend="smallcaps">Lemonnier</hi>,
+            Paris, Jean Schelit, 1915, t. IV, p. 351-352).</p>
+    </note>
+    <note xml:id="cN0005">
+        <p> <persName ref="#lunsinghScheurleerTheodorHerman">Theodor H. Lunsingh Scheurleer (1911-2002)</persName> avait
+            été directeur du département de sculpture et des arts décoratifs du
+            Rijksmuseum (1943-1963) avant de devenir professeur à l’université de
+            <placeName ref="#leyde">Leyde</placeName>. </p>
+    </note>
+    <note xml:id="cN0006">
+        <p> <bibl corresp="#scheurleer1964"/> <persName ref="#lunsinghScheurleerTheodorHerman">Lunsingh Scheurleer</persName> découvrit ce manuscrit avant de le léguer au
+            Rijksprentenkabinet.</p>
+    </note>
+    <note xml:id="cN0007">
+        <p><bibl corresp="#hamon1976"/></p>
+    </note>
+    <note xml:id="cN0008">
+        <p><bibl corresp="#rousteauChambon2008a"/></p>
+    </note>
+    <note xml:id="cN0009">
+        <p> Hélène <hi rend="smallcaps">Rousteau-Chambon</hi>, <hi rend="italic"
+                >L’enseignement à l’Académie royale d’architecture, de Philippe de La
+                Hire à Louis-Adam Loriot (1687-1762)</hi>, présentée à l’École
+            d’architecture de Paris-Malaquais le 28 novembre 2011, ENSA
+            Paris-Malaquais, Pres Paris Est.</p>
+    </note>
+    <note xml:id="cN0010">
+        <p><bibl corresp="#savot1624"/></p>
+    </note>
+    <note xml:id="cN0011">
+        <p><bibl corresp="#cordemoy1706"/></p>
+    </note>
+    <note xml:id="cN0012">
+        <p><bibl corresp="#laugier1753"/></p>
+    </note>
+    <note xml:id="cN0013">
+        <p> Charles <hi rend="smallcaps">Borromée</hi>, <hi rend="italic">Instructionum
+                fabricae et supellectilis ecclesiasticae,</hi> Libri II, v. 1572.</p>
+    </note>
+    <note xml:id="cN0014">
+        <p> Pierre <hi rend="smallcaps">Le Muet</hi>, <hi rend="italic">Manière de
+                bâtir pour toutes sortes de personnes</hi>, 1623, rééd. et augmenté en
+            1647, 1669, 1681.</p>
+    </note>
+    <note xml:id="cN0015">
+        <p> Pour « <hi rend="italic">bien réussir dans les projets des édifices que
+                l’on se propose de faire […] il faut être bien informé de tous les
+                usages à quoi ils sont destinés afin d’en distribuer toutes les
+                parties, conformément à ces usages</hi>…», BnF estampes, ms Ha 23b, f°
+            7.</p>
+    </note>
+    <note xml:id="cN0016">
+        <p> Anne <hi rend="smallcaps">Le Pas de Sécheval</hi>, « Charles Le Brun
+            architecte. Ses projets pour des maîtres-autels d’églises parisiennes,
+            entre ambitions artistiques et stratégies de carrières », <hi rend="italic"
+                >Zeitschrift für Kunstgeschichte</hi>, 4, 2012, p. 473-486.</p>
+    </note>
+    <note xml:id="cN0017">
+        <p> BnF est. Ha23b, f°148, à propos des églises paroissiales, pour tracer le
+            plan d’un chœur, il faut commencer par placer <quote>des points 2.3 du milieu
+            des faces des pilastres, mener par le point Z les lignes 2. Z. 11. 3, et
+            des pilastres 2.3 […], tracer les pourtours de cercle 2.10.3.11 touchant la
+            face des pilastres. Ensuite du centre Z […] décrire l’arc de cercle
+            10.1.11. Ces trois portions de cercle jointes avec les deux demies faces
+            droites des deux pilastres de l’entrée […] formeront le pourtour intérieur
+            du plan de l’abside…</quote></p>
+    </note>
+    <note xml:id="cN0018">
+        <p>
+            <hi rend="italic">Ibidem</hi>. le plan « semi-oval » est expliqué « au
+            quatrième dessein du 4<hi rend="superscript">e</hi> chapitre de la seconde
+            partie du Traité des ordres d’architecture », cours dispensé
+            parallèlement.</p>
+    </note>
+    <note xml:id="cN0019">
+        <p> Jacques-François <hi rend="smallcaps">Blondel</hi>, <hi rend="italic">Cours
+                d’architecture civile ou Traité de la décoration, distribution et
+                construction des bâtiments contenant les leçons données en 1750 et les
+                années suivantes</hi>, Paris, Desaint, 1771-1777, 6 vol.</p>
+    </note>
+    <note xml:id="cN0020">
+        <p> Jean Nicolas <hi rend="smallcaps">Durand</hi>, <hi rend="italic">Précis des
+                leçons d’architecture données à l’École Polytechnique</hi>, Paris,
+            l’auteur, 1825.</p>
+    </note>
+    <note xml:id="cN0021">
+        <p> Notamment grâce aux plans de bâtisses qui lui ont été attribués. Voir
+            Hélène <hi rend="smallcaps">Rousteau-Chambon</hi>, « Sur les traces du
+            cours complet du Traité de la commodité de Desgodets », dans Journée
+            d’études organisée par le projet « Desgodets » sélectionné par l’Agence
+            nationale de la recherche (ANR) dans le cadre du programme « Corpus et
+            outils de la recherche en sciences humaines et sociales » et l’Institut
+            national d’histoire de l’art (INHA), 31 mars 2010 (à paraître).</p>
+    </note>
+</div>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier biographique sur Desgodets et l'académie
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- TODO : remplacer le faux-texte -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Antoine Desgodets</title>
+                <title xml:lang="fre" type="sub">Desgodets et l'académie</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="aut">auteurs</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date when="2013"
+                        >2013</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>variaAcademie</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="variaAcademieTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"
+                        >
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic
+                            url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb />Cette licence est
+                        disponible en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb />1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb />2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource
+                        <lb />3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit
+                        s'engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s'engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l'origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l'autorité éditoriale du Centre de théorie et
+                        d'analyse risquerait en conséquence d'être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <!-- ajout d'un élément pour traiter le corpus général et réduire la hiérarchie des titres -->
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!-- ajout d'un élément pour DC.description -->
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="variaAcademie">Texte original : le texte a été créé sous forme
+                    électronique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+                    formalisation du savoir architectural au XVII<hi rend="superscript">e</hi>
+                    siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote,
+                        soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira peut-être
+                    une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le
+                    cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="100">Français (langue principale du corpus)</language>
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-16" who="#EC">première version du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front xml:id="variaAcademieFront">
+            <titlePage xml:id="variaAcademieFront00">
+                <docTitle>
+                    <titlePart>Desgodets et l’Académie</titlePart>
+                </docTitle>
+                <!--<docAuthor><persName ref="#EC">Emmanuel Chateau</persName></docAuthor>-->
+                <docDate>14 avril 2013</docDate>
+                <docEdition>version 0</docEdition>
+            </titlePage>
+            <div xml:id="variaAcademieFrontFr" xml:lang="fre">
+                <div xml:id="variaAcademieFrontFr01" type="abstract">
+                    <p>Les interventions d’<persName>Antoine Desgodets</persName> en séance de l’<orgName>Académie</orgName> prennent des formes multiples : que ce soit des mémoires, dessins ou projets qu’il lit, présente et défend <date from="1697" to="1728">de 1697 à 1728</date>, répondant ainsi à des requêtes de ses confrères mais parfois aussi les devançant.</p>
+                </div>
+                <div xml:id="variaAcademieFrontFr02" type="introduction">
+                    <head>Introduction</head>
+                    <p>Cette liste des mémoires, dessins et projets présentés par
+                        Antoine Desgodets à l’Académie<ref type="note" target="#variaAcademieN0010"/> a été établie à partir des Procès-verbaux de celle-ci
+                        publiés par <persName>Henry Lemonnier</persName>. Elle reflète les environ 160
+                        interventions de l’académicien en séance. Rappelons que
+                        l’académie poursuivait deux finalités en dehors de
+                        l’enseignement : l’explication ou débat théorique et le
+                        contrôle de l’architecture par le biais de conseils,
+                        d’inspections, d’examens, de résolutions de situations qui lui
+                        sont soumises.</p>
+                    <p>Sur les trente et une années qui séparent sa première mention
+                        dans les procès-verbaux et sa mort, la fréquence de son action
+                        en séance progresse régulièrement.</p>
+                    <p>La nature de ses interventions semble être de deux sortes : d’un
+                        part les expertises commandées par l’Académie et d’autre part
+                        des initiatives personnelles. Il est assez difficile de faire
+                        la part des choses. Il convient également de différencier la
+                        lecture d’un mémoire<ref type="note" target="#variaAcademieN0011"/> de celle d’un traité ou d’un cours qui relève plutôt
+                        d’un contrôle exercé en commun par la compagnie sur
+                        l’enseignement délivré aux architectes.</p>
+                    <p>Sur leur contenu, ce peut-être des dessins ou plans ou bien des
+                        mémoires voire des traités et plus tard des cours ou partie de
+                        cours.</p>
+                    <p>Enfin, il apparaît clairement que Desgodets a préparé la matière
+                        de ses cours de nombreuses années avant qu’il ait eu à les
+                        prononcer et il semble que la plupart des chapitres avaient été
+                        écrits une première fois de manière désordonnée.</p>
+                </div>
+            </div>
+        </front>
+        <body xml:id="variaAcademieBody">
+            <div xml:id="variaAcademieBodyFr" xml:lang="fre">
+                <div xml:id="variaAcademieBodyFr01" type="chapter" n="1">
+                    <head>Liste des rapports à l'académie</head>
+                    <list>
+                        <item>8 juillet 1697, « M. Desgodets a présenté un dessein de
+                            deux dispositions différentes de colonnes, dont les unes
+                            sont simples et à égale distance les unes des autres, et
+                            les autres sont accouplées comme au péristyle du
+                            Louvre ».</item>
+                        <item>9 septembre 1697, « M. Desgodets a présenté un dessein
+                            cotté des mesures et proportions de plusieurs ordres élevés
+                            les uns sur les autres tant dans la grande galerie du
+                            Louvre que du palais des Thuileries du costé de la cour, et
+                            du costé du jardin »</item>
+                        <item>5 mai 1698, « M. Desgodets, à examiner le raport du pied
+                            antique avec le pied de France, qu'on pourroit en quelque
+                            façon déterminer par le moyen des mesures générales de ces
+                            édifices, principalement de leurs plans, où il est a
+                            présumer que les architectes anciens ont employé des
+                            nombres entiers de leur pied ordinaire, comme nos
+                            architectes modernes font du pied de France ». </item>
+                        <item>22 septembre 1699, Mémoire sur la « Description de la
+                            manière de construire des môles avancés dans la mer,
+                            suivant ce qui se pratique en plusieurs endroits de
+                            l'Italie ».</item>
+                        <item>5 octobre 1699, « M. Desgodets a présenté un mémoire
+                            contenant des remarques sur ce mesme chapitre, auxquelles
+                            il a ajouté par raport au sujet les diminutions et
+                            proportions qu'il a observées dans plusieurs colonnes des
+                            bastiments antiques les plus considérables qui soient
+                            restées à Rome ».</item>
+                        <item>12 octobre 1699, « M. Desgodets a aussy lu et présenté à
+                            la Compagnie un mémoire intitulé <hi rend="italic"
+                                >Observation sur le renflement des colonnes &amp; la
+                                règle pour tracer ce renflement par une portion de
+                                cercle dont le centre est sur la ligne de niveau au bas
+                                de la colonne</hi>. Ce mémoire contient un examen de la
+                            courbure de plus belles colonnes antiques et la règle pour
+                            tracer cette courbure par une portion de cercle, en
+                            trouvant plusieurs points sans sortir du diamètre de la
+                            colonne ».</item>
+                        <item>16 novembre 1699, « M. Desgodets a présenté et lu à la
+                            compagnie un autre mémoire intitulé <hi rend="italic"
+                                >Observation sur les différentes dispositions des
+                                colonnes qui en peuvent faire augmenter ou diminuer la
+                                grosseur</hi> ».</item>
+                        <item>11 janvier 1701, « M. Desgodets a apporté à la compagnie
+                            le dessein qu'il s'étoit chargé de faire de l'ordre toscan,
+                            suivant les mesures qui sont marquées sur le mémoire qui en
+                            a autrefois esté fait dans l'Académie ». </item>
+                        <item>24 janvier 1701, « On a ensuite examiné le nouveau profil
+                            que M. Desgodets a fait, suivant la dernière délibération
+                            de l'Académie, sur lequel il a esté fait quelque
+                            changement, et l'on arrestera les profils de toutes les
+                            parties de cet ordre, après qu'ils auront été veus et
+                            approuvés par Monsieur le surintendant. »</item>
+                        <item>31 janvier 1701 : « La compagnie s'est entretenu de
+                            toutes les parties de l'ordre dorique, en a fait des
+                            profils et M. des Godets s'est chargé de mettre en grand le
+                            dessein qui a esté le plus aprouvé pour le piedestal et la
+                            colonne. »</item>
+
+                        <item>1er février 1701, « M. Desgodets a apporté un dessein de
+                            la colonne de l'ordre dorique suivant les mesures qui en
+                            avoient esté autrefois données par la Compagnie. Il y a
+                            joint aussy un piedestal, suivant la grandeur qui en avoit
+                            esté arrestée et l'on a remis à la prochaine assemblée à en
+                            délibérer librement. »</item>
+                        <item>14 février 1701, « A l'égard de l'entablement, M.
+                            Desgodets doit le remettre au net, suivant ce qui a esté
+                            changé par la compagnie, pour s'en entretenir encore dans
+                            la première assemblée. »</item>
+                        <item>21 février 1701, « La Compagnie après avoir examiné le
+                            dessein que M. Desgodets a apporté de l'ordre dorique, l'on
+                            en approuve toutes les parties pour estre remises au net,
+                            et l'on a remis à arrester le dessein de cet ordre, lorsque
+                            M. le surintendant l'aura veu ».</item>
+                        <item>28 février 1701, « M. Desgodets s'est chargé d'en faire
+                            une composition, suivant l'idée de l'ordre ionique des
+                            Termes de Dioclétien, surtout en ce qui concerne
+                            l'entablement ».</item>
+                        <item>1er mars 1701, « M. Desgodets a apporté le dessein qu'il
+                            a fait de l'ordre ionique ».</item>
+                        <item>30 mars 1701, « (…) l'on a examiné un dessein de
+                            l'entablement de l'ordre corinthien fait par M.
+                            Desgodets ».</item>
+                        <item>5 avril 1701, « M. Desgodets a apporté un dessein du
+                            chapiteau corinthien suivant les proportions qui en avoient
+                            esté proposées par la compagnie ».</item>
+                        <item>11 avril 1701, « La Compagnie après avoir examiné le
+                            dessein de la base corinthienne que M. Desgodets, a apporté
+                            a réglé les proportions de toutes les parties du piédestal
+                            du mesme ordre que M. Desgodets s'est chargé de mettre au
+                            net ».</item>
+                        <item>18 avril 1701, « On a examiné le dessein que M. Desgodets
+                            a fait du piedestal de l'ordre corinthien que l'on a
+                            approuvé pour etre joint aux autres parties du mesme ordre
+                            et n'en faire qu'un seul dessein ».</item>
+                        <item>25 avril 1701, « M. Desgodets a apporté le dessein de la
+                            colonne corinthienne avec son piédestal et son
+                            entablement ».</item>
+                        <item>2 mai 1701, « Il a esté arresté qu'il en seroit fait de
+                            nouveaux desseins sur la mesure de deux pieds de diamètre
+                            que M. Desgodets mettra au net et portera à Monsieur le
+                            Surintendant affin que la compagnie après avoir eu son
+                            sentiment et des profils puisse commencer à faire faire des
+                            modèles de ces mesmes ordres pour servir de règle à
+                            l'avenir ».</item>
+                        <item>9 mai 1701, « M. Desgodets ayant dessiné sur la grandeur
+                            de deux pieds de diamètre suivant l'ordre de Monsieur le
+                            Surintendant, les parties de l'ordre toscan ».</item>
+                        <item>18 mai 1701, « Les dessins que M. Desgodets a faits sur
+                            la grandeur de deux pieds de diamètre de la base et de la
+                            corniche du piédestal et de la base de la colonne de
+                            l'ordre dorique ont esté veus par la Compagnie pour estre
+                            présentés à M. le surintendant ».</item>
+                        <item>23 mai 1701, « On a considéré les desseins que M.
+                            Desgodets a mis au net sur la grandeur de deux pieds de
+                            diamètre tant du chapiteau dorique que de la base attique
+                            qui est employée d'ordinaire dans cet ordre ».</item>
+                        <item>6 juin 1701, « M. Desgodets a apporté le dessein en grand
+                            de l'entablement de l'ordre dorique, suivant l'idée que
+                            Vignole a conservée d'un semblable entablement ».</item>
+                        <item>13 juin 1701, « M. Desgodets a apporté les desseins en
+                            grand de la base et de la corniche du piédestal de l'ordre
+                            dorique, pour estre présenté à Monsieur le
+                            surintendant ».</item>
+                        <item>20 juin 1701, « M. Desgodets a présenté à la compagnie le
+                            dessein du chapiteau ionique pour y faire quelques
+                            remarques avant de le mettre plus en grand ».</item>
+                        <item>27 juin 1701, « M. Desgodets a apporté trois desseins en
+                            grand du chapiteau ionique (…) »</item>
+                        <item>4 juillet 1701, « La compagnie a examiné l'entablement
+                            ionique que M. Desgodets a dessiné de deux manières
+                            différentes l'un avec des modillons, et l'autre avec des
+                            denticules ».</item>
+                        <item>11 juillet 1701, « M. Desgodets a apporté à l'académie un
+                            mémoire intitulé <hi rend="italic">Méthode facile pour
+                                tracer géométriquement le contour de la volute du
+                                chapiteau de l'ordre ionique par des quarts de
+                                cercles</hi>. Ensuite il a présenté des profils en
+                            grand de deux différentes sortes d'entablement du mesme
+                            ordre, avec les ornements qui y conviennent ».</item>
+                        <item>18 juillet 1701, « M. Desgodets a lu un mémoire intitulé
+                                <hi rend="italic">Mémoire sur les proportions de
+                                l'ordre ionique, suivant les profils qui en sont faits
+                                pour estre présentés à M. le
+                            surintendant</hi> ».</item>
+                        <item>26 juillet 1701, « M. Desgodets a apporté à la compagnie
+                            le dessein en grand du piédestal de l'ordre
+                            corinthien »</item>
+                        <item>1er août 1701, « M. Desgodets a présenté à la compagnie
+                            le dessein en grand de la base de l'ordre
+                            corinthien ».</item>
+                        <item>17 août 1701, « M. Desgodets a apporté trois différents
+                            profils en grand de la base corinthienne ».</item>
+                        <item>22 août 1701, « M. Desgodets a apporté deux différents
+                            profils en grand de l'entablement de l'ordre
+                            corinthien ».</item>
+                        <item>29 août 1701, « La compagnie a examiné les ornements que
+                            M. Desgodets a ajouté aux deux desseins en grand qu'il a
+                            faits de l'entablement de l'ordre corinthien, pour s'en
+                            servir lorsqu'on les voudra fort ornés. M. Desgodets a
+                            aussy lu le mémoire des proportions de tout l'ordre
+                            corinthien, que la compagnie a jugé devoir estre joint aux
+                            desseins ».</item>
+                        <item>5 septembre 1701, « M. Desgodets a apporté à la compagnie
+                            plusieurs profils pour la base et la corniche du piédestal
+                            de l'ordre composé et la base de la colonne du mesme ordre.
+                            Après en avoir examiné toutes les moulures, M. Desgodets
+                            s'est chargé de mettre au net tous les profils qui ont esté
+                            arrestés par la compagnie ».</item>
+                        <item>19 septembre 1701, « M. Desgodets a aporté le dessein en
+                            grand de la base de l'ordre composé qui avoit esté aretée
+                            par la compagnie... »</item>
+                        <item>26 septembre 1701, « M. Desgodets a aporté un projet pour
+                            le chapiteau composé dessiné de face sur la diagonale, en
+                            profil et en plan ». </item>
+                        <item>3 octobre 1701, « La compagnie s'est entretenue sur le
+                            dessein en grand du chapiteau composite dont M. Desgodets a
+                            apporté le plan et le profil au net, pour estre présenté à
+                            M. le Surintendant ». </item>
+                        <item>17 octobre 1701, « M. Desgodets a apporté deux profils
+                            pour la corniche de l'ordre composite ». </item>
+                        <item>24 octobre 1701, « M. Desgodets a apporté deux desseins
+                            en grand du chapiteau de l'ordre composite : scavoir un de
+                            la face de ce chapiteau et l'autre suivant la diagonale du
+                            tailloir ».</item>
+                        <item>7 novembre 1701, « M. Desgodets a apporté à la compagnie
+                            le dessein en grand et au net de l'imposte et de
+                            l'archivolte de l'ordre composite ».</item>
+                        <item>30 janvier 1702, « M. Desgodets a fait un rapport qu'il a
+                            remis entre les mains de M. de Coste et par l'ordre de M.
+                            le Surintendant, les desseins des 5 ordres d'architecture
+                            arrestés par la compagnie » </item>
+                        <item>13 mars 1702, « Suivant la délibération de la compagnie,
+                            M. Desgodets a apporté un mémoire intitulé <hi
+                                rend="italic">Remarques sur les murs et autres ouvrages
+                                qui se font en plastre</hi>. » </item>
+                        <item>8 mai 1702, Commentaire du mémoire de Desgodets sur les
+                            ouvrages en plâtre.</item>
+                        <item>3 mars 1704, Mémoire de Desgodets sur le «  187e article
+                            de la coutume de Paris ».</item>
+                        <item>17 novembre 1704, l’article 202 de la coutume de Paris
+                            qui a pour titre : « Distances et veues droites et baies de
+                            cotés ». M. Desgodets a lu à la compagnie un mémoire
+                            concernant cet article. </item>
+                        <item>24 novembre 1704, « On a ensuite continué de lire le
+                            mémoire de M. Desgodets sur le 202e article de la
+                            Coutume ».</item>
+                        <item>1er décembre 1704, « L'on a ensuite achevé de lire le
+                            mémoire de M. Desgodets ».</item>
+                        <item>26 janvier 1705, « M. Desgodets a proposé une question
+                            sur les articles 192 et 209 de la Coustume de
+                            Paris ».</item>
+                        <item>3 février 1705, Desgodets apporte un nouveau mémoire sur
+                            le sujet.</item>
+                        <item>30 juin 1705, « M. Desgodets a proposé une manière de
+                            déterminer le surhaussement des voûtes, suivant les
+                            distances données, à la hauteur de l'œil, et par rapport à
+                            la hauteur de la voûte sous la clef (…) ».</item>
+                        <item>14 février 1707, Dessins pour élever un fardeau « en
+                            tournant dans une roue appliquée à un treuil ».</item>
+                        <item>14 mars 1707, Projet sur la manière de fonder dans l'eau
+                            sur les différents fonds et principalement sur un roc
+                            inégal.</item>
+                        <item>16 juillet 1708, « M. Desgodets a présenté un dessein et
+                            un mémoire intitulé : <hi rend="italic">Trait d'une manière
+                                de voute en pendentifs, pour les nefs d'église et
+                                autres, entre des arcs doubleaux où il est observé des
+                                liaisons régulières aux voussoirs des pendentifs avec
+                                les voussoirs des arcs doubleaux</hi> ».</item>
+                        <item>22 août 1707, « M. Desgodets a présenté à la Compagnie le
+                            dessein avec les mesures des deux premiers ordres du dedans
+                            de la cour du Louvre et les mesures et proportions du grand
+                            ordre du péristyle de la face extérieure du costé de saint
+                            Germain l'Auxerrois pour faire voir le raport des
+                            chapiteaux des pilastres avec ceux des colonnes dans ces
+                            diférens ordres ».</item>
+                        <item>13 aout 1708, « M. Desgodets a lu à la Compagnie le 1er
+                            chapitre et le 2e chapitre de la description qu'il a faite
+                            de plusieurs domes ». </item>
+                        <item> 3 décembre 1708, « M. Desgodets a fait voir les desseins
+                            qu'il a fait du dome de l'église des Invalides et a lu
+                            ensuite la description qu'il a jointe à ces desseins ». </item>
+                        <item>28 janvier 1709, « M. Desgodets a lu à la compagnie un
+                            mémoire qu'il a fait pour expliquer son sentiment sur la
+                            proportion que les figures doivent avoir dans les
+                            différents ordres d'architecture. Il doit apporter au
+                            premier jour ce mémoire plus au net pour estre
+                            examiné ».</item>
+                        <item>4 février 1709, « M. Desgodets a relu à la compagnie le
+                            mémoire qu'il a fait touchant la proportion des statues
+                            placées aux différents ordres d'architecture les unes au
+                            dessus des autres ». </item>
+                        <item>10 février 1710, « M. Desgodets a fait voir à la
+                            compagnie un profil du dedans de la nef de l'église de
+                            Saint Pierre de Rome, dont la largeur est de treize thoises
+                            au droit du nud des pilastres et d'onze thoises trois quart
+                            au droit des arcs doubleaux qui portent le dôme sur environ
+                            vingt quatre thoises de hauteur sous la clef de la voute et
+                            vingt trois thoises et demi sous l'arc doubleau, ce qui est
+                            différent de la proportion supérieure de la pluspart des
+                            autres églises ausquelles on donne ordinairement plus de
+                            deux fois la largeur en hauteur ; mais la grandeur de
+                            l'église de saint Pierre contribue à rendre sa proportion
+                            agréable ».</item>
+                        <item>11 mars 1709, « M. Desgodets a lu à la compagnie un
+                            mémoire sur ce qui a esté agité dans la dernière assemblée
+                            au sujet du 187e article de la Coustume ».</item>
+                        <item>15 avril 1709, « M. Desgodets a lu un traité intitulé :
+                                <hi rend="italic">Traité pour les voutes portées sur
+                                des colonnes ou pilliers ronds à double arreste en
+                                platte bande sur des plans carrés longs et
+                                parallèlogrammes biais dont les clefs et tous les
+                                joints en lit sont de niveau</hi> ».</item>
+                        <item>13 mai 1709, « M. Desgodets a lu à la compagnie un
+                            mémoire intitulé <hi rend="italic">Proportion de la hauteur
+                                des attiques</hi>. Il y donne des proportions par
+                            raport aux différents édifices où ces attiques sont placez
+                            et en a fait quatre desseins différens : l'un au dessus
+                            d'un bastimens sans colonne ny pilastre qui a deux étages ;
+                            un autre au dessus d'un bastiment orné d'un grand ordre qui
+                            embrasse deux estages ; un troisième au dessus d'un grand
+                            ordre qui ne contient qu'un étage et le 4e au dessus de
+                            deux grands ordres eslevez l'un au dessus de l'autre et qui
+                            forment ensemble deux estages »<ref type="note"
+                                target="#variaAcademieN0012" />.</item>
+                        <item>22 mai 1709, Desgodets lit un mémoire sur
+                            l'attique</item>
+                        <item>25 juin 1709, « M. Desgodets a lu un mémoire pour
+                            répondre aux deux questions proposées sur ce qui est
+                            rapporté dans Pline que l'architecte du temple de Diane à
+                            Ephèse avoit choisi un lieu marécageux pour le garantir des
+                            tremblements de terre et qu'il y avait fait répandre du
+                            charbon pilé et estendre des peaux pour y asseoir la
+                            fondation ».</item>
+                        <item>7 avril 1710, « M. Desgodets a fait voir plusieurs
+                            dessins de différentes proportions de corniches pour des
+                            chambres de mesme hauteur et de différentes largeur, affin
+                            de chercher à se prescrire des règles pour déterminer la
+                            hauteur de ces corniches. L'on est convenu que dans les
+                            chambres de quinze pieds de hauteur, l'architrave, la
+                            frise, et la corniche ensemble doivent avoir la douzieme
+                            partie de toute la hauteur de la chambre, c'est à dire
+                            quinze pouces, observant de rendre les profils plus légers
+                            dans les chambres les moins larges ».</item>
+                        <item>14 avril 1710, « M. Desgodets. a lu ensuite [après
+                            Bullet] un autre mémoire intitulé <hi rend="italic">Règles
+                                pour la proportion de la hauteur des corniches du
+                                dedans des sales, chambres, cabinets et autres pièces
+                                des apartements, par raport aux diférents hauteurs des
+                                pièces »</hi>. </item>
+                        <item>28 avril 1710, « M. Desgodets a lu un autre mémoire pour
+                            joindre à celuy qu'il a donné dans la dernière assemblée
+                            qui continent aussy les règles d'une autre manière de
+                            progression arithmétique qui se rapporte à celle de M.
+                            Bullet ».</item>
+                        <item>5 mai 1710, Desgodets mesure les corniches au
+                            Louvre</item>
+                        <item>14 Juillet 1710, « M. Desgodets a fait voir à la
+                            compagnie trois desseins pour décorer une façade de
+                            bastiment à deux étages dont les croisées sont de mesme
+                            hauteur (…) »</item>
+                        <item>22 décembre 1710, « M. Desgodets a présenté et lu à la
+                            compagnie un mémoire pour la construction des ponts lorsque
+                            le fond de la rivière est de sable mouvant et fluide. » </item>
+                        <item>29 décembre 1710, « M. Desgodets a lu un nouveau mémoire
+                            intitulé <hi rend="italic">Suite du mémoire pour la
+                                construction des ponts lorsque le fond est de sable
+                                mouvant et fluide </hi>».</item>
+                        <item>21 mars 1712, « Monsieur Desgodets a proposé à la
+                            Compagnie une difficulté au sujet de la réparation
+                            considérable à faire à la voûte de l'église de la
+                            principale paroisse de Dourdans ». </item>
+                        <item>13 février 1713, « M. Desgodets a parlé à la compagnie
+                            d'un bastiment de dix huit pieds de hauteur de mur à faire
+                            sur un fond de terre noire et légère, qui n'a oas esté
+                            remuée mais où l'eau se trouve à toris pieds de bas ». </item>
+                        <item>26 février 1714, « M. Desgodets a proposé une difficulté
+                            qui s'est trouvée dans un mur mitoyen lequel avoit trois
+                            pieds d'époisseur jusque à la hauteur de trente pieds et
+                            seulement dix huit pouces d'épaisseur dans le reste de la
+                            hauteur du mur, qui est d'environ vingt pieds ». </item>
+                        <item>25 juin 1714, Dessin pour l’arche « qu'on propose de
+                            rétablir à ce pont proche la tour de Pirmil. Et M.
+                            Desgodets s'est chargé de dresser un devis de la
+                            construction de cette arche et de l'apporter à la
+                            compagnie ».</item>
+                        <item>13 mai 1715, « M Desgodets a présenté à la compagnie un
+                            dessein contenant les profils et les proportions que
+                            Vitruve donne à l'entablement et à ses parties dans l'ordre
+                            ionique, suivant les différentes hauteurs de colonnes, et
+                            par rapport aux frises ornées et non ornées ».</item>
+                        <item>29 juillet 1715, « M. Desgodets a proposé une question au
+                            sujet de l'arrière voussure de Marseille ».</item>
+                        <item>23 décembre 1715, « M. Desgodets a lu le 184e livre de la
+                            coustume qui est le Ier tiltre 9e où il est parlé des
+                            servitudes et des raports de jurez. Et cet article contient
+                            quand et comment se font les visitations et raports
+                            d'experts et jurez. Et M. Desgodets a lu l'extrait qu'il
+                            fait du commentaire de M. de la Ferrière sur cet
+                            article ».</item>
+                        <item>7 janvier 1716, « M. Desgodets a lu le 185e article de la
+                            coustume ou le 2e du tiltre 9 : "Comment doist être feit ,
+                            signé et délivré le raport" et ensuite l'extrait du
+                            commentaire de M. de la Ferrière sur cet article ».</item>
+                        <item>9 mai 1718, Lecture d’un mémoire sur le toisé</item>
+                        <item>27 juin 1718, M. Desgodets lit « un <hi rend="italic"
+                                >Mémoire pour parvenir à la réformation des abus qui se
+                                sont introduits dans l'usage du thoise de la
+                                maçonnerie </hi>»<hi rend="italic">.</hi>
+                        </item>
+                        <item>1er août 1718, Desgodets lit un mémoire sur le toisée des
+                            différentes lunettes,</item>
+                        <item>28 février 1718, Mémoire sur le toisé « des différentes
+                            voûtes de lunettes »</item>
+                        <item>6 mars 1718, Mémoire sur le toisé des voûtes</item>
+                        <item>13 mars 1718, Desgodets « a proposé deux autres manières
+                            de toiser les voutes sphériques en plein cintre »</item>
+                        <item>20 mars 1718, suite.</item>
+                        <item>27 mars 1718, mémoire « pour le thoise des voutes de
+                            cloitre sur des plans poligones réguliers »</item>
+                        <item>17 avril 1718, mémoire « pour les voutes sur le noyau »
+                            (dont voute de saint Gilles)</item>
+                        <item>Mémoire sur le toisé des demi-voûtes « en manière de
+                            voute de cloitre »</item>
+                        <item>24 avril 1718, mémoire sur le toisé des voutes en
+                            trompes</item>
+                        <item>2 mai 1719, Mémoire sur le « toisé des moulures et
+                            saillies d’architecture »</item>
+                        <item>8 mai, 15 mai, 22 mai, 5 juin, 19 juin 1719, La lecture
+                            du mémoire de Desgodets sur le toisé des moulures continue
+                            et présentation de dessins sur le sujet</item>
+                        <item>26 juin 1719, Mémoire sur le toisé des légers ouvrages de
+                            maçonnerie </item>
+                        <item>3 juillet, 10 juillet, 17 juillet, 24 juillet 1719,
+                            Lecture du mémoire continue</item>
+                        <item>7 août 1719, Lecture du mémoire sur le toisé des légers
+                            ouvrages continue</item>
+                        <item>28 août 1719, suite</item>
+                        <item>11 décembre 1719, lecture de mémoire de Desgodets sur le
+                            toisé des légers ouvrages (suite)</item>
+                        <item>18 décembre 1719, 23 janvier 1720, 5 février, 9 avril, 22
+                            avril 1720, la lecture du mémoire de Desgodets
+                            continue</item>
+                        <item>27 mai 1720, « M. Desgodets a repris et fait lecture de
+                            la suite » du toisé des légers ouvrages</item>
+                        <item>10 juin 1720, Desgodets continue à lire ses
+                            observations</item>
+                        <item>1<hi rend="superscript">er</hi> juillet 1720, « M.
+                            Desgodets a commencé la lecture des observations qu’il a
+                            faites sur le toisé de la charpenterie »</item>
+                        <item>La lecture se poursuit jusqu’au 29 juillet 1720</item>
+                        <item>4 aout 1720, « On a commencé la lecture du toisé de la
+                            couverture suivant les remarques de M. Desgodets »</item>
+                        <item>Du 18 novembre au 10 décembre 1720, la lecture sur le
+                            toisé des couvertures se poursuit</item>
+                        <item>13 janvier 1721, Lecture du mémoire sur le toisé</item>
+                        <item>20 janvier 1721, Lecture du mémoire sur le toisé du
+                            marbre</item>
+                        <item>10 mars 1721, Lecture du mémoire sur la vitrerie</item>
+                        <item>24 mars 1721, « M. Desgodets a commencé la lecture de
+                            plusieurs remarques touchant à la réparation des églises
+                            paroissiales »</item>
+                        <item>31 mars 1721, la lecture de ce mémoire se poursuit</item>
+                        <item>16 juin 1721, « M. Desgodets a aporté et fait la lecture
+                            d'une constatation qu'il a faite et qui est signée de M.
+                            Chevalier, avocat au parlement, la consultation pour
+                            répondre aux questions proposées par M. Desgodets à
+                            l'Académie le 21 avril dernier sur les réparations des
+                            églises et des presbytères en campagne ».</item>
+                        <item>26 août 1721, « M. Desgodets a présenté à la compagnie,
+                            sur un mesme dessein, trois différentes sortes de plans des
+                            piles d'un pont, dont l'alignement est biais avec le fil du
+                            courant de la rivière… »</item>
+                        <item>13 avril 1722, « M. Desgodets a fait la lecture des 25e
+                            et 26 chapitres du <hi rend="italic">Traité des ponts et
+                                chaussée</hi> [de Gautier] ».</item>
+                        <item>23 décembre 1722, « M. Desgodets a proposé la question
+                            scavoir quelle proportion doit avoir un estage de rez de
+                            chaussée qui doit servir de soubassement à un ordre
+                            d'architecture ». </item>
+                        <item>18 janvier 1723, « M. Desgodets a fait voir à la
+                            Compagnie une carte générale du canal de Languedoc, qu'il a
+                            mise entre les mains de M. Beausire (…) »</item>
+                        <item>29 février 1723, « M. Desgodets a lu à la Compagnie un
+                            escrit intitulé : <hi rend="italic">Du bon gout
+                                d'architecture</hi> »</item>
+                        <item>10 mai 1723, « M. Desgodets a apporté un extrait
+                            contenant les dates des conférences tenues en l'Académie
+                            royale d'architecture sur le 9e titre de la coutume de
+                            Paris, concernant les servitudes et raports des
+                            jurez ».</item>
+                        <item>27 novembre 1724, « M. Desgodets a lu la préface de son
+                                <hi rend="italic">Traité des ordres
+                            d'architecture</hi>, où il donne une idée générale de
+                            toutes les études nécessaires à un architecte, avec le
+                            dénombrement des parties qui composent et ont relation à la
+                            science et à l'art d'architecture ».</item>
+                        <item>26 février 1725, « M. Desgodets a présenté à l'académie
+                            un escrit intitulé : <hi rend="italic">Mémoire pour
+                                répondre à la question proposée par M. de Cotte le
+                                fils, le 5 février de cette année</hi> [à savoir :
+                            différent entre deux voisins à propos d’un mur pignon]<ref
+                                type="note" target="#variaAcademieN0013" /> » </item>
+                        <item>19 novembre 1725, « M. Desgodets a fait la lecture de la
+                            préface de son traité des bastiments ».</item>
+                        <item>10 décembre 1725, « M. Desgodets a fait un raport à la
+                            compagnie de ce qui a esté délibéré dans les conférences de
+                            l'Académie des 10 et 24 juillet, 1er, 14 et 25 aout 1724 au
+                            sujet des articles 194, 195 et 196 de la coustume de Paris
+                            qui concernent les murs mitoyens ».</item>
+                        <item>16 juillet 1726, « M. Desgodets a proposé la question
+                            suivante : un frère et ses deux sœurs estant
+                            copropriétaires d'une maison, le frère a fait donation
+                            entre vifs à ses deux sœurs de sa part en cette maison, de
+                            laquelle part il s'est réservé l'usufruit sa vie durant. Il
+                            y a eu à cette maison des grosses et des menues réparations
+                            à faire. On demande de quoy le frère est tenu à cette
+                            occasion ».</item>
+                        <item>18 novembre 1726, « M. Desgodets a lu la préface et le
+                            premier chapitre de la seconde partie du <hi rend="italic"
+                                >Traité des ordres</hi>. »</item>
+                        <item>3 mars 1727, « M. Desgodets a lu à la compagnie le
+                            commencement du 18e chapitre du toisé de maçonnerie. Le
+                            chapitre traité de légers ouvrages et M. Desgodets y fait
+                            remarquer les abus qui s'y sont introduits ».</item>
+                        <item>21 avril 1727, « M. Desgodets a fait voir le plan qu'il a
+                            composé pour un hostel Dieu et a lu le premier chapitre de
+                            la seconde session de son Traité de la commodité de
+                            l'architecture dans la distribution des édifices pour les
+                            leçons publiques qu'il donne aux estudiants de
+                            l'Académie ». </item>
+                        <item>9 juin 1727, « M. Desgodets a fait la lecture des trois
+                            premiers chapitres de la seconde section de son <hi
+                                rend="italic">Traité du toisé des bastimens concernant
+                                la charpenterie</hi>. »</item>
+                        <item>16 juin 1727, « Le quastrieme et cinquième chapitre du
+                            Toisé de la charpente par M. Desgodets a donné lieu à la
+                            compagnie de s'entretenir sur différents abus qui ont esté
+                            introduits dans le toisé aux us et coutumes de Paris et qui
+                            passent en pratique. M. Desgodets fait connaitre ces abus
+                            par des exemples qu'il en rapporte ». </item>
+                        <item>21 juillet 1727, « M. Desgodets a lu à la compagnie le
+                            neuvième chapitre de son traité du toisé de la charpente ». </item>
+                        <item>17 novembre 1727, M. Desgodets « a lu à la compagnie le
+                            seconde chapitre de la seconde session du traitté de la
+                            commodité contenant la description d'un hostel de ville
+                            dont il a fait voir les plans et élévation »</item>
+                        <item>8 mars 1728, « M. Desgodets a lu le onzième et dernier
+                            chapitre de son Traité du toisé ». </item>
+                        <item>10 mai 1728, « M. Desgodets a fait voir à la compagnie un
+                            plan qu'il a dressé d'un palais de parlement pour servir de
+                            leçon aux étudiants de l'Académie (…). Ensuite M. Desgodets
+                            a lu le chapitre troisième de a seconde session de son
+                            traité de la commodité de l'architecture » sur le même
+                            sujet ».</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+        <back xml:id="variaAcademieBack">
+            <!-- inclusion du fichier de notes -->
+            <div xml:id="variaAcademieBackFr" xml:lang="fre">
+                <xi:include href="divs/desgodetsVariaAcademieNotes.tei.xml"
+                    parse="xml">
+                    <xi:fallback>Fichier de notes de degodetsVariaAcademie non
+                        trouvé</xi:fallback>
+                </xi:include>
+                
+                <!-- lien vers le fichier à télécharger -->
+                <!--<div xml:id="variaAcademieBackFr02" xml:lang="fre"
+                    type="downloads">
+                    <head>Téléchargements</head>
+                    <p><ref type="file" target="../..files/programme2010.pdf"
+                        mimeType="application/pdf">Programme</ref></p>
+                </div>-->
+                
+                <!-- liste des figures -->
+                <!--<div xml:id="variaAcademieBackFr03" xml:lang="fre"
+                    type="figures">
+                    <head>Liste des figures</head>
+                    <figure xml:id="variaAcademieIll0001" type="illustration">
+                        <figDesc>
+                            <title>Frontispice des édifices antiques</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, frontispice.</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="variaAcademieIll0003" type="illustration">
+                        <figDesc>
+                            <title>Dédicace</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 9</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="variaAcademieIll0004" type="illustration">
+                        <figDesc>
+                            <title>Élévation antérieure du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 30</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="variaAcademieIll0033" type="illustration">
+                        <figDesc>
+                            <title>Élévation latérale du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 33</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                </div>-->
+            </div>
+        </back>
+    </text>
+</TEI>

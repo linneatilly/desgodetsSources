@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes du texte biographique sur Desgodets et les Édifices -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi de N, suivi d'un numéro d'ordre à quatre unités -->
+
+<div xml:id="variaEdificesBackFr01" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre"
+    type="notes">
+    <head>Notes</head>
+    <note xml:id="variaEdificesN0001">
+        <p> Hélène Rousteau-Chambon, <hi rend="italic">Réédition en fac-simile des
+            </hi>Édifices antiques de Rome dessinés et mesurés très exactement (1682),
+            avec introduction et notices de l’auteur et une préface de Pierre Gros,
+            Paris, Picard, 2008 ; Précisons que la première édition avait fait l’objet
+            d’une reprint déjà en 1972 (Collegium Graphicum, Portland, Oregon, USA).
+            Louis Cellauro, Gilbert Richaud, <hi rend="italic">Antoine Desgodets : Les
+                Édifices antiques de Rome</hi>, édition fac-simile du Manuscrit inédit
+            2718 de l’Institut de France avec transcription, annotations et
+            reproduction des planches de l’ouvrage publié en 1682, Rome, Studi sulla
+            cultura dell’antico, vol. VII, De Luca Editore d’Arte, 2008 (2 éditions,
+            une en français, une en italien). </p>
+    </note>
+    <note xml:id="variaEdificesN0002">
+        <p> Frédérique Lemerle et Yves Pauwels, Mise en ligne de l’édition de 1682 des
+                <hi rend="italic">Édifices antiques de Rome</hi> (appartenant à l’INHA)
+            sur le site « Architectura » du Centre d’Etudes Supérieures de la
+            Renaissance de Tours, 2008, avec une notice en français et en anglais de L.
+            Cellauro et G. Richaud ; « Comptes-rendus de L. Cellauro, G. Richaud : <hi
+                rend="italic">Antoine Desgodets. Les Édifices antiques de Rome</hi>,
+            Édition fac-similé du manuscrit inédit 2718 de l’Institut de France avec
+            transcription, annotations et reproduction des planches de l’ouvrage publié
+            en 1682,<hi rend="italic"> Studi sulla cultura dell’antico</hi>, 7. Rome,
+            De Luca editori d’arte, 2008. / <hi rend="italic">Les Édifices</hi>
+            antiques de Rome dessinés et mesurés très exactement par Antoine Degodets,
+            architecte. Fac-similé de l’édition de Jean-Baptiste Coignard, imprimeur du
+            Roi, Paris, 1682. Préface de P. Gros, Introduction et notices d’H.
+            Rousteau-Chambon. Paris, Picard », 2008, <hi rend="italic">Revue de
+                l’Art</hi>, 164, 2009/6, p. 80-82 ; « D’un <hi rend="italic"
+                >Parallèle</hi> à l’autre. L’architecture antique : une affaire d’État
+            »,  <hi rend="italic">Revue de l’Art</hi>, 170, 2010-4, p. 31-39.</p>
+        <p>Olga Medvedkova, « La fortune des Édifices antiques de Rome (1682) dans
+            l’Europe des XVIII<hi rend="superscript">e</hi> et XIX<hi
+                rend="superscript">e</hi> siècles », dans Journée d’études organisée
+            par le projet « Desgodets » sélectionné par l’Agence nationale de la
+            recherche (ANR) dans le cadre du programme « Corpus et outils de la
+            recherche en sciences humaines et sociales » et l’Institut national
+            d’histoire de l’art (INHA), 31 mars 2010 (à paraître).</p>
+        <p>Werner Szambien, « Corriger Desgodets ou rétablir la vérité de Legrand à
+            Dufourny. Le rôle des maquettes, moulages et relevés », dans Journée
+            d’études organisée par le projet « Desgodets » sélectionné par l’Agence
+            nationale de la recherche (ANR) dans le cadre du programme « Corpus et
+            outils de la recherche en sciences humaines et sociales » et l’Institut
+            national d’histoire de l’art (INHA), 31 mars 2010 (à paraître).</p>
+    </note>
+    <note xml:id="variaEdificesN0003">
+        <p> Cet ouvrage est passé en vente aux enchères chez Sothby’s en provenance de
+            la collection du prince et de la princesse Henry De La Tour d’Auvergne
+            Lauraguais au prix de 15,000 GBP. Il a fait l’objet d’un long article de 29
+            pages (non diffusé) de la part de son nouveau propriétaire, le libraire
+            Robin Halwas et il se retrouve semble-t-il récemment de nouveau en vente
+            chez Sims Reed Rare Books.</p>
+    </note>
+    <note xml:id="variaEdificesN0004">
+        <p> Voir le <hi rend="italic">Catalogue des livres en
+                petit nombre composant la bibliothèque de M. Vivenel</hi>, Paris, 1844,
+            p. 168. Sur ce personnage, lire Gabriel P. Weisberg « Antoine Vivenel The
+            Private Museum and the Entrepreneur under the July Monarchy, <hi
+                rend="italic">Journal of the History of Collections</hi>, 1990, 2-1, p.
+            21-39 et la conférence donnée par le professeur Alain Raisonnier,
+            Université Pierre et Marie Curie, Paris VI, à la société de l’histoire de
+            Paris et de l’Ile de France, le mardi 19 mars 2013, « Antoine-François
+            Vivenel (1799-1862), entrepreneur général des travaux de l’Hôtel de ville
+            de Paris de 1837 à 1847, collectionneur et généreux mécène » qui devrait
+            être publiée dans <hi rend="italic">Paris et Ile de France – Mémoires</hi>
+            en 2014.</p>
+    </note>
+    <note xml:id="variaEdificesN0005">
+        <p> Sur Callet père, lire Sybille Bellamy-Brown, « La
+            Renaissance au service du XIX<hi rend="superscript">e</hi> siècle à propos
+            de l’ouvrage de Charles-François Callet : <hi rend="italic">Notice
+                historique sur la vie artistique et les ouvrages de quelques
+                architectes Français du XVI</hi>
+            <hi rend="italic superscript">e</hi>
+            <hi rend="italic"> siècle</hi> (1842) », <hi rend="italic">Livraisons
+                d’histoire de l’architecture</hi>, n° 9, 1-2005, p. 21-41.</p>
+    </note>
+    <note xml:id="variaEdificesN0006">
+        <p> Ce passage a été rédigé par Olga Medvedkova et
+            complété par Robert Carvais.</p>
+    </note>
+    <note xml:id="variaEdificesN0007">
+        <p> Ce manuscrit se trouve à la Bibliothèque de l’Institut sous la cote Ms
+            2718. Il est reproduit également en ligne sur le site de la
+            bibliothèque sous la référence suivante : <ref target="http://www.bibliotheque-institutdefrance.fr/numerisation/Ms_2718_Desgodets/Ms_2718_Desgodets.pdf"
+                >http://www.bibliotheque-institutdefrance.fr/numerisation/Ms_2718_Desgodets/Ms_2718_Desgodets.pdf</ref>.
+            Il a fait l’objet d’une édition par Louis Cellauro et Gilbert Richaud (<hi
+                rend="italic">op. cit.)</hi> qui existe en français et en Italien. Elle
+            a fait l’objet de nombreux comptes-rendus : Frédérique Lemerle, <hi
+                rend="italic">Revue de l’Art</hi>, 164, 2009/6, p. 80-82 ; Marco
+            Cavalieri et Caroline Heering, Université catholique de Louvain, sur
+            histara (<ref target="http://histara.sorbonne.fr/cr.php?cr=835"
+                >http://histara.sorbonne.fr/cr.php?cr=835</ref>; en ligne 19/04/2010 ;
+            consulté le 22/11/2012) et par Henry Million, Massachussetts Institute of
+            Technology, dans <hi rend="italic">JSHA</hi>, 69:3, September 2010, p.
+            444-446.</p>
+    </note>
+    <note xml:id="variaEdificesN0008">
+        <p> Cet ouvrage a fait l’objet d’un manuscrit autographe
+            conservé à La BnF (Ms fr. 381). Il est précédé d’une dédicace à Colbert,
+            marquis de Seignelay (avant 1692), papier, dessins lavés à l’encre de
+            Chine. Il a été mis en ligne le 27 juin 2011 sur Gallica : <ref
+                target="http://gallica.bnf.fr/ark:/12148/btv1b9058220m.r=.langES"
+                >http://gallica.bnf.fr/ark:/12148/btv1b9058220m.r=.langES</ref>.</p>
+    </note>
+    <note xml:id="variaEdificesN0009">
+        <p> Nous avons néanmoins repéré une édition annotée par un
+            certain Simon [S] en 1682 dans la collection Fowler de l’Université John
+            Hopkins.</p>
+    </note>
+    <note xml:id="variaEdificesN0010">
+        <p>
+            <ref target="http://books.google.fr/books?id=z4xCAAAAcAAJ&amp;printsec=frontcover&amp;dq=desgodets+%C3%A9difices+antiques+1779&amp;hl=fr&amp;sa=X&amp;ei=vUpdUuSPHOeY1AWfk4CAAQ&amp;ved=0CDIQ6AEwAA#v=onepage&amp;q=desgodets%20%C3%A9difices%20antiques%201779&amp;f=false"
+                >http://books.google.fr/books?id=z4xCAAAAcAAJ&amp;printsec=frontcover&amp;dq=desgodets+%C3%A9difices+antiques+1779&amp;hl=fr&amp;sa=X&amp;ei=vUpdUuSPHOeY1AWfk4CAAQ&amp;ved=0CDIQ6AEwAA#v=onepage&amp;q=desgodets%20%C3%A9difices%20antiques%201779&amp;f=false</ref>
+            . Il est néanmoins réimprimé en 1800 chez Vilquin. Pour la suite française
+            de l’œuvre nous ne pouvons omettre de citer Paul-Marie Letarouilly
+            (1795-1855), <hi rend="italic">Edifices de Rome moderne, ou Recueil des
+                palais, maison, églises, couvents et autres monuments publics et
+                particuliers les plus remarquables de la ville de Rome, dessinés,
+                mesurés et publiés par l’auteur</hi>, Paris, 1840, 3 vol. (12 éditions
+            successives) <ref target="http://architecture.library.nd.edu/DigitizedRareBooks.shtml"
+                >http://architecture.library.nd.edu/DigitizedRareBooks.shtml</ref>. Ses
+            papiers sont à la Bibliothèque de l’Institut de France : 10 dossiers Ms
+            2476-2485 et 26 volumes de matériaux pour l’ouvrage ci-dessus, Ms
+            4361-4386. </p>
+    </note>
+    <note xml:id="variaEdificesN0011">
+        <p>
+            <ref target="http://digi.ub.uni-heidelberg.de/diglit/moreau1728"
+                >http://digi.ub.uni-heidelberg.de/diglit/moreau1728</ref> .</p>
+    </note>
+    <note xml:id="variaEdificesN0012">
+        <p>
+            <ref target="http://openlibrary.org/books/OL17935880M/Gli_edificj_antichi_di_Roma"
+                >http://openlibrary.org/books/OL17935880M/Gli_edificj_antichi_di_Roma</ref>
+            .</p>
+    </note>
+    <note xml:id="variaEdificesN0013">
+        <p>
+            <ref>
+                <ref target="http://digi.ub.uni-heidelberg.de/diglit/canina1843bd2"
+                    >http://digi.ub.uni-heidelberg.de/diglit/canina1843bd2</ref>
+            </ref>.</p>
+    </note>
+</div>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model     href="../../schema/desgodetsSchemaTEI.rnc"
+                type="application/relax-ng-compact-syntax"
+                schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier d'alignement des figures des manuscrits sur les Commodités 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : Le fichier est placé au niveau du corpus dans le système de fichier car il est par nature indépendant de la version du cours édité. Le même fichier pouvant ainsi par la suite être utilisé pour l'édition des autres versions qui ont pour le moment seulement fait l'objet d'un encodage sommaire. -->
+<!-- QUEST : planches en surplus dans c1, faut-il laisser un link ?  -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <!-- début de l'en-tête TEI -->
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Traité des commodités</title>
+                <title xml:lang="fre" type="sub">Fichier d'alignement des figures</title>
+                <author>
+                    <persName>
+                        <forename>Antoine</forename>
+                        <surname>Desgodets</surname>
+                    </persName>
+                </author>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="edt">édition</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                    <persName ref="#HRC">
+                        <forename>Hélène</forename>
+                        <surname>Rousteau-Chambon</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date from="2013" to="2013"
+                    >2008-2013</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>cAlignmentFigures</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="cAlignmentFiguresImagesLicence">
+                    <p>Les images numériques des manuscrits sont mises à disposition par les institutions
+                        partenaires mais restent leur propriété exclusive. Celles-ci en autorisent la
+                        reproduction et la réutilisation selon leurs propres règles en vigueur. Toute
+                        diffusion de ces images, sous quelque forme et sur quelque support que ce soit
+                        (papier, audiovisuel, ou numérique), pour quelque finalité que ce soit (pédagogique,
+                        scientifique ou commercial), doit faire l’objet d’une demande d’autorisation préalable
+                        auprès de l’institution concernée.</p>
+                </availability>
+                <availability status="restricted" xml:id="cAlignmentFiguresTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative
+                            Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit (UMR 7074) met à disposition cette ressource
+                        électronique structurée, protégée par le code de la propriété intellectuelle sur le
+                        droit d'auteur (L111-1) et sur les bases de données (L341-1), selon les termes de la
+                        licence Creative Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb />Cette licence est disponible en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou par courrier postal à
+                        Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105,
+                        USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et d'analyse du droit souhaite
+                        encourager l'utilisation et l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute autorisation au-delà du champ de
+                        cette licence doit être obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande à ce que toute
+                        publication dérivée de ses ressources électroniques comporte : <lb />1. le nom du
+                        Centre de théorie et d'analyse du droit et, pour les publications électroniques, son
+                        logo <lb />2. l'URI permettant d'accéder à la page citée sur notre site, ou à la page
+                        d'accueil de la ressource <lb />3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à des fins non
+                        commerciales, tant que vous nous créditez et que les nouvelles œuvres sont diffusées
+                        selon les mêmes conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit s'engage à conserver et à
+                        toujours offrir publiquement la version la plus à jour de ses ressources électroniques
+                        par une URI pérenne. Il s'engage en conséquence à les corriger et à les améliorer, à
+                        intégrer les contributions qui lui sont soumises (après validation par un comité
+                        scientifique), et à référencer l'origine de ces contributions. Toute modification de
+                        la ressource qui ne serait pas reversée à la version de référence sous l'autorité
+                        éditoriale du Centre de théorie et d'analyse risquerait en conséquence d'être perdue,
+                        afin de ne pas disperser les contributions et de permettre les meilleures conditions
+                        possibles de collaboration scientifique, nous vous invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <sourceDesc>
+                <!-- description de la source -->
+                <p xml:id="cAlignmentFigures">Fichier nativement numérique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+                    formalisation du savoir architectural au XVII<hi rend="superscript">e</hi> siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <correction>
+                    <p>La syntaxe originale du manuscrit a été respectée en suivant les indications de Bernard
+                        Barbiche, <ref type="external"
+                            target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+                            >Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript"
+                                >e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+                </correction>
+                <hyphenation>
+                    <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de l'hyphénation.</p>
+                </hyphenation>
+                <interpretation>
+                    <p>Les interprétations sont traitées au moyen d'un élément supplied ou bien sont renvoyées
+                        en notes. Une mention de responsabilité est fournie grâce à l'attribut resp sur le
+                        passage concerné.</p>
+                </interpretation>
+                <normalization>
+                    <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été
+                        développées.</p>
+                </normalization>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote, soit au
+                        moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira peut-être une
+                    expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le cas].</p>
+            </samplingDecl>
+            <variantEncoding method="location-referenced" location="external" />
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="99">Français (langue principale du corpus)</language>
+                <language ident="lat" usage="01">Latin (langue utilisée dans le corpus)</language>
+                <!-- TODO : évaluer les langues -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                    <term>Architecture religieuse</term>
+                    <term>Architecture hospitalière</term>
+                    <term>Architecture publique</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                    <term>Church architecture</term>
+                    <term>Hospital architecture</term>
+                    <term>Public architecture</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-01-06" who="#EC">augmentation de l'en-tête
+                TEI</change>
+            <change when="2012-09-05" who="#EC">première version du
+                fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="alignmentFigures" xml:id="cAlignmentFiguresBody01">
+                <linkGrp>
+                    <!-- Ière partie, Chapitre I -->
+                    <link target="#c2Pl0001 #c1Pl0001" />
+                    <link target="#c2Pl0002 #c1Pl0002" />
+                    <link target="#c2Pl0003 #c1Pl0003" />
+                    <link target="#c2Pl0004 #c1Pl0004" />
+                    <!-- figures -->
+                    <link target="#c2Fig0004.01 #c1Fig0004.01" />
+                    <link target="#c2Fig0004.03 #c1Fig0004.03" />
+                    <link target="#c2Fig0004.02 #c1Fig0004.02" />
+                    <link target="#c2Pl0005 #c1Pl0005" />
+                    <link target="#c2Pl0006 #c1Pl0006" />
+                    <link target="#c2Pl0007 #c1Pl0007" />
+                    <!-- figures -->
+                    <link target="#c2Fig0007.01 #c1Fig0007.01" />
+                    <link target="#c2Fig0007.02 #c1Fig0007.02" />
+                    <link target="#c2Fig0007.03 #c1Fig0007.03" />
+                    <link target="#c2Pl0008 #c1Pl0008" />
+                    <!-- figures -->
+                    <link target="#c2Fig0008.01 #c1Fig0008.01" />
+                    <link target="#c2Fig0008.02 #c1Fig0008.02" />
+                    <link target="#c2Fig0008.03 #c1Fig0008.03" />
+                    <link target="#c2Fig0008.04 #c1Fig0008.04" />
+                    <link target="#c2Fig0008.05 #c1Fig0008.05" />
+                    <link target="#c2Fig0008.06 #c1Fig0008.06" />
+                    <link target="#c2Fig0008.07 #c1Fig0008.07" />
+                    <link target="#c2Pl0009 #c1Pl0009" />
+                    <!-- figures -->
+                    <link target="#c2Fig0009.01 #c1Fig0009.01" />
+                    <link target="#c2Fig0009.02 #c1Fig0009.02" />
+                    <!-- Ière partie, Chapitre II -->
+                    <link target="#c2Pl0010 #c2Pl0010" />
+                    <link target="#c2Pl0011 #c1Pl0011" />
+                    <link target="#c2Pl0012 #c1Pl0012" />
+                    <!-- figures -->
+                    <link target="#c2Fig0012.01 #c1Fig0012.01" />
+                    <link target="#c2Fig0012.02 #c1Fig0012.02" />
+                    <link target="#c2Fig0012.03 #c1Fig0012.03" />
+                    <link target="#c2Pl0013 #c1Pl0013" />
+                    <link target="#c2Pl0014 #c1Pl0014" />
+                    <!-- figures -->
+                    <link target="#c2Fig0014.01 #c1Fig0014.01" />
+                    <link target="#c2Fig0014.02 #c1Fig0014.02" />
+                    <link target="#c2Fig0014.03 #c1Fig0014.03" />
+                    <link target="#c2Fig0014.04 #c1Fig0014.04" />
+                    <link target="#c2Pl0015 #c1Pl0015" />
+                    <link target="#c2Pl0016 #c2Pl0016" />
+                    <link target="#c2Pl0017 #c1Pl0017" />
+                    <!-- figures -->
+                    <link target="#c2Fig0017.01 #c1Fig0017.01" />
+                    <link target="#c2Fig0017.02 #c1Fig0017.02" />
+                    <!-- Il y a un saut dans la numérotation des planches -->
+                    <link target="#c2Pl0018 #c1Pl0018" />
+                    <link target="#c2Pl0019 #c1Pl0019" />
+                    <link target="#c2Pl0020 #c1Pl0020" />
+                    <!-- Ière partie, Chapitre III -->
+                    <link target="#c2Pl0021 #c1Pl0021" />
+                    <link target="#c2Pl0022 #c1Pl0022" />
+                    <link target="#c2Pl0023 #c1Pl0023" />
+                    <!-- figures -->
+                    <link target="#c2Fig0023.01 #c1Fig0023.01" />
+                    <link target="#c2Fig0023.02 #c1Fig0023.02" />
+                    <link target="#c2Pl0024 #c1Pl0024" />
+                    <link target="#c2Pl0025 #c1Pl0025" />
+                    <link target="#c2Pl0026 #c1Pl0026" />
+                    <!-- figures -->
+                    <link target="#c2Fig0026.01 #c1Fig0026.01" />
+                    <link target="#c2Fig0026.02 #c1Fig0026.02" />
+                    <link target="#c2Fig0026.03 #c1Fig0026.03" />
+                    <link target="#c2Pl0027 #c1Pl0027" />
+                    <link target="#c2Pl0028 #c1Pl0028" />
+                    <!-- Ière partie, Chapitre IV -->
+                    <link target="#c2Pl0029 #c1Pl0029" />
+                    <link target="#c2Pl0030 #c1Pl0030" />
+                    <link target="#c2Pl0031 #c1Pl0031" />
+                    <link target="#c2Pl0032 #c1Pl0032" />
+                    <!-- figures -->
+                    <link target="#c2Fig0032.01 #c1Fig0032.01" />
+                    <link target="#c2Fig0032.02 #c1Fig0032.02" />
+                    <!-- Ière partie, Chapitre V -->
+                    <link target="#c2Pl0033 #c1Pl0033" />
+                    <link target="#c2Pl0034 #c1Pl0034" />
+                    <!-- figures -->
+                    <link target="#c2Fig0034.01 #c1Fig0034.01" />
+                    <link target="#c2Fig0034.02 #c1Fig0034.02" />
+                    <link target="#c2Pl0035 #c1Pl0035" />
+                    <!-- figures -->
+                    <link target="#c2Fig0035.01 #c1Fig0035.01" />
+                    <link target="#c2Fig0035.02 #c1Fig0035.02" />
+                    <link target="#c2Fig0035.03 #c1Fig0035.03" />
+
+                    <link target="#c2Pl0036 #c1Pl0036" />
+                    <link target="#c2Pl0037 #c1Pl0037" />
+
+                    <link target="#c2Pl0038 #c1Pl0038" />
+
+                    <link target="#c2Pl0039 #c1Pl0039" />
+                    <link target="#c2Fig0039.01 #c1Fig0039.01" />
+                    <link target="#c2Fig0039.02 #c1Fig0039.02" />
+                    <!-- 2ème partie, Chapitre II -->
+                    <link target="#c2Pl0040 #c1Pl0040" />
+                    <link target="#c2Pl0041 #c1Pl0041" />
+                    <link target="#c2Pl0042 #c1Pl0042" />
+                    <!-- planches en surplus dans c1, faut-il laisser un link ?  -->
+                    <!--<link target="#c1Pl0043" />
+                    <link target="#c1Pl0044" />
+                    <link target="#c1Pl0045" />-->
+                </linkGrp>
+            </div>
+        </body>
+    </text>
+</TEI>

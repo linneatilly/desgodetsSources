@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/desgodetsSchemaTEI.rnc"
+            type="application/relax-ng-compact-syntax"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+     Fichier de l'index matières de l'édition des cours de Desgodets
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+
+<!-- RMQ : fichier d'usage global pour l'ensemble de l'édition -->
+<!-- RMQ : l'utilisation de l'élément index n'est pas conforme à TEI. les solutions avec interpGrp et list ne permettant pas non plus de traiter des sous-entrées de manière efficace -->
+<!-- TODO : remplacer les identifiants provisoires par des identifiants numériques -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    <!-- début de l'en-tête TEI -->
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Index rerum</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche
+                                Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la
+                        Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="edt">édition</resp>
+                    <persName ref="#JB">
+                        <forename>Joëlle</forename>
+                        <surname>Barreau</surname>
+                    </persName>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                    </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                    <persName ref="#BG">
+                        <forename>Béatrice</forename>
+                        <surname>Gaillard</surname>
+                    </persName>
+                    <persName ref="#JH">
+                        <forename>Juliette</forename>
+                        <surname>Hernu</surname>
+                    </persName>
+                    <persName ref="#HRC">
+                        <forename>Hélène</forename>
+                        <surname>Rousteau-Chambon</surname>
+                    </persName>
+                    <persName ref="#LT">
+                        <forename>Linnéa</forename>
+                        <surname>Tilly</surname>
+                    </persName>
+                    <persName ref="#GF">
+                        <forename>Guillaume</forename>
+                        <surname>Fonkenell</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                    <persName ref="#JH">
+                        <forename>Juliette</forename>
+                        <surname>Hernu</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="trc">transcription</resp>
+                    <persName ref="#LT">
+                        <forename>Linnéa</forename>
+                        <surname>Tilly</surname>
+                    </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                    <persName ref="#JB">
+                        <forename>Joëlle</forename>
+                        <surname>Barreau</surname>
+                    </persName>
+                    <persName ref="#AB">
+                        <forename>Anne</forename>
+                        <surname>Bondon</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date from="2013"
+                        to="2013">2008-2013</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>indexRerum</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR
+                        7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="indexRerumTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"
+                        >
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic
+                            url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb />Cette licence est
+                        disponible en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb />1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb />2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource
+                        <lb />3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit
+                        s'engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s'engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l'origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l'autorité éditoriale du Centre de théorie et
+                        d'analyse risquerait en conséquence d'être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="indexRerum">Fichier nativement numérique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme
+                    de recherche sur la formalisation du savoir architectural au
+                        XVII<hi rend="superscript">e</hi> siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on
+                    fournira peut-être une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas
+                    ce ne sera pas le cas].</p>
+            </samplingDecl>
+            <variantEncoding method="location-referenced" location="external" />
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="99">Français (langue principale du
+                    corpus)</language>
+                <language ident="lat" usage="01">Latin (langue utilisée dans le
+                    corpus)</language>
+                <!-- TODO : évaluer les langues -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-05-02" who="#EC">augmentation de l'en-tête
+                TEI</change>
+            <change when="2012-09-05" who="#EC">première version du
+                fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <!-- structure recherchée -->
+            <!-- RMQ ici rien ne lie vraiment les entrées d'index entre elles, hormis le document -->
+            <!-- 
+            <div xml:id="indexRerumA">
+                    <head>A</head>
+                    <entrée xml:id="iAbondance">
+                        <intitulé>abondance</intitulé>
+                    </entree>
+                    <entrée xml:id="iArchitecture">
+                        <intitulé>architecture</intitulé>
+                        <entrée xml:id="iArchitectureOrigines">
+                            <intitulé>origines de</intitulé>
+                        </entrée>
+                        <entrée xml:id="iArchitectureRurale">
+                            <intitulé>rurale</intitulé>
+                        </entrée>
+                        <entrée xml:id="iArchitectureCivile">
+                            <intitulé>civile</intitulé>
+                        </entrée>
+                    </index>
+                </div> -->
+            
+            <!-- utilisation de interpGrp et interp -->
+            <!-- RMQ pas de structure hiérachique possible avec interpGrp -->
+            <!--
+            <interpGrp>
+                <desc></desc>
+                <interp>interprétation1</interp>
+                <interp>interprétation2</interp>
+            </interpGrp>
+            -->
+            
+            <!-- utilisation des listes -->
+            <!-- la structure hiérarchique des listes n'a pas une structure hiérarchique XML adéquate pour représenter les entrées et sous entrées, à moins de créer un élément list pour chaque entrée mais ne fonctionne pas à plus de 2 niveaux de profondeur -->
+            <!-- 
+            <list>
+                <item>toto</item>
+                <item>
+                    <list>
+                        <item>toto titi</item>
+                        <item>toto tutu</item>
+                    </list>
+                </item>
+                <item>tata</item>
+            </list> -->
+            
+            <!-- utilisation normale des éléments index pour produire une hiérarchie.  -->
+            <!-- RMQ normalement index marque une localisation qui doit être indexée, pas l'index lui-même -->
+            <!-- RMQ la structure hiérarchique XML ne reflète pas la réalité de l'index, seule la position permet d'établir la relation de hiérarchie -->
+            <!--
+            <div>
+                <index>
+                    <term>terme1</term>
+                    <index>
+                        <term>terme1, sous-entrée1</term>
+                        <term>terme1, sous-entrée2</term>
+                        <index>
+                            <term>terme1, sous-entrée2, sous-entrée1</term>
+                        </index>
+                    </index>
+                    <term>terme2</term>
+                </index>
+            </div>-->
+            
+            
+           
+            
+            <div xml:lang="fre" type="indexRerum">
+                <head>Index rerum</head>
+                <div xml:id="indexRerumA">
+                    <head>A</head>
+                    <index xml:id="iAbondance">
+                        <term>abondance</term>
+                    </index>
+                    <index xml:id="iArchitecture">
+                        <term>architecture</term>
+                        <index xml:id="iArchitectureOrigines">
+                            <term>origines de</term>
+                        </index>
+                        <index xml:id="iArchitectureRurale">
+                            <term>rurale</term>
+                        </index>
+                        <index xml:id="iArchitectureCivile">
+                            <term>civile</term>
+                        </index>
+                    </index>
+                </div>
+                <div xml:id="indexRerumC">
+                    <head>C</head>
+                    <index xml:id="iCabane">
+                        <term>cabane</term>
+                    </index>
+                    <index xml:id="iChemin">
+                        <term>chemin</term>
+                    </index>
+                    <index xml:id="iCommerce">
+                        <term>commerce</term>
+                    </index>
+                    <index xml:id="iCommodite">
+                        <term>commodité</term>
+                    </index>
+                    <index xml:id="iCour">
+                        <term>cour</term>
+                    </index>
+                </div>
+                <div xml:id="indexRerumE">
+                    <head>E</head>
+                    <index xml:id="iEdifice">
+                        <term>édifice</term>
+                        <index xml:id="iEdificePublic">
+                            <term>édifice public</term>
+                        </index>
+                        <index xml:id="iEdificePrive">
+                            <term>édifice privés</term>
+                        </index>
+                    </index>
+                    <index xml:id="iEtat">
+                        <term>état</term>
+                    </index>
+                </div>
+                <div xml:id="indexRerumH">
+                    <head>H</head>
+                    <index xml:id="iHotelDeVille">
+                        <term>hôtel de ville</term>
+                    </index>
+                </div>
+                <div xml:id="indexRerumM">
+                    <head>M</head>
+                    <index xml:id="iMarchandise">
+                        <term>marchandise</term>
+                    </index>
+                    <index xml:id="iMarchand">
+                        <term>marchand</term>
+                    </index>
+                </div>
+                <div xml:id="indexRerumP">
+                    <head>P</head>
+                    <index xml:id="iPays">
+                        <term>pays</term>
+                    </index>
+                    <index xml:id="iPeuple">
+                        <term>peuple</term>
+                    </index>
+                    <index xml:id="iPlace">
+                        <term>place</term>
+                    </index>
+                    <index xml:id="iPolice">
+                        <term>police</term>
+                    </index>
+                    <index xml:id="iPort">
+                        <term>port</term>
+                    </index>
+                </div>
+                <div xml:id="indexRerumN">
+                    <head>N</head>
+                    <index xml:id="iNavigation">
+                        <term>navigation</term>
+                    </index>
+                </div>
+                <div xml:id="indexRerumR">
+                    <index xml:id="iRiviere">
+                        <term>rivière</term>
+                    </index>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

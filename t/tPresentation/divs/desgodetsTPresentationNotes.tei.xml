@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes de la présentation des manuscrits T -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi d'un numéro d'ordre à quatre unités -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0"
+    xml:lang="fre" type="notes" xml:id="tN">
+    <head>Notes</head>
+    <note xml:id="tN0001">
+            <p> Ce toisé de <persName ref="#desgodets">Desgodets</persName> est suivi
+                d’exemples – d’une autre main – pratiques de différents
+                éléments d’architecture mesurés et dessinés (p.
+                169-252). Cette partie du manuscrit mériterait une
+                transcription et une analyse spécifique. Par ailleurs,
+                le T7 est un manuscrit de toisé de l’École nationale
+                des Ponts et Chaussées (Ms 43), intitulé « Cours de
+                toisé des bâtiments », relié avec figures, appartenant
+                au fonds <persName>Lesage</persName>, provenant du fonds <persName>Corencez</persName><!-- à indexer -->, nièce de
+                <persName ref="#pronyGaspardClairFrançoisMarieRicheDe">Prony</persName>. Il a été écarté du corpus en raison, lors de sa
+                consultation, de sa non-correspondance avec le cours de
+                <persName ref="#desgodets">Desgodets</persName>.</p>
+        </note>
+        <note xml:id="tN0002">
+            <p>Henry LEMONNIER, Procès-verbaux de l’Académie royale d’architecture 1671-1793, Paris, Jean Schemit, Édouard Champion puis Armand Colin, 1911-1929, séance du 7 février 1752. séance du 7 février 1752.</p>
+        </note>
+        <note xml:id="tN0003">
+            <p> De la même façon, les manuscrits
+                T8 et T9 semblent correspondre respectivement à des
+                cours dispensés <date when="1736">en 1736</date> et <date when="1745">en 1745</date> sur la base du cours
+                de <persName ref="#desgodets">Desgodets</persName>, ce qui prouverait la longévité et la
+                forte destinée de ce texte. Nous avons l’intention de
+                publier le cours de <persName ref="#camusCharlesEtienneLouis">Camus</persName> (Archives de l’Académie des
+                Beaux-arts de L’Institut de France, B8, 1733-1734) et
+                celui de <persName ref="#ginetNicolas">Ginet</persName> (publié <date when="1761">en 1761</date>).</p>
+        </note>
+        <note xml:id="tN0004">
+            <p> « Mathias Mesange, garde de la
+                bibliothèque de St Germain – Autre de Mr Blondel ».</p>
+        </note>
+        <note xml:id="tN0005">
+            <p><bibl corresp="#mesange1743"/></p>
+        </note>
+        <note xml:id="tN0006">
+            <p><bibl corresp="#mesange1746"/></p>
+        </note>
+        <note xml:id="tN0007">
+            <p><bibl corresp="#potain1749"/></p>
+        </note>
+        <note xml:id="tN0008">
+            <p><bibl corresp="#hernu2010" /> ; <bibl corresp="#hernu2012"/> ; <bibl corresp="#hernu2013"/> </p>
+        </note>
+        <note xml:id="tN0009">
+            <p><bibl corresp="#morisot1804">vol. 1, introduction.</bibl></p>
+        </note>
+        <note xml:id="tN0010">
+            <p><bibl corresp="#bullet1691">p. 48.</bibl></p>
+        </note>
+        <note xml:id="tN0011">
+            <p>Jombert, première édition <date when="1699">en 1699</date>. Plusieurs rééditions.</p>
+        </note>
+        <note xml:id="tN0012">
+            <p><bibl corresp="#ginet1761"/></p>
+        </note>
+        <note xml:id="tN0013">
+            <p><bibl corresp="#ginet1760"/></p>
+        </note>
+        <note xml:id="tN0014">
+            <p><bibl corresp="#gazetteArtsEtMetiers1775"/>. La critique est
+                également sévère chez <persName ref="#morisotMadeleineRoseJoseph">Joseph-Madeleine-Rose
+                    Morisot</persName>. Après un long argumentaire, il écrit qu’on
+                ne peut le lire <quote>qu’avec dégoût et que jamais
+                personne […] ne s’est avisé de [le] citer ou de
+                [le] consulter.</quote><!-- TODO vérifier affichage citation dans les notes --> <bibl corresp="#morisot1820-1824">t. 1, p. 27-30.</bibl></p>
+        </note>
+        <note xml:id="tN0015">
+            <p><bibl corresp="#lHopital1696"/></p>
+        </note>
+        <note xml:id="tN0016">
+            <p> La longueur d’une ellipse ne
+                s’exprime pas de façon simple en fonction des axes,
+                mais nécessite l’utilisation « d’intégrale
+                elliptique ».</p>
+        </note>
+        <note xml:id="tN0017">
+            <p> Plus précisément <persName ref="#keplerJohannes">Kepler</persName> a
+                montré que si L est la longueur d’une ellipse dont
+                a et b sont les demi-axes, alors </p>
+            <p>2 π √ab ≤ L ≤ π (a+b)</p>
+        </note>
+        <note xml:id="tN0018">
+            <p><bibl corresp="#frezier1737-1739"/></p>
+        </note>
+        <note xml:id="tN0019">
+            <p> L’auteur commet ici une
+                confusion et une erreur, nous semble-t-il. D’une
+                part, si un « Delepé » s’est occupé de toisé ce
+                serait <persName ref="#lEpeeCharlesFrancois">Charles-François De L’Épée</persName>, architecte de 2<hi rend="superscript">e</hi> classe de l’Académie,
+                entrepreneur, père du célèbre <persName ref="#lEpeeCharlesMichel">abbé Charles-Michel</persName>
+                qui emprunte la copie manuscrite du cours de
+                <persName ref="#desgodets">Desgodets</persName> à l’Académie et assiste à toutes les
+                lectures académiques sur le sujet dans <date from="1750" to="1759">les années
+                1750</date> (<bibl corresp="#lemonnier">t. VII, p. 68</bibl>). D’autre part,
+                cet architecte n’écrivit aucun toisé.</p>
+        </note>
+        <note xml:id="tN0020">
+            <p><bibl corresp="#morisot1820-1824">p. 24-27.</bibl></p>
+        </note>
+        <note xml:id="tN0021">
+            <p><bibl corresp="#moniteur1866">p. 51.</bibl></p>
+        </note>
+        <note xml:id="tN0022">
+            <p> T9, [p. 1].</p>
+        </note>
+        <note xml:id="tN0023">
+            <p> T9, [p. 2-3].</p>
+        </note>
+        <note xml:id="tN0024">
+            <p> T9, [p. 3].</p>
+        </note>
+</div>

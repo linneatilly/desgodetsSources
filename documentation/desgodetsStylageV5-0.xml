@@ -1,0 +1,3337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>-->
+<!-- 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+     fichier de présentation du corpus des cours de Desgodets sur la commodité 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- <ref type="note" target="#cN0002"> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <!-- mentions de titre et de responsabilité -->
+         <titleStmt>
+            <title xml:lang="fre" type="main">ANR Desgodets</title>
+            <title xml:lang="fre" type="sub">Pré-encodage, encodage et stylage des
+               éléments TEI</title>
+            <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+            <principal>
+               <persName ref="#RC">
+                  <forename>Robert</forename>
+                  <surname>Carvais</surname>
+                  <affiliation>
+                     <orgName>Centre National de la Recherche Scientifique</orgName>
+                     <orgName type="acronym">CNRS</orgName>
+                     <roleName>responsable d’ANR</roleName>
+                  </affiliation>
+               </persName>
+            </principal>
+            <!-- organismes qui ont financé l'opération -->
+            <funder>
+               <orgName>Agence Nationale de Recherche</orgName>
+               <orgName type="acronym">ANR</orgName>
+               <date from="2008" to="2013">2008-2013</date>
+            </funder>
+            <funder>
+               <orgName>Association Française d’Histoire de la Construction</orgName>
+               <orgName type="acronym">AFHC</orgName>
+               <date when="2013">2013</date>
+            </funder>
+            <!-- mentions de responsabilité secondaires -->
+            <respStmt>
+               <resp key="prg">modélisation XML-TEI</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="aut">auteur</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="mrk">encodage</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <!-- mention d'édition -->
+         <editionStmt>
+            <edition n="1">première édition électronique, <date from="2008" to="2013"
+                  >2008-2013</date>
+            </edition>
+         </editionStmt>
+         <extent><!-- taille du fichier en octet --></extent>
+         <!-- information sur la publication électronique -->
+         <publicationStmt>
+            <date when="2013">2013</date>
+            <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+            <idno n="presentation">cPresentation</idno>
+            <!-- responsable de la publication -->
+            <publisher>
+               <orgName>Centre de théorie et d’analyse du droit (UMR 7074)</orgName>
+               <orgName type="acronym">CTAD</orgName>
+               <address>
+                  <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                  <addrLine>UFR Droit et Science politique</addrLine>
+                  <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                  <addrLine>200, Avenue de la République</addrLine>
+                  <addrLine>92001 Nanterre Cedex</addrLine>
+                  <addrLine>France</addrLine>
+                  <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                  <addrLine>contact@desgodets.fr</addrLine>
+               </address>
+            </publisher>
+            <availability status="restricted">
+               <p>Le Centre de théorie et d’analyse du droit (UMR 7074) met à
+                  disposition cette ressource électronique structurée, protégée par le
+                  code de la propriété intellectuelle sur les bases de données
+                  (L341-1), selon les termes de la licence Creative Commons : «
+                  Paternité - Pas d’Utilisation Commerciale - Pas de Modification ; 3.0
+                  France ». <lb />Cette licence est disponible en ligne : <ref
+                     target="http://creativecommons.org/licences/by-nc-nd/3.0/fr"
+                     >http://creativecommons.org/licenses/by-nc-nd/3.0/fr/</ref> ou par
+                  courrier postal à Creative Commons, 171 Second Street, Suite 300, San
+                  Francisco, California 94105, USA.</p>
+               <p>Pas d’Utilisation Commerciale : Le Centre de théorie et d’analyse du
+                  droit souhaite encourager l’utilisation et l’amélioration de ses
+                  ressources électroniques, pour les intérêts de l’enseignement et de
+                  la recherche. Toute autorisation au-delà du champ de cette licence
+                  doit être obtenue auprès du Centre de théorie et d’analyse du
+                  droit.</p>
+               <p>Pas de Modification : Afin de mieux servir la communauté
+                  scientifique, Le Centre de théorie et d’analyse du droit s’engage à
+                  conserver et à toujours offrir publiquement la version la plus à jour
+                  de ses ressources électroniques par une URI pérenne. Il s’engage à
+                  les corriger et à les améliorer, à intégrer les contributions qui lui
+                  sont soumises (après validation par un comité scientifique), et à
+                  référencer l’origine de ces contributions. Toute modification de la
+                  ressource qui ne serait pas reversée à la version de référence sous
+                  l’autorité éditoriale du Centre de théorie et d’analyse du droit doit
+                  faire l’objet de l’accord de celui-ci, afin de ne pas disperser les
+                  contributions et de permettre les meilleures conditions possibles de
+                  collaboration scientifique.</p>
+               <p>Paternité : Le Centre de théorie et d’analyse du droit demande à ce
+                  que toute publication dérivée de ses ressources électroniques
+                  comporte : <lb />1. le nom du Centre de théorie et d’analyse du
+                  droit, pour les publications électroniques, son logo <lb />2. l’URI
+                  permettant d’accéder à la page citée sur notre site, ou à la page
+                  d’accueil de la ressource <lb />3. la date du fichier source utilisé.
+               </p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+            <title xml:lang="fre" type="sub">une édition électronique</title>
+            <idno type="URI">http://www.desgodets.net</idno>
+         </seriesStmt>
+         <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+         <!-- description de la source -->
+         <sourceDesc>
+            <p xml:id="cPresentation">Texte original : le texte a été créé sous forme
+               électronique</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <!-- description du projet éditorial -->
+         <projectDesc>
+            <p>L’édition des cours de Desgodets fait partie d’un programme de recherche
+               sur la formalisation du savoir architectural au XVII<hi
+                  rend="superscript">e</hi> siècle.</p>
+         </projectDesc>
+         <!-- déclaration des principes éditoriaux -->
+         <editorialDecl>
+            <stdVals>
+               <p>On utilise...</p>
+            </stdVals>
+            <quotation>
+               <p>Les citations dans le texte sont encodées soit au moyen d’un élément
+                  quote, soit au moyen d’un élément...</p>
+            </quotation>
+         </editorialDecl>
+         <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+         <refsDecl>
+            <p>Description du système de référence canonique. Plus tard on fournira
+               peut-être une expression régulière.</p>
+         </refsDecl>
+      </encodingDesc>
+      <!-- présentation du profil de fichier -->
+      <profileDesc>
+         <creation when="2013">2013</creation>
+         <langUsage>
+            <language ident="fre" usage="99">Français (langue principale du
+               corpus)</language>
+            <language ident="lat" usage="01">Latin (langue utilisée dans le
+               corpus)</language>
+            <!-- Noter et évaluer le pourcentage d'autres langues dans le document avec @usage (valeurs numériques) -->
+         </langUsage>
+         <textClass>
+            <!--
+            <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+               <term>Architecture</term>
+               <term>18e siècle</term>
+               <term>France</term>
+            </keywords>
+            <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+               <term>Architecture, Modern</term>
+               <term>17th-18th centuries</term>
+               <term>France</term>
+            </keywords>
+            -->
+            <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+               <term>Text</term>
+            </classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2013-04-13" who="#EC">première version du fichier</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage xml:id="desgodetsMemoireFrontFr00" xml:lang="fre">
+            <titlePart type="main">ANR Desgodets</titlePart>
+            <titlePart type="sub">Pré-encodage, encodage et stylage des éléments
+               TEI</titlePart>
+            <docAuthor><persName ref="#EC">Emmanuel Château</persName></docAuthor>
+            <docDate>8 septembre 2013</docDate>
+            <docEdition>version 5.0</docEdition>
+         </titlePage>
+         <div xml:id="desgodetsMemoireFrontFr" xml:lang="fr">
+            <divGen n="desgodetsSchemaDocFrontFr01" type="toc">
+               <head>Sommaire</head>
+            </divGen>
+            <div xml:id="desgodetsSchemaDocFrontFr02" type="introduction">
+               <head>Introduction</head>
+            </div>
+         </div>
+      </front>
+      <body>
+         <div xml:id="desgodetsMemoireBodyFr" xml:lang="fr">
+            <div type="part">
+               <head>Structure logique du texte</head>
+               <div type="content">
+                  <p>L'établissement de l'édition critique et sa présentation nécessité
+                     d'établir la structure logique des textes destinés à être édités.
+                     Telles qu'elles ont été effectuées, les transcriptions des
+                     manuscrits permettent normalement de déterminer l'organisation
+                     logique du texte. Il s’agit de distinguer les pages de titre, les
+                     pièces liminaires, les différentes divisions du texte et les
+                     parties annexes en les hiérarchisant. Au cours de cette opération,
+                     la pagination et le foliotage devront être contrôlés et
+                     harmonisés.</p>
+               </div>
+               <div type="chapter">
+                  <head>Divisions</head>
+                  <div type="content">
+                     <p>Il convient d’établir les divisions les plus importantes du
+                        texte. À cet égard, il est possible que la transcription
+                        communiquée ne soit pas cohérente sous cet aspect et nécessite
+                        une harmonisation. On définira clairement les types de
+                        division : parties, sous-parties, chapitres et sous-chapitres.
+                        Pour ce faire, une comparaison entre les différentes versions
+                        manuscrites des <hi rend="italic">Cours</hi> pourra se révéler
+                        instructive. Nous aborderons plus loin dans ce document la
+                        question de l’établissement d’un tableau de tradition.</p>
+                     <p>
+                        <hi rend="bold">Cette opération « Division » devra être
+                           réalisée pour l’ensemble des versions manuscrites de chaque
+                              <hi rend="italic bold">Cours de Desgodets</hi></hi>
+                     </p>
+                  </div>
+                  <div type="item">
+                     <head>Titres et inter-titres</head>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <div type="content">
+                           <p>Le pré-encodage de la structure logique du texte sera
+                              principalement réalisé à l’aide de la hiérarchie des
+                              styles du logiciel de traitement de texte (Microsoft Word
+                              ou Open Office) : « Desgodets Titre 1 », « Desgodets
+                              Titre 2 », « Desgodets Titre 3 », etc., en appliquant le
+                              style requis au titre de la partie concernée d’après le
+                              modèle de document qui est transmis aux éditeurs.</p>
+                           <p>Ce modèle de document est incorporé aux fichiers de
+                              transcription qui vous sont transmis. Voir la page d’aide
+                              de Microsoft au sujet de l'emploi des styles : <ref
+                                 target="http://office.microsoft.com/fr-fr/word-help/ajouter-un-titre-HA010368882.aspx"
+                                 >http://office.microsoft.com/fr-fr/word-help/ajouter-un-titre-HA010368882.aspx</ref>
+                           </p>
+                           <p>Il est demandé aux éditeurs de traiter distinctement les
+                              pages de titre, de préface, de dédicaces, de sommaire et
+                              d’index distinctement du corps du texte et des parties
+                              annexes. Ces divisions pourront toutefois faire l’objet
+                              d’une description sommaire dans la notice accompagnant
+                              l’édition des manuscrits.</p>
+                           <p>
+                              <hi rend="bold">Important : Lorsqu'une division du texte
+                                 n’est pas titrée, il convient de produire un titre
+                                 forgé inscrit entre crochets afin de pouvoir lui
+                                 appliquer le style du niveau désiré (Les doubles
+                                 marques de paragraphes seront ignorées lors de la
+                                 conversion automatique du fichier).</hi>
+                           </p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>[titre forgé]</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Inscriptions des titres sur la page :</head>
+                     <div type="preEncoding">
+                        <p>Lorsque le titre est inscrit sur plusieurs lignes, les
+                           éditeurs sont priés de bien vouloir rendre compte des
+                           retours à la ligne à l’aide de sauts de ligne simple
+                           (combinaison des touches Shift+Entrée, ne pas utiliser la
+                           touche Entrée seule qui est utilisée pour les marques de
+                           paragraphe).</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Caractérisation des titres</head>
+                     <div type="preEncoding">
+                        <div type="content">
+                           <p>L’utilisation des styles du traitement de texte va
+                              permettre l’établissement d’un texte hiérarchiquement
+                              structuré. Au besoin, il est possible de caractériser les
+                              divisions du texte selon des types définis (Parties,
+                              Chapitres, Section, Sous-section, etc.) indépendamment du
+                              texte inscrit sur la page en l’indiquant à la fin du
+                              titre entre crochets de la manière suivante :</p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>[type : Nom_de_division].</p>
+                        </div>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <div type="content">
+                           <p>Les divisions principales du texte sont établies au moyen
+                              des éléments <gi>front</gi> pour le texte liminaire,
+                                 <gi>body</gi> pour le corps du texte et <gi>back</gi>
+                              pour les parties postérieures.</p>
+                           <p>Les sous-divisions du texte sont traitées au moyen
+                              d’éléments <gi>div</gi>. Dans certains cas, le texte
+                              édité peut présenter des incohérences dans l’organisation
+                              de ses parties et sous parties. Les types de sous-parties
+                              sont clairement définis au moyen des attributs
+                                 <att>type</att> sur des éléments <gi>div</gi>.</p>
+                           <p>Dans l’élément <gi>front</gi>, un élément
+                                 <gi>titlePage</gi> permet d’encoder la page de titre
+                              telle qu’elle apparaît dans le manuscrit.</p>
+                        </div>
+                     </div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                        <div>
+                           <head>Table des matières</head>
+                           <p>La table des matières reflète la division tripartite de
+                              l’édition avec des titres intermédiaires :</p>
+                           <list type="unordered">
+                              <item>parties liminaires (<gi>front</gi>)</item>
+                              <item>corps de texte (<gi>body</gi>)</item>
+                              <item>parties postérieures (<gi>back</gi>)</item>
+                           </list>
+                           <p>À l’intérieur de ces grandes divisions, apparaissent
+                              chacune des divisions du texte.</p>
+                           <p rend="heading 7">Niveaux à afficher dans la Table des
+                              matières des manuscrits</p>
+                           <p>La structure des différents cours peut varier car elle
+                              reflète la structure originale des manuscrits. Certains
+                              d’entre eux comportent, en plus d’une préface dans le
+                              front, une page de sommaire, et une introduction. Dans
+                              les parties postérieures, apparaissent parfois également
+                              des tables ou des index à distinguer de l’index établi
+                              dans le cadre de l’édition.</p>
+                           <p>La présentation des tables doit rendre compte de cette
+                              variabilité en suivant les règles suivantes, regroupant
+                              sous trois grandes sections qui sont fixes pour chaque
+                              cours (<gi>front</gi>, <gi>body</gi>, et
+                              <gi>back</gi>) :</p>
+                           <p>
+                              <hi rend="bold">Parties liminaires</hi>
+                           </p>
+                           <p>Puis le contenu de tous les éléments <gi>head</gi> des
+                              divisions (<gi>div</gi>) après <gi>titlePage</gi> dans le
+                                 <gi>front</gi></p>
+                           <p>
+                              <hi rend="bold">Corps de texte</hi>
+                           </p>
+                           <p>Puis le contenu de tous les éléments <gi>head</gi> des
+                              divisions (<gi>div</gi>) avec une profondeur de 3
+                              niveaux</p>
+                           <p> (généralement <hi rend="Intense_Emphasis"
+                              >type</hi>=”part”, puis <hi rend="Intense_Emphasis"
+                                 >type</hi>=”chapter”, puis <hi rend="Intense_Emphasis"
+                                 >type</hi>=”section”</p>
+                           <p>
+                              <hi rend="bold">Parties postérieures</hi>
+                           </p>
+                           <p> Le titre de chacune des divisions (<gi>div</gi>) du
+                                 <gi>back</gi>, sauf la liste des figures</p>
+                           <list type="unordered">
+                              <item>on ignore les marques de retour à la ligne (<gi>lb</gi>)</item>
+                              <item>on fournit un identifiant <att>xml:id</att> sur
+                                 toutes les divisions pour produire une ancre</item>
+                              <item>on ajoute un titre <gi>head</gi> à chacune des
+                                 divisions qui doivent être affichées, sinon elles sont
+                                 ignorées</item>
+                              <item>
+                                 <gi>num</gi> permet d’encoder la partie du titre
+                                 relative à la numérotation pour les rendus
+                                 typographiques éventuels (retour à la ligne,
+                                 etc.)</item>
+                           </list>
+                        </div>
+                        <div>
+                           <head>Page de titre de l’édition</head>
+                           <div type="content">
+                              <p>La présentation du texte débute par une page de titre
+                                 de l’édition (titre forgé) qui permet d'identifier
+                                 l'édition, centrée sur la page. Celle-ci se compose
+                                 des éléments suivants tirés de l’en-tête TEI :</p>
+                              <list type="unordered">
+                                 <item>Contenu de l’élément <gi>title</gi>
+                                    <hi rend="Intense_Emphasis">type=”main”</hi>, saut
+                                    de ligne</item>
+                                 <item>Contenu des <gi>title</gi> suivants, séparés par
+                                    des « , », puis saut de ligne</item>
+                                 <item>Mention de responsabilité principale (« publié
+                                    sous la direction de »,</item>
+                                 <item>Suivi directement du contenu de l’élément <hi
+                                       rend="Strong">persName</hi> dans principal, saut
+                                    de ligne)</item>
+                                 <item>Mentions de responsabilités secondaires (« Édité
+                                    par » suivi du contenu des éléments
+                                       <gi>persName</gi> des éléments <gi>resp</gi> qui
+                                    ont l’attribut <att>editor</att>). Saut de
+                                    ligne</item>
+                                 <item>Autres mentions des responsabilité : contenu de
+                                    l’élément <gi>persName</gi> des différents éléments
+                                       <gi>resp</gi>, séparés par des virgules et
+                                    classés par type de responsabilité.</item>
+                              </list>
+                              <p>À la suite de cette page de titre, on affiche le
+                                 contenu des autres divisions de l’élément
+                                    <gi>front</gi></p>
+                           </div>
+                           <div type="xpath">
+                              <p>{ //fileDesc/titleStmt/title[@type='main']}<hi
+                                    rend="bold">,</hi>
+                                 {//fileDesc/titleStmt/title[@type='sub'] }</p>
+                              <p>{ //fileDesc/titleStmt/title[@type='subSub'] }<hi
+                                    rend="bold"> ,</hi> {
+                                 //fileDesc/titleStmt/title[@type='subSubSub'] }</p>
+                              <p>publié sous la direction de {
+                                 //fileDesc/titleStmt/principal/persName/forename } {
+                                 //fileDesc/titleStmt/principal/persName/surname }</p>
+                              <p>[si présent, les mentions de responsabilité
+                                 successives séparées par des « , »]</p>
+                              <p>{
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]
+                                 } : {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/forename
+                                 } {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/surname
+                                 }</p>
+                              <p>[si présent, les mentions de responsabilité
+                                 successives séparées par des « , »]</p>
+                              <p>{
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='mrk']]
+                                 } : {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/forename
+                                 } {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/surname
+                                 }</p>
+                              <p>[si présent, les mentions de responsabilité
+                                 successives séparées par des « , »]</p>
+                              <p>{
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='trc']]
+                                 } : {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/forename
+                                 } {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/surname
+                                 }</p>
+                              <p>[si présent, les mentions de responsabilité
+                                 successives séparées par des « , »]</p>
+                              <p>{
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='mod']]
+                                 } : {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/forename
+                                 } {
+                                 //fileDesc/titleStmt/respStmt[child::resp[@key='edt']]/persName/surname
+                                 }</p>
+                              <p>{ //fileDesc/editionStmt/edition }</p>
+                           </div>
+                        </div>
+                        <div>
+                           <head>Pages de titre du manuscrit</head>
+                           <p>Page de titre du manuscrit (contenu de
+                              <gi>titlePage</gi>). On affiche le contenu des éléments
+                              en suivant, autant que possible, les indications fournies
+                              par les attributs des sous-éléments (voir plus bas <ref
+                                 target="#_Mise_en_valeur_1">rendu
+                              typographique</ref>).</p>
+                           <p>On respecte les retours à la ligne <gi>lb </gi>dans le
+                              contenu des éléments <gi>titlePart</gi>
+                           </p>
+                           <p>On affiche, tel qu’ils sont présentés les contenus des
+                              éléments <gi>docAuthor</gi>, <gi>docTitle</gi>,
+                                 <gi>docImprint</gi>, <gi>docDate</gi>, etc. </p>
+                           <p>À la suite de la page de titre du manuscrit, viennent
+                              généralement plusieurs autres divisions dans le front
+                                 (<gi>div</gi>) comme la préface et l’introduction. Ces
+                              divisions sont marquées par une interruption verticale de
+                              l’affichage du texte.</p>
+                           <p>Styler les titres (<gi>head</gi>).</p>
+                        </div>
+                        <div>
+                           <head>Corps de texte (<gi>body</gi>)</head>
+                           <p>Les divisions du texte sont marquées par une interruption
+                              verticale de l’affichage du texte, même en l’absence
+                              d’élément <gi>head</gi>.</p>
+                           <p>Les parties (<gi>div</gi>
+                              <hi rend="Intense_Emphasis">type=”part”</hi>) sont
+                              clairement isolées graphiquement dans le texte par des
+                              sauts de ligne et éventuellement une marque
+                              graphique.</p>
+                           <p>Les chapitres (<gi>div</gi>
+                              <hi rend="Intense_Emphasis">type=”chapter”</hi>) sont
+                              clairement isolées graphiquement dans le texte par des
+                              sauts de ligne et éventuellement une marque
+                              graphique.</p>
+                           <p>Les sous-parties (<gi>div</gi>
+                              <hi rend="Intense_Emphasis">type=”section”</hi>) sont
+                              clairement isolées graphiquement dans le texte par des
+                              sauts de ligne et éventuellement une marque
+                              graphique.</p>
+                           <p>Les titres encodés avec l’élément <gi>head</gi> font
+                              l’objet de mise en valeur graphique rendant compte de
+                              l’inscription du texte sur le support (cf. plus bas) :
+                              saut de ligne, mise en valeur graphique, signes
+                              graphiques, etc.</p>
+                           <p>L’étude graphique prévoit des rendus typographiques
+                              différents pour le rendu des titres (taille de
+                              caractères, retraits, etc.).</p>
+                           <p>Les sous-divisions numérotées dans le texte (<hi
+                                 rend="Intense_Emphasis">type=”number”</hi>) débutent
+                              par le numéro régularisé fourni dans l’attribut <hi
+                                 rend="Intense_Emphasis">n</hi>, puis le texte
+                              concerné.</p>
+                           <p>Pour les sous-divisions articles dans le texte (<hi
+                                 rend="Intense_Emphasis">type=”article”</hi>), le
+                              numéro apparaît au centre de la page et le texte après un
+                              saut de ligne pour rendre compte de la disposition
+                              originale du manuscrit.</p>
+                        </div>
+                        <div>
+                           <head>Liste de valeurs possibles pour l’attribut type de
+                                 <gi>div</gi></head>
+                           <p>type=”book”</p>
+                           <p>type=”volume”</p>
+                           <p>type=”part”</p>
+                           <p>type=”chapter”</p>
+                           <p>type=”section”</p>
+                           <p>type=”article”</p>
+                           <p>type=”number”</p>
+                           <p>type=”unknown”</p>
+                           <p>type=”toc”</p>
+                           <p>type=”index”</p>
+                           <p>type=”preface”</p>
+                           <p>type=”dedication”</p>
+                           <p>type=”colophon”</p>
+                           <p>type=”transcription”</p>
+                           <p>type=”alignmentTexts”</p>
+                           <p>type=”alignmentFigures”</p>
+                           <p>type=”notesHistorical”</p>
+                           <p>type=”notesCritical”</p>
+                           <p>type=”biblio”</p>
+                           <p>type=”glossariumJuris”</p>
+                           <p>type=”glossariumTechnicae”</p>
+                           <p>type=”indexNominum”</p>
+                           <p>type=”indexLocorum”</p>
+                           <p>type=”indexRerum”</p>
+                           <p>
+                              <hi rend="background(lightGray)">pour les articles de la
+                                 partie éditoriale :</hi>
+                           </p>
+                           <p>
+                              <hi rend="background(lightGray)">type=”abstract”</hi>
+                           </p>
+                           <p>
+                              <hi rend="background(lightGray)">type=”downloads”</hi>
+                           </p>
+                           <p>
+                              <hi rend="background(lightGray)">type=”notes”</hi>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Liens et renvois</head>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>L’encodage des liens et renvois est réalisé au moyen de
+                           l’élément générique <gi>ref</gi> de TEI. Ces renvois sont de
+                           plusieurs types :</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="internal"</hi> pour des
+                           liens à l’intérieur du texte</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="external"</hi> pour des
+                           liens hypertextuels externes</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="noteHistorical"</hi> pour
+                           les notes de commentaire historique</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="noteCritical" </hi>pour
+                           les notes critiques concernant l’établissement du texte</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="noteAuctorial" </hi>pour
+                           des notes de l’auteur</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="note" </hi>pour des notes
+                           des parties éditoriales du site</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="figure" </hi>pour faire un
+                           lien vers une figure</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">type="plate" </hi>pour faire un
+                           lien vers une planche</p>
+                     </div>
+                     <div>
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <body>
+                              <div>
+                                 <p>L’on toise séparément tous les bois des grosseurs
+                                    et longueurs justes qu’ils ont en œuvre, […] et ils
+                                    se réduisent à la pièce ainsi qu’il est expliqué
+                                       <ref type="internal" target="#t8Body01.0xx">au
+                                       chapitre précédent</ref>.</p>
+                                 <p xml:id="c2Front02.01.p003">
+                                    <ref type="noteHistorical" target="#c2Nh0003"><hi
+                                          rend="bigger">La première ville</hi> qui fut
+                                       bâtie se nomma <placeName ref="#henoch"
+                                          >Énocle</placeName> par <persName ref="#cain"
+                                          >Caën</persName> qui en étoit le fondateur du
+                                       nom de son fils aîné.</ref>
+                                 </p>
+                              </div>
+                           </body>
+                           <back>
+                              <div xml:lang="fre" type="notesHistorical" xml:id="c2Nh">
+                                 <head>Notes de commentaire historique</head>
+                                 <note xml:id="c2Nh0003">
+                                    <p>Hénoch, « Et ayant connu sa femme, elle conçut
+                                       et enfanta Hénoch. Il bâtit ensuite une ville
+                                       qu’il appela Hénoch, du nom de son fils. »,
+                                          <bibl corresp="#rondet1755">op. cit.</bibl>,
+                                       chapitre IV, verset 17.</p>
+                                 </note>
+                              </div>
+                           </back>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>La portion de texte formant un renvoi interne dans le texte
+                           (<gi>ref</gi>
+                        <hi rend="Intense_Emphasis">type="internal"</hi>) est
+                        légèrement soulignée de manière à indiquer la présence d’un
+                        lien hypertextuel. Au survol, une indication de la présence du
+                        lien. Au clic, allez vers le passage concerné.</p>
+                     <p>- Voir plus bas pour les <ref
+                           target="#_Notes_explicatives_ou_1">appels de notes</ref>
+                     </p>
+                     <p>- Voir plus bas pour les <ref target="#_Figures_2">figures et
+                           les planches</ref>
+                     </p>
+                     <p>- Voir plus bas pour les <ref target="#_Indexation">index</ref>
+                     </p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Paragraphes et unités</head>
+                  <div type="item">
+                     <head>Paragraphes</head>
+                     <div type="content">
+                        <p>Les paragraphes du texte sont repérés et identifiés pour
+                           permettre la comparaison entre les différents témoins
+                           (interversion de paragraphe, fusion de paragraphe,
+                           division). Ces paragraphes désignent les unités textuelles
+                           de base. Des sous-unités sont définies pour permettre le
+                           traitement de l’alignement des versions en ce qui concerne
+                           les ajouts ou les interversions.</p>
+                     </div>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <p>Les marques de paragraphes dans Microsoft Word ou Open
+                           Office (touche Entrée) identifieront les unités de
+                           paragraphes.</p>
+                        <p>Certaines remarques concernant les variantes pourront
+                           apparaître dans l’appareil critique (voir : Établissement
+                           d’un paratexte). Les comparaisons entre les différents
+                           témoins seront systématiquement relevées dans le Tableau de
+                           tradition (voir : Tableau de tradition)</p>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <p>Les paragraphes sont encodés au moyen d’élément
+                           <gi>p</gi>.</p>
+                        <p>Les sous-unités textuelles sont encodées au moyen de
+                           l’élément <gi>seg</gi>
+                        </p>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <p><seg xml:id="t8Body02.03.07.001">Dans cette
+                                    disposition des Solives parallèles au mur, où Sont
+                                    adossées les Cheminées, lon Se Sert de Chevestres
+                                    de fer préférablement aux chevestres de bois, aux
+                                    costés des âtres particulièrement ; […] alors on
+                                    toise les Soliveaux qui posent Sur les chevestres
+                                    de fer, entre la Solive d’Enchevestrure et le mur
+                                    où les Tuyeaux passent, pour ce quils Sont,</seg>
+                                 <seg xml:id="t8Body02.03.07.002">comme à la <ref
+                                       type="internal" target="#t8Fig0117">Fig.
+                                       III</ref>, Servant anti chambre, où La Solive
+                                    d’Enchevestrure 13 est parallèle au mur de refend
+                                    FG, contre lequel Le Manteau de cheminée et les
+                                    Tuyeaux passans Sont adossés ; ainsi qu’au cabinet,
+                                    comme à la <ref type="internal" target="#t8Fig0118"
+                                       >Fig. IV</ref>,</seg>
+                                 <seg xml:id="t8Body02.03.07.003">où les Solives du <pb
+                                       n="297" />plancher portent, dun bout Sur le mur
+                                    de face GH, et de Lautre bout Sur la cloison de
+                                    refend EI, et Sont parallèles au mur de refend EG,
+                                    où Sont Encastrés le Manteau de Cheminée et les
+                                    tuyeaux passans au costé ; lon toise Séparément
+                                    chacun des Soliveaux 14 et 15 qui posent Sur des
+                                    chevestres de fer, portés d’un bout Sur les Solives
+                                       <sic>den chevestrure </sic> 13 et 16, et de
+                                    lautre bout Scellés dans le mur de refend entre les
+                                    âtres et les Tuyeaux.</seg></p>
+                           </egXML>
+                        </div>
+                     </div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                        <p>Un marquage vertical du paragraphe (ligne blanche) peut
+                           accroître la lisibilité.</p>
+                        <p>L’alignement des versions se fait sur la plus petite unité
+                           textuelle possible : p &gt; seg, list, item.</p>
+                        <p>Utiliser la numérotation canonique pour la citabilité dans
+                           la comparaison de tous les segments (au popup comme indiqué
+                           dans les maquettes)</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Listes et tableaux</head>
+                     <div type="introduction">
+                        <p>Les listes faisant l’objet d’un retour à la ligne entre les
+                           items sont identifiées dans le texte pour être restituées
+                           dans la mise en page de la publication. Les tableaux sont
+                           également localisés dans l’édition.</p>
+                     </div>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <p>Les listes ayant une incidence sur la présentation et les
+                           tableaux seront précédées des mentions entre crochet
+                           suivantes :</p>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>[début de liste]…[fin de liste]</p>
+                           <p>[début de tableau]…[fin de tableau]</p>
+                        </div>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <p>Les listes sont encodées avec les éléments imbriqués
+                              <gi>list</gi> et <gi>item</gi>. Les listes sont
+                           numérotées au moyen d’un élément <gi>num</gi> contenu dans
+                           un élément <gi>label</gi>. L’attribut <hi
+                              rend="Intense_Emphasis">n</hi> fournit une valeur
+                           normalisée pour le numéro.</p>
+                        <!-- TODO Mettre dans une division -->
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p>Texte du paragraphe... <list>
+                                 <item n="1">
+                                    <label><num>1.</num></label> des faites avec des
+                                    troncs d’arbres debout, plantés en terre par le
+                                    bas, soutenant par le haut d’autres troncs ou
+                                    branches plus menues en forme de poitreaux ou
+                                    poutres, </item>
+                                 <item n="2">
+                                    <label><num>3</num></label> et d’autres élevés par
+                                    dessous en manière de comble, le tout clayonné et
+                                    entrelassé de menues branchages, couvert de
+                                    feuillages, paille ou chaume, enduit au pourtour
+                                    avec de la bauge ou terre détrampée, ayant des
+                                    ouvertures pour y servir de portes et de fenestres, </item>
+                                 <item n="3">
+                                    <label><num>4</num></label> ou bien des cabanes
+                                    avoient d’autres sortes de construction, comme on
+                                    voit encore de ses espèces d’habitations faites
+                                    différemment dans les pays du Nord, et dans les
+                                    montagnes des Alpes et des Pirenés, suivant les
+                                    dispositions des climats. </item>
+                              </list></p>
+                        </egXML>
+                        <p>Les tableaux sont encodés avec l’élément englobant
+                              <gi>table</gi> qui inclut des lignes <gi>row</gi> et des
+                           cellules <gi>cell</gi>
+                        </p>
+                     </div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                        <p>Les listes font l’objet d’un retour à la ligne entre les
+                           items et d’un retrait dans la marge gauche.</p>
+                        <p>Faire une proposition de puces.</p>
+                        <p>Pour le cas particulier des listes numérotées, discuter
+                           ensemble de la numérotation. Normalement la rétablir de
+                           manière normalisée à partir de la valeur de l’attribut
+                              <att>n</att>.</p>
+                        <p>Les tableaux éventuels sont traités comme des tableaux en
+                           XHTML.</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Citations</head>
+                     <div type="introduction">
+                        <p>Les citations ou les mises en exergue sont repérées dans le
+                           corps du texte en distinguant celles pour lequel l’auteur
+                           fournit la source du texte cité.</p>
+                     </div>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <div type="content">
+                           <p>Style de caractère « Desgodets Citation1 » pour celles
+                              pour lesquelles l’auteur ne fournit pas la source</p>
+                           <p>Style de caractère « Desgodets Citation2 » pour celles
+                              pour lesquelles l’auteur fournit la source</p>
+                        </div>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <div type="content">
+                           <p>Les passages qui sont des citations sont encodés au moyen
+                              de <hi rend="Strong">quote</hi> (dans un paragraphe)<hi
+                                 rend="Strong"> </hi>et de <hi rend="Strong">quote</hi>
+                              seulement pour les éléments de type blocs. Lorsque
+                              ceux-ci sont accompagnés de citation l’élément
+                                 <gi>quote</gi> est encadré de <gi>cit</gi>, et l’on
+                              peut fournir une citation avec <gi>bibl</gi>. [on ne se
+                              sert pas de cette dernière solution a priori]</p>
+                           <p>L’élément <gi>q</gi> permet d’indiquer un passage entre
+                              guillemets.</p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <quote>Quid enim tam absurdum quam delectari multis
+                                 inanimis rebus, ut honore, ut gloria, ut aedificio, ut
+                                 vestitu cultuque corporis, animante virtute praedito,
+                                 eo qui vel amare vel, ut ita dicam, redamare possit,
+                                 non admodum delectari? Nihil est enim remuneratione
+                                 benevolentiae, nihil vicissitudine studiorum
+                                 officiorumque iucundius.</quote>
+                              <p>Quam ob rem circumspecta cautela observatum est
+                                 deinceps et cum edita montium petere coeperint
+                                 grassatores, loci iniquitati milites cedunt. ubi autem
+                                 in planitie potuerint reperiri, <quote>quod contingit
+                                    adsidue, nec exsertare</quote> lacertos nec
+                                 crispare permissi tela, quae vehunt bina vel terna,
+                                 pecudum ritu inertium trucidantur.</p>
+                           </egXML>
+                        </div>
+                     </div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                        <p>Insertion de guillemets typographiques français
+                           (double-chevrons) ouvrant et fermant autour du texte avec
+                           une espace insécable.</p>
+                        <p>Pour les éléments <gi>quote</gi> de type bloc, utiliser la
+                           mise en forme proposée dans la charte graphique.</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Figures </head>
+                     <div type="introdution">
+                        <p>Les figures sont localisées dans le manuscrit afin de
+                           pouvoir rendre compte de leur présence et les insérer dans
+                           l’édition. Ces figures sont numérotées, et légendées. On
+                           distingue les figures dans le texte des planches hors
+                           texte.</p>
+                        <p>Un document séparé liste les figures et leurs légendes selon
+                           un modèle prédéfini. Ces listes sont disponibles pour
+                           l’ensemble des versions du manuscrit.</p>
+                     </div>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <div type="content">
+                           <p>La localisation des figures a été effectuée à la
+                              transcription. Distinguer les planches des figures dans
+                              le texte.</p>
+                           <p>Lorsqu’elles sont dans le texte, marquer le début de
+                              l’insertion de la figure (à la fin de la ligne) et la fin
+                              de figure au début de la ligne qui la suit</p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>[début de figure X]…[fin de figure X]</p>
+                           <p>Pour les planches :</p>
+                           <p>[planche n° x] à l’endroit de l’insertion de la
+                              planche.</p>
+                           <div type="content">
+                              <p>
+                                 <hi rend="bold">Important : Les éditeurs livreront un
+                                    document séparé listant les figures (modèle
+                                    fourni) :</hi>
+                              </p>
+                              <p>Colonne 1 : Type (planches, figures) ; Colonne 2 :
+                                 n° ; Colonne 3 : Légende ; Colonne 4 : Intitulé (tel
+                                 qu’il apparaît dans le manuscrit) ; colonne 5 :
+                                 informations complémentaires ; colonne 6 : technique
+                                 picturale.</p>
+                           </div>
+                        </div>
+                        <div type="encoding">
+                           <head>Encodage au point d’insertion dans le texte</head>
+                           <div type="content">
+                              <p>L’insertion des figures dans le texte est matérialisée
+                                 au moyen d’éléments <gi>figure</gi> dont on identifie
+                                 le type <hi rend="Intense_Emphasis">type=”plate”</hi>
+                                 ou <hi rend="Intense_Emphasis">type=”figure”</hi>
+                                 selon qu’il s’agit d’une planche ou d’une figure, et
+                                 pour les illustrations des parties éditoriales du
+                                 texte. L’attribut <hi rend="Intense_Emphasis"
+                                    >copyOf</hi> pointe vers l’élément figure localisé
+                                 à cet endroit.</p>
+                              <p>
+                                 <hi rend="Intense_Emphasis">type=”figure” </hi>pour
+                                 des figures dans le texte</p>
+                              <p>
+                                 <hi rend="Intense_Emphasis">type=”plate” </hi>pour des
+                                 planches</p>
+                              <p>
+                                 <hi rend="Intense_Emphasis">type=”illustration”
+                                 </hi>pour des figures dans les parties éditoriales du
+                                 site</p>
+                              <p>L’ensemble des informations concernant la description
+                                 de ces figures est rassemblé dans une division
+                                    (<gi>div</gi>
+                                 <hi rend="Intense_Emphasis">type=”</hi>
+                                 <hi rend="color(006666)"> </hi>
+                                 <hi rend="Intense_Emphasis">figures”</hi>) au sein de
+                                 l’élément <gi>back</gi> de l’édition.</p>
+                              <p>Dans cette division, chaque planche ou figure est
+                                 décrite au moyen d’un élément <gi>figure</gi>.
+                                 Lorsqu’une planche comporte plusieurs figures,
+                                 celles-ci sont traitées au moyen de sous-éléments
+                                    <gi>figure</gi> selon le même modèle.</p>
+                           </div>
+                           <div type="exemple">
+                              <head>Exemple</head>
+                              <p>Au point d’insertion :</p>
+                              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                 <figure type="plate" copyOf="#c2Pl0001" />
+                              </egXML>
+                              <p>Dans la même division <gi>div</gi> de
+                                 type=”figure” :</p>
+                              <egXML xmlns="http://www.tei-c.org/ns/Examples"><figure
+                                    xml:id="c1Pl0005">
+                                    <fw type="header"><num n="5">V. dessein</num>
+                                       <hi rend="majuscules"> Description des anciennes
+                                          églises.</hi> chap I.</fw>
+                                    <head>Plan de l'église de <choice>
+                                          <abbr>S<hi rend="superscript">te</hi></abbr>
+                                          <expan>Sainte</expan>
+                                       </choice> Marie in trasteveré, <lb />À
+                                       Rome.</head>
+                                    <!-- Présence d'une échelle qui ne figure pas dans C2 -->
+                                    <figDesc />
+                                    <!-- description de la figure -->
+                                    <graphic url="facs/facsC1Pl0005.jpg"
+                                       mimeType="image/jpeg" />
+                                 </figure>
+                              </egXML>
+                           </div>
+                        </div>
+                        <div type="rendering">
+                           <head>Rendu</head>
+                           <div type="content">
+                              <p>Matérialiser la localisation des figures dans le texte
+                                 au moyen de signes graphiques en distinguant les
+                                 figures dans le texte des planches.</p>
+                           </div>
+                           <div type="content">
+                              <head>Encodage des figures dans l’élément back</head>
+                              <p>Le détail des figures est fourni à l’intérieur de
+                                 l’élément <gi>back</gi> dans une division de type
+                                 figures (div <hi rend="Intense_Emphasis"
+                                    >type</hi>=”<hi rend="Emphasis">figures</hi>”).</p>
+                              <p>Chaque planche ou figure fait l’objet d’une
+                                 description avec un élément <gi>figure</gi> qui prend
+                                 selon le cas un attribut <hi rend="Intense_Emphasis"
+                                    >type</hi> ayant pour valeur <hi rend="Emphasis"
+                                    >plate</hi> ou <hi rend="Emphasis">figure</hi>.</p>
+                              <p>Le lien vers les facsimili est indiqué à l’aide de
+                                 l’attribut <hi rend="Intense_Emphasis">facs</hi> qui
+                                 pointe vers l’élément <gi>surface</gi> regroupant tous
+                                 les fichiers de reproduction (thumbnails, version
+                                 intermédiaire, grande version) dans <gi>facsimile</gi>
+                                 après l’élément <gi>teiHeader</gi> du fichier du
+                                 cours.</p>
+                              <p>Lorsque la figure possède un titre courant, celui-ci
+                                 est encodé avec <gi>fw</gi>.</p>
+                              <p>Le titre de la figure tel qu’il apparaît sur le
+                                 manuscrit est encodé dans <gi>head</gi>.</p>
+                              <p>On renseigne la légende de la figure grâce à l’élément
+                                    <gi>figDesc</gi>
+                              </p>
+                              <p>À l’intérieur de <hi rend="Strong">figDesc</hi>, <hi
+                                    rend="Strong">locus</hi> permet de localiser la
+                                 figure dans le manuscrit, <hi rend="Strong">label</hi>
+                                 permet de fournir un numéro de planche ou de figure,
+                                    <hi rend="Strong">title</hi> permet de donner une
+                                 légende normalisée, <hi rend="Strong">desc</hi> permet
+                                 éventuellement d’ajouter un commentaire ou de fournir
+                                 des indication sur la technique et <hi rend="Strong"
+                                    >dimensions</hi> regroupe les détails sur la
+                                 dimension de la figure avec <hi rend="Strong"
+                                    >height</hi> et <hi rend="Strong">width</hi>.</p>
+                              <p>Un élément <hi rend="Strong">note</hi> permet de
+                                 fournir une note sur la figure si nécessaire.</p>
+                              <p>Lorsqu’une planche comporte plusieurs figures, ces
+                                 figures sont traitées au moyen d’autres éléments <hi
+                                    rend="Strong">figure</hi> imbriqués.</p>
+                              <p>On emploie le même système descriptif à l’intérieur de
+                                 ces sous-éléments.</p>
+                           </div>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <figure xml:id="c2Pl0001" type="plate"
+                                 facs="#c2FacsPl0001">
+                                 <fw type="header"><num n="1">I dessein.</num>
+                                    <hi rend="majuscules"> Description</hi> des
+                                    anciennes <hi rend="majuscules">églises</hi>. Ch.
+                                       I<hi rend="superscript">re</hi></fw>
+                                 <head>Plan de lancienne Église de Tyr</head>
+                                 <figDesc>
+                                    <locus from="#c2F6v">p. 10</locus>
+                                    <label>
+                                       <num n="1">1</num>
+                                    </label>
+                                    <title>Plan de l'ancienne église de Tyr</title>
+                                    <desc>Texte libre de commentaire si
+                                       nécessaire.</desc>
+                                    <dimensions>
+                                       <height quantity="21" unit="mm" />
+                                       <width quantity="42" unit="mm" />
+                                    </dimensions>
+                                 </figDesc>
+                                 <note>6 barré en haut</note>
+                              </figure>
+                           </egXML>
+                        </div>
+                        <div type="rendering">
+                           <head>Rendu de l’intitulé</head>
+                           <div type="content">
+                              <p>Dans la colonne figure, au-dessus de l’image en grand,
+                                 on affiche le numéro de la planche ou de la figure et
+                                 la légende normalisée.</p>
+                              <p>Planche n° x(à partir de la valeur <hi
+                                    rend="Intense_Emphasis">n</hi> de <hi rend="Strong"
+                                    >num</hi> dans <hi rend="Strong">label</hi>),
+                                 contenu textuel de <hi rend="Strong">title</hi>
+                              </p>
+                              <p>Lorsqu’une planche comporte plusieurs figures, on
+                                 fournit le numéro de la planche et son titre éventuel.
+                                 Puis le numéro de chaque figure suivi de leur
+                                 titre.</p>
+                           </div>
+                           <div type="exemple">
+                              <head>Exemple</head>
+                              <p>
+                                 <hi rend="bold">Planche n° 1 : Plan de l’ancienne
+                                    église de Tyr</hi>
+                              </p>
+                              <p>
+                                 <hi rend="bold">Planche n° 4</hi>
+                              </p>
+                              <p>Figure n° 1 : Coupe sur la longueur de l'église
+                                 Sainte-Sabine</p>
+                              <p>Figure n° 2 : Face, coupe et profil de la base des
+                                 colonnes qui séparent la nef des bas-côtés</p>
+                              <p>Figure n° 3 : Face, coupe et profil des chapiteaux qui
+                                 séparent la nef des bas-côtés</p>
+                           </div>
+                        </div>
+                        <div type="rendering">
+                           <head>Rendu au survol sur les miniatures</head>
+                           <p>Ce sont les mêmes intitulés que l’on fait apparaître au
+                              survol sur les miniatures des figures en dessous de
+                              l’image en grand.</p>
+                        </div>
+                        <div type="rendering">
+                           <head>Description détaillée</head>
+                           <div type="content">
+                              <p>Le volet de description détaillée qui s’ouvre sous
+                                 l’image en grand dans la colonne figure comporte les
+                                 informations suivantes :</p>
+                              <p>Intitulé orignal : [contenu textuel de <hi
+                                    rend="Strong">head</hi>]</p>
+                              <p>Intitulé original des figures si la planche en
+                                 contient plusieurs (head de chacune) à la suite à la
+                                 ligne.</p>
+                              <p>Localisation : [contenu textuel de <hi rend="Strong"
+                                    >locus</hi>]</p>
+                              <p>Dimensions : 42 x 59 mm [largeur par hauteur à partir
+                                 de <hi rend="Strong">dimensions</hi>]</p>
+                              <p>Description : [si présent, contenu de <hi
+                                    rend="Strong">desc</hi>]</p>
+                              <p>Note : [si présent, contenu de l’élément <hi
+                                    rend="Strong">note</hi>]</p>
+                              <p>[[Lorsque les éléments ne sont pas présents, ne pas
+                                 afficher l’étiquette]]</p>
+                           </div>
+                           <div type="exemple">
+                              <head>Exemple</head>
+                              <p>[[pour la planche 1 de C2]]</p>
+                              <p>Intitulé original : Plan de lancienne Église de
+                                 Tyr</p>
+                              <p>Localisation : p. 10</p>
+                              <p>Dimensions : 42 x 21 mm</p>
+                              <p>Description : Texte libre de commentaire si
+                                 nécessaire</p>
+                              <p>Note : 6 barré en haut</p>
+                              <p>[[pour la planche 4 de C2]]</p>
+                              <p>Intitulé original : Profil, sur la longueur de
+                                 L’église de S<hi rend="superscript">te</hi> Sabine à
+                                 Rome</p>
+                              <p>I Figure</p>
+                              <p>Desseins des chapiteaux de Colonne qui Séparent la Nef
+                                 des Latéraux</p>
+                              <p>Profil sur la Diagonale Et par le Milieu</p>
+                              <p rend="heading 6">Liste des figures</p>
+                              <p>La liste des figures est produite à partir des
+                                 légendes normalisées (voir ci-dessus, <ref
+                                    target="#_Rendu_de_l’intitulé">rendu de
+                                    l’intitulé</ref>)</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div type="part">
+               <head>Manière dont le texte est inscrit sur la page</head>
+               <div type="chapter">
+                  <head>Pagination et foliotation</head>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <div type="content">
+                        <p>Le foliotage ou/et la pagination ayant été relevé lors de la
+                           transcription, il n’est pas nécessaire de marquer les fins
+                           de pages. En revanche, il convient de vérifier que le
+                           foliotage et la pagination sont cohérents.</p>
+                        <p>Les indications de paginations sont indiquées directement
+                           dans le corps du texte <hi rend="bold">sans saut de
+                              paragraphe</hi>.</p>
+                        <p>Normaliser l’indication des folios : [f° 1 r.], [f° 1
+                           v.]</p>
+                        <p>Normaliser l’indication de la pagination historique : [p.
+                           1]</p>
+                        <p>Indiquer à la suite les erreurs incohérences du foliotage ou
+                           de pagination historique.</p>
+                        <p>Indiquer la présence de pages non numérotées ou non
+                           foliotées.</p>
+                        <p>Les indications concernant le foliotage ou la pagination
+                           historique sont résumées dans la notice de présentation du
+                           manuscrit.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>[page non numérotée]</p>
+                        <p>[f° 32 v, la numérotation passe de 30 à 32]</p>
+                     </div>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>La difficulté de l’encodage de la numérotation des pages ou
+                           des folios réside essentiellement dans la grande
+                           hétérogénéité des cas rentrés dans le corpus. Cette
+                           diversité contraint fortement les choix effectués. D’une
+                           part, certains sont numérotés (paginés ou foliotés),
+                           d'autres pas du tout, et parfois encore ils sont à la fois
+                           paginés et foliotés (c'est-à-dire que la page porte deux
+                           numérotations).</p>
+                        <p>L’élément pb de XML-TEI sert à représenter des sauts de page
+                              (<hi rend="italic">pagebreak</hi>) tandis que <hi
+                              rend="Strong">fw</hi> sert à encoder les titres courants
+                              (<hi rend="italic">formwork</hi>). Or on assimile en TEI
+                           un numéro inscrit en haut d'une page à un titre courant.
+                           L’attritut <hi rend="Intense_Emphasis">type</hi> sert à
+                           qualifier ce titre courant pour distinguer les folios des
+                           numéros de page. On doit placer des identifiants <hi
+                              rend="Intense_Emphasis">xml:id</hi> afin de permettre de
+                           placer des ancres ou la citation. Dans l’ensemble de
+                           l’édition, la valeur de cette attribut doit toujours être
+                           unique (contrainte d’unicité de xml:id en XML). Il faut
+                           aussi tenir compte que dans certains cas la numérotation qui
+                           figure sur le document peut être fautive et ne donc pas
+                           servir à la définition des identifiants. Les attributs <hi
+                              rend="Intense_Emphasis">n</hi> sur <hi rend="Strong"
+                              >pb</hi> peuvent alors servir à fournir une numérotation
+                           régularisée.</p>
+                        <p>Un tel encodage permet donc de produire le numéro de page
+                           pour le menu déroulant à partir de la valeur de l’attribut n
+                           sur pb. On ne peut se baser de manière fiable sur l’encodage
+                           de fw qui n’est pas nécessairement présent.</p>
+                        <p>Le foliotage et la pagination sont donc fournis dans le
+                           texte au moyen de l’élément <hi rend="Strong">pb</hi> à
+                           partir de la valeur de l’attribut <hi
+                              rend="Intense_Emphasis">xml:id</hi> et <hi
+                              rend="Intense_Emphasis">n</hi>. On a cependant encodé
+                           dans le corps du texte l’inscription du n° de page dans un
+                           élément <hi rend="Strong">fw </hi>avec l’attribut <hi
+                              rend="Intense_Emphasis">type=”foliotation”</hi> ou <hi
+                              rend="Intense_Emphasis">type=”pageNum”</hi>.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <fw type="pageNum">4</fw>
+                           <pb xml:id="c2F3vb" n="p4" /></egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <div type="content">
+                        <p>Les changements de page sont indiqués par une marque
+                           graphique dans le corps du texte, et le numéro de folio ou
+                           de page est fourni dans la marge.</p>
+                        <p>Il prend la forme « p. 209 », ou « fol. 209 », « fol. 209v »
+                           selon les cas (ne pas fournir d’indication pour recto. Ex :
+                           fol. 209 seulement).</p>
+                        <p>La valeur du numéro de page est établie à partir de
+                           l’attribut <hi rend="Intense_Emphasis">n</hi> de l’élément
+                              <hi rend="Strong">pb</hi> en retirant la lettre p
+                           lorsqu’il s’agit d’une pagination.</p>
+                        <p>Le contenu textuel de l’élément <hi rend="Strong">fw</hi>
+                           n’est jamais affichée lorsqu’il est présent.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple :</head>
+                        <p><egXML xmlns="http://www.tei-c.org/ns/Examples"><pb
+                                 xml:id="c2F106r" n="p212" /></egXML> p. 212</p>
+                        <p><egXML xmlns="http://www.tei-c.org/ns/Examples"><pb
+                                 xml:id="c2F106v" n="p213" /></egXML> p. 213</p>
+                        <p><egXML xmlns="http://www.tei-c.org/ns/Examples"><pb
+                                 xml:id="c2F9r" n="9" /></egXML> fol. 9</p>
+                        <p><egXML xmlns="http://www.tei-c.org/ns/Examples"><pb
+                                 xml:id="c2F9v" n="9v" /></egXML> fol. 9v</p>
+                     </div>
+                  </div>
+                  <div type="content">
+                     <p>[remarque : il est possible en XSLT 1.0 d’évaluer la valeur du
+                        premier caractère de la chaîne avec xsl:starts-with. Cette
+                        solution est plus simple que l’évaluation de l’élément <hi
+                           rend="Strong">fw</hi> pour déterminer la présence d’une
+                        pagination, d’autant que <hi rend="Strong">fw</hi> n’est pas
+                        toujours présent.]</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Fins de colonnes</head>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <div type="content">
+                        <p>Dans le cas où le texte fait l’objet d’une inscription sur
+                           la page en plusieurs colonnes, il est possible de l’indiquer
+                           en utilisant les indications suivantes insérées directement
+                           dans le texte :</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>[début de colonne] texte [fin de colonne].</p>
+                     </div>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Utilisation des éléments vide <hi rend="Strong">cb</hi>
+                     </p>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Ne rien faire de particulier</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Fins de lignes</head>
+                  <div type="introduction">
+                     <p>Les marques de fin de ligne sont employées à l’intérieur des
+                        titres afin de pouvoir restituer la mise en page lors de la
+                        publication (<hi rend="italic">voir plus haut</hi> : <hi
+                           rend="italic">Division</hi>s) ou lorsque l’éditeur le juge
+                        nécessaire pour traduire une inscription particulière du texte
+                        sur la page.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <p>Retour chariot sans saut de paragraphe (combinaison des touches
+                        Shift+Entrée)</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Élément vide <hi rend="Strong">lb</hi> de TEI</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <head rend="alignCenter">Chapitre 4<hi rend="superscript"
+                                 >e</hi>
+                              <lb />Description des Eglises <lb />Monacales</head>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Saut de ligne simple, sans marque de paragraphe (pas de
+                        changement dans le rythme vertical de la page).</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Cahiers</head>
+                  <div type="introduction">
+                     <p>Lorsque le manuscrit est composé d’une réunion de plusieurs
+                        cahiers, le début de chaque cahier doit être repéré si cela a
+                        du sens en rapport au texte.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <div type="content">
+                        <p>La notice de présentation du manuscrit décrira la
+                           composition de ces manuscrits en cahiers en indiquant le
+                           foliotage des parties concernées. Une indication entre
+                           Crochets permettra d’indiquer le début et la fin d’un
+                           cahier :</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>[Début du premier cahier] xxx [Fin du premier cahier].</p>
+                     </div>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Au besoin, on renseigne le montage du manuscrit à l’aide de
+                           l’élément <hi rend="Strong">collation</hi> dans l’en-tête
+                           TEI avec l’attribut <hi rend="Intense_Emphasis"
+                           >locus</hi>.</p>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Ne rien faire</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Mise en valeur graphiques</head>
+                  <div type="introduction">
+                     <p>Les parties du texte faisant l’objet d’une mise en valeur
+                        graphique sont repérées, le type de mise en valeur est
+                        indiqué.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <div type="content">
+                        <p>On utilisera les rendus typographiques standard du
+                           traitement de texte pour les caractères inscrits en gras,
+                           italique ou souligné.</p>
+                        <p>Signaler les formes mises en valeur de la manière
+                           suivante :</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>[mise en valeur : « texte concerné »]. Ne pas oublier les
+                           guillemets.</p>
+                     </div>
+                     <div type="content">
+                        <p>Il est possible d’ajouter une précision sur le type de mise
+                           en valeur de la manière suivante :</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>[mise en valeur : type de mise en valeur « texte
+                           concerné »]</p>
+                     </div>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Utilisation d’un élément <hi rend="Strong">hi</hi> , ou bien
+                           tout autre élément, portant selon les cas les
+                           attributs :</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="superscript"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="underscript"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="uppercase"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="lowercase"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="italic"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="bold"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="underline"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”initial”</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”bigger”</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”strikethrough”</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”overstrike”</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”verticalstrike”</hi>
+                        </p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><head
+                              rend="alignCenter">Chapitre 4<hi rend="superscript"
+                                 >e</hi>
+                              <lb />Description des Eglises <lb />Monacales</head>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <div type="content">
+                        <p>superscript exposant</p>
+                        <p>underscript indice</p>
+                        <p>uppercase majuscules</p>
+                        <p>lowercase bas-de-casse</p>
+                        <p>italic italique</p>
+                        <p>bold gras</p>
+                        <p>underline souligné</p>
+                        <p>initial initiale</p>
+                        <p>bigger Affichage à déterminer. En gras dans le texte. On
+                           peut varier la dimension des polices dans les titres
+                           (élément <gi>head</gi>)</p>
+                        <p>strikethrough rayé</p>
+                        <p>overstrike pas de traduction à afficher</p>
+                        <p>verticalstrike pas de traduction à afficher</p>
+                     </div>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Titres courants et réclames</head>
+                  <div type="introduction">
+                     <p>Les titres courants (en haut ou en bas de la page) ou les
+                        réclames sont transcrits.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <div type="content">
+                        <p>Dans le cas où ceux-ci n’auraient pas été transcrits
+                           directement dans le texte, il est possible d’en faire une
+                           description générale dans la notice du manuscrit, en tête de
+                           document, en listant précisément les intervalles de folios
+                           concernés.</p>
+                        <p>Transcription des titres courants ou des réclames, sous la
+                           forme :</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>[titre courant : « xxxx »] à l’emplacement où ils se
+                           trouvent.</p>
+                     </div>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Les titres courants sont encodés au moyen d’un élément <hi
+                              rend="Strong">fw</hi>
+                           <hi rend="Intense_Emphasis"> </hi>(<hi
+                              rend="Intense_Emphasis">type=”runningHead”</hi>).</p>
+                        <p>Les réclames sont encodées au moyen d’un élément <hi
+                              rend="Strong">catchwords</hi>
+                        </p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <fw type="runningHead">Traité des commodités </fw>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <div type="content">
+                        <p>Les titres courants et les réclames ne sont pas affichés
+                           dans l’édition.</p>
+                     </div>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Localisation</head>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Les localisations sont fournies au moyen de l’attribut <hi
+                           rend="Intense_Emphasis">place</hi> qui peut prendre les
+                        valeurs suivantes.</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="top"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="topRight"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="topLeft"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="topCenter"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottom"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottomRight"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottomLeft"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottomCenter"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginRight"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginLeft"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginTop"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginBottom"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="below"</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="above"</hi>
+                     </p>
+                     <p>Cet attribut est disponible sur l’élément <hi rend="Strong"
+                           >add</hi>, <hi rend="Strong">label</hi>, <hi rend="Strong"
+                           >note</hi>, <hi rend="Strong">addSpan</hi>, <hi
+                           rend="Strong">fw</hi>, <hi rend="Strong">metamark</hi> et
+                           <hi rend="Strong">figure</hi>.</p>
+                     <p rend="heading 6">Rendu</p>
+                     <p>Fournir l’emplacement du passage concerné au survol pour <hi
+                           rend="Strong">add</hi>, <hi rend="Strong">label</hi> et <hi
+                           rend="Strong">note</hi>.</p>
+                     <p>Trouver une manière de fournir graphiquement l’indication
+                        qu’une information est disponible au survol (pointillé).</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="top" en haut</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="topRight" en haut à
+                           droite</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="topLeft" en haut à
+                           gauche</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="topCenter" en haut au
+                           milieu</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottom" en dessous</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottomRight" en dessous à
+                           droite</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottomLeft" en dessous à
+                           gauche</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="bottomCenter" en dessous au
+                           centre</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginRight" dans la marge
+                           droite</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginLeft" dans la marge
+                           gauche</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginTop" dans la marge
+                           haute</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="marginBottom" dans la marge
+                           basse</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="below" en dessous</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">place="above" en dessus</hi>
+                     </p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Alignement</head>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>L’alignement du texte est fourni au moyen de l’attribut <hi
+                              rend="Intense_Emphasis">rend</hi> qui peut prendre les
+                           valeurs suivantes :</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="alignLeft"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="alignRight"</hi>
+                        </p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend="alignCenter"</hi>
+                        </p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <div xml:id="c2Body01.01.05" type="chapter" n="5">
+                              <head rend="alignCenter">Chapitre 5<hi rend="superscript"
+                                    >e</hi>
+                                 <lb /> Description des Eglises conventuelles</head>
+                           </div>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Modifier l’alignement du contenu textuel de l’élément concerné
+                        en fonction de la valeur prise par cet attribut.</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Signes graphiques</head>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Les signes graphiques dans le texte sont encodés au moyen
+                           d’un élément <hi rend="Strong">metamark</hi>
+                        </p>
+                        <p>La valeur de l’attribut <hi rend="Intense_Emphasis"
+                              >rend</hi> permet de déterminer le type de marque
+                           graphique :</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”simpleLine”</hi> ligne
+                           simple</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”doubleLine”</hi> double
+                           ligne</p>
+                        <p>
+                           <hi rend="Intense_Emphasis">rend=”brace” </hi>accolade</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><div
+                              type="number" n="9" xml:id="t8Body02.03.09">
+                              <head>9° </head>
+                              <p>Aux planchers où il y a de grandes Bayes pour des
+                                 passages d’Escaliers de dégagement, ou autrement, L’on
+                                 toise Séparément la Solive d’Enchevestrure, Le
+                                 Chevestre, et les Soliveaux qui y Sont assemblés
+                                 chacun pour cequils Sont.</p>
+                           </div>
+                           <metamark rend="doubleLine alignCenter" /></egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <p rend="heading 6">Rendu</p>
+                     <p>Faire des propositions de rendu pour ces marques graphiques qui
+                        apparaissent soit en fin de paragraphe, soit comme ornements
+                        des titres.</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Gloses</head>
+                  <div type="content">
+                     <p>Les manuscrits font parfois apparaître des gloses marginales
+                        qui viennent éclaircir le sens de certains termes techniques ou
+                        apporter une précision. Ces marginalias sont parfois traitées à
+                        la manière de gloses.</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Les gloses qui apparaissent dans le manuscrit sont traitées
+                           au moyen des éléments dédiés de TEI <hi rend="Strong"
+                              >term</hi> et <hi rend="Strong">gloss</hi> de la manière
+                           suivante :</p>
+                     </div>
+                     <div type="exemple">
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <!-- exemple de gloses -->
+                           <p xml:id="c2Front02.01.p003b">
+                              <ref type="noteHistorical" target="#c2Nh0003"><hi
+                                    rend="bigger">La première ville</hi> qui fut <term
+                                    xml:id="c2gloss001">bâtie</term> se nomma
+                                    <placeName ref="#henoch">Énocle</placeName> par
+                                    <persName ref="#cain">Caën</persName> qui en étoit
+                                 le fondateur du nom de son fils aîné.</ref>
+                              <add place="marginRight"><gloss target="#c2gloss001"
+                                    >texte de la glose</gloss></add>
+                           </p>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <div type="content">
+                        <p>Afficher le contenu textuel des éléments <hi rend="Strong"
+                              >gloss</hi> entre deux pipes dans le flux textuel
+                           général, en fournissant une indication de localisation.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>
+                           <hi rend="bold">La première ville</hi> qui fut bâtie <hi
+                              rend="color(FF0080)">|</hi> texte de la glose <hi
+                              rend="color(FF0080)">|</hi> se nomma Énocle par Caën qui
+                           en étoit le fondateur du nom de son fils aîné.</p>
+                        <p>
+                           <hi rend="italic">[Localisation au survol à partir de
+                              l’attribut </hi>
+                           <hi rend="Intense_Emphasis">
+                              <seg rend="italic">place</seg>
+                           </hi>
+                           <hi rend="italic"> cf. </hi>
+                           <ref target="#_Localisation">
+                              <hi rend="italic">localisations</hi>
+                           </ref>
+                           <hi rend="italic">]</hi>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Rubriques</head>
+                  <div type="introduction">
+                     <p>Certains termes ou expressions apparaissent en rubrique, en
+                        marge du texte dans le manuscrit, afin de faciliter le repérage
+                        des parties du texte.</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>On rend compte des termes ou expressions en rubriques à
+                           l’aide de l’élément dédié <hi rend="Strong">label</hi> de
+                           TEI qui prend en attribut une indication de localisation.
+                           L’attribut <hi rend="Intense_Emphasis">type</hi>=”<hi
+                              rend="Subtle_Emphasis">rubric</hi>” permet de les
+                           distinguer des autres éléments <hi rend="Strong">label</hi>
+                           pour la transformation.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p
+                              xml:id="c2Front02.01.p010b"><seg><label type="rubric"
+                                    place="marginRight">mot en rubrique</label>mot en
+                                 rubriqueCe Traité de la Commodité de l’architecture
+                                 est divisé en trois sections ou parties. La première
+                                 contient les diffentes sortes d’églises et chapelles
+                                 et autres lieux pieux. La seconde section, contient
+                                 les basiliques, les hôtels de villes et de
+                                 commerce</seg>
+                              <pb xml:id="c2F4v" n="p6" />
+                              <seg><label type="rubric">terme en rubrique</label>Et la
+                                 troisième contient les palais, les hôtels et les
+                                 maisons particulières servant au logemens. Chaque
+                                 section a Plusieurs chapitres dans lesquels sont
+                                 Expliqués les termes et les principes, Les Règles et
+                                 les proportions et les convenances avec les desseins
+                                 Necessaire pour L’Intelligence de chaque chose en
+                                 particulier.</seg></p>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Afficher le contenu textuel de l’élément <hi rend="bold">en
+                           gras</hi> entre deux pipes dans le flux textuel général, en
+                        fournissant une indication de localisation au survol.</p>
+                     <p>
+                        <hi rend="italic">[Localisation au survol à partir de
+                           l’attribut </hi>
+                        <hi rend="Intense_Emphasis">
+                           <seg rend="italic">place</seg>
+                        </hi>
+                        <hi rend="italic"> cf. </hi>
+                        <ref target="#_Localisation">
+                           <hi rend="italic">localisations</hi>
+                        </ref>
+                        <hi rend="italic">]</hi>
+                     </p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Notes de l’auteur du texte</head>
+                  <div type="introduction">
+                     <p>L’auteur du manuscrit, ou un autre scripteur, est parfois
+                        intervenu sur le manuscrit pour fournir une note qui apparaît
+                        généralement en bas de page. Il n’y a habituellement pas de
+                        numérotation et le contenu de ces notes est très court. Le
+                        lecteur risquerait de manquer les passages concernés si ceux-ci
+                        étaient trop distincts du corps de l’édition et renvoyés en
+                        note bas de page, par ailleurs il faut bien distinguer cette
+                        partie qui fait partie du manuscrit proprement de la mise en
+                        place du paratexte.</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Les notes fournies par les auteurs du manuscrit sont
+                           encodées, dans le corps de l’édition, au moyen d’un élément
+                              <hi rend="Strong">note</hi>. Le point d’insertion est
+                           localisé avec <hi rend="Strong">ref</hi> et un attribut <hi
+                              rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                              >noteAuctorial</hi>”</p>
+                        <p>L’élément note dispose d’un attribut <hi
+                              rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                              >auctorial</hi>” afin de simplifier la manipulation avec
+                           XSLT.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><!-- exemple de note auctorial -->
+                           <p xml:id="c2Front02.01.p001b"><hi rend="bigger"
+                                 >L’origine</hi> des édiffices qui sont destinés pour
+                              la commodité est aussi ancienne que le monde. <ref
+                                 type="noteAuctorial" target="#c2N0001">Le […] peut
+                                 connoitre dans le quatrième chapitre de la Genèse,
+                                 lorsque Cain dit à son frère Abel sortons dehors,
+                                 marque qu’ils étoient dans un lieu clos et séparé de
+                                 la campagne</ref><note type="auctorial"
+                                 target="#c2N0001" place="marginRight">texte de la
+                                 note</note>.</p>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <div type="content">
+                        <p>Afficher le contenu textuel de l’élément entre deux pipes
+                           (« texte environnant | passage concerné | texte
+                           environnant ») dans le flux textuel général, en fournissant
+                           au survol une indication de localisation fournie à partir
+                           des attributs concernés.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>
+                           <hi rend="bold">L’origine</hi> des édiffices qui sont
+                           destinés pour la commodité est aussi ancienne que le monde.
+                           Le […] peut connoître dans le quatrième chapitre de la
+                           Genèse, lorsque Caïn dit à son frère Abel sortons dehors,
+                           marque qu’ils étoient dans un lieu clos et séparé de la
+                           campagne <hi rend="color(FF0080)">|</hi> texte de la
+                              note <hi rend="color(FF0080)">|</hi>.</p>
+                        <p>
+                           <hi rend="italic">[le texte de la note en rose au survol,
+                              avec une indication de localisation d’après la valeur de
+                              l’attribut </hi>
+                           <hi rend="Intense_Emphasis">place</hi>
+                           <hi rend="italic"> cf. </hi>
+                           <ref target="#_Localisation">
+                              <hi rend="italic">localisations</hi>
+                           </ref>
+                           <hi rend="italic">]</hi>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div type="part">
+               <head>Transcription du texte</head>
+               <div type="chapter">
+                  <head>Les abréviations et leur résolution</head>
+                  <div type="introduction">
+                     <p>Les abréviations ont normalement fait l’objet d’une
+                        transcription dans le texte sans résolution. Elles doivent être
+                        relevées dans le texte, leur type doit être indiqué, et elles
+                        seront résolues par les éditeurs avec une indication concernant
+                        le degré de certitude.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <div>
+                        <head>Abréviations par suspension</head>
+                        <div type="content"><p>Là où les premières lettres du mot sont écrites, suivies en
+                           général d’un point ou d’une autre marque : par exemple <hi
+                              rend="italic">e.g.</hi> pour <hi rend="italic">exempli
+                              gratia</hi>
+                        </p></div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>À la place de l’abréviation :</p>
+                           <p>[abréviation par suspension : « telle_que_lue » ;
+                              « résolue » ; commentaire éventuel sur la certitude de la
+                              résolution]. Ne pas oublier les guillemets.</p>
+                        </div>
+                     </div>
+                     <div>
+                        <head>Abréviations par contraction</head>
+                     <div type="content"><p>Les première(s) et dernière(s) lettres du mot sont écrites,
+                        accompagnées le plus souvent d’un signe abréviatif tel que
+                        trait suscrit, ou, plus rarement, un point : par exemple <hi
+                           rend="italic">Mr.</hi> pour <hi rend="italic">Monsieur</hi>.
+                        Des lettres suscrites (voyelles ou consonnes) sont également
+                        souvent utilisées pour indiquer que l’on a procédé à des
+                        contractions, elles-mêmes de divers types : par exemple <hi
+                           rend="italic">s</hi> suivi de <hi rend="italic">r</hi>
+                        suscrit pour <hi rend="italic">sieur.</hi>
+                     </p></div>
+                     <div type="exemple"><head>Exemple</head>
+                     <p>[abréviation par contraction : « telle_que_lue » ; résolue ;
+                              commentaire éventuel sur la certitude de la résolution].
+                              Ne pas oublier les guillemets et les point-virgules.</p></div></div>
+                     <div>
+                        <head>Brévigraphes</head>
+                        <div type="content">
+                           <p>Ce sont des symboles spécifiques, tels que la note
+                              tironienne utilisée à la place de la conjonction de
+                              coordination « et », ou la lettre p barrée, souvent
+                              utilisée à la place de la syllabe <hi rend="italic"
+                                 >per</hi>.</p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>[brévigraphe : « telle que lue » ; résolue ; commentaire
+                              éventuel sur la certitude de la résolution]. Ne pas
+                              oublier les guillemets et les points-virgules.</p>
+                           <p>Utiliser les caractères spéciaux pour marquer le
+                              brévigraphe.</p>
+                        </div>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <div type="content"><p>Les abréviations sont encodées au moyen d’une combinaison de
+                           balises <hi rend="Strong">choice</hi>, <hi rend="Strong"
+                              >abbr</hi> et <hi rend="Strong">expan</hi>.</p></div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Étudians
+                                 de <choice>
+                                    <abbr>lad.</abbr>
+                                    <expan>ladite</expan>
+                                 </choice> accademie Royale d’architecture.
+                              </p></egXML></div>
+                     </div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                        <p>Rendre l’abréviation développée (contenue dans expan)
+                           soulignée en pointillé</p>
+                        <p>Afficher au survol l’abréviation telle que transcrite :
+                           abréviation : « contenu de abbr »</p>
+                        <p>Trouver une manière de fournir graphiquement l’indication
+                           qu’une information est disponible au survol.</p>
+                     </div>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Langue du texte</head>
+                  <div type="introduction"><p>Certains passages pouvant être rédigés dans des langues étrangères
+                     ou régionales, il peut être important de noter la langue du texte
+                     ou d’une portion de texte.</p></div>
+                  <div type="preEnconding">
+                     <head>Pré-encodage</head>
+                     <div type="exemple"><head>Exemple</head>
+                     <p>[langue : nom_de_la_langue « passage concerné »]. Ne pas oublier
+                        les guillemets.</p></div>
+                  </div>
+                  
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content"><p>Les passages du texte écrits dans une langue étrangère sont
+                        encodés au moyen de la balise <hi rend="Strong">foreign</hi>
+                        s’il n’y a pas d’élément englobant, ou de l’attribut <hi
+                           rend="Intense_Emphasis">xml:lang</hi> sur un élément p, seg,
+                        ou cit, quot, etc.</p></div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p>[…] ou autrement cancel du mot latin <foreign xml:lang="lat">concelli</foreign>, à l’Entrée du cœur</p>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Passages concernés en italique.</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Erreurs syntaxiques ou segments sémantiquement
+                     incorrects</head>
+                  <div type="introduction">
+                     <p>Il convient d’indiquer lorsque la leçon donnée par le manuscrit
+                        est erronée ou n’a pas de sens.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <p rend="heading 6">Pré-encodage</p>
+                     <div type="content"><p>On indiquera lorsque la leçon donnée par le manuscrit est
+                        erronée ou n’a pas de sens à l’aide d’un [sic.] On pourra
+                        fournir la leçon correcte selon l’opinion de l’éditeur en note.
+                        Afin de repérer précisément la partie erronée ou sémantiquement
+                        incorrecte d’après l’éditeur, celle-ci est inscrite de la
+                        manière suivante :</p>
+                     <p>Ex : [sic :
+                        « partie_erronnée_ou_semantiquement_incorrecte »]</p>
+                     <p>On indiquera les segments de texte considérés superflus ou
+                        redondants (par ex. du texte répété).</p></div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <p>[sic : « texte » ; texte répété]</p>
+                        <p>exemple 1 :</p>
+                        <p>Chapitre 3<hi rend="superscript">e</hi>
+                        </p>
+                        <p>Dessein deuxisne de l’ordre toscan</p>
+                        <p>Chapitre 3<hi rend="superscript">e</hi>
+                        </p>
+                        <p>Dessein [sic « deuxisne » ; deuxième] de l’ordre toscan</p>
+                        <p>Exemple 2 :</p>
+                        <p>La hauteur de l’imposte et de l’archivolte sont [sic] la
+                           même qu’aux arcs</p>
+                        <p>La hauteur de l’imposte et de l’archivolte [sic : « sont »]
+                           la même qu’aux arcs</p>
+                        <p>Exemple 3 :</p>
+                        <p>Pour l’ordinaire les pilastres ne sont pas diminuées et sont
+                           […]</p>
+                        <p>Pour l’ordinaire les pilastres ne sont pas
+                           [sic : « diminuées »] et sont […]</p>
+                     </div>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Utilisation de l’élément <hi rend="Strong">sic</hi> sur le
+                           passage concerné.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p>[…] Brique <sic>faite</sic> de terre cuitte […]</p>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <p rend="heading 6">Rendu</p>
+                     <p>Insérer un « [sic.] » après le passage concerné entre
+                        crochets.</p>
+                     <p>Le passage concerné peut éventuellement être mis en évidence
+                        (nous faire des propositions). Le passage concerné apparaît
+                        souligné en pointillé avec le [sic.].</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Graphies de l’époque et formes normalisées</head>
+                  <div type="introduction"><p>Les sources primaires emploient rarement une graphie moderne.
+                     Pour la recherche ou d’autres raisons liées aux traitements
+                     informatiques prévus, l'orthographe d'époque peut s’avérer utile dans
+                     la transcription, elle sera donc conservée.</p>
+                  <p>La normalisation de la graphie ne concernera que le vocabulaire
+                     architectural et juridique et les mots qui méritent d’être
+                     indexés.</p></div>
+                  <div type="preEncoding"><head>Pré-encodage</head>
+                  <div type="content"><p>[« forme_originale » ; forme_normalisée]. Ne pas oublier les
+                     guillemets et les points-virgules.</p></div>
+                     <div type="exemple">
+                        <head>Exemple :</head>
+                        <p>[« colomnes » ; colonnes]</p>
+                        <p>Les refends des feuilles sont composés de trois feuilles
+                           chacun de lorier et Serise</p>
+                        <p>Les refends des feuilles sont composés de trois feuilles
+                           chacun de [« lorier » ; laurier] et [« Serise » ;
+                           cerise]</p>
+                        <p>Mais, si on veut y mettre des ornemens, ils ne doivent pas
+                           excéder le tiers de la saillie de l’architrave.</p>
+                        <p>Mais, si on veut y mettre des [« ornemens » ; ornements],
+                           ils ne doivent pas excéder le tiers de la saillie de
+                           l’architrave.</p>
+                        <p>Commentaire : il s’agit d’un terme du vocabulaire technique
+                           architectural ou juridique.</p>
+                     </div>
+                  </div>
+                  <div type="encoding">
+                     <p rend="heading 6">Encodage</p>
+                     <div type="content">
+                        <p>Les formes régularisées sont encodées dans le texte au moyen
+                           d’une combinaison d’éléments <hi rend="Strong">orig</hi> et
+                              <hi rend="Strong">reg</hi> dans un élément <hi
+                              rend="Strong">choice</hi>
+                        </p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice>
+                              <orig>logemens</orig>
+                              <reg>logements</reg>
+                           </choice>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>On affiche seulement le contenu de <hi rend="Strong">orig.</hi>
+                     </p>
+                     <p>Les formes régularisées ne sont pas présentées au lecteur, en
+                        revanche elles sont comprises dans l’index du texte pour
+                        permettre des recherches en texte intégral.</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Ajouts et suppressions</head>
+                  <div type="introduction">
+                     <p>Les changements opérés sur le texte inscrit, qu’ils soient
+                        apportés par le scripteur ou ultérieurement par une autre main
+                        seront indiqués.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <p>[ajout : localisation « passage concerné »]. Ne pas oublier les
+                        guillemets.</p>
+                     <p>[rature : « passage concerné »]. Ne pas oublier les
+                        guillemets.</p>
+                     <p>[rature : « passage concerné » ; remplacé par : localisation
+                        « passage concerné »]. Ne pas oublier les guillemets.</p>
+                     <p>[[ajouter le cas des correction n’ayant pas fait l’objet de
+                        rature. Outre la localisation expliciter le pré-encodage des
+                        mains et de la technique d’écriture.]]</p>
+                     <p rend="heading 8">Exemple :</p>
+                     <p>[…] et la saillie de la corniche est deux modules et demi au
+                        delà du nud de la frise.</p>
+                     <p>[…] et la saillie de la corniche est [correction : « deux » ;
+                        remplacé par : au-dessus, à la mine « d’un »] modules et demi
+                        au-delà du [« nud » ; nu] de la frise.</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Les ajouts et suppressions sont traités au moyen d’une
+                        combinaison d’éléments <hi rend="Strong">del</hi>, <hi
+                           rend="Strong">delSpan</hi>, <hi rend="Strong">add</hi>, <hi
+                           rend="Strong">addSpan</hi>, <hi rend="Strong">undo,
+                           subst</hi>, <hi rend="Strong">restore</hi> et <hi
+                           rend="Strong">retrace</hi>. Les mains sont indiquées par un
+                        attribut <hi rend="Intense_Emphasis">hand</hi>
+                     </p>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                  <p>Dans la plupart des manuscrits, il n’y a pas véritables repentirs,
+                     en tous les cas, pas qui aient de réel intérêt du point de vue de
+                     la génétique textuelle.</p>
+                  <p>Ne pas afficher graphiquement les mots rayés, ou les ratures. On
+                     précisera en note le phénomène constaté.</p>
+                  <p>On affiche le résultat de l’intervention, ce qui est compris dans
+                     add ou addSpan, dans restore, ou subst.</p>
+                  <p>En revanche les interventions d’une autre main sont à traiter.</p>
+                  <p>
+                     <hi rend="italic">Voir plus bas</hi>.</p>
+                  <p>
+                     <hi rend="background(yellow)">Floating text donner des
+                        exemples</hi>
+                  </p>
+                  <p>
+                     <hi rend="background(yellow)">Del, add, etc. donner des
+                        exemples</hi>
+                  </p>
+                  <p>
+                     <hi rend="background(yellow)">Catchword, ne rien faire</hi>
+                  </p></div>
+               </div>
+            </div>
+            <div type="part">
+               <head>Marquage des dommages matériels et des difficultés de
+                  lecture</head>
+               <div type="introduction"><p>On indiquera les mots restitués par l’éditeur. Il est d’usage de
+                  distinguer le texte devenu aujourd’hui illisible ou disparu par suite
+                  de dommages matériels, mais réputé présent à l’origine dans le
+                  document manuscrit (qui est imprimé entre crochés carrés selon
+                  certaines conventions éditoriales), et le texte réputé omis par
+                  inadvertance par le scripteur (imprimé alors le plus souvent entre
+                  crochets pointus).</p></div>
+               <div type="part">
+                  <head>Texte manquant ou non transcrit</head>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <p>Les passages manquant ou impossibles à restituer seront traités
+                        de la manière suivante :</p>
+                     <p>Passage manquant impossible à restituer :</p>
+                     <p>[manque ; cause ; indication éventuelle sur la taille du
+                        passage manquant]</p>
+                     <p>Passage manquant restitué :</p>
+                     <p>[manque ; cause ; « restitution_du_passage_manquant »] en
+                        fournissant en note la source utilisée.</p></div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Les passages manquant ou le texte non transcrit est indiqué au
+                        moyen de l’élément <hi rend="Strong">gap</hi>
+                     </p>
+                     <p>La taille du segment manquant est fourni au moyen des attributs
+                           <hi rend="Intense_Emphasis">unit</hi> et <hi
+                           rend="Intense_Emphasis">extent</hi>
+                     </p>
+                  </div>
+                  <div type="rendering">
+                     <p rend="heading 6">Rendu</p>
+                     <p>Insérer « […] » et fournir une indication d’étendue au survol
+                        et la mention du phénomène (cf. <hi rend="Intense_Emphasis"
+                           >reason</hi>).</p>
+                  </div>
+               </div>
+               <div type="part">
+                  <head>Restitutions de portions de texte dans la transcription</head>
+                  <div type="chapter">
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                     <div type="content"><p>[Blanc], [illisible ; cause ; indication de longueur]</p>
+                     <p>Restitution malgré la difficulté de lecture :</p>
+                     <p>[illisible ; cause ; « restitution_du_passage_manquant »] en
+                        fournissant en note la source utilisée.</p></div>
+                     <div type="exemple"><head>Exemple</head>
+                     <p>C’est [partie illisible à cause d’une tâche] dire les galeries
+                        ouvertes en arcades</p>
+                     <p>C’est [illisible ; tâche ; 1 lettre] dire les galeries ouvertes
+                        en arcades</p></div></div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                     <p>Utilisation de l’élément <hi rend="Strong">supplied</hi>
+                     </p></div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                     <p>Fournir le passage entre crochets carrés « [ xxx ] » avec
+                        mention du phénomène au survol (cf. plus bas <hi
+                           rend="Intense_Emphasis">reason</hi>).</p></div>
+                  </div>
+               </div>
+               <div type="part">
+                  <head>Incertitudes, etc.</head>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Utilisation d’un élément <hi rend="Strong">unclear</hi> avec
+                        les attributs adaptés :</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason="illegible"</hi>
+                        illisible</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason="overWriting"</hi>
+                        rature</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason=”overStrike” </hi>rayé</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason="backgroundNoise"</hi>
+                        perturbation arrière</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason="passingTruck" </hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason="inkBlot"</hi> tâche
+                        d’encre</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason="damage" </hi>endommagé</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">reason="erased" </hi>effacé</p>
+                     <p>Les niveaux de certitude dans la transcription sont rendus au
+                        moyen de l’attribut <hi rend="Intense_Emphasis">cert</hi>
+                     </p>
+                     <p>
+                        <hi rend="Intense_Emphasis">cert=”high”</hi> haute</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">cert=”medium”</hi> moyenne</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">cert=”low” </hi>basse</p>
+                     <p>
+                        <hi rend="Intense_Emphasis">cert=”unknown”</hi> inconnue</p>
+                     <p>La responsabilité pour la transcription est fournie avec
+                        l’attribut <hi rend="Intense_Emphasis">resp</hi>
+                     </p>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Le passage concerné est fourni entre crochets droits
+                        « [ ] ».</p>
+                     <p>On peut fournir une indication du type de problème au survol,
+                        et le niveau de certitude de la restitution.</p>
+                     <p>On ne fournit par contre pas la mention de responsabilité.</p>
+                  </div>
+               </div>
+            </div>
+            <div type="part">
+               <head>Information sur les mains et sur leurs interventions dans le
+                  manuscrit</head>
+               <div type="chapter">
+                  <head>Description des mains</head>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                  <p>Les mains seront listées en tête du document dans la notice
+                     concernant le manuscrit <hi rend="italic">(voir : Mise en place
+                        d’un paratexte &gt; Avant le texte)</hi>.</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Changement de main</head>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <p>[main : désignation_de_la_main « passage concerné »]. Ne pas
+                        oublier les guillemets.</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Les changements de mains sont indiqués dans le texte au moyen
+                        de l’attribut <hi rend="Intense_Emphasis">hand</hi> porté par
+                        le segment de texte concerné.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <!-- exemple de changement de main (attribut hand) -->
+                        <p xml:id="c2Front02.01.p006b">Dans la suite des tems, les arts
+                           s’étant perfectionnés, les peuples joignant la solidité et
+                           la beauté à la commodité de leurs édiffices. Le
+                              <sic>six</sic> et le septième chapitre du troisième livre
+                           des Roïs d’Israël, et le troisième <add place="above"
+                              hand="#c2Hand2">chapitre du deuxième livre des
+                              Paralipomennes</add>, <sic>donne</sic> une grande idée de
+                           la magnificence du temple et des palais que le […] matières
+                           préciseuses et par l’art avec lequel ils furent
+                           employés.</p>
+                     </egXML>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Quand la main est secondaire (pointeur vers l’élément <hi
+                           rend="Strong">handNote</hi> de l’élément <hi rend="Strong"
+                           >handDesc</hi> dans l’en-tête TEI qui porte un attribut <hi
+                           rend="Intense_Emphasis">scope</hi> avec la valeur <hi
+                           rend="Emphasis">minor</hi>), le texte est affiché dans une
+                        couleur différente pour bien visualiser l’addition.</p>
+                     <p>
+                        <hi rend="background(lightGray)">Cf. charte graphique</hi>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div type="part">
+               <head>Arsenal critique et mise en place d’un paratexte</head>
+               <div type="introduction">
+                  <p>Après avoir établi le texte, l’éditeur fournit les premiers
+                     éléments de paratexte (une analyse, et la description du
+                     manuscrit), avant d’enrichir le paratexte en ajoutant au fichier
+                     des notes (commentaires explicatifs, précisions sur le
+                     contexte...). Il s’agit d’établir une notice descriptive des
+                     manuscrits et de rassembler les informations concernant sa
+                     transcription et son édition. À terme, ces informations seront
+                     encodées dans l’en-tête du fichier TEI. Ces informations sont
+                     importantes puisqu’elles serviront à plusieurs applications : pour
+                     les bases de données de notices bibliographiques ou pour
+                     l’assemblage des métadonnées au sein d’une édition numérique.</p>
+               </div>
+               <div type="chapter">
+                  <head>Tableau de tradition</head>
+                  <div type="introduction">
+                     <p>L’édition est établie à partir du choix d’un texte témoin.</p>
+                     <p>Les notes d’apparat critique permettront de rapporter au témoin
+                        choisi les leçons des autres témoins.</p>
+                     <p>Pour l’encodage nous prévoyons une numérotation des paragraphes
+                        afin de pouvoir établir des liens entre les versions. Cette
+                        opération nécessite une numérotation fixe des paragraphes.</p>
+                     <p>Les éditeurs peuvent numéroter les segments de textes de chaque
+                        versions afin d’établir un tableau de tradition.</p>
+                     <p>La numérotation des segments de textes se fait alors
+                        directement dans le texte, entre crochets de la manière
+                        suivante : [seg n° X].</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Le tableau de tradition est contenu dans un élément <hi
+                           rend="Strong">listWit</hi>
+                     </p>
+                     <p>Chaque témoin est encodé au moyen d’un élément <hi
+                           rend="Strong">wit</hi>
+                     </p>
+                     <p>À l’intérieur de l’élément <hi rend="Strong">wit</hi>, <hi
+                           rend="Strong">sourceDesc</hi> est disponible pour la
+                        description des manuscrits.</p>
+                     <p>
+                        <hi rend="background(lightGray)">Comme convenu, un identifiant
+                           a été ajouté sur chaque fichier. Cet identifiant figure sur
+                           le premier élément de </hi>
+                        <hi rend="Strong">
+                           <seg rend="background(lightGray)">sourceDesc</seg>
+                        </hi>
+                        <hi rend="background(lightGray)"> de manière à pouvoir y faire
+                           référence dans la liste de témoins.</hi>
+                     </p>
+                     <p>
+                        <hi rend="background(lightGray)">Pour identifier la version
+                           éditée parmi la liste de témoins, on ajoute un attribut </hi>
+                        <hi rend="Intense_Emphasis">
+                           <seg rend="background(lightGray)">n</seg>
+                        </hi>
+                        <hi rend="background(lightGray)">=”criticalEdition” dans la
+                           liste de témoins du fichier corpus du cours.</hi>
+                     </p>
+                     <p>
+                        <hi rend="background(lightGray)">Dans l’en-tête du fichier
+                           corpus de chaque cours :</hi>
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <sourceDesc>
+                           <!-- description complète des témoins dans les en-têtes TEI concernées pour le partage des fichiers -->
+                           <listWit xml:id="c">
+                              <witness corresp="#c1" />
+                              <witness n="criticalEdition" corresp="#c2" />
+                           </listWit>
+                        </sourceDesc>
+                     </egXML>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Les pages de présentation des cours se composent de la manière
+                        suivante :</p>
+                     <list type="unordered">
+                        <item>Page de titre de l’édition (comme ci-dessus)</item>
+                        <item>Présentation de l’édition (contenue dans le document
+                           TEIcorpus).</item>
+                        <item>Tableau de tradition (liste des témoins établie à partir
+                           de <hi rend="Strong">listWit</hi>)</item>
+                     </list>
+                     <p>Afin de faciliter l’affichage, on a répété l’élément listWit
+                        dans le back du fichier de présentation de chaque cours</p>
+                     <list type="unordered">
+                        <item>Notes</item>
+                        <item>Bibliographie</item>
+                        <item>Liens vers la documentation, le téléchargement des
+                           sources et du modèle.</item>
+                     </list>
+                     <p>Icônes de téléchargement</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Descriptions codicologiques</head>
+                  <div type="introduction">
+                     <p>Les informations concernant la description physique du
+                        manuscrit, sa datation et les éléments concernant son édition
+                        seront rassemblées au début du texte afin de préparer leur
+                        encodage pour le header TEI et les notices des manuscrits.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <p>Le début des documents comportera les éléments suivants :</p>
+                     <p>Identification du manuscrit</p>
+                     <list type="unordered">
+                        <item>N° du manuscrit pour l’ANR</item>
+                        <item>Titre :</item>
+                        <item>Cote du manuscrit :</item>
+                        <item>Institution de conservation :</item>
+                        <item>Collection :</item>
+                        <item>Pays de conservation :</item>
+                        <item>Autre cote connue :</item>
+                     </list>
+                     <p>Présentation du contenu</p>
+                     <list type="unordered">
+                        <item>Analyse :</item>
+                        <item>Composition du manuscrit (s’il comporte diverses
+                           parties) :</item>
+                        <item>Indication de la pagination des parties
+                           composantes :</item>
+                        <item>Auteur : des parties composantes :</item>
+                        <item>Titre des parties composantes :</item>
+                        <item>Langue :</item>
+                     </list>
+                     <p>Éléments de datation temporelle :</p>
+                     <p>Description physique</p>
+                     <list type="unordered">
+                        <item>Dimensions :</item>
+                        <item>Mains :</item>
+                        <item>Pagination :</item>
+                        <item>Remarques sur la pagination :</item>
+                        <item>Reliure :</item>
+                        <item>Descriptif :</item>
+                     </list>
+                     <p>Numéro d’ordre dans le corpus :</p>
+                     <p>Historique du manuscrit :</p>
+                     <p>Informations sur l’édition :</p>
+                     <list type="unordered">
+                        <item>Titre éditorial :</item>
+                        <item>Auteur de l’acte :</item>
+                        <item>Transcripteur :</item>
+                        <item>Éditeurs :</item>
+                        <item>Version :</item>
+                     </list>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Voir le document : <hi rend="Subtle_Emphasis"
+                           >desgodetsTeiheader</hi>
+                     </p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Notes explicatives ou historiques</head>
+                  <div type="introduction">
+                     <p>Après avoir établi le texte et fourni les premiers éléments de
+                        paratexte (une analyse, et la description du manuscrit),
+                        l’éditeur enrichira le paratexte en ajoutant au fichier des
+                        notes (commentaires explicatifs, précisions sur le
+                        contexte...).</p>
+                     <p>Pour le projet d’édition, il préparera le balisage de diverses
+                        informations pour en préparer l’indexation ; certains des mots
+                        ou expressions indexés dans le corps de la transcription
+                        pourront être liés à des notices décrivant les « objets »
+                        indexés (personnes, lieux, organismes, événements, ...).</p>
+                     <p>L’édition critique sera accompagnée d’un double arsenal de
+                        note, notes génériques et notes d’apparat critique. Numérique
+                        pour les commentaires historiques et interprétatifs, et
+                        alphabétique pour les commentaires liés à la transcription ou à
+                        la version.</p>
+                  </div>
+                  <div type="preEncoding">
+                     <head>Pré-encodage</head>
+                     <p>L’apparat critique est pré-encodé à l’aide des fonctionnalités
+                        de notes du logiciel de traitement de texte. Pour traiter le
+                        double arsenal de notes, les éditeurs utiliseront conjointement
+                        les notes de bas de page (pour les commentaires liés à la
+                        transcription ou à la version) et les notes de fin de texte
+                        (pour les commentaires historiques et interprétatifs).</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Les notes de commentaire historique sont encodées dans un
+                           élément <hi rend="Strong">note</hi>, le segment de texte
+                           concerné est marqué par l’élément <hi rend="Strong">ref</hi>
+                        </p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p><hi rend="bigger bold">La Plus ancienne des Eglises dont
+                                 on ait</hi> la Description, est <ref
+                                 type="noteHistorical" target="#c2Nh0004">au Raport de
+                                    <persName ref="#deFleury">Monsieur de
+                                    fleury</persName> dans le Troisième Tome livre
+                                 dixième de son histoire Ecclésiastique</ref>.</p>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Notes critiques n° alphabétique, « a, b, c, d,… aa, aaa,
+                        etc. »</p>
+                     <p>Notes historiques numérotation en chiffres arabes</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Indexation</head>
+                  <div type="introduction">
+                     <p>L’édition critique nécessite l’établissement d’un index des
+                        matières, des noms et des lieux. Par ailleurs, nous envisageons
+                        la possibilité de créer un glossaire des termes architecturaux
+                        et juridiques. Les auteurs de l’édition critique peuvent s’ils
+                        le souhaitent préparer cette indexation.</p>
+                     <p>Pour ce faire, toutes les expressions qui peuvent retenir
+                        l’attention de l’éditeur scientifique seront repérées.</p>
+                  </div>
+                  <div type="item">
+                     <head>Termes significatifs</head>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <div type="content">
+                           <p>Faire suivre le passage concerné de l’entrée d’index
+                              éventuelle entre crochets. Utilisation du style
+                              « Desgodets GlossaireJuridique » ou « Desgodets
+                              GlossaireTechnique » en fonction du cas concerné.</p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>Colomne [colonne], l’ensemble du passage concerné et
+                              l’entrée d’index entre crochet avec le style
+                              concerné.</p>
+                        </div>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <div type="content">
+                           <p>Les termes significatifs dans le texte sont encodés au
+                              moyen d’un élément <hi rend="Strong">term</hi>
+                           </p>
+                           <p>Pour ces termes, une forme normalisée est fournie au
+                              moyen d’un élément <hi rend="Strong">choice</hi> qui
+                              contient un élément <hi rend="Strong">orig</hi> pour la
+                              forme originale et un élément <hi rend="Strong">reg</hi>
+                              pour la forme régularisée.</p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <term type="#glossariumJuris" ref="#logements">
+                                 <choice>
+                                    <orig>logemens</orig>
+                                    <reg>logements</reg>
+                                 </choice>
+                              </term>
+                           </egXML>
+                        </div>
+                     </div>
+                     <div type="rendering">
+                        <p rend="heading 5">Rendu</p>
+                        <p>On se contente d’afficher la forme originale contenue dans
+                              <hi rend="Strong">orig</hi>.</p>
+                        <p>Au survol, proposer la forme régularisée <hi rend="Strong"
+                              >reg</hi>
+                        </p>
+                        <p>À la ligne l’entrée du glossaire contenue dans <hi
+                              rend="Strong">orth</hi> à l’intérieur de <hi
+                              rend="Strong">form</hi> et la définition dans <hi
+                              rend="Strong">def</hi>, avec un lien hypertexte vers
+                           l’entrée concernée du glossaire.</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Noms propres</head>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <p>Faire suivre le passage concerné de l’entrée d’index
+                           éventuelle entre crochets. Utilisation du style « Desgodets
+                           IndexNominum »</p>
+                        <p>Pour l’entrée d’index, on utilisera lorsque c’est possible
+                           la forme retenue dans le fichier d’autorité de la
+                           Bibliothèque nationale de France (BnF). On la fera suivre
+                           (après un « ; ») de l’identifiant ARK de la notice
+                           d’autorité de la Bnf.</p>
+                        <p>
+                           <hi rend="bold">Le catalogue des notices d’autorités de la
+                              BnF peut être interrogé à l’adresse suivante :</hi>
+                           http://catalogue.bnf.fr/jsp/recherche_autorites_bnf.jsp</p>
+                        <p>
+                           <hi rend="bold">L’identifiant ARK</hi> de la notice
+                           d’autorité prend la forme d’une adresse internet (URL) et se
+                           trouve au bas de la notice.</p>
+                        <p>AKL</p>
+                        <p>Biographie française</p>
+                        <p>[« forme_originale » ; forme_normale_ISO ;
+                           identifiant_pérenne(URL) ; source]</p>
+                        <p rend="heading 8">Exemple</p>
+                        <p>Vitruve</p>
+                        <p>[« vitruve » ; <hi rend="color(262626)">Vitruve (0090?-0020?
+                              av. J.-C.) ; </hi>
+                           <ref
+                              target="http://catalogue.bnf.fr/ark:/12148/cb15307086m/UNIMARC">
+                              <hi rend="footnote_reference"
+                                 >http://catalogue.bnf.fr/ark:/12148/cb15307086m/UNIMARC</hi>
+                           </ref>
+                           <hi rend="color(262626)"> ; autoritésBNF]</hi>
+                        </p>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <div type="content">
+                           <p>Les noms propres sont repérés dans le texte au moyen d’un
+                              élément <hi rend="Strong">persName</hi>
+                           </p>
+                           <p>L’attribut <hi rend="Intense_Emphasis">ref</hi> pointe
+                              vers l’entrée concernée dans l’index</p>
+                           <p>Les noms d’organisation s’encodent de la même manière
+                              avec un élément <hi rend="Strong">orgName</hi>
+                           </p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Sa
+                                 Grandeur, où <persName ref="#Noé">Noë</persName> se
+                                 retira par l’Ordre […]</p></egXML>
+                        </div>
+                     </div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                        <p>Matérialiser la présence de l’entité nommée dans le texte.
+                           Au survol, fournir l’entrée normalisée de l’entité-nommée
+                           (cf. plus bas index).</p>
+                        <p>Double clic pour accéder à l’index.</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Noms de lieux</head>
+                     <div type="preEncoding">
+                        <head>Pré-encodage</head>
+                        <div type="content">
+                           <p>Faire suivre le passage concerné de l’entrée d’index
+                              éventuelle entre crochets. Utilisation du style
+                              « Desgodets IndexLocorum »</p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <p>Ex : Rome [Rome (Italie) ; <ref
+                                 target="http://catalogue.bnf.fr/ark:/12148/cb15307086m/PUBLIC"
+                                 >http://catalogue.bnf.fr/ark:/12148/cb15307086m/PUBLIC</ref>]</p>
+                           <p>Voir ci dessus pour l’utilisation du fichier d’autorité
+                              de la BnF.</p>
+                        </div>
+                     </div>
+                     <div type="encoding">
+                        <head>Encodage</head>
+                        <div type="content">
+                           <p>Les noms de lieu sont repérés dans le texte au moyen de
+                              l’élément <hi rend="Strong">placeName</hi>
+                           </p>
+                           <p>L’attribut <hi rend="Intense_Emphasis">ref</hi> pointe
+                              vers l’entrée concernée dans l’index </p>
+                        </div>
+                        <div type="exemple">
+                           <head>Exemple</head>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>[…]
+                                 l’assemblée des fidelles de <placeName
+                                    ref="#Jerusalem">Jérusalem</placeName> se faisoit
+                                 […]</p></egXML>
+                        </div>
+                     </div>
+                     <div type="rendering">
+                        <head>Rendu</head>
+                        <p>Matérialiser la présence de l’entité nommée dans le texte.
+                           Au survol, fournir l’entrée normalisée de l’entité-nommée
+                           (cf. plus bas index).</p>
+                        <p>Double clic pour accéder à l’index.</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Index des noms de personnes</head>
+                     <div type="introduction">
+                        <p>Dans la mesure du possible nous essayerons de fournir la
+                           forme normalisée du nom dans l’index.</p>
+                        <p>Dans les cas où celle-ci n’existe pas, on en reconstitue une
+                           conforme aux normes en vigueur de la manière suivante à
+                           partir de l’encodage.</p>
+                     </div>
+                     <div type="encoding">
+                        <head>Ex :</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><person
+                              xml:id="celestin">
+                              <persName full="yes">Célestin I<hi rend="superscript"
+                                    >er</hi> (pape ; 03..-0432?)</persName>
+                              <persName>
+                                 <forename>Célestin I<hi rend="superscript"
+                                    >er</hi></forename>
+                                 <roleName>pape</roleName>
+                              </persName>
+                              <birth notBefore="0300">03..</birth>
+                              <death notAfter="0432">0432?</death>
+                              <idno type="autBnf"
+                                 >http://catalogue.bnf.fr/ark:/12148/cb13526759w/PUBLIC</idno>
+                           </person>
+                        </egXML>
+                     </div>
+                     <div type="rendering">
+                        <p>on affiche :</p>
+                        <p>célestin I<hi rend="superscript">er</hi> (pape ;
+                           03..-0432 ?)</p>
+                        <p>Afficher au survol la forme normalisée du nom dans l’index
+                           si elle est disponible (<hi rend="Strong">persName</hi> avec
+                              <hi rend="Intense_Emphasis">full</hi>=”<hi
+                              rend="Emphasis">yes</hi>” dans l’index), suivie du
+                           contenu textuel de l’élément occupation s’il est présent, en
+                           italique.</p>
+                        <p>Lorsque la forme normalisée du nom n’est pas disponible,
+                           afficher les différentes composantes du nom (<hi
+                              rend="Strong">foreName</hi>, <hi rend="Strong"
+                              >surName,</hi> etc.) en se basant, à l’intérieur de
+                           persName, sur la valeur des attributs sort. Le tout
+                           immédiatement suivi, entre parenthèses, de <hi rend="Strong"
+                              >roleName</hi> s’il est présent suivi d’un point-virgule,
+                           puis <hi rend="Strong">dateBirth</hi> et <hi rend="Strong"
+                              >dateDeath</hi> séparées par un tiret, puis la valeur de
+                           l’élément <hi rend="Strong">nameLink</hi> s’il est présent
+                           séparée d’un point-virgule. Suivie du contenu textuel de
+                           l’élément occupation s’il est présent, en italique.</p>
+                        <p>Page d’index</p>
+                        <p>Fournir l’entrée normalisée (<hi rend="Intense_Emphasis"
+                              >full</hi>=”<hi rend="Emphasis">yes</hi>”) et des liens
+                           vers ses occurrences, classées par Cours, à partir des
+                           identifiants des segments concernés.</p>
+                        <p>Se contenter de mettre une icône de la bnf dans la colonne
+                           de droite avec un lien hypertexte lorsque l’élément <hi
+                              rend="Strong">idno</hi>
+                           <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                              >autBnf</hi>” est présent. [ménager la possibilité
+                           d’autres icônes par type de référence]</p>
+                     </div>
+                  </div>
+                  <div type="item">
+                     <head>Index des noms de lieux</head>
+                     <p>Nous fournirons systématiquement la forme normalisée du nom de
+                        lieu dans l’index :</p>
+                     <p>Afficher au survol la forme normalisée du nom dans l’index si
+                        elle est disponible (<hi rend="Strong">placeName</hi> avec <hi
+                           rend="Intense_Emphasis">full</hi>=”<hi rend="Emphasis"
+                           >yes</hi>” dans l’index).</p>
+                     <p>Page d’index</p>
+                     <p>Fournir l’entrée normalisée (<hi rend="Intense_Emphasis"
+                           >full</hi>=”<hi rend="Emphasis">yes</hi>”) et des liens vers
+                        ses occurrences, classées par Cours, à partir des identifiants
+                        des segments concernés.</p>
+                     <p>Prévoir icône de notice d’autorité lorsque <hi rend="Strong"
+                           >idno</hi>
+                        <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                           >autBnf</hi>” est présent.</p>
+                  </div>
+                  <div type="item">
+                     <head>Index matière</head>
+                     <div>
+                        <head>Encodage</head>
+                        <p>Encodage avec une série d’éléments <hi rend="Strong"
+                              >index</hi> et <hi rend="Strong">term</hi>.</p>
+                        <p>Les sous-entrées sont encodées dans un élément <hi
+                              rend="Strong">index</hi>.</p>
+                        <p>On référencie les segments concernés dans le texte de
+                           l’édition par un attribut <hi rend="Intense_Emphasis"
+                              >ana</hi>.</p>
+                        <p rend="heading 5">Rendu</p>
+                        <p>Ne rien faire dans l’édition.</p>
+                        <p>Page d’index :</p>
+                        <p>Afficher l’entrée d’index et les occurrences des passages
+                           concernés (par leur identifiants), classés par cours.</p>
+                        <p>Les occurrences sont des liens hypertextes</p>
+                        <p>Architecture</p>
+                        <p> civile</p>
+                        <p> c2.body.01, c2.body.04.43</p>
+                        <p> privée</p>
+                        <p> c2.body.01, c2.body.04.43</p>
+                     </div>
+                     <div type="item">
+                        <head>Dates</head>
+                        <div type="introduction">
+                           <p>Les mentions de dates seront localisées à l’aide du style
+                              « Desgodets Date ». Elles pourront éventuellement être
+                              précisées par l’éditeur par un ajout entre crochets de la
+                              manière suivante : [date : 1670-06-22].</p>
+                        </div>
+                        <div type="encoding">
+                           <head>Encodage</head>
+                           <p>Utilisation de l’élément <hi rend="Strong">date</hi>
+                           </p>
+                        </div>
+                        <div type="rendering">
+                           <head>Rendu</head>
+                           <p>Ne rien faire.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Mesures et unités</head>
+                  <div type="introduction">
+                     <p>De par la nature des textes, l’encodage des unités de mesures
+                        dans le Cours du Toisé notamment présente un intérêt
+                        particulier.</p>
+                     <p>Le nombre d’unités de mesure à encoder étant important, la
+                        gestion de la conversion est opérée à partir d’un fichier
+                        séparé de sorte qu’il soit aisément modifiable.</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content">
+                        <p>Les mesures et unités sont encodées à l’aide de l’élément
+                              <hi rend="Strong">measure</hi> qui prend des attributs
+                              <hi rend="Intense_Emphasis">type</hi> pour le type de
+                           mesure, <hi rend="Intense_Emphasis">unit</hi> pour l’unité,
+                           et <hi rend="Intense_Emphasis">quantity</hi> pour
+                           l’indication numérique.</p>
+                     </div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>[…] une
+                              pièce de bois de <measure type="lenght" unit="pied"
+                                 quantity="10">10 pieds</measure> de longueur
+                           […]</p></egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Les passages sont transcrits tels qu’ils apparaissent dans le
+                        texte. Lorsqu’il y a une abréviation celle-ci est développée
+                        (voir plus haut).</p>
+                     <p>Prévoir la possibilité de fournir une conversion au survol à
+                        partir du tableau de conversion. Ce tableau comprend les champs
+                        suivant : valeur pour l’attribut unit, type de mesure, intitulé
+                        développé (pour l’affichage de la mesure originale au survol),
+                        équivalent modernisé, unité moderne (pour le calcul de la
+                        conversion).</p>
+                  </div>
+               </div>
+               <div type="chapter">
+                  <head>Traitements bibliographiques</head>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <p>Utilisation du module <hi rend="Strong">bibStruct</hi> de TEI
+                        qui fournit tous les éléments nécessaires</p>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Les listes bibliographiques du projet respectent les normes de
+                        présentation bibliographiques en vigueur en France.</p>
+                     <p>Les notes peuvent faire référence, au moyen d’un élément <hi
+                           rend="Strong">bibl</hi>, à une référence bibliographique
+                        qu’il faudra restituée à cet endroit à partir de son
+                        enregistrement dans la liste.</p>
+                     <p>Voir le fichier <hi rend="Subtle_Emphasis"
+                           >desgodetsStyleBiblio</hi>.</p>
+                  </div>
+               </div>
+            </div>
+         <div type="part">
+            <head>Encodage des parties éditoriales du site</head>
+            <div type="chapter">
+               <head>Arborescence de fichiers</head>
+               <p>Pour faciliter le traitement des fichiers, on a utilisé la même
+                  profondeur d’arborescence que pour l’édition des cours manuscrits
+                  pour les fichiers des pages éditoriales.</p>
+               <p>Les fichiers concernant chaque section des parties éditoriales du
+                  site (« Antoine Desgodets », « Le projet de recherche »,
+                  « L’édition », « Colloques ») sont regroupés dans des
+                  sous-répertoires distincts à la racine du dossier de l’édition (<hi
+                     rend="Subtle_Emphasis">varia</hi>, <hi rend="Subtle_Emphasis"
+                     >research</hi>, <hi rend="Subtle_Emphasis">edition</hi>, <hi
+                     rend="Subtle_Emphasis">meeting</hi>).</p>
+               <p>À la racine de ce sous-répertoire, on trouve un fichier corpus TEI
+                  qui inclut toutes les pages concernées. Pour plus de commodité, ces
+                  pages sont regroupées dans un sous-répertoire unique intitulé <hi
+                     rend="Subtle_Emphasis">texts</hi> qui les fichiers XML-TEI de
+                  chaque page et comprend un répertoire <hi rend="Subtle_Emphasis"
+                     >divs</hi> pour les fragments XML des fichiers.</p>
+            </div>
+            <div type="chapter">
+               <head>Modèle XML-TEI et remarques sur les spécificités de
+                  l’encodage</head>
+               <p>Les parties éditoriales du site sont encodées à l’aide d’un modèle
+                  TEI simplifié par rapport à celui de l’édition critique des
+                  manuscrits. Ce modèle est un sous-ensemble du modèle général de sorte
+                  que les transformations prévues pour l’affichage des manuscrits
+                  soient réutilisables pour les parties éditoriales du site.</p>
+               <p>Dans l’élément <hi rend="Strong">front</hi>, ajout d’un <hi
+                     rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                     >abstract</hi>” sur <hi rend="Strong">div</hi> pour renseigner le
+                  résumé des articles de la partie historiographique du site afin de
+                  pouvoir produire les pages de sommaire.</p>
+               <p>Ajout d’un <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                     >note</hi>” sur <hi rend="Strong">ref</hi> pour identifier les
+                  notes concernant les textes de la partie historiographique.</p>
+               <p>Rendu comme dans le reste du site, numérotation numérique.</p>
+               <p>Ajout d’une division de <hi rend="Intense_Emphasis">type</hi>=”<hi
+                     rend="Emphasis">downloads</hi>” pour fournir les liens de
+                  téléchargement de fichier. On titre la section de téléchargement à
+                  partir de la valeur textuelle de l’élément <hi rend="Strong"
+                     >head</hi>. Ajout d’un <hi rend="Intense_Emphasis">type</hi>=”<hi
+                     rend="Emphasis">file</hi>” sur les éléments <hi rend="Strong"
+                     >ref</hi> pour le téléchargement de fichiers.</p>
+               <p>Le lien de téléchargement est à afficher dans la colonne de droite à
+                  la manière de l’icône Bnf pour les index (Sophie prépare une
+                  visualisation).</p>
+            </div>
+            <div type="chapter">
+               <head>Page d’accueil des parties éditoriales</head>
+               <p>On affiche une page d’accueil pour chaque section éditoriale du site
+                  (comme pour les versions des cours).</p>
+               <p>Cette page est produite à partir d’un fichier inclus dans le corpus,
+                  comme les pages de présentation des Cours, ce qui permet de
+                  réutiliser les mêmes règles. Ces fichiers, par exemple <hi
+                     rend="Emphasis">meetingsPresentation</hi>, se trouvent comme les
+                  autres fichiers de chaque rubrique dans un répertoire <hi
+                     rend="Emphasis">texts</hi> pour être au même niveau de
+                  l’arborescence que dans l’édition des cours.</p>
+               <p>Affichage :</p>
+               <p>Le titre de la page de présentation : (titre 1),
+                  //front/titlePage/titlePart du fichier de présentation. Il n’y a pas
+                  d’auteur à afficher sur les pages de présentation des rubriques, ni
+                  de version.</p>
+               <p>Afficher le texte de présentation s’il est présent.</p>
+               <p>On met en « Titre 3 » du modèle de Sophie le contenu de head :
+                     front/div[@type=<hi rend="color(006666)">"</hi>introduction<hi
+                     rend="color(006666)">"</hi>/head s’il est présent</p>
+               <p>Générer la liste des articles dans une division à partir de divGen
+                  n=”content” type=”content”.</p>
+               <p>On affiche le titre fourni avec head en « titre 4 » du modèle de
+                  Sophie.</p>
+               <p>La liste des articles contient les éléments suivants :</p>
+               <list type="unordered">
+                  <item>les titres de chacun des articles de la rubrique (<hi
+                        rend="Strong">titlePart</hi> de <hi rend="Strong"
+                        >pageTitle</hi> de chacun des articles inclus dans le corpus de
+                     la rubrique) en « Intertitre » du modèle de Sophie,</item>
+                  <item>les auteurs de chacun des articles de la rubrique (<hi
+                        rend="Strong">docAuthor</hi> de <hi rend="Strong"
+                        >pageTitle</hi>) « en Auteur, Titre » du modèle de
+                     Sophie,</item>
+                  <item>le résumé de présentation de chacun des articles de la rubrique
+                     (div <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                        >abstract</hi>”).</item>
+               </list>
+               <p>
+                  <hi rend="bold">Marge à gauche</hi>
+               </p>
+               <p>Dans la marge à gauche, afficher : </p>
+               <p>Le titre de la page de présentation : contenu de titlePart de
+                  pageTitle.</p>
+               <p>La liste des articles de la rubrique. (titlePart de pageTitle de
+                  chacun des articles inclus dans le corpus de la rubrique)</p>
+               <p>Sur les pages d’accueil de chacune des rubriques, il n’y a pas de
+                  fichier à télécharger.</p>
+               <p>[les pages doivent ressembler à ce genre de présentation :
+                  http://nrt.revues.org/566]</p>
+            </div>
+            <div type="chapter">
+               <head>Pages des parties éditoriales du site</head>
+               <div type="item">
+                  <head>Colonne principale</head>
+                  <p>Suivre les règles graphiques proposées dans la charte
+                     graphique.</p>
+                  <list type="unordered">
+                     <item>Titre 1 : titlePart @type=”main” de titlePage ou titlePage
+                        sans attribut type.</item>
+                     <item>Titre 2 : titlePart @type=”sub”</item>
+                     <item>Titre 3 : au lieu de préface, prend
+                        @type=”introduction”</item>
+                     <item>Titre 4 : @type=”part” (je vais tout remonter d’un
+                        niveau)</item>
+                     <item>Titre 5 : @type=”chapter”</item>
+                     <item>Intertitre : @type=”section”</item>
+                  </list>
+               </div>
+               <div type="item">
+                  <head>Niveaux à afficher dans le sommaire des pages individuelles
+                     parties éditoriales du site (colonne de gauche)</head>
+                  <p>Contenu de l’élément <hi rend="Strong">head</hi> des divisions
+                     suivantes : <hi rend="Strong">div</hi>
+                     <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                        >introduction</hi>”, <hi rend="Intense_Emphasis">type</hi>=”<hi
+                        rend="Emphasis">part</hi>”, et div <hi rend="Intense_Emphasis"
+                        >type</hi>=”<hi rend="Emphasis">chapter</hi>”, <hi
+                        rend="Strong">div</hi>
+                     <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                        >conclusion</hi>”, <hi rend="Strong">div</hi>
+                     <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                        >notes</hi>”, <hi rend="Strong">div</hi>
+                     <hi rend="Intense_Emphasis">type</hi>=”<hi rend="Emphasis"
+                        >figures</hi>”</p>
+               </div>
+               <div type="item">
+                  <head>Fichiers à télécharger dans les parties éditoriales du
+                     site</head>
+                  <div type="introduction">
+                     <p>Comme cela était prévu dans le cahier des charges, les pages
+                        éditoriales du site peuvent comporter des fichiers à
+                        télécharger.</p>
+                  </div>
+                  <div type="encoding">
+                     <head>Encodage</head>
+                     <div type="content"><p>Le lien vers les fichiers en téléchargement est fourni dans le
+                           <gi>back</gi> à l’intérieur d’une division de <hi
+                           rend="Intense_Emphasis">type</hi> « downloads ». Le lien
+                        vers le fichier est renseigné avec un élément <gi>ref</gi> qui
+                        porte l’attribut <hi rend="Intense_Emphasis">type</hi>=”<hi
+                           rend="Emphasis">file</hi>”. On indique le type mime d’après
+                        la liste de l’IANA
+                        (http://www.iana.org/assignments/media-types/) avec l’attribut
+                           <hi rend="Intense_Emphasis">mimeType</hi> pour générer
+                        l’icône de téléchargement adéquate.</p>
+                     <p>Le nom du fichier est extrait du contenu de l’élément <hi
+                           rend="Strong">p</hi>.</p></div>
+                     <div type="exemple">
+                        <head>Exemple</head>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <!-- lien vers le fichier à télécharger -->
+                           <div xml:lang="fre" type="downloads">
+                              <head>Téléchargements</head>
+                              <p><ref type="file" target="../../files/programme2010.pdf" mimeType="application/pdf">programme</ref></p>
+                              <p><ref type="file" target="../../schema/desgodetsSchemaTEI.rnc" mimeType="application/xml">Schéma RelaxNG</ref></p>
+                              <p><ref type="file" target="desgodetsModel.tei.xml" mimeType="application/tei+xml">Fichier XML</ref></p>
+                           </div>
+                        </egXML>
+                     </div>
+                  </div>
+                  <div type="rendering">
+                     <head>Rendu</head>
+                     <p>Faire apparaître une icône de téléchargement dans la marge de
+                        droite en haut avec le nom du fichier.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </body>
+      <back>
+         <div xml:id="desgodetsMemoireBackFr" xml:lang="fr">
+            <div>
+               <head>Dictionnaire des balises à traiter</head>
+               <p>
+                  <ref target="#_Les_abréviations_et">abbr (abréviation)</ref>
+               </p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions">add (ajout)</ref>
+               </p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions_1">addSpan (partie de texte
+                     ajoutée)</ref>
+               </p>
+               <p>argument (argument)</p>
+               <p>author (auteur)</p>
+               <p>
+                  <ref target="#_Divisions_1">back (texte postliminaire)</ref>
+               </p>
+               <p>biblStruct</p>
+               <p>
+                  <ref target="#_Divisions_3">body</ref>
+               </p>
+               <p>byline</p>
+               <p>
+                  <ref target="#_Titres_courants_et">catchwords (réclame)</ref>
+               </p>
+               <p>cb</p>
+               <p>
+                  <ref target="#_Listes_et_tableaux_4">cell (cellule)</ref>
+               </p>
+               <p>
+                  <ref target="#_Incertitudes,_etc._1">certainty (certitude)</ref>
+               </p>
+               <p>choice (choix) <hi rend="italic">voir </hi>
+                  <ref target="#_Les_abréviations_et_1">
+                     <hi rend="italic">abréviations</hi>
+                  </ref>
+                  <hi rend="italic">, voir </hi>
+                  <ref target="#_Graphies_de_l’époque_2">
+                     <hi rend="italic">régularisation</hi>
+                  </ref>
+               </p>
+               <p>damage (partie endommagée)</p>
+               <p>damageSpan (passage endommagé)</p>
+               <p>
+                  <ref target="#_Dates">date (date)</ref>
+               </p>
+               <p>dateline</p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions_2">del (suppression)</ref>
+               </p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions_3">delSpan (passage
+                     supprimé)</ref>
+               </p>
+               <p>
+                  <ref target="#_Divisions">div (division)</ref>
+               </p>
+               <p>
+                  <ref target="#_Pages_de_titre">docAuthor (auteur)</ref>
+               </p>
+               <p>
+                  <ref target="#_Pages_de_titre_1">docDate (date de document)</ref>
+               </p>
+               <p>
+                  <ref target="_Pages_de_titre_2"> HYPERLINK \l "_Pages_de_titre_2"
+                        <ref target="_Pages_de_titre_2">docEdition</ref>
+                  </ref>
+               </p>
+               <p>
+                  <hi rend="Hyperlink">docImprint</hi>
+               </p>
+               <p>
+                  <hi rend="Hyperlink">docTitle</hi>
+               </p>
+               <p>
+                  <ref target="#_Les_abréviations_et_2">expan</ref>
+               </p>
+               <p>
+                  <ref target="#_Figures">figDesc</ref>
+               </p>
+               <p>
+                  <ref target="#_Figures_1">figure</ref>
+               </p>
+               <p>floatingText</p>
+               <p>
+                  <ref target="#_Langue_du_texte">foreign</ref>
+               </p>
+               <p>
+                  <ref target="#_Divisions_2">front</ref>
+               </p>
+               <p>
+                  <ref target="#_Titres_courants_et_1">fw (titre courant)</ref>
+               </p>
+               <p>
+                  <ref target="#_Texte_manquant_ou">gap (manque)</ref>
+               </p>
+               <p>
+                  <ref target="#_Corps_de_texte">head</ref>
+               </p>
+               <p>
+                  <ref target="#_Mise_en_valeur">hi (mise en valeur)</ref>
+               </p>
+               <p>imprint</p>
+               <p>
+                  <ref target="#_Listes_et_tableaux_3">item (item de liste)</ref>
+               </p>
+               <p>l (vers)</p>
+               <p>
+                  <ref target="#_Listes_et_tableaux_5">label (étiquette)</ref>
+               </p>
+               <p>
+                  <ref target="#_Fin_de_lignes">lb (saut de ligne)</ref>
+               </p>
+               <p>lg (groupe de vers)</p>
+               <p>
+                  <ref target="#_Listes_et_tableaux_2">list (liste)</ref>
+               </p>
+               <p>
+                  <ref target="#_Mesures_et_unités">measure (mesure)</ref>
+               </p>
+               <p>
+                  <ref target="#_Signes_graphiques">metamark</ref>
+               </p>
+               <p>
+                  <ref target="#_Notes_explicatives_ou">note (note)</ref>
+               </p>
+               <p>num (numéro)</p>
+               <p>opener (formule de début)</p>
+               <p>
+                  <ref target="#_Noms_propres">orgName (nom d’organisation)</ref>
+               </p>
+               <p>
+                  <ref target="#_Graphies_de_l’époque">orig (forme originale)</ref>
+               </p>
+               <p>
+                  <ref target="#_Paragraphes">p (paragraphe)</ref>
+               </p>
+               <p>
+                  <ref target="#_Pagination_et_foliotation">pb (saut de page)</ref>
+               </p>
+               <p>
+                  <ref target="#_Noms_propres_1">persName (nom de personne)</ref>
+               </p>
+               <p>
+                  <ref target="#_Noms_de_lieux">placeName (nom de lieu)</ref>
+               </p>
+               <p>
+                  <ref target="#_Citations">quotation (citation longue)</ref>
+               </p>
+               <p>
+                  <ref target="#_Citations_1">quote (citation)</ref>
+               </p>
+               <p>
+                  <ref target="#_Liens_et_renvois">ref (référence)</ref>
+               </p>
+               <p>
+                  <ref target="#_Graphies_de_l’époque_1">reg (régularisation)</ref>
+               </p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions_7">restore
+                     (rétablissement)</ref>
+               </p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions_6">retrace (retracé)</ref>
+               </p>
+               <p>
+                  <ref target="#_Listes_et_tableaux_1">row (rangée)</ref>
+               </p>
+               <p>salute (formule de politesse)</p>
+               <p>
+                  <ref target="#_Paragraphes_1">seg (segment quelconque)</ref>
+               </p>
+               <p>
+                  <ref target="#_Erreurs_syntaxiques_ou">sic (latin pour ainsi)</ref>
+               </p>
+               <p>signed (signature)</p>
+               <p>space (espace)</p>
+               <p>stamp (cachet)</p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions_5">subst (substitution)</ref>
+               </p>
+               <p>
+                  <ref target="#_Transcription_du_texte">supplied (texte
+                     restitué)</ref>
+               </p>
+               <p>
+                  <ref target="#_Listes_et_tableaux">table (tableau)</ref>
+               </p>
+               <p>
+                  <ref target="_Pages_de_titre_3"> HYPERLINK \l "_Pages_de_titre_3"
+                        <ref target="_Pages_de_titre_3">titlePage</ref>
+                     <ref target="_Pages_de_titre_3"> (page de titre)</ref>
+                  </ref>
+               </p>
+               <p>
+                  <hi rend="Hyperlink">titlePart (partie de titre)</hi>
+               </p>
+               <p>
+                  <ref target="#_Incertitudes,_etc.">unclear (incertain)</ref>
+               </p>
+               <p>
+                  <ref target="#_Ajouts_et_suppressions_4">undo</ref>
+               </p>
+               <p>à ajouter :</p>
+               <p>contraire si on les toise par le dedans on augmente une épaisseur de
+                  mur à chaque angle ensorte <hi rend="color(003366)">&lt;surplus</hi>
+                  <hi rend="color(FF33CC)"> reason=</hi>
+                  <hi rend="color(006666)">"repeated"</hi>
+                  <hi rend="color(003366)">&gt;</hi>ensorte<hi rend="color(003366)"
+                     >&lt;/surplus&gt;</hi>
+                  <hi rend="color(660066)">&lt;!-- TODO sortir du flux, l'élément
+                     n'était pas prévu dans le stylage --&gt; </hi>qu’à un pavillon
+                  l’on toise les deux murs opposés par le</p>
+               <p>supplied </p>
+            </div>
+         </div>
+      </back>
+   </text>
+</TEI>

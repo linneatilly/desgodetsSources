@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus de liste des figures de C1 -->
+<!-- RMQ le fichier est traité en fichier inclus pour faciliter le travail d'édition sur le document. -->
+<!-- un élément vide figDesc est destiné à accueillir la légende normalisée des figures -->
+
+<!--La lettre des planches est pour ainsi dire identique, on peut simplement dire que les dessins du manuscrit C2 de la Bnf  sont plus habiles que ceux du manuscrit C1 du Rijk. Parfois les deux manuscrits reproduisent les mêmes erreurs dans le titre des planches (pour le titre "églises monacale" par exemple) et il manque dans les deux témoins la planche IX des "Églises cathédrales". En revanche le volume C1 présente une erreur de numérotation c1Pl0012 absente de C2. Par ailleurs, dans C2, à la planche c2Pl0028, figure rayé un numéo "93" qui est celui de la même page dans C1, c'est aussi le cas aux planches c2Pl0040 et c2Pl0041 où figurent rayés les numéros 133 et 136 qui sont les numéros de page de C1. Les proportions du dessin des modénatures étant plus précises dans C2. Il semble que la première figure manque dans C1, mais cela est peut-être dû à une lacune dans la reproduction. Sous réserve d'une analyse textuelle et d'une vérification du manuscrit C1, il est probable que ces deux manuscrits aient été copiés d'une même source, le manuscrit C1 reproduisant exactement l'original et donc sa pagination. Le fait que l'on constate la même lacune dans les deux volumes pour la planche numéro IX du chapitre des Églises cathédrales tend à confirmer cette hypothèse.
+-->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" type="figures" xml:id="c1BackFr01" xml:lang="fre">
+    <head>Liste des figures</head>
+    <!-- Ière partie, Chapitre I -->
+    <figure xml:id="c1Pl0001" type="plate" facs="#c1FacsPl0001">
+        <fw type="header"><num n="2">I. dessein.</num>
+            <hi rend="majuscules"> Description des anciennes églises.</hi> Chap. I</fw>
+        <!-- On considère que la partie encadrée constitue un titre courrant -->
+        <head>Plan de léglise de <choice>
+            <abbr>S<hi rend="superscript">te</hi></abbr>
+            <expan>Sainte</expan>
+        </choice> Sabine <lb/>À Rome</head>
+        <!-- élément vide figDesc destiné à accueillir les légendes normalisées -->
+        <figDesc>
+            <desc></desc>
+            <dim></dim>
+        </figDesc>
+  </figure>
+    <figure xml:id="c1Pl0002" type="plate" facs="#c1FacsPl0002">
+        <fw type="header"><num n="2">II. dessein.</num>
+            <hi rend="majuscules"> Description des anciennes églises.</hi> Chap. I</fw>
+        <!-- On considère que la partie encadrée constitue un titre courrant -->
+        <!-- Tout est en majuscule par rapport au témoin de la Bnf. Chap. I au lieu de Ch. Ier -->
+        <head>Plan de léglise de <choice>
+                <abbr>S<hi rend="superscript">te</hi></abbr>
+                <expan>Sainte</expan>
+            </choice> Sabine <lb/>À Rome</head>
+        <!-- élément vide figDesc destiné à accueillir les légendes normalisées -->
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0003" type="plate" facs="#c1FacsPl0003">
+        <fw type="header"><num n="3">III. Dessein.</num>
+            <hi rend="majuscules"> Description des anciennes églises.</hi> Chap. I</fw>
+        <head>Profil sur la longeur de l’église de <choice>
+                <abbr>s<hi rend="superscript">te</hi></abbr>
+                <expan>sainte</expan>
+            </choice> sabine <lb/>À Rôme</head>
+        <figDesc/>
+    </figure>
+    <!-- On subdivise la planche en plusieurs figures. -->
+    <!-- TODO: Faire la même chose dans T2 -->
+    <figure xml:id="c1Pl0004" type="plate" facs="#c1FacsPl0004">
+        <fw type="header"><num n="4">IV. dessein</num>
+            <hi rend="majuscules"> Description des anciennes églises.</hi> Ch. I.</fw>
+        <figure xml:id="c1Fig0004.01">
+            <head>Profil sur la longeur de l’église de <choice>
+                    <abbr>S<hi rend="superscript">te</hi>.</abbr>
+                    <expan>Sainte</expan>
+                </choice> Sabine à Rome <lb/><num n="1">I. <choice>
+                        <abbr>Fig.<hi rend="superscript">e</hi></abbr>
+                        <expan>Figure</expan>
+                    </choice></num></head>
+        </figure>
+        <figure xml:id="c1Fig0004.03">
+            <head><num n="3">III. <choice>
+                        <choice>
+                            <abbr>Fig.<hi rend="superscript">e</hi></abbr>
+                            <expan>Figure</expan>
+                        </choice>
+                        <expan>Figure</expan>
+                    </choice>
+                </num>
+                <lb/>Desseins des chapiteaux de Colonne qui Séparent la nef des latéreaux
+                <lb/>Profil sur la Diagonale et par le milieu <lb/>Dessein de la face</head>
+        </figure>
+        <figure xml:id="c1Fig0004.02">
+            <head><num n="2">II. Figure</num>
+                <lb/>Base des colonnes <lb/>qui séparent la nef des <lb/>latéreaux.</head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0005" type="plate" facs="#c1FacsPl0005">
+        <fw type="header"><num n="5">V. dessein</num>
+            <hi rend="majuscules"> Description des anciennes églises.</hi> chap I.</fw>
+        <head>Plan de l'église de <choice>
+                <abbr>S<hi rend="superscript">te</hi></abbr>
+                <expan>Sainte</expan>
+            </choice> Marie Jn trasteveré, <lb/>À Rome.</head>
+        <!-- Présence d'une échelle qui ne figure pas dans C2 -->
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0006" type="plate" facs="#c1FacsPl0006">
+        <fw type="header"><num n="6">VI. dessein</num>
+            <hi rend="majuscules"> Description des anciennes églises.</hi> ch I.</fw>
+        <head>Profil Sur la longeur de l’église <choice>
+                <abbr>S<hi rend="superscript">te</hi></abbr>
+                <expan>Sainte</expan>
+            </choice> Marie Jntrasteveré. À Rome.</head>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0007" type="plate" facs="#c1FacsPl0007">
+        <fw type="header"><num n="7">VII. dessein.</num>
+            <hi rend="majuscules"> Description des anciennes églises.</hi> ch I.</fw>
+        <figure xml:id="c1Fig0007.01">
+            <head>Profil Sur la largeur de l’église de <choice>
+                    <abbr>S<hi rend="superscript">te</hi></abbr>
+                    <expan>Sainte</expan>
+                </choice> Marie Jnstrasteveré <lb/>À Rome. <lb/><num n="1">I<hi rend="superscript"
+                        >e</hi>
+                    <choice>
+                        <abbr>Fig<hi rend="superscript">e</hi></abbr>
+                        <expan>Figure</expan>
+                    </choice></num></head>
+        </figure>
+        <figure xml:id="c1Fig0007.02">
+            <head>Profil de l’entablement sur les colones qui séparent la nef des lattéreaux
+                    <lb/><num n="2">II <choice>
+                        <abbr>Fig<hi rend="superscript">e</hi></abbr>
+                        <expan>Figure</expan>
+                    </choice></num></head>
+        </figure>
+        <figure xml:id="c1Fig0007.03">
+            <head>Profil du chambranle de <lb/>la grande porte de l’entré de l’église <lb/><num
+                    n="2">III <choice>
+                        <abbr>Fig<hi rend="superscript">e</hi></abbr>
+                        <expan>Figure</expan>
+                    </choice></num>
+            <lb/>Rez de chaussée du Porche ou Portique</head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0008" type="plate" facs="#c1FacsPl0008">
+        <fw type="header"><num n="8">VIII. dessein</num>
+            <hi rend="majuscules"> Description des anciennes églises</hi> Ch I.</fw>
+        <figure xml:id="c1Fig0008.01">
+            <head><num n="1">I<hi rend="superscript">e</hi> Fig<hi rend="superscript"
+                >e</hi></num></head>
+            <!-- TODO: traiter les abréviations -->
+            <!-- TODO: identifier les zones -->
+            <!-- TODO: donner des descriptions dans <desc> -->
+        </figure>
+        <figure xml:id="c1Fig0008.02">
+            <head><num n="2">II<hi rend="superscript">e</hi> Fig<hi rend="superscript"
+                >e</hi></num></head>
+        </figure>
+        <figure xml:id="c1Fig0008.03">
+            <head><num n="3">III<hi rend="superscript">e</hi> Fig<hi rend="superscript"
+                >e</hi></num></head>
+        </figure>
+        <figure xml:id="c1Fig0008.04">
+            <head><num n="4">IV<hi rend="superscript">e</hi> Fig<hi rend="superscript"
+                >e</hi></num></head>
+        </figure>
+        <figure xml:id="c1Fig0008.05">
+            <head><num n="5">V<hi rend="superscript">e</hi> Fig<hi rend="superscript"
+                >e</hi></num></head>
+        </figure>
+        <figure xml:id="c1Fig0008.06">
+            <head><num n="6">VI<hi rend="superscript">e</hi> Fig<hi rend="superscript"
+                >e</hi></num></head>
+        </figure>
+        <figure xml:id="c1Fig0008.07">
+            <head><num n="7">VII<hi rend="superscript">e</hi> Fig<hi rend="superscript"
+                >e</hi></num></head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0009" type="plate" facs="#c1FacsPl0009">
+        <fw type="header"><num n="9">IX. dessein</num>
+            <hi rend="majuscules"> Description des anciennes églises</hi></fw>
+        <figure xml:id="c1Fig0009.01">
+            <head>Plan du Baptistère de Constantin, À Rome.
+                <lb/><num n="1">I<hi rend="superscript">e</hi> Fig<hi rend="superscript">e</hi></num></head>
+        </figure>
+        <figure xml:id="c1Fig0009.02">
+            <head><num n="2">II<hi rend="superscript">e</hi> Fig<hi rend="superscript">e</hi></num></head>
+        </figure>
+        <!-- Peut-être présenter partout les figures dans l'ordre où elles apparaissent. Ici peu problématique car localisation possible sur l'image. -->
+        <figDesc/>
+    </figure>
+    <!-- Ière partie, Chapitre II -->
+    <figure xml:id="c1Pl0010" type="plate" facs="#c1FacsPl0010">
+        <fw type="header"><num n="1">I dessein</num>
+            <hi rend="majuscules"> Église cathédrale</hi> Ch. II Section. I<hi rend="superscript">ère</hi>.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0011" type="plate" facs="#c1FacsPl0011">
+        <fw type="header"><num n="2">II dessein</num>
+            <hi rend="majuscules"> Église cathédrale</hi> Chap. II. Section. I.</fw>
+        <head>Plan des Murs et Fondations et des Caves Sous L'Église.</head>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0012" type="plate" facs="#c1FacsPl0012">
+        <fw type="header"><num n="3"><sic>IV.</sic> dessein</num>
+            <hi rend="majuscules"> Église cathédrale.</hi> Ch II.</fw>
+        <figure xml:id="c1Fig0012.01">
+            <head><num n="1">I<hi rend="superscript">ère</hi> Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0012.02">
+            <head><num n="2">II<hi rend="superscript">e</hi>. Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0012.03">
+            <head><num n="3">III<hi rend="superscript">e</hi> Fig<hi rend="superscript">e</hi></num>
+                <lb/>Profil des
+                <lb/>Architraves latérales</head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0013" type="plate" facs="#c1FacsPl0013">
+        <fw type="header"><num n="4">IV<hi rend="superscript">e</hi>. dessein.</num> <hi rend="majuscules"> Églises
+                cathédrales.</hi> chap. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0014" type="plate" facs="#c1FacsPl0014">
+        <fw type="header"><num n="5">V. dessein.</num> <hi rend="majuscules"> Églises cathédrales. </hi>
+            Ch. II<hi rend="superscript">e</hi>.</fw>
+        <figure xml:id="c1Fig0014.01">
+            <head>Plan du Soubassement du Dôme <lb/><num n="1">I Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0014.02">
+            <head>Plan du Corps du Dôme <lb/><num n="2">II. Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0014.03">
+            <head><num n="3">III Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0014.04">
+            <head>Élévation de la face de l'entré Principalle <lb/><num n="4">IIII. Figure</num></head>
+            <!-- Présence supplémentaire des lettres V pour la porte, et X pour les dessous des niches du Rch. -->
+        </figure>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0015" type="plate" facs="#c1FacsPl0015">
+        <fw type="header"><num n="6">VI. dessein</num> <hi rend="majuscules"> Églises cathédrales</hi>
+            Chap. II</fw>
+        <head>Élévation du flanc ou face de Costé.</head>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0016" type="plate" facs="#c1FacsPl0016">
+        <fw type="header"><num n="7">VII. dessein.</num> <hi rend="majuscules"> Églises cathédrales.</hi>
+            Ch. II.</fw>
+        <figDesc/>
+        <graphic url="facs/facsC1Pl0016.jpg"/>
+    </figure>
+    <figure xml:id="c1Pl0017" type="plate" facs="#c1FacsPl0017">
+        <fw type="header"><num n="8">VIII. dessein.</num> <hi rend="majuscules"> Églises
+                cathédrales.</hi> Ch. II. S. I<hi rend="superscript">e</hi>.</fw>
+        <figure xml:id="c1Fig0017.01">
+            <head><num n="1">1 <hi rend="superscript">ère</hi> figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0017.02">
+            <head><num n="2">2 <hi rend="superscript">ème</hi> figure</num></head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <!-- Il y a un saut dans la numérotation des planches -->
+    <figure xml:id="c1Pl0018" type="plate" facs="#c1FacsPl0018">
+        <fw type="header"><num n="10">X. dessein.</num> <hi rend="majuscules"> Églises cathédrales.</hi>
+            Chap. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0019" type="plate" facs="#c1FacsPl0019">
+        <fw type="header"><num n="11">XI. dessein.</num> <hi rend="majuscules"> Églises cathédrales</hi>
+            Chap. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0020" type="plate" facs="#c1FacsPl0020">
+        <fw type="header"><num n="12">XII, dessein.</num> <hi rend="majuscules"> Églises
+                cathédrales</hi> Ch. II. Sec. I.</fw>
+        <figDesc/>
+    </figure>
+    <!-- Ière partie, Chapitre III -->
+    <figure xml:id="c1Pl0021" type="plate" facs="#c1FacsPl0021">
+        <fw type="header"><num n="1">I. dessein</num> <hi rend="majuscules"> Églises paroissiales.</hi>
+            Chap. III S. I.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0022" type="plate" facs="#c1FacsPl0022">
+        <fw type="header"><num n="2">II. dessein</num> <hi rend="majuscules"> Églises
+                paroissiales.</hi> Chap III Section I.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0023" type="plate" facs="#c1FacsPl0023">
+        <fw type="header"><num n="3">III. dessein.</num> <hi rend="majuscules"> Églises paroissiales</hi> Chap III.</fw>
+        <figure xml:id="c1Fig0023.01">
+            <head><num n="1">1. Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0023.02">
+            <head><num n="2">2<hi rend="superscript">ème</hi> Figure</num></head>
+        </figure>
+        <figDesc/>
+        <graphic url="facs/facsC1Pl0023.jpg"/>
+    </figure>
+    <figure xml:id="c1Pl0024" type="plate" facs="#c1FacsPl0024">
+        <fw type="header"><num n="4">IV. dessein.</num> <hi rend="majuscules"> Églises paroissiales,</hi> Ch. III.
+            Sec. I.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0025" type="plate" facs="#c1FacsPl0025">
+        <fw type="header"><num n="5">V. dessein.</num> <hi rend="majuscules"> Églises paroissiales,</hi> Ch. III.</fw>
+        <head>Coupe ou Profil sur la longueur du dedans de l'église Paroissiale,</head>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0026" type="plate" facs="#c1FacsPl0026">
+        <fw type="header"><num n="6">VI. dessein.</num> <hi rend="majuscules"> Églises paroissiales</hi> Ch. III,</fw>
+        <figure xml:id="c1Fig0026.01">
+            <head><num n="1">I<hi rend="superscript">ère</hi> Figure,</num></head>
+        </figure>
+        <figure xml:id="c1Fig0026.02">
+            <head><num n="2">II. Figure,</num></head>
+        </figure>
+        <figure xml:id="c1Fig0026.03">
+            <head><num n="3">III. Figure.</num></head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0027" type="plate" facs="#c1FacsPl0027">
+        <fw type="header"><num n="7">VII. dessein.</num> <hi rend="majuscules"> Églises paroissiales.</hi> Ch. III.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0028" type="plate" facs="#c1FacsPl0028">
+        <fw type="header"><num n="8">VIII, dessein.</num> <hi rend="majuscules"> Églises paroissiales,</hi> Ch. III.
+            Sec. I,</fw>
+        <figDesc/>
+    </figure>
+    <!-- Ière partie, Chapitre IV -->
+    <figure xml:id="c1Pl0029" type="plate" facs="#c1FacsPl0029">
+        <fw type="header"><num n="1">I. dessein.</num> <hi rend="majuscules"> Églises monacales.</hi> Chap. IV. Sec.
+            I.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0030" type="plate" facs="#c1FacsPl0030">
+        <fw type="header"><num n="2">II. dessein.</num> <hi rend="majuscules"> Églises monacales,</hi> Chap. IV. Sec.
+            I.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0031" type="plate" facs="#c1FacsPl0031">
+        <fw type="header"><num n="3">III. dessein.</num> <hi rend="majuscules"> Églises monacales.</hi> Ch. IV. Sec.
+            I.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0032" type="plate" facs="#c1FacsPl0032">
+        <fw type="header"><num n="4">IV. dessein.</num> <hi rend="majuscules"> Églises monacales,</hi> Ch. IV. Sec.
+            I.</fw>
+        <figure xml:id="c1Fig0032.01" type="plate">
+            <head><num n="1">I. Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0032.02">
+            <head><num n="2">II. Figure</num></head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <!-- Ière partie, Chapitre V -->
+    <figure xml:id="c1Pl0033" type="plate" facs="#c1FacsPl0033">
+        <fw type="header"><num n="1">I. dessein.</num> <hi rend="majuscules"> Églises <sic>conventuelle</sic>.</hi> Ch. V. S.
+            I.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0034" type="plate" facs="#c1FacsPl0034">
+        <fw type="header"><num n="2">II. dessein.</num> <hi rend="majuscules"> Églises <sic>conventuelle</sic>.</hi> Ch. V Sec.
+            I.</fw>
+        <figure xml:id="c1Fig0034.01">
+            <head><num n="1">I. Figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0034.02">
+            <head><num n="2">II. Figure</num></head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0035" type="plate" facs="#c1FacsPl0035">
+        <fw type="header"><num n="3">III. dessein.</num> <hi rend="majuscules"> Église <sic>conventuelle</sic>,</hi> Ch. V. Sec.
+            I.</fw>
+        <figure xml:id="c1Fig0035.01">
+            <head><num n="1">1<hi rend="superscript">ère</hi> figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0035.02"/>
+        <figure xml:id="c1Fig0035.03"/>
+        <figDesc/>
+    </figure>
+    <!-- 2ème partie, Chapitre I -->
+    <figure xml:id="c1Pl0036" type="plate" facs="#c1FacsPl0036">
+        <fw type="header"><num n="1">I. dessein.</num> <hi rend="majuscules"> Hôtel Dieu.</hi> Ch. I. Sec. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0037" type="plate" facs="#c1FacsPl0037">
+        <fw type="header"><num n="2">II. dessein,</num> <hi rend="majuscules"> Hôtel Dieu.</hi> Ch. I. Sec. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0038" type="plate" facs="#c1FacsPl0038">
+        <fw type="header"><num n="3">III. dessein.</num> <hi rend="majuscules"> Hôtel Dieu.</hi> Ch. I. Sec. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0039" type="plate" facs="#c1FacsPl0039">
+        <fw type="header"><num n="4">IV. dessein.</num> <hi rend="majuscules"> Hôtel Dieu.</hi> Ch. I. Sec. II.</fw>
+        <figure xml:id="c1Fig0039.01">
+            <head><num n="1">I<hi rend="superscript">ère</hi> figure</num></head>
+        </figure>
+        <figure xml:id="c1Fig0039.02">
+            <head><num n="2">II<hi rend="superscript">e</hi> figure</num></head>
+        </figure>
+        <figDesc/>
+    </figure>
+    <!-- 2ème partie, Chapitre II -->
+    <figure xml:id="c1Pl0040" type="plate" facs="#c1FacsPl0040">
+        <fw type="header"><num n="1">I. dessein.</num> <hi rend="majuscules"> Hôtel de ville.</hi> Ch. II. S. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0041" type="plate" facs="#c1FacsPl0041">
+        <fw><num n="2">II. dessein.</num> <hi rend="majuscules"> Hôtel de ville.</hi> Ch. II. S. II.</fw>
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0042" type="plate" facs="#c1FacsPl0042">
+        <fw type="header"><num n="3">III. dessein.</num> <hi rend="majuscules"> Hôtel de ville.</hi> Ch. II. Sec. II.</fw>
+        <figDesc/>
+    </figure>
+    <!-- Planches d'une autre main -->
+    <figure xml:id="c1Pl0043" type="plate" facs="#c1FacsPl0043">
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0044" type="plate" facs="#c1FacsPl0044">
+        <figDesc/>
+    </figure>
+    <figure xml:id="c1Pl0045" type="plate" facs="#c1FacsPl0045">
+        <figDesc/>
+    </figure>
+</div>

@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+     fichier de présentation du corpus des cours de Desgodets sur le toisé
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- TODO : remplacer le faux-texte -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Traité du toisé</title>
+                <title xml:lang="fre" type="sub">Présentation</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d’ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d’Histoire de la Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="aut">auteur</resp>
+                    <persName ref="#JH">
+                        <forename>Juliette</forename>
+                        <surname>Hernu</surname>
+                    </persName>
+                    <persName ref="#LT">
+                        <forename>Linnéa</forename>
+                        <surname>Tilly</surname>
+                    </persName>
+                    <persName ref="#sakarovitchJoel">
+                        <forename>Jöel</forename>
+                        <surname>Sakarovitch</surname>
+                    </persName>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#JH">
+                        <forename>Juliette</forename>
+                        <surname>Hernu</surname>
+                    </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date from="2013" to="2013">2008-2013</date>
+            </edition>
+            </editionStmt>
+            <extent><!-- taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno n="presentation">tPresentation</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d’analyse du droit (UMR 7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                  <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                  <addrLine>UFR Droit et Science politique</addrLine>
+                  <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                  <addrLine>200, Avenue de la République</addrLine>
+                  <addrLine>92001 Nanterre Cedex</addrLine>
+                  <addrLine>France</addrLine>
+                  <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                  <addrLine>contact@desgodets.fr</addrLine>
+               </address>
+                </publisher>
+                <availability status="restricted" xml:id="tPresentationTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png"/>
+                    </licence>
+                    <p>Le Centre de théorie et d’analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d’auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d’Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb/>Cette licence est
+                        disponible en ligne : <ref target="http://creativecommons.org/licences/by-nc-sa/3.0/fr">http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d’Utilisation Commerciale : Le Centre de théorie et
+                        d’analyse du droit souhaite encourager l’utilisation et
+                        l’amélioration de ses ressources électroniques, pour les
+                        intérêts de l’enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d’analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d’analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb/>1. le nom du Centre de théorie
+                        et d’analyse du droit et, pour les publications électroniques,
+                        son logo <lb/>2. l’URI permettant d’accéder à la page citée
+                        sur notre site, ou à la page d’accueil de la ressource
+                        <lb/>3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d’analyse du droit
+                        s’engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s’engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l’origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l’autorité éditoriale du Centre de théorie et
+                        d’analyse risquerait en conséquence d’être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno>http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!-- ajout d'un élément pour DC.description -->
+            <notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="tPresentation">Texte original : le texte a été créé sous forme
+                    électronique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L’édition des cours de Desgodets fait partie d’un programme de recherche sur la
+                    formalisation du savoir architectural au XVII<hi rend="superscript">e</hi>
+                    siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d’un élément quote,
+                        soit au moyen d’un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira peut-être
+                    une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le
+                    cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation>Le texte été produit avec le logiciel Oxygen</creation>
+            <langUsage>
+                <language ident="fre" usage="99">Français (langue principale du corpus)</language>
+                <language ident="lat" usage="01">Latin (langue utilisée dans le corpus)</language>
+                <!-- Noter et évaluer le pourcentage d'autres langues dans le document avec @usage (valeurs numériques) -->
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-13" who="#EC">première version du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front xml:id="tPresentationFront">
+            <titlePage xml:id="tPresentationFront00" xml:lang="fre">
+                <docTitle>
+                    <titlePart>Présentation du Cours sur le toisé</titlePart>
+                </docTitle>
+                <docAuthor>Éditeurs : <persName ref="#RC">Robert Carvais</persName>, <persName ref="#JH">Juliette Hernu</persName>, <persName ref="#LT">Linnéa Rollenhagen-Tilly</persName>, <persName ref="#sakarovitchJoel">Jöel Sakarovitch</persName>
+            </docAuthor>
+                <docAuthor>Transcripteurs : <persName ref="#JB">Joëlle Barreau</persName>, <persName ref="#AB">Anne Bondon</persName>, <persName ref="#EC">Emmanuel Château</persName>, <persName ref="#LT">Linnéa Rollenhagen-Tilly</persName>
+            </docAuthor>
+                <docDate>14 avril 2013</docDate>
+                <docEdition>version 0</docEdition>
+            </titlePage>
+        </front>
+        <body xml:id="tPresentationBody">
+            <div xml:id="tPresentationBodyFr" xml:lang="fre">
+                <div xml:id="tPresentationBodyFr01" type="chapter" n="1">
+                    <head>Présentation du cours et dates de prononcé</head>
+                    <p>Dispensé <date from="1723" to="1728">entre 1723 et 1728</date>, le cours sur le toisé d’<persName ref="#desgodets">Antoine Desgodets</persName> constitue le premier témoignage écrit de la
+                        transmission de ce savoir pratique dans le cadre d’un
+                        enseignement. Son organisation porte la marque de ce transfert
+                        vers l’écrit et vers une forme de théorisation, puisqu’elle ne
+                        reflète plus (comme le fait encore celle de l’<hi rend="italic">Architecture pratique</hi> de <persName ref="#bulletPierre">Bullet</persName> 
+                  <date when="1691">en 1691</date>) l’ordre
+                        effectif du toisé, mais bien un ordre <hi rend="italic">a
+                            priori</hi>, pensé dans une démarche didactique et visant
+                        l’exhaustivité.</p>
+                    <p>L’importance de l’enseignement du toisé tient d’abord à ses
+                        nombreux usages, que sont <num>1°</num> la prévision des coûts par les
+                        commanditaires et entrepreneurs ; <num>2°</num> l’évaluation de la
+                        construction projetée par l’architecte, et les ajustements
+                        qu’elle permet sur le projet ; <num>3°</num> l’évaluation <hi rend="italic">a posteriori</hi> du coût de la construction
+                        pour le paiement. Dans cette perspective, le cours de Desgodets
+                        répond parfaitement aux besoins qui pouvaient être ceux des
+                        jeunes architectes de l’époque, en proposant un exposé
+                        exclusivement technique et particulièrement précis des méthodes
+                        de toisé.</p>
+                    <p>L’absence de manuscrit connu du cours de <persName ref="#laHireGrabrielPhilippeDe">Gabriel de La Hire</persName> sur
+                        ce même sujet retient d’envisager la continuité de
+                        l’enseignement entre les deux professeurs successifs (mais l’on
+                        notera que le cours de <persName ref="#desgodets">Desgodets</persName> est repris tel quel par <persName ref="#camusCharlesEtienneLouis">Le
+                        Camus</persName><!-- TODO vérifier que pas "Camus" plutôt que "Le Camus" qui introduit une confusion avec LeCamus de Mézières --> 
+                  <date when="1752">en 1752</date>), ou du moins la reprise par <persName ref="#desgodets">Desgodets</persName> d’un
+                        support en partie existant.</p>
+                </div>
+                <div xml:id="tPresentationBodyFr02" type="chapter" n="2">
+                    <head>Présentation des versions conservées et de leurs spécificités</head>
+                    <p>Treize copies manuscrites du toisé de <persName ref="#desgodets">Desgodets</persName> sont connues à
+                        ce jour. Leur contenu ne diffère que de façon résiduelle :
+                        certaines versions sont incomplètes (le chapitre 9 de la 2<hi rend="superscript">e</hi> section est absent des T1, T2,
+                        T4, T6<ref type="note" target="#tN0001"/>, T8 et T14), les chiffres reportés dans les calculs
+                        sont parfois différents entre plusieurs versions. La mise en
+                        page varie beaucoup plus largement d’une version à l’autre :
+                        les illustrations peuvent être regroupées sur des planches (T2,
+                        T3, T9, T10, T11, T13, T14) ou dispersées dans le texte (T1,
+                        T4, T5, T6, T8, T12), les formats diffèrent très nettement (ce
+                        qui peut laisser imaginer des usages différents) et l’on voit
+                        aussi bien un petit format de 18x12 cm sur 3,2 cm d’épaisseur
+                        pour le T3, qu’un format plus lisible de 35x22 cm sur 4 cm
+                        d’épaisseur pour le T2.</p>
+                    <p>De très légers indices, tels qu’une mauvaise orthographe du nom
+                        de <persName ref="#desgodets">Desgodets</persName> dans le titre des T1 et T4 (« Dégaudet », graphie
+                        assez peu courante), pourraient laisser penser à une filiation
+                        entre deux manuscrits, ou du moins à l’utilisation d’un modèle
+                        identique.</p>
+                    <table>
+                        <row>
+                            <cell/>
+                            <cell>Présence d’une série complète de figures</cell>
+                            <cell>Lisibilité des planches</cell>
+                            <cell>Figures en planches ou dispersées</cell>
+                            <cell>Texte comportant tous les chapitres du cours</cell>
+                            <cell>Lisibilité du texte</cell>
+                            <cell>Texte copié par un scripteur français</cell>
+                            <cell>Hauteur</cell>
+                            <cell>Largeur</cell>
+                            <cell>Dates mentionnées dans le manuscrit</cell>
+                            <cell>Elément de datation autre (filigrane, historique)
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>T1</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Fig</cell>
+                            <cell>Non</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>215</cell>
+                            <cell>165</cell>
+                            <cell>1724 </cell>
+                            <cell>Début XVIII<hi rend="superscript">e</hi> s.</cell>
+                        </row>
+                        <row>
+                            <cell>T2</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Pl</cell>
+                            <cell>Non</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>353</cell>
+                            <cell>227</cell>
+                            <cell>1724</cell>
+                            <cell>Pas de Filigrane</cell>
+                        </row>
+                        <row>
+                            <cell>T3</cell>
+                            <cell>Non <lb/>(- 3)
+                            </cell>
+                            <cell>Moyenne</cell>
+                            <cell>Pl</cell>
+                            <cell>Oui</cell>
+                            <cell>Moyen-ne</cell>
+                            <cell>Oui</cell>
+                            <cell>183</cell>
+                            <cell>120</cell>
+                            <cell>Pas de date</cell>
+                            <cell>Filigrane à identifier</cell>
+                        </row>
+                        <row>
+                            <cell>T4</cell>
+                            <cell>Oui </cell>
+                            <cell>Bonne</cell>
+                            <cell>Fig</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>225</cell>
+                            <cell>175</cell>
+                            <cell>1755</cell>
+                            <cell>1751</cell>
+                        </row>
+                        <row>
+                            <cell>T5</cell>
+                            <cell>Non <lb/>(- 2)</cell>
+                            <cell>Bonne</cell>
+                            <cell>Fig</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>190</cell>
+                            <cell>140</cell>
+                            <cell>Achevé en déc. 1725</cell>
+                            <cell>Filigrane à identifier</cell>
+                        </row>
+                        <row>
+                            <cell>T6</cell>
+                            <cell>Non</cell>
+                            <cell>Moyenne</cell>
+                            <cell>Fig</cell>
+                            <cell>Non</cell>
+                            <cell>Sans objet</cell>
+                            <cell>Oui</cell>
+                            <cell>272</cell>
+                            <cell>255</cell>
+                            <cell>Commencé à dicter le 17 nov. 1725</cell>
+                            <cell>Filigrane à identifier</cell>
+                        </row>
+                        <row>
+                            <cell>T7</cell>
+                            <cell>Sans objet</cell>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>T8</cell>
+                            <cell>Non <lb/>(- 4)</cell>
+                            <cell>Moyenne</cell>
+                            <cell>Fig</cell>
+                            <cell>Non</cell>
+                            <cell>Moyen-ne</cell>
+                            <cell>Oui</cell>
+                            <cell>180</cell>
+                            <cell>120</cell>
+                            <cell>1736</cell>
+                            <cell>Filigrane à identifier</cell>
+                        </row>
+                        <row>
+                            <cell>T9</cell>
+                            <cell>Non <lb/>(- 2)</cell>
+                            <cell>Bonne</cell>
+                            <cell>Pl</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>240</cell>
+                            <cell>185</cell>
+                            <cell>1745</cell>
+                            <cell>1742</cell>
+                        </row>
+                        <row>
+                            <cell>T10</cell>
+                            <cell>Non <lb/>(slt 6 fig.)</cell>
+                            <cell>Bonne</cell>
+                            <cell>Fig</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>105</cell>
+                            <cell>160</cell>
+                            <cell>Pas de date</cell>
+                            <cell>Filigrane à identifier</cell>
+                        </row>
+                        <row>
+                            <cell>T11</cell>
+                            <cell>Non <lb/>(- 2)</cell>
+                            <cell>Bonne</cell>
+                            <cell>Pl</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>220</cell>
+                            <cell>168</cell>
+                            <cell>1753</cell>
+                            <cell>Filigrane à identifier</cell>
+                        </row>
+                        <row>
+                            <cell>T12</cell>
+                            <cell>Non <lb/>(- 10)</cell>
+                            <cell>Bonne</cell>
+                            <cell>Fig</cell>
+                            <cell>Oui</cell>
+                            <cell>Moyen-ne</cell>
+                            <cell>Oui</cell>
+                            <cell>255</cell>
+                            <cell>200</cell>
+                            <cell>Achevé le 24 nov. 1764</cell>
+                            <cell>1745-1749</cell>
+                        </row>
+                        <row>
+                            <cell>T13</cell>
+                            <cell>Non <lb/>(- 2)</cell>
+                            <cell>Bonne</cell>
+                            <cell>Pl</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>200</cell>
+                            <cell>150</cell>
+                            <cell>Pas de date</cell>
+                            <cell>1767</cell>
+                        </row>
+                        <row>
+                            <cell>T14</cell>
+                            <cell>Oui</cell>
+                            <cell>Bonne</cell>
+                            <cell>Pl</cell>
+                            <cell>Non</cell>
+                            <cell>Bonne</cell>
+                            <cell>Oui</cell>
+                            <cell>288</cell>
+                            <cell>227</cell>
+                            <cell>Pas de date</cell>
+                            <cell>1754</cell>
+                        </row>
+                    </table>
+                </div>
+                <div xml:id="tPresentationBodyFr03" type="chapter" n="3">
+                    <head>Justification du choix du manuscrit encodé</head>
+                    <p>Tous les manuscrits étant des copies, le critère de date n’est
+                        pas essentiel pour le choix du manuscrit-maître. Le principal
+                        critère de choix a donc été le caractère de complétude du
+                        manuscrit retenu.</p>
+                    <p>La composition de la 2<hi rend="superscript">e</hi> section
+                        étant variable selon les manuscrits, pour présenter selon les
+                        cas huit ou neuf chapitres, il paraît opportun de choisir un
+                        manuscrit comportant les neuf chapitres, et qui soit par
+                        ailleurs le plus complet possible (sans toutefois perdre de vue
+                        que les ajouts ont pu être inclus dans le texte
+                        postérieurement, peut-être à l’initiative d’un tiers).</p>
+                    <p>La reproduction des figures en planches distinctes du texte
+                        semble enfin être la plus proche du mode de présentation
+                        original, sans que cela ne constitue toutefois un critère
+                        déterminant.</p>
+                    <p>Ces critères nous amènent à exclure les versions T1, T2, T4, T5,
+                        T6, T8, T12 et T14.</p>
+                    <p>Les manuscrits restant sont les T3, T9, T11 et T13. Le T13 étant
+                        vraiment tardif (<hi rend="italic">terminus post quem
+                        </hi>donné par le filigrane <date when="1767">en 1767</date>), nous avons choisi de
+                        l’exclure.</p>
+                    <p>Enfin, le T3 ne présentant aucun élément de datation, nous avons
+                        retenu le T9.</p>
+                </div>
+                <div xml:id="tPresentationBodyFr04" type="chapter" n="4">
+                    <head>Portée du texte</head>
+                    <p>Le nombre de copies manuscrites conservées témoigne de
+                        l’importance durable et de l’utilité de cet écrit. On sait les
+                        reprises qui en furent faites, plus tard, à l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName>
+                        notamment, où <persName ref="#camusCharlesEtienneLouis">Le Camus</persName> fait lecture <date when="1752">en 1752</date> d’un cours sur le
+                        toisé qu’il a « fait copier d’après un manuscrit écrit sous la
+                        dictée de M. <persName ref="#desgodets">Desgodets</persName> »<ref type="note" target="#tN0002"/>
+                        <ref type="note" target="#tN0003"/>, reprise qui témoigne de la validité persistante du
+                        texte, tout comme le font les copies manuscrites tardives (la
+                        version conservée à <placeName ref="#compiegne">Compiègne</placeName> est ainsi datée de <date when="1764">1764</date>). La
+                        provenance des différents manuscrits nous renseigne également
+                        sur la circulation du texte, et peut laisser deviner quelques
+                        réappropriations ultérieures. Le manuscrit de l’Arsenal (T1) se
+                        trouve appartenir <date from="1700" to="1799">au XVIII<hi rend="superscript">e</hi> siècle</date> à <persName ref="#mesangeMathias">Mathias Mésange (1693-1758)</persName>
+                  <ref type="note" target="#tN0004"/>, auteur en 1743 d’un <hi rend="italic">Tarif du toisé superficiel et solide</hi>
+                        <ref type="note" target="#tN0005"/> puis d’un <hi rend="italic">Tarif du toisé de
+                            maçonnerie</hi><ref type="note" target="#tN0006"/><!-- TODO ne s'agit-il pas d'un tarif des bois de charpenterie ? -->. Un peu plus tard, c’est <persName ref="#potainNicolasMarie">Nicolas-Marie Potain
+                        (1723-1790)</persName>, auteur des <hi rend="italic">Détails des ouvrages
+                            de menuiserie pour les bâtiments… avec les tarifs
+                            nécessaires pour le calcul de leur toisé</hi>
+                        <ref type="note" target="#tN0007"/>, qui possède le manuscrit T3. Enfin, le manuscrit T6
+                        provient de la nièce de <persName ref="#pronyGaspardClairFrançoisMarieRicheDe">Gaspard de Prony (1755-1839)</persName>, ingénieur
+                        des ponts et chaussées, assistant de <persName ref="#perronetJeanRodolphe">Perronet</persName>.</p>
+                </div>
+                <div xml:id="tPresentationBodyFr05" type="chapter" n="5">
+                    <head>Résultats obtenus par rapport à l’état de l’art</head>
+                    <p>Ce sont les rapports de l’architecture avec les sciences qui
+                        sont ici posés. </p>
+                    <p>Formalisées d’abord dans une perspective essentiellement
+                        mathématique, les méthodes de toisé apparaissent en premier
+                        lieu dans des traités techniques, militaires ou d’arpentage. La
+                        première mise par écrit du toisé en son sens architectural
+                        n’intervient qu’<date from="1600" to="1625">au début du XVII<hi rend="superscript">e</hi>
+                        siècle</date>, dans l’<hi rend="italic">Architecture françoise</hi> de
+                        <persName ref="#savotLouis">Louis Savot</persName>. Ce dernier, amateur et non technicien, n’en donne
+                        toutefois qu’un aperçu utile aux commanditaires mais peu adapté
+                        aux constructeurs. Ce n’est qu’<date from="1675" to="1699">à la fin du XVII<hi rend="superscript">e</hi> siècle</date> qu’une véritable
+                        formalisation est proposée par <persName ref="#bulletPierre">Pierre Bullet</persName>, qui publie <date when="1691">en
+                        1691</date> son <hi rend="italic">Architecture pratique</hi>,
+                        rigoureusement entendue comme un <hi rend="italic">traité du
+                            toisé des bâtiments</hi>
+                        <ref type="note" target="#tN0008"/>. </p>
+                    <p>La mise par écrit du toisé concentre d’autant plus d’enjeux que
+                        les méthodes mêmes en sont extrêmement fluctuantes, variant
+                        d’une part d’une région à l’autre, et particulièrement entre
+                        Paris et la province, et d’autre part d’un praticien à un
+                        autre, selon le modèle suivi. Dans son <hi rend="italic">Tableau détaillé de tous les ouvrages de bâtiment</hi>,
+                        <persName ref="#morisotMadeleineRoseJoseph">Joseph Marie Morisot</persName> réaffirme au tout début du <date when="1804">XIX
+                        <hi rend="superscript">e</hi> siècle</date> le triple enjeu du toisé
+                        en rappelant les diverses tentatives qui se sont succédées
+                        avant lui pour le théoriser :<ref type="note" target="#tN0009"><quote>La science du toisé et de l’évaluation des prix des ouvrages
+                        de bâtiment doit être spécialement celle des experts
+                        vérificateurs qui, chargés ordinairement de régler les mémoires
+                        de travaux exécutés, doivent s’attacher à le faire avec
+                        d’autant plus de justice et d’impartialité, que la mission
+                        qu’ils reçoivent, soit amiablement, soit judiciairement, les
+                        constitue en quelque sorte arbitres souverains des intérêts des
+                        parties ; mais cette science est aussi nécessaire à
+                        l’architecte pour qu’il puisse approximativement fixer à
+                        l’avance les frais que peut occasionner l’exécution des plans
+                        qu’il conçoit, et modifier ces plans en raison des sommes
+                        destinées aux travaux qu’ils ont pour objet. Cette science est
+                        enfin nécessaire, sous le rapport de leur intérêt personnel, à
+                        l’ouvrier que l’on emploie, à l’entrepreneur qui spécule sur
+                        des constructions et au propriétaire qui les ordonne et en fait
+                        la dépense</quote></ref><!-- TODO vérifier rendu -->.</p>
+                    <p>Trois usages sont ainsi mis en avant :
+                        <list>
+                            <label n="1"><num>1°</num> </label>
+                            <item>la prévision des coûts par les
+                                commanditaires et entrepreneurs ;</item>
+                            <label n="2"><num>2°</num> </label>
+                            <item>l’évaluation de la construction
+                                projetée par l’architecte, et les ajustements qu’elle
+                                permet sur le projet ;</item>
+                            <label n="3"><num>3°</num> </label>
+                            <item>l’évaluation <foreign xml:lang="lat">a posteriori</foreign> du coût de la construction
+                        pour le paiement.</item><!-- TODO Attention la transformation ne devrait pas fonctionner car erreur dans le modèle transmis -->
+                        </list> La discipline concerne donc à la fois le
+                        projet lui-même (et en un certain sens l’invention), le droit
+                        et l’économie. Dans le cas du cours de <persName ref="#desgodets">Desgodets</persName>, il est donc
+                        raisonnable de s’interroger sur le public visé ou atteint.
+                        Dispensé à l’Académie royale d’architecture, le cours est
+                        d’abord conçu à destination des élèves architectes. Toutefois,
+                        la forme adoptée, très proche du traité, laisse penser que
+                        <persName ref="#desgodets">Desgodets</persName> envisageait une diffusion plus large, notamment chez
+                        les propriétaires et les entrepreneurs. Le toisé est ainsi
+                        théorisé et réduit en principes présentés de façon méthodique,
+                        suivant les grandes divisions de la construction (maçonnerie,
+                        charpenterie, couvertures, légers ouvrages), à l’inverse de
+                        <persName ref="#bulletPierre">Bullet</persName> qui propose dans son <hi rend="italic">Architecture
+                            pratique</hi> de suivre de manière très pragmatique l’ordre
+                        du toisé, qui est <ref type="note" target="#tN0010"><quote>l’ordre contraire de la construction</quote></ref>.</p>
+                    <p>Le nombre de copies manuscrites conservées témoigne sans doute
+                        de cette diffusion, et de l’utilité de cet écrit à une époque
+                        qui, hormis l’<hi rend="italic">Architecture pratique</hi> de
+                        <persName ref="#bulletPierre">Bullet</persName>, déjà rééditée à plusieurs reprises, ne compte que très
+                        peu d’écrits sur le toisé. Sur les treize copies répertoriées
+                        du manuscrit de <persName ref="#desgodets">Desgodets</persName>, cinq sont aujourd’hui conservées à
+                        l’étranger (<placeName ref="#londres">Londres</placeName>, <placeName ref="#newYork">New-York</placeName>, <placeName ref="#philadelphie">Philadelphia</placeName>, <placeName ref="#fullero">Fullerö (Suède)</placeName>).
+                        Quatre des copies ont eu plusieurs propriétaires, et seule
+                        celle de la bibliothèque <persName ref="#cronstedtFamille">Cronstedt</persName> en <placeName ref="#suede">Suède</placeName> semble ne pas avoir
+                        changé de mains <date from="1700">depuis le XVIII<hi rend="superscript">e</hi> siècle</date>. On sait que cet
+                        exemplaire (T5) provient du séjour parisien de l’initiateur de
+                        cette collection, <date from="1730" to="1739">dans les années 1730</date>. Ce dernier étudia alors
+                        chez <persName ref="#chevotetJeanMichel">Jean Michel Chevotet</persName>, qui avait lui-même suivi des cours
+                        dispensés par <persName ref="#desgodets">Desgodets</persName>. La copie suédoise est incomplète et
+                        comporte des corrections (notes manuscrites), effectuées par
+                        Cronstedt lors d’une relecture (peut-être en vérifiant cette
+                        copie avec l’original). Carl Johan Cronstedt obtint par la
+                        suite la charge de (sur)intendant des bâtiments du roi de Suède
+                        (1733-1767) et fut un membre actif des Académies des beaux-arts
+                        et des sciences. Ce transfert du traité témoigne donc d’un
+                        intérêt européen pour l’art de toiser selon les us et coutumes
+                        de Paris, ainsi que pour l’œuvre de <persName ref="#desgodets">Desgodets</persName>. La bibliothèque
+                        de Cronstedt, comme de nombreuses autres collections
+                        semblables, comprenait d’ailleurs les manuels pratiques de
+                        Savot et de Bullet. </p>
+                    <div xml:id="tPresentationBodyFr05.01" type="section" n="1">
+                        <head>
+                     <persName ref="#desgodets">Desgodets</persName> 
+                     <foreign xml:lang="lat">versus</foreign>
+                     <!-- TODO vérifier le rendu --> l’Architecture Moderne</head>
+                        <p>Au cours du <date from="1700" to="1799">XVIII<hi rend="superscript">e</hi> siècle</date>, cette diffusion de la
+                            manière française s’amplifia, notamment avec les deux
+                            éditions de <hi rend="italic">l’Architecture Moderne ou
+                                l’art de bien bâtir pour toutes sortes de personnes
+                                tant pour les maisons de particuliers que pour les
+                                palais</hi> (édition <persName ref="#jombertClaude">Claude Jombert</persName>, <date when="1728">1728</date> et
+                            <persName ref="#jombertCharlesAntoine">Charles-Antoine Jombert</persName>, <date when="1764">1764</date>). Outre un recueil de modèles
+                            contemporains, les deux éditions de cet ouvrage sont
+                            composées d’une compilation de cinq à six traités, dont le
+                            toisé et une explication des us et coutumes de Paris.
+                            Destiné d’abord aux particuliers, qui trouvaient là les
+                            connaissances nécessaires pour vérifier la qualité d’un
+                            bâtiment (la mise en œuvre et l’utilisation de matériaux
+                            adéquats), et non aux spécialistes cherchant à maîtriser
+                            les sciences de la construction, cet ouvrage constitue plus
+                            un récapitulatif des bonnes règles de la construction
+                            qu’une explication technique et pratique spécialisée. Par
+                            conséquent, le toisé commence par un commentaire <hi rend="italic">des termes de géométrie pratique
+                                nécessaires pour l’intelligence du toisé,</hi> suivi
+                            d’une présentation sommaire de cette science suivant
+                            l’ordre choisi par <persName ref="#bulletPierre">Bullet</persName>. Le traité du toisé dans la
+                            première édition est un résumé incomplet de la manière de
+                            toiser le gros œuvre selon <persName ref="#bulletPierre">Bullet</persName>, tandis que le texte de
+                            la seconde édition (revue et augmentée par <persName ref="#jombertCharlesAntoine">Ch-A. Jombert</persName>)
+                            est plus exhaustif et développe également le toisé des
+                            légers ouvrages. Il est probable que les augmentations de
+                            ce texte proviennent du traité sur le toisé de <persName ref="#desgodets">Desgodets</persName>.
+                            Néanmoins, les auteurs ne citent ni <persName ref="#bulletPierre">Pierre Bullet</persName> ni
+                            <persName ref="#desgodets">Antoine Desgodets</persName>, alors qu’ils conseillent vivement la
+                            lecture du <hi rend="italic">Traité sur l’arpentage</hi> de
+                            <persName ref="#ozanamJacques">Jacques Ozanam</persName>
+                     <ref type="note" target="#tN0011"/>, bien heureusement publié par la même maison. </p>
+                    </div>
+                    <div xml:id="tPresentationBodyFr05.02" type="section" n="2">
+                        <head>
+                     <persName ref="#desgodets">Desgodets</persName> 
+                     <foreign xml:lang="lat">versus</foreign> Ginet</head>
+                        <p>La comparaison du cours de toisé de <persName ref="#desgodets">Desgodets</persName> avec celui de
+                            l’arpenteur à la maîtrise des eaux et forêts au département
+                            de <placeName ref="#paris">Paris</placeName>, <persName ref="#ginetNicolas">Nicolas Ginet</persName>, dont les <orgName>archives nationales</orgName> ont
+                            conservé quatre plans géométraux de <placeName ref="#seineEtOise">Seine-et-Oise</placeName>, et qui
+                            écrit dans son titre<ref type="note" target="#tN0012"/> qu’il s’inspire du Desgodets, surprend au premier
+                            abord.</p>
+                        <p>D’une part, ce n’est pas une copie conforme du texte de
+                            <persName ref="#desgodets">Desgodets</persName>. En effet, il s’adresse d’emblée « aux ouvriers
+                            du bâtiment » et non aux architectes, éventuellement aux
+                            « amateurs d’architecture ». Il gonfle son ouvrage en
+                            ouverture par une initiation aux fractions et un « précis
+                            de géométrie élémentaire » et en fermeture par une
+                            « recherche… pour servir de formule générale » au travers
+                            d’un exemple type de construction et dont il donnera au
+                            cours de son ouvrage la méthode pratique jusqu’à en
+                            expliquer les abréviations (p. 104). Il fournit également
+                            des tables de calcul (« tarif pour la taille et sciage des
+                            pierres et des marbres, le débitage, des bois de charpente
+                            &amp; de menuiserie », p. 87-96), et présente même un
+                            exemple chiffré de prix d’une façade de <placeName>la place Louis le
+                            Grand (actuelle place Vendôme) à Paris</placeName> dont on sait qu’elle
+                            a été lotie par des spéculateurs par façades uniformisées.
+                            Il donne <hi rend="italic">in fine</hi> quelques
+                            informations sur le conditionnement et le prix de certains
+                            matériaux.</p>
+                        <p>D’autre part, si <persName ref="#ginetNicolas">Ginet</persName> suit néanmoins le texte de <persName ref="#desgodets">Desgodets</persName>,
+                            il ne le structure pas, mettant les chapitres les uns à la
+                            suite des autres, sans introduction, ni conclusion. De
+                            plus, il paraphrase tous les textes à sa manière. Même les
+                            découpes des chapitres en articles ne sont pas respectées.
+                            Il supprime les chapitres sur le toisé de la charpente sans
+                            doute parce qu’il vient de faire paraître <date when="1760">en 1760</date> un <hi rend="italic">traité du toisé des bois de
+                                charpente</hi>
+                            <ref type="note" target="#tN0013"/> et rajoute çà et là quelques chapitres sur les
+                            chausses et fosses d’aisance, etc. Les planches du cours de
+                            <persName ref="#desgodets">Desgodets</persName> se retrouvent chez Ginet qui en rajoute environ
+                            la moitié (18/26). Enfin, un chapitre consacré au toisé de
+                            la poussée des terres qui figure en plus dans l’ouvrage de
+                            Ginet est retrouvé comme ajout à la fin du T14 nantais
+                            (texte et illustration), mais avec une erreur de calcul
+                            finale due sans doute à la réduction des opérations opérée
+                            par rapport à l’ouvrage imprimé. </p>
+                        <p>Au final, il apparaît que <persName ref="#ginetNicolas">Ginet</persName> a corrompu le travail de
+                            <persName ref="#desgodets">Desgodets</persName>. C’est ce qu’on peut lire dans la <hi rend="italic">Gazette des arts et métiers</hi> en
+                            1775 : « <persName ref="#desgodets">Desgodets</persName>, au commencement de ce siècle, a dicté à
+                            l’<orgName ref="#academieRoyaleDArchitecture">Académie royale d’architecture</orgName>, des leçons [sur le
+                            toisé], où il diffère de Bullet en plusieurs choses : mais
+                            son traité, quoique fort estimé, est encore en manuscrit
+                            chez la plupart des architectes, ou défiguré, <date when="1761">en 1761</date>, dans
+                            un livre intitulé <hi rend="italic">Toisé général des
+                                bâtiments</hi>, qui ne donne rien de nouveau. »<ref type="note" target="#tN0014"/> 
+                     <persName ref="#desgodets">Desgodets</persName> demeure encore très loin d’être
+                            égalé.</p>
+                    </div>
+                    <div xml:id="tPresentationBodyFr05.03" type="section" n="3">
+                        <head>
+                     <persName ref="#desgodets">Desgodets</persName> au filtre des
+                            mathématiques</head>
+                        <p>Dans son <hi rend="italic">Traité du toisé des
+                            bâtimens</hi>, <persName ref="#desgodets">Desgodets</persName> se trouve confronté au calcul d’un
+                            certain nombre de surfaces de définition géométrique
+                            complexe. Sont ainsi examinés dans le traité (p. 23 à 91)
+                            les cas de quantité de voûtes – voûtes d’arêtes ou de
+                            cloître, ellipsoïdes surhaussés ou surbaissés, voûtes
+                            annulaires, vis de Saint Gilles, trompes, etc. – dont seul
+                            le calcul intégral peut permettre de façon rigoureuse le
+                            calcul des aires. Compte tenu et de la formation de
+                            l’auteur, et plus encore du public visé, il est bien
+                            évident qu’il n’y est fait aucune référence. Rappelons que
+                            le calcul infinitésimal ne se développe dans l’Europe
+                            savante que durant la dernière décade du XVII<hi rend="superscript">e</hi> siècle, après la publication
+                            des travaux fondateurs de <persName ref="#leibnizGottfriedWilhelm">Leibniz</persName> et <persName ref="#newtonIsaac">Newton</persName>, respectivement
+                            <date when="1684">en 1684</date> et <date when="1687">1687</date>. À titre d’exemple, le Marquis de L’Hôpital
+                            (1661-1704) publie l’<hi rend="italic">Analyse des
+                                infiniment petits pour l’intelligence des lignes
+                                courbes</hi> 
+                     <date when="1696">en 1696</date>, premier ouvrage en français de
+                            vulgarisation du calcul infinitésimal<ref type="note" target="#tN0015"/>. </p>
+                        <p>Précisons également que pour l’objet visé par <persName ref="#desgodets">Desgodets</persName>, il
+                            n’est aucun besoin de faire intervenir des méthodes de
+                            calcul sophistiquées qui permettraient de donner une
+                            précision dans les résultats sans intérêt et sans rapport
+                            avec les données de base d’une construction en
+                            maçonnerie.</p>
+                        <p>L’auteur présente donc une suite de méthodes approchées, au
+                            cas par cas et sans aucune justification (comme dans tout
+                            traité de géométrie pratique) de calcul de surfaces. Là
+                            encore conforme à une habitude qui dure <date from="1700" to="1799">pendant tout le
+                                XVIII<hi rend="superscript">e</hi> siècle</date>, aucune
+                            notation algébrique n’est utilisée, ce qui oblige à
+                            l’emploi de circonlocutions lourdes, et parfois difficiles
+                            à comprendre (au moins pour le lecteur contemporain). </p>
+                        <p>Un premier exemple en est donné dès la page 25, où il
+                            présente le toisé de la voûte en berceau plein-cintre, qui
+                            nécessite seulement de déterminer la longueur du
+                            demi-cercle. « Il faut prendre, écrit-il, la largeur […]
+                            d’une naissance à l’autre opposé, ce qui est le diamètre
+                            entier du cercle, le joindre avec le demi diamètre à plomb
+                            qui est la hauteur […] y ajouter la 7<hi rend="superscript">e</hi> partie de la hauteur ou demi
+                            diamètre, ce qui fait ensemble la circonférence ou pourtour
+                            de la voûte ». Tout ceci pour dire que si R est le rayon du
+                            cercle générateur de la voûte, la circonférence vaut 22/7
+                            de R, utilisant l’approximation de π donnée par Archimède
+                            (mais connue avant lui), approximation encore une fois bien
+                            suffisante pour les calculs de toisé du bâtiment puisque
+                            22/7 ne diffère de π<!-- TODO mettre un pi avec Unicode --> qu’à la 3<hi rend="superscript">e</hi>
+                            décimale. </p>
+                        <p>Mais si la méthode de calcul semble, dans le cas du plein
+                            cintre bien lourde, c’est qu’elle distingue de façon <hi rend="italic">a priori </hi>surprenante « le
+                            demi-diamètre entier du cercle (des naissances) » de celui
+                            du « demi-diamètre à plomb qui est la hauteur », alors que
+                            ces deux grandeurs sont égales. Cette distinction n’est pas
+                            faite sans raison, et le principe en sera repris
+                            systématiquement dans la suite du traité, car le calcul se
+                            « généralise » ensuite aux cas des voûtes surbaissées ou
+                            surhaussées, quand précisément la hauteur de la voûte n’est
+                            plus égale à la moitié de sa largeur. </p>
+                        <p>Comme cela a été indiqué ci-dessus, la grande diversité des
+                            voûtes réalisables en stéréotomie l’amène à aborder des
+                            problèmes autrement plus délicat que la seule approximation
+                            du nombre π. De même que l’on peut avoir besoin de
+                            connaître la circonférence du cercle, de même dans le cas
+                            d’une voûte ovoïde, a-t-on besoin de connaître la longueur
+                            d’une ellipse<ref type="note" target="#tN0016"/>. <persName ref="#desgodets">Desgodets</persName> propose (p. 25-26) d’utiliser une
+                            méthode d’approximation due à <persName ref="keplerJohannes">Johannes Kepler (1571-1630)</persName>,
+                            qui nécessite de calculer la « moyenne proportionnelle »
+                            des demi-axes de l’ellipse (i.e. la racine carrée de leur
+                            produit). Dans le paragraphe suivant, « les opérations
+                            (utilisant) […] les demi diamètres moyens proportionnels
+                            étant embarrassantes », il propose d’utiliser la moyenne
+                            arithmétique de ces diamètres<ref type="note" target="#tN0017"/>.</p>
+                        <p>Pour le calcul de la voûte sphérique (p. 48), faisant
+                            référence explicitement à <persName ref="archimede">Archimède</persName>, seul mathématicien
+                            cité dans le traité, il utilise une méthode bien compliquée
+                            pour dire que la voûte a deux fois la surface du grand
+                            cercle de la naissance de la voûte. Mais, exactement comme
+                            pour le cas de la voûte en berceau plein-cintre, la
+                            complexité de l’énoncé de la formule proposée pour la voûte
+                            sphérique s’étend aux voûtes sphéroïdes, surhaussées ou
+                            surbaissées.</p>
+                        <p>Ces quelques exemples suffisent à montrer qu’<persName ref="#desgodets">Antoine 
+                            Desgodets</persName> est bien au fait de toutes les méthodes pratiques
+                            de calcul d’aires connues à son époque. Mais plus que les
+                            calculs de surfaces plus ou moins bien approximés, ce qu’il
+                            semble important de noter dans les toisés des voûtes
+                            proposés par <persName ref="#desgodets">Desgodets</persName>, est la grande différence d’approche
+                            avec les méthodes suggérées par exemple dans le traité de
+                            <persName ref="#frezierAmedee">Frézier</persName>, <hi rend="italic">La théorie et la pratique de la
+                                coupe des pierres et des bois pour la construction des
+                                voûtes…</hi>, publié <date from="1737" to="1739">en 1737-39</date>
+                     <ref type="note" target="#tN0018"/>. Cet ouvrage aborde (de façon indirecte) les
+                            problèmes des aires par développement en douelles tendues
+                            des voussoirs, c’est-à-dire en s’appuyant sur les
+                            approximations de la surface par des polyèdres. Cette
+                            méthode, incontestablement beaucoup plus longue que celle
+                            donnée par <persName ref="#desgodets">Desgodets</persName>, suit au plus prêt la méthode
+                            constructive et de ce fait donne sûrement une bien
+                            meilleure estimation de la quantité de pierre, voire du
+                            temps de taille, nécessaire à la construction. Et sans
+                            doute à travers le choix apparemment anodin d’une méthode
+                            de calcul des aires se profilent les conflits entre
+                            architectes et ingénieurs, à l’instar de ceux plus anciens
+                            à l’encontre des entrepreneurs maçons.</p>
+                        <p>Tout compte fait, seul le toisé de <persName ref="#desgodets">Desgodets</persName> reste la
+                            référence en matière de mesure <date from="1800" to="1899">durant tout le XIX<hi rend="superscript">e</hi> siècle</date>. Il n’a pourtant
+                            jamais été publié. <persName ref="#morisotMadeleineRoseJoseph">Morisot (1767-1821)</persName> croit pourtant à
+                            tort qu’un certain « <persName ref="#lEpeeCharlesFrancois">Delepé</persName>, ancien vérificateur des
+                            bâtiments du roi, homme très-instruit » le fit imprimer
+                            « après l’avoir enrichi de notes et d’observations
+                                importantes »<ref type="note" target="#tN0019"/>.</p>
+                        <p>
+                     <persName ref="#desgodets">Desgodets</persName> enseigne un toisé tel qu’il se pratique, mais il
+                            sait se faire critique en y soulignant les incongruités,
+                            les incertitudes et les difficultés de compréhension des us
+                            et coutume de Paris dès qu’on s’éloigne de la capitale, et
+                            s’il exprime le vœu de fixer des règles en la matière, il
+                            ne réalise aucunement cette réforme à laquelle il aspire
+                            car il l’estime réservée aux autorités royales. Tout
+                            l’intérêt de son cours réside dans sa volonté de réformer
+                            la méthode pratique usitée. Il ne manque aucune occasion
+                            pour souligner les abus et les atténuer, voire signaler les
+                            moyens d’y remédier<ref type="note" target="#tN0020"/>. Même si le <date from="1800" to="1899">XIX<hi rend="superscript">e</hi> siècle</date>
+                            apporte cette réforme désirée par <persName ref="#desgodets">Desgodets</persName> à travers les
+                            travaux de <persName ref="#morisotMadeleineRoseJoseph">Morisot</persName> et/ou de <persName ref="#rondeletJean">Rondelet</persName>, on peut lire encore
+                            <date when="1866">en 1866</date>, sous la plume de <persName ref="#descouges">Descouges</persName>, vérificateur des
+                            travaux de l’asile de Vaucluse, dans le <hi rend="italic">Moniteur des architectes</hi> en date du 1<hi rend="superscript">er</hi> avril : « <quote>Le nom de
+                            <persName ref="#desgodets">Desgodets</persName> est resté, et ce n’est que justice. Son livre est
+                            encore aujourd’hui une mine précieuse et féconde en
+                            renseignements utiles sur toutes les choses relatives à la
+                            construction. Il a été consulté, avec fruit, par la plupart
+                            de ceux qui, depuis, ont écrit sur la voirie et
+                            l’estimation des travaux.</quote><ref type="note" target="#tN0021"/>
+                        </p>
+                        <p>L’intérêt du cours de <persName ref="#desgodets">Desgodets</persName> réside aujourd’hui en grande
+                            partie dans le fait qu’il constitue un compte rendu ou un
+                            instantané des méthodes de toisé utilisées à cette époque,
+                            <placeName ref="#paris">à Paris</placeName>. Ainsi, le professeur précise dans sa préface que
+                            bon nombre des techniques employées sont sujettes à caution
+                            (« ce que l’on nomme les us et coutumes sur le fait du
+                            toisé des bâtimens est une pure chimère sans forme, sans
+                            règle et sans consistance<ref type="note" target="#tN0022"/> »), mais se défend de toute tentative de
+                            redressement, puisque, dit-il, <quote>il ne convient qu’aux roys
+                            et aux cours souveraines de prescrire des loix pour
+                            rectifier les abus qui se sont glissés dans les us et
+                            coutumes du toisé des bâtiments</quote><ref type="note" target="#tN0023"/><!-- TODO pb pour mettre note dans les guillemets (utiliser cit avec @type ?) -->. Aussi, <quote>il sera seulement <hi rend="italic">constaté</hi> la forme et la manière du toisé la plus
+                            générallement <sic>approuvé</sic><!-- TODO vérfier rendu --> des toiseurs expérimentés</quote><ref type="note" target="#tN0024"/>.</p>
+                        <p>De cette absence de règle fixe, dont découle la rareté des
+                            traités du toisé, naît aussi un problème essentiel : celui
+                            de la mise en images. En effet, les ouvrages des juristes
+                            n’en fournissent pas, ni le <persName ref="#savotLouis">Savot</persName>, et le <persName ref="#bulletPierre">Bullet</persName> se contente
+                            d’images assez grossières, essentiellement géométriques.
+                            Les manuscrits du toisé de <persName ref="#desgodets">Desgodets</persName> proposent à l’inverse
+                            un nombre relativement important de figures (jusqu’à 131,
+                            dans le manuscrit de <placeName ref="#compiegne">Compiègne</placeName>), dans l’ensemble soignées
+                            et qui laissent imaginer une attention certaine portée à
+                            leur présentation pendant les cours de l’Académie.</p>
+                        <p>Reste à évaluer l’impact du cours de <persName ref="#desgodets">Desgodets</persName> chez les
+                            suiveurs (<persName ref="#bruandFrancois">François Bruand</persName>, <persName ref="#courtonneJean">Courtonne</persName>, <persName ref="#camusCharlesEtienneLouis">Camus</persName> et
+                            <persName ref="#blondelJacquesFrancois">Jacques-François Blondel</persName>). Nous publierons les débats et
+                            différentes versions complètes ou particulières du toisé
+                            discutés, et amendés à l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName> 
+                     <date from="1723" to="1789">jusqu’à la Révolution</date>
+                            dont beaucoup ont été conservés dans les archives de
+                            l’Académie des beaux-arts.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <back xml:id="tPresentationBack">
+            <div>
+                <div><div xml:id="tPresentationBackFr" xml:lang="fre">
+                    <!-- sortie du tableau de tradition (liste des témoins) à partir de listWit dans desgodetsC.tei.xml et des en-tête des témoins concernés -->
+                    <divGen n="tradition" type="tradition">
+                        <!-- créer une division div de type="tradition" en posant une ancre (xml:id=concat({idDuFichier},'Tradition') ), avec un titre head comme ci-dessous  -->
+                        <head>Tableau de tradition</head>
+                        <!-- pour chaque témoin : la sortie contient le titre du manuscrit, le lieu de conservation, la cote. Le contenu de desc dans listWit et le lien de téléchargement de la source  -->
+                    </divGen>
+
+                    <!-- Inclusion du fichier de notes -->
+                    <xi:include href="divs/desgodetsTPresentationNotes.tei.xml"
+                    parse="xml">
+                    <xi:fallback>Fichier de notes de tPresentation non trouvé</xi:fallback>
+                </xi:include>
+
+                    <!-- sortie des entrées bibliographiques utilisées dans l'édition critique -->
+                    <divGen n="bibliography" type="biblio">
+                        <head>Bibliographie</head>
+                        <!-- générer une division div de type="biblio" en posant une ancre (xml:id=concat({idDuFichier},'Biblio') ), contenant la liste des références bibliographiques citées dans le corps de l'édition du manuscrit concerné -->
+                    </divGen>
+                </div></div>
+            </div>
+        </back>
+    </text>
+</TEI>

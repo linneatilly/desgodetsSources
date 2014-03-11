@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" type="figures" xml:id="o1BackFr03" xml:lang="fre">
+   <head>Liste des figures</head>
+   <figure xml:id="o1Frontispice" type="plate" facs="#o1FacsFrontispice">
+      <fw type="header">Traité des ordres d’architecture [Ma beauté est invariable]</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="1">1</num>
+         </label>
+         <title>Allégorie : les arts conviés à l’analyse du traité des Ordres,
+            représenté sous la forme d’un obélisque et désigné par l’architecte, en
+            présence de la beauté invariable, accompagnée d’enfants étudiant la
+            géométrie</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « ã »</note>
+   </figure>
+   <figure xml:id="o1Dedicace" type="plate" facs="#o1FacsDedicace">
+      <fw type="header"/>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Armes de France et de Navarre surmontées d’un soleil et entourées de
+            deux cornes d’abondances déversant des emblèmes militaires et des
+            instruments géométriques</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="78 " unit="mm"/>
+            <width quantity="211" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1TitlePage" type="plate" facs="#o1FacsTitlePage">
+      <fw type="header"/>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="3">3</num>
+         </label>
+         <title>Un architecte étudiant dans son cabinet face aux cinq ordres
+            d’architecture complétés par l’ordre attique</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="88 " unit="mm"/>
+            <width quantity="205" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>Cartouche representant une
+         grande salle éclairée par trois baies scandées par des pilastres ioniques
+         colossaux, les baies rappellent le motif de la serlienne : à
+         gauche, l’architecte à sa table de travail, vis-à-vis en enfilade les cinq ordres
+         qui prennent presque toute la hauteur de la pièce, au fond sur un tréteau la
+         représentation de l’ordre attique couronné d’une balustrade.</note>
+   </figure>
+   <figure xml:id="o1Pl0001" type="plate" facs="#o1FacsPl0001">
+      <fw type="header">I. dessein PROFILS DES MOULURES. ch. I.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Tracé des moulures faites pour être vues de près</title>
+         <desc>Plume et encre noire</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « A ».</note>
+   </figure>
+   <figure xml:id="o1Pl0002" type="plate" facs="#o1FacsPl0002">
+      <fw type="header">II. dessein PROFILS DES MOULURES. ch. I. </fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="3">3</num>
+         </label>
+         <title>Tracé des moulures faites pour être vues de loin</title>
+         <desc>Plume et encre noire</desc>
+         <dimensions>
+            <height quantity="318 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0003" type="plate" facs="#o1FacsPl0003">
+      <fw type="header">III. dessein PROFILS DES COLONNES. ch. I. </fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="4">4</num>
+         </label>
+         <title>Tracés de la courbure des fûts de colonne</title>
+         <desc>Plume et encre noire</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « B ».</note>
+   </figure>
+   <figure xml:id="o1Pl0004" type="plate" facs="#o1FacsPl0004">
+      <fw type="header">IV. dessein PROFILS DES COLONNES TORSES. ch. I.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="5">5</num>
+         </label>
+         <title>Tracés des fûts de colonne torse</title>
+         <desc>Plume et encre noire</desc>
+         <dimensions>
+            <height quantity="317 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0005" type="plate" facs="#o1FacsPl0005">
+      <fw type="header">EXPOSITION DES CINQ ORDRES. ch. II.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="6">6</num>
+         </label>
+         <title>Elévation des cinq ordres d’architecture</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « C ».</note>
+   </figure>
+   <figure xml:id="o1Pl0006" type="plate" facs="#o1FacsPl0006">
+      <fw type="header">I. dessein. DE L’ORDRE TOSCAN. ch. III.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="7">7</num>
+         </label>
+         <title>Elévation et plan d’un entrecolonnement d’ordre toscan</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="318 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0007" type="plate" facs="#o1FacsPl0007">
+      <fw type="header">II. dessein DE L’ORDRE TOSCAN. ch. III.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="8">8</num>
+         </label>
+         <title>Elévation et plan d’une arcade d’ordre toscan</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « D ».</note>
+   </figure>
+   <figure xml:id="o1Pl0008" type="plate" facs="#o1FacsPl0008">
+      <fw type="header">III. dessein. DE L’ORDRE TOSCAN. ch. III</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="9">9</num>
+         </label>
+         <title>Elévation d’une travée d’ordre toscan sur piédestal</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0009" type="plate" facs="#o1FacsPl0009">
+      <fw type="header">IV. dessein. DE L’ORDRE TOSCAN. ch. III.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="10">10</num>
+         </label>
+         <title>Elévation d’un piédestal et de la base d’une colonne toscane ;
+            élévation de la moitié d’un chapiteau de pilastre toscan et élévation de
+            l’imposte et du départ de l’archivolte d’une arcade de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « E ».</note>
+   </figure>
+   <figure xml:id="o1Pl0010" type="plate" facs="#o1FacsPl0010">
+      <fw type="header">V. dessein. DE L’ORDRE TOSCAN. ch. III.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="11">11</num>
+         </label>
+         <title>Elévation du chapiteau d’une colonne et de l’entablement d’ordre
+            toscan</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0011" type="plate" facs="#o1FacsPl0011">
+      <fw type="header">I. dessein. DE L’ORDRE DORIQUE. ch. IV.</fw>
+      <figDesc>
+         <locus from="#o1P025"/>
+         <label>
+            <num n="12">12</num>
+         </label>
+         <title>Elévation et plan d’un entrecolonnement d’ordre dorique</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « F ».</note>
+   </figure>
+   <figure xml:id="o1Pl0012" type="plate" facs="#o1FacsPl0012">
+      <fw type="header">II. dessein DE L’ORDRE DORIQUE. ch. IV.</fw>
+      <figDesc>
+         <locus from="#o1P027"/>
+         <label>
+            <num n="13">13</num>
+         </label>
+         <title>Elévation et plan d’une arcade d’ordre dorique</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0013" type="plate" facs="#o1FacsPl0013">
+      <fw type="header">III. dessein. DE L’ORDRE DORIQUE. ch. IV.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="14">14</num>
+         </label>
+         <title>Elévation d’une arcade d’ordre dorique sur piédestal</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « G ».</note>
+   </figure>
+   <figure xml:id="o1Pl0014" type="plate" facs="#o1FacsPl0014">
+      <fw type="header">IV. dessein. DE L’ORDRE DORIQUE. ch. IV.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="15">15</num>
+         </label>
+         <title>Elévation du piédestal et de la base d’une colonne dorique ; élévation
+            alternative de la base d’une colonne de cet ordre ; élévation de l’imposte
+            et du départ de l’archivolte d’une arcade de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0015" type="plate" facs="#o1FacsPl0015">
+      <fw type="header">V. dessei.n DE L’ORDRE DORIQUE. ch. IV.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="16">16</num>
+         </label>
+         <title>Elévation du chapiteau d’une colonne et de l’entablement à denticules
+            d’ordre dorique ; vue par en dessous du chapiteau et de l’entablement de
+            cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « H ».</note>
+   </figure>
+   <figure xml:id="o1Pl0016" type="plate" facs="#o1FacsPl0016">
+      <fw type="header">VI. dessein DE L’ORDRE DORIQUE. ch. IV.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="17">17</num>
+         </label>
+         <title>Elévation alternative du chapiteau d’une colonne et de l’entablement à
+            mutules d’ordre dorique ; vue par en dessous de l’entablement de cet
+            ordre ; élévation de la moitié d’un chapiteau de pilastre de cet
+            ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0017" type="plate" facs="#o1FacsPl0017">
+      <fw type="header">I. dessein. DE L’ORDRE IONIQUE. ch. V</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="18">18</num>
+         </label>
+         <title>Elévation et plan d’un entrecolonnement d’ordre ionique</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « I ».</note>
+   </figure>
+   <figure xml:id="o1Pl0018" type="plate" facs="#o1FacsPl0018">
+      <fw type="header">II. dessin DE L’ORDRE IONIQUE. ch V</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="19">19</num>
+         </label>
+         <title>Elévation et plan d’une arcade d’ordre ionique</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="211" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0019" type="plate" facs="#o1FacsPl0019">
+      <fw type="header">III. dessein DE L’ORDRE IONIQUE. Ch. V</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="20">20</num>
+         </label>
+         <title>Elévation d’une arcade d’ordre ionique sur piédestal</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « K ».</note>
+   </figure>
+   <figure xml:id="o1Pl0020" type="plate" facs="#o1FacsPl0020">
+      <fw type="header">IV. dessein. DE L’ORDRE IONIQUE. ch. V.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="21">21</num>
+         </label>
+         <title>Elévation du piédestal et de la base d’une colonne d’ordre ionique ;
+            élévation et élévation alternative de l’imposte et du départ de
+            l’archivolte de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0021" type="plate" facs="#o1FacsPl0021">
+      <fw type="header">V. dessein. DE L’ORDRE IONIQUE. ch. V.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="22">22</num>
+         </label>
+         <title>Elévation d’un chapiteau à balustre d’une colonne et de l’entablement à
+            denticules de l’ordre ionique ; élévation d’un chapiteau à balustre de
+            pilastre de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « L ».</note>
+   </figure>
+   <figure xml:id="o1Pl0022" type="plate" facs="#o1FacsPl0022">
+      <fw type="header">VI. dessein. DE L’ORDRE IONIQUE. ch. V.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="23">23</num>
+         </label>
+         <title>Elévation latérale, coupe et vue par en dessous d’un chapiteau à
+            balustre de colonne ionique ; élévation latérale, coupe et vue par en
+            dessous de la moitié d’un chapiteau à balustre de pilier ionique ; tracé de
+            l’œil et de la spirale d’une volute de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0023" type="plate" facs="#o1FacsPl0023">
+      <fw type="header">VII. dessein . DE L’ORDRE IONIQUE. ch. V.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="24">24</num>
+         </label>
+         <title>Elévation d’un chapiteau à cornes de colonne et de l’entablement à
+            modillons de l’ordre ionique ; vue par en dessous de l’entablement de cet
+            ordre ; élévation d’un chapiteau de pilastre à cornes</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « M ».</note>
+   </figure>
+   <figure xml:id="o1Pl0024" type="plate" facs="#o1FacsPl0024">
+      <fw type="header">VIII. dessein. DE L’ORDRE IONIQUE. ch. V.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="25">25</num>
+         </label>
+         <title>Elévation sur l’angle d’un chapiteau à corne d’ordre ionique ; vue par
+            en dessous d’un chapiteau à corne de cet ordre et de la moitié d’un pilier
+            de cet ordre ; coupes partielles sur un chapiteau de colonne et un
+            chapiteau de pilastre de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="211" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0025" type="plate" facs="#o1FacsPl0025">
+      <fw type="header">I. dessein. DE L’ORDRE CORINTHIEN. ch. VI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="26">26</num>
+         </label>
+         <title>Elévation et plan d’un entrecolonnement d’ordre corinthien</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « N ».</note>
+   </figure>
+   <figure xml:id="o1Pl0026" type="plate" facs="#o1FacsPl0026">
+      <fw type="header">II. dessein. DE L’ORDRE CORINTHIEN. ch. VI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="27">27</num>
+         </label>
+         <title>Elévation et plan d’une arcade d’ordre corinthien</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0027" type="plate" facs="#o1FacsPl0027">
+      <fw type="header">III. dessein. DE L’ORDRE CORINTHIEN. ch. VI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="28">28</num>
+         </label>
+         <title>Elévation d’une arcade d’ordre corinthien sur piédestal</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « O ».</note>
+   </figure>
+   <figure xml:id="o1Pl0028" type="plate" facs="#o1FacsPl0028">
+      <fw type="header">IV. dessein. DE L’ORDRE CORINTHIEN. ch. VI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="29">29</num>
+         </label>
+         <title>Elévation du piédestal et de la base d’une colonne d’ordre corinthien ;
+            élévation de l’imposte et du départ de l’archivolte de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0029" type="plate" facs="#o1FacsPl0029">
+      <fw type="header">V. dessein. DE L’ORDRE CORINTHIEN. ch. VI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="30">30</num>
+         </label>
+         <title>Elévation du chapiteau d’une colonne et de l’entablement d’un ordre
+            corinthien ; vue par en dessous de l’entablement de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « P».</note>
+   </figure>
+   <figure xml:id="o1Pl0030" type="plate" facs="#o1FacsPl0030">
+      <fw type="header">VI. dessein. DE L’ORDRE CORINTHIEN. ch. VI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="31">31</num>
+         </label>
+         <title>Elévation sur l’angle d’un chapiteau de colonnes d’ordre corinthien ;
+            vue par en dessous et coupe partielle d’un chapiteau de colonne de cet
+            ordre ; tracé des cannelures</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="211" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0031" type="plate" facs="#o1FacsPl0031">
+      <fw type="header">VII. dessein. DE L’ORDRE CORINTHIEN. ch. VI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="32">32</num>
+         </label>
+         <title>Elévation et coupe partielle d’un chapiteau de pilastre d’ordre
+            corinthien ; vue par en dessous du pilier de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="21.2" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « Q».</note>
+   </figure>
+   <figure xml:id="o1Pl0032" type="plate" facs="#o1FacsPl0032">
+      <fw type="header">I. dessein DE L’ORDRE COMPOSÉ. ch. VII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="33">33</num>
+         </label>
+         <title>Elévation et plan d’un entrecolonnement d’ordre composé</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="211" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0033" type="plate" facs="#o1FacsPl0033">
+      <fw type="header">II. dessein. DE L’ORDRE COMPOSÉ. ch. VII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="34">34</num>
+         </label>
+         <title>Elévation et plan d’une arcade d’ordre composé</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « R».</note>
+   </figure>
+   <figure xml:id="o1Pl0034" type="plate" facs="#o1FacsPl0034">
+      <fw type="header">III. dessein. DE L’ORDRE COMPOSÉ. ch. VII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="35">35</num>
+         </label>
+         <title>Elévation d’une arcade d’ordre composé sur piédestal</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0035" type="plate" facs="#o1FacsPl0035">
+      <fw type="header">IV. dessein. DE L’ORDRE COMPOSÉ. ch. VII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="36">36</num>
+         </label>
+         <title>Elévation d’un piédestal et de la base d’une colonne d’ordre composé ;
+            élévation de l’imposte et du départ de l’archivolte de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="21.3" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « S».</note>
+   </figure>
+   <figure xml:id="o1Pl0036" type="plate" facs="#o1FacsPl0036">
+      <fw type="header">V. dessein. DE L’ORDRE COMPOSÉ. ch. VII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="37">37</num>
+         </label>
+         <title>Elévation d’un chapiteau de colonne et de l’entablement de l’ordre
+            composé ; vue par en dessous de l’entablement</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0037" type="plate" facs="#o1FacsPl0037">
+      <fw type="header">VI. dessein. DE L’ORDRE COMPOSÉ. ch. VII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="38">38</num>
+         </label>
+         <title>Elévation sur l’angle et coupe partielle d’un chapiteau de colonne
+            d’ordre composé ; vue par en dessous du chapiteau de colonne de cet
+            ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « T».</note>
+   </figure>
+   <figure xml:id="o1Pl0038" type="plate" facs="#o1FacsPl0038">
+      <fw type="header">VII. dessein. DE L’ORDRE COMPOSÉ. ch. VII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="39">39</num>
+         </label>
+         <title>Elévation et coupe partielle d’un chapiteau de pilastre d’ordre
+            composé ; vue par en dessus du chapiteau d’un pilier de cet ordre ; tracé
+            de l’œil et de la spirale d’une volute de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0039" type="plate" facs="#o1FacsPl0039">
+      <fw type="header">I. dessein. DES ORDRES L’UN SUR L’AUTRE. ch VIII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="40">40</num>
+         </label>
+         <title>Six élévations d’ordres superposés : ionique-corinthien (avec et sans
+            piédestal) ; dorique-ionique-corinthien (avec et sans piédestal) ;
+            dorique-ionique-corinthien-composite (avec ou sans piédestal)</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « V».</note>
+   </figure>
+   <figure xml:id="o1Pl0040" type="plate" facs="#o1FacsPl0040">
+      <fw type="header">I. dessein. DES ARCS L’UN SUR L’AUTRE. ch. IX.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="41">41</num>
+         </label>
+         <title>Deux élévations d’arcades à ordres superposés, dorique, ionique et
+            corinthien (avec et sans piédestal)</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0041" type="plate" facs="#o1FacsPl0041">
+      <fw type="header">I. dessein DES PILASTRES. ch. X.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="42">42</num>
+         </label>
+         <title>Cinq plans de portiques de colonnes</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « X».</note>
+   </figure>
+   <figure xml:id="o1Pl0042" type="plate" facs="#o1FacsPl0042">
+      <fw type="header">II. dessein. DES PILASTRES. ch. X.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="43">43</num>
+         </label>
+         <title>Cinq plans de portiques de colonnes</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0043" type="plate" facs="#o1FacsPl0043">
+      <fw type="header">I. dessein. DES COLONNES ET DES PILASTRES. ch. XI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="44">44</num>
+         </label>
+         <title>Neuf plans de pilastres d’angle ; huit plans de colonnes engagées dans
+            les angles ; trois plans de colonnes adossées dans les angles</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="332 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « Y».</note>
+   </figure>
+   <figure xml:id="o1Pl0044" type="plate" facs="#o1FacsPl0044">
+      <fw type="header">II. dessein. DES COLONNES ET DES PILASTRES. ch. XI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="45">45</num>
+         </label>
+         <title>Treize plans de pilastres et de colonnes adossées dans les
+            angles</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0045" type="plate" facs="#o1FacsPl0045">
+      <fw type="header">III. dessein. DES COLONNES ET DES PILASTRES. ch. XI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="46">46</num>
+         </label>
+         <title>Huit plans de pilastres d’angle pour les piliers d’église</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « Z».</note>
+   </figure>
+   <figure xml:id="o1Pl0046" type="plate" facs="#o1FacsPl0046">
+      <fw type="header">I. dessein. DES FRONTONS. ch. XII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="47">47</num>
+         </label>
+         <title>Elévation de trois frontons triangulaires</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0047" type="plate" facs="#o1FacsPl0047">
+      <fw type="header">II. dessein. DES FRONTONS. ch. XII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="48">48</num>
+         </label>
+         <title>Elévation de deux frontons triangulaires, deux tracés du profil des
+            larmiers rampants </title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="213" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « Aa».</note>
+   </figure>
+   <figure xml:id="o1Pl0048" type="plate" facs="#o1FacsPl0048">
+      <fw type="header">PROPORTION DES PORTES. ch. XIII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="49">49</num>
+         </label>
+         <title>Cinq élévations de portes en rapport avec chaque ordre et élévation
+            d’une porte à arc segmentaire</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0049" type="plate" facs="#o1FacsPl0049">
+      <fw type="header">PROPORTION DES FENESTRES. ch. XIV.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="50">50</num>
+         </label>
+         <title>Dix élévations de baies simples (trois baies plein-cintre et trois
+            baies rectangulaires en rapport avec le corinthien, le composite et le
+            ionique, deux baies rectangulaire en rapport avec le dorique et le toscan,
+            deux baies à arc segmentaire en rapport avec le dorique et le
+            toscan)</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « Bb».</note>
+   </figure>
+   <figure xml:id="o1Pl0050" type="plate" facs="#o1FacsPl0050">
+      <fw type="header">PROPORTION DES NICHES. ch. XV.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="51">51</num>
+         </label>
+         <title>Une élévation et une élévation partielle d’une travée rythmique d’ordre
+            ionique avec et sans piédestal ; cinq élévations de niches flanquées de
+            pilastres correspondant à chaque ordre ; une élévation d’une niche
+            descendant au sol ornée de pilastres</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0051" type="plate" facs="#o1FacsPl0051">
+      <fw type="header">DE L’ORDRE ATTIQUE. ch. XVI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="52">52</num>
+         </label>
+         <title>Plan et deux élévations d’une travée attique (avec et sans
+            piédestal)</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « Cc».</note>
+   </figure>
+   <figure xml:id="o1Pl0052" type="plate" facs="#o1FacsPl0052">
+      <fw type="header">DE L’ORDRE ATTIQUE. ch XVI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="53">53</num>
+         </label>
+         <title>Elévations du piédestal de l’ordre attique et de la corniche des
+            fenêtres de cet ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="330 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="o1Pl0053" type="plate" facs="#o1FacsPl0053">
+      <fw type="header">DE L’ORDRE ATTIQUE. ch. XVI.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="54">54</num>
+         </label>
+         <title>Elévation du chapiteau et de l’entablement de l’ordre attique ; coupe
+            sur le fût du pilastre et vue par en dessous de l’entablement de cet
+            ordre</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note>En bas à droite sous le cadre du dessin « Dd».</note>
+   </figure>
+   <figure xml:id="o1Pl0054" type="plate" facs="#o1FacsPl0054">
+      <fw type="header">DES BALUSTRADES. ch. XVII.</fw>
+      <figDesc>
+         <locus from="#o1"/>
+         <label>
+            <num n="55">55</num>
+         </label>
+         <title>Deux élévations de balustre en poire (corinthien et toscan) ; cinq
+            élévations de balustrades avec leur dé pour les cinq ordres; cinq coupes de
+            la plinthe et du couronnement de ces balustrades</title>
+         <desc>Plume et encre noire, lavis gris</desc>
+         <dimensions>
+            <height quantity="331 " unit="mm"/>
+            <width quantity="212" unit="mm"/>
+         </dimensions>
+      </figDesc>
+      <note/>
+   </figure>
+</div>

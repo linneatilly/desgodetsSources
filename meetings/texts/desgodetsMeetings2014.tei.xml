@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier de l'appel à communication du colloque de 2014 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : dans back une division de type "downloads" contient les liens vers les fichiers téléchargeables -->
+<!-- TODO : remplacer le faux-texte -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Colloques</title>
+                <title xml:lang="fre" type="subSubSub">Appel à communication du colloque de 2014</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="aut">auteurs</resp>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date when="2013"
+                        >2013</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>meetings2014</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="meetings2014TextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"
+                        >
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic
+                            url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb />Cette licence est
+                        disponible en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb />1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb />2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource
+                        <lb />3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit
+                        s'engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s'engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l'origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l'autorité éditoriale du Centre de théorie et
+                        d'analyse risquerait en conséquence d'être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <!-- ajout d'un élément pour traiter le corpus général et réduire la hiérarchie des titres -->
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!-- ajout d'un élément pour DC.description -->
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="meetings2014">Texte original : le texte a été créé sous forme
+                    électronique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+                    formalisation du savoir architectural au XVII<hi rend="superscript">e</hi>
+                    siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote,
+                        soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira peut-être
+                    une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le
+                    cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="100">Français (langue principale du corpus)</language>
+                <!-- TODO : évaluer le pourcentage des langues dans le document -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-16" who="#EC">première version du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front xml:id="meetings2014Front">
+            <titlePage xml:id="meetings2014Front00">
+                <docTitle>
+                    <titlePart type="main">Antoine Desgodets [Desgodetz], entre théorie et pratique</titlePart>
+                    <titlePart type="sub">Les nouveaux savoirs de l'architecte moderne</titlePart>
+                </docTitle>
+                <argument><p>Appel à communication du colloque international de 2014</p></argument>
+                <docAuthor>
+                    <persName ref="#RC">Robert Carvais</persName>
+                </docAuthor>
+                <docDate>14 avril 2013</docDate>
+                <docEdition>version 0</docEdition>
+            </titlePage>
+            <div  xml:id="meetings2014FrontFr" xml:lang="fre">
+                <div  xml:id="meetings2014FrontFr01" type="abstract">
+                    <p>Appel à communication du colloque international de 2014.</p>
+                </div>
+                <!--<div xml:id="meetings2014FrontFr02" type="introduction">
+                    <head>Introduction</head>
+                    <p>Quam ob rem circumspecta cautela observatum est deinceps et cum edita montium
+                        petere coeperint grassatores, loci iniquitati milites cedunt. ubi autem in
+                        planitie potuerint reperiri, quod contingit adsidue, nec exsertare lacertos
+                        nec crispare permissi tela, quae vehunt bina vel terna, pecudum ritu
+                        inertium trucidantur.</p>
+                    <p>Hae duae provinciae bello quondam piratico catervis mixtae praedonum a
+                        Servilio pro consule missae sub iugum factae sunt vectigales. et hae quidem
+                        regiones velut in prominenti terrarum lingua positae ob orbe eoo monte Amano
+                        disparantur.</p>
+                </div>-->
+            </div>
+        </front>
+        <body>
+            <div xml:id="meetings2014BodyFr" xml:lang="fre">
+                <div xml:id="meetings2014BodyFr01" type="part" n="1">
+                    <head>I. Antoine Desgodets, cet inconnu : vers une biographie</head>
+                    <p>Antoine Desgodets, que nous connaissons surtout par <hi rend="italic">Les Edifices antiques de Rome</hi>, son œuvre savante majeure émanant d’une commande royale, mais aussi par <hi rend="italic">Les Loix des bâtiments</hi>, ouvrage juridique posthume inaugurant une nouvelle discipline, reste encore aujourd’hui peu étudié. Si nous lui découvrons un père ébéniste à Paris, que savons-nous de la famille dont il était issu et de celle qu’il fonda ? De quelles sources disposons-nous pour écrire la biographie de cet architecte ? De nouvelles archives notariales parisiennes mises au jour méritent une étude approfondie.</p>
+                    <p>Plus largement, maintient-il des relations avec les gens des métiers du bâtiment ou cherche-t-il au contraire à s’en détacher dans un mouvement constant pour parvenir au sommet de la société des gens de cour ? Que sait-on de sa vie avant son entrée à l’Académie, et notamment jusqu’à ses 20 ans ? La protection dont il bénéficia pour séjourner à Rome, en dehors de l’Académie de France, sa détention par des corsaires à Alger, restent aussi mystérieuses. De même, il serait intéressant de s’interroger sur les raisons qui le menèrent à la fonction de professeur à l’Académie royale d’architecture, comme premier véritable architecte, après une lignée composée exclusivement d’hommes de sciences, F. Blondel - bien que celui-ci fut aussi architecte - et les La Hire. Quels réseaux fréquentait-il ? Celui des sociétés savantes (les hommes de sciences ou des techniques), les grandes agences d’architecture ou les jeunes architectes, les gens des finances (banquiers, spéculateurs…), les grands commis de l’Etat (surintendants, ministres) ou l’administration subalterne, la société provinciale, étrangère (en particulier, la Suède) ou parisienne, le monde artistique ou celui des artisans ?</p>
+                    </div>
+                <div xml:id="meetings2014BodyFr02" type="part" n="2">
+                    <head>II/- La pratique du théoricien</head>
+                    <p>Desgodets eut d’abord une carrière administrative en tant que contrôleur des bâtiments du roi à Chambord<hi rend="footnote_reference"> </hi> puis de contrôleur de ceux à Paris, notions qui pourraient être définies plus précisément en examinant ces carrières en parallèle, la nature et les missions de ces fonctions (gestion et suivi de chantier, dessinateur, vérificateur de travaux, entretien de bâtiments, …)</p>
+                    <p>Il eut aussi une carrière d’architecte, en construisant un édifice pour les religieuses dans l’enclos du Val-de-Grâce, en remaniant le château de Vaudreuil, en édifiant quelques maisons ordinaires rue du Bourg l’Abbé ou rue Montmartre à Paris mais l’ensemble de ses activités comme architecte est encore mal connu. Conçoit-il seul, ses projets ou pour le compte d’une agence ? En est-il le maître d’œuvre ? </p>
+                    <p>Sa grande maîtrise du dessin lui permet de laisser à la postérité un grand nombre de plans et d’élévations dans de nombreuses collections d’estampes. Son style reconnaissable autorise les experts à les lui attribuer : qu’ils soient des projets réalisés ou non, des états des lieux, des outils de transmission du savoir gravés ou pas, des dessins de chantier, la panoplie de Desgodets dessinateur se révèle étoffée et mérite des études spécifiques. </p>
+                    <p>Notre architecte exerça également l’expertise. Comme beaucoup de ses contemporains qui siégeaient à l’Académie royale d’architecture, il présenta des mémoires techniques, par exemple sur les moyens de réparer l’effondrement du pont de Pirmil à Nantes. Analyser toutes ses interventions techniques devant l’Académie pourrait contribuer à évaluer le rôle effectif de l’Académie dans les évolutions techniques et constructives de l’époque. De même, le rapport étroit de ces interventions et des activités de l’Académie en général avec les cours dispensés devrait être étudié plus précisément.</p>
+                </div>
+                <div xml:id="meetings2014BodyFr03" type="part" n="3">
+                    <head>III/- Les écrits d’un praticien</head>
+                    <p>Si l’œuvre majeure de Desgodets, <hi rend="italic">Les Edifices antiques de Rome dessinés et mesurés très exactement</hi> (Paris, chez Jean-Baptiste Coignard, 1687), a fait l’objet de nombreuses publications et a connu ces dernières années plusieurs éditions critiques, il est désormais temps de faire le point sur les raisons exactes de cette mission à Rome, sur la façon dont Desgodets a travaillé, et sur la fortune de l’ouvrage, réédité en France et à l’étranger, annoté, voire traduit. Il est tout simplement temps de mesurer objectivement l’influence réelle de cette œuvre décrite comme majeure dans l’histoire de l’architecture occidentale. </p>
+                    <p>Devenu professeur à l’Académie, Desgodets s’engage dans des champs inédits de l’architecture et peut apparaître à ce titre comme un théoricien très novateur. Il conviendrait d’étudier précisément les apports des quatre cours par rapport à ceux de ses prédécesseurs dont nous gardons la trace (F. Blondel, Ph. de La Hire) : le rapport opéré par Desgodets entre théorie et pratique est-il vraiment nouveau, ou ne fait-il que consacrer une situation déjà existante depuis la fin du <hi rend="smallcaps">xvii</hi>
+                        <hi rend="superscript">e</hi> siècle ? Comment ses suiveurs à l’Académie ont-ils appréhendé, renouvelé ou tronqué les sujets de ses cours ? Ces derniers ont-ils conservé une dimension modélisatrice ? L’analyse des manuscrits (transcrits, copiés ou autographes) portant sur les ordres, les commodités, le toisé et les servitudes, permet de découvrir comment ces textes et ces figures ont été établis (originalité ou tradition de ses sources) et pour quelles finalités (maîtriser la concurrence d’avec les entrepreneurs, assoir une éthique de leur profession, servir de modèles). Il ne faut pas omettre non plus l’impact des cours sur la nature même de l’architecture et de l’architecte, qui devient alors « moderne ».</p>
+                    <p>Sur chacun de ces champs, nous ne saurions nous contenter d’une analyse uniquement française. L’apport du regard des théoriciens et praticiens étrangers nous apparaît indispensable.</p></div>
+                <div xml:id="meetings2014BodyFr04" type="part" n="4">
+                    <p>Règlement : (à compléter)</p>
+                    <p>Date : (à compléter)</p>
+                    <p>Conseil scientifique : (à compléter)</p>
+                    <p>comité d’organisation : (à compléter)</p>
+                </div>
+            </div>
+        </body>
+        <back xml:id="meetings2014Back">
+            <div xml:id="meetings2014BackFr" xml:lang="fre" >
+                <!-- inclusion du fichier de notes -->
+                <!--<xi:include href="divs/desgodetsMeetings2014Notes.tei.xml"
+                    parse="xml">
+                    <xi:fallback>Fichier de notes de desgodetsMeetings2013Notes
+                        non trouvé</xi:fallback>
+                </xi:include>-->
+
+                <!-- lien vers le fichier à télécharger -->
+                <!--<div xml:id="meetings2014BackFr02" type="downloads">
+                    <head>Téléchargements</head>
+                    <p><ref type="file" target="../../files/programme2010.pdf"
+                            mimeType="application/pdf">Programme</ref></p>
+                </div>-->
+
+                <!-- liste des figures -->
+                <!--<div xml:id="meetings2014BackFr03" xml:lang="fre" type="figures">
+                    <head>Liste des figures</head>
+                    <figure xml:id="meetings2014Ill0001" type="illustration">
+                        <figDesc>
+                            <title>Frontispice des édifices antiques</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, frontispice</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="meetings2014Ill0003" type="illustration">
+                        <figDesc>
+                            <title>Dédicace</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 9</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="meetings2014Ill0004" type="illustration">
+                        <figDesc>
+                            <title>Élévation antérieure du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 30</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="meetings2014Ill0033" type="illustration">
+                        <figDesc>
+                            <title>Élévation latérale du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 33</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                </div>-->
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model     href="../../schema/desgodetsSchemaTEI.rnc"
+                type="application/relax-ng-compact-syntax"
+                schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+     fichier crédits du site Desgodets 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre" type="main">Crédits</title>
+         </titleStmt>
+         <extent><!-- TODO : taille du fichier en octet --></extent>
+         <publicationStmt>
+            <date when="2013">2013</date>
+            <idno>mentions</idno>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+            <title xml:lang="fre" type="sub">une édition électronique</title>
+            <idno type="URI">http://www.desgodets.net</idno>
+         </seriesStmt>
+         <sourceDesc>
+            <p xml:id="mentions">Ce fichier a été nativement créé sous forme numérique.</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation when="2013">2013</creation>
+         <langUsage>
+            <language ident="fre" usage="100">Français (langue principale du corpus)</language>
+            <!-- TODO : évaluer les langues -->
+         </langUsage>
+         <textClass>
+            <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+               <term>Architecture</term>
+               <term>18e siècle</term>
+               <term>France</term>
+               <term>Architecture –– Philosophie</term>
+            </keywords>
+            <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+               <term>Architecture, Modern</term>
+               <term>17th-18th centuries</term>
+               <term>France</term>
+               <term>Architecture -- Philosophy</term>
+            </keywords>
+            <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+               <term>Text</term>
+            </classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2013-05-31" who="#EC">Création du fichier</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <front xml:id="mentionsFront">
+         <titlePage xml:id="mentionsFront00">
+            <titlePart>Crédits</titlePart>
+         </titlePage>
+         <div xml:id="mentionsFront01" type="introduction">
+            <p>Ce site web est issu du travail collectif d’une équipe de recherche
+               pluridisciplinaire réunie dans le cadre du projet de recherche
+               « Construction et normalisation du savoir architectural au début du
+                  XVIII<hi rend="superscript">e</hi> siècle. Les cours de
+               Desgodets à l’Académie ».</p>
+            <p>Ce projet de recherche a bénéficié du soutien de l’<hi
+                  rend="underline">Agence nationale de recherche (ANR)</hi> dans
+               le cadre du Programme Corpus et outils de la recherche en sciences
+               humaines et sociales de 2007 (ANR-07-CORP-017-01) et a été mené de
+               2008 à 2013.</p>
+         </div>
+      </front>
+      <body xml:id="mentionsBody">
+         <div xml:id="mentionsBodyFr" xml:lang="fre">
+            <div xml:id="mentionsBodyFr01" type="part">
+               <head>Mentions de responsabilités</head>
+               <div xml:id="mentionsBodyFr01.01" type="chapter">
+                  <head>Direction scientifique et coordination du projet</head>
+                  <div xml:id="mentionsBodyFr01.01.01" type="section">
+                     <head>Direction scientifique du projet</head>
+                     <p>Robert Carvais, DR CNRS, Centre de théorie et analyse du
+                        droit, UMR 7074</p>
+                  </div>
+                  <div xml:id="mentionsBodyFr01.01.02" type="section">
+                     <head>Responsable de projet numérique</head>
+                     <p>Emmanuel Château, Doctorant en histoire de l’art, Centre
+                        André Chastel, UMR 8150, Master 2 « Technologies
+                        numériques appliquées à l’histoire », École nationale des
+                        chartes</p>
+                  </div>
+               </div>
+               <div xml:id="mentionsBodyFr01.02" type="chapter">
+                  <head>Équipe scientifique</head>
+                  <list>
+                     <item><persName>Joëlle Barreau</persName>, Docteur en
+                        histoire de l’Art.</item>
+                     <item><persName>Basile Baudez</persName>, Maître de
+                        conférences à l’Université Paris-Sorbonne.</item>
+                     <item><persName>Anne Bondon</persName>, Maître assistante
+                        associée à l’ENSA Paris-La Villette.</item>
+                     <item><persName>Robert Carvais</persName>, DR CNRS, Centre de
+                        théorie et analyse du droit, UMR 7074.</item>
+                     <item><persName>Pierre Caye</persName>, DR CNRS, Centre Jean
+                        Pépin, UPR 76.</item>
+                     <item><persName>Emmanuel Château</persName>, Doctorant en
+                        histoire de l’art, Centre André Chastel, UMR 8150.</item>
+                     <item><persName>Guillaume Fonkenell</persName>, Conservateur
+                        du Patrimoine, Louvres (Paris).</item>
+                     <item><persName>Béatrice Gaillard</persName>, Docteur en
+                        histoire de l’art, Chargée d’étude documentaire, ENSA
+                        Versailles.</item>
+                     <item><persName>Juliette Hernu-Bélaud</persName>, Chargée
+                        d’études et de recherches à l’INHA, doctorante.</item>
+                     <item><persName>Frédérique Lemerle</persName>, DR CNRS,
+                        Centre d’études supérieures de la Renaissance, UMR
+                        7323.</item>
+                     <item><persName>Olga Medvedkova</persName>, CR CNRS, Centre
+                        André Chastel, UMR 8150.</item>
+                     <item><persName>Gabrielle de Roincé</persName>, conservateur de la Bibliothèque Paul-Marmottan, Boulogne.</item>
+                     <item><persName>Linnéa Rollenhagen-Tilly</persName>, Docteur
+                        en histoire de l’art, Projet de recherche avec le
+                        Nationalmuseum de Stockholm (Suède).</item>
+                     <item><persName>Hélène Rousteau-Chambon</persName>,
+                        Professeur d’histoire de l’art, Université de
+                        Nantes.</item>
+                     <item><persName>Joël Sakarovitch</persName>, Professeur, ENSA
+                        Paris Malaquais.</item>
+                     <item><persName>Werner Szambien</persName>, DR CNRS, Centre
+                        André Chastel, UMR 8150.</item>
+                     <item><persName>Dirk Van de Vijver</persName>, Associate
+                        Professor, Utrecht University (Netherlands).</item>
+                  </list>
+               </div>
+               <div xml:id="mentionsBodyFr01.03"  type="chapter">
+                  <head>Édition des textes</head>
+                  <div xml:id="mentionsBodyFr01.03.01"  type="section">
+                     <head>Traité des ordres</head>
+                     <p><persName>Guillaume Fonkenell</persName>, <persName>Joëlle
+                           Barreau</persName>, <persName>Béatrice
+                           Gaillard</persName>, <persName>Gabrielle de
+                           Roincé</persName>.</p>
+                  </div>
+                  <div xml:id="mentionsBodyFr01.03.02"  type="section">
+                     <head>Traité de la commodité</head>
+                     <p><persName>Hélène
+                        Rousteau-Chambon</persName>, <persName>Emmanuel Château</persName>.</p>
+                  </div>
+                  <div xml:id="mentionsBodyFr01.03.03"  type="section">
+                     <head>Traité du toisé</head>
+                     <p><persName>Robert Carvais</persName>, <persName>Juliette
+                           Hernu-Bélaud</persName>, <persName>Linnéa
+                              Rollenhagen-Tilly</persName>, <persName>Joël Sakarovitch</persName>.</p>
+                  </div>
+                  <div xml:id="mentionsBodyFr01.03.04"  type="section">
+                     <head>Traité des servitudes</head>
+                     <p><persName>Robert Carvais</persName>.</p>
+                  </div>
+               </div>
+               <div xml:id="mentionsBodyFr01.04" type="chapter">
+                  <head>Transcription des manuscrits</head>
+                  <p><persName>Joëlle
+                     Barreau</persName>, <persName>Anne Bondon</persName>, <persName>Emmanuel Château</persName>,
+                        <persName>Juliette Hernu-Bélaud</persName>,
+                        <persName>Linnéa Rollenhagen-Tilly</persName>.</p>
+               </div>
+               <div xml:id="mentionsBodyFr01.05" type="chapter">
+                  <head>Modélisation XML-TEI et encodage</head>
+                  <div xml:id="mentionsBodyFr01.05.01" type="section">
+                     <head>Modélisation XML-TEI et importation des sources
+                        traitement de texte</head>
+                     <p>
+                        <persName>Emmanuel Château</persName>
+                     </p>
+                  </div>
+                  <div xml:id="mentionsBodyFr01.05.02" type="section">
+                     <head>Contrôle de qualité et encodage</head>
+                     <p><persName>Emmanuel Château</persName>, <persName>Juliette
+                           Hernu-Bélaud</persName>.</p>
+                  </div>
+               </div>
+               <div xml:id="mentionsBodyFr01.06" type="chapter">
+                  <head>Direction artistique et développement informatique</head>
+                  <div xml:id="mentionsBodyFr01.06.01" type="section">
+                     <head>Direction artistique et graphisme</head>
+                     <p><ref type="mail" target="mailto:creation@sodesign.fr"><persName>Sophie Preveyraud</persName></ref>, <ref
+                           type="external" target="http://www.sodesign.todo">So
+                           Design</ref>
+                     </p>
+                  </div>
+                  <div xml:id="mentionsBodyFr01.06.02" type="section">
+                     <head>Développement web et transformations XSLT</head>
+                     <p><ref type="mail" target="mailto:pauline.le-pallec@wanadoo.fr"><persName>Pauline Le Pallec</persName></ref></p>
+                  </div>
+               </div>
+            </div>
+            <div xml:id="mentionsBodyFr02" type="part">
+               <head>Mentions légales</head>
+               <div xml:id="mentionsBodyFr02.01" type="chapter">
+                  <head>Éditeur</head>
+                  <p>Centre de Théorie et d’Analyse du droit (UMR 7074 –
+                     Université Paris Ouest Nanterre La Défense). 
+                     <lb/>Université Paris Ouest-Nanterre La Défense 
+                     <lb/>UFR Droit et Science politique 
+                     <lb/>Bâtiment F. - Bur. 404 
+                     <lb/>200, Avenue de la République 
+                     <lb/>92001 Nanterre Cedex – France 
+                     <lb/>http://ctad.u-paris10.fr/cdr-theorie-droit/</p>
+                  <!--<p>[[lien vers la page contacts]]</p>-->
+               </div>
+               <div xml:id="mentionsBodyFr02.02" type="chapter">
+                  <head>Licence</head>
+                  <p>Les images numériques des manuscrits sont mises à disposition
+                     par les institutions partenaires mais restent leur propriété
+                     exclusive. Celles-ci en autorisent la reproduction et la
+                     réutilisation selon leurs propres règles en vigueur. Toute
+                     diffusion de ces images, sous quelque forme et sur quelque
+                     support que ce soit (papier, audiovisuel, ou numérique), pour
+                     quelque finalité que ce soit (pédagogique, scientifique ou
+                     commercial), doit faire l’objet d’une demande d’autorisation
+                     préalable auprès de l’institution concernée.</p>
+                  <p>Le Centre de théorie et analyse du droit (UMR 7074) met à
+                     disposition cette ressource électronique structurée, protégée
+                     par le code de la propriété intellectuelle sur le droit
+                     d'auteur (L111-1) et sur les bases de données (L341-1), selon
+                     les termes de la licence Creative Commons : « Paternité – Pas
+                     d'Utilisation Commerciale - Pas de Modification ; 3.0
+                     France ».</p>
+                  <p>Cette licence est disponible en ligne : <ref type="external"
+                        target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                        >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref>
+                     ou par courrier postal à Creative Commons, 171 Second Street,
+                     Suite 300, San Francisco, California 94105, USA.</p>
+                  <list type="unordered">
+                     <item>
+                        <hi rend="bold">Pas d'Utilisation Commerciale</hi> : Le
+                        Centre de théorie et analyse du droit souhaite
+                        encourager l'utilisation et l'amélioration de ses
+                        ressources électroniques, pour les intérêts de
+                        l'enseignement et de la recherche. Toute autorisation
+                        au-delà du champ de cette licence doit être obtenue auprès
+                        du Centre de théorie et analyse du droit.</item>
+                     <item>
+                        <hi rend="bold">Paternité</hi> : Le Centre de théorie et
+                        analyse du droit demande à ce que toute publication
+                        dérivée de ses ressources électroniques comporte : <list
+                           type="unordered">
+                           <item>1. le nom du Centre de théorie et analyse du
+                              droit et, pour les publications électroniques, son
+                              logo.</item>
+                           <item>2. l'URI permettant d'accéder à la page citée sur
+                              notre site, ou à la page d'accueil de la
+                              ressource.</item>
+                           <item>3. la date du fichier source utilisé.</item>
+                        </list>
+                     </item>
+                  </list>
+                  <p>Vous êtes libres de remixer, arranger et adapter cette œuvre
+                     à des fins non commerciales, tant que vous nous créditez et
+                     que les nouvelles œuvres sont diffusées selon les mêmes
+                     conditions. Cependant, afin de mieux servir la communauté
+                     scientifique, le Centre de théorie et analyse du droit
+                     s'engage à conserver et à toujours offrir publiquement la
+                     version la plus à jour de ses ressources électroniques par
+                     une URI pérenne. Il s'engage en conséquence à les corriger et
+                     à les améliorer, à intégrer les contributions qui lui sont
+                     soumises (après validation par un comité scientifique), et à
+                     référencer l'origine de ces contributions. Toute modification
+                     de la ressource qui ne serait pas reversée à la version de
+                     référence sous l'autorité éditoriale du Centre de théorie et
+                     analyse risquerait en conséquence d'être perdue ; afin de
+                     ne pas disperser les contributions et de permettre les
+                     meilleures conditions possibles de collaboration
+                     scientifique, nous vous invitons à nous en faire part.</p>
+               </div>
+            </div>
+            <div xml:id="mentionsBodyFr03" type="part">
+               <head>Remerciements</head>
+               <argument>Pour Lucienne</argument>
+               <p>À l’issue de ce projet, je souhaite remercier le personnel de
+                  l’Agence nationale de la recherche (ANR) d’avoir toujours été à
+                  mon écoute, à Madame Ewa Rakowska, Cellule support ANR des
+                  programmes thématique SHS, à Madame Zoé Ancion, Chargée de
+                  mission scientifique, à Madame Maria Tsilioni, Service de
+                  gestion des aides ; Je remercie également les rapporteurs
+                  anonymes du projet collectif « Vitruviana » soumis et non retenu
+                  en 2006 de m’avoir incité à poursuivre seul mon aventure. Je
+                  remercie surtout Monsieur le Professeur Pascal Arnaud de
+                  l’Université de Lyon II, Responsable du département des Sciences
+                  de l’Homme de l’Agence nationale de la Recherche, de m’avoir
+                  permis d’achever ce projet malgré le retard qu’il avait
+                  pris.</p>
+               <p>Plusieurs personnalités nous ont donné la possibilité d’accéder
+                  gratuitement à des manuscrits de Desgodets restés dans le
+                  domaine privé. Qu’elles soient ici chaleureusement remerciées.
+                  Je pense à Monsieur le comte Carl Johan Cronstedt (Fullerö,
+                  Suède) et à Monsieur le Professeur Dr Werner Oechslin,
+                  Einsiedeln (Suisse). D’autres nous ont permis de contourner les
+                  refus administratifs de certaines bibliothèques étrangères,
+                  comme Monsieur Gerald Beasley, Director, Avery Architectural
+                  &amp; Fine Arts Library, Columbia University in the City of New
+                  York (USA). D’autres ont été d’efficaces interlocuteurs, comme
+                  Monsieur le Dr-Ing. Antonio Becchi, Max Planck Institute for the
+                  History of Science (Berlin).</p>
+               <p>Bien des chercheurs nous ont transmis des informations
+                  scientifiques qu’ils avaient découvertes lors de leurs propres
+                  travaux au sujet de Desgodets. Qu’ils trouvent ici mes sincères
+                  remerciements pour ce partage en espérant que ce site puisse
+                  leur donner l’envie de travailler sur cette figure moins
+                  énigmatique mais toujours si emblématique qu’est Desgodets :
+                  Pascal Dubourg Glatigny, CNRS, Centre Alexandre Koyré. Histoire
+                  des Sciences et des Techniques ; Anne Le Pas de Sécheval,
+                  Université de Paris Ouest Nanterre La Défense ; Professor
+                  Emeritus Robin Middleton, Columbia University in the City of New
+                  York (USA) ; Valérie Nègre, ENSA Paris La Villette ; Wolfgang
+                  Nittnaus, documentaliste au Nationalmuseum de Stockholm
+                  (Suède) ; Edoardo Piccolo, Politecnico di Torino ; Pierre Pinon,
+                  Ensa Paris Belleville et Thierry Verdier, Professeur d’histoire
+                  moderne à l’Université Paul-Valéry Montpellier III.</p>
+               <p>Je ne peux oublier les bons conseils délivrés par mon amie
+                  Catherine Bruant, architecte, chercheur Culture, Directrice du
+                  LéaV, responsable pédagogique du Master « Histoire culturelle et
+                  sociale de l’architecture et de ses territoires » (EnsaV-UVSQ)
+                  que je remercie particulièrement. </p>
+               <p>Je saurais toujours gré à Jean-Philippe Garric, Conseiller
+                  scientifique pour l’architecture, INHA, professeur Ensa Paris
+                  Belleville pour l’aide qu’il m’a toujours accordée au sein de
+                  l’institution qu’il représente. Merci également à Karen Bowie,
+                  professeur Ensa Paris Belleville, Chistiane Berchel, professeur
+                  d’anglais et à Catherine Lallemand, assistante de communication
+                  de l’EnsaV pour leur aide très utile respectivement en matière
+                  de traduction et de reproduction graphique.</p>
+               <p>Sur les options informatiques, Florence Clavaud, Conservateur
+                  général du patrimoine, Ecole nationale des Chartes et Emmanuelle
+                  Morlock-Gerstelkorn, MutEC (Mutualisation d’outils numériques
+                  pour les éditions critiques et les corpus) ainsi que Maud
+                  Ingarao, Institut d’histoire de la pensée classique, de
+                  l’Humanisme aux Lumières, IHPC, UMR 5037, ENS Lyon nous ont
+                  apporté leur aide avec une très grande compétence. </p>
+               <p>On ne saurait trop souligner le formidable, rigoureux et
+                  impeccable travail réalisé par le tandem féminin de la
+                  conception et réalisation du site web qui a su transformer nos
+                  souhaits parfois un peu fous en une réalité souple, efficace et
+                  d’une grande élégance. Que Sophie Préveyraud et Pauline Le
+                  Pallec soient ici amicalement remerciées.</p>
+               <p>Messieurs Pierre-Yves Jallud, IN2P3 TGE-Adonis et Gérald Foliot,
+                  TGE-Adonis ont permis la mise en place de la grille de service
+                  Adonis pour y héberger le site. Nous les en remercions. </p>
+               <p>Messieurs Olivier Jacquot, BnF, Délégation à la stratégie et à
+                  la recherche et Rémi Mathis, BnF, conservateur au département
+                  des Estampes nous ont donné de précieux conseils pour monter des
+                  partenariats salvateurs avec les institutions conservatrices des
+                  manuscrits. Ce fut une avancée majeure pour le projet et il faut
+                  également les en remercier.</p>
+               <p>Il faut aussi ici remercier le service financier de l’Université
+                  de Paris 2, Monsieur Alain Cordier, Mademoiselle Stéphanie
+                  Castard, Madame Cyrielle Patrice, le service des ressources
+                  humaines et particulièrement Madame Monique Fayeton, Madame
+                  Nawal Haïne et Madame Fabienne Damas ainsi que le service des
+                  marchés publics et notamment Madame Minaver Tomic, pour leur
+                  aide sans faille, leur diligence et leur grand
+                  professionnalisme. </p>
+               <p>Merci enfin à tous les membres de l’équipe qui m’ont secondé
+                  assidûment, et tout particulièrement à Pierre Caye pour son
+                  soutien indéfectible et l’amitié qu’il sait me témoigner, à mon
+                  compère et ami Joël Sakarovitch depuis bientôt dix ans comme
+                  historien de la construction, à Guillaume Fonkenell, Béatrice
+                  Gaillard et Joëlle Barreau d’avoir relevé le défi de nous
+                  rejoindre, bien que tardivement, pour combler des défections qui
+                  risquaient de faire échouer le projet, à Hélène Rousteau-Chambon
+                  pour nous avoir donné à partager son savoir sur l’enseignement à
+                  l’Académie, sujet de son habilitation, à Olga Medvedkova pour sa
+                  grande connaissance des <hi rend="italic">Édifices antiques
+                  </hi>et de leur fortune européenne, à Werner Szambien pour son
+                  acharnement à vouloir nous faire découvrir l’exemplaire des <hi
+                     rend="italic">Édifices</hi> annotés par Legrand et Molinos, à
+                  Dirk Van de Vijver pour avoir réalisé la numérisation du cours
+                  de la commodité détenu par le RijksMuseum, à Juliette
+                  Hernu-Bélaud pour sa disponibilité à toute heure et pour toutes
+                  tâches, même les plus nouvelles pour elle comme l’encodage en
+                  XML-TEI, pour sa rapidité d’intervention, ses excellentes
+                  analyses et sa clarté d’écriture, à Linnéa Rollenhagen-Tilly
+                  pour avoir brillamment découvert les manuscrits suédois, pour
+                  avoir demandé et obtenu leur libre communication de la part de
+                  leur propriétaire et en avoir réalisé une fine et perspicace
+                  analyse, et enfin à Emmanuel Château qui m’a secondé dans la
+                  tâche ingrate – mais combien gratifiante – de la technique
+                  informatique au point de se former spécialement à l’École
+                  nationale des chartes sur ce point, d’avoir opérer les bons
+                  choix ambitieux pour la réalisation du site, tout en poursuivant
+                  inlassablement ses réflexions d’historien de l’art avide de
+                  savoirs.</p>
+               <p>Robert Carvais</p>
+            </div>
+            <div xml:id="mentionsBodyFr04" type="part">
+               <head>Financement</head>
+               <p>Agence nationale de la recherche (ANR), Programme Corpus et
+                  outils de la recherche en sciences humaines et sociales (édition
+                  2007).</p>
+               <p>Cnrs, Institut d’Histoire du Droit (UMR 7184 – Université de
+                  Panthéon-Assas), puis Centre de théorie et analyse du droit
+                  (UMR 7074 – Université Paris Ouest Nanterre La Défense)</p>
+               <p>Université Paris Panthéon-Assas (Paris 2)</p>
+            </div>
+            <div xml:id="mentionsBodyFr05" type="part">
+               <head>Partenariats</head>
+               <list type="unordered">
+                  <item>Avery Architectural &amp; Fine Arts Library, Columbia
+                     University Library, NYC (USA)</item>
+                  <item>Bibliothèque de l'École nationale des Beaux-Arts
+                     (ENSBA)</item>
+                  <item>Bibliothèque de l'École nationale des ponts et chaussées
+                     (ENCP) </item>
+                  <item>Bibliothèque de l'Institut de France</item>
+                  <item>Bibliothèque du Sénat</item>
+                  <item>Bibliothèque municipale de Compiègne</item>
+                  <item>Bibliothèque municipale de Nantes</item>
+                  <item>Bibliothèque nationale de France (BnF)</item>
+                  <item>Monsieur le comte Carl Johan Cronstedt, Fullerö
+                     (Suède)</item>
+                  <item>École nationale des chartes (ENC)</item>
+                  <item>Franklin Library, University of Pennsylvania, Philadelphie
+                     (USA)</item>
+                  <item>Monsieur Werner Oechslin, Einsiedeln (Suisse)</item>
+                  <item>RijksMuseum, Amsterdam (NL)</item>
+                  <item>Royal Institute of British Architects (RIBA), Londres
+                     (GB)</item>
+               </list>
+               <list type="unordered">
+                  <item>Huma-Num (ex TGE-Adonis)</item>
+                  <item>Grille de service de Huma-Num (ex Grille de service TGE
+                     Adonis)</item>
+               </list>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

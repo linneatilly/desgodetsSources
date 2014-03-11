@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+                <teiHeader>
+                                <fileDesc>
+                                           <titleStmt>
+                                           <title>Sch&#xE9;ma ANR Desgodets, version
+                                           4.0</title>
+                                           <author>Emmanuel Ch&#xE2;teau (avec Roma
+                                           version 4.15)</author>
+                                           </titleStmt>
+                                           <publicationStmt>
+                                           <p>for use by whoever wants it</p>
+                                           </publicationStmt>
+                                           <notesStmt>
+                                           <note type="ns"
+                                           >http://www.example.org/ns/nonTEI</note>
+                                           </notesStmt>
+                                           <sourceDesc>
+                                           <p>created on Thursday 17th May 2012
+                                           11:01:49 AM</p>
+                                           </sourceDesc>
+                                </fileDesc>
+                </teiHeader>
+                <text>
+                                <front>
+                                           <divGen type="toc" />
+                                </front>
+                                <body>
+                                           <p>Sch&#xE9;ma XML-TEI pour l'&#xE9;dition
+                                           du corpus des cours d'Antoine Desgodets,
+                                           version 4.0.&#xD; L&#x2019;&#xE9;dition des
+                                           cours de Desgodets fait partie d&#x2019;un
+                                           programme de recherche sur la formalisation
+                                           du savoir architectural au XVIIe si&#xE8;cle
+                                           conduit sous&#xD; la direction scientifique
+                                           de Robert Carvais de 2008 &#xE0; 2013.
+                                           Ce&#xD; projet a notamment
+                                           b&#xE9;n&#xE9;fici&#xE9; d'un financement de
+                                           l'ANR&#xD; sous le n&#xB0;
+                                           ANR-07-CORP-017-01.</p>
+                                           <schemaSpec ident="desgodetsSchemaTEI"
+                                           docLang="fr" prefix="tei_" xml:lang="en">
+                                           <!--  <moduleRef key="core" except="binaryObject emph postBox said sp speaker stage time"/> -->
+                                           <moduleRef key="core"
+                                           except="binaryObject distinct emph postBox relatedItem rs said sp speaker stage street time" />
+                                           <moduleRef key="tei" except="" />
+                                           <!-- <moduleRef key="header" except="catDesc catRef category classCode classDecl geoDecl textClass"/> -->
+                                           <moduleRef key="header"
+                                           except="biblFull calendar calendarDesc" />
+                                           <moduleRef key="textstructure"
+                                           except="div1 div2 div3 div4 div5 div6 div7 group" />
+                                           <moduleRef key="certainty"
+                                           except="precision" />
+                                           <moduleRef key="gaiji"
+                                           except="char charDecl charName charProp localName mapping unicodeName value" />
+                                           <moduleRef key="namesdates"
+                                           except="age bloc climate education faith geo geogFeat langKnowledge langKnown listEvent listNym listRelation location nationality nym offset population relation relationGrp residence sex socecStatus state terrain trait" />
+                                           <moduleRef key="textcrit"
+                                           except="lacunaEnd lacunaStart witEnd witStart" />
+                                           <moduleRef key="transcr"
+                                           except="line listTranspose sourceDoc" />
+                                           <moduleRef key="msdescription"
+                                           except="explicit finalRubric incipit msName musicNotation rubric seal sealDesc secFol" />
+                                           <moduleRef key="figures"
+                                           except="notatedMusic" />
+                                           <moduleRef key="linking"
+                                           except="ab alt altGrp anchor join joinGrp timeline when" />
+                                           <moduleRef key="dictionaries"
+                                           except="case colloc dictScrap entryFree etym gramGrp hom hyph iType lang mood number oRef oVar pRef pVar per pos pron stress subc superEntry syll tns" />
+                                           <classSpec ident="att.breaking" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="break" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.coordinated"
+                                           module="transcr" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="start" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.damaged" mode="change"
+                                           type="atts" module="tei">
+                                           <attList>
+                                           <attDef ident="group" mode="delete" />
+                                           <attDef ident="agent" mode="change"
+                                           usage="req">
+                                           <valList type="closed" mode="replace">
+                                           <valItem ident="fire" />
+                                           <valItem ident="moisture" />
+                                           <valItem ident="rubbing" />
+                                           <valItem ident="smoke" />
+                                           <valItem ident="tear" />
+                                           <valItem ident="water" />
+                                           <valItem ident="unknown" />
+                                           </valList>
+                                           </attDef>
+                                           <attDef ident="degree" mode="change"
+                                           usage="req">
+                                           <valList type="closed" mode="replace">
+                                           <valItem ident="high" />
+                                           <valItem ident="low" />
+                                           <valItem ident="medium" />
+                                           <valItem ident="unknown" />
+                                           </valList>
+                                           </attDef>
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.datable" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="calendar" mode="delete" />
+                                           <attDef ident="period" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.datable.custom"
+                                           module="namesdates" mode="change"
+                                           type="atts">
+                                           <attList>
+                                           <attDef ident="datingMethod" mode="delete" />
+                                           <attDef ident="datingPoint" mode="delete" />
+                                           <attDef ident="from-custom" mode="delete" />
+                                           <attDef ident="notAfter-custom"
+                                           mode="delete" />
+                                           <attDef ident="notBefore-custom"
+                                           mode="delete" />
+                                           <attDef ident="to-custom" mode="delete" />
+                                           <attDef ident="when-custom" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.datcat" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="datcat" mode="delete" />
+                                           <attDef ident="valueDatcat" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.dimensions"
+                                           mode="change" type="atts" module="tei">
+                                           <attList>
+                                           <attDef ident="precision" mode="delete" />
+                                           <attDef ident="scope" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.editLike" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="evidence" mode="delete" />
+                                           <attDef ident="instant" mode="delete" />
+                                           <attDef ident="source" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.edition" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="ed" mode="delete" />
+                                           <attDef ident="edRef" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.enjamb" module="verse"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="enjamb" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.fragmentable"
+                                           module="tei" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="part" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.global" mode="change"
+                                           type="atts" module="tei">
+                                           <attList>
+                                           <attDef ident="style" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <moduleRef key="analysis"
+                                           except="c cl pc phr s w" />
+                                           <classSpec ident="att.global.linking"
+                                           mode="change" type="atts" module="linking">
+                                           <attList>
+                                           <attDef ident="exclude" mode="delete" />
+                                           <attDef ident="next" mode="delete" />
+                                           <attDef ident="prev" mode="delete" />
+                                           <attDef ident="sameAs" mode="delete" />
+                                           <attDef ident="select" mode="delete" />
+                                           <attDef ident="synch" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.handFeatures"
+                                           mode="change" type="atts" module="tei">
+                                           <attList>
+                                           <attDef ident="scribe" mode="delete" />
+                                           <attDef ident="scribeRef" mode="delete" />
+                                           <attDef ident="script" mode="delete" />
+                                           <attDef ident="scriptRef" mode="delete" />
+                                           <attDef ident="scope" mode="change"
+                                           usage="req">
+                                           <valList type="closed" mode="replace">
+                                           <valItem ident="sole" />
+                                           <valItem ident="major" />
+                                           <valItem ident="minor" />
+                                           </valList>
+                                           </attDef>
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.identified"
+                                           mode="change" type="atts" module="tagdocs">
+                                           <attList>
+                                           <attDef ident="module" mode="delete" />
+                                           <attDef ident="predeclare" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.interpLike"
+                                           module="tei" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="inst" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.lexicographic"
+                                           module="dictionaries" mode="change"
+                                           type="atts">
+                                           <attList>
+                                           <attDef ident="expand" mode="delete" />
+                                           <attDef ident="location" mode="delete" />
+                                           <attDef ident="mergedIn" mode="delete" />
+                                           <attDef ident="norm" mode="delete" />
+                                           <attDef ident="opt" mode="delete" />
+                                           <attDef ident="orig" mode="delete" />
+                                           <attDef ident="split" mode="delete" />
+                                           <attDef ident="value" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.metrical"
+                                           module="verse" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="met" mode="delete" />
+                                           <attDef ident="real" mode="delete" />
+                                           <attDef ident="rhyme" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.msExcerpt"
+                                           module="msdescription" mode="change"
+                                           type="atts">
+                                           <attList>
+                                           <attDef ident="defective" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.patternReplacement"
+                                           module="header" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="matchPattern" mode="delete" />
+                                           <attDef ident="replacementPattern"
+                                           mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.pointing" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="evaluate" mode="delete" />
+                                           <attDef ident="targetLang" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.pointing.group"
+                                           module="tei" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="domains" mode="delete" />
+                                           <attDef ident="targFunc" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.ranging" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="atLeast" mode="delete" />
+                                           <attDef ident="atMost" mode="delete" />
+                                           <attDef ident="confidence" mode="delete" />
+                                           <attDef ident="max" mode="delete" />
+                                           <attDef ident="min" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.segLike" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="function" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.scoping" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="match" mode="delete" />
+                                           <attDef ident="target" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.styleDef" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="scheme" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.textCritical"
+                                           mode="change" type="atts" module="textcrit">
+                                           <attList>
+                                           <attDef ident="varSeq" mode="delete" />
+                                           <attDef ident="cause" mode="delete" />
+                                           <attDef ident="type" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.timed" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="end" mode="delete" />
+                                           <attDef ident="start" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.transcriptional"
+                                           mode="change" type="atts" module="tei">
+                                           <attList>
+                                           <attDef ident="seq" mode="delete" />
+                                           <attDef ident="cause" mode="delete" />
+                                           <attDef ident="status" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.translatable"
+                                           module="tei" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="versionDate" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.datable.iso"
+                                           module="namesdates" mode="change"
+                                           type="atts">
+                                           <attList>
+                                           <attDef ident="from-iso" mode="delete" />
+                                           <attDef ident="notAfter-iso" mode="delete" />
+                                           <attDef ident="notBefore-iso" mode="delete" />
+                                           <attDef ident="to-iso" mode="delete" />
+                                           <attDef ident="when-iso" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.combinable"
+                                           module="tagdocs" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="mode" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.typed" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="subtype" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.divLike" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="org" mode="delete" />
+                                           <attDef ident="sample" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.duration.iso"
+                                           module="tei" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="dur-iso" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.global.change"
+                                           module="transcr" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="change" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.internetMedia"
+                                           type="atts" mode="change" module="tei">
+                                           <attList>
+                                           <attDef ident="mimeType" mode="change">
+                                           <valList type="closed" mode="replace">
+                                           <valItem ident="image/jpg" />
+                                           <valItem ident="application/pdf" />
+                                           <valItem ident="application/tei+xml" />
+                                           <valItem ident="application/xml" />
+                                           </valList>
+                                           </attDef>
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.media" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="height" mode="delete" />
+                                           <attDef ident="scale" mode="delete" />
+                                           <attDef ident="width" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.milestoneUnit"
+                                           module="core" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="unit" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.namespaceable"
+                                           module="tagdocs" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="ns" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.naming" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="nymRef" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.rdgPart"
+                                           module="textcrit" mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="wit" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.sortable" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="sortKey" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           <classSpec ident="att.source" module="tei"
+                                           mode="change" type="atts">
+                                           <attList>
+                                           <attDef ident="source" mode="delete" />
+                                           </attList>
+                                           </classSpec>
+                                           </schemaSpec>
+                                </body>
+                </text>
+</TEI>

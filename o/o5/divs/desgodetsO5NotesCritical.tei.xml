@@ -1,0 +1,4905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    fichier inclus des notes de commentaire historique de O5 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi de Nc pour notes critiques, suivi d'un numéro d'ordre à quatre unités -->
+
+<!-- les liens bibliographiques étaient précédemment posés avec <ref type="biblio" target="#xxx"/>, il nous paraît plus explicite d'utiliser bibl avec un attribut copyOf à la place de ref -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" type="notesCritical" xml:id="o5BackFr03"
+    xml:lang="fre">
+    <head>Notes d’édition critique</head>
+    <note xml:id="o5Nc0001">
+        <p> orner : décorer <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0002">
+        <p> disproportion : différence <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0003">
+        <p> n’aprouve : ne se trouve <hi rend="italic">A2, A3, A8</hi> n’aime <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0004">
+        <p> ouvrages : desseins <hi rend="italic">A2, A3, A8</hi> de ceux <hi
+                rend="italic">A6</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0005">
+        <p> toutes les hauteurs des Piédestaux, des colonnes : toutte la hauteur de
+            chaque ordre en un certain nombre de parties égalles pour la hauteur [ou
+            les hauteurs] des piédestaux, des colonnes <hi rend="italic">A2, A3, A4,
+                A6, A8, A9</hi> toute les hauteurs de chaque ordre, en un certain
+            nombre de mesures ou parties égales pour avoir la hauteur des piédestaux,
+            des colonnes <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0006">
+        <p> réduisant : divisant <hi rend="italic">A6</hi>.</p>
+    </note>
+    <note xml:id="o5Nc0007">
+        <p> tous les membres : toutes les moulures <hi rend="italic">A3, A8 omis
+                A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0008">
+        <p> cette espèce : sept espèces <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0009">
+        <p> contourné : couronné <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0010">
+        <p> supérieur : suprimées <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0011">
+        <p> la vue : l’œil <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0012">
+        <p> FQ : EG <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0013">
+        <p> GS : GF <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0014">
+        <p> derrière l’arc SF : décrivez l’arc SE  <hi rend="italic">A3</hi> : décrivez
+            l’arc SF <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0015">
+        <p> DC : DE <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0016">
+        <p> l’ove : l’arc <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0017">
+        <p> BD : BC <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0018">
+        <p> TY : TX <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0019">
+        <p> Y : V <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0020">
+        <p> VX : VY <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0021">
+        <p> CEB : CFB <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0022">
+        <p> : puis du centre : puis <hi rend="bold">du centre D et de l’intervalle DC
+                décrire l’arc CA et</hi> du centre E <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0023">
+        <p> E de l’intervalle EC : D et de l’intervalle DC <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0024">
+        <p> arc : axe <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0025">
+        <p> CE : CD <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0026">
+        <p> arc : axe <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0027">
+        <p> N : L <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0028">
+        <p> ou : au dela <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0029">
+        <p> 2C, TG : 2 CY <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0030">
+        <p> 4 : O,4 <hi rend="italic">A3</hi> : O4 <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0031">
+        <p> CB : CD <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0032">
+        <p> dimention : diminution <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0033">
+        <p> du haut E : du diamètre du haut F  <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0034">
+        <p> ne leur faisant que : ne leur faisant porter que <hi rend="italic">A3, A4,
+                A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0035">
+        <p> entablemens : entablement mutilé <hi rend="italic">A3, A7, A9</hi> :
+            entablement inutile <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0036">
+        <p> mesurer : mener <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0037">
+        <p> les points EE : les points E et les lignes HH passant par les points F <hi
+                rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0038">
+        <p> FF : EE <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0039">
+        <p> FF : EF <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0040">
+        <p> concaves : convexes <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0041">
+        <p> NH : NF <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0042">
+        <p> Œ : EC <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0043">
+        <p> arc : axe <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0044">
+        <p> ME NF : M.E.N.T <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0045">
+        <p> plein : plinthe <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0046">
+        <p> A3 : « GEH » au lieu de « GH ».</p>
+    </note>
+    <note xml:id="o5Nc0047">
+        <p> VX, YZ : VXZ <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0048">
+        <p> cercle : cerce <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0049">
+        <p> la baze, le dez et la corniche : à la colomne la baze, le fût et le
+            chapiteau <hi rend="italic">A3, A7 </hi>: la baze ; le fust et le chapiteau
+                <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0050">
+        <p> mutilées : inutiles <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0051">
+        <p> les différens membres : leurs differentes moulures <hi rend="italic"
+                >A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0052">
+        <p> du Temple portatif :du temple <hi rend="bold">ou tente</hi> portatif <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0053">
+        <p> colomnes : colonies <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0054">
+        <p> six nourices : sa nourrice <hi rend="italic">A3, A4, A9</hi> la nourice de
+            cette fille <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0055">
+        <p> parties nécessaires : parties <hi rend="bold">particulières</hi>
+            nécessaires <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0056">
+        <p> édifices qui : édifices <hi rend="bold">de l’ordre composé</hi> qui <hi
+                rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0057">
+        <p> Ce diamettre a deux modules : le diamètre <hi rend="bold">se divise en deux
+                parties que l’on nomme modules</hi>
+            <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0058">
+        <p> corniche : entablement <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0059">
+        <p> que les autres et comme les colonnes n’ont de forces qu’à proportion de
+            leur grosseur […] cinq au dé et une à leur corniche : <hi rend="italic"
+                >passage dupliqué A9, p. 26-27</hi>.</p>
+    </note>
+    <note xml:id="o5Nc0060">
+        <p> l’ove de ces chapiteaux : l’œuvre de ce chapiteau <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0061">
+        <p> composite : composé <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0062">
+        <p> Le caractère de l’ordre composite est de tenir : L’ordre composé est
+            caractérisé, et tient <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0063">
+        <p> dégradation : gradation <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0064">
+        <p> des édifices antiques, qui puisse : des édifices antiques <hi rend="bold"
+                >que j’ai vue,</hi> qui puisse : <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0065">
+        <p> donne à la hauteur de l’ordre toscan : donne à la hauteur <hi rend="bold"
+                >de l’entablement</hi> de l’ordre toscan A4, A7, A9</p>
+    </note>
+    <note xml:id="o5Nc0066">
+        <p> parcs : parquets <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0067">
+        <p> ou : du <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0068">
+        <p> de la grosseur : du bas <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0069">
+        <p> également<hi rend="footnote_reference">
+                <seg rend="baseline">, </seg>
+            </hi>c’est que les colonnes de tous les ordres inférieurs ayant moins de
+            hauteur : également <hi rend="bold">les colonnes de tous les différents
+                ordres</hi> est que <hi rend="italic">A9</hi>, A4 <hi rend="bold"
+                >également les colonnes de tous les différents ordres est que
+                celles</hi> des ordres inférieurs A7</p>
+    </note>
+    <note xml:id="o5Nc0070">
+        <p> 21 : 22 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0071">
+        <p> colonne : corniche <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0072">
+        <p> colonne : corniche <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0073">
+        <p> d’exposer : de poser <hi rend="italic">A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0074">
+        <p> colonne : corniche <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0075">
+        <p> 4<hi rend="superscript">e</hi> : 4 <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0076">
+        <p> diamètre de la colonne : du diamètre <hi rend="bold">du bas</hi> de la
+            colonne <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0077">
+        <p> archivolte : architrave <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0078">
+        <p> ronde : tendre <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0079">
+        <p> pour en soutenir la poussée ou butée : pour la soutenir, la pousser, ou
+            butter <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0080">
+        <p> 22 modules 1/6 : 22 modules 3/6 <hi rend="italic">A3 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0081">
+        <p> la <hi rend="Desgodets_GlossaireTechnique">frise</hi>
+            <hi rend="bold">1 1/6</hi> et la <hi rend="Desgodets_GlossaireTechnique"
+                >corniche</hi>
+            <hi rend="bold">1 module 1/3</hi> : la frise <hi rend="bold">un module cinq
+                parties</hi> et la corniche un module <hi rend="bold">dix parties</hi>
+            <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0082">
+        <p> la distance <hi rend="bold">du milieu</hi> d’une <hi
+                rend="Desgodets_GlossaireTechnique">colonne</hi> à l’autre : la
+            distance d’une colonne à l’autre » <hi rend="italic">A3</hi> la distance du
+            milieu d’une colonne <hi rend="bold">au milieu</hi> de l’autre <hi
+                rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0083">
+        <p> par en : du <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0084">
+        <p> longueur : largeur <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0085">
+        <p> l’imposte et de l’archivolte : l’imposte et <hi rend="bold">la largeur</hi>
+            de l’archivolte </p>
+    </note>
+    <note xml:id="o5Nc0086">
+        <p> arcs : arcades <hi rend="italic">A4 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0087">
+        <p> et <hi rend="bold">de la moitié</hi> de la face : et de la face d’un
+            chapieau <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0088">
+        <p> divisée en 8 : divisée en huit<hi rend="bold"> parties</hi>
+            <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0089">
+        <p> 27 parties 1/2 : 22 <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0090">
+        <p> partie : module <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0091">
+        <p> ce qui fait <hi rend="bold">une partie ¾ </hi>de module pour le filet : ce
+            qui fait <hi rend="bold">10p. de modules ¾</hi> pour le filet <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0092">
+        <p> le diamètre <hi rend="bold">de la grosseur du bas</hi> de la colonne : le
+            diamètre <hi rend="bold">du bas de la grosseur</hi> de la colonne <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0093">
+        <p> du : ou <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0094">
+        <p> L : I <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0095">
+        <p> temple de Mars le Vengeur : temple Mars le majeur <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0096">
+        <p>
+            <placeName ref="#romePorticoDiOttavia">marché de la peste Charie</placeName> : marché
+            de la Pescaire <hi rend="italic">A3</hi> marché de la Pescherie <hi
+                rend="italic">A4</hi> marché du poisson <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0097">
+        <p> des : les <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0098">
+        <p> des : les <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0099">
+        <p> composées : comptes <hi rend="italic">A3</hi> à compter <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0100">
+        <p> le plan <hi rend="bold">du chapiteau</hi> de la colonne : le plan de la
+                colonne <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0101">
+        <p> ainsi la diminution : ainsi <hi rend="bold">que</hi> la diminution <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0102">
+        <p> au-dessous : au-dessus <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0103">
+        <p> la face du tailloir G : la face <hi rend="bold">du tailloir F a quatre fois
+                la hauteur du même filet, et le listeau du haut </hi>du tailloir G <hi
+                rend="italic">A3</hi>, <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0104">
+        <p> au-delà de l’ove. Les ¾ : au-delà de l’ove <hi rend="bold">des</hi> ¾ <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0105">
+        <p> et : a <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0106">
+        <p> de : la <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0107">
+        <p> largeur : <hi rend="bold">hauteur</hi>
+            <hi rend="italic">A3 </hi>…</p>
+    </note>
+    <note xml:id="o5Nc0108">
+        <p> listeau du tailloir est de 2 modules 1/2 : listeau <hi rend="bold">du
+                haut</hi> du tailloir <hi rend="italic">A3</hi> listeau <hi rend="bold"
+                >du haut</hi> du tailloir est de deux modules <hi rend="bold">quinze
+                parties </hi>
+            <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0109">
+        <p> la frise L : la frise N <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0110">
+        <p> mouchette <hi rend="bold">pendante</hi> : mouchette <hi rend="italic"
+                >A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0111">
+        <p> le devant se doit observer : le devant<hi rend="bold">. Et cette
+                mouchette</hi> se doit observer <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0112">
+        <p> mesures : moulures <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0113">
+        <p> beaucoup : toute <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0114">
+        <p> d’abord pour : d’abord <hi rend="bold">en terre</hi> pour <hi rend="italic"
+                >A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0115">
+        <p> les : ces <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0116">
+        <p> posoit : passoit <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0117">
+        <p> porter : poser <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0118">
+        <p> Etant : s’étant <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0119">
+        <p> on les féroit de cercles de fer : on les scelloit de cercles de fer <hi
+                rend="italic">A3</hi> ; on les cercloit <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0120">
+        <p> bas : bout <hi rend="italic">A4</hi> ; bouts <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0121">
+        <p> dessous : dessus <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0122">
+        <p> cimaise : la face <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0123">
+        <p> formé : fourni <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0124">
+        <p> composition : proportion <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0125">
+        <p> paru convenable dans : paru le plus convenable dans <hi rend="italic">A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0126">
+        <p> porte : pose <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0127">
+        <p> la : sa <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0128">
+        <p> un : en <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0129">
+        <p> du : au-dessus <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0130">
+        <p> toute la colonne : toute <hi rend="bold">la hauteur de</hi> la colonne <hi
+                rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0131">
+        <p> 8 parties, : huit parties <hi rend="bold">égales</hi>, <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0132">
+        <p> du : ou <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0133">
+        <p> ordre difficile : ordre <hi rend="bold">très</hi> difficile <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0134">
+        <p> ny : et <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0135">
+        <p> en : ou <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0136">
+        <p> Applications : explications <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0137">
+        <p> chacune d’expliquer : chacun <hi rend="bold">d’observer</hi> et d’expliquer
+                <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0138">
+        <p> nu : cru <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0139">
+        <p> et : ou <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0140">
+        <p> par : pour <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0141">
+        <p> au bas : aux bazes <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0142">
+        <p> parce que, ordinairement, on y monte par des degrés : parce qu’elles sont
+            ordinairement élevées sur des degrés <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0143">
+        <p> d’aprocher : d’<hi rend="bold">en</hi> approcher <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0144">
+        <p> Gene : serré <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0145">
+        <p> Vestules : Vesta <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0146">
+        <p> au derrière : ainsi que celles du derrière <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0147">
+        <p>
+            <seg> </seg>
+            <hi rend="italic">les deux paragraphes suivant omis dans le A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0148">
+        <p> architrave : entablement <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0149">
+        <p> sa : la <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0150">
+        <p> ce : le <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0151">
+        <p> 4 : 5 <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0152">
+        <p> huit : haut <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0153">
+        <p> aussi qui : ainsi qu’ils <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0154">
+        <p> la hauteur de la baze avec la colmone et le chapiteau : la hauteur de la
+            colonne avec sa base et son chapiteau<hi rend="italic"> A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0155">
+        <p> ravoir : avoir <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0156">
+        <p> revient : vient <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0157">
+        <p> sous : jusqu’à <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0158">
+        <p> au : du <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0159">
+        <p> ½ : 1/3 <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0160">
+        <p> sous : et le dessous <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0161">
+        <p> la hauteur de l’arcade : la hauteur de <hi rend="bold">la clef de</hi>
+            l’arcade <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0162">
+        <p> d’un milieu de la colonne à l’autre : du milieu d’une colonne au milieu de
+            l’autre <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0163">
+        <p> proportion : distribution <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0164">
+        <p> arcade : arc <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0165">
+        <p> facilement :   seulement <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0166">
+        <p> à cause : par rapport <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0167">
+        <p> le : son <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0168">
+        <p> 4e livre : 1<hi rend="superscript">er</hi> livre <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0169">
+        <p> ionique : dorique <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0170">
+        <p> Inutile : mutilé <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0171">
+        <p> 25 : 25 <hi rend="bold">parties</hi> A4, A7, A9</p>
+    </note>
+    <note xml:id="o5Nc0172">
+        <p> étant : <hi rend="bold">lequel</hi> étant <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0173">
+        <p> une partie : une <hi rend="bold">autre</hi> partie <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0174">
+        <p> du : ou <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0175">
+        <p> haut : devant <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0176">
+        <p> divisées : redivisé <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0177">
+        <p> couronne : la couronne <hi rend="bold">ou larmier</hi>
+            <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0178">
+        <p> filet : du filet <hi rend="bold">au-desous</hi>
+            <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0179">
+        <p> l’opinion de plusieurs : l’opinion particulière de ceux <hi rend="italic"
+                >A4</hi> ; l’opinion de ceux qui ont <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0180">
+        <p> la colonne : l’ordre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0181">
+        <p> étoit : étant <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0182">
+        <p> l’idée : le dé <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0183">
+        <p> recherchant : retranchant <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0184">
+        <p> bas : haut <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0185">
+        <p> 2/3 : 2/5 <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0186">
+        <p> du : au <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0187">
+        <p> moindre : moins saillante <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0188">
+        <p> 10 : 15 <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0189">
+        <p> se peut employer les dedans : se peut employer <hi rend="bold">dans</hi>
+            les dedans » <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0190">
+        <p> et <hi rend="italic">omis A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0191">
+        <p> du bas <hi rend="italic">omis A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0192">
+        <p> pour le : parties du <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0193">
+        <p> divisées : redivisé <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0194">
+        <p> moitié de l’ove : moitié <hi rend="bold">de la hauteur</hi> de l’ove <hi
+                rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0195">
+        <p> le diamètre de la hauteur, la grosseur du haut de la colonne : le diamètre
+            de la grosseur du haut de la colonne <hi rend="italic">A3</hi> ; le
+            diamètre du haut de la grosseur du haut de la colonne <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0196">
+        <p> […] la saillie de l’astragale du chapiteau est égale à sa hauteur avec son
+            filet […] : […] la saillie de l‘astragale du haut de la colonne est aussi
+            égale à sa hauteur avec son filet, lequel filet a la moitié de cette
+            saillie […]  ; […] la saillie de l’astragale du haut de la colonne est
+            aussy égalle à sa hauteur avec son filet et la saillie du filet a la moitié
+            de celle de l’astragale. Le plan du tailloir […] <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0197">
+        <p> en : est <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0198">
+        <p> qui font : ce qui fait <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0199">
+        <p> […] entre les triglifes sont quarrés, ce qui fait que leur largeur est
+            aussi d’un module 1/2. Le nud de la frise […]: […] entre les triglifs sont
+            quarrées, et par conséquent leur hauteur est égale à leur largeur. Le nud
+            de la frize […]<hi rend="italic"> » A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0200">
+        <p> Aplomb du milieu : sur le vif <hi rend="italic">A3, A4, A9</hi> ; sur le
+            nud <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0201">
+        <p> […] de la colonne. Il reste un espace […]: […] de la colonne.<hi
+                rend="bold"> Ainsi, le milieu du trigliphe se trouve aplomb du milieu
+                de la colonne. </hi>Il reste un espace […] <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0202">
+        <p> côtés : cavets <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0203">
+        <p> deux : dix <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0204">
+        <p> chaque trigliphe : chaque trigliphe <hi rend="bold">couronné par un
+                filet</hi>
+            <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0205">
+        <p> 2/5 : 2/3 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0206">
+        <p> 3/5 : 2/5 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0207">
+        <p> est haute : a de hauteur <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0208">
+        <p> 4/5 : 5/5 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0209">
+        <p> 5<hi rend="superscript">e</hi> : 1/5 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0210">
+        <p> 8 autre : une autre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0211">
+        <p> 8 autres denticules entre deux: 8 autres denticules <hi rend="bold"
+                >aplomb</hi> entre deux, il reste <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0212">
+        <p> de pareille forme, à mesures que a celui: de pareil profil et mesure que
+            celuy <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0213">
+        <p> De pareille forme, à mesure que a celui : que celui <hi rend="italic">A4,
+                A7</hi> ; de pareil forme et mesure que celuy <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0214">
+        <p> […] du milieu est pour une scotie […] : […] du milieu <hi rend="bold">des
+                cavets</hi> est pour une scotie […] <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0215">
+        <p> […] surmontée de sa plinthe entre les deux filets des cavets […] : […]
+            surmontée de sa plinthe. <hi rend="bold">Le sofitte</hi> entre les deux
+            filets des cavets […] <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0216">
+        <p> front : fond <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0217">
+        <p> mouchette: mouchette <hi rend="bold">pendante</hi>
+            <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0218">
+        <p> est : ont <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0219">
+        <p> occupent : occupant <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0220">
+        <p> se divise en deux : se divise <hi rend="bold">encore</hi> en deux <hi
+                rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0221">
+        <p> se réduisent : se redivise <hi rend="italic">A4, A7</hi> ; se divise <hi
+                rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0222">
+        <p> […] deux triglife, le profil en cavet […] : […] deux triglifs se profile en
+            cavet […] <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0223">
+        <p> saillit : saille A7</p>
+    </note>
+    <note xml:id="o5Nc0224">
+        <p> au-delà : au-devant <hi rend="italic">A4, A9</hi> ; sur le devant <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0225">
+        <p> mutules : modillons <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0226">
+        <p> au-dessous : au-dessus <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0227">
+        <p> dessus : dessous <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0228">
+        <p> en l’Achaïe : en la Caye <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0229">
+        <p> taille : saillie <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0230">
+        <p> la force <hi rend="bold">du corps</hi> d’un homme : la forme d’un homme <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0231">
+        <p> les proportions <hi rend="bold">des colomnes</hi> du temple de la déesse :
+            la proportion du temple de la Déesse <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0232">
+        <p> des coiffures des dames de son tems : des coiffures de son temps <hi
+                rend="italic">A3</hi> des coeffures des femmes de son tems <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0233">
+        <p> habillemens : habillent <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0234">
+        <p> comprendre : apprendre <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0235">
+        <p> deux sortes de chapiteaux ionique : deux sortes de <hi rend="bold">manière
+                de</hi> chapiteau ionique <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0236">
+        <p> de la face : du milieu <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0237">
+        <p> du flanc de l’édifice <hi rend="bold">qui auront des volutes en leur face.
+                Ou bien, il faudrait qu’il représente tous les côtés de leurs rouleaux,
+                ce qui paraîtrait un ordre différent de celui de la face de
+                l’édifice,</hi> ce qu’il ne seroit pas fort gracieux : du flanc de
+            l’édifice ce qu’il serait pas fort gracieux <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0238">
+        <p> proportions : portions <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0239">
+        <p> volutes angulaires : faces <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0240">
+        <p> par le bas de la colomne : par le bas <hi rend="bold">qui font 18 modules
+                la baze a 1 mod. de hauteur tout le diamettre du</hi> bas de la colonne
+                <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0241">
+        <p> dessous : dessus <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0242">
+        <p> deux fois et 1/8 le diamètre <hi rend="bold">du bas de la colomne. Le
+                centre de l’arcade qui est un plein ceintre par le haut, donne la
+                hauteur du dessus de l’imposte. La hauteur de l’imposte et la largeur
+                de l’archivolte ont chacune la moitié du diamètre</hi> du bas de la
+            colonne : 2 fois et 1/8 le diamettre du bas de la colonne <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0243">
+        <p> d’en haut : en aura <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0244">
+        <p> 12 modules 22 parties ½ : 12 modules ½ <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0245">
+        <p> ceintre donnera la hauteur des moulures de l’imposte : ceintre donnera la
+            hauteur <hi rend="bold">du dessus de l’imposte. La hauteur</hi> des
+            moulures de l’imposte<hi rend="italic">A4</hi> ceintre <hi rend="bold">se
+                trouvera. La hauteur du dessus de l’imposte,</hi> la hauteur des
+            moulures de l’imposte <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0246">
+        <p> 22 parties ½, <hi rend="bold">et la hauteur de sa corniche est de 22
+                parties ½.</hi> La largeur : 22 parties ½. La largeur <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0247">
+        <p> moins saillante <hi rend="bold">par le bas</hi> que le socle : moins
+            saillant que le socle <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0248">
+        <p> haut : bas <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0249">
+        <p> de l’ove en a la moitié. l’astragale n’a que la moitié de cette Saille de
+            l’ove. Est la saillie de l’astragale : de l’oeuve, et la saillie de
+            l’astragalle <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0250">
+        <p> bas de la colonne : bas <hi rend="bold">du diamètre</hi> de la colonne <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0251">
+        <p> au dessus : au dessous <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0252">
+        <p> la largeur du piédestal : la largeur <hi rend="bold">du dé</hi> du
+            piédestal <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0253">
+        <p> Le tore inférieur et le tore supérieur : Le torse inférieur <hi rend="bold"
+                >a la même saillie que le plinthe. Le filet inférieur</hi> et le tore
+            supérieur <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0254">
+        <p> bas de la colonne : bas <hi rend="bold">du diamètre</hi> de la colonne <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0255">
+        <p> le listeau. Toute : le listeau <hi rend="bold">2</hi>. Toute <hi
+                rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0256">
+        <p> au-delà <hi rend="bold">du nud</hi> de l’alette : au-delà de l’alette <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0257">
+        <p> listeau est : listeau <hi rend="bold">du haut</hi> est <hi rend="italic"
+                >A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0258">
+        <p> saillante que le listeau. et les astragales sont plus saillantes : moins
+            saillant <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0259">
+        <p> hauteur : largeur <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0260">
+        <p> première : parties <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0261">
+        <p> des cavets : dessinée <hi rend="italic">A4</hi> : destinée <hi
+                rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0262">
+        <p> 4 parties : 4/5 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0263">
+        <p> La saillie du listeau du haut <hi rend="bold">de l’archivolte a les 4
+                parties de la saillie du listeau</hi> de l’imposte : Et la saillie du
+            listeau du haut de l’imposte <hi rend="italic">A4</hi> : et la saillie du
+            listeau du haut de l’archivolte a les 4 parties de la saillie du listeau
+                <hi rend="bold">du haut</hi> de l’imposte.</p>
+    </note>
+    <note xml:id="o5Nc0264">
+        <p> moulures : membres <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0265">
+        <p> des saillies et longueurs : de la largeurs, et saillie <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0266">
+        <p> le centre de l’œil, <hi rend="bold">on laissera 17 parties au-dessus et 13
+                au-dessous. Ensuite, par le centre de l’œil,</hi> coté G : le centre de
+            l’œil coté G <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0267">
+        <p> petits quarrés dans le 1<hi rend="superscript">er :</hi> parties quarts
+            dont la première <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0268">
+        <p> les autres : les centres <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0269">
+        <p> 12<hi rend="superscript">e</hi> centre : deuxième centre <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0270">
+        <p> Ensuite, du Centre de l’Intervalle 2K […] Du Centre : ensuite du centre <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0271">
+        <p> l’œil : le cercle de l’œil <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0272">
+        <p> la distance depuis la parallèle depuis le point I, on commencera la volute
+            jusqu’à la ligne de niveau CD est de : la distance de la parallèle depuis
+            le point I où commence la volute jusqu’à la ligne de niveau CD est de <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0273">
+        <p> de 8 parties 1/3, celle du point R : de 8 parties. <hi rend="bold">La
+                distance du point P, 6 2/3. Celle du point Q 5 parties</hi> 1/3. Celle
+            du point R <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0274">
+        <p> point O de 8 parties ⅓, celle du point R de 4 parties ⅓, celle du point S
+            de 3 parties ⅔, celle du point T de 3 parties, celle du point V de 2
+            parties ⅓. : du point O 5 part[ies], la distance du PG part 2/3, celle du
+            point Q5 part 1/3, celle du point 4 part 1/3 <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0275">
+        <p>
+            <hi rend="italic"> Paragraphe omis A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0276">
+        <p> les centres quarts : les autres quarts <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0277">
+        <p>
+            <seg> </seg>
+            <hi rend="italic">Paragraphe omis A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0278">
+        <p> égale à la moitié de la hauteur du tailloir. Et la hauteur du filet au
+            dessous a : égalle à la moitié de la hauteur du tailloir et la hauteur du
+            filet au dessous <hi rend="bold">à la moitié de la hauteur du tailloir et
+                la hauteur du filet au dessous</hi>
+            <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0279">
+        <p> parce que la saillie de la cathette : parce que <hi rend="bold">la saillie
+                de la volute au-delà de la cathette de la face du pilastre est égale
+                à</hi> la saillie de la catette <hi rend="italic">A4</hi> : parce que
+            la saillie de la catette <hi rend="bold">de la volute au-delà de la face du
+                pilastre est égale à la saillie du haut de la catette</hi>
+            <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0280">
+        <p> se compose : se compte <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0281">
+        <p> rinceaux d’ornement : ornements <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0282">
+        <p> au dessous : au dessus <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0283">
+        <p> du nud de la colomne : du nud du haut de la colonne <hi rend="italic">A4,
+                A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0284">
+        <p> Laqu’elle Saillie du filet étant divisée en 12, pour la Saillie : laquelle
+            saillie <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0285">
+        <p> le filet 1. <hi rend="bold">La hauteur qui est pour le cavet et son filet
+                se dive en 2 dont le cavet en a 2 et le filet 1.</hi> Le filet 1 : le
+            filet 1. La hauteur <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0286">
+        <p> au dessous : au dessus <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0287">
+        <p> égale à la moitié de la hauteur : égale à la <hi rend="bold">hauteur de
+                la</hi> moitié <hi rend="bold">du petit talon, et la cimaise a le
+                reste</hi> de la hauteur <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0288">
+        <p> de la hauteur qui leur est marquée : de la hauteur <hi rend="bold">dudit
+                petit talon, et la simaise a le reste de la hauteur </hi>
+            <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0289">
+        <p> outre : entre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0290">
+        <p> de sculpture : d’architecture <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0291">
+        <p> des Côtés d’un Chapiteau de pilastre : des côtés d’un chapiteau <hi
+                rend="bold">de colonne et de la moitié d’un chapiteau de colonne et de
+                la moitié d’un chapiteau</hi> de pilastre <hi rend="italic">A3, A4</hi>
+            des côtés d’un chapiteau <hi rend="bold">de colonne et de la moitié d’un
+                chapiteau</hi> de pilastre <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0292">
+        <p> roulots : chapiteaux <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0293">
+        <p> les faire distinguer : les faire d’intelligence <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0294">
+        <p> moulures : membres <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0295">
+        <p> hauteur : largeur <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0296">
+        <p> largeur : hauteur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0297">
+        <p> ou : au-delà de <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0298">
+        <p> Capitti Veneris : cupelveneris <hi rend="italic">A3 omis A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0299">
+        <p> qu’il est de 24 parties : qu’il reste 23 parties <hi rend="italic">A3, A4,
+                A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0300">
+        <p> au dessus : au dessous <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0301">
+        <p> se divise <hi rend="bold">en 4 parties : la bande en a 3 et le filet ou
+                listeau au dessus 1. La hauteur du tailloir étant divisée</hi> en 8 ;
+            se divise en 8 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0302">
+        <p> tailloir : talon <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0303">
+        <p> du filet de l’astragale : du filet <hi rend="bold">de dessous</hi> de
+            l’astragale <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0304">
+        <p> La distance : Le listeau <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0305">
+        <p> chaque face, ce qui fait : chacque face <hi rend="bold">du chapiteau, et au
+                pilastre on met 7 cannelure à chaque face</hi> ce qui fait <hi
+                rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0306">
+        <p> chacque face ce qui fait 28 cannelures dans son pourtour : chaque face <hi
+                rend="bold">du chapiteau, et au pilastre l’on met cette cannelure dans
+                son pourtour</hi>
+            <hi rend="italic bold"> </hi>
+            <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0307">
+        <p> d’une cannelure au milieu : d’une cannelure <hi rend="bold">du
+                pilastre</hi> au milieu <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0308">
+        <p> du pilastre <hi rend="bold">qui ont des volutes angulaires</hi> : du
+            pilastre <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0309">
+        <p> ouvrent : couvrent <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0310">
+        <p> côtés : cornes <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0311">
+        <p> l’architrave : l’architecture <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0312">
+        <p> La saillie du bas du talon est <hi rend="bold">égale au quart de la hauteur
+                du listeau. et le haut du talon est du</hi> quart moins saillant : La
+            saillie du bas du talon est d’un pareil quart moins saillant <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0313">
+        <p> frond : fond <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0314">
+        <p> la hauteur <hi rend="bold">de leur bande, la face</hi> de leur frond : la
+            hauteur de leur front <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0315">
+        <p> fond : frond <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0316">
+        <p> frond : fond <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0317">
+        <p> frond : fond <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0318">
+        <p> observer exactement <hi rend="bold">répondre au modillon aplomb du milieu
+                de la face de chacune de ces entrecolmnes </hi>ou pilastres : observer
+            exactement <hi rend="bold">à toutes les colonnes</hi> ou pilastres <hi
+                rend="italic">A4</hi> observer exactement de faire répondre un modillon
+            à plomb du milieu de la face de chacune de <hi rend="bold">toutes les
+                autres colonnes</hi> ou pilastres <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0319">
+        <p> Et il faut assujétir la distance <hi rend="bold">des entrecolomnes avec la
+                distance</hi> des modillons : Et il faut assujetir la distance des
+            modillons <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0320">
+        <p> Et la hauteur du filet a la moitié de la hauteur : Et la hauteur du filet
+                <hi rend="bold">pour enfoncement des cadres </hi>a la moitié de la
+            hauteur <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0321">
+        <p> égale à la moitié de la hauteur <hi rend="bold">de la saillie des modillons
+                dont la largeur est égale à la moitié de la hauteur</hi> : égale à la
+            moitié de la hauteur <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0322">
+        <p> renversés, recreusés <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0323">
+        <p> sont en portion de cercle : sont <hi rend="bold">vers une ligne</hi> en
+            portion de cercle <hi rend="italic">A3</hi> sont <hi rend="bold"
+                >curvilignes</hi> en portion de cercle <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0324">
+        <p> GH, qui est la distance du haut : GH <hi rend="bold">du listeau</hi> du
+            haut <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0325">
+        <p> diamétralement : immédiatettement <hi rend="italic">sic A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0326">
+        <p> de la courbure <hi rend="bold">de la face des volutes. Et le point F qui
+                laisse deux parties vers G et 4 vers D sera le centre de la
+                courbure</hi> du listeau : de la courbure du listeau <hi rend="italic"
+                >A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0327">
+        <p> sous le tailloir […] la largeur du frond : sous le tailloir. La largeur du
+            front <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0328">
+        <p> Lesquelles saillies : Lesquelles <hi rend="bold">révolutions saillent</hi>
+            <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0329">
+        <p> la proposition de ¾ de la largeur du listeau : la proportion des trois
+            quart <hi rend="bold">de la largeur du listeau qui bordent leurs faces. En
+                sorte que la seconde révolution est plus saillante que la première des
+                trois quarts </hi>de la largeur du listeau <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0330">
+        <p> suivant la proposition de ¾ de la largeur du listeau de la laface de cette
+            première révolution. Et la troisième est plus saillante que la seconde des
+            ¾ : suivant la proportion des ¾ de la largeur du listeau <hi rend="bold"
+                >qui bordent leurs faces en sorte que la seconde révolution</hi> est
+            plus saillante que la <hi rend="bold">première</hi> de ¾ <hi rend="italic"
+                >A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0331">
+        <p> fleuron : <hi rend="italic">omis A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0332">
+        <p> de la diagonale <hi rend="bold">du tailloir de la colomne à la
+                diagonale</hi> du tailloir du pilastre : diagonale du tailloir du
+            pilastre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0333">
+        <p> du haut : du <hi rend="bold">listeau du</hi> haut <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0334">
+        <p> au-dessous : au-dessus <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0335">
+        <p> de la colomne sont les mêmes : de la colonne <hi rend="bold">et du
+                pilastre, et la saillie du haut de l’ove</hi> sont les mêmes <hi
+                rend="italic">A4, A7</hi> des colonnes et des pilastres et la saillie
+            du haut de l’ove sont les mêmes <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0336">
+        <p> leur frond, et leurs saillies <hi rend="bold">des cornes du tailloir et la
+                distance du haut </hi>d’une des cornes : leur frond et la saillie des
+            cornes <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0337">
+        <p> premièrement : immédiatement <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0338">
+        <p> perfectionné ce qui se fait : perfectionné <hi rend="bold">les
+                proportions</hi>, ce qui se fait <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0339">
+        <p> par les différentes proportions qui s’y rencontrent, le progrès que cet
+            ordre : par les <hi rend="bold">différents goûts et</hi> les différentes
+                proportions <hi rend="italic">A3</hi>, <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0340">
+        <p> grandeur : splendeur <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0341">
+        <p> temple de Vesta : temple des Vestales <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0342">
+        <p> les chapiteaux <hi rend="bold">de ses colonnes</hi> de l’ordre corinthien :
+            les chapiteaux d’ordre corinthien <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0343">
+        <p> d’une fois le diamètre : d’un fois <hi rend="bold">et demy</hi> diamètre
+                <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0344">
+        <p> aigus : <hi rend="bold">fort </hi>aigus <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0345">
+        <p> de laurier <hi rend="bold">et cerise </hi>: de laurier <hi rend="italic"
+                >A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0346">
+        <p> temple Faustine : temple d’Antoine et de la Castuge <hi rend="italic"
+                >A3</hi> temple d’Antonin et de Faustine <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0347">
+        <p> en campo Vaccino : en Balihinor <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0348">
+        <p> en campo Vaccino : en Champos <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0349">
+        <p> la différence de leurs chapiteaux : la différence <hi rend="bold">de la
+                hauteur</hi> de leurs chapiteaux <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0350">
+        <p> de : le <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0351">
+        <p> deux diamètres pour être : deux diamètres <hi rend="bold">de la
+                colonne</hi> pour être <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0352">
+        <p> la coupe <hi rend="bold">de la</hi> pierre : la coupe <hi rend="bold"
+                >des</hi> pierres <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0353">
+        <p> en : et <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0354">
+        <p> blocs : scinbleau ? <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0355">
+        <p> qui : qu’ils <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0356">
+        <p> dessus : dessous <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0357">
+        <p> cimaise : corniche <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0358">
+        <p> un diamètre <hi rend="bold">de colonne</hi> plus que : un diamètre plus que
+                <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0359">
+        <p> 7/15 : 7/5 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0360">
+        <p> observée : établi <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0361">
+        <p> 1/2 : 2/3 <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0362">
+        <p> 1/6 : 1/3 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0363">
+        <p> socle : colonne <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0364">
+        <p> 15 : 14 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0365">
+        <p> 1/40 : et un dixième <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0366">
+        <p> 1/15 : 1/5 <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0367">
+        <p> dessin, toute: dessin <hi rend="bold">de cet ordre</hi> toute <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0368">
+        <p> 17 : 21 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0369">
+        <p> colonne du piédestal : colonne <hi rend="bold">et</hi> du piédestal <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0370">
+        <p> l’arcade étant divisée : l’arcade <hi rend="bold">laquelle hauteur de
+                l’arcade</hi> étant divisée <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0371">
+        <p> arcade : largeur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0372">
+        <p> arc : arcade <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0373">
+        <p> 1/6 du dessous : ½ du dessus <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0374">
+        <p> est : a <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0375">
+        <p> l’imposte et la largeur  : l’imposte <hi rend="bold">est d’un module</hi>
+            et la largeur <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0376">
+        <p> sera : sont toujours <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0377">
+        <p> la gorge qui est au-dessus : la gorge au-dessus <hi rend="italic">A3,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0378">
+        <p> 5<hi rend="superscript">e</hi> : 7/15 <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0379">
+        <p> proportion : hauteur <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0380">
+        <p> la base se divise : la base <hi rend="bold">du piédestal</hi> se divise <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0381">
+        <p> le tore et le filet : le tore <hi rend="bold">2</hi> et le filet <hi
+                rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0382">
+        <p> au-dessous : au-dessus <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0383">
+        <p> de la base et du piédestal : de la base du piédestal <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0384">
+        <p> au-dessus : au-dessous <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0385">
+        <p> l’astragale du gorgerin : l’astragale ; <hi rend="bold">et les saillies de
+                l’astragale et du filet</hi> du gorgerin </p>
+    </note>
+    <note xml:id="o5Nc0386">
+        <p> la scotie inférieur : la scotie inférieur <hi rend="bold">1</hi>
+            <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0387">
+        <p> la hauteur inférieure : la hauteur <hi rend="bold">du tore </hi>inférieur
+                <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0388">
+        <p> au-dessous : au-dessus <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0389">
+        <p> n’est compris : n’est <hi rend="bold">pas</hi> compris <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0390">
+        <p> au-dessus : sous <hi rend="italic">A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0391">
+        <p> les filets : Les <hi rend="bold">deux</hi> filets <hi rend="italic"
+            >A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0392">
+        <p> supérieur : inférieur <hi rend="italic">A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0393">
+        <p> le fond de la scotie supérieure : le fond de la scotie <hi rend="bold"
+                >inférieure est moins saillant que les filets des astragales autant que
+                le fond de la scotie</hi> supérieure <hi rend="italic">A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0394">
+        <p> au-dessus : au-dessous <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0395">
+        <p> le tiers : 2/3 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0396">
+        <p> 18 : 13 <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0397">
+        <p> sous : de <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0398">
+        <p> au-dessus : au-dessous <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0399">
+        <p> le dessous et : le dessous <hi rend="bold">des volutes</hi> et <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0400">
+        <p> la hauteur des lèvres du vase ou tambour : la hauteur de l’ove du bas du
+            tambour <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0401">
+        <p> 1 : 2 <hi rend="italic">A3</hi> </p>
+    </note>
+    <note xml:id="o5Nc0402">
+        <p> se divise en 5, et le filet : se divise en 5, <hi rend="bold">le talon en a
+                4</hi> et le filet <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0403">
+        <p> de la corniche autant que la cimaise <hi rend="bold">: </hi>de la corniche
+                <hi rend="bold">au-delà de la frise est égale à sa hauteur ; le larmier
+                est moins saillant que le listeau du haut de la corniche</hi> autant
+            que la cimaise <hi rend="italic">A3, A4 </hi>de la corniche <hi rend="bold"
+                >au-delà de la frise est égale à sa hauteur ; le larmier est moins
+                saillant que le listeau du haut</hi> autant que la cimaise<hi
+                rend="italic"> A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0404">
+        <p> pour la saillie du bas : pour <hi rend="bold">la saillie de la
+                cimaise </hi>; la saillie <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0405">
+        <p> l’ove est de sa hauteur : l’ove <hi rend="bold">est de la hauteur des
+                premiers filets moins saillant que la bande des modillons, et
+                l’astragale sous l’ove</hi> est de sa hauteur A3, A4 </p>
+    </note>
+    <note xml:id="o5Nc0406">
+        <p> hauteur : largeur <hi rend="italic">A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0407">
+        <p> la : chaque <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0408">
+        <p> arcades : cadres <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0409">
+        <p> fond : front <hi rend="italic">A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0410">
+        <p> avec : aux <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0411">
+        <p> 3 : 2 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0412">
+        <p> ou : des <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0413">
+        <p> moulures : modillons <hi rend="italic">A3, A4 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0414">
+        <p> 1/4 : 1/6 <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0415">
+        <p> vase : reste <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0416">
+        <p> 3 : deux tiers <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0417">
+        <p> 3/5 : 2/3 A3 2/5 <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0418">
+        <p> canture : ceinture <hi rend="italic">A3, A4, A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0419">
+        <p> qui se séparent en deux branches : qui <hi rend="bold">séparent
+                chacune</hi> en deux branches <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0420">
+        <p> module : moulures <hi rend="italic">A3</hi> </p>
+    </note>
+    <note xml:id="o5Nc0421">
+        <p> dit pour la hauteur : dit <hi rend="bold">dans le dessin précédent</hi>
+            pour la hauteur A4</p>
+    </note>
+    <note xml:id="o5Nc0422">
+        <p> d’en haut : du bas <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0423">
+        <p> à cause du plan : à cause <hi rend="bold">de la figure</hi> du plan <hi
+                rend="italic">A4, A9</hi> à cause <hi rend="bold">de  la fin</hi> du
+            plan <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0424">
+        <p> dans : dont <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0425">
+        <p> colonne : contour <hi rend="italic">A3</hi> courbure A4, A7, A9 </p>
+    </note>
+    <note xml:id="o5Nc0426">
+        <p> pareilles :  parallèle <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0427">
+        <p> fond : front <hi rend="italic">A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0428">
+        <p> tailloir : tambour <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0429">
+        <p> dimention : diminution <hi rend="italic">A7</hi> </p>
+    </note>
+    <note xml:id="o5Nc0430">
+        <p> limmée : mince <hi rend="italic">A4, A7, A9  </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0431">
+        <p> pareille : parallèle <hi rend="italic">A3, A4, A7, A9  </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0432">
+        <p> le demi : ce dernier <hi rend="italic">A3, A4, A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0433">
+        <p> trois feuilles à chaque face : trois feuilles <hi rend="bold">au second
+                rang</hi> de chaque face <hi rend="italic">A3, A4 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0434">
+        <p> la lèvre du vase : l’ove ou vase <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0435">
+        <p> apliquées : expliquées <hi rend="italic">A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0436">
+        <p> mais diminuées : mais <hi rend="bold">leur saillies sont différentes
+                lorsque le pilastre n’est pas</hi> diminué </p>
+    </note>
+    <note xml:id="o5Nc0437">
+        <p> l’un des triangles du tailloir : l’un des <hi rend="bold">angles</hi> d’un
+            tailloir <hi rend="italic">A3, A4</hi> l’un des <hi rend="bold">angles des
+                cornes</hi> du tailloir <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0438">
+        <p> que : qu’à <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0439">
+        <p> le tout du nu : le tout <hi rend="bold">à prendre </hi>du nu </p>
+    </note>
+    <note xml:id="o5Nc0440">
+        <p> lisses : cannelées <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0441">
+        <p> uniformes : semblables <hi rend="italic">A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0442">
+        <p> dessus : dessous <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0443">
+        <p> […] entre l’ordre composit est fait […] : […] entre l’ordre <hi rend="bold"
+                >composé et celui qu’ils nomment composite prétendant que l’ordre</hi>
+            composite est fait […] <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0444">
+        <p> […] soit seulement de ceux[…] : […]soit seulement <hi rend="bold">différent
+            </hi>de ceux […] <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0445">
+        <p> différences : différentes <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0446">
+        <p> talon : tailloir <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0447">
+        <p> […] de l’ordre ionique, répondant à l’ordre composé […] : […] à l’ordre
+            ionique ; cependant l’ordre composé […] <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0448">
+        <p> le redivisant : les réduisant <hi rend="italic">A3</hi> ; réduisant, <hi
+                rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0449">
+        <p> des : ses <hi rend="italic">A3</hi> ; ces <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0450">
+        <p> moulures : membres <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0451">
+        <p> les proportions moyennes : une proportion moyenne <hi rend="italic">A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0452">
+        <p> entre l’ordre composé : entre l’ordre <hi rend="bold">ionique et
+                l’ordre</hi> composé <hi rend="italic">A4, A7, A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0453">
+        <p> sous : au-dessus <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0454">
+        <p> colonnes ou portiques de cet ordre : colonnes ou péristilles de cet ordre
+                <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0455">
+        <p> ½ : 1/4 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0456">
+        <p> base : bas <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0457">
+        <p> la hauteur de l’entablement est de 2 diamètres, qui est 1/5 de la hauteur
+            de la baze : la hauteur de l’entablement est de deux tiers qui est 1/5 de
+            la hauteur de la colonne. La baze et le chapiteau de la colonne<hi
+                rend="italic"> A4</hi> ; la hauteur de l’entablement est de deux
+            diamètres qui est 1/5 de la hauteur de la colonne. La baze et le chapiteau
+            de la colonne <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0458">
+        <p> la frise et l’architrave, et la corniche : l’architrave, la frise et la
+            corniche <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0459">
+        <p> les : aux <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0460">
+        <p>[…] l’entablement a 2 diamètres suivant […] : […] l’entablement a deux
+            diamètres <hi rend="bold">de hauteur</hi> suivant […] <hi rend="italic">A3,
+                A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0461">
+        <p> dessous : dessus <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0462">
+        <p> dessous : dessus <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0463">
+        <p> lequel a 1 module : lequel <hi rend="bold">imposte</hi> a 1 module <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0464">
+        <p> trumeaux : mur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0465">
+        <p> et : à <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0466">
+        <p> et : à <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0467">
+        <p> arcade : arc <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0468">
+        <p> que : de <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0469">
+        <p> deux : un <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0470">
+        <p> poser : porter <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0471">
+        <p> entre : contre <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0472">
+        <p> des murs et des trumeaux : des murs en trumeau <hi rend="italic">A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0473">
+        <p> divisée : redivisé <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0474">
+        <p> des trumeaux : d’un trumeau <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0475">
+        <p> la hauteur du haut de la clef du haut de l’arc : la hauteur du haut de
+            l’arc <hi rend="italic">A3</hi> ; la hauteur de la clef <hi rend="italic"
+                >A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0476">
+        <p> 2/3 : 1/3 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0477">
+        <p> des mêmes ordres : de même ordre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0478">
+        <p> cintre : centre <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0479">
+        <p> 1 : un pareille <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0480">
+        <p> mutules : ou mutules <hi rend="italic">A3</hi> ; et mutules <hi
+                rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0481">
+        <p> […]un modillon, le milieu de leurs espaces[…] : […] un modillon, <hi
+                rend="bold">ou</hi> le milieu de leurs espaces[…] A3 ; […] <hi
+                rend="italic">le milieu</hi>
+            <hi rend="bold">d’un</hi>
+            <hi rend="italic">de leur espace</hi>[…] A4 ; […]<hi rend="italic">
+                modillon</hi> , <hi rend="bold">ou</hi>
+            <hi rend="italic">le milieu</hi>
+            <hi rend="bold">d’un</hi>
+            <hi rend="italic">de leur espace </hi>[…] A7, A9</p>
+    </note>
+    <note xml:id="o5Nc0482">
+        <p> des : ou des <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0483">
+        <p> confuses : composées <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0484">
+        <p> on en donnera : on en donne <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0485">
+        <p> deux autres filets : les deux filets <hi rend="italic">A3, A4 ; A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0486">
+        <p> à 1/2 de ces parties : à la moitié des parties<hi rend="italic"> A3, A4 ;
+            </hi>une demie des parties<hi rend="italic"> A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0487">
+        <p> Le : du <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0488">
+        <p> et le filet du bas du cavet est, de sa hauteur joint avec la hauteur du
+            cavet, plus saillant que le nud du dez <hi rend="italic">omis A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0489">
+        <p>parties <hi rend="italic">omis A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0490">
+        <p> redivisent : réduisent <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0491">
+        <p> divisées : redivisées <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0492">
+        <p> talon en a 3 et le listeau: talon en a 3 <hi rend="bold">et le larmier
+                4</hi> et le listeau <hi rend="italic">A4</hi> </p>
+    </note>
+    <note xml:id="o5Nc0493">
+        <p> divisées : redivisées <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0494">
+        <p> et le listeau du haut 2. Les deux premières parties du bas de la corniche
+            étant divisées en 3 <hi rend="italic">omis A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0495">
+        <p> renversé : recreusé <hi rend="italic">A3</hi>, <hi rend="italic">A4 ; A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0496">
+        <p> renversé : recreusé <hi rend="italic">A3, A4 ; A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0497">
+        <p> au-dessous, et la saillie du bas du cavet <hi rend="italic">omis A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0498">
+        <p> recouvrement : recreusement <hi rend="italic">A4 ; A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0499">
+        <p> en a 3 et supérieur: en a 3 et <hi rend="bold">le tore 2 ; le tore</hi>
+            supérieur <hi rend="italic">A4 ; A7, A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0500">
+        <p> Elle se divise en 5 parties dont le [« plinte » ; plinthe] en a 3, et le
+            tore supérieur a les ¾ de la hauteur du tore inférieur <hi rend="italic"
+                >omis A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0501">
+        <p> sur le tore inférieur : <hi rend="bold">sur </hi>l’inférieur <hi
+                rend="italic">A4 ; </hi>sous le tore inférieur<hi rend="italic">
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0502">
+        <p> sur : sous <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0503">
+        <p> 6<hi rend="superscript">e</hi> partie: 5<hi rend="superscript">e</hi>
+            partie <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0504">
+        <p> 32 : 34 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0505">
+        <p> la hauteur supérieur: la hauteur <hi rend="bold">du tore</hi> supérieur <hi
+                rend="italic">A3, A4, A9</hi> ; la hauteur <hi rend="bold">du tors</hi>
+            supérieur <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0506">
+        <p> 2/3 : 2/5 <hi rend="italic">A3, A4 ; 2/3 rayé et remplacé par </hi>2/5<hi
+                rend="italic"> A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0507">
+        <p> 3 : 1/3 <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0508">
+        <p> au-dessous : supérieur <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0509">
+        <p> dessous : dessus <hi rend="italic">A3, A4, A7 ; </hi>sur<hi rend="italic">
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0510">
+        <p> de ce tore, et la saillie <hi rend="italic">omis A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0511">
+        <p> Le fond du creux de la scotie supérieure est aplomb du listeau du bas de la
+            colomne <hi rend="italic">omis A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0512">
+        <p> du creux <hi rend="italic">omis A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0513">
+        <p> est d’un module ou demi diamètre de la colomne, non compris l’astragale :
+            est d’un mod. 1/10 compris l’astragale <hi rend="italic">A3 ; </hi>d’un
+            module, non compris l’astragale <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0514">
+        <p> demi diamètre de la colonne : demi diamètre <hi rend="bold">du bas </hi>de
+            la colonne <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0515">
+        <p> ½ : 5 <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0516">
+        <p> d’un : <hi rend="italic">omis A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0517">
+        <p> haut : hauteur <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0518">
+        <p> arcades : arcs <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0519">
+        <p> en : la <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0520">
+        <p> chacune de ces : chacune d’une <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0521">
+        <p> le haut : la bande <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0522">
+        <p> curviligne : avec une ligne <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0523">
+        <p> à pan : en pans <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0524">
+        <p> ayant un ove et une astragale : <hi rend="italic">omis A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0525">
+        <p> spiraliquement : spiralique <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0526">
+        <p> qui reste du bas du corps du chapiteau : qui reste de la baze du corps du
+            chapiteau <hi rend="italic">A3</hi> ; reste du bas du vase ou corps du
+            chapiteau <hi rend="italic">A4</hi> ; qui reste de bas ou corps du
+            chapiteau <hi rend="italic">A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0527">
+        <p> orné de roses : orné de <hi rend="bold">8</hi> roses <hi rend="italic">A4,
+                A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0528">
+        <p> tuilleaux : culots <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0529">
+        <p> en a 1 : en a une <hi rend="bold">partie</hi>
+            <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0530">
+        <p> autres4 : autres <hi rend="bold">ensembles</hi>
+            <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0531">
+        <p> le filet. Le bas du talon : le filet du bas du talon <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0532">
+        <p> 3/5 : 2/5 <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0533">
+        <p> hauteur : le haut <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0534">
+        <p> droite et aplomb: […] la frise est droite et <hi rend="bold">aplomb de la
+                première bande de l’architrave, et par conséquent</hi> aplomb du haut
+            du fût […] <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0535">
+        <p> listeau : listeau <hi rend="bold">du haut</hi> A3, <hi rend="italic">A4,
+                A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0536">
+        <p> et : <hi rend="italic">omis A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0537">
+        <p> divisées : redivisé <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0538">
+        <p> le cavet en a 4 et le filet une : le cavet en a une et l’ove 4 <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0539">
+        <p> fond : front <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0540">
+        <p> mois : moins <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0541">
+        <p> fond : front <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0542">
+        <p> […] entre-deux a de hauteur de chacun des deux talons […]: […] entre deux a
+            de <hi rend="bold">hauteur. Le reste de la saillie du listeau du haut de la
+                corniche est pour la saillie de la cimaise. La </hi>hauteur de chacun
+            des deux talons […] <hi rend="italic">A3, A4</hi> ; entre-deux a de
+            hauteur. La hauteur de chacun des deux talons […] <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0543">
+        <p> ainsy : et A9</p>
+    </note>
+    <note xml:id="o5Nc0544">
+        <p> intérieur : inférieur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0545">
+        <p> fond : front <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0546">
+        <p> arcades : le cadre <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0547">
+        <p> des premières distance : des premières. La distance <hi rend="italic">A3,
+                A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0548">
+        <p> après 9 parties : a les 9 parties <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0549">
+        <p> l’ove : le tore <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0550">
+        <p> dessous : dessus <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0551">
+        <p> sont : font <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0552">
+        <p> Il est : je l’ai <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0553">
+        <p> au-dessus : au-dessous <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0554">
+        <p> pour : par <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0555">
+        <p> de toute la largeur : où toute la longueur <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0556">
+        <p> aux : ou <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0557">
+        <p> deux tiers de la hauteur du tailloir que la hauteur de l’ove : deux tiers
+            de hauteur du tailloir moins saillant que le haut de l’ove <hi
+                rend="italic">A4</hi> ; deux tiers de la hauteur du tailloir moins
+            saillant que le haut de l’ove <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0558">
+        <p> dessous : dessus <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0559">
+        <p> cachée : couché <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0560">
+        <p> révolution. Il sort : révolution qui sort <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0561">
+        <p> canal : cavet <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0562">
+        <p> de : est <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0563">
+        <p> […] des volutes suivant la même courbure, est décrit d’un même centre […] :
+            […] des volutes suit la même courbure, et est décrit du même centre […] <hi
+                rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0564">
+        <p> au pourtour du vase : au pourtour <hi rend="bold">de l’ove</hi> du vaze<hi
+                rend="italic"> A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0565">
+        <p> répondant : répondent <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0566">
+        <p> répondent entre: répondent <hi rend="bold">aux</hi> entre <hi rend="italic"
+                >A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0567">
+        <p> […] Le plan du tailloir du chapiteau composé est le même que celui du
+            chapiteau corinthien, et le centre de l’arc de cercle de la courbure de ces
+            faces est aussi le sommet, cotté C, d’un triangle équilatéral, dont la baze
+            de la ligne AB menéz de l’arreste d’une des cornes du tailloir à son opposé
+            sur la même face. Le plan des faces des volutes, suivant la même courbure,
+            est décrit d’un même centre. La colomne est cannelée de 24 canneaux dont le
+            creux est en demi-cercle, et les côtés entre deux ont chacun le tiers de la
+            largeur du creux. L’on fait répondre le milieu d’une de ces cannelures au
+            milieu de chacque face de la colomne. L’on taille aussi 24 oves, au
+            pourtour du vaze du chapiteau, qui répondent aux canneaux de la colomne.
+            Les 8 grandes feuilles supérieures répondant aux 4 faces et aux 4 cornes du
+            tailloir du chapiteau, et les 8 feuilles inférieures répondent entre deux
+            des feuilles supérieures […] <hi rend="italic">omis A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0568">
+        <p> […] angles que les trois quart de la saillie […] : […] angles <hi
+                rend="bold">ou arrestes du tambour que a moitié de la saillie qu’il a
+                au droit du milieu de la face et</hi> que les ¾ de la saillie […] <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0569">
+        <p> celui : à celui <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0570">
+        <p> le centre E : le <hi rend="bold">même</hi> centre E <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0571">
+        <p> CE : CF, <hi rend="italic">A4</hi> ; CD <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0572">
+        <p> servoient : se voyent <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0573">
+        <p> Front : fond <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0574">
+        <p> pareille : parallelle <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0575">
+        <p> de : à <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0576">
+        <p> seconde : seconde <hi rend="bold">révolution</hi>
+            <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0577">
+        <p> […] pour tracer le trait du contour des volutes […] : […] pour tracer les
+            traits de la courbure des volutes […] <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0578">
+        <p> S2 égal à S : S2 égal à S3 <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0579">
+        <p> 12T : 1-2-T <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0580">
+        <p> pour aller : parallèle <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0581">
+        <p> remonte : rencontre <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0582">
+        <p> l’arc : l’arc de cercle A3, A9</p>
+    </note>
+    <note xml:id="o5Nc0583">
+        <p> prise : puis A7</p>
+    </note>
+    <note xml:id="o5Nc0584">
+        <p> décrives : décrire <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0585">
+        <p> décrives : décrire <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0586">
+        <p> au-dessous du listeau : au-dessus du ruisseau <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0587">
+        <p> R1 : RT <hi rend="italic">A3</hi> ; RI <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0588">
+        <p> dehors : hors de <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0589">
+        <p> trouverra : tracera <hi rend="italic">A3, A4</hi> ; décrira <hi
+                rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0590">
+        <p> 1 : I <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0591">
+        <p> au-dessous : au-dessus <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0592">
+        <p> X 13 : X1.3 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0593">
+        <p> nomme goût : de <hi rend="bold">bon</hi> goust <hi rend="italic">A3,
+                A4 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0594">
+        <p> haut : bas <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0595">
+        <p> côté : face <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0596">
+        <p> la grosseur <hi rend="bold">de la colonne par le bas, ou pilastre</hi>,
+            avec leur hauteur : la grosseur <hi rend="bold">des pilastres</hi> avec
+            leur hauteur A4 la grosseur <hi rend="bold">du bas des colonnes ou
+                pilastres</hi> avec leur hauteur A7, A9 </p>
+    </note>
+    <note xml:id="o5Nc0597">
+        <p> la hauteur : le haut <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0598">
+        <p> entrecolonnements : entablement <hi rend="italic">A3, A4 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0599">
+        <p> Ils seroient : Cependant, il semble qu’ils seroient </p>
+    </note>
+    <note xml:id="o5Nc0600">
+        <p> sans qu’ils portent à faux : sans <hi rend="bold">ressaut ni
+            porte</hi>-à-faux <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0601">
+        <p> sa saillie <hi rend="bold">ne seroit pas plus grande</hi>, hors le corps :
+            sa saillie <hi rend="bold">seroit également</hi> hors le corps du mur <hi
+                rend="italic">A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0602">
+        <p> mais la portion qui reste : mais la portion <hi rend="bold">de métope</hi>
+            qui reste <hi rend="italic">A4, A9 </hi>mais la <hi rend="bold">proportion
+                des métopes</hi> qui reste <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0603">
+        <p> qui reste, au-delà : qui reste <hi rend="bold">du métope</hi> au-delà <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0604">
+        <p> On doit assujétir : <hi rend="bold">auxquelles distances l</hi>’on doit
+            assujétir <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0605">
+        <p> du : ou <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0606">
+        <p> du traité : qui traite <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0607">
+        <p> aussi large : aussi <hi rend="bold">plus</hi> large <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0608">
+        <p> largeur : longueur <hi rend="italic">A3, A4 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0609">
+        <p> la hauteur entre : la hauteur <hi rend="bold">de ces arcades, et laisser
+                plus de hauteur</hi> entre A3, A7, A9 </p>
+    </note>
+    <note xml:id="o5Nc0610">
+        <p> doivent : peuvent <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0611">
+        <p> du : ou <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0612">
+        <p> architrave : architecture <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0613">
+        <p> pans : plus <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0614">
+        <p> et ornements : et <hi rend="bold">autres</hi> ornements <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0615">
+        <p> […]Traité des ordres de l’architecture concernant leur application aux
+            édifices et leurs proportions, et des autres parties, qui composent les
+            décorations […] : […]Traité des ordres de l’architecture concernant leur
+            application aux édifices et leurs proportions, et des autres parties, qui
+            composent les décorations <hi rend="bold">expliqué en l’académie royale
+                d’architecture par Monsieur Desgodests architecte des bastiments du roy
+                et professeur de ladite académie 1736</hi> […] <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0616">
+        <p> Traité des ordres d’architectures : <hi rend="bold">Du</hi> traitté des
+            ordres d’architectures <hi rend="bold">concernant leur application aux
+                édifices et les proportions des autres parties qui composent les
+                décorations </hi>
+            <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0617">
+        <p> des cas : des <hi rend="bold">autres</hi> cas A4</p>
+    </note>
+    <note xml:id="o5Nc0618">
+        <p> en : ou <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0619">
+        <p> corinthien. : « corinthien<hi rend="italic">,</hi>
+            <hi rend="bold"> par ce qu’il est moins délicat que le corinthien.</hi>
+            <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0620">
+        <p> hauteur de la : « hauteur <hi rend="bold">du piédestal d’en bas, et à la
+                colonne les trois quarts de la hauteur</hi> de la <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0621">
+        <p> moitié de la hauteur de la colonne : moitiés <hi rend="bold">de la hauteur
+                du piédestal d’en bas, et à la colonne les 3/4</hi> de la hauteur de la
+            colonne <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0622">
+        <p> colonne : <hi rend="bold">hauteur de la</hi> colonne <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0623">
+        <p> premier : second <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0624">
+        <p> nouvel : mauvais <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0625">
+        <p> proportion : disproportion <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0626">
+        <p> second au-dessus : second <hi rend="bold">ordre</hi> au-dessus <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0627">
+        <p> d’un diamètre : diamètre et demi <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0628">
+        <p> pour : par <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0629">
+        <p> par : pour <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0630">
+        <p> diamettre du bas de la colonne: diamettre du <hi rend="bold">bas pour estre
+                de la grandeur du [ajouté au-dessus : « diamettre du »]</hi> bas de la
+            colonne <hi rend="italic">A4 ; </hi>diamettre du <hi rend="bold">bas pour
+                être de la grandeur du diamettre du </hi>bas <hi rend="italic">A3,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0631">
+        <p> proportion que : proportion <hi rend="bold">de la diminution</hi> que <hi
+                rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0632">
+        <p> peut : doit <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0633">
+        <p> colonnes, et si : « colonnes, <hi rend="bold">on donnera aussi aux
+                entablemens de tous les ordres qui seront au-dessus le quart de la
+                hauteur de leurs colonnes</hi>, et si <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0634">
+        <p> […] leurs colomnes, et si l’ordre du bas est ionique, on donnera à la
+            hauteur de l’entablement de l’ordre au-dessus les 2/9<hi rend="superscript"
+                >e</hi> […] : […] la colonne, on donnera aussi aux entablements de tous
+            les ordres qui seront au-dessus le quart de la hauteur de leurs colonnes.
+            Et Si l’entablement est ionique, on donnera à l’entablement de l’ordre
+            au-dessus les deux neuvièmes […] <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0635">
+        <p> dessous : dessus <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0636">
+        <p> reconnoître : faire connoitre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0637">
+        <p> parties desquelles : parties <hi rend="bold">sa hauteur aura 420
+                parties</hi> desquelles <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0638">
+        <p> sans être : se trouve être <hi rend="italic">A4</hi> ; se trouvât <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0639">
+        <p> sans être aplomb de l’axe : se trouve à être à plomb de l’axe des pilastres
+            de l’ordre de dessus se trouve être à plomb de l’axe <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0640">
+        <p> dessus : dessous <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0641">
+        <p> d’un : deux <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0642">
+        <p> en ligne : « en <hi rend="bold">droite ligne avec les axes des colonnes ou
+                pilastres du bas, et incliner un peu cette</hi> ligne <hi rend="italic"
+                >A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0643">
+        <p> ordre : dessein <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0644">
+        <p> suite : saillie <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0645">
+        <p> terrasse : terrasse <hi rend="bold">ou balcon</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0646">
+        <p> 3<hi rend="superscript">e</hi> ordre : ordre <hi rend="bold">E. Ce qui est
+                aussy représenté par le profil des 3 ordres</hi>
+            <hi rend="italic"> A3 ;</hi> ordre <hi rend="bold">Q qui est aussi
+                représenté par le profil de ces trois ordres </hi>
+            <hi rend="italic">A7</hi> </p>
+    </note>
+    <note xml:id="o5Nc0647">
+        <p> du : ou <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0648">
+        <p> grand : second <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0649">
+        <p> Trois pieds 6 pouces : trois pieds et demy <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0650">
+        <p> au : ou <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0651">
+        <p> ou : au <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0652">
+        <p> ou au plus au niveau : « ou au plus au-<hi rend="bold">dessus du</hi>
+            niveau <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0653">
+        <p> fermé : formé <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0654">
+        <p> donneroit aux arcades : donneroit <hi rend="bold">justement</hi> aux
+            arcades <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0655">
+        <p> espace : espèce <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0656">
+        <p> dessous : dessus <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0657">
+        <p> réuny : aussi <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0658">
+        <p> espace : espèce <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0659">
+        <p> hauteur : clef <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0660">
+        <p> seroient : s’élèvent <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0661">
+        <p> soit plus haute que la première: soit plus haute <hi rend="bold">que la
+                seconde, et la Seconde plus haute </hi>que la première. <hi
+                rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0662">
+        <p> colonne du troisième : colonne <hi rend="bold">et du socle</hi> du
+            troisième <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0663">
+        <p> sur : sera <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0664">
+        <p> l’ordre : du socle <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0665">
+        <p> comme : commune <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0666">
+        <p> la colomne : l’arcade <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0667">
+        <p> On fera la hauteur de la colomne du second ordre F : On fera la hauteur des
+            arcades du second Ordre E <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0668">
+        <p> 60 : 6 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0669">
+        <p> ordre : ordre <hi rend="bold">de la colonne</hi>
+            <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0670">
+        <p> 55 : 85 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0671">
+        <p> autres parties d’architecture comme les impostes : autres parties
+            d’architecture <hi rend="bold">plus saillantes ni aucun ornement, et les
+                parties d’architecture </hi>comme les impostes <hi rend="italic">A4,
+                A7</hi> autres parties d’architecture <hi rend="bold">plus saillantes
+                ni aucun autre ornement, et les parties d’architecture</hi> comme les
+            impostes <hi rend="italic">A9, A3 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0672">
+        <p> entre : contre <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0673">
+        <p> et même <hi rend="bold">jusqu’aux</hi> ¾ : et même <hi rend="bold">des</hi>
+            trois quarts <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0674">
+        <p> qui <hi rend="bold">ne</hi> regarde <hi rend="bold">pas</hi> : qui regarde
+                <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0675">
+        <p> aplomb : <hi rend="bold">justement</hi> aplomb <hi rend="italic">A3, A7,
+                A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0676">
+        <p> pilastres : pilastres<hi rend="bold"> 2 </hi>
+            <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0677">
+        <p> Les autres pilastres et : Les autres pilastres<hi rend="bold"> 3 </hi>et
+                <hi rend="italic">A3, A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0678">
+        <p> et des arrière-corps <hi rend="bold">des colonnes</hi> 17, en retour : et
+                <hi rend="bold">les deux</hi> arrière-corps 17 en retour<hi
+                rend="italic">s A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0679">
+        <p> avec : aux <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0680">
+        <p> recoupent : reçoivent <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0681">
+        <p> saillant : saille <hi rend="italic">A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0682">
+        <p> du pavillon. : du pavillon <hi rend="bold">du milieu</hi>. <hi
+                rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0683">
+        <p> autres : entre <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0684">
+        <p> que : quoy que <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0685">
+        <p> ce qui ne <hi rend="bold">se</hi> peut pas toujours <hi rend="bold"
+                >rencontrer</hi> être régulier : ce qui ne peut pas toujours estre
+                régulier <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0686">
+        <p> posera : passera <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0687">
+        <p> à l’aplomb <hi rend="bold">des pilastres de la face</hi> 8 : à l’aplomb <hi
+                rend="bold">de la face des pilastres</hi> 8 <hi rend="italic">A4,
+                A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0688">
+        <p> ces pilastres : ces <hi rend="bold">mêmes</hi> pilastres <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0689">
+        <p> dans la largeur de l’une à l’autre, <hi rend="bold">entre les
+                avant-corps</hi>, comme <hi rend="bold">à la place</hi> du marché de
+                <hi rend="bold">Nerva</hi> à Rome : dans la largeur de l’une à l’autre
+            comme au marché de <hi rend="bold">Néron</hi> à Rome <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0690">
+        <p> aplomb de la face : aplomb <hi rend="bold">du vif du haut du derrière des
+                colonnes et aplomb</hi> de la face <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0691">
+        <p> architecture : architrave <hi rend="italic">A3, A4, A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0692">
+        <p> pour : parce que <hi rend="italic">A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0693">
+        <p> passe : pose <hi rend="italic">A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0694">
+        <p> ils : qui <hi rend="italic">A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0695">
+        <p> pour : pourroit <hi rend="italic">A3, A4, A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0696">
+        <p> que le pilastre, comme à ce premier plan. : que le pilastre <hi rend="bold"
+                >1, a par le côté qui regarde le pilastre 2. Lorsque le corps de
+                l’édifice est uni et n’a point de pilastre</hi> comme à ce premier plan
+                <hi rend="italic">A4 </hi>que le pilastre <hi rend="bold">1, a par le
+                côté qui regarde le pilastre 2. Lorsque le corps de l’édifice est uni
+                et n’a pas de pilastre 2</hi> comme à ce premier plan <hi rend="italic"
+                >A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0697">
+        <p> pilastre : pilastre <hi rend="bold">1</hi>
+            <hi rend="italic">A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0698">
+        <p> l’avant-corps. Il doit y avoir : l’avant-corps <hi rend="bold">du milieu.
+                Au retour de l’avant-corps</hi> il doit y avoir <hi rend="italic">A3,
+                A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0699">
+        <p> proportion : portion <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0700">
+        <p> à : dans <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0701">
+        <p> forme le pavillon : forme le <hi rend="bold">flanc du</hi> pavillon<hi
+                rend="italic"> A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0702">
+        <p> l’encoignure <hi rend="bold">a</hi> 7 au retour : l’encoignure 7 au retour
+                <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0703">
+        <p> du : ou<hi rend="italic"> A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0704">
+        <p> lui en donner au lieu : lui en donner <hi rend="bold">l’apparence</hi>, au
+            lieu <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0705">
+        <p> 16 : 17 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0706">
+        <p> au : ou <hi rend="italic">A3, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0707">
+        <p> les pilastres 33, 34, 35, 36, 37, <hi rend="bold">38, 39</hi> des
+            encoignures sont doublés avec des portions de pilastres aux angles
+            rentrant : les pilastres 33, 34, 35, 37 des encoignures sont doublés avec
+            des portions de pilastres<hi rend="italic bold"> </hi>
+            <hi rend="bold">38, 39</hi> aux angles rentrant de l’avant-corps , </p>
+    </note>
+    <note xml:id="o5Nc0708">
+        <p> sont d’autres : sont <hi rend="bold">accompagnés</hi> d’autres <hi
+                rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0709">
+        <p> portions : proportions <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0710">
+        <p> ligne : alignement <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0711">
+        <p> pour : par le A3, A9 </p>
+    </note>
+    <note xml:id="o5Nc0712">
+        <p>
+            <hi rend="bold">pour retour</hi> du flanc : <hi rend="bold">par la
+                colonne</hi> du flanc <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0713">
+        <p> pavillon entre les colonnes 6 et 8 : pavillon <hi rend="bold">et entre les
+                colonnes 2 et 7 de la face de l’avant-corps. Et faire les
+                distances</hi> entre les colonnes 6 et 8 <hi rend="italic">A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0714">
+        <p> colonne <hi rend="bold">5</hi> : colonne<hi rend="bold"> 3</hi>
+            <hi rend="italic">A4</hi> colonne <hi rend="bold">5/9 </hi>
+            <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0715">
+        <p> 6 : <hi rend="bold">1 et</hi> 6<hi rend="italic"> A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0716">
+        <p> du pavillon de l’avant-corps : du pavillon <hi rend="bold">et par la
+                face</hi> de l’avant-corps <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0717">
+        <p> 27 : 23 <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0718">
+        <p> même erreur dans<hi rend="italic"> A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0719">
+        <p> 29, 25 <hi rend="bold">et 28 et 22 </hi>: 29, 25, <hi rend="bold">29 et
+                28 </hi>A7, A9 </p>
+    </note>
+    <note xml:id="o5Nc0720">
+        <p> pavillon. Au plan cotté : pavillon. <hi rend="bold">Aux trois exemples
+                précédents, les colonnes sont engagées par le derrière dans les faces
+                des murs pour donner moins de saillie au soffite des architraves des
+                entablements qui posent sur ces colonnes, et conserver le jour aux
+                logements par les fenêtres qui sont dans les entrecolonnements. À cela
+                près, si le jour étoit suffisant, en isolant les colonnes hors la face
+                des mur, la décoration en seroit plus gracieuse. Mais il faudroit que
+                les bases et les chapiteaux des colonnes fussent aussi isolés, ce qui
+                se feroit en éloignant seulement le derrière des colonnes de la face
+                des murs de la distance d’un quart de leur diamètre du bas, comme il
+                est représenté par les plans I, L.</hi> Au plan cotté <hi rend="italic"
+                >A3, A4 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0721">
+        <p> édifice : enfilade <hi rend="italic">A3, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0722">
+        <p>
+            <hi rend="bold"> </hi>37 : 31 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0723">
+        <p> 44 : 47 </p>
+    </note>
+    <note xml:id="o5Nc0724">
+        <p> plan M : plan <hi rend="bold">cotté</hi> M <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0725">
+        <p> comme <hi rend="bold">il a été pratiqué à une infinité</hi>
+            <hi rend="bold">d</hi>’autres exemples : comme <hi rend="bold">on voit par
+                plusieurs </hi>autres exemples… » A4</p>
+    </note>
+    <note xml:id="o5Nc0726">
+        <p> le flanc <hi rend="bold">du</hi>
+            <hi rend="Desgodets_GlossaireTechnique">pilastre</hi> 21, est d’un côté :
+            le flanc, le pilastre 21 est <hi rend="bold">couplé</hi> d’un côté A4,
+            A9 </p>
+    </note>
+    <note xml:id="o5Nc0727">
+        <p> Le <hi rend="bold">premier</hi> plan : <hi rend="italic">Le</hi>
+            <hi rend="bold">4</hi>
+            <hi rend="bold superscript">e</hi>
+            <hi rend="italic">plan A3, A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0728">
+        <p> flanc de la face : flanc <hi rend="bold">et</hi> de la face <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0729">
+        <p> sur la colonne : sur <hi rend="bold">les côtés des</hi> colonnes <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0730">
+        <p> 60 : 66 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0731">
+        <p> 74, 73 : 74, <hi rend="bold">75 et</hi> 73 <hi rend="italic">A7, A9 </hi>
+            <hi rend="bold">75</hi>, 73 </p>
+    </note>
+    <note xml:id="o5Nc0732">
+        <p> ces deux pilastres qu’aux autres : ces deux <hi rend="bold">entre</hi>
+            pilastres qu’aux autres </p>
+    </note>
+    <note xml:id="o5Nc0733">
+        <p>une colonne dans chacun des angles <hi rend="bold">et</hi> engagées : une
+            colonne dans chacun <hi rend="bold">de</hi> ses angles engagés <hi
+                rend="italic">A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0734">
+        <p> du : ou<hi rend="italic"> A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0735">
+        <p> même : mené <hi rend="italic">A3, A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0736">
+        <p> portera les colonnes : qui portera <hi rend="bold">sur</hi> les colonnes<hi
+                rend="italic"> A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0737">
+        <p> pentes : pans<hi rend="italic"> A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0738">
+        <p> diamètre : distance </p>
+    </note>
+    <note xml:id="o5Nc0739">
+        <p> du plan <hi rend="bold">des chapiteaux et des plinthes</hi> des colonnes :
+            du plan <hi rend="bold">des plinthes et des chapiteaux</hi> des colonnes<hi
+                rend="italic"> A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0740">
+        <p> pilastres : plinthes <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0741">
+        <p> l’architrave, <hi rend="bold">avec</hi> le pourtour opposé : l’architrave
+                <hi rend="bold">au</hi> pourtour <hi rend="bold">du mur </hi>opposé A3,
+            A4, A7, A9 </p>
+    </note>
+    <note xml:id="o5Nc0742">
+        <p> le trait passe : le trait <hi rend="bold">qui</hi> passe <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0743">
+        <p> B 13, <hi rend="bold">G</hi> : b 13 <hi rend="bold">c</hi>
+            <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0744">
+        <p> au point H, <hi rend="bold">I</hi> : au point H<hi rend="bold">J</hi> <hi
+                rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0745">
+        <p> D<hi rend="bold">C</hi> : D<hi rend="bold">E </hi>
+            <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0746">
+        <p> demi ovale : demi-cercle <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0747">
+        <p> E : c <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0748">
+        <p> TF : TS <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0749">
+        <p> FE : fc <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0750">
+        <p> du : ou </p>
+    </note>
+    <note xml:id="o5Nc0751">
+        <p> TA : T2 <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0752">
+        <p> B,C : bd <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0753">
+        <p> les <hi rend="bold">autres</hi> pilastres <hi rend="bold">16</hi> : les
+            entre-pilastres <hi rend="bold">15</hi>
+            <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0754">
+        <p> de leur centre<hi rend="bold"> T</hi> au centre T : de leur centre au
+            centre T<hi rend="italic"> A4, A7 </hi>de leur centre T <hi rend="italic"
+                >A3</hi> </p>
+    </note>
+    <note xml:id="o5Nc0755">
+        <p> largeur : longueur  </p>
+    </note>
+    <note xml:id="o5Nc0756">
+        <p> usage : l’abus <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0757">
+        <p> pavillons : pilastres <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0758">
+        <p> relevés : reculé <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0759">
+        <p> engagé : égale <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0760">
+        <p> passera : posera <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0761">
+        <p> face de la colomne <hi rend="bold">15 est censée faire retraite sur la
+                moitié du corps de la colomne</hi> 14 : face de la colomne 14 <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0762">
+        <p> à crue : à nud <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0763">
+        <p> comme celuy de l’angle du vestibule du plan cotté B : comme le précédent
+                <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0764">
+        <p> convexes en : comme en <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0765">
+        <p> pilastres ployées 25 : pilastres 25 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0766">
+        <p> vazes : bases <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0767">
+        <p> les pilastres 33-36, qui sont plus reculés que les pilastres 37, 38 : les
+            pilastres 37-38 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0768">
+        <p> licentiée : licencieux <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0769">
+        <p> 50 : 51 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0770">
+        <p> Les autres : Les lattéreaux <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0771">
+        <p> 52 et 53 : 32 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0772">
+        <p> 41 51 <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0773">
+        <p> 41, 57 : 51, 47 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0774">
+        <p> 57 et 58, <hi rend="bold">à côté de la nef et </hi>du chœur, est aussi
+            toute droite : 58, 57, du cœur est aussy tout droit <hi rend="italic"
+                >A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0775">
+        <p> E : F <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0776">
+        <p> ployés en angle : ployés par un de leurs côtés en angle <hi rend="italic"
+                >A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0777">
+        <p> longueur : largeur <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0778">
+        <p> 69 : 64 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0779">
+        <p> 2 : 1 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0780">
+        <p> grandes <hi rend="bold">chapelles du chœur et de la nef seront 8
+                autres</hi> chapelles : grandes chapelles <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0781">
+        <p> une croix <hi rend="bold">par le dehors au pan coupé au</hi> pendentif ou
+            pannache : une croix par [blanc] sont les pendentifs ou pennaches <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0782">
+        <p> pilastres, enclavés : pilastres 7 enclavés <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0783">
+        <p> L : 2 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0784">
+        <p> pilastres : chapiteaux <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0785">
+        <p> I : F <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0786">
+        <p> ¾ : deux tiers <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0787">
+        <p> parties : pans <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0788">
+        <p> le point : le plan <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0789">
+        <p> aux angles saillants du plinte de la baze 38, 39 : aux angles 38.39 <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0790">
+        <p> ployés : coupés <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0791">
+        <p> 42 : 43 <hi rend="italic">A3</hi> 44 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0792">
+        <p> anciennement terminées: anciennement <hi rend="bold">pour l’ordinaire</hi>
+            terminées <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0793">
+        <p> égouter : couler <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0794">
+        <p> élevés : exposés <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0795">
+        <p> toujours : par tous <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0796">
+        <p> être : entre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0797">
+        <p> couverture de l’édifice : couverture <hi rend="bold">d’une espèce de porche
+                en avant corps, et l’autre la couverture</hi> de l’édifice <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0798">
+        <p> particulièrement : surtout <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0799">
+        <p> quelques avant-corps : quelques <hi rend="bold">grand</hi> avant-corps <hi
+                rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0800">
+        <p> avec : sur <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0801">
+        <p> sous : sur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0802">
+        <p> se voit : seroit <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0803">
+        <p> dessus : dessous <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0804">
+        <p> longueur : hauteur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0805">
+        <p> sans : sous <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0806">
+        <p> longueur : largeur <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0807">
+        <p> hauteur : longueur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0808">
+        <p> hauteur : hauteur <hi rend="bold">n’est que la moitié de sa largeur</hi>
+            <hi rend="italic"> A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0809">
+        <p> longueur : largeur <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0810">
+        <p> longueur : largeur <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0811">
+        <p> comme : commune <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0812">
+        <p> 5 : 4 <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0813">
+        <p> basse : belle <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0814">
+        <p> regarde : concerne <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0815">
+        <p> sur : sous <hi rend="italic">A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0816">
+        <p> ou : en <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0817">
+        <p> […] saillie. <hi rend="bold">Mais il seroit beaucoup mieux que ce fut
+                l’architrave qui passa toutte droitte d’un avant corps à l’autre, et
+                forme un soffite au droit de l’arrière corps du milieu. Lorsque la
+                corniche droitte a des mutules ou modillons, l’usage a Introduit d’en
+                mettre aussi aux corniches rempantes des frontons. Quelques architectes
+                ont été d’avis que les côtés de ces mutules et modillons, devroient
+                este d’équerre avec la ligne rempante, Supposant qu’ils représentent à
+                cet endroit les bouts de pannes du comble, lesquelles sont quarrées
+                pour l’ordinaire. Mais le plus grand nombre font les côtés des mutules
+                et modillons aux corniches des frontons aplomb, quoique par leurs
+                dessus et dessous, ils Suivent le rempart de leur corniche appuyé Sur
+                l’autorité des plus beaux exemples, tant antiques que modernes, comme
+                au portique de [sic.] panthéon et au frontispice de Néron. Cette
+                dernière manière doit passer pour une règle constante, n’ayant rien qui
+                répugne à la ressemblance des pannes des combles, car les pièces de
+                bois que l’on Suppose estre taillées en console par les bouts pour
+                faire les modillons, peuvent estre aussi taillées en lozange, au lieu
+                d’estre quarrées. </hi>[…]<hi rend="italic"> A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0818">
+        <p> de : et <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0819">
+        <p> édifices : église <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0820">
+        <p> tailler : traiter <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0821">
+        <p> racorder : raporter <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0822">
+        <p> rempante qu’à celle des retours : rempante <hi rend="italic">de la face du
+                fronton qu’il n’a par les retours des flancs, Il faut donner mois de
+                Saillie à la cimaise rempante</hi> qu’à celle des retours <hi
+                rend="italic">A4</hi> <hi rend="italic">; « </hi>rempante <hi
+                rend="italic">de la face du fronton, qu’elle n’a pas les retours des
+                flancs, il faut donner moins de saillie à la cymaise rempante</hi> qu’à
+            celle des retours <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0823">
+        <p> tracera : traversera <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0824">
+        <p> d’équerre : desquelles <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0825">
+        <p> sur : par <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0826">
+        <p rend="footnote text"> la letticurge : la ticurge <hi rend="italic">A3</hi> ;
+            l’atticurge <hi rend="italic">A4</hi> ; l’attiurge <hi rend="italic">A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0827">
+        <p rend="footnote text"> bayes : bazes <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0828">
+        <p rend="footnote text"> les : des A3</p>
+    </note>
+    <note xml:id="o5Nc0829">
+        <p rend="footnote text"> les plus basses: les plus <hi rend="bold">courtes
+                demande une porte plus</hi> basse <hi rend="italic">A3, A4, A7,
+            A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0830">
+        <p rend="footnote text"> swelte : fort <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0831">
+        <p rend="footnote text"> diminue : divisera <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0832">
+        <p rend="footnote text"> composé : corinthien <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0833">
+        <p rend="footnote text"> architrave : archivolte <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0834">
+        <p rend="footnote text"> Le cercle : l’arc du cercle <hi rend="italic">A3, A4,
+                A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0835">
+        <p rend="footnote text"> sous : sur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0836">
+        <p rend="footnote text"> platebande : platebande <hi rend="bold">droite</hi>
+            <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0837">
+        <p rend="footnote text"> sous : sur <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0838">
+        <p rend="footnote text"> [au] lieu de [...trante] on orne] : au lieu de
+            chambranle on orne <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0839">
+        <p rend="footnote text"> hauteur du ceintre : hauteur <hi rend="bold">du centre
+                de leurs ceintre avec une archivolte au pourtour</hi> du ceintre <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0840">
+        <p rend="footnote text"> pilastres : pilastres <hi rend="bold">d’alette</hi>
+            A4</p>
+    </note>
+    <note xml:id="o5Nc0841">
+        <p rend="footnote text"> diminuant : divisant <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0842">
+        <p rend="footnote text"> à une : avec la <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0843">
+        <p rend="footnote text"> que : par <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0844">
+        <p rend="footnote text"> passent : pose <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0845">
+        <p rend="footnote text"> dessus : dessous <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0846">
+        <p rend="footnote text"> corniche l’entablement : « corniche <hi rend="bold"
+                >sera à celle du travers du haut du chambranle, comme la hauteur de la
+                corniche </hi>de l’entablement » <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0847">
+        <p rend="footnote text"> les faces : le bas <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0848">
+        <p rend="footnote text"> font : sont <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0849">
+        <p rend="footnote text"> 7e : 4<hi rend="superscript">e </hi>
+            <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0850">
+        <p rend="footnote text"> chambranle qui doive: chambranle. <hi rend="bold">Il
+                n’y a que les moulures vers le dehors du chambranle </hi>qui doive <hi
+                rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0851">
+        <p rend="footnote text"> retournoit : étoit droit <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0852">
+        <p rend="footnote text"> d’antiques : attique <hi rend="italic">A3</hi> ; de
+            l’attique <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0853">
+        <p rend="footnote text"> plus bas : par le <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0854">
+        <p rend="footnote text"> autres : le centre <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0855">
+        <p rend="footnote text"> où : ont <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0856">
+        <p rend="footnote text"> dessous : dessus <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0857">
+        <p rend="footnote text"> distinguées : destinées <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0858">
+        <p rend="footnote text"> fixe : quelconque <hi rend="italic">A7</hi> ; qu’il
+            soit <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0859">
+        <p rend="footnote text"> dessus : dessous <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0860">
+        <p rend="footnote text"> centre : centre <hi rend="bold">du ceintre</hi>
+            <hi rend="italic"> A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0861">
+        <p rend="footnote text"> pieds de : <hi rend="italic">omis A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0862">
+        <p rend="footnote text"> derniers : extrêmes <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0863">
+        <p rend="footnote text"> 10 : 50 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0864">
+        <p rend="footnote text"> pied : <hi rend="italic">omis A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0865">
+        <p rend="footnote text"> pied : <hi rend="italic">omis A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0866">
+        <p rend="footnote text"> en ce : est <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0867">
+        <p rend="footnote text"> 2 : une <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0868">
+        <p rend="footnote text"> dans : dont <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0869">
+        <p rend="footnote text"> la hauteur corinthien : la hauteur <hi rend="bold">des
+                niches de l’ordre</hi> corinthien <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0870">
+        <p rend="footnote text"> […] 28 à celles de l’ordre ionique, 29 à celles de
+            l’ordre composé, 30 à celles de l’ordre corinthien : 28 à celles de l’ordre
+                <hi rend="bold">dorique, 29 à celles de l’ordre</hi> ionique, 29 ½ à
+            l’ordre composé, et 30 à celles de l’ordre corinthien […] <hi rend="italic"
+                >A4</hi> ; […] 28 à celle de l’ordre dorique, 29 à celles de l’ordre
+            ionique, 29 1/2 à l’ordre composé, et 30 à celles de l’ordre corinthien […]
+                <hi rend="italic">A3, A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0871">
+        <p rend="footnote text"> […] au niveau de l’imposte de l’ordre a plus […] : […]
+            au niveau du dessus de l’imposte de l’ordre, si la hauteur de l’imposte de
+            l’ordre a plus […] <hi rend="italic">A4, A7, A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0872">
+        <p rend="footnote text"> du bas : de l’arc <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0873">
+        <p rend="footnote text"> statues : palais <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0874">
+        <p rend="footnote text"> propres : nobles <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0875">
+        <p rend="footnote text"> faunes : fleurs <hi rend="italic">A4</hi> : fleuves
+                <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0876">
+        <p rend="footnote text"> l’architecture : l’architecte <hi rend="italic">A3,
+                A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0877">
+        <p rend="footnote text"> d’optique : d’oblique <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0878">
+        <p rend="footnote text"> trop petites, <hi rend="bold">si celles du bas étoient
+                dans leur proportion</hi>, il en est<hi rend="italic"> </hi>; trop
+            petites. Il en est <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0879">
+        <p rend="footnote text"> ils supplée : ils sont placés <hi rend="italic">A4,
+                A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0880">
+        <p rend="footnote text"> 3 pouces : 6 pouces <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0881">
+        <p rend="footnote text"> deux étages : <hi rend="bold">et le pavillon EF en a
+                trois à chacune de ses étages</hi> décoré : deux étages, est décoré <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0882">
+        <p rend="footnote text"> 3<hi rend="superscript">e</hi> ordre, <hi rend="bold"
+                >et les statues au dessus de la balustrade qui couronne le 3</hi>
+            <hi rend="bold superscript">e</hi>
+            <hi rend="bold"> étage, sont aussy sensées être du 3</hi>
+            <hi rend="bold superscript">e</hi>
+            <hi rend="bold"> ordre</hi> parce qu’il : 3<hi rend="superscript">e</hi>
+            ordre parce qu’il <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0883">
+        <p rend="footnote text"> comme : commune <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0884">
+        <p rend="footnote text"> 2<hi rend="superscript">e :</hi> troisième <hi
+                rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0885">
+        <p rend="footnote text"> les deux hauteurs communes des statues : les deux
+            hauteurs <hi rend="bold">de statües dont la moitié du produit la sera la
+                hauteur commune tant</hi> des statües <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0886">
+        <p rend="footnote text"> contre axe : contraste <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0887">
+        <p rend="footnote text"> observer qu’elles <hi rend="bold">ne soyent pas
+                entièrement de ronde bosse, qu’elles</hi> soyent moins grandes que les
+            statues : observer qu’elles soient moins grandes que les statues <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0888">
+        <p rend="footnote text"> des dez chapiteau : des piédestaux <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0889">
+        <p rend="footnote text">
+            <seg> </seg>
+            <hi rend="italic">Omis A3, A5 leçon suivie A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0890">
+        <p rend="footnote text"> parties, <hi rend="bold">lesquelles sont connues sous
+                les noms de toscane, dorique, ionique, corinthien et composé</hi>, il y
+            a : parties, il y a <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0891">
+        <p rend="footnote text"> de son livre : de son 4<hi rend="superscript">e</hi>
+            livre <hi rend="italic">A7</hi> de son quatrième livre <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0892">
+        <p rend="footnote text"> d’architecture : d’architrave <hi rend="italic">A3,
+                A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0893">
+        <p rend="footnote text"> du fût <hi rend="bold">du pilastre avec son astragale
+                du haut.</hi> La hauteur : du fust. La hauteur destinée <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0894">
+        <p rend="footnote text"> le larmier qui contient : le larmier, <hi rend="bold"
+                >et les moulures du haut, et les deux autres parties du bas font la
+                hauteur des moulures sous</hi> le larmier <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0895">
+        <p rend="footnote text"> le <hi rend="bold">reste des porportions</hi> comme :
+            le reste comme <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0896">
+        <p rend="footnote text"> entablemens : entrecolonnements <hi rend="italic">A3,
+                A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0897">
+        <p rend="footnote text"> de dessus : sur lequel il repose <hi rend="italic">A3,
+                A9</hi> : sur lequel il pose <hi rend="italic">A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0898">
+        <p rend="footnote text"> les pilastres qui sont : les pilastres <hi rend="bold"
+                >de l’atique aplomb des pilastres</hi> qui sont <hi rend="italic">A3,
+                A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0899">
+        <p rend="footnote text"> pour <hi rend="italic">poser</hi> la face : pour la
+            face <hi rend="italic">A3</hi> : poser la face <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0900">
+        <p rend="footnote text"> ce mur. A l’égard : ce mur, <hi rend="bold">suposer un
+                point,</hi> à l’égard <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0901">
+        <p rend="footnote text"> cercles : côtés <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0902">
+        <p rend="footnote text"> le dessus de l’astragale : le dessus de <hi
+                rend="bold">l’appui jusqu’au dessus de</hi> l’astragale <hi
+                rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0903">
+        <p rend="footnote text"> repasser : régner <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0904">
+        <p rend="footnote text"> baze : baye <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0905">
+        <p rend="footnote text"> au-dessous : au-dessus <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0906">
+        <p rend="footnote text"> 35 : 11 <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0907">
+        <p rend="footnote text"> Ainsi la largeur du chambranle […] du dehors : <hi
+                rend="italic">passage omis A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0908">
+        <p rend="footnote text"> vraiment : uniment <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0909">
+        <p rend="footnote text"> baye : baze <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0910">
+        <p rend="footnote text"> la moitié de la baze <hi rend="bold">et le quart du
+                dez</hi>. La baze : la moitié de la baze. La baze <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0911">
+        <p rend="footnote text"> platte bande avec un talon pour le bas : platte bande
+                <hi rend="bold">en a 4 et le talon 1 par</hi> le bas <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0912">
+        <p rend="footnote text"> 1/6 : 12 parties <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0913">
+        <p rend="footnote text"> celle du pilastre <hi rend="bold">font 2 modules
+                1/6.</hi> La saillie : celle du pilastre <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0914">
+        <p rend="footnote text"> de la base et : de la base <hi rend="bold">du
+                piédestal</hi> et <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0915">
+        <p rend="footnote text"> tablette : table <hi rend="italic">A3, A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0916">
+        <p rend="footnote text"> table : bande <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0917">
+        <p rend="footnote text"> baye : baze <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0918">
+        <p rend="footnote text"> au-dessous : au-dessus <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0919">
+        <p rend="footnote text"> le talon <hi rend="bold">du ravallement du pilastre,
+                le talon et l’ove du chambranle, la doucine et le talon</hi> de la
+            corniche : le talon de la corniche <hi rend="italic">A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0920">
+        <p rend="footnote text"> fût : dessus <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0921">
+        <p rend="footnote text"> 10 : 18 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0922">
+        <p rend="footnote text"> le fût du pilastre <hi rend="bold">est égale à l’une
+                de ces parties, et le filet au dessous est égal à la moitié de la
+                hauteur de l’astragale. La saillie de l’astragale</hi> est égale : le
+            fût du pilastre est égale <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0923">
+        <p rend="footnote text"> son filet sont interrompus par les moulures : son
+            filet <hi rend="bold">est interrompüe par les moulures du haut de la platte
+                bande du chambranle</hi>
+            <hi rend="italic"> ou</hi> par les moulures <hi rend="italic">A3, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0924">
+        <p rend="footnote text"> autres pilastres : entre pilastres <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0925">
+        <p rend="footnote text"> l’entablement <hi rend="bold">qui est égale aux 5/6 de
+                la largeur du pilastre</hi>, se divise : de l’entablement se divise <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0926">
+        <p rend="footnote text"> entre deux parties du bas : entre deux, <hi
+                rend="bold">et les deux</hi> parties du bas <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0927">
+        <p rend="footnote text"> au-dessous : au-dessus <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0928">
+        <p rend="footnote text"> au-dessous : au-dessus <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0929">
+        <p rend="footnote text"> autres pilastres : entrepilastres <hi rend="italic"
+                >A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0930">
+        <p rend="footnote text"> au-dessus : au-dessous <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0931">
+        <p rend="footnote text"> au-dessus : au-dessous <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0932">
+        <p rend="footnote text"> aux autres pilastres saillantes : aux <hi rend="bold"
+                >entrepilastres qu’il ne l’est au droit des pilastres autant que
+                les</hi> pilastres saillent <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0933">
+        <p rend="footnote text"> plus large aux autres pilastres saillantes au devant
+            du nud du mur du corps de l’édifice. Ainsy, aux entrepilastres, la corniche
+            a plus de saillie que de hauteur, ce que l’on connaît par le plan du
+            sophiste de la corniche : aux entrepilastres qu’il ne l’est au droit des
+            pilastres, autant que les pilastres saillent au devant du nud du mur <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0934">
+        <p rend="footnote text"> leur face <hi rend="bold">au devant du nud du mur du
+                corps de l’édifice,</hi> le profil : de leur face, le profil <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0935">
+        <p rend="footnote text"> sur le plan <hi rend="bold">dont le recreusement</hi>
+            est égal : sur le plan et est égal <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0936">
+        <p rend="footnote text"> renfoncement égal : renfoncement <hi rend="bold">de la
+                table</hi> égal <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0937">
+        <p rend="footnote text"> longueur : largeur <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0938">
+        <p rend="footnote text"> placer : poser <hi rend="italic">A9</hi>
+        </p>
+        <p rend="footnote text">Car, s’il étoit moins orné dans les moulures [..] on
+            veut le placer : Et s’il étoit au-dessus d’un dorique, il ne luy faudroit
+            mettre qu’une simple table renfoncée sans talon, et faire les listeaux plus
+            larges, et si l’ordre attique sur un toscan il ne luy faudroit point de
+            table renfoncée <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0939">
+        <p rend="footnote text"> pourtour : personnes<hi rend="italic"> A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0940">
+        <p rend="footnote text"> traverse : terrasse </p>
+    </note>
+    <note xml:id="o5Nc0941">
+        <p rend="footnote text"> ¼ : ½ <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0942">
+        <p rend="footnote text"> le : du<hi rend="italic"> A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0943">
+        <p rend="footnote text"> le dehors, de la hauteur : le dehors. <hi rend="bold"
+                >Posant sur le dessus du couronnement du mur de terrasse par le
+                dehors</hi> de la hauteur<hi rend="italic"> A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0944">
+        <p rend="footnote text"> élevées <hi rend="bold">à </hi>la hauteur : élevées,
+            la hauteur <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0945">
+        <p rend="footnote text"> de leur : du <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0946">
+        <p rend="footnote text"> balustrades : balustres <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0947">
+        <p rend="footnote text"> le socle à la hauteur : <hi rend="bold">leurs</hi>
+            socle <hi rend="bold">doit être</hi> à la hauteur </p>
+    </note>
+    <note xml:id="o5Nc0948">
+        <p rend="footnote text"> et demi : 1/3, à l’ordre dorique 2 diamètres <hi
+                rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0949">
+        <p rend="footnote text"> ⅔: <hi rend="italic">½ A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0950">
+        <p rend="footnote text"> 60 pieds, la hauteur : 60 pieds <hi rend="bold"
+                >de</hi> hauteur <hi rend="italic">A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0951">
+        <p rend="footnote text"> extrêmes : extrémités <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0952">
+        <p rend="footnote text"> et : en <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0953">
+        <p rend="footnote text"> balustrades : balustres <hi rend="italic">A7 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0954">
+        <p rend="footnote text"> pilastre au-dessous : pilastre <hi rend="bold">de
+                l’ordre</hi> au-dessous <hi rend="italic">A4, A7, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0955">
+        <p rend="footnote text"> balustres, quand : <hi rend="bold">balustrades et</hi>
+            quand <hi rend="italic">A3, A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0956">
+        <p rend="footnote text"> pilastres. Mais si : pilastres <hi rend="bold">de
+                l’ordre qui porte la balustrade, </hi>mais si <hi rend="italic">A4, A7,
+                A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0957">
+        <p rend="footnote text"> pour : poser <hi rend="italic">A3, A4, A7,
+            A9 </hi>»</p>
+    </note>
+    <note xml:id="o5Nc0958">
+        <p rend="footnote text"> au-dessous de la face du dé : au-dessous. <hi
+                rend="bold">La façade des </hi>dés <hi rend="italic">A7
+            </hi>au-dessous. <hi rend="bold">La face des</hi> dez des <hi rend="italic"
+                >A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0959">
+        <p rend="footnote text"> chaque : chaque t<hi rend="bold">ravée</hi> <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0960">
+        <p rend="footnote text"> au : ou <hi rend="italic">A3, A4, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0961">
+        <p rend="footnote text"> balustrades : balustres <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0962">
+        <p rend="footnote text"> sont au-dessus : sont <hi rend="italic bold"
+                >posée</hi> au-dessus <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0963">
+        <p rend="footnote text"> balustres : balustrades <hi rend="italic">A4, A9 </hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0964">
+        <p rend="footnote text"> corniche : corinthienne </p>
+    </note>
+    <note xml:id="o5Nc0965">
+        <p rend="footnote text"> au-dessous : au-dessus </p>
+    </note>
+    <note xml:id="o5Nc0966">
+        <p rend="footnote text"> balustres : balustrades<hi rend="italic"> A4,
+            A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0967">
+        <p rend="footnote text"> et : en </p>
+    </note>
+    <note xml:id="o5Nc0968">
+        <p rend="footnote text"> balustre : balustrade <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0969">
+        <p rend="footnote text">
+            <hi rend="bold">plus </hi>menu : menu </p>
+    </note>
+    <note xml:id="o5Nc0970">
+        <p rend="footnote text"> est plus gros de toute. La hauteur : est <hi
+                rend="bold">le</hi> plus gros de <hi rend="bold">tous. Sa</hi> hauteur
+                <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0971">
+        <p rend="footnote text"> 60 : 63 <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0972">
+        <p rend="footnote text"> hauteur, quoique : hauteur <hi rend="bold">et
+                grosseur </hi>
+            <hi rend="italic">A7</hi>
+            <hi rend="bold">grosseurs et hauteurs</hi> quoique <hi rend="italic"
+                >A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0973">
+        <p rend="footnote text"> col du vase, du gorgerin, du chapiteau : col du vase
+                <hi rend="bold">et</hi> du gorgerin du chapiteau <hi rend="bold"
+                >et</hi>
+            <hi rend="italic">A3, A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0974">
+        <p rend="footnote text"> rond : fond <hi rend="italic">A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0975">
+        <p rend="footnote text"> du : ou </p>
+    </note>
+    <note xml:id="o5Nc0976">
+        <p rend="footnote text"> exemples : espèces<hi rend="italic"> A4, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0977">
+        <p rend="footnote text"> au-dessous : au-dessus </p>
+    </note>
+    <note xml:id="o5Nc0978">
+        <p rend="footnote text"> du plinthe se rediviseront : du plinthe <hi
+                rend="bold">se diviseront aussy en 5, dont les 2 parties du bas</hi> se
+            rediviseront <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0979">
+        <p rend="footnote text"> par : pour <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0980">
+        <p rend="footnote text"> au-dessus : au-dessous <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0981">
+        <p rend="footnote text"> balustres : balustrades<hi rend="italic"> A4,
+            A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0982">
+        <p rend="footnote text"> ou : et les <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0983">
+        <p rend="footnote text"> sous : sur <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0984">
+        <p rend="footnote text"> architecture : architrave <hi rend="italic">A3, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0985">
+        <p rend="footnote text"> grand : second <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0986">
+        <p rend="footnote text"> les palais et autres : les palais,<hi rend="bold"> les
+                hôtels </hi>et autres<hi rend="italic"> A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0987">
+        <p rend="footnote text"> enfin : <hi rend="bold">ou</hi> enfin <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0988">
+        <p rend="footnote text"> porte : pose </p>
+    </note>
+    <note xml:id="o5Nc0989">
+        <p rend="footnote text"> et : ou <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0990">
+        <p rend="footnote text"> un : en<hi rend="italic"> A7, A9</hi> »</p>
+    </note>
+    <note xml:id="o5Nc0991">
+        <p rend="footnote text"> sans : sous  </p>
+    </note>
+    <note xml:id="o5Nc0992">
+        <p rend="footnote text"> colonnes au-dessus : colonnes <hi rend="bold">de
+                l’ordre</hi> au-dessus <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0993">
+        <p rend="footnote text"> du : de <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0994">
+        <p rend="footnote text"> du : au <hi rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0995">
+        <p rend="footnote text"> en : est <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0996">
+        <p rend="footnote text"> d’un : du <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc0997">
+        <p rend="footnote text"> un socle aux piédestaux : un socle <hi rend="bold">au
+                lieu </hi>des piédestaux </p>
+    </note>
+    <note xml:id="o5Nc0998">
+        <p rend="footnote text"> au-dessus : au-dessous <hi rend="italic">A3,
+            A9</hi> </p>
+    </note>
+    <note xml:id="o5Nc0999">
+        <p rend="footnote text"> en ce deuxième : dans ce second exemple <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1000">
+        <p rend="footnote text"> de sorte : ce qui fait <hi rend="italic">A3</hi> </p>
+    </note>
+    <note xml:id="o5Nc1001">
+        <p rend="footnote text"> proportion : position <hi rend="italic">A3, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1002">
+        <p rend="footnote text"> du deuxième : du 2<hi rend="superscript">e</hi>
+            <hi rend="bold">exemple</hi> <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1003">
+        <p rend="footnote text"> dorique : attique </p>
+    </note>
+    <note xml:id="o5Nc1004">
+        <p rend="footnote text"> au-dessous : au-dessus </p>
+    </note>
+    <note xml:id="o5Nc1005">
+        <p rend="footnote text"> de <hi rend="bold">ce 2</hi>
+            <hi rend="bold superscript">e</hi> exemple : de <hi rend="bold">ces
+                deux</hi> exemples </p>
+    </note>
+    <note xml:id="o5Nc1006">
+        <p rend="footnote text"> la solidité, et la décoration ou la beauté : la
+            solidité et la beauté <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1007">
+        <p rend="footnote text"> des élemens, des énemis : des éléments, <hi
+                rend="bold">de l’incursion</hi> des enemis <hi rend="italic">A4,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1008">
+        <p rend="footnote text"> la société : la société <hi rend="bold">civile</hi>
+            <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1009">
+        <p rend="footnote text"> longueur : grandeur <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1010">
+        <p rend="footnote text"> la hauteur : l’accoudoir <hi rend="italic">A3, A4, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1011">
+        <p rend="footnote text"> genre, qualité : genre, <hi rend="bold">espèce,</hi>
+            qualité <hi rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1012">
+        <p rend="footnote text"> des autres : des <hi rend="bold">deux</hi> autres <hi
+                rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1013">
+        <p rend="footnote text"> un autre moderne : une autre mode <hi rend="italic"
+                >A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1014">
+        <p rend="footnote text"> un temps ce qu’il auroit aprouvé dans un autre<hi
+                rend="bold">, comme il arrive que l’on change de goût dans le boire et
+                dans le manger, suivant les différents âges de la vie, ou dans les
+                modes des meubles et d’habits que l’on trouve ridicule quand un autre
+                moderne est en usage</hi>. L’exemple : un tems ce qu’il avait aprouvé
+            dans un autre. L’exemple <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1015">
+        <p rend="footnote text"> disproportion : disposition <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1016">
+        <p rend="footnote text"> assez usagés : à nos usages <hi rend="italic">A3, A7,
+                A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1017">
+        <p rend="footnote text"> genre : génie <hi rend="italic">A3, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1018">
+        <p rend="footnote text"> ouvrages : usages <hi rend="italic">A3, A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1019">
+        <p rend="footnote text"> des ornements : discernement <hi rend="italic">A3, A4,
+                A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1020">
+        <p rend="footnote text"> convexes <hi rend="bold">que sur les concaves ny sur
+                les petites moulures, comme sur les grandes</hi>
+            <hi rend="italic">.</hi> Mais : convexes, mais <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1021">
+        <p rend="footnote text"> moulures, <hi rend="bold">afin de ne point corrompre
+                ny changer les profils de ces moulures.</hi> Les ornemens : moulures.
+            Les ornements <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1022">
+        <p rend="footnote text"> moulures <hi rend="bold">carrées, et le faire rarement
+                sur les grandes</hi> de cette espèce : moulures de cette espèce <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1023">
+        <p rend="footnote text"> entablemens, le relief, entablements <hi rend="bold"
+                >les frizes</hi> le relief <hi rend="italic">A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1024">
+        <p rend="footnote text"> architecture : architrave <hi rend="italic">A4,
+                A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1025">
+        <p rend="footnote text"> et les devertisions : en les diversifiant <hi
+                rend="italic">A3, A4, A7, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1026">
+        <p rend="footnote text"> valoir, <hi rend="bold">ainsy qu’ne même lettre de
+                l’alphabet différemment rangée forme des différens discours, sans
+                changer de discours</hi>
+            <hi rend="italic"> </hi>; valoir <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1027">
+        <p rend="footnote text"> sculpture, <hi rend="bold">la moitié de la
+                circonférence des colomnes et toute la face des pilastres</hi>
+            doivent : sculpture, et elles doivent <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1028">
+        <p rend="footnote text"> que les impostes, les plintes : que les plinthes <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1029">
+        <p rend="footnote text"> que l’axe <hi rend="bold">des colomnes, parce qu’elle
+                interrompent le profil</hi> des côtés : que l’arc des côtés <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1030">
+        <p rend="footnote text"> colomnes, <hi rend="bold">parce qu’elle interrompoit
+                le profil des côtés des colomnes, ny plus saillante que la face des
+                pilastres, car ces impostes, plintes ou autres parties d’architecture
+                ou</hi> interromperoit : colonnes <hi rend="bold">et que la face des
+                pilastres [rature] car ils</hi> interromperoient <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1031">
+        <p rend="footnote text"> et des plinthes <hi rend="bold">de leurs bazes</hi>
+            soit : des plinthes soit <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1032">
+        <p rend="footnote text"> chapiteaux : bazes <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1033">
+        <p rend="footnote text"> du 4<hi rend="superscript">e</hi> chapitre : du 4<hi
+                rend="superscript">e</hi> dessein du 4<hi rend="superscript">e</hi>
+            chapitre <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1034">
+        <p> des murs, <hi rend="bold">doivent par leur plan faire partie du quarré ; ce
+                qui est plus au long expliqué au deuxième exemple du 4e chapitre de
+                cette seconde partie. 9</hi>
+            <hi rend="bold superscript">e</hi>
+            <hi rend="bold">.</hi> Aux châteaux : des murs. Aux châteaux <hi
+                rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1035">
+        <p rend="footnote text"> le renfoncement <hi rend="bold">de l’arrière
+                corps</hi> qu’à la face : le renfondement qu’à la face <hi
+                rend="italic">A3</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1036">
+        <p rend="footnote text"> que quand le ceintre : que ce grand ceintre <hi
+                rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1037">
+        <p rend="footnote text"> des piédestaux <hi rend="bold">et des bazes, des
+                colomnes ou des pilastres</hi>, ce qui feroit : piédestaux, ce qui
+            feroit <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1038">
+        <p rend="footnote text"> recouvertes : découvertes <hi rend="italic">A3, A4,
+                A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1039">
+        <p rend="footnote text"> tolère : trouvent <hi rend="italic">A7</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1040">
+        <p rend="footnote text"> entablement. <hi rend="bold">Il est vicieux de couper
+                les corniches d’entablement</hi> pour faire : entablement pour faire
+                <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1041">
+        <p rend="footnote text"> au bon <hi rend="bold">goût et bon</hi> sens : au bon
+            sens <hi rend="italic">A3, A9</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1042">
+        <p rend="footnote text"> pour marque <hi rend="bold">de trophée</hi> de la
+            défaite : pour marque de trophée <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1043">
+        <p rend="footnote text"> ancien : vicieux <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1044">
+        <p rend="footnote text"> inutiles est fermée : mutilées enfermées <hi
+                rend="italic">A7, A9</hi>, mutilées en forment <hi rend="italic"
+                >A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1045">
+        <p rend="footnote text"> servent : s’inventent <hi rend="italic">A4</hi>
+        </p>
+    </note>
+    <note xml:id="o5Nc1046">
+        <p rend="footnote text"> contrarier : contrecarrer <hi rend="italic">A3, A4,
+                A9</hi>
+        </p>
+    </note>
+</div>

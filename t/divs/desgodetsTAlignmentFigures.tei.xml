@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier d'alignement des figures des manuscrits du Toisé
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : Le fichier est placé au niveau du corpus dans le système de fichier car il est par nature indépendant de la version du cours édité. Le même fichier pouvant ainsi par la suite être utilisé pour l'édition des autres versions qui ont pour le moment seulement fait l'objet d'un encodage sommaire. -->
+
+<TEI  xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:xi="http://www.w3.org/2001/XInclude">
+   <!-- début de l'en-tête TEI -->
+   <teiHeader>
+      <fileDesc>
+         <!-- mentions de titre et de responsabilité -->
+         <titleStmt>
+            <title xml:lang="fre" type="main">Traité du toisé</title>
+            <title xml:lang="fre" type="sub">Fichier d'alignement des figures</title>
+            <author>
+               <persName>
+                  <forename>Antoine</forename>
+                  <surname>Desgodets</surname>
+               </persName>
+            </author>
+            <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+            <principal>
+               <persName ref="#RC">
+                  <forename>Robert</forename>
+                  <surname>Carvais</surname>
+                  <affiliation>
+                     <orgName>Centre National de la Recherche Scientifique</orgName>
+                     <orgName type="acronym">CNRS</orgName>
+                     <roleName>responsable d'ANR</roleName>
+                  </affiliation>
+               </persName>
+            </principal>
+            <!-- organismes qui ont financé l'opération -->
+            <funder>
+               <orgName>Agence Nationale de Recherche</orgName>
+               <orgName type="acronym">ANR</orgName>
+               <date from="2008" to="2013">2008-2013</date>
+            </funder>
+            <funder>
+               <orgName>Association Française d'Histoire de la Construction</orgName>
+               <orgName type="acronym">AFHC</orgName>
+               <date when="2013">2013</date>
+            </funder>
+            <!-- mentions de responsabilité secondaires -->
+            <respStmt>
+               <resp key="prg">modélisation XML-TEI</resp>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="edt">édition</resp>
+               <persName ref="#RC">
+                  <forename>Robert</forename>
+                  <surname>Carvais</surname>
+               </persName>
+               <persName ref="#JH">
+                  <forename>Juliette</forename>
+                  <surname>Hernu</surname>
+               </persName>
+               <persName ref="LT">
+                  <forename>Linnéa</forename>
+                  <surname>Tilly</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="mrk">encodage</resp>
+               <persName ref="#JH">
+                  <forename>Juliette</forename>
+                  <surname>Hernu</surname>
+               </persName>
+               <persName ref="#EC">
+                  <forename>Emmanuel</forename>
+                  <surname>Château</surname>
+                  <email>emchateau@laposte.net</email>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <!-- mention d'édition -->
+         <editionStmt>
+            <edition n="1">première édition électronique, <date from="2013" to="2013"
+               >2008-2013</date></edition>
+         </editionStmt>
+         <extent><!-- TODO : taille du fichier en octet --></extent>
+         <!-- information sur la publication électronique -->
+         <publicationStmt>
+            <date when="2013">2013</date>
+            <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+            <idno>tAlignmentFigures</idno>
+            <!-- responsable de la publication -->
+            <publisher>
+               <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+               <orgName type="acronym">CTAD</orgName>
+               <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+            </publisher>
+            <availability status="restricted" xml:id="tAlignmentFiguresImagesLicence">
+               <p>Les images numériques des manuscrits sont mises à disposition par les institutions
+                  partenaires mais restent leur propriété exclusive. Celles-ci en autorisent la
+                  reproduction et la réutilisation selon leurs propres règles en vigueur. Toute
+                  diffusion de ces images, sous quelque forme et sur quelque support que ce soit
+                  (papier, audiovisuel, ou numérique), pour quelque finalité que ce soit (pédagogique,
+                  scientifique ou commercial), doit faire l’objet d’une demande d’autorisation préalable
+                  auprès de l’institution concernée.</p>
+            </availability>
+            <availability status="restricted" xml:id="tAlignmentFiguresTextLicence">
+               <!-- TODO : <licence> à ajouter partout -->
+               <licence target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+                  <p>Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative
+                     Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes
+                     Conditions 3.0 France.</p>
+                  <graphic url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+               </licence>
+               <p>Le Centre de théorie et d'analyse du droit (UMR 7074) met à disposition cette ressource
+                  électronique structurée, protégée par le code de la propriété intellectuelle sur le
+                  droit d'auteur (L111-1) et sur les bases de données (L341-1), selon les termes de la
+                  licence Creative Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                  Modification ; 3.0 France ». <lb />Cette licence est disponible en ligne : <ref
+                     target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                     >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou par courrier postal à
+                  Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105,
+                  USA.</p>
+               <p>Pas d'Utilisation Commerciale : Le Centre de théorie et d'analyse du droit souhaite
+                  encourager l'utilisation et l'amélioration de ses ressources électroniques, pour les
+                  intérêts de l'enseignement et de la recherche. Toute autorisation au-delà du champ de
+                  cette licence doit être obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+               <p>Paternité : Le Centre de théorie et d'analyse du droit demande à ce que toute
+                  publication dérivée de ses ressources électroniques comporte : <lb />1. le nom du
+                  Centre de théorie et d'analyse du droit et, pour les publications électroniques, son
+                  logo <lb />2. l'URI permettant d'accéder à la page citée sur notre site, ou à la page
+                  d'accueil de la ressource <lb />3. la date du fichier source utilisé. </p>
+               <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à des fins non
+                  commerciales, tant que vous nous créditez et que les nouvelles œuvres sont diffusées
+                  selon les mêmes conditions. Cependant, afin de mieux servir la communauté
+                  scientifique, le Centre de théorie et d'analyse du droit s'engage à conserver et à
+                  toujours offrir publiquement la version la plus à jour de ses ressources électroniques
+                  par une URI pérenne. Il s'engage en conséquence à les corriger et à les améliorer, à
+                  intégrer les contributions qui lui sont soumises (après validation par un comité
+                  scientifique), et à référencer l'origine de ces contributions. Toute modification de
+                  la ressource qui ne serait pas reversée à la version de référence sous l'autorité
+                  éditoriale du Centre de théorie et d'analyse risquerait en conséquence d'être perdue,
+                  afin de ne pas disperser les contributions et de permettre les meilleures conditions
+                  possibles de collaboration scientifique, nous vous invitons à nous en faire part.</p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+            <title xml:lang="fre" type="sub">une édition électronique</title>
+            <idno type="URI">http://www.desgodets.net</idno>
+         </seriesStmt>
+         <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+         <sourceDesc>
+            <!-- description de la source -->
+            <p xml:id="tAlignmentFigures">Fichier nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <!-- description du projet éditorial -->
+         <projectDesc>
+            <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+               formalisation du savoir architectural au XVII<hi rend="superscript">e</hi> siècle.</p>
+         </projectDesc>
+         <!-- déclaration des principes éditoriaux -->
+         <editorialDecl>
+            <correction>
+               <p>La syntaxe originale du manuscrit a été respectée en suivant les indications de Bernard
+                  Barbiche, <ref type="external"
+                     target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+                     >Conseils pour l’édition des textes de l’époque moderne (XVI<hi rend="superscript"
+                        >e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
+            </correction>
+            <hyphenation>
+               <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de l'hyphénation.</p>
+            </hyphenation>
+            <interpretation>
+               <p>Les interprétations sont traitées au moyen d'un élément supplied ou bien sont renvoyées
+                  en notes. Une mention de responsabilité est fournie grâce à l'attribut resp sur le
+                  passage concerné.</p>
+            </interpretation>
+            <normalization>
+               <p>La ponctuation ainsi que les majuscules ont été normalisées. Les abréviations ont été
+                  développées.</p>
+            </normalization>
+            <stdVals>
+               <p>On utilise...</p>
+            </stdVals>
+            <quotation>
+               <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote, soit au
+                  moyen d'un élément...</p>
+            </quotation>
+         </editorialDecl>
+         <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+         <refsDecl>
+            <p>Description du système de référence canonique. Plus tard on fournira peut-être une
+               expression régulière.</p>
+         </refsDecl>
+         <samplingDecl>
+            <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le cas].</p>
+         </samplingDecl>
+         <variantEncoding method="location-referenced" location="external" />
+      </encodingDesc>
+      <!-- présentation du profil de fichier -->
+      <profileDesc>
+         <creation when="2013">2013</creation>
+         <langUsage>
+            <language ident="fre" usage="99">Français (langue principale du corpus)</language>
+            <language ident="lat" usage="01">Latin (langue utilisée dans le corpus)</language>
+            <!-- TODO : évaluer les langues -->
+         </langUsage>
+         <textClass>
+            <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+               <term>Architecture</term>
+               <term>18e siècle</term>
+               <term>France</term>
+               <term>Architecture –– Philosophie</term>
+            </keywords>
+            <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+               <term>Architecture, Modern</term>
+               <term>17th-18th centuries</term>
+               <term>France</term>
+               <term>Architecture -- Philosophy</term>
+            </keywords>
+            <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+               <term>Text</term>
+            </classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2013-01-06" who="#EC">augmentation de l'en-tête
+            TEI</change>
+         <change when="2012-09-05" who="#EC">première version du
+            fichier</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="alignmentFigures" xml:id="tAlignmentFiguresBody01">
+            <linkGrp>
+               <link
+                  target="#t1Fig0001  #t2Fig0001  #t3Fig0001  #t4Fig0001  #t5Fig0001  #t8Fig0001  #t9Fig0001  #t10Fig0001  #t11Fig0001  #t12Fig0001  #t13Fig0001  #t14Fig0001  " />
+               <link
+                  target="#t1Fig0002  #t2Fig0002  #t3Fig0002  #t4Fig0002  #t5Fig0002  #t8Fig0002  #t9Fig0002  #t10Fig0002  #t11Fig0002  #t12Fig0002  #t13Fig0002  #t14Fig0002  " />
+               <link
+                  target="#t1Fig0003  #t2Fig0003  #t3Fig0003  #t4Fig0003  #t5Fig0003  #t8Fig0003  #t9Fig0003  #t10Fig0003  #t11Fig0003  #t12Fig0003  #t13Fig0003  #t14Fig0007  " />
+               <link
+                  target="#t1Fig0004  #t2Fig0004  #t3Fig0004  #t4Fig0004  #t5Fig0004  #t8Fig0004  #t9Fig0004  #t11Fig0004  #t12Fig0004  #t13Fig0004  #t14Fig0003  " />
+               <link
+                  target="#t1Fig0005  #t2Fig0005  #t3Fig0005  #t4Fig0005  #t5Fig0005  #t8Fig0005  #t9Fig0005  #t11Fig0005  #t12Fig0005  #t13Fig0005  #t14Fig0004  " />
+               <link
+                  target="#t1Fig0006  #t2Fig0006  #t3Fig0006  #t4Fig0006  #t5Fig0006  #t8Fig0006  #t9Fig0006  #t11Fig0006  #t12Fig0006  #t13Fig0006  #t14Fig0005  " />
+               <link
+                  target="#t1Fig0007  #t2Fig0007  #t3Fig0007  #t4Fig0007  #t5Fig0007  #t8Fig0007  #t9Fig0007  #t11Fig0007  #t12Fig0007  #t13Fig0007  #t14Fig0006  " />
+               <link
+                  target="#t1Fig0008  #t2Fig0008  #t3Fig0008  #t4Fig0008  #t5Fig0008  #t8Fig0008  #t9Fig0008  #t11Fig0008  #t12Fig0008  #t13Fig0008  #t14Fig0008  " />
+               <link
+                  target="#t1Fig0009  #t2Fig0009  #t3Fig0009  #t4Fig0009  #t5Fig0009  #t8Fig0009  #t9Fig0009  #t11Fig0009  #t12Fig0009  #t13Fig0009  #t14Fig0009  " />
+               <link
+                  target="#t1Fig0010  #t2Fig0010  #t3Fig0010  #t4Fig0010  #t5Fig0010  #t8Fig0010  #t9Fig0010  #t11Fig0010  #t12Fig0010  #t13Fig0010  #t14Fig0010  " />
+               <link
+                  target="#t1Fig0011  #t2Fig0011  #t3Fig0011  #t4Fig0011  #t5Fig0011  #t8Fig0011  #t9Fig0011  #t11Fig0011  #t12Fig0011  #t13Fig0011  #t14Fig0011  " />
+               <link
+                  target="#t1Fig0012  #t2Fig0012  #t3Fig0012  #t4Fig0012  #t5Fig0012  #t8Fig0012  #t9Fig0012  #t11Fig0012  #t12Fig0012  #t13Fig0012  #t14Fig0012  " />
+               <link
+                  target="#t2Fig0013  #t3Fig0013  #t8Fig0013  #t9Fig0013  #t11Fig0013  " />
+               <link
+                  target="#t1Fig0013  #t2Fig0014  #t3Fig0014  #t4Fig0013  #t5Fig0013  #t8Fig0014  #t9Fig0014  #t11Fig0013  #t12Fig0013  #t13Fig0013  #t14Fig0013  " />
+               <link
+                  target="#t1Fig0014  #t2Fig0015  #t3Fig0015  #t4Fig0014  #t5Fig0014  #t8Fig0015  #t9Fig0015  #t11Fig0014  #t13Fig0014  #t14Fig0014  " />
+               <link
+                  target="#t1Fig0015  #t2Fig0016  #t3Fig0016  #t4Fig0015  #t5Fig0015  #t8Fig0016  #t9Fig0016  #t11Fig0015  #t12Fig0014  #t13Fig0015  #t14Fig0015  " />
+               <link
+                  target="#t1Fig0016  #t2Fig0017  #t3Fig0017  #t4Fig0016  #t5Fig0016  #t8Fig0017  #t9Fig0017  #t11Fig0016  #t12Fig0015  #t13Fig0016  #t14Fig0016  " />
+               <link
+                  target="#t1Fig0017  #t2Fig0018  #t3Fig0018  #t4Fig0017  #t5Fig0017  #t8Fig0018  #t9Fig0018  #t11Fig0017  #t12Fig0016  #t13Fig0017  #t14Fig0017  " />
+               <link
+                  target="#t1Fig0018  #t2Fig0019  #t3Fig0019  #t4Fig0018  #t5Fig0018  #t8Fig0019  #t9Fig0019  #t11Fig0018  #t12Fig0017  #t13Fig0018  #t14Fig0018  " />
+               <link
+                  target="#t1Fig0019  #t2Fig0020  #t3Fig0020  #t4Fig0019  #t5Fig0019  #t8Fig0020  #t9Fig0020  #t11Fig0019  #t12Fig0018  #t13Fig0019  #t14Fig0019  " />
+               <link
+                  target="#t1Fig0020  #t2Fig0021  #t3Fig0021  #t4Fig0020  #t5Fig0020  #t8Fig0021  #t9Fig0021  #t10Fig0004  #t11Fig0020  #t12Fig0020  #t13Fig0021  #t14Fig0020  " />
+               <link
+                  target="#t1Fig0021  #t2Fig0022  #t3Fig0022  #t4Fig0021  #t5Fig0021  #t8Fig0022  #t9Fig0022  #t10Fig0005  #t11Fig0021  #t12Fig0021  #t13Fig0022  #t14Fig0021  " />
+               <link
+                  target="#t1Fig0022  #t2Fig0023  #t3Fig0023  #t4Fig0022  #t5Fig0022  #t8Fig0023  #t9Fig0023  #t10Fig0006  #t11Fig0022  #t12Fig0022  #t13Fig0023  #t14Fig0022  " />
+               <link
+                  target="#t1Fig0023  #t2Fig0024  #t3Fig0024  #t4Fig0023  #t5Fig0023  #t8Fig0024  #t9Fig0024  #t11Fig0024  #t12Fig0023  #t13Fig0023  #t14Fig0023  " />
+               <link
+                  target="#t1Fig0024  #t2Fig0025  #t3Fig0025  #t4Fig0024  #t5Fig0024  #t8Fig0025  #t9Fig0025  #t11Fig0025  #t12Fig0024  #t13Fig0024  " />
+               <link
+                  target="#t1Fig0025  #t2Fig0026  #t3Fig0026  #t4Fig0025  #t5Fig0025  #t8Fig0026  #t9Fig0026  #t11Fig0026  #t12Fig0025  #t13Fig0025  #t14Fig0024  " />
+               <link
+                  target="#t1Fig0026  #t2Fig0027  #t3Fig0027  #t4Fig0026  #t5Fig0026  #t8Fig0027  #t9Fig0027  #t11Fig0027  #t12Fig0026  #t13Fig0026  #t14Fig0025  " />
+               <link
+                  target="#t1Fig0027  #t2Fig0028  #t3Fig0028  #t4Fig0027  #t5Fig0027  #t8Fig0028  #t9Fig0028  #t11Fig0028  #t12Fig0027  #t13Fig0027  #t14Fig0026  " />
+               <link
+                  target="#t1Fig0028  #t2Fig0029  #t3Fig0029  #t4Fig0028  #t5Fig0028  #t8Fig0029  #t9Fig0029  #t11Fig0029  #t12Fig0028  #t13Fig0028  #t14Fig0027  " />
+               <link
+                  target="#t1Fig0029  #t2Fig0030  #t3Fig0030  #t4Fig0029  #t5Fig0029  #t8Fig0030  #t9Fig0030  #t11Fig0030  #t12Fig0029  #t13Fig0029  #t14Fig0028  " />
+               <link
+                  target="#t1Fig0030  #t2Fig0031  #t3Fig0031  #t4Fig0030  #t5Fig0030  #t8Fig0031  #t9Fig0031  #t11Fig0031  #t12Fig0030  #t13Fig0030  #t14Fig0029  " />
+               <link
+                  target="#t1Fig0031  #t2Fig0032  #t3Fig0032  #t4Fig0031  #t5Fig0031  #t8Fig0032  #t9Fig0032  #t11Fig0031  #t12Fig0031  #t13Fig0031  #t14Fig0030  " />
+               <link
+                  target="#t1Fig0032  #t2Fig0033  #t3Fig0033  #t4Fig0032  #t5Fig0032  #t8Fig0033  #t9Fig0033  #t11Fig0032  #t12Fig0032  #t13Fig0032  #t14Fig0031  " />
+               <link
+                  target="#t1Fig0033  #t4Fig0033  #t5Fig0033  #t11Fig0033  #t12Fig0032  #t13Fig0033  #t14Fig0032  " />
+               <link
+                  target="#t2Fig0034  #t3Fig0034  #t4Fig0034  #t5Fig0034  #t8Fig0034  #t9Fig0034  #t11Fig0034  #t12Fig0033  #t13Fig0034  #t14Fig0033  " />
+               <link
+                  target="#t2Fig0035  #t3Fig0035  #t4Fig0035  #t5Fig0035  #t8Fig0035  #t9Fig0035  #t11Fig0035  #t12Fig0034  #t13Fig0035  #t14Fig0034  " />
+               <link
+                  target="#t2Fig0036  #t3Fig0036  #t4Fig0036  #t5Fig0036  #t8Fig0036  #t9Fig0036  #t11Fig0036  #t12Fig0035  #t13Fig0036  #t14Fig0035  " />
+               <link
+                  target="#t1Fig0034  #t2Fig0037  #t3Fig0037  #t4Fig0037  #t5Fig0037  #t8Fig0037  #t9Fig0037  #t11Fig0037  #t12Fig0036  #t13Fig0037  #t14Fig0036  " />
+               <link
+                  target="#t1Fig0035  #t2Fig0038  #t3Fig0038  #t4Fig0038  #t5Fig0038  #t8Fig0038  #t9Fig0038  #t11Fig0038  #t12Fig0037  #t13Fig0038  #t14Fig0037  " />
+               <link
+                  target="#t1Fig0036  #t2Fig0039  #t3Fig0039  #t4Fig0039  #t5Fig0039  #t8Fig0039  #t9Fig0039  #t11Fig0039  #t12Fig0038  #t13Fig0039  #t14Fig0038  " />
+               <link
+                  target="#t1Fig0037  #t2Fig0040  #t3Fig0040  #t4Fig0040  #t5Fig0040  #t8Fig0040  #t9Fig0040  #t11Fig0040  #t12Fig0039  #t13Fig0040  #t14Fig0039  " />
+               <link
+                  target="#t1Fig0038  #t2Fig0041  #t3Fig0041  #t4Fig0041  #t5Fig0041  #t8Fig0041  #t9Fig0041  #t11Fig0041  #t12Fig0040  #t13Fig0041  #t14Fig0040  " />
+               <link
+                  target="#t1Fig0039  #t2Fig0042  #t3Fig0042  #t4Fig0042  #t5Fig0042  #t8Fig0042  #t9Fig0042  #t11Fig0042  #t12Fig0041  #t13Fig0042  #t14Fig0041  " />
+               <link
+                  target="#t1Fig0040  #t2Fig0043  #t3Fig0043  #t4Fig0043  #t5Fig0043  #t8Fig0043  #t9Fig0043  #t11Fig0043  #t12Fig0042  #t13Fig0043  #t14Fig0042  " />
+               <link
+                  target="#t1Fig0041  #t2Fig0044  #t3Fig0044  #t4Fig0044  #t5Fig0044  #t8Fig0044  #t9Fig0044  #t11Fig0044  #t12Fig0043  #t13Fig0044  #t14Fig0043  " />
+               <link
+                  target="#t1Fig0042  #t2Fig0045  #t3Fig0045  #t4Fig0045  #t5Fig0045  #t8Fig0045  #t9Fig0045  #t11Fig0045  #t12Fig0044  #t13Fig0045  #t14Fig0044  " />
+               <link
+                  target="#t1Fig0043  #t2Fig0046  #t3Fig0046  #t4Fig0046  #t5Fig0046  #t8Fig0046  #t9Fig0046  #t11Fig0046  #t12Fig0045  #t13Fig0046  #t14Fig0045  " />
+               <link
+                  target="#t1Fig0044  #t2Fig0047  #t3Fig0047  #t4Fig0047  #t5Fig0047  #t8Fig0047  #t9Fig0047  #t11Fig0047  #t12Fig0046  #t13Fig0047  #t14Fig0046  " />
+               <link
+                  target="#t1Fig0045  #t2Fig0048  #t3Fig0048  #t4Fig0048  #t5Fig0048  #t8Fig0048  #t9Fig0048  #t11Fig0048  #t12Fig0047  #t13Fig0048  #t14Fig0047  " />
+               <link
+                  target="#t1Fig0046  #t2Fig0049  #t3Fig0049  #t4Fig0049  #t5Fig0049  #t8Fig0049  #t9Fig0049  #t11Fig0049  #t12Fig0048  #t13Fig0049  #t14Fig0048  " />
+               <link
+                  target="#t1Fig0047  #t2Fig0050  #t3Fig0050  #t4Fig0050  #t5Fig0050  #t8Fig0050  #t9Fig0050  #t11Fig0050  #t12Fig0049  #t13Fig0050  #t14Fig0049  " />
+               <link
+                  target="#t1Fig0048  #t2Fig0051  #t3Fig0051  #t4Fig0051  #t5Fig0051  #t8Fig0051  #t9Fig0051  #t11Fig0051  #t12Fig0050  #t13Fig0051  #t14Fig0050  " />
+               <link
+                  target="#t1Fig0049  #t2Fig0052  #t3Fig0052  #t4Fig0052  #t5Fig0052  #t8Fig0052  #t9Fig0052  #t11Fig0052  #t12Fig0051  #t13Fig0052  #t14Fig0051  " />
+               <link
+                  target="#t1Fig0050  #t2Fig0053  #t3Fig0053  #t4Fig0053  #t5Fig0053  #t8Fig0053  #t9Fig0053  #t11Fig0053  #t12Fig0052  #t13Fig0053  #t14Fig0052  " />
+               <link
+                  target="#t1Fig0051  #t2Fig0054  #t3Fig0054  #t4Fig0054  #t5Fig0054  #t8Fig0054  #t9Fig0054  #t11Fig0054  #t12Fig0053  #t13Fig0054  #t14Fig0053  " />
+               <link
+                  target="#t1Fig0052  #t2Fig0055  #t3Fig0055  #t4Fig0055  #t5Fig0055  #t8Fig0055  #t9Fig0055  #t11Fig0055  #t12Fig0054  #t13Fig0055  #t14Fig0054  " />
+               <link
+                  target="#t1Fig0053  #t2Fig0056  #t3Fig0056  #t4Fig0056  #t5Fig0056  #t8Fig0056  #t9Fig0056  #t11Fig0056  #t12Fig0055  #t13Fig0056  #t14Fig0055  " />
+               <link
+                  target="#t1Fig0054  #t2Fig0057  #t3Fig0057  #t4Fig0057  #t5Fig0057  #t8Fig0057  #t9Fig0057  #t11Fig0057  #t12Fig0056  #t13Fig0057  #t14Fig0056  " />
+               <link
+                  target="#t1Fig0055  #t2Fig0058  #t3Fig0058  #t4Fig0058  #t5Fig0058  #t8Fig0058  #t9Fig0058  #t11Fig0058  #t12Fig0057  #t13Fig0058  #t14Fig0057  " />
+               <link
+                  target="#t1Fig0056  #t2Fig0059  #t3Fig0059  #t4Fig0059  #t5Fig0059  #t8Fig0059  #t9Fig0059  #t11Fig0059  #t12Fig0058  #t13Fig0059  #t14Fig0058  " />
+               <link
+                  target="#t1Fig0057  #t2Fig0060  #t3Fig0060  #t4Fig0060  #t5Fig0060  #t8Fig0060  #t9Fig0060  #t11Fig0060  #t12Fig0059  #t13Fig0060  #t14Fig0059  " />
+               <link
+                  target="#t1Fig0058  #t2Fig0061  #t3Fig0061  #t4Fig0061  #t5Fig0061  #t8Fig0061  #t9Fig0061  #t11Fig0061  #t12Fig0060  #t13Fig0061  #t14Fig0060  " />
+               <link
+                  target="#t1Fig0059  #t2Fig0062  #t3Fig0062  #t4Fig0062  #t5Fig0062  #t8Fig0062  #t9Fig0062  #t11Fig0062  #t12Fig0061  #t13Fig0062  #t14Fig0061  " />
+               <link
+                  target="#t1Fig0060  #t2Fig0063  #t3Fig0063  #t4Fig0063  #t5Fig0063  #t8Fig0063  #t9Fig0063  #t11Fig0063  #t12Fig0062  #t13Fig0063  #t14Fig0062  " />
+               <link
+                  target="#t1Fig0061  #t2Fig0064  #t3Fig0064  #t4Fig0064  #t5Fig0064  #t8Fig0064  #t9Fig0064  #t11Fig0064  #t12Fig0063  #t13Fig0064  #t14Fig0063  " />
+               <link
+                  target="#t1Fig0062  #t2Fig0065  #t3Fig0065  #t4Fig0065  #t5Fig0065  #t8Fig0065  #t9Fig0065  #t11Fig0065  #t12Fig0064  #t13Fig0065  #t14Fig0064  " />
+               <link
+                  target="#t1Fig0063  #t2Fig0066  #t3Fig0066  #t4Fig0066  #t5Fig0066  #t8Fig0066  #t9Fig0066  #t11Fig0066  #t12Fig0065  #t13Fig0066  #t14Fig0065  " />
+               <link
+                  target="#t1Fig0064  #t2Fig0067  #t3Fig0067  #t4Fig0067  #t5Fig0067  #t8Fig0067  #t9Fig0067  #t11Fig0067  #t12Fig0066  #t13Fig0067  #t14Fig0066  " />
+               <link
+                  target="#t1Fig0065  #t2Fig0068  #t3Fig0068  #t4Fig0068  #t5Fig0068  #t8Fig0068  #t9Fig0068  #t11Fig0068  #t12Fig0067  #t13Fig0068  #t14Fig0067  " />
+               <link
+                  target="#t1Fig0066  #t2Fig0069  #t3Fig0069  #t4Fig0069  #t5Fig0069  #t8Fig0069  #t9Fig0069  #t11Fig0069  #t12Fig0068  #t13Fig0069  #t14Fig0068  " />
+               <link
+                  target="#t1Fig0067  #t2Fig0070  #t3Fig0070  #t4Fig0070  #t5Fig0070  #t8Fig0070  #t9Fig0070  #t11Fig0070  #t12Fig0069  #t13Fig0070  #t14Fig0069  " />
+               <link
+                  target="#t1Fig0068  #t2Fig0071  #t3Fig0071  #t4Fig0071  #t5Fig0071  #t8Fig0071  #t9Fig0071  #t11Fig0071  #t12Fig0070  #t13Fig0071  #t14Fig0070  " />
+               <link
+                  target="#t1Fig0069  #t2Fig0072  #t3Fig0072  #t4Fig0072  #t5Fig0072  #t8Fig0072  #t9Fig0072  #t11Fig0072  #t12Fig0071  #t13Fig0072  #t14Fig0071  " />
+               <link
+                  target="#t1Fig0070  #t2Fig0073  #t3Fig0073  #t4Fig0073  #t5Fig0073  #t8Fig0073  #t9Fig0073  #t11Fig0073  #t12Fig0072  #t13Fig0073  #t14Fig0072  " />
+               <link
+                  target="#t1Fig0071  #t2Fig0074  #t3Fig0074  #t4Fig0074  #t5Fig0074  #t8Fig0074  #t9Fig0074  #t11Fig0074  #t12Fig0073  #t13Fig0074  #t14Fig0073  " />
+               <link
+                  target="#t1Fig0072  #t2Fig0075  #t3Fig0075  #t4Fig0075  #t5Fig0075  #t8Fig0075  #t9Fig0075  #t11Fig0075  #t12Fig0074  #t13Fig0075  #t14Fig0074  " />
+               <link
+                  target="#t1Fig0073  #t2Fig0076  #t3Fig0076  #t4Fig0076  #t5Fig0076  #t8Fig0076  #t9Fig0076  #t11Fig0076  #t12Fig0075  #t13Fig0076  #t14Fig0075  " />
+               <link
+                  target="#t1Fig0074  #t2Fig0077  #t3Fig0077  #t4Fig0077  #t5Fig0077  #t8Fig0077  #t9Fig0077  #t11Fig0077  #t12Fig0076  #t13Fig0077  #t14Fig0076  " />
+               <link
+                  target="#t1Fig0075  #t2Fig0078  #t3Fig0078  #t4Fig0078  #t5Fig0078  #t8Fig0078  #t9Fig0078  #t11Fig0078  #t12Fig0077  #t13Fig0078  #t14Fig0077  " />
+               <link
+                  target="#t1Fig0076  #t2Fig0079  #t3Fig0079  #t4Fig0079  #t5Fig0079  #t8Fig0079  #t9Fig0079  #t11Fig0079  #t12Fig0078  #t13Fig0079  #t14Fig0078  " />
+               <link
+                  target="#t1Fig0077  #t2Fig0080  #t3Fig0080  #t4Fig0080  #t5Fig0080  #t8Fig0080  #t9Fig0080  #t11Fig0080  #t12Fig0079  #t13Fig0080  #t14Fig0079  " />
+               <link
+                  target="#t1Fig0078  #t2Fig0081  #t3Fig0081  #t4Fig0081  #t5Fig0081  #t8Fig0081  #t9Fig0081  #t11Fig0081  #t12Fig0080  #t13Fig0081  #t14Fig0080  " />
+               <link
+                  target="#t1Fig0079  #t2Fig0082  #t3Fig0082  #t4Fig0082  #t5Fig0082  #t8Fig0082  #t9Fig0082  #t11Fig0082  #t12Fig0081  #t13Fig0082  #t14Fig0081  " />
+               <link
+                  target="#t1Fig0080  #t2Fig0083  #t3Fig0083  #t4Fig0083  #t5Fig0083  #t8Fig0083  #t9Fig0083  #t11Fig0083  #t12Fig0082  #t13Fig0083  #t14Fig0082  " />
+               <link
+                  target="#t1Fig0081  #t2Fig0084  #t3Fig0084  #t4Fig0084  #t5Fig0084  #t8Fig0084  #t9Fig0084  #t11Fig0084  #t12Fig0083  #t13Fig0084  #t14Fig0083  " />
+               <link
+                  target="#t1Fig0082  #t2Fig0085  #t3Fig0085  #t4Fig0085  #t5Fig0085  #t8Fig0085  #t9Fig0085  #t11Fig0085  #t12Fig0084  #t13Fig0085  #t14Fig0084  " />
+               <link
+                  target="#t1Fig0083  #t2Fig0086  #t3Fig0086  #t4Fig0086  #t5Fig0086  #t8Fig0086  #t9Fig0086  #t11Fig0086  #t12Fig0085  #t13Fig0086  #t14Fig0085  " />
+               <link
+                  target="#t1Fig0084  #t2Fig0087  #t3Fig0087  #t4Fig0087  #t5Fig0087  #t8Fig0087  #t9Fig0087  #t11Fig0087  #t12Fig0086  #t13Fig0087  #t14Fig0086  " />
+               <link
+                  target="#t1Fig0085  #t2Fig0088  #t3Fig0088  #t4Fig0088  #t5Fig0088  #t8Fig0088  #t9Fig0088  #t11Fig0088  #t12Fig0087  #t13Fig0088  #t14Fig0087  " />
+               <link
+                  target="#t1Fig0086  #t2Fig0089  #t3Fig0089  #t4Fig0089  #t5Fig0089  #t8Fig0089  #t9Fig0089  #t11Fig0089  #t12Fig0088  #t13Fig0089  #t14Fig0088  " />
+               <link
+                  target="#t1Fig0087  #t2Fig0090  #t3Fig0090  #t4Fig0090  #t5Fig0090  #t8Fig0090  #t9Fig0090  #t11Fig0090  #t12Fig0089  #t13Fig0090  #t14Fig0089  " />
+               <link
+                  target="#t1Fig0088  #t2Fig0091  #t3Fig0091  #t4Fig0091  #t5Fig0091  #t8Fig0091  #t9Fig0091  #t11Fig0091  #t12Fig0090  #t13Fig0091  #t14Fig0090  " />
+               <link
+                  target="#t1Fig0089  #t2Fig0092  #t3Fig0092  #t4Fig0092  #t5Fig0092  #t8Fig0092  #t9Fig0092  #t11Fig0092  #t12Fig0091  #t13Fig0092  #t14Fig0091  " />
+               <link
+                  target="#t1Fig0090  #t2Fig0093  #t3Fig0093  #t4Fig0093  #t5Fig0093  #t8Fig0093  #t9Fig0093  #t11Fig0093  #t12Fig0092  #t13Fig0093  #t14Fig0092  " />
+               <link
+                  target="#t1Fig0091  #t2Fig0094  #t3Fig0094  #t4Fig0094  #t5Fig0094  #t8Fig0094  #t9Fig0094  #t11Fig0094  #t12Fig0093  #t13Fig0094  #t14Fig0093  " />
+               <link
+                  target="#t1Fig0092  #t2Fig0095  #t3Fig0095  #t4Fig0095  #t5Fig0095  #t8Fig0095  #t9Fig0095  #t11Fig0095  #t12Fig0094  #t13Fig0095  #t14Fig0094  " />
+               <link
+                  target="#t1Fig0093  #t2Fig0096  #t3Fig0096  #t4Fig0096  #t5Fig0096  #t8Fig0096  #t9Fig0096  #t11Fig0096  #t12Fig0095  #t13Fig0096  #t14Fig0095  " />
+               <link
+                  target="#t1Fig0094  #t2Fig0097  #t3Fig0097  #t4Fig0097  #t5Fig0097  #t8Fig0097  #t9Fig0097  #t11Fig0097  #t12Fig0096  #t13Fig0097  #t14Fig0096  " />
+               <link
+                  target="#t1Fig0095  #t2Fig0098  #t3Fig0098  #t4Fig0098  #t5Fig0098  #t8Fig0098  #t9Fig0098  #t11Fig0098  #t12Fig0097  #t13Fig0098  #t14Fig0097  " />
+               <link
+                  target="#t1Fig0096  #t2Fig0099  #t3Fig0099  #t4Fig0099  #t5Fig0099  #t8Fig0099  #t9Fig0099  #t11Fig0099  #t12Fig0098  #t13Fig0099  #t14Fig0098  " />
+               <link
+                  target="#t1Fig0097  #t2Fig0100  #t3Fig0100  #t4Fig0100  #t5Fig0100  #t8Fig0100  #t9Fig0100  #t11Fig0100  #t12Fig0099  #t13Fig0100  #t14Fig0099  " />
+               <link
+                  target="#t1Fig0098  #t2Fig0101  #t3Fig0101  #t4Fig0101  #t5Fig0101  #t8Fig0101  #t9Fig0101  #t11Fig0101  #t12Fig0100  #t13Fig0101  #t14Fig0100  " />
+               <link
+                  target="#t1Fig0099  #t2Fig0102  #t3Fig0102  #t4Fig0102  #t5Fig0102  #t8Fig0102  #t9Fig0102  #t11Fig0102  #t12Fig0101  #t13Fig0102  #t14Fig0101  " />
+               <link
+                  target="#t1Fig0100  #t2Fig0103  #t3Fig0103  #t4Fig0103  #t5Fig0103  #t8Fig0103  #t9Fig0103  #t11Fig0103  #t12Fig0102  #t13Fig0103  #t14Fig0102  " />
+               <link
+                  target="#t1Fig0101  #t2Fig0104  #t3Fig0104  #t4Fig0104  #t5Fig0104  #t8Fig0104  #t9Fig0104  #t11Fig0104  #t12Fig0103  #t13Fig0104  #t14Fig0103  " />
+               <link
+                  target="#t1Fig0102  #t2Fig0105  #t3Fig0105  #t4Fig0105  #t5Fig0105  #t8Fig0105  #t9Fig0105  #t11Fig0105  #t12Fig0104  #t13Fig0105  #t14Fig0104  " />
+               <link
+                  target="#t1Fig0103  #t2Fig0106  #t3Fig0106  #t4Fig0106  #t5Fig0106  #t8Fig0106  #t9Fig0106  #t11Fig0106  #t12Fig0105  #t13Fig0106  #t14Fig0105  " />
+               <link
+                  target="#t1Fig0104  #t2Fig0107  #t3Fig0107  #t4Fig0107  #t5Fig0107  #t8Fig0107  #t9Fig0107  #t11Fig0107  #t12Fig0106  #t13Fig0107  #t14Fig0106  " />
+               <link
+                  target="#t1Fig0105  #t2Fig0108  #t3Fig0108  #t4Fig0108  #t5Fig0108  #t8Fig0108  #t9Fig0108  #t11Fig0108  #t12Fig0107  #t13Fig0108  #t14Fig0107  " />
+               <link
+                  target="#t1Fig0106  #t2Fig0109  #t3Fig0109  #t4Fig0109  #t5Fig0109  #t8Fig0109  #t9Fig0109  #t11Fig0109  #t12Fig0108  #t13Fig0109  #t14Fig0108  " />
+               <link
+                  target="#t1Fig0107  #t2Fig0110  #t3Fig0110  #t4Fig0110  #t5Fig0110  #t8Fig0110  #t9Fig0110  #t11Fig0110  #t12Fig0109  #t13Fig0110  #t14Fig0109  " />
+               <link
+                  target="#t1Fig0108  #t2Fig0111  #t3Fig0111  #t4Fig0111  #t5Fig0111  #t8Fig0111  #t9Fig0111  #t11Fig0111  #t12Fig0110  #t13Fig0111  #t14Fig0110  " />
+               <link
+                  target="#t1Fig0109  #t2Fig0112  #t3Fig0112  #t4Fig0112  #t5Fig0112  #t8Fig0112  #t9Fig0112  #t11Fig0112  #t12Fig0111  #t13Fig0112  #t14Fig0111  " />
+               
+               
+               
+               <link
+                  target="#t1Fig0110  #t2Fig0113  #t3Fig0113  #t4Fig0113  #t5Fig0113  #t8Fig0113  #t9Fig0113  #t11Fig0113  #t12Fig0112  #t13Fig0113  #t14Fig0112  " />
+               <link
+                  target="#t1Fig0111  #t2Fig0114  #t4Fig0114  " />
+               <link
+                  target="#t1Fig0112  #t2Fig0115  #t4Fig0115  " />
+               <link
+                  target="#t1Fig0113  #t2Fig0116  #t4Fig0116  " />
+               <link
+                  target="#t1Fig0114  #t2Fig0117  #t3Fig0114  #t4Fig0117  #t5Fig0114  #t8Fig0114  #t9Fig0114  #t11Fig0114  #t13Fig0114  #t14Fig0113  " />
+               <link
+                  target="#t1Fig0115  #t2Fig0118  #t3Fig0115  #t4Fig0118  #t5Fig0115  #t8Fig0115  #t9Fig0115  #t11Fig0115  #t13Fig0115  #t14Fig0114  " />
+               <link
+                  target="#t1Fig0116  #t2Fig0119  #t3Fig0116  #t4Fig0119  #t5Fig0116  #t8Fig0116  #t9Fig0116  #t11Fig0116  #t13Fig0116  #t14Fig0115  " />
+               <link
+                  target="#t1Fig0117  #t2Fig0120  #t3Fig0117  #t4Fig0120  #t5Fig0117  #t8Fig0117  #t9Fig0117  #t11Fig0117  #t13Fig0117  #t14Fig0116  " />
+               <link
+                  target="#t1Fig0118  #t2Fig01121  #t3Fig0118  #t4Fig0121  #t5Fig0118  #t8Fig0118  #t9Fig0118  #t11Fig0118  #t13Fig0118 #t14Fig0117  " />
+               <link
+                  target="#t1Fig0119  #t2Fig0122  #t3Fig0119  #t4Fig0122  #t5Fig0119  #t8Fig0119  #t9Fig0119  #t11Fig0119  #t14Fig0118  " />
+               <link
+                  target="#t1Fig0120  #t2Fig0123  #t3Fig0120  #t4Fig0123  #t5Fig0120  #t8Fig0120  #t9Fig0120  #t11Fig0120  #t14Fig0119  " />
+               <link
+                  target="#t1Fig0121  #t2Fig0124  #t4Fig0124  #t5Fig0121  #t9Fig0121  #t11Fig0121 #t13Fig0119  #t14Fig0120  " />
+               <link
+                  target="#t1Fig0122  #t2Fig0125  #t4Fig0125  " />
+               <link
+                  target="#t1Fig0123  #t2Fig0126  #t4Fig0126  " />
+            </linkGrp>
+         </div>
+      </body>
+   </text>
+</TEI>

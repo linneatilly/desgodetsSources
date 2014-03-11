@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+     fichier de présentation du corpus des cours de Desgodets sur les commodités 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- TODO : remplacer le faux-texte -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Traité des ordres</title>
+                <title xml:lang="fre" type="sub">Présentation</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche
+                                Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d’ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d’Histoire de la
+                        Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="aut">auteur</resp>
+                    <persName ref="#GF">
+                        <forename>Guillaume</forename>
+                        <surname>Fonkenell</surname>
+                    </persName>
+                    <persName ref="#JB">
+                            <forename>Joëlle</forename>
+                            <surname>Barreau</surname>
+                    </persName>
+                    <persName ref="#BG">
+                            <forename>Béatrice</forename>
+                            <surname>Gaillard</surname>
+                    </persName>
+                    <persName ref="#GDR">
+                            <forename>Gabrielle</forename>
+                            <surname>de Roincé</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date from="2013"
+                        to="2013">2008-2013</date></edition>
+            </editionStmt>
+            <extent><!-- taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno n="presentation">oPresentation</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d’analyse du droit (UMR
+                        7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                  <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                  <addrLine>UFR Droit et Science politique</addrLine>
+                  <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                  <addrLine>200, Avenue de la République</addrLine>
+                  <addrLine>92001 Nanterre Cedex</addrLine>
+                  <addrLine>France</addrLine>
+                  <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                  <addrLine>contact@desgodets.fr</addrLine>
+               </address>
+                </publisher>
+                <availability status="restricted">
+                    <p>Le Centre de théorie et d’analyse du droit (UMR 7074) met à
+                        disposition cette ressource électronique structurée, protégée
+                        par le code de la propriété intellectuelle sur les bases de
+                        données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d’Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb />Cette licence est disponible
+                        en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-nd/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc-nd/3.0/fr/</ref>
+                        ou par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d’Utilisation Commerciale : Le Centre de théorie et
+                        d’analyse du droit souhaite encourager l’utilisation et
+                        l’amélioration de ses ressources électroniques, pour les
+                        intérêts de l’enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d’analyse du droit.</p>
+                    <p>Pas de Modification : Afin de mieux servir la communauté
+                        scientifique, Le Centre de théorie et d’analyse du droit
+                        s’engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s’engage à les corriger et à les améliorer, à
+                        intégrer les contributions qui lui sont soumises (après
+                        validation par un comité scientifique), et à référencer
+                        l’origine de ces contributions. Toute modification de la
+                        ressource qui ne serait pas reversée à la version de référence
+                        sous l’autorité éditoriale du Centre de théorie et d’analyse du
+                        droit doit faire l’objet de l’accord de celui-ci, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique.</p>
+                    <p>Paternité : Le Centre de théorie et d’analyse du droit demande à
+                        ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb />1. le nom du Centre de théorie
+                        et d’analyse du droit, pour les publications électroniques, son
+                        logo <lb />2. l’URI permettant d’accéder à la page citée sur
+                        notre site, ou à la page d’accueil de la ressource <lb />3. la
+                        date du fichier source utilisé. </p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="oPresentation">Texte original : le texte a été créé sous
+                    forme électronique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L’édition des cours de Desgodets fait partie d’un programme de
+                    recherche sur la formalisation du savoir architectural au XVII<hi
+                        rend="superscript">e</hi> siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d’un
+                        élément quote, soit au moyen d’un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira
+                    peut-être une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne
+                    sera pas le cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <!-- TODO : vérifier partout creation -->
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="99">Français (langue principale du
+                    corpus)</language>
+                <language ident="lat" usage="01">Latin (langue utilisée dans le
+                    corpus)</language>
+                <!-- Noter et évaluer le pourcentage d'autres langues dans le document avec @usage (valeurs numériques) -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng"
+                    scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode
+                    scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-13" who="#EC">première version du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front xml:id="oPresentationFront">
+            <titlePage xml:id="oPresentationFront00" xml:lang="fre">
+                <docTitle>
+                    <titlePart>Présentation du Cours des ordres</titlePart>
+                </docTitle>
+                <docAuthor>Éditeurs : <persName ref="#GF">Guillaume
+                        Fonkenell</persName>, <persName ref="#JB">Joëlle
+                        Barreau</persName>, <persName ref="#GF">Béatrice
+                        Gaillard</persName></docAuthor>
+                <docAuthor>Transcriptions : <persName ref="JB">Joëlle
+                        Barreau</persName>, <persName ref="EC">Emmanuel
+                        Château</persName>, <persName ref="LT">Linnéa
+                        Rollenhagen-Tilly</persName></docAuthor>
+                <docDate>mai 2013</docDate>
+                <docEdition>version 0</docEdition>
+            </titlePage>
+        </front>
+        <body xml:id="oPresentationBody">
+            <div xml:id="oPresentationBodyFr" xml:lang="fre">
+                <div xml:id="oPresentationBodyFr01" type="chapter" n="1">
+                    <head>Le manuscrit édité et les partis-pris d’édition</head>
+                    <div xml:id="oPresentationBodyFr01.01" type="section" n="1">
+                        <head>Le choix du manuscrit</head>
+                        <p>Le cours de Desgodets sur les ordres est aujourd’hui connu
+                            par neuf manuscrits. Le manuscrit original, à partir duquel
+                            le cours a été prononcé, n’a pas été conservé. Le tableau
+                            suivant présente les critères qui ont déterminé le choix du
+                            manuscrit à éditer.</p>
+                        <table>
+                            <row>
+                                <!--<cell>Critère/Manuscrit</cell>-->
+                                <cell>Ms</cell>
+                                <cell>O1</cell>
+                                <cell>O2</cell>
+                                <cell>O3</cell>
+                                <cell>O4</cell>
+                                <cell>O5</cell>
+                                <cell>O6</cell>
+                                <cell>O7</cell>
+                                <cell>O8</cell>
+                                <cell>O9</cell>
+                            </row>
+                            <row>
+                                <!--<cell>Présence d’une série complète de planches</cell>-->
+                                <cell>Série complète de pl.</cell>
+                                <cell>Oui</cell>
+                                <cell>Non</cell>
+                                <cell>Non</cell>
+                                <cell>Non</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Non</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                            </row>
+                            <row>
+                                <!--<cell>Lisibilité des planches</cell>-->
+                                <cell>Lisibilité des pl.</cell>
+                                <cell>Bon</cell>
+                                <cell>Sans objet</cell>
+                                <cell>Sans objet</cell>
+                                <cell>Sans objet</cell>
+                                <cell>Bon</cell>
+                                <cell>Moyen</cell>
+                                <cell>Sans objet</cell>
+                                <cell>Moyen</cell>
+                                <cell>Moyen</cell>
+                            </row>
+                            <row>
+                                <!--<cell>Texte comportant tous les chapitres du cours</cell>-->
+                                <cell>Complétude du txt</cell>
+                                <cell>Non</cell>
+                                <cell>Non</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                            </row>
+                            <row>
+                                <!--<cell>Lisibilité du texte</cell>-->
+                                <cell>Lisibilité du txt</cell>
+                                <cell>Bon</cell>
+                                <cell>Moyen</cell>
+                                <cell>Bon</cell>
+                                <cell>Bon</cell>
+                                <cell>Bon</cell>
+                                <cell>Moyen</cell>
+                                <cell>Bon</cell>
+                                <cell>Moyen</cell>
+                                <cell>Bon</cell>
+                            </row>
+                            <row>
+                                <!--<cell>Texte copié par un scripteur français</cell>-->
+                                <cell>Scripteur français</cell>
+                                <cell>Oui</cell>
+                                <cell>Non</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Oui</cell>
+                                <cell>Non</cell>
+                                <cell>Oui</cell>
+                            </row>
+                            <row>
+                                <cell>Hauteur</cell>
+                                <cell>450</cell>
+                                <cell>390</cell>
+                                <cell>245</cell>
+                                <cell>223</cell>
+                                <cell>410</cell>
+                                <cell>330</cell>
+                                <cell>400</cell>
+                                <cell>420</cell>
+                                <cell>343</cell>
+                            </row>
+                            <row>
+                                <cell>Largeur</cell>
+                                <cell>303</cell>
+                                <cell>250</cell>
+                                <cell>195</cell>
+                                <cell>190</cell>
+                                <cell>255</cell>
+                                <cell>280</cell>
+                                <cell>250</cell>
+                                <cell>270</cell>
+                                <cell>285</cell>
+                            </row>
+                            <row>
+                                <!--<cell>Dates mentionnées dans le manuscrit</cell>-->
+                                <cell>Dates mentionnées</cell>
+                                <cell>
+                                    <date when="1719">1719</date>
+                                </cell>
+                                <cell>
+                                    <date from="1724" to="1725">1724-1725</date>
+                                </cell>
+                                <cell>
+                                    <date from="1724" to="1725">1724-1725</date>
+                                </cell>
+                                <cell>
+                                    <date when="1725">1725</date>
+                                </cell>
+                                <cell>
+                                    <date when="1733">1733</date>
+                                </cell>
+                                <cell>Pas de date</cell>
+                                <cell>Pas de date</cell>
+                                <cell>
+                                    <date when="1763">1763</date>
+                                </cell>
+                                <cell>
+                                    <date from="1735" to="1736">1735-1736</date>
+                                </cell>
+                            </row>
+                            <row>
+                                <!--<cell>Élément de datation autre (filigrane, historique) </cell>-->
+                                <cell>Élmt de datation</cell>
+                                <cell>Filigrane à <lb />identifier</cell>
+                                <cell>Filigrane<lb />à<lb />identifier</cell>
+                                <cell>Filigrane à <lb />identifier</cell>
+                                <cell>Filigrane à<lb />identifier</cell>
+                                <cell>
+                                    <date when="1742" to="1779">1742-1779</date>
+                                </cell>
+                                <cell>Filigrane à <lb />identifier</cell>
+                                <cell>Filigrane à <lb />identifier</cell>
+                                <cell>Filigrane à <lb />identifier</cell>
+                                <cell>Vers 1735-1736</cell>
+                            </row>
+                        </table>
+                        <p>Le manuscrit O5 est celui qui présente le meilleur ensemble
+                            de critères. </p>
+                        <p>Remarques sur quelques critères : <list>
+                                <item>La lisibilité des planches : la présence ou non
+                                    d’un rendu des ombres est un élément important dans
+                                    la compréhension du relief des éléments représentés
+                                    et il a donc été privilégié.</item>
+                                <item>La lisibilité du texte : le module des lettres,
+                                    l’espacement entre les mots a été pris en compte.
+                                    On a privilégié les textes dépourvus de ratures et
+                                    repentirs.</item>
+                            </list>
+                        </p>
+                    </div>
+                    <div xml:id="oPresentationBodyFr01.02" type="section" n="2">
+                        <head>Parti-pris d’édition</head>
+                        <p>Les règles retenues sont celles préconisées par <ref type="note" target="#oN0001">Bernard
+                            Barbiche pour l’édition des textes du <date from="1600" to="1699">XVII<hi
+                                rend="superscript">e</hi> siècle</date></ref>.</p>
+                        <p>La comparaison entre les différents manuscrits a été rendue
+                            possible par l’utilisation du logiciel Juxta. Les variantes
+                            entre les textes sont signalées en note de bas de page.
+                            Seuls les changements ayant un effet sur le sens ont donc
+                            été pris en compte. Les différences orthographiques, les
+                            variations de formes grammaticales de base (« point » à la
+                            place de « pas » ; « que plaire » à la place de « que de
+                            plaire ») n’ont pas été signalées Le nombre de variantes se
+                            monte à 1050. </p>
+                    </div>
+                    <div xml:id="oPresentationBodyFr01.03" type="section" n="3">
+                        <head>Les versions conservées</head>
+                        <p>Le cours sur les ordres de Desgodets est connu actuellement
+                            par neuf manuscrits, dont cinq sont accompagnés de
+                            planches. Huit d’entre eux présentent un plan identique : <list>
+                                <item>Une préface</item>
+                                <item>Une première partie (en 8 chapitres) exposant ce que l’on
+                                    pourrait appeler le « vocabulaire » des ordres (les
+                                    éléments qui les constituent et les proportions et
+                                    les enchaînements qui les régissent entre eux).
+                                    Elle comprend :<list>
+                                        <item>Des considérations générales sur les
+                                           moulures (et sur le tracé des fûts des
+                                           colonnes) <hi rend="italic">(chap.
+                                           1)</hi></item>
+                                        <item>Un exposé introductif <hi rend="italic"
+                                           >(chap. 2)</hi> suivi de l’analyse des
+                                           formes et des proportions, ordre par ordre,
+                                           suivant la progression suivante : toscan,
+                                           dorique, ionique, corinthien et composite
+                                           <hi rend="italic">(chap. 3 à 7)</hi> et
+                                           terminé par des observations générales <hi
+                                           rend="italic">(chap. 8)</hi></item>
+                                    </list>
+                                </item>
+                                <item>Une seconde partie (en 14 chapitres) consacrée à
+                                    ce que l’on pourrait appeler la « grammaire » des
+                                    ordres et à l’influence du système des ordres sur
+                                    d’autres éléments du vocabulaire architectural.
+                                    Elle comprend :<list>
+                                        <item>Un développement sur la superposition des
+                                           ordres <hi rend="italic">(chap. 1 et 2)</hi>
+                                        </item>
+                                        <item>Des réflexions sur l’emploi des pilastres
+                                           et des colonnes sur les façades et des
+                                           libertés que l’on peut prendre sur ces
+                                           questions <hi rend="italic">(chap. 3 à
+                                           5)</hi>
+                                        </item>
+                                        <item>Des développements sur la forme des
+                                           éléments d’architecture modifié en fonction
+                                           de l’usage des ordres les éléments
+                                           « contaminés » par les ordres : frontons,
+                                           portes, fenêtres, niches, statues,
+                                           balustrades <hi rend="italic">(chap. 6 à 10
+                                           et 12)</hi>
+                                        </item>
+                                        <item>Un développement spécifique sur l’ordre
+                                           attique <hi rend="italic">(chap. 11)</hi>
+                                        </item>
+                                        <item>Un développement spécifique sur la
+                                           question de la proportion du rez-de-chaussée
+                                           d’un bâtiment <hi rend="italic">(chap.
+                                           13)</hi>
+                                        </item>
+                                    </list>
+                                </item>
+                                <item>Une conclusion sur le « bon goût » en
+                                    architecture <hi rend="italic">(chap. 14)</hi>
+                                </item>
+                            </list>
+                        </p>
+                        <div xml:id="oPresentationBodyFr01.03.01" type="number" n="1">
+                            <head>Un manuscrit de présentation, témoignage du premier
+                                état de la pensée de <persName ref="#desgodets">Desgodets</persName> (O1)</head>
+                            <p>Le manuscrit O1 présente plusieurs différences qui le
+                                distinguent de tous les autres témoins :</p>
+                            <p>Le plan de l’ouvrage est différent et ne comporte que 17
+                                chapitres numérotés en continu</p>
+                            <p>Le texte est bref de manière à pouvoir figurer en face
+                                de chaque planche</p>
+                            <p>Le nombre des planches est réduit à 54 (au lieu de 62
+                                dans les autres exemplaires complets)</p>
+                            <p>Le manuscrit est enrichi de dessins ornementaux : deux
+                                vignettes en haut de page et un frontispice.</p>
+                            <p>L’ouvrage a été présenté au roi à l’occasion de sa
+                                visite à l’Académie royale d’architecture le <date when="1719-08-02">2 août
+                                1719</date>, ce que confirme une inscription probablement de
+                                la main de Desgodets portée au bas de l’épître
+                                dédicatoire. Cependant le manuscrit est antérieur à
+                                cette date car, selon <persName ref="#herrmanWolfgang">Wolfgang Herrmann</persName>, la dédicace,
+                                d’abord conçue pour <persName ref="#louisXIV">Louis XIV</persName>, a été transformée et
+                                corrigée pour correspondre à <persName ref="#louisXV">Louis XV</persName>. Le manuscrit
+                                semble en fait avoir été conçu en vue d’une
+                                publication, car de tous les témoins du Cours sur les
+                                ordres c’est celui dont la forme se rapproche le plus
+                                d’un texte imprimé. <ref type="note" target="#oN0002">Or, <persName ref="#desgodets">Desgodets</persName> a obtenu en <date
+                                    when="1712">1712</date> un privilège pour publier
+                                un « traité des ordres d’architecture » qu’il est
+                                tentant d’identifier avec le manuscrit O1</ref>. Le manuscrit n’a pas été offert au roi et il
+                                n’est entré dans les collections de l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName> par
+                                acquisition qu’en <date when="1779">1779</date>.
+                                Peut-être <persName ref="#desgodets">Desgodets</persName> l’avait-il conservé pour lui, comme
+                                peut le laisser penser une mention dans son inventaire
+                                après décès ? Outre son intérêt historique, le
+                                manuscrit O1 est un précieux témoignage des idées de
+                                Desgodets sur les ordres quelques semaines seulement
+                                après sa nomination comme professeur de l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName><!-- TODO voir traitement -->.
+                            </p>
+                        </div>
+                        <div xml:id="oPresentationBodyFr01.03.02" type="number" n="2">
+                            <head>Les manuscrits Suédois (O2, O3, O8)</head>
+                            <p>Trois manuscrits du cours sur les ordres de Desgodets
+                                (O2, O3, O8) sont aujourd’hui conservés en Suède, parmi
+                                les collections de la <persName ref="#cronstedtFamille">famille Cronstedt</persName>. Tous ces
+                                témoins présentent le même état du texte et ils
+                                commencent par un titre identique faisant référence au
+                                cours professé à partir du <date when="1724-11-13">13
+                                    novembre 1724</date>. Les planches des manuscrits
+                                O2 et O8 présentent également des particularités
+                                communes (le manuscrit O3 en étant dépourvu). Les
+                                manuscrits suédois dérivent donc d’un prototype
+                                commun.</p>
+                            <p>Deux hypothèses peuvent expliquer l’arrivée de ce
+                                prototype en <placeName ref="#suede">Suède</placeName>. Le prototype a pu être acquis par
+                                l’<placeName ref="#harlemanCarl">architecte Carl Hårlemann</placeName> qui s’est formé à <placeName ref="#paris">Paris</placeName>
+                                dans l’atelier de <placeName ref="#bulletDeChaimblainJeanBaptiste">Jean-Baptiste Bullet de Chamblain</placeName>
+                                    <date from="1721" to="1727">entre 1721 et
+                                        1727</date>. <persName ref="#harlemanCarl">Carl Hårlemann</persName> a également séjourné
+                                dans la capitale <date from="1732-02" to="1732-06"
+                                    >entre février et juin 1732</date> et durant
+                                    l’<date from="1744-11-21" to="1744-04-21">hiver
+                                    1744</date>. Cependant, cette hypothèse reste
+                                fragile car tous les témoins suédois se trouvent
+                                aujourd’hui dans la collection de la <persName ref="#cronstedtFamille">famille Cronstedt</persName>. </p>
+                            <p>Certes, le prototype a pu entrer dans cette collection à
+                                la mort d’<persName ref="#harlemanCarl">Hårlemann</persName>, soit par acquisition, soit parce
+                                que <persName ref="#cronstedtCarlJohan">Carl-Johan Cronstedt</persName> lui a succédé à la tête de la
+                                surintendance des bâtiments du roi de <placeName ref="#suede">Suède</placeName> et qu’il a
+                                pu hériter d’une partie de sa bibliothèque de travail.
+                                Cependant, l’hypothèse la plus simple est que
+                                <persName ref="cronstedtCarlJohan">Carl-Johann Cronstedt</persName> lui-même a acquis le prototype.
+                                Il disposait lui-même de nombreux liens avec <placeName ref="#Paris">Paris</placeName> où
+                                il avait étudié <date when="1732-02" to="1735-08">entre
+                                    février 1732 et août 1735</date>. </p>
+                            <p>L’un des trois manuscrits conservé est-il le prototype
+                                des deux autres ? Aucun ne peut pleinement y
+                                prétendre : le manuscrit O2 est incomplet et exclu pour
+                                cette raison ; le manuscrit O8 porte une date de copie
+                                tardive (<date when="1763-06" to="1763-11">entre juin
+                                    et novembre 1763</date>). De plus l’analyse des
+                                erreurs de copie de ces deux manuscrits a amené <persName ref="#rollenhagenTillyLinnea">Linnea
+                                Rollenhagen-Tilly</persName> à penser qu’ils avaient été écrits
+                                par un scripteur suédois. Le manuscrit O3, en revanche,
+                                est probablement l’œuvre d’un copiste français et il
+                                pourrait donc être le prototype, s’il n’était pas privé
+                                de planches. Son format modeste (245 mm de haut sur 195
+                                de large) laisse cependant à penser qu’il en a toujours
+                                été dépourvu et celles-ci figuraient peut-être dans un
+                                volume ou un portefeuille séparé qui a pu être distrait
+                                du reste de la collection <persName ref="#cronstedtFamille">Cronstedt</persName> à une date
+                                indéterminée. Dans ce cas, le témoin A3 serait bien le
+                                prototype des deux autres.</p>
+                        </div>
+                        <div xml:id="oPresentationBodyFr01.03.03" type="number" n="3">
+                            <head>Les manuscrits « isolés » (O4, O5, O7, O9)</head>
+                            <p>Les autres manuscrits du cours ne forment pas de groupe
+                                cohérent et n’appellent donc que des remarques isolées. <list>
+                                    <item>Le manuscrit O4, de petit format, a sans
+                                        doute toujours été dépourvu de planches. Une
+                                        analyse plus approfondie permettra de dire s’il
+                                        s’agit ou non d’un manuscrit contemporain de la
+                                        date de dictée du cours.</item>
+                                    <item>Le manuscrit O9 présente des marques de
+                                        papier qui incitent à le dater d’avant 1742,
+                                        année d’une réforme tarifaire qui a rendu
+                                        obligatoire la mention de cette date sur les
+                                        papiers. </item>
+                                    <item>Les manuscrits O5 et O6 ont été rédigés <date
+                                           notBefore="1742">après 1742</date> comme en
+                                        témoignent les marques de papetier qu’ils
+                                        comportent. Rappelons que ce millésime certifie
+                                        seulement que le papier est conforme à la
+                                        réforme tarifaire entrée en vigueur cette
+                                        année-là ; il peut donc être bien postérieur à
+                                           <date notBefore="1742">1742</date>.</item>
+                                </list>
+                            </p>
+                        </div>
+                        <div xml:id="oPresentationBodyFr01.03.04" type="number" n="4">
+                            <head>Ce que nous apprennent les manuscrits sur la
+                                composition et la diffusion du cours</head>
+                            <p>Les variantes entre les différents manuscrits témoignent
+                                de divers types d’erreur ;</p>
+                            <list>
+                                <item>Erreurs caractéristiques de la dictée qui
+                                    témoignent de problèmes d’inattention ou qui
+                                    s’expliquent par des homophonies entre les leçons,
+                                    en particulier pour les noms propres et les termes
+                                    techniques : <list>
+                                        <item>cette espèce : sept espèces <hi
+                                           rend="italic">O3, O4, O7, O9</hi>
+                                        </item>
+                                        <item>marché de la peste Charie : marché de la
+                                           Pescaire <hi rend="italic">O3</hi> marché de
+                                           la Pescherie <hi rend="italic"
+                                           >O4</hi> marché du poisson <hi rend="italic"
+                                           >O7</hi>
+                                        </item>
+                                        <item>en l’Achaïe : en la Caye <hi
+                                           rend="italic">O3</hi>
+                                        </item>
+                                        <item>en campo Vaccino : en Balihinor <hi
+                                           rend="italic">O3</hi>
+                                        </item>
+                                        <item>en campo Vaccino : en Champos <hi
+                                           rend="italic">O3</hi>
+                                        </item>
+                                        <item>la letticurge : la ticurge <hi
+                                           rend="italic">O3</hi> ; l’atticurge <hi
+                                           rend="italic">O4</hi> ; l’attiurge <hi
+                                           rend="italic">O7, O9</hi>
+                                        </item>
+                                    </list>
+                                </item>
+                                <item>Erreurs caractéristiques de problèmes de copie : <list>
+                                        <item>Mauvaise lecture, en rapport avec la
+                                           forme ou l’enchaînement des lettres</item>
+                                        <item>l’ove : l’arc <hi rend="italic">O3</hi>
+                                        </item>
+                                        <item>colonne : corniche <hi rend="italic">O3,
+                                           O4, O7, O9</hi>
+                                        </item>
+                                        <item>arc : axe <hi rend="italic">O3, O4</hi>
+                                        </item>
+                                        <item>colomnes : colonies <hi rend="italic">O3,
+                                           O4, O7</hi>
+                                        </item>
+                                        <item>derrière l’arc : décrivez l’arc <hi
+                                           rend="italic">O3, O4</hi>
+                                        </item>
+                                        <item>entablemens : entablement mutilé <hi
+                                           rend="italic">O3, O7, O9</hi> : entablement
+                                           inutile <hi rend="italic">O4</hi>
+                                        </item>
+                                        <item>pareilles : parallèle <hi rend="italic"
+                                           >O3, O4, O7, O9 </hi>
+                                        </item>
+                                        <item>Omission (en particulier entre deux mots
+                                           identiques)</item>
+                                        <item>puis du centre : puis <hi rend="bold">du
+                                           centre D et de l’intervalle DC décrire l’arc
+                                           CA et</hi> du centre E <hi rend="italic"
+                                           >O7</hi>
+                                        </item>
+                                        <item>de la corniche autant que la cimaise <hi
+                                           rend="bold">: </hi>de la corniche <hi
+                                           rend="bold">au-delà de la frise est égale à
+                                           sa hauteur ; le larmier est moins saillant
+                                           que le listeau du haut de la corniche</hi>
+                                           autant que la cimaise <hi rend="italic">O3,
+                                           O4 </hi>de la corniche <hi rend="bold"
+                                           >au-delà de la frise est égale à sa
+                                           hauteur ; le larmier est moins saillant que
+                                           le listeau du haut</hi> autant que la
+                                           cimaise </item>
+                                        <item>Variantes témoignant de la volonté de
+                                           gloser des problèmes posés par le
+                                           texte</item>
+                                        <item>du Temple portatif : du temple <hi
+                                           rend="bold">ou tente</hi> portatif <hi
+                                           rend="italic">O3</hi>
+                                        </item>
+                                        <item>six nourices : sa nourrice <hi
+                                           rend="italic">O3, O4, O9</hi> la nourice de
+                                           cette fille <hi rend="italic">O7</hi>
+                                        </item>
+                                        <item>temple Faustine : temple d’Antoine et de
+                                           la Castuge <hi rend="italic">O3</hi> temple
+                                           d’Antonin et de Faustine <hi rend="italic"
+                                           >O9 </hi>
+                                        </item>
+                                    </list>
+                                </item>
+                            </list>
+                            <p>L’établissement des variantes s’est révélé important
+                                pour restituer ou clarifier le sens de certains
+                                passages du texte, et a permis de constater qu’il n’y a
+                                pas de changements de fond entre les manuscrits. Ce
+                                constat peut s’expliquer de deux manières : soit le
+                                cours n’a pas connu de modification au fil du temps ;
+                                soit tous les manuscrits sont le reflet d’un état
+                                précis du cours. L’absence de variantes de fond rend
+                                difficile la hiérarchisation entre les manuscrits et
+                                l’établissement d’une tradition manuscrite à laquelle
+                                il est donc préférable de renoncer dans l’état actuel
+                                des recherches. La présence de nombreuses erreurs liées
+                                à des problèmes de dictée permet de penser qu’aucun des
+                                témoins conservés aujourd’hui n’a été copié directement
+                                sur l’archétype mais qu’ils dérivent de prises de note
+                                durant le cours. Les erreurs de lecture s’expliquent
+                                par la mise au propre des minutes du cours ou bien par
+                                le fait que les témoins conservés sont des copies de
+                                copies.</p>
+                            <p><ref type="note" target="#oN0003">D’après <persName ref="#rousteauChambonHelene">Hélène Rousteau-Chambon</persName></ref>, le cours sur les ordres a été dispensé par
+                                Desgodets à cinq reprises : <list>
+                                    <item>Une première fois <date from="1721" to="1722"
+                                           >entre 1721 et 1722</date></item>
+                                    <item>Régulièrement <date from="1724" to="1728"
+                                           >entre 1724 et 1728</date> soit les périodes
+                                        suivantes étant donné que le cours débutait à
+                                        l’automne :</item>
+                                    <item><date from="1724" to="1725"
+                                        >1724-1725</date></item>
+                                    <item><date from="1725" to="1726"
+                                        >1725-1726</date></item>
+                                    <item><date from="1726" to="1727"
+                                        >1726-1727</date></item>
+                                    <item><date from="1727" to="1728"
+                                        >1727-1728</date></item>
+                                </list></p>
+                            <p>Aucun manuscrit n’a pu être rapproché de la période
+                                    <date from="1721" to="1722">1721-1722</date>. En
+                                revanche, la série suédoise dérive d’un témoin pris en
+                                dictée lors du cours de <date from="1724" to="1725"
+                                    >1724-1725</date>. Le manuscrit A4 précise que le
+                                cours a été dicté en <date when="1725">1725</date> et
+                                se réfère donc probablement au cours de <date
+                                    from="1725" to="1726">1725-1726</date>. Deux
+                                manuscrits (O5 et O9) portent des dates postérieures à
+                                la mort de <persName ref="#desgodets">Desgodets</persName> et amènent à faire l’hypothèse que
+                                l’<persName ref="#courtonneJean">architecte Jean Courtonne</persName> qui lui succéda comme
+                                professeur de l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName> continua à utiliser son
+                                cours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div xml:id="oPresentationBodyFr02" type="chapter" n="2">
+                    <head>L’intérêt et la place du cours dans l’histoire de
+                        l’architecture</head>
+                    <div xml:id="oPresentationBodyFr02.01" type="section" n="1">
+                        <head>La place du cours dans le contexte historique</head>
+                        <p><ref type="note" target="#oN0004">Le cours de <persName ref="#desgodets">Desgodets</persName> sur les ordres est à la fois un pilier
+                            de son enseignement et un passage obligé, l’étude des
+                            ordres antiques ayant été considérée comme cruciale depuis
+                            la Renaissance</ref>. Le cours doit être replacé dans un contexte plus
+                            large, comportant trois grandes traditions (de la plus
+                            ancienne à la plus proche de l’auteur). </p>
+                        <p>On trouve tout d’abord la théorie mise en forme à partir du
+                                <date from="1500">XVI<hi rend="superscript">e</hi> siècle</date> en <placeName ref="#italie">Italie</placeName> et
+                            représentée par trois grandes publications : la <hi
+                                rend="italic">Règle des cinq ordres d’architecture</hi>
+                            de <persName ref="#vignoleLe">Vignole</persName> (1562), les <hi rend="italic">Quatre livres</hi>
+                            de <persName ref="#palladio">Palladio</persName> (1570) et le traité de <persName ref="#scamozziVincenzo">Scamozzi</persName> (1615), tous
+                            traduits en français <date notAfter="1649">dès la première moitié du XVII<hi
+                                rend="superscript">e</hi> siècle</date>. </p>
+                        <p>Plus proches de <persName ref="#desgodets">Desgodets</persName>, les intenses débats théoriques du
+                            début du règne de <persName ref="#louisXIV">Louis XIV</persName>, marqués en particulier par
+                            l’apport du <persName ref="#perraultClaude">théoricien Claude Perrault</persName>, traducteur de
+                            <persName ref="#vitruve">Vitruve</persName> (<date when="1673">1673</date>) et auteur d’une <hi
+                                rend="italic">Ordonnance des cinq ordres de
+                                colonnes</hi> (<date when="1683">1683</date>).
+                            Desgodets a d’ailleurs été partie prenante dans ces débats
+                            et son étude sur les monuments antiques de <placeName ref="#rome">Rome</placeName>, publiée en
+                                <date when="1682">1682</date> a eu pour ambition de
+                            fournir des données fiables sur les pratiques des Anciens.
+                            <ref type="note" target="#oN0005">De plus, <persName ref="#desgodets">Desgodets</persName> a été l’un des membres les plus actifs
+                            de l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName> lorsqu’elle a travaillé à définir des règles
+                            pour l’emploi des ordres d’architecture <date from="1700"
+                                to="1702">entre 1700 et 1702</date></ref>.</p>
+                        <p>Enfin, le texte de <persName ref="#desgodets">Desgodets</persName> sur les ordres s’inscrit dans
+                            la forme déjà bien codifiée du cours de l’<orgName ref="#academieRoyaleDArchitecture">Académie royale
+                            d’architecture</orgName>. Le premier cours, celui de <persName ref="#BlondelFrancois">François Blondel</persName>
+                            a été publié <date from="1675">dès 1675</date> <ref type="note" target="#oN0006">et le cours
+                            du prédécesseur de <persName ref="#desgodets">Desgodets</persName>, <persName ref="#laHirePhilippeDe">La Hire</persName>, est également
+                            conservé sous forme manuscrite</ref> (il n’a pas encore été possible de le comparer au
+                            cours de <persName ref="#desgodets">Desgodets</persName>). </p>
+                        <p><persName ref="#desgodets">Desgodets</persName> n’a pas pris le parti de faire figurer ces
+                            diverses autorités dans son cours. <persName ref="#vignoleLe">Vignole</persName> n’apparaît
+                            qu’une fois comme l’auteur d’une des méthodes pour le
+                            renflement des colonnes. <persName ref="#palladio">Palladio</persName> n’est cité que pour
+                            justifier la pertinence d’un exemple antique. Hormis ces
+                            deux figures fondatrices, mais déjà lointaines du temps de
+                            <persName ref="desgodets">Desgodets</persName>, aucun autre nom n’est cité. Ce parti pris situe
+                            le cours en dehors d’un débat sur la pertinence plus ou
+                            moins grande de tel ou tel théoricien. De ce point de vue
+                            le cours sur les ordres semble à l’opposé de celui de
+                            <persName ref="#blondelFrancois">Blondel</persName> qui développait pour chaque ordre l’analyse de
+                            trois grands théoriciens, <persName ref="#vignoleLe">Vignole</persName>, <persName ref="palladio">Palladio</persName> et <persName ref="#scamozziVincenzo">Scamozzi</persName>.
+                            Toujours à l’inverse de <persName ref="#blondelFrancois">Blondel</persName>, <persName ref="desgodets">Desgodets</persName> a renoncé à
+                            toute présentation analytique des ordres élément par
+                            élément (les architraves, les frises) et à la description
+                            d’éléments marginaux comme l’ordre français ou la forme des
+                            corniches composées. Il s’inscrit bien dans la pratique de
+                            son temps marqué par une sorte d’épuration des formes et de
+                            renonciation à des éléments jugés annexes ou
+                            archaïsants.</p>
+                        <p><persName ref="desgodets">Desgodets</persName> affirme par ailleurs la volonté de revenir à la
+                            seule référence à l’antique. C’est elle seule qui doit être
+                            soumise à un examen critique déterminant la plus ou moins
+                            grande pertinence d’un modèle. Le corpus de modèles
+                            antiques est uniquement fondé sur les monuments étudiés par
+                            Desgodets et publiés dans son livre <hi
+                                rend="italic capsall">é</hi>
+                            <hi rend="italic">difices antiques de <placeName ref="#rome">Rome</placeName></hi> en <date when="1682">1682</date>.
+                            Certains modèles sont souvent prégnants à ses yeux pour que
+                            la théorie habituellement admise soit révisée : ainsi, le
+                            chapiteau corinthien qu’il propose ne suit pas les règles
+                            logiques proposées par <persName ref="#vignoleLe">Vignole</persName>, mais se rapproche le plus
+                            possible de la disposition du modèle du <placeName ref="#romePantheon">Panthéon</placeName>. En
+                            donnant une primauté absolue à l’antique, <persName ref="#desgodets">Desgodets</persName> est
+                            confronté au problème de l’hétérogénéité de son modèle et
+                            en particulier aux contradictions entre l’observation des
+                            monuments et le texte de <persName ref="#vitruve">Vitruve</persName>. Il est parfois amené à
+                            condamner le théoricien antique : à propos de la proportion
+                            des piédestaux, par exemple, il affirme : <quote><persName ref="#vitruve">Vitruve</persName> n’en
+                            donne qu’une idée confuse et ceux qui se rencontrent aux
+                            édifices antiques ont des proportions si différentes</quote><!-- TODO vérifier l'affichage des guillemets -->. Le
+                            texte antique est en revanche sollicité lorsqu’il vient
+                            appuyer les données collectées sur les antiques. Au sein de
+                            la référence antique, une primauté est donc instaurée en
+                            faveur des monuments en cas de contradiction.</p>
+                        <p>Mais ces prises de distance ne peuvent pas occulter que le
+                            cours de <persName ref="#desgodets">Desgodets</persName> est bien le fruit d’une tradition. Comme
+                            <persName ref="#blondelFranois">Blondel</persName>, <persName ref="#desgodets">Desgodets</persName> débute par des considérations communes à
+                            tous les ordres comme la question du renflement des
+                            colonnes. La première partie du cours adopte des planches
+                            qui reprennent la méthode utilisée par <persName ref="#vignoleLe">Vignole</persName> : chaque
+                            ordre est représenté dans des situations de base identiques
+                            (portique simple, portique d’arcade, portique d’arcade sur
+                            piédestal, planche de détail du piédestal et de la base,
+                            planche de détail du chapiteau). Plusieurs des thèmes de la
+                            seconde partie de Desgodets étaient déjà présents dans les
+                            deuxième et troisième parties de <persName ref="#blondelFranois">Blondel</persName> comme la question
+                            de la proportion des ordres superposés ou bien l’analyse de
+                            l’emploi combiné des pilastres et des colonnes. </p>
+                        <p>Par ailleurs, la réflexion de <persName ref="#desgodets">Desgodets</persName> entretient un
+                            rapport particulier avec l’œuvre de l’un de ses
+                            contemporains avec lequel il a étudié à <placeName ref="#rome">Rome</placeName>, <persName ref="#avilerAugustinCharlesD">Augustin
+                            Charles d’Aviler</persName>. Les deux hommes ont en commun de
+                            considérer les ordres non seulement comme un répertoire de
+                            supports strictement codifiés, mais plus largement comme de
+                            véritables « genres » susceptibles de s’appliquer à un
+                            grand nombre d’éléments d’architecture, reprenant ainsi une
+                            idée italienne du début de la Renaissance, poussée dans
+                            l’un de ses plus importants développements par <persName ref="#serlioSebastiano">Serlio</persName>, mais
+                            peu exploitée ensuite. Si <persName ref="#avilerAugustinCharlesD">d’Aviler</persName> a envisagé un système de
+                            balustres du toscan au composite, <persName ref="#desgodets">Desgodets</persName> a systématisé
+                            la question aux portes, aux fenêtres, etc. <persName ref="#desgodets">Desgodets</persName>
+                            partage également avec <persName ref="#avilerAugustinCharlesD">d’Aviler</persName> l’intérêt pour l’art du
+                            « profil », c’est-à-dire le tracé des moulures, la
+                            définition de leur taille et de leur enchaînement. L’un et
+                            l’autre placent ce sujet en tête de leur texte.</p>
+                    </div>
+                </div>
+                <div xml:id="oPresentationBodyFr03" type="chapter" n="3">
+                    <head>L’originalité du cours</head>
+                    <p>Replacer Desgodets dans son contexte ne doit pas faire oublier
+                        l’originalité du Cours. Les deux auteurs à s’être penchés sur
+                        ce texte jusqu’à aujourd’hui ont porté un jugement plutôt
+                        négatif sur son contenu : <ref type="note" target="#oN0007"><persName ref="duportalJeanne">Jeanne Duportal</persName> dit avec lassitude :
+                        <quote>c’est toujours l’étude des ordres et des proportions</quote></ref>. <ref type="note" target="#oN0008">Quant à <persName ref="#herrmannWolfgang">Wolfgang Herrman</persName>, il parle d’un texte
+                        <quote>disappointingly conventional</quote> et d’une <quote>vast overproduction
+                        in works dealing with this subject</quote></ref>. L’analyse détaillée ne permet plus de souscrire à
+                        cette analyse.</p>
+                    <p>Par sa structure, le cours sur les ordres de <persName ref="#desgodets">Desgodets</persName> se
+                        présente comme une véritable avancée par rapport aux
+                        productions antérieures de <persName ref="#avilerAugustinCharlesD">d’Aviler</persName> et de <persName ref="#blondelFrancois">Blondel</persName>. Le cours de
+                        d’Aviler montre encore le travail d’auto-formation mené par
+                        l’architecte à partir de l’étude de <persName ref="#vignoleLe">Vignole</persName> et de <persName ref="#">Michel-Ange</persName> :
+                        le texte du premier en particulier est entrelardé de
+                        considérations plus générales, comme des fiches ajoutées par
+                        l’auteur à l’intérieur d’une structure déjà existante plus ou
+                        moins adaptée. <persName ref="#desgodets">Desgodets</persName> a en revanche cherché une organisation
+                        parfaitement compréhensible pour le lecteur. Il a renoncé aux
+                        longues considérations théoriques pures telles que celles de
+                        Blondel pour proposer un système pratique conçu pour répondre
+                        aux questions des architectes et pour leur permettre d’éviter
+                        des écueils. De ce point de vue, le cours de Desgodets est un
+                        texte dense, un instrument irremplaçable car efficace.</p>
+                    <p>Dire, comme l’a fait <persName ref="#herrmannWolfgang">Wolfgang Herrmann</persName>, que le cours sur les
+                        ordres est une sorte de reprise de Vignole, n’est que
+                        partiellement exact. Les conceptions de Desgodets ont en effet
+                        connu une évolution très importante que la planche de synthèse
+                        des différents ordres permet de saisir. Dans le manuscrit O1,
+                        quel que soit l’ordre, son entablement est toujours le quart de
+                        la hauteur de la colonne. Ce rapport fixe est caractéristique
+                        de Vignole. Dans les autres témoins en revanche, ce principe
+                        est abandonné au profit de rapports différents pour chaque
+                        ordre. D’après <persName ref="#desgodets">Desgodets</persName>, la règle vignolienne pénalise en
+                        effet les ordres les plus sveltes en leur imposant un
+                        entablement trop lourd. <persName ref="#desgodets">Desgodets</persName> a donc été amené à définir
+                        peu à peu un système original et personnel. Il s’est également
+                        interrogé sur la progressivité du système, c’est-à-dire sur la
+                        manière dont chaque ordre est conçu comme plus riche que le
+                        précédent et moins que le suivant dans la suite codifiée
+                        « toscan, dorique, ionique, corinthien et composite ». Cette
+                        réflexion l’a amené à proposer là aussi des formes plus
+                        personnelles, notamment dans les entablements : l’ordre
+                        ionique, par exemple, comporte une architrave à deux fasces et
+                        non à trois fasces, comme c’est le cas habituellement, de
+                        manière à mieux assurer la transition entre le dorique et le
+                        corinthien. Par ailleurs, s’il maintient la succession
+                        « corinthien-composite » en plan, Desgodets la remet plusieurs
+                        fois en question dans le texte. Pour lui, l’ordre corinthien
+                        reste le plus riche et le dernier de la série des cinq ordres.
+                        Cette question a un impact sur le débat entrepris par
+                        l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName> <date when="1701">vers 1701</date> autour des moulures de la base : avec ses
+                        deux réglets, la base corinthienne de <persName ref="#desgodets">Desgodets</persName> est bien plus
+                        riche que celle du composite qui n’en comporte qu’un.</p>
+                    <p>La réinterprétation du système des ordres doit également tenir
+                        compte du problème de leur superposition. Pour coordonner les
+                        ordres les uns au dessus des autres, il faut en diminuer la
+                        hauteur de manière régulière, à l’encontre du système général.
+                        Cette question complexe, déjà posée par <persName ref="#serlioSebastiano">Serlio</persName> à la Renaissance
+                        a fait l’objet de longs développements dans le cours de Blondel
+                        et dans les séances de l’<orgName ref="#academieRoyaleDArchitecture">Académie</orgName>. <persName ref="#desgodets">Desgodets</persName> reprend à son tour
+                        la question par une analyse de cas renouvelée : il s’intéresse
+                        aux arcades superposées (comme dans les amphithéâtres
+                        antiques), mais aussi aux cas où les ordres ornent des
+                        avant-corps.</p>
+                    <p>Sur plusieurs sujets, <persName ref="#desgodets">Desgodets</persName> semble être le premier à avoir
+                        proposé des règles à des questions pratiques jusqu’alors
+                        négligées dans les traités. </p>
+                    <p>Il propose par exemple deux tracés différents pour les moulures
+                        situées près et loin de l’observateur, codifiant ainsi sans
+                        doute des usages et des pratiques de chantier. De même, il
+                        s’interroge sur le rapport que la statuaire doit entretenir
+                        avec les ordres. Les statues doivent à la fois être
+                        proportionnées entre elles et ne pas venir perturber le système
+                        des proportions générales des ordres eux-mêmes. Pour cela,
+                        Desgodets est amené à élaborer un système de calcul qui assure
+                        un rapport moyen globalement acceptable d’un point de vue et de
+                        l’autre.</p>
+                    <p>Enfin, <persName ref="#desgodets">Desgodets</persName> s’est intéressé au rapport entre les colonnes
+                        et les pilastres et il explicite – pour la première fois sans
+                        doute – toutes les contraintes que leur emploi implique sur
+                        l’entablement. Signe de la nouveauté de ce développement,
+                        Desgodets n’a pas entièrement réussi à trouver une présentation
+                        graphique adéquate du problème. L’idée est que des formes qui
+                        peuvent paraître tout à fait acceptables lorsqu’on dresse un
+                        plan au niveau des fûts des ordres, entraînent des désordres au
+                        niveau des chapiteaux ou dans les ressauts de l’entablement.
+                        Desgodets, en évitant le recours à la vue perspective (il n’y
+                        en a d’ailleurs aucune dans le traité) ou à des plans pris à
+                        différentes hauteurs, n’a pas entièrement réussi à « faire
+                        voir » ce problème. Il en a cependant analysé toutes les
+                        conséquences sur les façades de son temps où le recours aux
+                        avant-corps et aux pavillons d’angle en saillie était très
+                        fréquent. Ce développement ouvre de plus la voie à une
+                        valorisation – paradoxale dans un traité – du concept de
+                        licence. Desgodets reconnaît que certaines dispositions ne sont
+                        pas satisfaisantes d’un point de vue logique, mais que,
+                        employées dans certaines conditions, elles peuvent être
+                        acceptées. Seul un véritable sens architectural, le « bon
+                        goût », auquel <persName ref="#desgodets">Desgodets</persName> consacre son dernier chapitre,
+                        constitue alors le garant de la bonne architecture.
+                        L’application mécanique des règles trouve ici sa limite.</p>
+                    <p>La lecture du cours sur les ordres de Desgodets permet de
+                        comprendre ce que ses contemporains jugeaient important dans
+                        l’art de l’architecte. Outre le traditionnel système des
+                        ordres, il intègre des valeurs nouvelles <list>
+                            <item>L’art de « profiler », c’est-à-dire de dessiner et
+                                d’enchaîner les moulures.</item>
+                            <item>L’art de structurer le bâtiment par le jeu des ordres
+                                superposés, mais aussi par les avant-corps,
+                                arrière-corps et portiques.</item>
+                            <item>L’art de la réduction des moyens qui renonce aux
+                                grands gestes baroques pour une esthétique plus retenue
+                                qui accorde une attention à la coordination des
+                                détails.</item>
+                        </list>
+                    </p>
+                    <p>Le cours peut donc se lire comme une forme d’éloge ou de
+                        critique de la pratique architecturale contemporaine de
+                        Desgodets. Plusieurs remarques sur le renflement des colonnes
+                        disqualifient explicitement l’art de Louis Le Vau et sa façade
+                        du <placeName ref="#parisCollegeMazarin">collège des Quatre-Nations</placeName> (sans cependant les nommer). Il
+                        en va de même de certaines omissions, comme celle des
+                        entablements abrégés qui ne sont pas abordés alors qu’ils
+                        avaient été d’emploi courant durant la <date from="1600" to="1649">première moitié du
+                            XVII<hi rend="superscript">e</hi> siècle</date>. En revanche,
+                        l’attention sur l’art du profil renvoie à l’étude fine qui en
+                        était faite au sein de l’agence de <persName ref="#hardouinMansartJules">Jules Hardouin-Mansart</persName>.</p>
+                    <p>De ce point de vue, le cours se présente comme l’apogée d’une
+                        certaine idée de l’architecture classique, mais aussi comme son
+                        chant du cygne. La génération qui naît au moment où Desgodets
+                        professe son cours se débarrassera d’un grand nombre de
+                        subtilités qu’il propose et qu’elle considérera comme des
+                        vétilles, au profit d’une grammaire simplifiée et d’un nouvel
+                        effet monumental : le néo-classicisme.</p>
+                </div>
+                <div xml:id="oPresentationBodyFr04" type="chapter" n="4">
+                    <head>Perspectives de recherche</head>
+                    <p>Trois objectifs guident le travail à venir : <list>
+                            <item>L’élucidation de deux questions complexes du traité,
+                                celles des proportions des ordres et des modifications
+                                induites par leur superposition. Il faut en particulier
+                                analyser l’évolution entre la pensée présentée par le
+                                O1 encore largement tributaire de <persName ref="#vignoleLe">Vignole</persName> et la théorie
+                                plus originale élaborée ensuite.</item>
+                            <item>L’identification des sources de <persName ref="#desgodets">Desgodets</persName> par la
+                                comparaison avec les traités de ses prédécesseurs. Ce
+                                travail permettra de mieux cerner les apports originaux
+                                et les partis adoptés par l’auteur. </item>
+                            <item>L’étude de quelques exemples d’emploi des ordres
+                                contemporains ou postérieurs à <persName ref="#desgodets">Desgodets</persName> devrait
+                                permettre de saisir l’influence qu’a pu avoir sa
+                                conception originale des ordres.</item>
+                        </list>
+                    </p>
+                </div>
+            </div>
+        </body>
+        <back xml:id="oPresentationBack">
+            <div>
+                <div xml:id="oPresentationBackFr" xml:lang="fre">
+                    <!-- sortie du tableau de tradition (liste des témoins) à partir de listWit dans desgodetsC.tei.xml et des en-tête des témoins concernés -->
+                    <divGen n="tradition" type="tradition">
+                        <!-- créer une division div de type="tradition" en posant une ancre (xml:id=concat({idDuFichier},'Tradition') ), avec un titre head comme ci-dessous  -->
+                        <head>Tableau de tradition</head>
+                        <!-- pour chaque témoin : la sortie contient le titre du manuscrit, le lieu de conservation, la cote. Le contenu de desc dans listWit et le lien de téléchargement de la source  -->
+                    </divGen>
+
+                    <!-- Inclusion du fichier de notes -->
+                    <!--<xi:include href="divs/desgodetsOPresentationNotes.tei.xml"
+               parse="xml">
+               <xi:fallback>Fichier de notes de C2 non trouvé</xi:fallback>
+            </xi:include>-->
+                    <!-- Inclusion du fichier de notes -->
+                    <xi:include href="divs/desgodetsOPresentationNotes.tei.xml"
+                        parse="xml">
+                        <xi:fallback>Fichier de notes de oPresentation non trouvé</xi:fallback>
+                    </xi:include>
+                    
+                    <!-- sortie des entrées bibliographiques utilisées dans l'édition critique -->
+                    <divGen n="bibliography" type="biblio">
+                        <head>Bibliographie</head>
+                        <!-- générer une division div de type="biblio" en posant une ancre (xml:id=concat({idDuFichier},'Biblio') ), contenant la liste des références bibliographiques citées dans le corps de l'édition du manuscrit concerné -->
+                    </divGen>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>

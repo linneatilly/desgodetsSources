@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    fichier inclus des notes d'édition critique de s2 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi de Nc pour notes critiques, suivi d'un numéro d'ordre à quatre unités -->
+
+<!-- les liens bibliographiques étaient précédemment posés avec <ref type="biblio" target="#xxx"/>, il nous paraît plus explicite d'utiliser bibl avec un attribut copyOf à la place de ref -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" type="notesCritical"
+    xml:id="s2BackFr02" xml:lang="fre">
+    <head>Notes d'édition critique</head>
+    <note xml:id="s2Nc0001">
+        <p></p>
+    </note>
+</div>

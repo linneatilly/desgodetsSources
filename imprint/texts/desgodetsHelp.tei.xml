@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model     href="../../schema/desgodetsSchemaTEI.rnc"
+                type="application/relax-ng-compact-syntax"
+                schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+     fichier help du site Desgodets 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre" type="main">help</title>
+         </titleStmt>
+         <extent><!-- TODO : taille du fichier en octet --></extent>
+         <publicationStmt>
+            <date when="2013">2013</date>
+            <idno>help</idno>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+            <title xml:lang="fre" type="sub">une édition électronique</title>
+            <idno type="URI">http://www.desgodets.net</idno>
+         </seriesStmt>
+         <sourceDesc>
+            <p xml:id="help">Ce fichier a été nativement créé sous forme
+               numérique.</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation when="2013">2013</creation>
+         <langUsage>
+            <language ident="fre" usage="100">Français (langue principale du
+               corpus)</language>
+            <!-- TODO : évaluer les langues -->
+         </langUsage>
+         <textClass>
+            <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+               <term>Architecture</term>
+               <term>18e siècle</term>
+               <term>France</term>
+               <term>Architecture –– Philosophie</term>
+            </keywords>
+            <keywords xml:lang="eng"
+               scheme="http://id.loc.gov/authorities/about.html#lcsh">
+               <term>Architecture, Modern</term>
+               <term>17th-18th centuries</term>
+               <term>France</term>
+               <term>Architecture -- Philosophy</term>
+            </keywords>
+            <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+               <term>Text</term>
+            </classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2013-05-31" who="#EC">Création du fichier</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <front xml:id="helpFront">
+         <titlePage xml:id="helpFront00">
+            <titlePart>help</titlePart>
+         </titlePage>
+      </front>
+      <body xml:id="helpBody">
+         <div xml:lang="fre" xml:id="helpBodyFr">
+            <head>help de consultation</head>
+            <div type="part" xml:id="helpBodyFr01">
+               <head>Naviguer dans le site</head>
+               <p>Le contenu du site est organisé en trois parties distinctes,
+                  matérialisées par des couleurs, auxquelles donne accès le menu
+                  général : 
+                  <list type="unordered">
+                     <item>la <ref type="internal" target="#helpBodyFr02">consultation des cours</ref>
+                     </item>
+                     <item>les <ref type="internal" target="#helpBodyFr03.01">index et un glossaire</ref>
+                     </item>
+                     <item>les <ref type="internal" target="#helpBodyFr03.02">informations complémentaires</ref>
+                     </item>
+                  </list>
+               </p>
+               <p>Partout sur le site le lecteur dispose d’un module de <ref
+                     type="internal">recherche simple</ref> et <ref type="internal"
+                     >avancée</ref>.</p>
+            </div>
+            <div type="part" xml:id="helpBodyFr02">
+               <head>Consulter les cours</head>
+               <p>Chaque cours est précédé d’une présentation générale qui comporte un
+                  tableau de tradition.</p>
+               <p>Depuis cette page, il est possible : 
+                  <list type="ordered">
+                     <item>de consulter directement l’édition critique du cours </item>
+                     <item>ou, plus spécifiquement, de visualiser la transcription de
+                        chaque témoin manuscrit.</item>
+                     <item>le lecteur peut aussi télécharger une version pdf du cours
+                        édité ainsi que les sources XML-TEI.</item>
+                  </list>
+               </p>
+               <!--  [[page de présentation des
+                        cours positionnée sur le tableau de tradition : pastille 1 bouton
+                        « consulter l’édition critique », pastille 2 « comparer les
+                        cours », pastille 3 « tableau de tradition &amp;
+                        téléchargements]] -->
+               <figure xml:id="desgodetshelpFig001" type="illustration">
+                  <figDesc>
+                     <title>Titre pour @ html</title>
+                     <desc>Description pour @ html</desc>
+                  </figDesc>
+                  <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0001.jpeg"
+                     mimeType="image/jpeg" />
+               </figure>
+               <div type="chapter" xml:id="helpBodyFr02.01">
+                  <head>Visualiser un cours</head>
+                  <p>La page de visualisation des cours permet de sélectionner le
+                     témoin manuscrit, de consulter sa notice codicologique, de
+                     parcourir le texte à partir de la pagination, de la table des
+                     matières ou <hi rend="italic">via</hi> la liste des
+                     illustrations.</p>
+                  <list type="ordered">
+                     <item>sélecteur de l’édition critique ou des témoins
+                        manuscrits.</item>
+                     <item>affichage de la notice codicologique</item>
+                     <item>pagination</item>
+                     <item>table des matières</item>
+                     <item>liste des illustrations</item>
+                  </list>
+                  <!-- [[mettre en regard de chaque item de
+                        la liste ou avec une image de la page positionnée au début du
+                        cours : pastille1 : sélecteur de version, pastille 2 : icône
+                        notice codicologique, pastille 3 : icône pagination, pastille
+                        4 : icône table des matières et pastille 5 : icône liste des
+                        illustrations]] -->
+                  <figure xml:id="desgodetshelpFig002" type="illustration">
+                     <figDesc>
+                        <title>Titre pour @ html</title>
+                        <desc>Description pour @ html</desc>
+                     </figDesc>
+                     <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0002.jpeg"
+                        mimeType="image/jpeg" />
+                  </figure>
+               </div>
+               <div type="chapter" xml:id="helpBodyFr02.02">
+                  <head>Étudier les manuscrits</head>
+                  <p>Il est possible d’ajouter des colonnes pour comparer les versions
+                     ou lire le texte en regard des différentes versions des
+                     images.</p>
+                  
+                  <!-- [[image du sélecteur « comparer les
+                        versions » dans la page de visualisation d’un cours]] -->
+                  <figure xml:id="desgodetshelpFig003" type="illustration">
+                     <figDesc>
+                        <title>Titre pour @ html</title>
+                        <desc>Description pour @ html</desc>
+                     </figDesc>
+                     <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0003.jpeg"
+                        mimeType="image/jpeg" />
+                  </figure>
+                  
+                  <p>Le module d’étude des textes présente par défaut le cours qui a
+                     fait l’objet de l’édition critique. Ce module permet de choisir le
+                     nombre de colonnes et la transcription du manuscrit que l’on
+                     souhaite afficher.</p>
+                  
+                  <!-- [[image de la barre avec la croix et
+                        le plus]] -->
+                  <figure xml:id="desgodetshelpFig004" type="illustration">
+                     <figDesc>
+                        <title>Titre pour @ html</title>
+                        <desc>Description pour @ html</desc>
+                     </figDesc>
+                     <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0004.jpeg"
+                        mimeType="image/jpeg" />
+                  </figure>
+                  
+                  <p>En fonction de la largeur de l’écran, il est possible d’ajouter ou
+                     de supprimer des colonnes.</p>
+                  <div type="section" xml:id="helpBodyFr02.02.01">
+                     <head>Lire le texte en regard des images</head>
+                     <p>Chaque colonne du module d’étude présente un onglet qui permet
+                        d’afficher le « texte » ou les « figures » du témoin
+                        sélectionné.</p>
+                     
+                     
+                     <!-- [[image onglet figures / onglet
+                           texte]] -->
+                     <figure xml:id="desgodetshelpFig005" type="illustration">
+                        <figDesc>
+                           <title>Titre pour @ html</title>
+                           <desc>Description pour @ html</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0005.jpeg"
+                           mimeType="image/jpeg" />
+                     </figure>
+                     
+                  </div>
+                  <div type="section" xml:id="helpBodyFr02.02.02">
+                     <head>Comparer les témoins</head>
+                     <p>En sélectionnant le texte à afficher dans chacune des colonnes,
+                        il est possible de comparer les versions des témoins
+                        manuscrits. On peut accéder à cette comparaison directement de
+                        la page de présentation des cours.</p>
+                     
+                     
+                     <!-- [[ image de la page de
+                           présentation avec la barre et l’icône « comparer les
+                           versions »]] -->
+                     <figure xml:id="desgodetshelpFig006" type="illustration">
+                        <figDesc>
+                           <title>Titre pour @ html</title>
+                           <desc>Description pour @ html</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0006.jpeg"
+                           mimeType="image/jpeg" />
+                     </figure>
+                     
+                     <p>La marge de gauche propose des outils de comparaison des images
+                        et du texte.</p>
+                     <p>Après avoir sélectionné les manuscrits dont on veut comparer
+                        les textes, il est possible d’aligner les différentes versions
+                        des segments textuels dans chaque colonne ou de les comparer
+                        dans une autre fenêtre :</p>
+                     
+                     
+                     <!-- [[ [[image Onglet texte « Alignement du segment textuel
+                           (mode horizontal), 1 clic = alignement des
+                           différentes versions dans chaque colonnes », « Comparaison des segments
+                           textuels (mode vertical), comparaison des versions
+                           dans une fenêtre redimensionnable »]] -->
+                     <figure xml:id="desgodetshelpFig007" type="illustration">
+                        <figDesc>
+                           <title>Titre pour @ html</title>
+                           <desc>Description pour @ html</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0007.jpeg"
+                           mimeType="image/jpeg" />
+                     </figure>
+                     
+                     <p>Ce mode permet de modifier l’ordre des segments textuels et
+                        déployer ou refermer chacune des versions.</p>
+                     
+                     <!-- [[image de la comparaison
+                           verticale avec segment ouvert et segment fermé]] -->
+                     <figure xml:id="desgodetshelpFig008" type="illustration">
+                        <figDesc>
+                           <title>Titre pour @ html</title>
+                           <desc>Description pour @ html</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0008.jpeg"
+                           mimeType="image/jpeg" />
+                     </figure>
+                     
+                  </div>
+                  <div type="section" xml:id="helpBodyFr02.02.03">
+                     <head>Comparer les images</head>
+                     <p>Dans la colonne figures, sous chaque image, une miniature donne
+                        accès aux différentes versions de la même planche ou figure
+                        dans les manuscrits.</p>
+                     
+                     
+                     <!-- [[image de la colonne
+                           figures</hi>]] -->
+                     <figure xml:id="desgodetshelpFig009" type="illustration">
+                        <figDesc>
+                           <title>Titre pour @ html</title>
+                           <desc>Description pour @ html</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0009.jpeg"
+                           mimeType="image/jpeg" />
+                     </figure>
+                     
+                     <p>En choisissant les manuscrits dont on veut comparer les images,
+                        on peut visualiser les différentes versions des planches ou des
+                        figures dans chaque colonne. Il est toujours possible d’ouvrir
+                        une image dans des nouvelles fenêtres pour les comparer.</p>
+                     
+                     <!-- [[image : Onglet figures Alignement des planches ou
+                           figures (mode horizontal), 1 clic = alignement des
+                           différentes versions dans les colonnes », « Agrandissement de la planche ou
+                           de la figure, 1 clic = affichage dans une
+                           nouvelle fenêtre avec zoom. Il est possible d’ouvrir
+                           plusieurs fenêtres »]] -->
+                     <figure xml:id="desgodetshelpFig010" type="illustration">
+                        <figDesc>
+                           <title>Titre pour @ html</title>
+                           <desc>Description pour @ html</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0010.jpeg"
+                           mimeType="image/jpeg" />
+                     </figure>
+                     
+                  </div>
+                  <div type="section" xml:id="helpBodyFr02.02.04">
+                     <head>Indications dans les marges</head>
+                     <p>Outre les outils précédents, la marge gauche présente la
+                        pagination ou la foliotation du manuscrit.</p>
+                     <p>Les notes d’édition critique et de commentaire historique
+                        s’affichent dans la marge de droite au survol.</p>
+                  </div>
+                  <div type="section" xml:id="helpBodyFr02.02.05">
+                     <head>Indications dans le texte</head>
+                     <div type="number" xml:id="helpBodyFr02.02.05.01">
+                        <head>Appels de note</head>
+                        <p>Les appels de note d’édition critique sont numérotés
+                           alphabétiquement, tandis que les appels de note de
+                           commentaire historique le sont numériquement.</p>
+                        <p>Le survol de l’appel de note affiche le contenu de la note
+                           dans la marge de droite. Au clic, affichage de la note dans
+                           l’ensemble des notes à la fin du texte (le clic sur le
+                           numéro permet de revenir au texte).</p>
+                     </div>
+                     <div type="number" xml:id="helpBodyFr02.02.05.02">
+                        <head>Entités-nommées</head>
+                        <p>Les entités-nommées sont de deux type : les noms de
+                           personnes et de lieu en bleu d’une part, et les termes
+                           architecturaux et juridiques en vert d’autre part. Le survol
+                           fait apparaître l’entrée normalisée dans l’index ou la
+                           définition du glossaire.</p>
+                     </div>
+                     <div type="number" xml:id="helpBodyFr02.02.05.03">
+                        <head>Renvois</head>
+                        <p>Les renvois au sein du texte sont traités sous forme de
+                           liens hypertexte.</p>
+                     </div>
+                     <div type="number" xml:id="helpBodyFr02.02.05.04">
+                        <head>Changement de page</head>
+                        <p>Les changements de page sont marqués dans le texte au moyen
+                           d’une icône.</p>
+                     </div>
+                     <div type="number" xml:id="helpBodyFr02.02.05.05">
+                        <head>Insertion de planches ou de figures</head>
+                        <p>Les planches ou les figures sont matérialisés dans la
+                           colonne de texte par une miniature.</p>
+                     </div>
+                     <div type="number" xml:id="helpBodyFr02.02.05.06">
+                        <head>Changement de mains</head>
+                        <p>Le changement de main est signalé par une icône et au survol
+                           par surbrillance en vert.</p>
+                     </div>
+                     <div type="number" xml:id="helpBodyFr02.02.05.07">
+                        <head>Marginalia</head>
+                        <p>Les <hi rend="italic">marginalia</hi> des manuscrits sont
+                           signalés entre |…| colorisés en rose au survol du texte.</p>
+                        <list type="unordered">
+                           <item>les gloses (commentaires) sont écrites en caractère
+                              normal.</item>
+                           <item>Les passages en rubriques (ayant valeur organisatrice
+                              du texte) sont en gras.</item>
+                        </list>
+                     </div>
+                     <div type="number" xml:id="helpBodyFr02.02.05.08">
+                        <head>Restitutions dans la transcription</head>
+                        <p>Les indications concernant les abréviations, les
+                           incertitudes où les segments lexicaux incorrects sont
+                           indiqués par un soulignement pointillé bleu. Selon les cas,
+                           le survol indique l’abréviation originale, le niveau de
+                           certitude de la restitution ou le phénomène constaté. </p>
+                        <p>Les segment de texte restitués par l’éditeur sont fournis
+                           entre crochets droits [].</p>
+                        
+                        
+                        <!-- [[Ne doit-on pas mettre une
+                              illustration d’une page avec tous les cas de figure ou un
+                              tableau avec toutes les icônes utilisées ?]] -->
+                        <figure xml:id="desgodetshelpFig011" type="illustration">
+                           <figDesc>
+                              <title>Titre pour @ html</title>
+                              <desc>Description pour @ html</desc>
+                           </figDesc>
+                           <graphic n="thumb" url="../../images/thumbs/desgodetshelpFig0011.jpeg"
+                              mimeType="image/jpeg" />
+                        </figure>
+
+                     </div>
+                  </div>
+               </div>
+               <div type="chapter" xml:id="helpBodyFr02.03">
+                  <head>Citer</head>
+                  <p>Les notices codicologiques renseignent la manière de citer un
+                     texte et fournissent une url pérenne pour chaque version du
+                     cours.</p>
+                  <p>Il est possible de citer un passage du texte à partir de l’url du
+                     segments textuel fournie dans la comparaison des segments
+                     textuels.</p>
+                  <p>De même, on peut citer une planche ou une figure à l’aide de l’url
+                     qui apparaît à l’agrandissement des figures.</p>
+               </div>
+            </div>
+            <div type="part" xml:id="helpBodyFr03">
+               <head>Utiliser les index, le glossaire et rechercher dans les
+                  textes</head>
+               <div type="chapter" xml:id="helpBodyFr03.01">
+                  <head>Utilisation des index</head>
+                  <p>Plusieurs index (<hi rend="italic">locorum</hi>, <hi rend="italic"
+                        >nominum</hi> et <hi rend="italic">rerum)</hi> permettent de
+                     repérer dans l’édition critique de chaque cours les noms de lieux,
+                     de personnes ou d’institutions, et les notions ou concepts.</p>
+                  <p>Chaque entrée dans l’index présente la liste des occurrences dans
+                     les différentes versions que l’on peut consulter dans leur
+                     contexte par un simple clic.</p>
+                  <p>Indépendamment de ces index, le lecteur dispose d’un glossaire des
+                     termes d’architecture et des termes juridique usités par Desgodets
+                     dans ses cours. Le vocabulaire académique ainsi défini, il pourra
+                     être également repéré dans leur contexte des cours.</p>
+               </div>
+               <div type="chapter" xml:id="helpBodyFr03.02">
+                  <head>Recherche</head>
+                  <p>Partout dans le site, le lecteur dispose d’un champ de <hi
+                        rend="underline">recherche simple</hi> qui permet d’effectuer
+                     une recherche au sein de la partie du site consultée.</p>
+                  <p>La recherche simple porte sur l’ensemble du site depuis la page
+                     d’accueil, sur le cours faisant l’objet de l’édition critique
+                     depuis le module de visualisation des cours, ou bien sur les pages
+                     d’informations complémentaires.</p>
+                  <p>Un formulaire de <hi rend="underline">recherche avancée</hi>
+                     permet de sélectionne plus précisément la partie du site sur
+                     laquelle on souhaite faire porter la recherche.</p>
+               </div>
+            </div>
+            <div type="part" xml:id="helpBodyFr04">
+               <head>Compléter son information</head>
+               <p>Un module d’information complémentaire propose des données dans
+                  quatre directions :
+                  <list type="unordered">
+                     <item>sur le projet de recherche proprement dit et sa
+                        méthodologie ;</item>
+                     <item>sur le personnage central du projet, Antoine Desgodets quand
+                        il n’est pas professeur ;</item>
+                     <item>sur le devenir du projet dans des manifestations qu’il a ou
+                        devrait susciter ;</item>
+                     <item>sur les sources et la bibliographie générale consultée pour
+                        la réalisation de cette édition critique.</item>
+                  </list>
+               </p>
+               <div type="chapter" xml:id="helpBodyFr04.01">
+                  <head>L’édition des cours </head>
+                  <p>Cette rubrique présente le projet de recherche tel qu’il a été
+                     déposé et retenu par l’Agence national de la recherche (ANR) ainsi
+                     que l’équipe de recherche. Elle rend compte de son évolution dans
+                     sa réalisation ainsi que de ses principaux résultats concernant la
+                     normalisation du savoir architectural à l’époque moderne. On y
+                     expose la méthodologie retenue pour l’édition critique et la
+                     documentation du modèle XML-TEI mis en œuvre.</p>
+               </div>
+               <div type="chapter" xml:id="helpBodyFr04.02">
+                  <head>Antoine Desgodets</head>
+                  <p>Cette rubrique permet de donner corps au personnage central du
+                     projet. Hormis une brève biographie, nous publierons des archives
+                     personnelles découvertes récemment, ainsi que d’autres sources
+                     inédites sur différents aspects de sa carrière autres que ceux de
+                     professeur, comme celui d’expert auprès de l’Académie, celui
+                     d’architecte, de dessinateur et enfin d’auteur d’un ouvrage
+                     emblématique d’architecture que sont les <hi rend="italic"
+                        >Édifices antiques de Rome</hi>.</p>
+               </div>
+               <div type="chapter" xml:id="helpBodyFr04.03">
+                  <head>Colloques</head>
+                  <p>Vous trouverez ici la brochure de la journée d’étude organisée en
+                     2010 avec le résumé des communications qui y ont été présentées
+                     ainsi que l’appel à contribution pour le colloque international
+                     que nous envisageons d’organiser en 2014.</p>
+               </div>
+               <div  type="chapter" xml:id="helpBodyFr04.04">
+                  <head>Bibliographie</head>
+                  <p>Sous cette rubrique, on regroupe toutes les sources connues à ce
+                     jour sur Antoine Desgodets et son Œuvre mais également sur son
+                     époque et les questions de l’enseignement de l’architecture aux
+                     futurs architectes, de la construction et de la normalisation du
+                     savoir de cette discipline, de la constitution de la nouvelle
+                     profession d’architecte moderne, sans oublier les rapports de
+                     l’architecture avec les sciences mathématiques, voire juridiques.
+                     La création de ce site réclame également un appareil critique sur
+                     les humanités numériques devenues une science à part entière.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

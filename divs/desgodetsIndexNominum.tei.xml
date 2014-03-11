@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model     href="../schema/desgodetsSchemaTEI.rnc"
+    type="application/relax-ng-compact-syntax"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier de l'index nominum des Cours de Desgodets 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- RMQ : ce fichier est traité à ce niveau de l'arborescence du système de fichier  car il est d'usage global pour l'édition. A terme, il s'agira d'un fichier TEI autonome valide, on utilisera alors un pointeur sur l'élément <div> concerné dans ce fichier dans le xi:include. -->
+<!-- on renseigne la forme normalisée du nom à afficher avec un persname full="yes", sinon la forme normale du nom est composée grâce aux éléments sort etc. -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <!-- début de l'en-tête TEI -->
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Index nominum</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche
+                                Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la
+                        Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="edt">édition</resp>
+                    <persName ref="#JB">
+                        <forename>Joëlle</forename>
+                        <surname>Barreau</surname>
+                    </persName>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                    </persName>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                    <persName ref="#BG">
+                        <forename>Béatrice</forename>
+                        <surname>Gaillard</surname>
+                    </persName>
+                    <persName ref="#JH">
+                        <forename>Juliette</forename>
+                        <surname>Hernu</surname>
+                    </persName>
+                    <persName ref="#HRC">
+                        <forename>Hélène</forename>
+                        <surname>Rousteau-Chambon</surname>
+                    </persName>
+                    <persName ref="#LT">
+                        <forename>Linnéa</forename>
+                        <surname>Tilly</surname>
+                    </persName>
+                    <persName ref="#GF">
+                        <forename>Guillaume</forename>
+                        <surname>Fonkenell</surname>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                    <persName ref="#JH">
+                        <forename>Juliette</forename>
+                        <surname>Hernu</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date from="2013"
+                        to="2013">2008-2013</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>desgodets</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR
+                        7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="indexNominumTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes de la
+                            Licence Creative Commons Attribution - Pas d’Utilisation
+                            Commerciale - Partage dans les Mêmes Conditions 3.0
+                            France.</p>
+                        <graphic
+                            url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png"
+                         />
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit (UMR 7074) met à
+                        disposition cette ressource électronique structurée, protégée
+                        par le code de la propriété intellectuelle sur le droit
+                        d'auteur (L111-1) et sur les bases de données (L341-1), selon
+                        les termes de la licence Creative Commons : « Paternité - Pas
+                        d'Utilisation Commerciale - Pas de Modification ; 3.0 France ».
+                        <lb />Cette licence est disponible en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande à
+                        ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb />1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb />2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource <lb />3.
+                        la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes conditions.
+                        Cependant, afin de mieux servir la communauté scientifique, le
+                        Centre de théorie et d'analyse du droit s'engage à conserver et
+                        à toujours offrir publiquement la version la plus à jour de ses
+                        ressources électroniques par une URI pérenne. Il s'engage en
+                        conséquence à les corriger et à les améliorer, à intégrer les
+                        contributions qui lui sont soumises (après validation par un
+                        comité scientifique), et à référencer l'origine de ces
+                        contributions. Toute modification de la ressource qui ne serait
+                        pas reversée à la version de référence sous l'autorité
+                        éditoriale du Centre de théorie et d'analyse risquerait en
+                        conséquence d'être perdue, afin de ne pas disperser les
+                        contributions et de permettre les meilleures conditions
+                        possibles de collaboration scientifique, nous vous invitons à
+                        nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="indexNominum">Fichier nativement numérique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme de
+                    recherche sur la formalisation du savoir architectural au XVII<hi
+                        rend="superscript">e</hi> siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <correction>
+                    <p>La syntaxe originale du manuscrit a été respectée en suivant les
+                        indications de Bernard Barbiche, <ref type="external"
+                            target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
+                            >Conseils pour l’édition des textes de l’époque moderne
+                                (XVI<hi rend="superscript">e</hi>-XVIII<hi
+                                rend="superscript">e</hi> siècle)</ref>.</p>
+                </correction>
+                <hyphenation>
+                    <p>Pour les ouvrages imprimés, il n'a pas été tenu compte de
+                        l'hyphénation.</p>
+                </hyphenation>
+                <interpretation>
+                    <p>Les interprétations sont traitées au moyen d'un élément supplied
+                        ou bien sont renvoyées en notes. Une mention de responsabilité
+                        est fournie grâce à l'attribut resp sur le passage
+                        concerné.</p>
+                </interpretation>
+                <normalization>
+                    <p>La ponctuation ainsi que les majuscules ont été normalisées. Les
+                        abréviations ont été développées.</p>
+                </normalization>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un
+                        élément quote, soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira
+                    peut-être une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne
+                    sera pas le cas].</p>
+            </samplingDecl>
+            <variantEncoding method="location-referenced" location="external" />
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="100">Français (langue principale du
+                    corpus)</language>
+                <!-- TODO : évaluer les langues -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng"
+                    scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode
+                    scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                    <!-- TODO index, sans doute pas un txt -->
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-14" who="#EC">augmentation de l'en-tête TEI et
+                amélioration de l'encodage</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="indexNominum" xml:lang="fre">
+                <!-- Personnes physiques -->
+                <head>Index nominum</head>
+                <p>du texte de présentation</p>
+                <div type="listPerson">
+                    <head>Index général des personnes physiques</head>
+                    <p>du texte de présentation</p>
+                    <listPerson>
+                        <!-- Début d'une notice de personne physique identifiée par un identifiant unique -->
+                        <!--<person xml:id="in000ex">
+                            <!-\- Exemple d'encodage du nom propre -\->
+                            <persName full="yes">Münchhausen, Karl Hieronymus
+                                (1720-1797 ; baron von)</persName>
+                            <persName>
+                                <!-\- Nom de famille -\->
+                                <surname sort="1">Münchhausen</surname>
+                                <!-\- Qualificatif de génération (éventuellement) -\->
+                                <genName>Junior</genName>
+                                <!-\- Prénoms (ordonnés) -\->
+                                <forename sort="2">Karl</forename>
+                                <forename>Friedrich</forename>
+                                <forename sort="3">Hieronymus</forename>
+                                <!-\- Particule etc. (éventuellement) -\->
+                                <nameLink type="nobility">von</nameLink>
+                                <!-\- Titre (éventuellement) -\->
+                                <roleName type="nobility">baron</roleName>
+                                <!-\- ou bien : type="military", type="office", type="epithet" -\->
+                            </persName>
+                            <!-\- Dates de naissance et de mort avec un attribut normalisé -\->
+                            <birth when="1720-05-11">11 mai 1720</birth>
+                            <death when="1797-02-22">22 février 1797</death>
+                            <!-\- Activité normalisée pour l'index -\->
+                            <occupation>mercenaire</occupation>
+                            <!-\- Identifiant dans une notice d'autorité -\->
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119462100/PUBLIC
+                            </idno>
+                        </person>-->
+                        <person xml:id="abel">
+                            <!-- Créer une forme normale pour l'index -->
+                            <persName full="yes">Abel (personnage biblique)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119308162/PUBLIC</idno>
+                        </person>
+                        <person xml:id="archimede">
+                            <persName full="yes">Archimède (0287-0212 av. J.-C.)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12026533n/PUBLIC</idno>
+                        </person>
+                        <person xml:id="avilerAugustinCharlesD">
+                            <persName full="yes">Aviler, Augustin-Charles d'
+                                (1653-1701)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb124627134/PUBLIC</idno>
+                        </person>
+                        <person xml:id="barbicheBernard">
+                            <persName full="yes">Barbiche, Bernard (1937-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11890145s/PUBLIC</idno>
+                        </person>
+                        <person xml:id="kriegelBlandine">
+                            <persName full="yes">Kriegel, Blandine (1943-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11890341z/PUBLIC</idno>
+                        </person>
+                        <person xml:id="baudezBasile">
+                            <persName full="yes">Baudez, Basile (1974-....)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb155031221/PUBLIC</idno>
+                        </person>
+                        <person xml:id="becchiAntonio">
+                            <persName full="yes">Becchi, Antonio</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb16676732g/PUBLIC</idno>
+                        </person>
+                        <person xml:id="beguinFrancois">
+                            <persName full="yes">Béguin, François</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11890960w/PUBLIC</idno>
+                        </person>
+                        <person xml:id="belhosteJeanFrancois">
+                            <persName full="yes">Belhoste, Jean-François (1948-....)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11891014g/PUBLIC</idno>
+                        </person>
+                        <person xml:id="blondelFrancois">
+                            <persName full="yes">Blondel, François
+                                (1618-1686)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12206684r/PUBLIC</idno>
+                        </person>
+                        <person xml:id="blondelJacquesFrancois">
+                            <persName full="yes">Blondel, Jacques-François (1705-1774)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12442563q/PUBLIC</idno>
+                        </person>
+                        <person xml:id="bulletPierre">
+                            <persName full="yes">Bullet, Pierre (1639-1716)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb15298589z/PUBLIC</idno>
+                            <note>Pierre Bullet (1639-1716) entra à l’Académie en 1685
+                                vraisemblablement grâce à l’intervention de Blondel.
+                                Outre les nombreuses œuvres architecturales dont il
+                                était l’auteur – plans de l’église des Jacobins
+                                (Saint-Thomas d’Aquin), hôtels Le Peletier de
+                                Saint-Fargeau, Amelot, quelques hôtels sur la place
+                                Vendôme -, il dressa un plan de Paris avec Blondel,
+                                plan qui servit de base à l’extension de la ville, et
+                                publia divers ouvrages fondamentaux : Traité de l’usage
+                                du pantomètre (1675), Traité de nivellement (1688),
+                                L’Architecture pratique (1691), ouvrage qui connut un
+                                grand succès auprès des praticiens (6 rééditions). Pour
+                                plus de précisions, voir Eric Langenskiöld, Pierre
+                                Bullet, the royal architect, Almqvist &amp; Wiksell,
+                                1959. Juliette Hernu-Bélaud prépare actuellement une
+                                thèse sur Pierre Bullet.</note>
+                        </person>
+                        <person xml:id="bruandFrancois">
+                            <persName full="yes">Bruand, François
+                                (1664-1739)</persName>
+                            <!--<idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb149587187/PUBLIC</idno>-->
+                            <!-- idno d'un autre -->
+                            <birth when="1664-04-20">20 avril 1664</birth>
+                            <note>Mal orthographié dans le catalogue d'autorité de la
+                                Bnf : Bruant</note>
+                            <note>Fils de l'architecte Libéral Bruand (v. 1635-1697),
+                                il ne doit pas être confondu avec le pensionnaire de
+                                l'Académie à Rome qui avait été renvoyé. Entre en 1699
+                                dans la seconde classe de l'Académie, admis dans la
+                                première le 22 février 1707. Il fut nommé professeur en
+                                1728 après la mort de Desgodets.</note>
+                            <!-- HRC, Habilitation, p. 30 -->
+                        </person>
+
+                        <person xml:id="bulletDeChaimblainJeanBaptiste">
+                            <persName>
+                                <surname>Bullet de Chamblain</surname>
+                                <forename>Jean-Baptiste</forename>
+                            </persName>
+                        </person>
+                        <person xml:id="cain">
+                            <persName full="yes">Caïn (personnage biblique)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119310957/PUBLIC</idno>
+                        </person>
+                        <person xml:id="camusCharlesEtienneLouis">
+                            <persName full="yes">Camus, Charles-Étienne-Louis
+                                (1699-1768)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12181030f/PUBLIC</idno>
+                            <note>Nommé professeur de géométrie en 1730, place qu'il occupa jusqu'à sa mort en 1768.</note><!-- voir HRC, Habilitation, p. 34-35 -->
+                        </person>
+                        <person xml:id="RC">
+                            <persName full="yes">Carvais, Robert</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb136111339/PUBLIC</idno>
+                        </person>
+                        <person xml:id="celestin">
+                            <persName full="yes">Célestin I<hi rend="superscript"
+                                    >er</hi> (pape ; 03..-0432?)</persName>
+                            <persName>
+                                <forename>Célestin I<hi rend="superscript"
+                                    >er</hi></forename>
+                                <roleName>pape</roleName>
+                            </persName>
+                            <birth notBefore="0300">03..</birth>
+                            <death notAfter="0432">0432?</death>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb13526759w/PUBLIC</idno>
+                        </person>
+                        <person xml:id="charlesBorromee">
+                            <persName full="yes">Charles Borromée (saint ; 1538-1584)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12355795n/PUBLIC</idno>
+                        </person>
+                        <person xml:id="chatenetMonique">
+                            <persName full="yes">Chatenet, Monique</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12012420v/PUBLIC</idno>
+                        </person>
+                        <person xml:id="chevotetJeanMichel">
+                            <persName full="yes">Chevotet, Jean-Michel (1698-1772)</persName>
+                            <!-- abs autBnf -->
+                        </person>
+                        <person xml:id="cordemoyJeanLouisDe">
+                            <persName full="yes">Cordemoy, Jean-Louis de</persName>
+                            <!-- TODO comment traiter les formes du nom plus complètes ? -->
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb13012154g/PUBLIC</idno>
+                        </person>
+                        <person xml:id="courtonneJean">
+                            <persName full="yes">Courtonne, Jean (1671-1739)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb13516954h/PUBLIC</idno>
+                            <note>Professeur d'architecture de 1730 à 1739.</note>
+                            <death when="1739-01-17">17 janvier 1739</death><!-- HRC, Habilitation, p. 36 -->
+                        </person>
+                        <person xml:id="cronstedtFamille">
+                            <persName>Cronstedt (famille)</persName>
+                        </person>
+                        <person xml:id="cronstedtCarlJohan">
+                            <persName>Cronstedt, Carl Johan (1709-1777)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb131750906/PUBLIC</idno>
+                        </person>
+                        <person xml:id="deFleury">
+                            <persName full="yes">Fleury, Claude (1640-1723)</persName>
+                            <persName>
+                                <forename>Claude</forename>
+                                <surname>Fleury</surname>
+                                <nameLink type="nobility">de</nameLink>
+                            </persName>
+                            <occupation>prètre</occupation>
+                            <occupation>précepteur</occupation>
+                            <occupation>Membre de l'Académie française</occupation>
+                            <birth when="1640-12-06">6 décembre 1640</birth>
+                            <death when="1723-07-14">14 juillet 1723</death>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb124599940/PUBLIC
+                            </idno>
+                        </person>
+                        <person xml:id="descouges">
+                            <persName>Descouges</persName>
+                            <occupation>Vérificateur des travaux de l’asile de Vaucluse</occupation>
+                        </person>
+                        <person xml:id="desgodets">
+                            <persName full="yes">Desgodets, Antoine
+                                (1653-1728)</persName>
+                            <persName>
+                                <forename sort="1">Antoine</forename>
+                                <surname sort="2">Desgodets</surname>
+                            </persName>
+                            <birth when="1653">1653</birth>
+                            <death when="1728">1728</death>
+                            <occupation>architecte</occupation>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb149595496/PUBLIC
+                            </idno>
+                        </person>
+                        <person xml:id="dieu">
+                            <!-- Créer une forme normale pour l'index -->
+                            <!-- TODO indexe-t-on ? -->
+                            <persName>
+                                <name>Dieu</name>
+                            </persName>
+                        </person>
+                        <person xml:id="donaldson">
+                            <persName full="yes">Donaldson, Thomas Leverton
+                                (1795-1885)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb10628704v/PUBLIC</idno>
+                        </person>
+                        <person xml:id="doros">
+                            <persName>
+                                <name>Doros</name>
+                            </persName>
+                            <occupation>personnage mythologique</occupation>
+                        </person>
+                        <person xml:id="duportalJeanne">
+                            <persName full="yes">Duportal, Jeanne</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12097333s/PUBLIC</idno>
+                        </person>
+                        <person xml:id="durandJeanLouisNicolas">
+                            <persName full="yes">Durand, Jean-Nicolas-Louis (1760-1834)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12187455b/PUBLIC</idno>
+                        </person>
+                        <person xml:id="errardCharles">
+                            <persName full="yes">Errard, Charles (1603?-1689)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb149644655/PUBLIC</idno>
+                        </person>
+                        <person xml:id="faureOlivier">
+                            <persName full="yes">Faure, Olivier (1953-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11902364d/PUBLIC</idno>
+                        </person>
+                        <person xml:id="fortierBruno">
+                            <persName full="yes">Fortier, Bruno (1946-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11903163r/PUBLIC</idno>
+                        </person>
+                        <person xml:id="foucaultMichel">
+                            <persName full="yes">Foucault, Michel (1926-1984)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11903202t/PUBLIC</idno>
+                        </person>
+                        <person xml:id="fredetJacques">
+                            <persName full="yes">Fredet, Jacques</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12606933c/PUBLIC</idno>
+                        </person>
+                        <person xml:id="frezierAmedee">
+                            <persName full="yes">Frézier, Amédée (1682-1773)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12202031j/PUBLIC</idno>
+                        </person>
+                        <person xml:id="galletMichel">
+                            <persName full="yes">Gallet, Michel (1927-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119039660/PUBLIC</idno>
+                        </person>
+                        <person xml:id="ginetNicolas">
+                            <persName full="yes">Ginet, Nicolas</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb123839433/PUBLIC</idno>
+                            <note>La notice d'autorité de la Bnf ne donne que l'initiale du prénom.</note>
+                        </person>
+                        <person xml:id="guenepinAuguste">
+                            <persName full="yes">Guénepin, Auguste
+                                (1780-1842)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb16599035j/PUBLIC</idno>
+                            <idno type="agorha"
+                                >http://agorha.inha.fr/inhaprod/jsp/reference.jsp?reference=INHA__PERSONNES__78528</idno>
+                        </person>
+                        <person xml:id="guenepinFrancois">
+                            <persName full="yes">Guénepin , Jean François (1807-07-25 -
+                                1888-01-04)</persName>
+                            <idno type="agorha"
+                                >http://agorha.inha.fr/inhaprod/jsp/reference.jsp?reference=INHA__PERSONNES__79350</idno>
+                        </person>
+                        <person xml:id="guillermeAndre">
+                            <persName full="yes">Guillerme, André (1945-....)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11906415f/PUBLIC</idno>
+                        </person>
+                        <person xml:id="guyotjeanninOlivier">
+                            <persName full="yes">Guyotjeannin, Olivier (1959-....)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11906612z/PUBLIC</idno>
+                        </person>
+                        <person xml:id="hamonFrancoise">
+                            <persName full="yes">Hamon, Françoise</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119068057/PUBLIC</idno>
+                        </person>
+                        <person xml:id="hardouinMansartJules">
+                            <persName full="yes">Mansart, Jules Hardouin-
+                                (1646-1708)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12553191g/PUBLIC</idno>
+                        </person>
+                        <person xml:id="harlemanCarl">
+                            <persName full="yes">Hårleman, Carl (1700-1753)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12515206b/PUBLIC</idno>
+                        </person>
+                        <person xml:id="herrmannWolfgang">
+                            <!-- RMQ dans les parties éditoriales, voir le traitement -->
+                            <persName>
+                                <forename>Wolfgang</forename>
+                                <surname>Herrmann</surname>
+                            </persName>
+                        </person>
+                        <person xml:id="jacob">
+                            <!-- Créer une forme normale pour l'index -->
+                            <persName full="yes">Jacob (personnage biblique)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11947614q/PUBLIC</idno>
+                        </person>
+                        <person xml:id="jesusChrist">
+                            <persName full="yes">Jésus-Christ</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC</idno>
+                        </person>
+                        <person xml:id="jombertCharlesAntoine">
+                            <persName full="yes">Jombert, Charles-Antoine (1712-1784)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12180917g/PUBLIC</idno>
+                        </person>
+                        <person xml:id="jossenayDenis">
+                            <persName full="yes">Jossenay, Denis (16..-1742)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb149604625/PUBLIC</idno>
+                            <note>Professeur d'architecture de 1748 à 1762 avant la nommination de Blondel.</note>
+                            <note>La date de décès du catalogue d'autorité est peut être fautive. HRC, p. 38 de son Habilitation le donne mort en 1748.</note>
+                        </person>
+                        <person xml:id="jupiter">
+                            <persName>Jupiter (divinité romaine)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11980295k/PUBLIC</idno>
+                        </person>
+                        <person xml:id="keplerJohannes">
+                            <persName full="yes">Kepler, Johannes (1571-1630)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11909597m/PUBLIC</idno>
+                        </person>
+                        <person xml:id="lagetPierreLouis">
+                            <persName full="yes">Laget, Pierre-Louis (1950-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb16647884m/PUBLIC</idno>
+                        </person>
+                        <person xml:id="laHireGrabrielPhilippeDe">
+                            <persName full="yes">La Hire, Gabriel Philippe de
+                                (1677-1719)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb106522995/PUBLIC</idno>
+                            <death when="1719-06-04">4 juin 1719</death>
+                            <!-- HRC, habilitation, p. 25, noe 93 -->
+                            <note>Fils aîné de Philippe de La Hire, profitant sans
+                                doute de l'aura paternelle, il fit partie dès son plus
+                                jeune âge de l'Académie des sciences (1696). Il
+                                travailla sur des sujets proches de ceux de son père.
+                                Dès 1706, il fut admis dans la seconde classe de
+                                l'Académie royale d'architecture ; accession sans doute
+                                favorisée par la publication de <hi rend="italic">L'art
+                                    de la charpenterie de Mathurin Jousse, ...</hi> en
+                                1702. En succédant à son père, Gabriel-Philippe fut
+                                promu dans la première classe en 1718 sans avoir rien
+                                construit.</note>
+                            <!-- HRC, Habilitation, p. 25 -->
+                        </person>
+                        <person xml:id="laHirePhilippeDe">
+                            <persName full="yes">La Hire, Philippe de
+                                (1640-1719)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb121592847/PUBLIC</idno>
+                            <death when="1718-04-21">21 avril 1718</death>
+                            <!-- HRC, habilitation, p. 25  -->
+                        </person>
+                        <person xml:id="larocheClaude">
+                            <persName full="yes">Laroche, Claude (1956-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12382647d/PUBLIC</idno>
+                        </person>
+                        <person xml:id="laugierMarcAntoine">
+                            <persName full="yes">Laugier, Marc-Antoine
+                                (1713-1769)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb120003457/PUBLIC</idno>
+                        </person>
+                        <person xml:id="leibnizGottfriedWilhelm">
+                            <persName full="yes">Leibniz, Gottfried Wilhelm (1646-1716)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11912259r/PUBLIC</idno>
+                        </person>
+                        <person xml:id="lemercierJacques">
+                            <persName full="yes">Lemercier, Jacques (1585?-1654)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb15012568j/PUBLIC</idno>
+                            <note>Voir l'ouvrage d'Alexandre Gady pour les dates</note>
+                        </person>
+                        <person xml:id="lemonnierHenry">
+                            <persName full="yes">Lemonnier, Henry
+                                (1842-1936)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb125291156/PUBLIC</idno>
+                        </person>
+                        <person xml:id="leMuetPierre">
+                            <persName full="yes">Le Muet, Pierre (1591-1669)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb11911719n/PUBLIC</idno>
+                        </person>
+                        <person xml:id="lEpeeCharlesFrancois">
+                            <persName full="yes">L'Épée, Charles-Francois de (1712-1789)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb120149003/PUBLIC</idno>
+                            <!-- abs autBnf -->
+                            <note>Architecte entrepreneur. Serait le père du célèbre Abbé de l'Épée, Charles-Michel.</note>
+                        </person>
+                        <person xml:id="lEpeeCharlesMichel">
+                            <persName full="yes">L'Épée, Charles-Michel de (1712-1789)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb120149003/PUBLIC</idno>
+                        </person>
+                        <person xml:id="lHopitalGuillaumeFrancoisAntoineDe">
+                            <persName full="yes">L'Hospital, Guillaume-François-Antoine de (1661-1704)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12000655c/PUBLIC</idno>
+                        </person>
+                        <person xml:id="loriotLouisAdam">
+                            <persName full="yes">Loriot, Louis Adam
+                                (16..-1767)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb14957410d/PUBLIC</idno>
+                            <birth when="1700">1700</birth><!-- HRC, Habilitation, p. 39.  -->
+                        </person>
+                        <person xml:id="louisXIV">
+                            <persName full="yes">Louis XIV (roi de France ;
+                                1638-1715)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11913463s/PUBLIC</idno>
+                        </person>
+                        <person xml:id="louisXV">
+                            <persName full="yes">Louis XV (roi de France ;
+                                1710-1774)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12282451x/PUBLIC</idno>
+                        </person>
+                        <person xml:id="lunsinghScheurleerTheodorHerman ">
+                            <persName full="yes">Lunsingh Scheurleer, Theodor Herman
+                                (1911-2002)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12751961m/PUBLIC</idno>
+                        </person>
+                        <person xml:id="imbertJean">
+                            <persName full="yes">Imbert, Jean (1919-1999)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119082110/PUBLIC</idno>
+                        </person>
+                        <person xml:id="mesangeMathias">
+                            <persName full="yes">Mesange, Mathias</persName>
+                            <birth when="1693">1693</birth>
+                            <death when="1758">1758</death>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12390324n/PUBLIC</idno>
+                        </person>
+                        <person xml:id="moise">
+                            <!-- Créer une forme normale pour l'index -->
+                            <persName full="yes">Moïse (personnage biblique)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11934601f/PUBLIC</idno>
+                        </person>
+                        <person xml:id="morisotMadeleineRoseJoseph">
+                            <persName full="yes">Morisot, Joseph (Madeleine Rose Joseph)</persName>
+                            <!--<idno type="autBnf"></idno>-->
+                        </person>
+                        <person xml:id="negreValerie">
+                            <persName full="yes">Nègre, Valérie</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12352848p/PUBLIC</idno>
+                        </person>
+                        <person xml:id="newtonIsaac">
+                            <persName full="yes">Newton, Isaac (1642-1727)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119176085/PUBLIC</idno>
+                        </person>
+                        <person xml:id="noe">
+                            <persName full="yes">Noé (personnage biblique)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119840652/PUBLIC</idno>
+                        </person>
+                        <person xml:id="numaPompilius">
+                            <persName full="yes">Numa Pompilius (roi de Rome ;
+                                07..-067. av. J.-C.)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb15006884c/PUBLIC</idno>
+                        </person>
+                        <person xml:id="ozanamJacques">
+                            <persName full="yes">Ozanam, Jacques (1640-1718)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb120960958/PUBLIC</idno>
+                        </person>
+                        <person xml:id="palladio">
+                            <persName full="yes">Palladio, Andrea
+                                (1508-1580)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119184708/PUBLIC</idno>
+                        </person>
+                        <person xml:id="perraultClaude">
+                            <persName full="yes">Perrault, Claude
+                                (1613-1688)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb119297936/PUBLIC</idno>
+                        </person>
+                        <person xml:id="peupleJuif">
+                            <persName>Peuple juïf</persName>
+                        </person>
+                        <person xml:id="pinardJean">
+                            <persName>
+                                <!-- Créer une forme normale pour l'index -->
+                                <forename sort="1">Jean</forename>
+                                <surname sort="2">Pinard</surname>
+                            </persName>
+                            <occupation>architecte</occupation>
+                            <!-- TODO transformation ne fonctionne pas -->
+                        </person>
+                        <person xml:id="plineLeJeune">
+                            <persName full="yes">Pline le Jeune
+                                (0061?-0114?)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11920050t/PUBLIC</idno>
+                        </person>
+                        <person xml:id="perouseDeMonclosJeanMarie">
+                            <persName full="yes">Pérouse de Montclos, Jean-Marie (1936-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11919205h/PUBLIC</idno>
+                        </person>
+                        <person xml:id="perronetJeanRodolphe">
+                            <persName full="yes">Perronet, Jean Rodolphe (1708-1794)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12096154z/PUBLIC</idno>
+                        </person>
+                        <person xml:id="potainNicolasMarie">
+                            <persName full="yes">Potain, Nicolas-Marie (17..-1751?)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb13012172d/PUBLIC</idno>
+                            <birth when="1723"></birth>
+                            <death when="1790"></death>
+                        </person>
+                        <person xml:id="pronyGaspardClairFrançoisMarieRicheDe">
+                            <persName full="yes">Prony, Gaspard-Clair-François-Marie Riche de (1755-1839)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12535038t/PUBLIC</idno>
+                        </person>
+                        <person xml:id="roisDIsrael">
+                            <persName full="yes">Rois et souverains -- Israël
+                                (Royaume)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb14569261r/PUBLIC</idno>
+                        </person>
+                        <person xml:id="sakarovitchJoel">
+                            <persName full="yes">Sakarovitch, Joël</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12395167k/PUBLIC</idno>
+                        </person>
+                        <person xml:id="salomon">
+                            <persName full="yes">Salomon (roi d'Israël ; 09..?-0931?
+                                av. J.-C.)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb14486611t/PUBLIC</idno>
+                        </person>
+                        <person xml:id="deSavonne">
+                            <persName>
+                                <name>Pierre de Savonne</name>
+                            </persName>
+                            <occupation>cardinal</occupation>
+                            <note>à rechercher</note>
+                        </person>
+                        <person xml:id="serlioSebastiano">
+                            <persName full="yes">Serlio, Sebastiano
+                                (1475-1554?)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12347689q/PUBLIC</idno>
+                        </person>
+                        <person xml:id="stPaulin">
+                            <persName full="yes">Paulin de Tyr (évêque ;
+                                2..?-331)</persName>
+                            <!-- TODO chercher -->
+                        </person>
+                        <person xml:id="rollenhagenTillyLinnea">
+                            <persName full="yes">Rollenhagen-Tilly, Linnea</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb136022359/PUBLIC</idno>
+                        </person>
+                        <person xml:id="rondeletJean">
+                            <persName>Rondelet, Jean (1743-1829)</persName>
+                            <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb12309758c/PUBLIC</idno>
+                        </person>
+                        <person xml:id="rousteauChambonHelene">
+                            <persName full="yes">Rousteau-Chambon, Hélène
+                                (1967-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb14484441q/PUBLIC</idno>
+                        </person>
+                        <person xml:id="rykwertJoseph">
+                            <persName full="yes">Rykwert, Joseph (1926-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11923173g/PUBLIC</idno>
+                        </person>
+                        <person xml:id="savotLouis">
+                            <persName full="yes">Savot, Louis (1570-1640)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11923862r/PUBLIC</idno>
+                        </person>
+                        <person xml:id="scamozziVincenzo">
+                            <persName full="yes">Scamozzi, Vincenzo
+                                (1552-1616)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12347668r/PUBLIC</idno>
+                        </person>
+                        <person xml:id="vidlerAnthony">
+                            <persName full="yes">Vidler, Anthony (1941-....)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb120947215/PUBLIC</idno>
+                        </person>
+                        <person xml:id="vignoleLe">
+                            <persName>Vignole, Le (1507-1573)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb120950564/PUBLIC</idno>
+                        </person>
+                        <person xml:id="vitruve">
+                            <persName full="yes">Vitruve (0090?-0020? av.
+                                J.-C.)</persName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb11928567v/PUBLIC</idno>
+                        </person>
+                        <!-- test pour le classement alphabétique -->
+                        <person xml:id="constantin">
+                            <persName full="yes">Constantin Ier (empereur romain ;
+                                027.?-0337)</persName>
+                            <persName>
+                                <name>Constantin 1er</name>
+                            </persName>
+                            <birth notAfter="0270">27?</birth>
+                            <death when="0337-05">mai 337</death>
+                            <occupation>empereur romain</occupation>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12182910j/PUBLIC</idno>
+                        </person>
+                    </listPerson>
+                </div>
+
+                <!-- Organisations et personnes morales -->
+                <div type="listOrg">
+                    <head>Index des personnes morales</head>
+                    <p>du texte de présentation</p>
+                    <listOrg>
+                        <!-- Exemple d'encodage d'une organisation -->
+                        <!--<org xml:id="inOrg001">
+                            <orgName>
+                                <!-\- La solution qui suit est peut-être un peu compliquée. On peut se contenter de définir la forme normale -\->
+                                <surname>
+                                    <name type="role">parlement de</name>
+                                    <name type="city">Paris</name>
+                                </surname>
+                                <!-\- lien éventuel vers une notice d'autorité -\->
+                                <idno />
+                            </orgName>
+                        </org>-->
+                        <!-- encodage corrigé -->
+                        <org xml:id="academieRoyaleDArchitecture">
+                            <orgName type="full">Académie royale d'architecture
+                                (France)</orgName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/12148/cb12159177p/PUBLIC
+                            </idno>
+                        </org>
+                        <org xml:id="inOrg001">
+                            <orgName full="yes">Parlement de
+                                    <placeName>Paris</placeName></orgName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/test/test/PUBLIC</idno>
+                            <!-- TODO corriger le lien -->
+                        </org>
+                        <org xml:id="inOrg002">
+                            <orgName full="yes">Chambre des bâtiments de
+                                    <placeName>Paris</placeName></orgName>
+                            <idno type="autBnf"
+                                >http://catalogue.bnf.fr/ark:/test/test/PUBLIC</idno>
+                            <!-- TODO corriger le lien -->
+                        </org>
+                    </listOrg>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

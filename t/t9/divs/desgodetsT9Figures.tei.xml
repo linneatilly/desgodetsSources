@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO : ajouter les références facs, renseigner locus et les dimensions -->
+<!-- exemple -->
+<!--
+   <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+      <head>Plan de léglise de sainte Sabine <lb/>À Rome</head><!-\- titre tel qu’il apparaît sur la planche -\->
+      <figDesc>
+         <locus from="#c2F9v">p. 16</locus><!-\- pagination dans le volume -\->
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Plan de l’église de Sainte-Sabine à Rome</title><!-\- légende normalisée -\->
+         <dimensions>
+            <height quantity="21" unit="mm" /><!-\- dimension à rentrer d’un coup pour les planches -\->
+            <width quantity="42" unit="mm" />
+         </dimensions>
+      </figDesc>
+   </figure>-->
+
+<!-- exemple avec des figures dans la planche -->
+<!--
+   <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+      <head>Plan de léglise de sainte Sabine <lb/>À Rome</head><!-\- titre tel qu’il apparaît sur la planche -\->
+      <figDesc>
+         <locus from="#c2F9v">p. 16</locus><!-\- pagination dans le volume -\->
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Plan de l’église de Sainte-Sabine à Rome</title><!-\- légende normalisée -\->
+         <dimensions>
+            <height quantity="21" unit="mm" /><!-\- dimension à rentrer d’un coup pour les planches -\->
+            <width quantity="42" unit="mm" />
+         </dimensions>
+      </figDesc>
+      <!-\- figure dans une planche -\->
+      <figure xml:id="c2Fig0001" type="figure">
+         <head><!-\-Titre de la figure tel qu’il apparaît sur la planche-\-></head>
+         <figDesc>
+            <label>
+               <num>1</num>
+            </label>
+            <title><!-\-Légende normalisée de la figure-\-></title>
+            <dimensions/> <!-\- si nécessaire comme ci-dessus -\->
+            <desc><!-\-description des techniques-\-></desc>
+         </figDesc>
+         <note><!-\- Peut servir pour enregistrer un commentaire au besoin -\-></note>
+      </figure>
+   </figure>-->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" type="figures" xml:id="t9BackFr04">
+   <figure xml:id="t9Pl0001" type="plate" facs="#t9Facs0048">
+      <head>Chap. 6 Toisé des voutes ; chap. 7 Toisé des voutes d’arrestes</head>
+      <figDesc>
+         <locus from="#t9P38" to="#t939">entre les p. 38 et 39</locus>
+         <label>
+            <num n="1">1</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig0001" type="figure">
+         <head>Chap. 6 Toisé des voûtes</head>
+         <figDesc>
+            <label>
+               <num>1</num>
+            </label>
+            <title>Plan d’un parallélogramme obliqu’angle ABCD voûté en berceau</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+         <note/>
+      </figure>
+      <figure xml:id="t9Fig0002" type="figure">
+         <head>Chap. 6 Toisé des voûtes</head>
+         <figDesc>
+            <label>
+               <num>2</num>
+            </label>
+            <title>Plan d’un trapèze GHIL dont les côtés GL, HI soutiennent les
+               naissances de la voûte et les côtés GH, IL en sont les pignons</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+         <note/>
+      </figure>
+      <figure xml:id="t9Fig0003" type="figure">
+         <head>Chap. 7 Toisé des voûtes d’arrestes</head>
+         <figDesc>
+            <label>
+               <num>3</num>
+            </label>
+            <title>Voûtes d’arrestes ABCD posées sur le pillier I et les dosserets
+               AEBFCGDH</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+         <note/>
+      </figure>
+   </figure>
+   
+   <figure xml:id="t9Pl0002" type="plate" facs="#t9Facs0049">
+      <head>chap. 9 Toisé des voutes de cloistre sur des plans poligones ;chap. 10
+         Toisé des voutes spheriques</head>
+      <figDesc>
+         <locus from="#t9P38" to="#t939">entre les p. 38 et 39</locus>
+         <label>
+            <num n="1 v.">1 v.</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig0004" type="figure">
+         <head>chap. 9 Toisé des voutes de cloistre sur des plans poligones</head>
+         <figDesc>
+            <label>
+               <num>4</num>
+            </label>
+            <title>Poligone exagone régulier</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig0005" type="figure">
+         <head>chap. 9 Toisé des voutes de cloistre sur des plans poligones</head>
+         <figDesc>
+            <label>
+               <num>5</num>
+            </label>
+            <title>Voûte de cloître sur le poligone octogone ABCDEFGH</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig0006" type="figure">
+         <head>chap. 10 Toisé des voutes spheriques</head>
+         <figDesc>
+            <label>
+               <num>6</num>
+            </label>
+            <title>Diamètre AB du plan de la naissance de la voûte sphérique, hauteur à
+               plomb CD</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig0007" type="figure">
+         <head>chap. 10 Toisé des voutes spheriques</head>
+         <figDesc>
+            <label>
+               <num>7</num>
+            </label>
+            <title>Voûte sphérique ACB</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   
+   <figure xml:id="t9Pl0003" type="plate" facs="#t9Facs0072">
+      <head>chap. 12 Toisé des voutes sur le noiau</head>
+      <figDesc>
+         <locus from="#t9P60" to="t9P61">entre les p. 60 et 61</locus>
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig0008" type="figure">
+         <head>chap. 12 Toisé des voutes sur le noiau</head>
+         <figDesc>
+            <label>
+               <num>8</num>
+            </label>
+            <title>Plan quarré ABCD, pilier en noyau EFGH qui est au milieu de l’espace
+               du quarré</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig0009" type="figure">
+         <head>chap. 12 Toisé des voutes sur le noiau</head>
+         <figDesc>
+            <label>
+               <num>9</num>
+            </label>
+            <title>Plan rectangle</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00010" type="figure">
+         <head>chap. 12 Toisé des voutes sur le noiau</head>
+         <figDesc>
+            <label>
+               <num>10</num>
+            </label>
+            <title>Voûte sur noyau en plan ovale</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00011" type="figure">
+         <head>chap. 12 Toisé des voutes sur le noiau</head>
+         <figDesc>
+            <label>
+               <num>11</num>
+            </label>
+            <title>Plan d’une voûte sur noyau de plan circulaire</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0004" type="plate" facs="#t9Facs0073">
+      <head>Chap. 13 Toisé des voutes en vis Saint-Gilles</head>
+      <figDesc>
+         <locus from="#t960" to="#t961">entre les p. 60 et 61</locus>
+         <label>
+            <num n="2 v.">2 v.</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00012" type="figure">
+         <head>chap. 13 Toisé des voutes en vis Saint-Gilles</head>
+         <figDesc>
+            <label>
+               <num>12</num>
+            </label>
+            <title>Voûte rampante BDEF dont les 2 côtés à plomb BD, EF, sont en plein
+               ceintre suivant le demi cercle ACB</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00013" type="figure">
+         <head>chap. 13 Toisé des voutes en vis Saint-Gilles</head>
+         <figDesc>
+            <label>
+               <num>13</num>
+            </label>
+            <title>Plan d’une voûte en vis Saint-Gilles, noyau EFGH</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00014" type="figure">
+         <head>chap. 13 Toisé des voutes en vis Saint-Gilles</head>
+         <figDesc>
+            <label>
+               <num>14</num>
+            </label>
+            <title>Plan d’une voûte en vis Saint-Gilles, noyau EFGH</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   
+   <figure xml:id="t9Pl0005" type="plate" facs="#t9Facs0082">
+      <head>chap. 13</head>
+      <figDesc>
+         <locus from="#t9P68" to="#t9P69">entre les p. 68 et 69</locus>
+         <label>
+            <num n="3">3</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00015" type="figure">
+         <head>chap. 13</head>
+         <figDesc>
+            <label>
+               <num>15</num>
+            </label>
+            <title>Plan d’une voûte en vis Saint-Gilles, noyau EFGH</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00016" type="figure">
+         <head>chap. 13</head>
+         <figDesc>
+            <label>
+               <num>16</num>
+            </label>
+            <title>Plan d’une voûte en vis Saint-Gilles sur plan oval ABCD</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00017" type="figure">
+         <head>chap. 13</head>
+         <figDesc>
+            <label>
+               <num>17</num>
+            </label>
+            <title>Plan d’une voûte en vis Saint-Gilles sur un plan quarré long
+               ABCD</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0006" type="plate" facs="#t9Facs0083">
+      <head>Chap. 14 Des voûtes en trompe</head>
+      <figDesc>
+         <locus from="#t9P68" to="#t9P69">entre les p. 68 et 69</locus>
+         <label>
+            <num n="3 v.">3 v.</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00018" type="figure">
+         <head>chap. 14 Des voûtes en trompe</head>
+         <figDesc>
+            <label>
+               <num>18</num>
+            </label>
+            <title>Trompe sur un plan en angle rentrant droit aigu</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00019" type="figure">
+         <head>chap. 14 Des voûtes en trompe</head>
+         <figDesc>
+            <label>
+               <num>19</num>
+            </label>
+            <title>Trompe</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00020" type="figure">
+         <head>chap. 14 Des voûtes en trompe</head>
+         <figDesc>
+            <label>
+               <num>20</num>
+            </label>
+            <title>Trompe</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00021" type="figure">
+         <head>chap. 14 Des voûtes en trompe</head>
+         <figDesc>
+            <label>
+               <num>21</num>
+            </label>
+            <title>Trompe</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00022" type="figure">
+         <head>chap. 14 Des voûtes en trompe</head>
+         <figDesc>
+            <label>
+               <num>22</num>
+            </label>
+            <title>Trompe</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   
+   <figure xml:id="t9Pl0007" type="plate" facs="#t9Facs0092">
+      <head>Trompes</head>
+      <figDesc>
+         <locus from="#t9P76" to="#t9P77">entre les p. 76 et 77</locus>
+         <label>
+            <num n="4">4</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00023" type="figure">
+         <head>Trompe en tour ronde</head>
+         <figDesc>
+            <label>
+               <num>23</num>
+            </label>
+            <title>Trompe dont la tête est en tour ronde</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00024" type="figure">
+         <head>Trompe en tour creuse</head>
+         <figDesc>
+            <label>
+               <num>24</num>
+            </label>
+            <title>Trompe en tour creuse</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0008" type="plate" facs="#t9Facs0093">
+      <head>Trompe biaise ; trompe en ceintre surbaissé</head>
+      <figDesc>
+         <locus from="#t9P76" to="#t9P77">entre les p. 76 et 77</locus>
+         <label>
+            <num n="4 v.">4 v.</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00025" type="figure">
+         <head>Trompe biaise en teste</head>
+         <figDesc>
+            <label>
+               <num>25</num>
+            </label>
+            <title>Trompe biaise en teste</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00026" type="figure">
+         <head>Trompe en ceintre surbaissé</head>
+         <figDesc>
+            <label>
+               <num>26</num>
+            </label>
+            <title>Trompe en ceintre surbaissé</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+
+   <figure xml:id="t9Pl0009" type="plate" facs="#t9Facs0100">
+      <head>Trompe en arc rempant ; trompe rempante</head>
+      <figDesc>
+         <locus from="#t9P82" to="#t9P83">entre les p. 82 et 83</locus>
+         <label>
+            <num n="5">5</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00027" type="figure">
+         <head>Trompe en arc rempant</head>
+         <figDesc>
+            <label>
+               <num>27</num>
+            </label>
+            <title>Trompe en arc rempant</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00028" type="figure">
+         <head>Trompe rempante</head>
+         <figDesc>
+            <label>
+               <num>28</num>
+            </label>
+            <title>Trompe rempante</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0010" type="plate" facs="#t9Facs0101">
+      <head>Trompe en niche ; trompe sur une ligne droite en tour ronde par la
+         teste</head>
+      <figDesc>
+         <locus from="#t9P82" to="#t9P83">entre les p. 82 et 83</locus>
+         <label>
+            <num n="5 v.">5 v.</num>
+         </label>
+         <title>Voûtes</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00029" type="figure">
+         <head>Trompe en niche</head>
+         <figDesc>
+            <label>
+               <num>29</num>
+            </label>
+            <title>Trompe en niche</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00030" type="figure">
+         <head>Trompe sur une ligne droite en tour ronde par la teste</head>
+         <figDesc>
+            <label>
+               <num>30</num>
+            </label>
+            <title>trompe sur une ligne droite en tour ronde par la teste</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   
+   <figure xml:id="t9Pl0011" type="plate" facs="#t9Facs0106">
+      <head>Chapitre 15 Toisé des arrières voussures</head>
+      <figDesc>
+         <locus from="#t9P86" to="#t9P87">entre les p. 86 et 87</locus>
+         <label>
+            <num n="6">6</num>
+         </label>
+         <title>Arrière-voussures</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00031" type="figure">
+         <head>Chapitre 15 Toisé des arrières voussures</head>
+         <figDesc>
+            <label>
+               <num>31</num>
+            </label>
+            <title>Elévation de la face géométralle d’une arrière voussure en platte
+               bande droite</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00032" type="figure">
+         <head>Chapitre 15 Toisé des arrières voussures</head>
+         <figDesc>
+            <label>
+               <num>32</num>
+            </label>
+            <title>Figure d’une arrière voussure</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00033" type="figure">
+         <head>Chapitre 15 Toisé des arrières voussures</head>
+         <figDesc>
+            <label>
+               <num>33</num>
+            </label>
+            <title>Figure d’une arrière voussure en plein ceintre</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0012" type="plate" facs="#t9Facs0107">
+      <head>Arrières voussures</head>
+      <figDesc>
+         <locus from="#t9P86" to="#t9P87">entre les p. 86 et 87</locus>
+         <label>
+            <num n="6 v.">6 v.</num>
+         </label>
+         <title>Arrière-voussures</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00034" type="figure">
+         <head>Arrières voussures</head>
+         <figDesc>
+            <label>
+               <num>34</num>
+            </label>
+            <title>Arrière voussure en niche</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00035" type="figure">
+         <head>Arrières voussures</head>
+         <figDesc>
+            <label>
+               <num>35</num>
+            </label>
+            <title>Arrière voussure en Saint-Antoine</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00036" type="figure">
+         <head>Arrières voussures</head>
+         <figDesc>
+            <label>
+               <num>36</num>
+            </label>
+            <title>Arrière voussure de Marseille</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   
+   <figure xml:id="t9Pl0013" type="plate" facs="#t9Facs0116">
+      <head>Moulures</head>
+      <figDesc>
+         <locus from="#t9P94" to="#t9P95">entre les p. 94 et 95</locus>
+         <label>
+            <num n="7">7</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <!-- FIGURES A DECRIRE -->
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0014" type="plate" facs="#t9Facs0117">
+      <head/>
+      <figDesc>
+         <locus from="#t9P94" to="#t9P95">entre les p. 94 et 95</locus>
+         <label>
+            <num n="7 v.">7 v.</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   
+   <figure xml:id="t9Pl0015" type="plate" facs="#t9Facs0128">
+      <head>Chap. 17 Toisé des ornements d’architecture</head>
+      <figDesc>
+         <locus from="#t9P104" to="#t9P105">entre les p. 104 et 105</locus>
+         <label>
+            <num n="8">8</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00037" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>37</num>
+            </label>
+            <title>Entablement dorique (70)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00038" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>38</num>
+            </label>
+            <title>Mutules doriques (71)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00039" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>39</num>
+            </label>
+            <title>Modillons ioniques (72)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00040" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>40</num>
+            </label>
+            <title>Modillons corinthiens galbés (73)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00041" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>41</num>
+            </label>
+            <title>Mutules ou modillons de l’ordre composé (74)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0016" type="plate" facs="#t9Facs0129">
+      <head/>
+      <figDesc>
+         <locus from="#t9P104" to="#t9P105">entre les p. 104 et 105</locus>
+         <label>
+            <num n="8 v.">8 v.</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00042" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>42</num>
+            </label>
+            <title>Bossages aux clefs des arcades (75)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00043" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>43</num>
+            </label>
+            <title>Bossages pour les consoles (76)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00044" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>44</num>
+            </label>
+            <title>Pilastres adossés contre les murs (77)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00045" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>45</num>
+            </label>
+            <title>Pilastres isolés (78)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00046" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>46</num>
+            </label>
+            <title>Colonnes isolées (79)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00047" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>47</num>
+            </label>
+            <title>Colonnes engagées dans les murs (80)</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   
+   <figure xml:id="t9Pl0017" type="plate" facs="#t9Facs0166">
+      <head>Toisé des planchers</head>
+      <figDesc>
+         <locus from="#t9P40" to="t9P41">entre les p. 140 et 141</locus>
+         <label>
+            <num n="9">9</num>
+         </label>
+         <title>Charpenterie</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00048" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>48</num>
+            </label>
+            <title>Plan d’une salle où les solives du plancher sont posées sur des
+               sablières au long du mur mitoyen BC et du mur de refend FD</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00049" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>49</num>
+            </label>
+            <title>Plan d’une chambre entre le mur mitoyen IK et le mur de refend DE
+               dans l’épaisseur duquel sont des tuyaux de cheminées de la salle
+               renfoncée</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00050" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>50</num>
+            </label>
+            <title>Plan d’une antichambre où la solive d’enchevestrure 13 est parallèle
+               au mur de refend FG</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00051" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>51</num>
+            </label>
+            <title>Plan d’un cabinet où les solives de plancher portent d’un bout sur
+               le mur de face GH, et de l’autre bout sur la cloison de refend
+               EI</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00052" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>52</num>
+            </label>
+            <title>Planchers où il y a des grandes bayes pour des passages d’escaliers
+               de dégagement comme la baye 20 à côté de la garderobe à la 5e
+               figure</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+   <figure xml:id="t9Pl0018" type="plate" facs="#t9Facs0167">
+      <head/>
+      <figDesc>
+         <locus from="#t9P40" to="t9P41">entre les p. 140 et 141</locus>
+         <label>
+            <num n="9 v.">9 v.</num>
+         </label>
+         <title>Charpenterie</title>
+         <dimensions/>
+         <desc>plume et encre noire</desc>
+      </figDesc>
+      <figure xml:id="t9Fig00053" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>53</num>
+            </label>
+            <title>Pan de bois de face sur une rue</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00054" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>54</num>
+            </label>
+            <title>Cloisons de refend entre les murs BC, FE, IK</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <figure xml:id="t9Fig00055" type="figure">
+         <head>Ornements</head>
+         <figDesc>
+            <label>
+               <num>55</num>
+            </label>
+            <title>Plan d’un escalier</title>
+            <desc>plume et encre noire</desc>
+         </figDesc>
+      </figure>
+      <note/>
+   </figure>
+</div>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes de la présentation des manuscrits T -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi d'un numéro d'ordre à quatre unités -->
+
+<div xmlns="http://www.tei-c.org/ns/1.0"
+    xml:lang="fre" type="notes" xml:id="sN">
+    <head>Notes</head>
+    <!-- RMQ : notes de test -->
+    <note xml:id="sN0001">
+        <p> À la différence de sa source
+            (Bourdot de Richebourg), Desgodets adopte un chemin de
+            présentation des extraits de coutume en spirale à
+            partir de la capitale.</p>
+    </note>
+    <note xml:id="sN0002">
+        <p> Nous n’avons publié que les
+            éditions qui apportent un supplément d’information,
+            pas les rééditions à l’identique. </p>
+    </note>
+    <note xml:id="sN0003">
+        <p> Sur ce personnage lire : Hervé
+            <hi rend="smallcaps">Collet</hi>, « Claude
+            Goupy, architecte et seigneur du fief de Meaux à
+            Eaubonne » (<ref> "http://valmorency.fr/14.html"
+                <ref target="http://valmorency.fr/14.html">http://valmorency.fr/14.html</ref>
+            </ref>), consulté le 5 juillet 2013. Notice sur
+            Claude-Martin Goupy sur <ref target="numbering.xml">http://fr.wikipedia.org/wiki/Claude-Martin_Goupy</ref>,
+            dernière modification : 20 février 2013, consulté
+            le 22 mai 2013. Notice sur Martin I Goupy sur <ref target="styles.xml">http://fr.wikipedia.org/wiki/Martin_I_Goupy</ref>,
+            dernière modification : 23 novembre 2012, consulté
+            le 7 mai 2013. Généalogie des Goupy, <ref target="stylesWithEffects.xml">http://www.genea-bdf.org/BasesDonnees/genealogies/goupy.htm</ref>
+            , consulté me 22 mai 2013.</p>
+    </note>
+    <note xml:id="sN0004">
+        <p> Robert <hi rend="smallcaps">Carvais</hi>, « Creating a Legal Field:
+            Building Customs and Norms in Modern French Law »,
+            <hi rend="italic">in</hi> K.-E. <hi rend="smallcaps">Kurrer</hi>, W. <hi rend="smallcaps">Lorenz</hi> et V. <hi rend="smallcaps">Wetzk</hi> (éd.), <hi rend="italic">Proceedings of the Third
+                International Congress on Construction
+                History</hi>, Cottbus, Brandenburg University
+            of Technology, 2009, p. 321-328.</p>
+    </note>
+    <note xml:id="sN0005">
+        <p> Robert <hi rend="smallcaps">Carvais</hi>,
+            Préparation d’un article sur Savot, précurseur de
+            Desgodets pour les Mélanges Hélène Vérin sous le
+            titre L’éclat technique. La construction historique
+            des savoirs de l’action, XVI<hi rend="superscript">e</hi> - XXI<hi rend="superscript">e</hi>
+            siècle (Apports et prolongements de l’œuvre
+            d’Hélène Vérin) que je co-dirige avec
+            Anne-Françoise Garçon et André Grelon (à paraître
+            Chez Classiques Garnier).</p>
+    </note>
+    <note xml:id="sN0006">
+        <p> Voir ce qui sera dit de Bullet
+            au regard du travail de Desgodets dans son cours
+            sur le toisé. </p>
+    </note>
+    <note xml:id="sN0007">
+        <p> Pour s’en persuader, il convient de parcourir les
+            procès-verbaux de l’Académie royale d’architecture
+            dans les années qui précèdent la nomination
+            d’Antoine Desgodets comme professeur d’architecture
+            à l’Académie. Voir en 1715 la volonté de
+            l’institution de porter à l’ordre du jour une
+            réflexion des plus « utiles » sur les « us et
+            coutumes, qui contiennent deux parties, savoir les
+            servitudes et le toisé » (H. Lemonnier, t. IV, p.
+            84 et s.). </p>
+    </note>
+    <note xml:id="sN0008">
+        <p> Préface, p. VII.</p>
+    </note>
+    <note xml:id="sN0009">
+        <p> Robert <hi rend="smallcaps">Carvais</hi>, « Un
+            traité des servitudes chez les architectes » dans
+            Journée d’études organisée par le projet
+            « Desgodets » sélectionné par l’Agence nationale de
+            la recherche (ANR) dans le cadre du programme
+            « Corpus et outils de la recherche en sciences
+            humaines et sociales » et l’Institut national
+            d’histoire de l’art (INHA), 31 mars 2010 (à
+            paraître).</p>
+    </note>
+    <note xml:id="sN0010">
+        <p> Les pages sont préparées par
+            le copiste et réglées à la mine de plomb. </p>
+    </note>
+    <note xml:id="sN0011">
+        <p> Charles A. <hi rend="smallcaps">Bourdot de Richebourg</hi>,
+            avocat au Parlement, <hi rend="italic">Nouveau
+                Coutumier général ou Corps des coutumes
+                générales et particulières de France et des
+                provinces connues sous le nom de Gaules</hi>,
+            Paris, 1724, 4 volumes<hi rend="italic">
+                in-folio.</hi>
+        </p>
+    </note>
+    <note xml:id="sN0012">
+        <p> Robert <hi rend="smallcaps">Carvais</hi>, « La
+            coutume de Paris, épitomé du droit français sous
+            l’Ancien Régime ? L’exemple des servitudes » dans
+            Thierry <hi rend="smallcaps">Belleguic</hi> et
+            Laurent <hi rend="smallcaps">Turcot</hi> (dir.),
+            <hi rend="italic">Les histoires de Paris
+                (XVI</hi>
+            <hi rend="italic superscript">e</hi>
+            <hi rend="italic superscript">e</hi>
+            <hi rend="italic"> siècle)</hi>, Paris, Éditions
+            Hermann, 2012, 2 vol., t. 1, p. 333-358.</p>
+    </note>
+    <note xml:id="sN0013">
+        <p> En 1728 paraît un ouvrage anonyme, attribué à
+            Tiercelet (Gilles ou Augustin-Claude) sous le titre
+            <hi rend="italic">Architecture moderne ou l’Art
+                de bien bâtir pour toutes sortes de personnes
+                tant pour les maisons des particuliers que pour
+                les palais</hi>, en 2 volumes. L’originalité de
+            cet ouvrage réside surtout dans son contenu. Divisé
+            en cinq parties ou « traités », il pourrait
+            représenter, à lui seul, le savoir complet des
+            experts. En effet, sa première partie porte sur
+            « la construction et l’emploi des matériaux », le
+            quatrième sur le « toisé des bâtiments selon la
+            coutume de Paris » et la cinquième sur les « us et
+            coutumes concernant les bâtiments et rapports des
+            jurés experts ». De plus le 3<hi rend="superscript">e</hi> livre concerne la manière de faire un
+            devis, question éminemment juridique. En réalité,
+            cet ouvrage inachevé est le résultat de ce que
+            l’Académie souhaitait transmettre à ceux qu’elle
+            était censée former. </p>
+    </note>
+    <note xml:id="sN0014">
+        <p>
+            <hi rend="italic">Ou Traité de la décoration,
+                distribution &amp; construction des
+                bâtiments</hi>, commencé par feu J.F. Blondel,
+            architecte du roi &amp; Professeur de l’Académie
+            royale d’architecture et continué par M. Patte,
+            architecte de S.A.S. Mgr le Pince Palatin, duc
+            régnant de deux-ponts, Paris, 1771-1777, 6 vol., t.
+            5, p. 438-464.</p>
+    </note>
+    <note xml:id="sN0015">
+        <p> Les explications dépassent
+            rarement les quelques pages par article et ne sont
+            abordés strictement que les servitudes et les
+            rapports d’experts.</p>
+    </note>
+    <note xml:id="sN0016">
+        <p> L’expression est utilisée par
+            l’architecte bisontin Ramelet qui dans ses lois
+            relatives aux bâtiments (1822) écrit en
+            avertissement : « … j’ai imité Desgodets, comme on
+            peut s’en convaincre à la lecture de sa préface et
+            de son livre. Je ne pouvais suivre, en tout, un
+            meilleur modèle, bien que je sois loin de l’avoir
+            égalé ». Voir Robert <hi rend="smallcaps">Carvais</hi>, « Comment traduire les <hi rend="italic">Loix des Bâtiments</hi> après
+            l’avènement du Code civil ? » dans les Journées
+            d’études consacrées à « Traduire l’architecture –
+            2 » organisées par le CNAM et l’INHA organisées par
+            Valérie <hi rend="smallcaps">Nègre</hi> et
+            moi-même, Paris, INHA, 14 et 15 décembre 2011 [à
+            paraître].</p>
+    </note>
+    <note xml:id="sN0017">
+        <p> Sur l’uniformité du droit
+            de la construction pour l’ensemble des
+            Français, lire de l’architecte <hi rend="smallcaps">Madin</hi>, <hi rend="italic">l’Extrait de l’Essai sur les
+                Loix des bâtiments</hi>, Paris, An V,
+            1797.</p>
+    </note>
+    <note xml:id="sN0018">
+        <p> Nous connaissons fort peu
+            de choses sur cet auteur. P. Lepage apparaît
+            sur la page de titre comme « ancien avocat ».
+            C’est dire qu’il a servi sous l’Ancien régime.
+            En effet, il est, entre autres, l’auteur <hi rend="italic">d’Eléments de la science du
+                droit, à l’usage de toutes les matières et
+                de toutes les classes de citoyens</hi> (deux
+            éditions en 1819 et 1823) mais surtout d’un <hi rend="italic">Traité des saisies et des
+                contraintes</hi> en 1807, 2 vol. in-8° où il
+            se nomme « Ancien avocat au Parlement de Paris,
+            auteur du <hi rend="italic">Nouveau Style de la
+                Procédure Civile, des Questions sur le Code
+                Judiciaire</hi> » et peut-être d’un <hi rend="italic">Traité des devis et marchés
+                    selon les codes Napoléon et de
+                    commerce</hi>, signé L…, ancien avocat (Paris,
+            Garnery, 1809). Il a par ailleurs collaboré au
+            <hi rend="italic">Nouveau Denisart.</hi> Ce
+            juriste se serait spécialisé dans la reprise
+            éditoriale des classiques du droit de l’Ancien
+            Régime. On apprend que l’auteur s’honore d’être
+            l’ami de M. Try, substitut de M. le procureur
+            général impérial, près la Cour d’Appel du
+            département de la Seine, auteur du projet de
+            Code de procédure auquel il aurait fait relire
+            son manuscrit.</p>
+    </note>
+    <note xml:id="sN0019">
+        <p> Robert <hi rend="smallcaps">Carvais</hi>, « For a
+            Comparative Study of Construction Laws » <hi rend="italic">in</hi> Robert <hi rend="smallcaps">Carvais</hi>, André <hi rend="smallcaps">Guillerme</hi>, Valérie <hi rend="smallcaps">Nègre</hi> et Joël <hi rend="smallcaps">Sakarovitch</hi>, <hi rend="italic">Nuts &amp; Bolts of
+                Construction History. Culture, Technology
+                and Society</hi>, Paris, Picard, 2012, 3
+            vol., t. 1, p. 475-487.</p>
+    </note>
+    <note xml:id="sN0020">
+        <p> Les œuvres du juriste P.
+            Lepage furent traduites en italien, puisque le
+            Code civil régnait dans ce pays sous l’ère
+            napoléonienne. Nous avons repéré plusieurs
+            éditions des <hi rend="italic">Loix des
+                bâtimens</hi>, un 2<hi rend="superscript">e</hi>, suivant celle éditée à Naples, à
+            Fuligno en 1854 et une autre romaine qui la
+            précède en 1845.</p>
+    </note>
+    <note xml:id="sN0021">
+        <p> Voir les travaux de
+            l’architecte James <hi rend="smallcaps">Elmes</hi>, <hi rend="italic">A Practical
+                Treatise on architectural
+                Jurisprudence</hi>, London, 1827, p. IV qui
+            prend exemple sur Desgodets pour réclamer à son
+            souverain un nouveau code de la construction.
+            Son ouvrage qui emprunte au droit romain et au
+            droit jurisprudentiel anglo-saxon se présent
+            comme un dictionnaire analytique de notions du
+            champ. Voir également James <hi rend="smallcaps">Kent</hi>, <hi rend="italic">Commentaries in American
+                Law</hi>, New York, 1828, vol. 3, p. 344-362
+            : “Of easements and aquatic rights” et surtout
+            p. 350.</p>
+    </note>
+    <note xml:id="sN0022">
+        <p> Merci à Edoardo Piccoli pour cette information. <hi rend="italic">Istruzioni diverse concernenti
+            l’officio dell’architetto civile</hi>, Lugano,
+            1766, p. XIII.</p>
+    </note>
+    <note xml:id="sN0023">
+        <p> T. 3, 1785, dans son chapitre
+            VIII intitulé “Della Giurisprudenza relativa all’
+            Architettura”, 298-315.</p>
+    </note>
+</div>

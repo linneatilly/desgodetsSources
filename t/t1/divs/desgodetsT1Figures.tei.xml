@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO : ajouter les références facs, renseigner locus et les dimensions -->
+<!-- exemple -->
+<!--
+   <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+      <head>Plan de léglise de sainte Sabine <lb/>À Rome</head><!-\- titre tel qu'il apparaît sur la planche -\->
+      <figDesc>
+         <locus from="#c2F9v">p. 16</locus><!-\- pagination dans le volume -\->
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Plan de l'église de Sainte-Sabine à Rome</title><!-\- légende normalisée -\->
+         <dimensions>
+            <height quantity="21" unit="mm" /><!-\- dimension à rentrer d'un coup pour les planches -\->
+            <width quantity="42" unit="mm" />
+         </dimensions>
+      </figDesc>
+   </figure>-->
+
+<!-- exemple avec des figures dans la planche -->
+<!--
+   <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+      <head>Plan de léglise de sainte Sabine <lb/>À Rome</head><!-\- titre tel qu'il apparaît sur la planche -\->
+      <figDesc>
+         <locus from="#c2F9v">p. 16</locus><!-\- pagination dans le volume -\->
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Plan de l'église de Sainte-Sabine à Rome</title><!-\- légende normalisée -\->
+         <dimensions>
+            <height quantity="21" unit="mm" /><!-\- dimension à rentrer d'un coup pour les planches -\->
+            <width quantity="42" unit="mm" />
+         </dimensions>
+      </figDesc>
+      <!-\- figure dans une planche -\->
+      <figure xml:id="c2Fig0001" type="figure">
+         <head><!-\-Titre de la figure tel qu'il apparaît sur la planche-\-></head>
+         <figDesc>
+            <label>
+               <num>1</num>
+            </label>
+            <title><!-\-Légende normalisée de la figure-\-></title>
+            <dimensions/> <!-\- si nécessaire comme ci-dessus -\->
+            <desc><!-\-description des techniques-\-></desc>
+         </figDesc>
+         <note><!-\- Peut servir pour enregistrer un commentaire au besoin -\-></note>
+      </figure>
+   </figure>-->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" type="figures" xml:id="t1BackFr01">
+   <figure xml:id="t1Fig0001" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="1">1</num>
+         </label>
+         <title>Plan d’un paralellograme obliangle ABCD voûté en berceau</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0002" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Trapèze GHIL</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0003" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="3">3</num>
+         </label>
+         <title>Plan de quatre voûtes d’arête</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0004" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="4">4</num>
+         </label>
+         <title>Polygone régulier</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0005" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="5">5</num>
+         </label>
+         <title>Voûte de cloître sur plan octogone</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0006" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="6">6</num>
+         </label>
+         <title>Section de voûte en plein cintre</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0007" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="7">7</num>
+         </label>
+         <title>Section de voûte sphérique</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0008" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="8">8</num>
+         </label>
+         <title>Plan de voûte sur noyau de plan carré</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0009" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="9">9</num>
+         </label>
+         <title>Plan de voûte sur noyau de plan rectangulaire</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0010" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="10">10</num>
+         </label>
+         <title>Plan de voûte sur noyau de plan circulaire</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0011" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="11">11</num>
+         </label>
+         <title>Plan de voûte sur noyau de plan ovale</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0012" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="12">12</num>
+         </label>
+         <title>Voûte rampante</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0013" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="13">13</num>
+         </label>
+         <title>Voûte en vis Saint-Gilles sur plan circulaire</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0014" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="14">14</num>
+         </label>
+         <title>Voûte en vis Saint-Gilles sur plan carré</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0015" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="15">15</num>
+         </label>
+         <title>Voûte en vis Saint-Gilles sur plan ovale</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0016" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="16">16</num>
+         </label>
+         <title>Voûte en vis Saint-Gilles sur plan carré long</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0017" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="17">17</num>
+         </label>
+         <title>Voûtes en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0018" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="18">18</num>
+         </label>
+         <title>Voûtes en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0019" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="19">19</num>
+         </label>
+         <title>Voûtes en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0020" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="20">20</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0021" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="21">21</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0022" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="22">22</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0023" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="23">23</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0024" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="24">24</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0025" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="25">25</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0026" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="26">26</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0027" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="27">27</num>
+         </label>
+         <title>Voûte en trompe</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0028" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="28">28</num>
+         </label>
+         <title>Exemples d’arrière-voussures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0029" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="29">29</num>
+         </label>
+         <title>Exemples d’arrière-voussures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0030" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="30">30</num>
+         </label>
+         <title>Exemples d’arrière-voussures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0031" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="31">31</num>
+         </label>
+         <title>Exemples d’arrière-voussures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0032" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="32">32</num>
+         </label>
+         <title>Exemples d’arrière-voussures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0033" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="33">33</num>
+         </label>
+         <title>Exemples d’arrière-voussures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0034" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="34">34</num>
+         </label>
+         <title>Piédestaux</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0035" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="35">35</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0036" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="36">36</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0037" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="37">37</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0038" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="38">38</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0039" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="39">39</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0040" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="40">40</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0041" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="41">41</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0042" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="42">42</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0043" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="43">43</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0044" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="44">44</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0045" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="45">45</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0046" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="46">46</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0047" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="47">47</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0048" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="48">48</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0049" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="49">49</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0050" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="50">50</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0051" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="51">51</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0052" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="52">52</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0053" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="53">53</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0054" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="54">54</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0055" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="55">55</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0056" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="56">56</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0057" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="57">57</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0058" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="58">58</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0059" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="59">59</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0060" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="60">60</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0061" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="61">61</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0062" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="62">62</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0063" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="63">63</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0064" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="64">64</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0065" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="65">65</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0066" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="66">66</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0067" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="67">67</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0068" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="68">68</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0069" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="69">69</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0070" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="70">70</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0071" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="71">71</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0072" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="72">72</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0073" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="73">73</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0074" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="74">74</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0075" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="75">75</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0076" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="76">76</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0077" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="77">77</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0078" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="78">78</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0079" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="79">79</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0080" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="80">80</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0081" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="81">81</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0082" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="82">82</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0083" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="83">83</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0084" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="84">84</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0085" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="85">85</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0086" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="86">86</num>
+         </label>
+         <title>Moulures</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0087" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="87">87</num>
+         </label>
+         <title>tableau</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0088" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="88">88</num>
+         </label>
+         <title>manteau de cheminée</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0089" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="89">89</num>
+         </label>
+         <title>tuyau de cheminée</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0090" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="90">90</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0091" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="91">91</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0092" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="92">92</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0093" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="93">93</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0094" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="94">94</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0095" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="95">95</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0096" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="96">96</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0097" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="97">97</num>
+         </label>
+         <title>escalier</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0098" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="98">98</num>
+         </label>
+         <title>escalier</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0099" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="99">99</num>
+         </label>
+         <title>charpente</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t1Fig0100" type="figure" facs="#t1Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t1"/>
+         <label>
+            <num n="100">100</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encres noire et rouge</desc>
+      </figDesc>
+      <note/>
+   </figure>
+</div>

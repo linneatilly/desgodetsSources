@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO : ajouter les références facs, renseigner locus et les dimensions -->
+<!-- exemple -->
+<!--
+   <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+      <head>Plan de léglise de sainte Sabine <lb/>À Rome</head><!-\- titre tel qu'il apparaît sur la planche -\->
+      <figDesc>
+         <locus from="#c2F9v">p. 16</locus><!-\- pagination dans le volume -\->
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Plan de l'église de Sainte-Sabine à Rome</title><!-\- légende normalisée -\->
+         <dimensions>
+            <height quantity="21" unit="mm" /><!-\- dimension à rentrer d'un coup pour les planches -\->
+            <width quantity="42" unit="mm" />
+         </dimensions>
+      </figDesc>
+   </figure>-->
+
+<!-- exemple avec des figures dans la planche -->
+<!--
+   <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+      <head>Plan de léglise de sainte Sabine <lb/>À Rome</head><!-\- titre tel qu'il apparaît sur la planche -\->
+      <figDesc>
+         <locus from="#c2F9v">p. 16</locus><!-\- pagination dans le volume -\->
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>Plan de l'église de Sainte-Sabine à Rome</title><!-\- légende normalisée -\->
+         <dimensions>
+            <height quantity="21" unit="mm" /><!-\- dimension à rentrer d'un coup pour les planches -\->
+            <width quantity="42" unit="mm" />
+         </dimensions>
+      </figDesc>
+      <!-\- figure dans une planche -\->
+      <figure xml:id="c2Fig0001" type="figure">
+         <head><!-\-Titre de la figure tel qu'il apparaît sur la planche-\-></head>
+         <figDesc>
+            <label>
+               <num>1</num>
+            </label>
+            <title><!-\-Légende normalisée de la figure-\-></title>
+            <dimensions/> <!-\- si nécessaire comme ci-dessus -\->
+            <desc><!-\-description des techniques-\-></desc>
+         </figDesc>
+         <note><!-\- Peut servir pour enregistrer un commentaire au besoin -\-></note>
+      </figure>
+   </figure>-->
+
+<div xmlns="http://www.tei-c.org/ns/1.0" type="figures" xml:id="t5BackFr01">
+   <figure xml:id="t5Pl0001" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="1">1</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0002" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="2">2</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0003" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="3">3</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0004" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="4">4</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0005" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="5">5</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0006" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="6">6</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0007" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="7">7</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0008" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="8">8</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0009" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="9">9</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0010" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="10">10</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0011" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="11">11</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0012" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="12">12</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0013" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="13">13</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0014" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="14">14</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0015" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="15">15</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0016" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="16">16</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0017" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="17">17</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0018" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="18">18</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0019" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="19">19</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0020" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="20">20</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0021" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="21">21</num>
+         </label>
+         <title>voûtes</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0022" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="22">22</num>
+         </label>
+         <title>arrière-voussures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0023" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="23">23</num>
+         </label>
+         <title>arrière-voussures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0024" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="24">24</num>
+         </label>
+         <title>arrière-voussures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0025" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="25">25</num>
+         </label>
+         <title>arrière-voussures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0026" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="26">26</num>
+         </label>
+         <title>arrière-voussures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0027" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="27">27</num>
+         </label>
+         <title>arrière-voussures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0028" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="28">28</num>
+         </label>
+         <title>arrière-voussures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0029" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="29">29</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0030" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="30">30</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0031" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="31">31</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0032" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="32">32</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0033" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="33">33</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0034" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="34">34</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0035" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="35">35</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0036" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="36">36</num>
+         </label>
+         <title>moulures</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0037" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="37">37</num>
+         </label>
+         <title>ornements d’architecture</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0038" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="38">38</num>
+         </label>
+         <title>ornements d’architecture</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0039" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="39">39</num>
+         </label>
+         <title>ornements d’architecture</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0040" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="40">40</num>
+         </label>
+         <title>ornements d’architecture</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0041" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="41">41</num>
+         </label>
+         <title>plans de colonne</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0042" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="42">42</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+   <figure xml:id="t5Pl0043" type="plate" facs="#t5Facs">
+      <head/>
+      <figDesc>
+         <locus from="#t5"/>
+         <label>
+            <num n="43">43</num>
+         </label>
+         <title>charpenterie</title>
+         <dimensions/>
+         <desc>encre noire</desc>
+      </figDesc>
+      <note/>
+   </figure>
+</div>

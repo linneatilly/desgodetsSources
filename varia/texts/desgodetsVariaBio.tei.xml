@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/desgodetsSchemaTEI.rnc"
+                           type="application/relax-ng-compact-syntax"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    Fichier biographique de Biographie de Desgodets 
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+-->
+<!-- TODO : remplacer le faux-texte -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <!-- mentions de titre et de responsabilité -->
+            <titleStmt>
+                <title xml:lang="fre" type="main">Antoine Desgodets</title>
+                <title xml:lang="fre" type="sub">Biographie de Desgodets</title>
+                <!-- mention de responsabilité principale (responsable scientifique de l'édition) -->
+                <principal>
+                    <persName ref="#RC">
+                        <forename>Robert</forename>
+                        <surname>Carvais</surname>
+                        <affiliation>
+                            <orgName>Centre National de la Recherche Scientifique</orgName>
+                            <orgName type="acronym">CNRS</orgName>
+                            <roleName>responsable d'ANR</roleName>
+                        </affiliation>
+                    </persName>
+                </principal>
+                <!-- organismes qui ont financé l'opération -->
+                <funder>
+                    <orgName>Agence Nationale de Recherche</orgName>
+                    <orgName type="acronym">ANR</orgName>
+                    <date from="2008" to="2013">2008-2013</date>
+                </funder>
+                <funder>
+                    <orgName>Association Française d'Histoire de la Construction</orgName>
+                    <orgName type="acronym">AFHC</orgName>
+                    <date when="2013">2013</date>
+                </funder>
+                <!-- mentions de responsabilité secondaires -->
+                <respStmt>
+                    <resp key="prg">modélisation XML-TEI</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="aut">auteurs</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+                <respStmt>
+                    <resp key="mrk">encodage</resp>
+                    <persName ref="#EC">
+                        <forename>Emmanuel</forename>
+                        <surname>Château</surname>
+                        <email>emchateau@laposte.net</email>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- mention d'édition -->
+            <editionStmt>
+                <edition n="1">première édition électronique, <date when="2013"
+                        >2013</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <!-- information sur la publication électronique -->
+            <publicationStmt>
+                <date when="2013">2013</date>
+                <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
+                <idno>variaBio</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Centre de théorie et d'analyse du droit (UMR 7074)</orgName>
+                    <orgName type="acronym">CTAD</orgName>
+                    <address>
+                        <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                        <addrLine>UFR Droit et Science politique</addrLine>
+                        <addrLine>Bâtiment F. - Bur. 404</addrLine>
+                        <addrLine>200, Avenue de la République</addrLine>
+                        <addrLine>92001 Nanterre Cedex</addrLine>
+                        <addrLine>France</addrLine>
+                        <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
+                        <addrLine>contact@desgodets.fr</addrLine>
+                    </address>
+                </publisher>
+                <availability status="restricted" xml:id="variaBioTextLicence">
+                    <!-- TODO : <licence> à ajouter partout -->
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"
+                        >
+                        <p>Ce(tte) œuvre est mise à disposition selon les termes
+                            de la Licence Creative Commons Attribution - Pas
+                            d’Utilisation Commerciale - Partage dans les Mêmes
+                            Conditions 3.0 France.</p>
+                        <graphic
+                            url="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" />
+                    </licence>
+                    <p>Le Centre de théorie et d'analyse du droit
+                        (UMR 7074) met à disposition cette ressource électronique
+                        structurée, protégée par le code de la propriété
+                        intellectuelle sur le droit d'auteur (L111-1) et sur les bases
+                        de données (L341-1), selon les termes de la licence Creative
+                        Commons : « Paternité - Pas d'Utilisation Commerciale - Pas de
+                        Modification ; 3.0 France ». <lb />Cette licence est
+                        disponible en ligne : <ref
+                            target="http://creativecommons.org/licences/by-nc-sa/3.0/fr"
+                            >http://creativecommons.org/licenses/by-nc/3.0/fr/</ref> ou
+                        par courrier postal à Creative Commons, 171 Second Street,
+                        Suite 300, San Francisco, California 94105, USA.</p>
+                    <p>Pas d'Utilisation Commerciale : Le Centre de théorie et
+                        d'analyse du droit souhaite encourager l'utilisation et
+                        l'amélioration de ses ressources électroniques, pour les
+                        intérêts de l'enseignement et de la recherche. Toute
+                        autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès du Centre de théorie et d'analyse du droit.</p>
+                    <p>Paternité : Le Centre de théorie et d'analyse du droit demande
+                        à ce que toute publication dérivée de ses ressources
+                        électroniques comporte : <lb />1. le nom du Centre de théorie
+                        et d'analyse du droit et, pour les publications électroniques,
+                        son logo <lb />2. l'URI permettant d'accéder à la page citée
+                        sur notre site, ou à la page d'accueil de la ressource
+                        <lb />3. la date du fichier source utilisé. </p>
+                    <p>Vous êtes libres de remixer, arranger et adapter cette œuvre à
+                        des fins non commerciales, tant que vous nous créditez et que
+                        les nouvelles œuvres sont diffusées selon les mêmes
+                        conditions. Cependant, afin de mieux servir la communauté
+                        scientifique, le Centre de théorie et d'analyse du droit
+                        s'engage à conserver et à toujours offrir publiquement la
+                        version la plus à jour de ses ressources électroniques par une
+                        URI pérenne. Il s'engage en conséquence à les corriger et à
+                        les améliorer, à intégrer les contributions qui lui sont
+                        soumises (après validation par un comité scientifique), et à
+                        référencer l'origine de ces contributions. Toute modification
+                        de la ressource qui ne serait pas reversée à la version de
+                        référence sous l'autorité éditoriale du Centre de théorie et
+                        d'analyse risquerait en conséquence d'être perdue, afin de ne
+                        pas disperser les contributions et de permettre les meilleures
+                        conditions possibles de collaboration scientifique, nous vous
+                        invitons à nous en faire part.</p>
+                </availability>
+            </publicationStmt>
+            <!-- ajout d'un élément pour traiter le corpus général et réduire la hiérarchie des titres -->
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Les cours de Desgodets</title>
+                <title xml:lang="fre" type="sub">une édition électronique</title>
+                <idno type="URI">http://www.desgodets.net</idno>
+            </seriesStmt>
+            <!-- ajout d'un élément pour DC.description -->
+            <!--<notesStmt>
+                <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note>
+                <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note>
+            </notesStmt>-->
+            <!-- description de la source -->
+            <sourceDesc>
+                <p xml:id="variaBio">Texte original : le texte a été créé sous forme
+                    électronique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des cours de Desgodets fait partie d'un programme de recherche sur la
+                    formalisation du savoir architectural au XVII<hi rend="superscript">e</hi>
+                    siècle.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <stdVals>
+                    <p>On utilise...</p>
+                </stdVals>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen d'un élément quote,
+                        soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique. Plus tard on fournira peut-être
+                    une expression régulière.</p>
+            </refsDecl>
+            <samplingDecl>
+                <p>Le manuscrit a été transcrit intégralement [dans certains cas ce ne sera pas le
+                    cas].</p>
+            </samplingDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2013">2013</creation>
+            <langUsage>
+                <language ident="fre" usage="100">Français (langue principale du corpus)</language>
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+                    <term>Architecture</term>
+                    <term>18e siècle</term>
+                    <term>France</term>
+                    <term>Architecture –– Philosophie</term>
+                </keywords>
+                <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>Architecture, Modern</term>
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                    <term>Architecture -- Philosophy</term>
+                </keywords>
+                <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2013-04-16" who="#EC">première version du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front xml:id="variaBioFront">
+            <titlePage xml:id="variaBioFront00">
+                <docTitle>
+                    <titlePart>Biographie de Desgodets</titlePart>
+                </docTitle>
+                <docAuthor>
+               <persName ref="#EC">Robert Carvais</persName>
+            </docAuthor>
+                <docDate>14 avril 2013</docDate>
+                <docEdition>version 0</docEdition>
+            </titlePage>
+            <div xml:id="variaBioFrontFr" xml:lang="fre">
+                <div xml:id="variaBioFrontFr01" type="abstract">
+                    <p>Si Antoine Desgodets est devenu le professeur de l’Académie que l’on connaît et dont la fonction et l’œuvre didactique sont étudiées et analysées sur le présent site, nous ne pouvons ignorer qu’il fut aussi un homme avec une histoire personnelle, familiale, patrimoniale.</p>
+                </div>
+                <div xml:id="variaBioFrontFr02" type="introduction">
+                    <head>Introduction</head>
+                    <p>Si Antoine Desgodets est devenu le professeur de l’Académie que
+                        l’on connaît et dont la fonction et l’œuvre didactique sont
+                        étudiées et analysées sur le présent site, nous ne pouvons
+                        ignorer qu’il fut aussi un homme avec une histoire personnelle,
+                        familiale, patrimoniale.</p>
+                    <p>S’il a beaucoup écrit sur l’architecture, sa pratique de la
+                        discipline reste plutôt modeste. Les traces de sa production :
+                        quelques pièces d’archives (devis, estimations d’honoraires,
+                        etc.) et de nombreux plans et dessins signés par lui, qui lui
+                        sont attribués ou anonymes qui restent en l’instance de l’être.
+                        La plupart de ceux-ci sont éparpillés dans de très nombreux
+                        fonds au quatre coins de la planète.</p>
+                    <p>Enfin reste son œuvre savante qu’elle soit pratique comme les
+                        expertises qu’il a commis pour l’Académie ou initialement à la
+                        demande de Colbert à travers le relevé minutieux des monuments
+                        romains dont il rendit compte en publiant ses fameux <hi rend="italic">Edifices antiques</hi> en 1682.</p>
+                </div>
+            </div>
+        </front>
+        <body xml:id="variaBioBody">
+            <div xml:id="variaBioBodyFr" xml:lang="fre">
+                <div xml:id="variaBioBodyFr01" type="chapter" n="1">
+                    <head>Biographie de Desgodets</head>
+                    <p>Une véritable biographie d’Antoine Desgodets reste à écrire. Si
+                        nous lui découvrons un père ébéniste à Paris, que savons-nous
+                        de la famille dont il était issu et de celle qu’il fonda ? De
+                        quelles sources disposons-nous pour écrire la biographie de cet
+                        architecte ? Plus largement, maintient-il des relations avec
+                        les gens des métiers du bâtiment ou cherche-t-il au contraire à
+                        s’en détacher dans un mouvement constant pour parvenir au
+                        sommet de la société des gens de cour ? Que sait-on de sa vie
+                        avant son entrée à l’Académie, et notamment jusqu’à ses 20
+                        ans ? La protection dont il bénéficia pour séjourner à Rome, en
+                        dehors de l’Académie de France, sa détention par des corsaires
+                        à Alger, restent aussi mystérieuses. De même, il serait
+                        intéressant de s’interroger sur les raisons qui le menèrent à
+                        la fonction de professeur à l’Académie royale d’architecture,
+                        comme premier véritable architecte, après une lignée composée
+                        exclusivement d’hommes de sciences, François Blondel – bien que
+                        celui-ci fut aussi architecte – et les La Hire. Quels réseaux
+                        fréquentait-il ? Celui des sociétés savantes (les hommes de
+                        science ou des techniques), les grandes agences d’architecture
+                        ou les jeunes architectes, les gens des finances (banquiers,
+                        spéculateurs…), les grands commis de l’Etat (surintendants,
+                        ministres) ou l’administration subalterne, la société
+                        provinciale, étrangère (en particulier, la Suède) ou
+                        parisienne, le monde artistique ou celui des artisans ? Sur
+                        cette question biographique nous avons élucidé certains
+                        points et nous réservons ce champ pour le colloque
+                        international qui reste à organiser en 2014.</p>
+                    <p>Comment écrire son nom ? Antoine Desgodetz a toujours signé son
+                        nom avec un –z terminal et pourtant, dès ses publications
+                        posthumes et la littérature scientifique le concernant, au
+                        mieux est-il cité « Desgodets » voire « Desgodets
+                        [Desgodetz] ». Nous avons tenté d’expliquer cette
+                            transformation<ref type="note" target="#variaBioN0001"/>, mais nous avons choisi de trancher pour la version
+                        moderne. Par ailleurs, son nom se trouve encore affublé du
+                        patronyme de « Babuty » qui se trouve être le nom de son gendre
+                        François Babuty, dit Babuty père, libraire qui a épousé en
+                        première noces sa fille, Marguerite Desgodets le 23 juillet
+                        1715. Celle-ci est décédée deux ans plus tard en 1717 après
+                        avoir donné naissance à un fils François Antoine qui fut
+                        abandonné par son père et élevé par son grand père Antoine
+                        Desgodets qu’il admirait beaucoup au point d’ajouter à son nom
+                        celui de l’architecte du roi. D’où la naissance de ce double
+                        patronyme « Babuty-Desgodets » et la confusion qui s’en suivit
+                        au point d’affubler le grand-père de ce double patronyme
+                        inversé « Desgodets-Babuty ». La confusion se développa
+                        d’autant plus que le petit-fils opta pour l’architecture et
+                        devint architecte-juré, expert des bâtiments, architecte du
+                        garde-meuble du roi.</p>
+                    <p>Enfin, hormis son œuvre savante qui commence à être cernée, peu
+                        de recherches ont été menées sur la carrière de l’artiste. Nous
+                        constatons que seules des notices de dictionnaires<ref type="note" target="#variaBioN0002"/> et quelques rares articles de fond ou récents travaux
+                            universitaires<ref type="note" target="#variaBioN0003"/> seraient susceptibles d’y être mobilisés. Or de
+                        nombreuses archives, notariales en l’occurrence, n’ont pas
+                        encore été dépouillées. Nous envisageons de publier, de manière
+                        collaborative, les différents actes qui ont été repérés et qui
+                        concernent principalement les moments clés de la vie de
+                        Desgodets (naissance, mariage, testament, inventaire, partage,
+                        etc.) et la gestion de son patrimoine (constitution de rente,
+                        rachat de l’amortissement de rente, bail, etc.).</p>
+                </div>
+                <div>
+                    <head>Pièces d'archives à caractère biographique</head>
+                    <list>
+                        <item>A.N. MC LIII 120-121, <date when="1699-06-22">22 juin
+                                1699</date>. Constitution de rente de 500 000 livres
+                            pour René Chauveau garantie par Desgodets.</item>
+                        <item>A.N. MC LIII 120-121, <date when="1699-08-21">21 aoust
+                                1699</date>. Constitution de rente de 500 000 livres au
+                            denier 20 en faveur du Prévost des Marchands par Anthoine
+                            Desgodetz, architecte du roi, pour la somme de 2000 livres
+                            à raison de 100 livres annuels dus audit Chauveau,
+                            remboursée par quittance passée par devant Coucault notaire
+                            qui en a la minute le 25 février 1714.</item>
+                        <item>A.N. MC LIII 120-121, <date when="1699-08-27">27 aoust
+                                1699</date>. Constitution de rente de 500 000 livres au
+                            denier 20 en faveur du Prévost des Marchands par René
+                            Chauveau, sculpteur, représenté par Desgodets, pour la
+                            somme de 2000 livres à raison de 100 livres annuels dues
+                            audit Chauveau.</item>
+                        <item>A.N. MC LIII 120-121, <date when="1699-08-27">27 aoust
+                                1699</date>. Constitution de rente de 500 000 livres au
+                            denier 20 en faveur du Prévost des Marchands par Pierre
+                            Mallerbe, chirurgien, représenté par Desgodets, pour la
+                            somme de 3600 livres à raison de 180 livres annuels dues
+                            audit Chauveau.</item>
+                        <item>A.N. MC LIII 120-121, <date when="1699-09-23">23
+                                septembre 1699</date>. Constitution de rente de 80 000
+                            livres pour Eurard Chauveau garantie par Desgodets.</item>
+                        <item>A.N. MC LIII 120-121, <date when="1699-12-02">2 décembre
+                                1699</date>. Réception de 3 600 livres pour le rachat
+                            de l’amortissement de 200 livres de rente en faveur du
+                            Trésor royal à prendre dans le million de livres de rente
+                            créés par l’Edit royal de janvier 1698, constitués sur les
+                            aides et gabelles, au profit d’Antoine Desgodetz qui en
+                            décharge le Trésor royal.</item>
+                        <item>A.N. MC LIII 120-121, <date when="1699-12-12">12 décembre
+                                1699</date>. Réception de 7 291 livres 19 sols pour le
+                            remboursement de 405 livres 15 s. 6 d. de rente en faveur
+                            du Trésor royal par René Chauveau, sculpteur représenté par
+                            Antoine Desgodetz. </item>
+                        <item>A.N. MC CXVIII, 281, <date when="1713-03-14">14 Mars
+                                1713</date>. Bail pour 6 ans par Antoine Desgodets,
+                            demeurant Rue St-Germain l’Auxerrois à Christophe Grimpel,
+                            laboureur à Aubervilliers de 5 arpents et demi et 18
+                            perches de terre en 10 pièces situés à Aubervilliers, La
+                            Chapelle, Bobigny et La Courneuve, moyennant 96 livres de
+                            loyer annuel.</item>
+                        <item>A.N. MC CXVIII, 282. <date when="1713-05-11">11 mai
+                                1713</date>. Transport par Antoine Desgodets et
+                            Madeleine Goujon de la Baronnière, sa femme, aux religieux
+                            de l’abbaye royale du Val-de-Grâce de 300 livres de rente
+                            au principal de 6000 livres, à titre de dot de
+                            Marie-Françoise Desgodets, leur fille, qui a fait
+                            profession dans ce couvent.</item>
+                        <item>A.N. MC X, 360. <date when="1723-05-14">14 mai
+                                1723</date>. Mainlevée par Antoine Desgodets,
+                            architecte des bâtiments du roi et professeur à l’académie
+                            royale d’architecture, demeurant rue
+                            Saint-Germain-l’Auxerrois, de la saisie-arrêt faite à sa
+                            requête sur Madeleine Dutel, veuve de Claude Lombard,
+                            écuyer, entre les mains du principal locataire d’une maison
+                            sise rue Saint-Denis appartenante à ladite Dame. </item>
+                        <item>A.N. MC LIII, 226, <date when="1724-05-22">22 mai
+                                1724</date>. Inventaire après décès de Louise
+                            Desgodets, fille d’Antoine Desgodets et épouse en seconde
+                            noces de Thomas Joachim Hébert.</item>
+                        <item>A.N. MC XXXIX, 271, <date when="1713-09-26">26 septembre
+                                1713</date>. Inventaire après décès de Nicolas
+                            Guillaume Daustel, premier époux de Louise Desgodets, fille
+                            d’Antoine Desgodets., </item>
+                        <item>A.N. MC CXVIII, 285. <date when="1713-12-01">1<hi
+                                    rend="superscript">er</hi> décembre 1713</date>.
+                            Transport par Andrée Cousin, veuve d’Auger de Marcillac
+                            dem. rue Vieille du Temple à Antoine D. de 150 livres de
+                            rentes au principal de 3000 livres, restant à racheter des
+                            300 livres de rente au principal de 6000 livres
+                            originairement constitués, par contrat passé devant Benoist
+                            le 7 mars 1684 par défunt Paul Gougeon de la Baronnière,
+                            peintre ordinaire des bâtiments du roi et Marguerite
+                            Chartier, sa femme, au profit de Geneviève de Marcillac de
+                            Néret, et dont un nouveau titre a été donné au profit de la
+                            veuve d’Auger de Marcillac, héritier de ladite demoiselle
+                            de Néret, par Charles Gougeon de la Baronnière, sculpteur,
+                            en qualité de tuteur des mineurs Leduc le 12 juillet
+                            1712.</item>
+                        <item>AN MC LIII, 245, Testament du <date when="1727-06-24">24
+                                juin 1727</date> d’Antoine Desgodets déposé chez
+                            Billeheu, notaire, le 20 mai 1728, insinué le 14 mars 1729
+                            (cf. plus haut).</item>
+                        <item>AN MC LIII, 289, Codicille de Madeleine Gougeon de la
+                            Baronnière au testament du <date when="1727-06-24">24 juin
+                                1727</date>.</item>
+                        <item>AN MC LIII, 245, Inventaire après décès d’Antoine
+                            Desgodets, <date when="1728-06-17">17 juin
+                            1728</date>.</item>
+                        <item>AN MC LIII, 245, Partage de succession du <date
+                                when="1728-07-05">5 juillet 1728</date>.</item>
+                        <item>Archives départementales la Seine (désormais ADS),
+                            DC6 219, f. 158, <date when="1729-03-14">14 mars
+                                1729</date>, insinuation du testament d’Antoine
+                            Desgodets.</item>
+                        <item>ADS, DC6 394, p. 73, Antoine Paul Desgodets, déclaration
+                            du <date when="1729-03-14">14 mars 1729</date>.</item>
+                        <item>ADS, DC6 231, f. 63 v°, codicille au testament Desgodets
+                            le <date when="1738-11-10">10 novembre 1738</date></item>
+                        <item>AN MC LIII, 310, <date when="1744-08-28">28 septembre
+                                1744</date>, Inventaire après décès de Madeleine
+                            Gougeon de la Baronnière, épouse d’Antoine Desgodets, rue
+                            de l’arbre à sec</item>
+                        <item>ADS, DC6 70, f. 24 et 25 r., <date when="1758-09-25">25
+                                septembre 1758</date>, testament de Paul Desgodets,
+                            prêtre du diocèse de Paris</item>
+                        <item>ADS, DC6 70, f. 263, <date when="1766-10-18">18 octobre
+                                1766</date>, renonciation de François Antoine Babuty
+                            Desgodets, architecte expert, et du garde meuble du
+                            roy.</item>
+                        <item>ADS, DC6 253, f. 204, insinuation du <date
+                                when="1772-01-31">31 janvier 1772</date> du testament
+                            de Magdeleine Jeanne Desgodets (fille d’Antoine Desgodets),
+                            notaire Neau, 25 janvier 1747.</item>
+                    </list>
+                </div>
+                <div xml:id="variaBioBodyFr02" type="chapter" n="2">
+                    <head>Desgodets bâtisseur</head>
+                    <p>A.N. Minutier central, LXXIII, 536, 24 avril 1681- 25 mai 1684.
+                        Devis des ouvrages de marbres pour le retable du grand autel d
+                        l’église de la Sorbonne en date du 24 avril 1681. Le premier
+                        devis est suivi d’un marché engageant Jean Girard « architecte
+                        et entrepreneur des bâtiments du roi et de son Altesse royale
+                        Monsieur le frère du roi ». Cet acte est suivi d’un second
+                        exemplaire du devis annoté et corrigé par Desgodets en date du
+                        25 mai 1684. Suit enfin (à vérifier toutefois) le texte du
+                        nouveau devis de Desgodets rédigé d’après le projet de Charles
+                        Le brun [renseignement fourni par Anne Le Pas de Sécheval].</p>
+                    <p>A.N. MC CXV, 349. 10 octobre 1712. Devis fait le 9 septembre par
+                        Nicolas Delespine, architecte et juré expert, en conséquence de
+                        l’arrêt du Parlement du 12 août 1712, des travaux de maçonnerie
+                        à exécuter pour la reconstruction d’une maison sise cloître
+                        Saint-Germain-L’Auxerrois, suivi du marché aux termes duquel
+                        Thomas Nicolle, maître maçon, demeurant rue du cygne,
+                        adjudicataire au rabais, s’engage avec Claude Mancès, chapelain
+                        de Saint-Germain-l’Auxerrois, à effectuer les travaux sous la
+                        direction du sieur Desgodets, architecte du roi, qui en fera la
+                        réception moyennant 1425 livres. A la suite Devis de
+                        charpenterie, de couverture et de serrurerie faits par Nicolas
+                        Delespine, suivis des marchés, en date du 9 septembre 1712</p>
+                    <p>A.N. MC CXVIII, 343. 9 septembre1724. Devis de travaux de
+                        maçonnerie à faire pour la construction d’une maison rue
+                        Saint-Germain-L’auxerrois, suivant les plans et élévations
+                        dessinés par le sieur Desgodets, architecte du roi, suivi du
+                        marché aux termes duquel Etienne Breget, entrepreneur de
+                        bâtiments, demeurant rue de Bourbon à la Ville-Neuve, s’engage
+                        envers Jacques Cottereau, maître pâtissier, demeurant même rue,
+                        à exécuter les travaux sous la direction dudit Desgodets,
+                        moyennant le prix qui en sera établi par lui d’après les tarifs
+                        à la toise portés au devis.</p>
+                    <p>A.N. MC CXV, 435. 11 février 1724. Devis des travaux de
+                        maçonnerie, charpenterie et couverture à faire pour achever la
+                        construction d’un grand corps de bâtiments à ajouter à une
+                        maison sis dans le cloître extérieur de l’abbaye du
+                        Val-de-Grâce suivi du marché aux termes duquel Louis Richard,
+                        maître maçon, demeurant rue des Blancs-Manteaux, te les
+                        ouvriers des métiers intéressés s’engagent envers les
+                        religieuses du Val-de-Grâce à exécuter les travaux conformément
+                        aux plans et élévations dessinés par le sieur Desgodets,
+                        architecte du roi, et sous sa direction ; le prix en sera fixé
+                        par les experts qui seront chargés par les parties de faire le
+                        toisé et la réception.</p>
+                    <p>A.N. Z<hi rend="superscript">1J</hi> 552, 8 juillet 1722.
+                        Estimation par Jacques Piretouy et Charles-Philipe de Meseretz
+                        des vacations dues à Antoine Desgodetz pour avoir dressé les
+                        plans de la maison de la veuve Lombard, rue du
+                        Bourg-l’Abbé.</p>
+                    <p>A.N. Z<hi rend="superscript">1J</hi> 555, 4 décembre 1722.
+                        Estimation par Jean-Baptiste Loir des honoraires dus à Antoine
+                        Desgodets, architecte du roi, par Marie Dutel, veuve de Claude
+                        Lombard d’Ermenonville, pour son travail sur la construction
+                        d’une maison, rue du Bourg-l’Abbé.</p>
+                    <p>A.N. Z<hi rend="superscript">1J</hi> 520, 15 avril 1717.
+                        Estimation par Jacques Cudeville des plans et devis de
+                        chapenterie faits par l’architecte Antoine Desgodetz pour la
+                        construction d’une maison, rue et porte Montmartre, propriété
+                        des sieurs Belhomme et Duval.</p>
+                </div>
+                    <!--<figure type="illustration" copyOf="#variaBioIll0003"/>-->
+            </div>
+        </body>
+        <back xml:id="variaBioBack">
+            <div xml:id="variaBioBackFr" xml:lang="fre">
+                <!-- inclusion du fichier de notes -->
+                <xi:include href="divs/desgodetsVariaBioNotes.tei.xml"
+                    parse="xml">
+                    <xi:fallback>Fichier de notes de degodetsVariaBio non
+                        trouvé</xi:fallback>
+                </xi:include>
+                
+                <!-- lien vers le fichier à télécharger -->
+                <!--<div xml:id="variaBioBackFr02" xml:lang="fre"
+                    type="downloads">
+                    <head>Téléchargements</head>
+                    <p><ref type="file" target="../..files/programme2010.pdf"
+                        mimeType="application/pdf">Programme</ref></p>
+                </div>-->
+                
+                <!-- liste des figures -->
+                <div xml:id="variaBioBackFr03" type="figures">
+                    <head>Liste des figures</head>
+                    <figure xml:id="variaBioIll0001" type="illustration">
+                        <figDesc>
+                            <title>Frontispice des édifices antiques</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, frontispice</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="variaBioIll0003" type="illustration">
+                        <figDesc>
+                            <title>Dédicace</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 9</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0257.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="variaBioIll0004" type="illustration">
+                        <figDesc>
+                            <title>Élévation antérieure du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 30</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                    <figure xml:id="variaBioIll0033" type="illustration">
+                        <figDesc>
+                            <title>Élévation latérale du panthéon</title>
+                            <desc>Antoine Desgodets, <hi rend="italic">Les
+                                    édifices antiques</hi>, p. 33</desc>
+                        </figDesc>
+                        <graphic n="thumb" url="../../images/thumbs/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="medium" url="../../images/medium/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                        <graphic n="full" url="../../images/full/desgodetsEdifices0001.jpg"
+                            mimeType="image/jpeg" />
+                    </figure>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>

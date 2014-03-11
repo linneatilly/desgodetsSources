@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- fichier inclus des notes du texte sur le projet de recherche -->
+
+<!-- RMQ : fichier inclus pour faciliter le travail d'édition -->
+<!-- RMQ : identifiants composés de l'identifiant dans le corpus, suivi d'un numéro d'ordre à quatre unités -->
+
+<div xml:id="editionResearchBackFr01" xmlns="http://www.tei-c.org/ns/1.0"
+    xml:lang="fre" type="notes">
+    <head>Notes</head>
+    <note xml:id="editionResearchN0001">
+        <p> Entre autres, voir Jean Guillaume (dir.), <hi
+                rend="italic">Les traités d’architecture de la Renaissance</hi>, Paris,
+            Picard, 1988 ; Jean-Michel Leniaud et Béatrice Bouvier (dir.), <hi
+                rend="italic">Les périodiques d’architecture, XVIII</hi>
+            <hi rend="italic superscript">e </hi>
+            <hi rend="italic">- XX</hi>
+            <hi rend="italic superscript">e</hi>
+            <hi rend="italic"> siècles. Recherche d’une méthode critique
+            d’analyse</hi>, Études et rencontres de l’École des chartes, 2001 ; des
+            mêmes, <hi rend="italic">Le livre d’architecture : édition, représentation,
+                bibliothèque</hi>, Études et rencontres de l’École des chartes, 2002 ;
+            Olga Medvedkova (dir.), <hi rend="italic">Bibliothèques d’architectes.
+                Architectural Libraries</hi>, Paris/INHA, 2009 ; Jean-Philippe Garric,
+            Estelle Thibault, Emilie d’Orgeix (dir.), <hi rend="italic">Le livre et
+                l’architecte</hi>, Bruxelles, Mardaga, 2011.</p>
+    </note>
+    <note xml:id="editionResearchN0002">
+        <p> Un courant international s’est développé en direction
+            d’une histoire de la construction ; voir en particulier les congrès
+            internationaux (Madrid, 2003 ; Cambridge, 2006 ; Cottbus, 2009 ; Paris,
+            2012 ; Chicago, 2015) ; En France, ce champ s’est étendu à l’initiative des
+            travaux d’Antoine Picon, Cyrille Simonnet, Joël Sakarovitch, André
+            Guillerme, etc. Un premier congrès francophone d’histoire de la
+            construction s’est tenu à Paris en juin 2008 (<hi rend="italic">Edifice
+                &amp; </hi>Artifice<hi rend="italic">. Histoires constructives. Recueil
+                des textes issus du Premier congrès francophone d’histoire de la
+                construction,</hi> ouvrage collectif sous notre co-direction avec André
+            Guillerme, Valérie Nègre et Joël Sakarovitch, Paris, Picard, 2010, 1277 p.
+            ill.). Voir dans ce sens Jean-Philippe Garric, Valérie Nègre et Alice
+            Thomine-Berrada (dir.), <hi rend="italic">La Construction savante. Les
+                avatars de la littérature technique</hi>, Paris Picard, 2008 et <hi
+                rend="italic">Nuts &amp; Bolts of Construction History. Culture,
+                Technology &amp; Society. Proceedings of the 4</hi>
+            <hi rend="italic superscript">th</hi>
+            <hi rend="italic"> International Congress on Construction History</hi>,
+            ouvrage collectif sous notre co-direction, avec André Guillerme, Valérie
+            Nègre et Joël Sakarovitch, Paris, Picard, 2012, 3 vol., 2010.</p>
+    </note>
+    <note xml:id="editionResearchN0003">
+        <p> D’après les lettres patentes portant établissement de
+            l’Académie d’architecture, de février 1717, art. XXXVI.</p>
+    </note>
+    <note xml:id="editionResearchN0004">
+        <p> Joseph-Nicolas Guyot, <hi rend="italic">Répertoire
+                universel et raisonné de jurisprudence civile, criminelle et
+                bénéficiale</hi>, Paris, 17 vol., 1784, V° « Architecte ».</p>
+    </note>
+    <note xml:id="editionResearchN0005">
+        <p> Jeanne Duportal, « Le <hi rend="italic">cours
+                d’architecture</hi> de Desgodets. Recueil inédit du Cabinet des
+            Estampes », <hi rend="italic">La revue de l’art ancien et moderne</hi>,
+            XXXVI, 1914, p. 153-157 ; Wolfgang Herrmann, « Antoine Desgodets and the
+            Académie Royale d’Architecture », <hi rend="italic">The Art Bulletin</hi>,
+            1958, p. 23-53 ; Theodor H.<hi rend="smallcaps">,</hi> Lunsingh<hi
+                rend="capsall"> </hi>Scheurleer, « Een exemplaar van Antoine Desgodets’
+                <hi rend="italic">Traité de la commodité de l’Architecture</hi> in het
+            Rijksprentenkabinet » in <hi rend="italic">Opus Musivum. Een bundel studies
+                aangeboden aan Professeur Doctor M. D. Ozinga ter gelegenheid van zijn
+                zestigste verjaardag op 10 november 1962</hi>, Assen, 1964, p. 285-297
+            ; Carlo Nocentini, « Il Trattato degli ordini di Antoine Desgodets : un
+            manuale inedito », <hi rend="italic">Quasar</hi>, 1989, p. 13-18 ; Michel
+            Gallet, <hi rend="italic">Les architectes parisiens du XVIII</hi>
+            <hi rend="italic superscript">e</hi>
+            <hi rend="italic"> siècle. Dictionnaire biographique et critique</hi>,
+            Paris, Mengès, 1995 ; Jacques Fredet, <hi rend="italic">Les maisons de
+                Paris, Types courants de l’architecture mineure parisienne de la fin de
+                l’époque médiévale à nos jours avec l’anatomie de leur
+                construction</hi>, Paris, Éditions de l’Encyclopédie des nuisances, 3
+            vol., 2003 ; Robert Carvais, « L’ancien droit de l’urbanisme et ses
+            composantes constructive et architecturale, socle d’un nouvel <hi
+                rend="italic">ars</hi> urbain aux XVII<hi rend="superscript">e</hi> et
+                XVIII<hi rend="superscript">e</hi> siècles. Jalons pour une histoire
+            totale du droit de l’urbanisme », <hi rend="italic">in Revue d’histoire des
+                sciences humaines</hi>, n° sur « Discipliner la ville. L’émergence des
+            savoirs urbains (XVIII<hi rend="superscript">e</hi> - XX<hi
+                rend="superscript">e</hi> siècle) » sous la direction de Sylvain Van
+            Damme, n°12, 2005, p. 17-54 ; Robert Carvais, « La littérature juridique du
+            bâtiment. L’invention et le succès d’un genre doublement technique.
+            1748-1950 » Jean-Philippe Garric, Valérie Nègre et Alice Thomine-Berrada<hi
+                rend="smallcaps"> </hi>(dir.), <hi rend="italic">La Construction
+                savante. Les avatars de la littérature technique</hi>, Paris Picard,
+            2008, p. 89-102.</p>
+    </note>
+    <note xml:id="editionResearchN0006">
+        <p> Les manuscrits concernés sont dispersés en France,
+            entre la Bibliothèque nationale de France (BnF, département des manuscrits,
+            cabinet des estampes), la Bibliothèque de l’Institut, la Bibliothèque du
+            Sénat, la Bibliothèque de l’Arsenal, les Bibliothèques municipales de
+            Nantes, de Compiègne et de Besançon, et celle de l’École nationale des
+            ponts et chaussées ; à l’étranger entre Londres, à la Royal Institution of
+            British Architects (RIBA), Amsterdam, au Rijksmuseum et New York à la
+            Columbia University Library, etc.</p>
+    </note>
+    <note xml:id="editionResearchN0007">
+        <p> Analyse des filigranes, des annotations introductives,
+            des reliures, de l’écriture, etc.</p>
+    </note>
+    <note xml:id="editionResearchN0008">
+        <p> Antoine Quatremère de Quincy, <hi rend="italic"
+                >Dictionnaire historique d’architecture</hi>, Paris, 1832, V°
+            « Desgodets », t. I, p. 518.</p>
+    </note>
+    <note xml:id="editionResearchN0009">
+        <p> Joseph-Madeleine-Rose Morisot<hi rend="italic">,
+                Tableaux détaillés des prix de tous les ouvrages de bâtiment, divisés
+                suivant les différentes espèces de travaux et suivis d’un traité
+                particulier pour chaque espèce, sur la manière de toiser ou mesurer les
+                ouvrages</hi>…, Paris, 2<hi rend="superscript">e</hi> édition, revue,
+            corrigée et augmentée, 1820, 1<hi rend="superscript">er</hi> vol.,
+            introduction, p. 24.</p>
+    </note>
+    <note xml:id="editionResearchN0010">
+        <p> Pratique intellectuelle de normalisation des techniques qui passe par les
+            trois étapes suivantes : rassembler, organiser et diffuser le savoir. Cf.
+            notre article, « Le règlement de Jean Beausire (1694). Droit et réduction
+            en art de la maçonnerie », in Hélène Vérin et de Pascal Dubourg-Glatigny<hi
+                rend="smallcaps"> </hi>(dir.), <hi rend="italic">Réduire en art. La
+                technologie de la Renaissance aux Lumières</hi>, Paris, Éditions de la
+            Maison des sciences de l’homme, 2008, p. 336-362.</p>
+    </note>
+</div>
