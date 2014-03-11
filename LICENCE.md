@@ -35,7 +35,11 @@ Aucune garantie n'est donnée. Il se peut que la licence ne vous donne pas toute
 
 
 
+
 -------------------------
+
+
+
 
 This content is distributed under [Creative Commons BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
